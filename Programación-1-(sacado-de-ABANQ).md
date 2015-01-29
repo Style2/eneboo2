@@ -24,7 +24,7 @@ Algunos ejemplos: para las tablas se abrirá un editor de texto, para los formul
 ###Cambios básicos en tablas y formularios
 Vamos a utilizar las herramientas que incorpora Abanq para realizar algunos cambios sencillos en tablas y formularios de los módulos previamente cargados.
 
-   #### 1. Cambio de propiedades de un campo.
+   ####1. Cambio de propiedades de un campo.
 
 Cambio de alias. El alias de un campo es el nombre que aparece en los formularios y las tablas maestras. Para los almacenes vamos a modificar el alias del campo ("Código") cambiándolo por "Código de Almacén". En primer lugar abrimos el módulo almacén en el área de facturación. En el menú Almacén -> Almacenes mostramos el listado de almacenes de nuestra base de datos. Podemos ver que el primer campo tiene el alias Código.
 Los alias de los datos se especifican en las tablas.
@@ -32,13 +32,13 @@ Desde el módulo de sistema::administración, abrimos el módulo flfactalma (alm
 Nuevo alias de un campo
 Aceptamos todos los formularios. Podemos verificar el cambio abriendo de nuevo el formulario de almacenes y comprobando el alias nuevo.
 
-   #### 2. Cambio de la longitud máxima de un campo.
+   ####2. Cambio de la longitud máxima de un campo.
 
 Para las familias de artículos, el campo Código tiene una longitud máxima de 4 caracteres. Vamos a ampliar esta longitud hasta 6 caracteres. Dentro del módulo Almacén abrimos la tabla Familias (familias.mtd) y en el campo codigo cambiamos la propiedad lenght de 4 a 6:
 Nueva longitud máxima de un campo
 Podemos verificar el cambio abriendo el formulario de familias y comprobando que efectivamente el código admite ahora hasta 6 caracteres.
 
-   #### 3. Cambios en el diseño de los formularios.
+   ####3. Cambios en el diseño de los formularios.
 
 A la hora de trabajar con formularios vamos a utilizar la herramienta QT Designer. Tal como vimos, cuando editamos un fichero con extensión .ui en el módulo de sistema, el editor que aparece es QT Designer.
 Algunos aspectos importantes acerca de QT Designer:
