@@ -2,7 +2,7 @@
 1. [Pagina inicio de este wiki](https://github.com/Miguel-J/eneboo/wiki)
 
 ####INSTALACION:
-1. [Instalación en windows](https://github.com/Miguel-J/eneboo/wiki/Primeros-pasos-(sacado-de-ABANQ))
+1. [Instalación en windows](https://github.com/Miguel-J/eneboo/wiki/Instalaci%C3%B3n-en-windows))
 1. [Instalación básica-standard](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Instalaci%C3%B3n)
 
 ####PARA EL USUARIO:
