@@ -1,3 +1,5 @@
+Archivo original: [ENEBOO/doc](https://github.com/eneboo/doc/wiki/[Eneboo Standard] Instalación)
+Actualizado: 29-enero-2015
 # Instalador automático
 El instalador permite que en pocos minutos Eneboo Standard esté listo para trabajar. El instalador realiza las siguientes tareas de forma automática:
 
@@ -29,8 +31,6 @@ De momento no hay instalador automático para Mac.
 ## Cargar el paquete de Eneboo Standard
 ![Pantalla de conexión](https://raw.githubusercontent.com/eneboo/doc/master/images/standard/conectar.png)
 
-Archivo original: [ENEBOO/doc](https://github.com/eneboo/doc/wiki/[Eneboo Standard] Instalación)
-Actualizado: 29-enero-2015
 
 1. Abrir Eneboo. Aparecerá la pantalla _Conectar_.
 1. Rellenar los campos con los siguientes valores:
