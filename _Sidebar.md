@@ -19,5 +19,6 @@
 1. [DEZETAGE: ](https://github.com/dezetage)
 1. [DEZETAGE: ](https://github.com/dezetage)
 
-    A. [WEB OFICIAL www.eneboo.org](http://www.eneboo.org/site/)
-    A. [GRUPO DE CORREO OFICIAL GOOGLE](https://groups.google.com/forum/#!forum/eneboo)
+####OTROS ENLACES:
+1. [WEB OFICIAL www.eneboo.org](http://www.eneboo.org/site/)
+1. [GRUPO DE CORREO OFICIAL GOOGLE](https://groups.google.com/forum/#!forum/eneboo)
