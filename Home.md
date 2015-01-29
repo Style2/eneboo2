@@ -1,5 +1,5 @@
 Welcome to the eneboo wiki!
 
-Parrafo uno-línea 1  línea dos  línea tres
+Si quieres participar en la edición de este manual o por otras preguntas, envía un mensaje a: miguelajsmaps@gmail.com
 
 Parrafo tres
