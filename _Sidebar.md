@@ -3,6 +3,7 @@
 
 ####INSTALACION:
 1. [Instalación en windows](https://github.com/Miguel-J/eneboo/wiki/Primeros-pasos-(sacado-de-ABANQ))
+1. [Instalación básica-standard](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Instalaci%C3%B3n)
 
 ####PARA EL USUARIO:
 1. [Primeros pasos-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Primeros-pasos-(sacado-de-ABANQ))
