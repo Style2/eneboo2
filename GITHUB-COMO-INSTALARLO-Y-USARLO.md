@@ -17,7 +17,8 @@ NOTA: No poner ":" en los nombres de las páginas o no se descargan bien...
 ##COMO COORDINAR LA COPIA LOCAL Y LA DEL WEB GITHUB
 1. Vas ARRIBA-DERECHA a la rueda dentada y le das a "OPEN IN GIT SHELL", entonces se abre una ventana parecida al MSDOS de windows con unas letras en colores entre corchetes...
 1. Para "TRAER" a la copia local los cambios de la copia-"master" del servidor github ponemos:
- * "git pull https://github.com/Miguel-J/eneboo"
+ * "git pull https://github.com/Miguel-J/eneboo" (sin el wiki)
+ * "git pull https://github.com/Miguel-J/eneboo.wiki" (este wiki)
  * OJO: El PULL hay que hacerlo DESDE EL DIRECTORIO DONDE QUIERES QUE DESCARGUE los archivos....si no es donde estás poner "cd (subdirectorio)" hasta situarse en el correcto...
 1. Para "SUBIR" la copia local MODIFICADA a la copia-"master" del servidor github ponemos:
  1. Primero hay que decirle al programa quien somos...:
