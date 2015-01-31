@@ -9,10 +9,10 @@
 1. Ejemplos: 
  * "git clone https://github.com/eneboo/doc.wiki.git" (texto plano)
  * "git clone https://github.com/eneboo/doc" (fotos-capturas de pantalla)
- * "git clone https://github.com/Miguel-J/eneboo" (este almacén)
- * "git clone https://github.com/Miguel-J/eneboo/wiki" (este wiki)
+ * "git clone https://github.com/Miguel-J/eneboo" (este almacén-repositorio (pero sin el wiki))
+ * "git clone https://github.com/Miguel-J/eneboo.wiki" (este wiki)
  * ...y al darle a ENTER lo pone como subdirectorio en el directorio de descargas elegido...
-
+NOTA: No poner ":" en los nombres de las páginas o no se descargan bien...
 
 ##COMO COORDINAR LA COPIA LOCAL Y LA DEL WEB GITHUB
 1. Vas ARRIBA-DERECHA a la rueda dentada y le das a "OPEN IN GIT SHELL", entonces se abre una ventana parecida al MSDOS de windows con unas letras en colores entre corchetes...
