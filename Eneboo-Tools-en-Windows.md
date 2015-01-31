@@ -1,17 +1,14 @@
 https://groups.google.com/forum/#!topic/eneboo/eVkmQNMUzGQ
 
 
-1. **mfdezp    27/8/12 **
- 
-Hola Aulla Sistemas (todavía no tengo controlado tu nombre).
-
+1. **mfdezp    27/8/12**
 Me acabo de Instalar el Python en Windows, pero siguiendo la guia de las Eneboo-tools, me dice que lo primero que hay que hacer es tener una serie de librerías (que no sé como tenerlas operativas para python en windows) y luego hacer un 
 _sudo make install_ (que entiendo que es la instalación en linux). 
 
-1. **Aulla Sistemas**
+2. **Aulla Sistemas**
 Mi recomendación es que te instales un linux tipo ubuntu 10.10 en una máquina virtual.
 
-1. **David Martínez Martí**
+3. **David Martínez Martí**
 En windows las librerías de python se descargan como ejecutables (instaladores). Para cada versión menor de Python  (2.5.x, 2.6.x) hay un instalador distinto. 
 
 Entonces, en resumen, lo que hay que hacer es: 
