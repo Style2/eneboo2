@@ -48,45 +48,35 @@ Para facilitarnos un poco la tareas, creamos un script que nos abre todos los fo
 
 https://gist.github.com/sbellver/129de8b399e7e5d0b5ef#file-qtdesigner-sh
 
-#!/bin/bash
-# Es necesario pasarle el directorio como parÃ¡metro.
-for f in $1/*.ui
-do
-  echo "Abriendo $f ..."
-  open -a /Applications/eneboo/bin/designer.app --args $f
-  read -p "Pulse enter para pasar al siguiente UI ... "
-done
+`#!/bin/bash`
+`# Es necesario pasarle el directorio como parÃ¡metro.`
+`for f in /*.ui`
+`do`
+  `echo "Abriendo $f ..."`
+  `open -a /Applications/eneboo/bin/designer.app --args $f`
+  `read -p "Pulse enter para pasar al siguiente UI ... "`
+`done`
 
 1
 
 2
 
-3
 
-4
+ `#!/bin/bash`
 
-5
+`# Es necesario pasarle el directorio como parámetro.`
 
-6
+`for f in /*.ui`
 
-7
+`do`
 
-8
- #!/bin/bash
+  `echo "Abriendo $f ..."`
 
-# Es necesario pasarle el directorio como parámetro.
+  `open -a /Applications/eneboo/bin/designer.app --args $f`
 
-for f in $1/*.ui
+  `read -p "Pulse enter para pasar al siguiente UI ... "`
 
-do
-
-  echo "Abriendo $f ..."
-
-  open -a /Applications/eneboo/bin/designer.app --args $f
-
-  read -p "Pulse enter para pasar al siguiente UI ... "
-
-done
+`done`
 
 
  
