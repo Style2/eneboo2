@@ -26,6 +26,7 @@ https://groups.google.com/forum/#!topic/eneboo/lxqbvj7W2fA
 
 http://www.iconarchive.com/
 
+http://www.iconarchive.com/commercialfree.html
 
 ### UNA PROPUESTA DE FLAT-ICONS
 http://tecneca.com/eneboo-flat-icons/
