@@ -15,6 +15,7 @@
 1. [Area de sistema-VACIO](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-%C3%81rea-financiera)
 1. [Copias de Seguridad por MSDOS](https://github.com/Miguel-J/eneboo/wiki/INSTRUCCIONES-PARA-HACER-COPIAS-DE-SEGURIDAD-POR-MSDOS)
 1. [Configurar Reports: diseñar impresión de facturas, informes, etc](https://github.com/Miguel-J/eneboo/wiki/eneboo-reports)
+1. [Cambiar iconos a los botones](https://github.com/Miguel-J/eneboo/wiki/C%C3%B3mo-cambiar-los-iconos-de-los-botones
 
 ####PARA LA PROGRAMACION:
 1. [GITHUB-COMO-INSTALARLO-Y-USARLO](https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO)
