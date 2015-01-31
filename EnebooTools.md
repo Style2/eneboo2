@@ -13,18 +13,18 @@ https://github.com/gestiweb/eneboo-tools
 
 
 
-Recomiendo leerlo todo y intentar entender las herramientas en sí mismas. 
+Recomiendo leerlo todo e intentar entender las herramientas en sí mismas. 
 
 
 
 
 Lo que necesitas:
 
-- Tener instalado correctamente eneboo-tools en el sistema.
+1. Tener instalado correctamente eneboo-tools en el sistema.
 
-- clonar el proyecto de eneboo-modules
+1. clonar el proyecto de eneboo-modules
 
-- clonar el proyecto de eneboo-features
+1. clonar el proyecto de eneboo-features
 
 
 
@@ -39,12 +39,12 @@ Para entender un poco mejor las cosas, explico qué es (conceptualmente) eneboo-
 
 
 
-Eneboo Tools es un compendio de herramientas para ayudar al desarrollo de módulos y extensiones. Actualmente sólo tiene dos herramientas funcionales: assembler y mergetool. Normalmente verás que la gente usa Assembler.
+Eneboo Tools es un compendio de herramientas para ayudar al desarrollo de módulos y extensiones. Actualmente sólo tiene dos herramientas funcionales: **assembler y mergetool**. Normalmente verás que la gente usa Assembler.
 
 
 
 
-Eneboo Assembler es una herramienta de generación de mezclas de cero. Es decir, es un sistema automático que junta ciertos módulos con ciertas extensiones. Además permite la modificación fácil de las extensiones.
+* **Eneboo Assembler** es una herramienta de generación de mezclas de cero. Es decir, es un sistema automático que junta ciertos módulos con ciertas extensiones. Además permite la modificación fácil de las extensiones.
 
 
 
@@ -54,12 +54,21 @@ Internamente Assembler está usando Eneboo Mergetool para hacer el trabajo; así
 
 
 
-Eneboo Mergetool es una herramienta de generación y aplicación de parches específicos; digamos que es una colección de heramientas diff y patch pero que son conocedoras de la sintaxis del fichero para el que están diseñadas. Esto permite sacar parches de unos cambios y aplicarlos en otro sitio sin apenas ningún conflicto.
+* **Eneboo Mergetool** es una herramienta de generación y aplicación de parches específicos; digamos que es una colección de heramientas diff y patch pero que son conocedoras de la sintaxis del fichero para el que están diseñadas. Esto permite sacar parches de unos cambios y aplicarlos en otro sitio sin apenas ningún conflicto.
 
 
 
 
-Mergetool tiene cinco modos: file-diff, file-patch, folder-diff, folder-patch y file-check. "Diff" implica extraer unas diferencias y escribir un parche. "Patch" significa leer un fichero de parche (de diferencias) y aplicarlas. "Check" es realizar comprobaciones rutinarias. Las acciones "file" trabajan con ficheros sueltos y "folder" con carpetas enteras (generalmente proyectos).
+Mergetool tiene cinco modos:
+* file-diff
+* file-patch
+* folder-diff
+* folder-patch
+* y file-check.
+1. **"Diff"** implica extraer unas diferencias y escribir un parche.
+1. **"Patch"** significa leer un fichero de parche (de diferencias) y aplicarlas.
+1. **"Check"** es realizar comprobaciones rutinarias.
+1. Las acciones **"file"** trabajan con ficheros sueltos y **"folder"** con carpetas enteras (generalmente proyectos).
 
 
 
@@ -69,7 +78,7 @@ Mergetool a su vez tiene las acciones "folder-*" construidas a partir de las "fi
 
 
 
-Las acciones file-diff y file-patch funcionan del siguiente modo: indicamos el tipo de fichero a tratar, y los dos ficheros a analizar, y el programa imprime por consola el resultado de la acción diff o patch (o al fichero indicado por --output-file).
+Las acciones **file-diff y file-patch** funcionan del siguiente modo: indicamos el tipo de fichero a tratar, y los dos ficheros a analizar, y el programa imprime por consola el resultado de la acción diff o patch (o al fichero indicado por --output-file).
 
 
 
@@ -79,9 +88,12 @@ Suena complicado, pero es muy sencillo. Solo hay que poner un par de ejemplos pa
 
 
 
-En este momento existen 3 tipos de fichero posibles: qs, qsdir y xml.
+En este momento existen 3 tipos de fichero posibles:
+* qs
+* qsdir. (qsdir es experimental (es para parchear ficheros qs), así que de momento lo dejo aparte.)
+* y xml.
 
-qsdir es experimental (es para parchear ficheros qs), así que de momento lo dejo aparte.
+
 
 
 
