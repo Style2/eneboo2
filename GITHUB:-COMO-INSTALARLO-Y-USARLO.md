@@ -10,6 +10,7 @@
  * "git clone https://github.com/eneboo/doc.wiki.git" (texto plano)
  * "git clone https://github.com/eneboo/doc" (fotos-capturas de pantalla)
  * "git clone https://github.com/Miguel-J/eneboo" (este almacén)
+ * "git clone https://github.com/Miguel-J/eneboo/wiki" (este wiki)
  * ...y al darle a ENTER lo pone como subdirectorio en el directorio de descargas elegido...
 
 
