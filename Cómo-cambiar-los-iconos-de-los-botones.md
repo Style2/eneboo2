@@ -24,59 +24,13 @@ https://groups.google.com/forum/#!topic/eneboo/lxqbvj7W2fA
 
 ###PAGINAS DE DESCARGA DE "ICONSET" EN INTERNET:
 
-###PROPUESTA DE FLAT-ICONS
+http://www.iconarchive.com/
+
+
+### UNA PROPUESTA DE FLAT-ICONS
 http://tecneca.com/eneboo-flat-icons/
 
-
-
-
-
-
-MTecneca Networks
-
-La Informática a la carta
-
-
-
-
-
-
-Inicio
-
-
-Blog
-
-
-Contactar
-
-
-
-
-
-
-
-WEB
-
-
-SERVIDORES
-
-
-PROGRAMACIÓN
-
-
-DISEÑO
-
-
-ASISTENCIA TÉCNICA
-
-
-
-
-
-
-
-
-Eneboo Flat Icons 
+#####Eneboo Flat Icons 
 
 
 30 octubre, 2014 por Sergio Bellver Aliaga —Deja un comentario
