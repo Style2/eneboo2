@@ -16,19 +16,26 @@ NOTA: No poner ":" en los nombres de las páginas o no se descargan bien...
 
 ##COMO COORDINAR LA COPIA LOCAL Y LA DEL WEB GITHUB
 1. Vas ARRIBA-DERECHA a la rueda dentada y le das a "OPEN IN GIT SHELL", entonces se abre una ventana parecida al MSDOS de windows con unas letras en colores entre corchetes...
-1. Para "TRAER" a la copia local los cambios de la copia-"master" del servidor github ponemos:
+#####1. Para "TRAER" a la copia local los cambios de la copia-"master" del servidor github ponemos:
+ * OJO: El PULL hay que hacerlo DESDE EL DIRECTORIO DONDE QUIERES QUE DESCARGUE los archivos....si no es donde estás poner "cd (subdirectorio)" hasta situarse en el correcto...sin los parentesis.
  * "git pull https://github.com/Miguel-J/eneboo" (sin el wiki)
  * "git pull https://github.com/Miguel-J/eneboo.wiki" (este wiki)
- * OJO: El PULL hay que hacerlo DESDE EL DIRECTORIO DONDE QUIERES QUE DESCARGUE los archivos....si no es donde estás poner "cd (subdirectorio)" hasta situarse en el correcto...
-1. Para "SUBIR" la copia local MODIFICADA a la copia-"master" del servidor github ponemos:
+#####1. Para "SUBIR" la copia local MODIFICADA a la copia-"master" del servidor github ponemos:
+ * OJO: ANTES de hacer un PUSH es mejor hacer un PULL, porque si detecta que las partes del "master" del servidor que NO ACTUALIZAS son distintas a lo que tienes en el "local", no te dejará subir nada...
+ * OJO: El PUSH hay que hacerlo DESDE EL DIRECTORIO DONDE QUIERES QUE COPIE los archivos....si no es donde estás poner "cd (subdirectorio)" hasta situarse en el correcto...sin los parentesis.
  1. Primero hay que decirle al programa quien somos...:
     * "git config user.mail "miguelajsmaps@gmail.com" "(o la cuenta email de cada uno)
     * "git config user.name "Miguel-J" "(o el nombre de usuario de cada uno)
  1. ...luego hay que decirle que hemos cambiado cosas de los archivos...:
-    * "git commit -a" (esto solo vale si no hemos creado ningún archivo)
-    * "git add (nombre del archivo)" (para cada archivo nuevo)
+    1. "git add (nombre del archivo)" (para cada archivo nuevo)
+        ** ejemplo: 
+"C:\Users\portatil\Documents\GitHub\eneboo-manual\eneboo.wiki [master +6 0 0 1] git add EnebooTools.md" 
+    1. "git commit -a" (esto solo vale si no hemos creado ningún archivo)
+"C:\Users\portatil\Documents\GitHub\eneboo-manual\eneboo.wiki [master +6 0 0 1] git commit -a" 
+          * NOTA: se abre una ventana de texto para poner una explicación del cambio que "subes"....no se puede dejar en blanco....al acabar cerrarla y decirle que SI a grabar (lo hace en un dir. temporal que luego borra)
  1. ...y ahora hay que decirle que SUBA esos cambios:
     * "git push https://github.com/Miguel-J/eneboo master"
+    * "git push https://github.com/Miguel-J/eneboo.wiki master"
     * OJO: hay que añadir esa palabra "master" al final de la dirección para indicarle que el que manda es el del servidor...
     * Habrá que poner el USUARIO y PASSWORD de la cuenta propia en el GITHUB
 
