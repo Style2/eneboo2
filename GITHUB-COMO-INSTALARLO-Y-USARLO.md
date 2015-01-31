@@ -30,6 +30,7 @@ NOTA: No poner ":" en los nombres de las páginas o no se descargan bien...
     1. "git add (nombre del archivo)" (para cada archivo nuevo)
         ** ejemplo: 
 "C:\Users\portatil\Documents\GitHub\eneboo-manual\eneboo.wiki [master +6 0 0 1] git add EnebooTools.md" 
+          * NOTA: NO olvidarse de la extensión ".md"
     1. "git commit -a" (esto solo vale si no hemos creado ningún archivo)
 "C:\Users\portatil\Documents\GitHub\eneboo-manual\eneboo.wiki [master +6 0 0 1] git commit -a" 
           * NOTA: se abre una ventana de texto para poner una explicación del cambio que "subes"....no se puede dejar en blanco....al acabar cerrarla y decirle que SI a grabar (lo hace en un dir. temporal que luego borra)
