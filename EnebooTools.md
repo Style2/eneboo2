@@ -65,6 +65,7 @@ Mergetool tiene cinco modos:
 * folder-diff
 * folder-patch
 * y file-check.
+
 1. **"Diff"** implica extraer unas diferencias y escribir un parche.
 1. **"Patch"** significa leer un fichero de parche (de diferencias) y aplicarlas.
 1. **"Check"** es realizar comprobaciones rutinarias.
@@ -73,7 +74,7 @@ Mergetool tiene cinco modos:
 
 
 
-Mergetool a su vez tiene las acciones "folder-*" construidas a partir de las "file-*"; es decir, que es lo mismo aplicarlo a toda una carpeta, que ir manualmente fichero por fichero. Hay algo más que realizan las acciones "folder-*", pero es mínimo.
+Mergetool a su vez tiene las acciones **"folder-*"** construidas a partir de las "file-*"; es decir, que es lo mismo aplicarlo a toda una carpeta, que ir manualmente fichero por fichero. Hay algo más que realizan las acciones "folder-*", pero es mínimo.
 
 
 
