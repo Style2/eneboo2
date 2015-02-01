@@ -33,20 +33,28 @@ Pongo los pasos aquí, pero mi experiencia personal con un:
 * es que decir LENTO es ser muy optimista.....aunque funciona, puedes ir a dar la vuelta a la manzana hasta que acaba de ejecutar cualquier programa...eso si no se "cuelga"....
 
 1. **INSTALAR VIRTUALBOX**
+
 https://www.virtualbox.org/wiki/Downloads
 
 Aunque hay muchos tuturiales, a mi me gustó este:
 https://netfaozz.wordpress.com/2012/03/05/tutorial-de-virtual-box-instalar-linux-en-windows/
 
 1. **DESCARGAR LA ISO DE UBUNTU**
+
 http://www.ubuntu-es.org/
 
 Que resulta que virtualbox viene en estructura x32, por lo que no vale la ISO de x64 (aunque tu ordenador la prefiera....mal rollo):
 
 1. **INSTALAR UBUNTU A TRAVÉS DE VIRTUALBOX**
 
+No hay problema en aceptar todas las opciones COMO si fuese un disco virgen, VIRTUALBOX limita los formateos, etc a la cuota de disco establecida...
+
 http://blog.uptodown.com/tutorial-virtualizar-ubuntu-14-virtualbox/
 
+...falta ajustar el tamaño de pantalla con "Insertar imagen de CD de las Guest Additions"...
+
+... y quitar un mensaje inofensivo de error de un SMSBus:
+http://hablemosdetic.blogspot.com.es/2011/02/solucionar-el-problema-de-piix4smbus-en.html
 
 **Pero repito que el resultado fue una tortuga**
 
