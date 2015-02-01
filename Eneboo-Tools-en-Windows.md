@@ -26,4 +26,27 @@ De todos modos, la consola de Windows se quedará un poco "corta" para
 manejar estos programas.... y yo recomendaría la solución de Aulla, 
 una máquina virtual. 
 
+###COMO INSTALAR VIRTUALBOX CON UBUNTU 14.04
+Pongo los pasos aquí, pero mi experiencia personal con un:
+* Windows 8.1 de x64
+* AMD A4-1250 1Gb con 4 Gb RAM y 450 Gb disco duro
+* es que decir LENTO es ser muy optimista.....aunque funciona, puedes ir a dar la vuelta a la manzana hasta que acaba de ejecutar cualquier programa...eso si no se "cuelga"....
+
+1. **INSTALAR VIRTUALBOX**
+https://www.virtualbox.org/wiki/Downloads
+
+Aunque hay muchos tuturiales, a mi me gustó este:
+https://netfaozz.wordpress.com/2012/03/05/tutorial-de-virtual-box-instalar-linux-en-windows/
+
+1. **DESCARGAR LA ISO DE UBUNTU**
+http://www.ubuntu-es.org/
+
+Que resulta que virtualbox viene en estructura x32, por lo que no vale la ISO de x64 (aunque tu ordenador la prefiera....mal rollo):
+
+1. **INSTALAR UBUNTU A TRAVÉS DE VIRTUALBOX**
+
+http://blog.uptodown.com/tutorial-virtualizar-ubuntu-14-virtualbox/
+
+
+**Pero repito que el resultado fue una tortuga**
 
