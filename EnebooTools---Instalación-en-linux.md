@@ -29,12 +29,13 @@ Python fue diseñado para ser leído con facilidad. Una de sus características 
 
 https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO
 
-◦4.Una vez instalado vas a PROGRAMAS-GITHUB y le das a "GITHUB"....se abre una pantalla en blanco....
-◦5.Vas ARRIBA-DERECHA a la rueda dentada y le das a "OPEN IN GIT SHELL", entonces se abre una ventana parecida al MSDOS de windows con unas letras en colores entre corchetes...
+* 4.Una vez instalado vas a PROGRAMAS-GITHUB y le das a "GITHUB"....se abre una pantalla en blanco....
+* 5.Vas ARRIBA-DERECHA a la rueda dentada y le das a "OPEN IN GIT SHELL", entonces se abre una ventana parecida al MSDOS de windows con unas letras en colores entre corchetes...
 
 git clone https://github.com/gestiweb/eneboo-tools
 
-◦...y al darle a ENTER lo pone como subdirectorio en el directorio desde donde ejecutas el "git clone"
+* ...y al darle a ENTER lo pone como subdirectorio en el directorio desde donde ejecutas el "git clone"
+* para cambiar de directorio usar "cd .." o "cd subdirectorio"
 
 
 ###PASO 4:
