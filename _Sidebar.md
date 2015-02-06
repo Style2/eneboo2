@@ -18,12 +18,13 @@
 1. [Cambiar iconos a los botones](https://github.com/Miguel-J/eneboo/wiki/C%C3%B3mo-cambiar-los-iconos-de-los-botones)
 
 ####PARA LA PROGRAMACION:
-1. [GITHUB-COMO-INSTALARLO-Y-USARLO](https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO)
+1. [GITHUB-Como instalarlo y usarlo-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO)
 1. [Programación 1-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Programaci%C3%B3n-1-(sacado-de-ABANQ))
 1. [Documentar extensiones-GESTIWEB](https://github.com/Miguel-J/eneboo/wiki/Documentar-extensiones-en-Eneboo-(GESTIWEB))
 1. [Compilar el motor-ENEBOO-OFICIAL](https://github.com/Miguel-J/eneboo/wiki/Compilar-el-motor-(ENEBOO-OFICIAL))
 1. [EnebooTools-ENEBOO-OFICIAL](https://github.com/Miguel-J/eneboo/wiki/EnebooTools)
-1. [EnebooTools para windows](https://github.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows)
+1. [EnebooTools para Windows-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows)
+1. [EnebooTools: Instalación en Linux-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
 
 ####REPOSITORIOS DE ENEBOO:
 1. [ENEBOO OFICIAL: ](https://github.com/eneboo)
