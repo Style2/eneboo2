@@ -30,7 +30,9 @@ Python fue diseñado para ser leído con facilidad. Una de sus características 
 
 https://github.com/gestiweb/eneboo-tools/blob/master/README.rst
 
+---------
 Como mínimo, se necesita:
+
     * python 2.5 
         * sqlite3
     * lxml (python-lxml)
@@ -38,12 +40,13 @@ Como mínimo, se necesita:
         * libxslt
     
 Para tener el programa funcionando, se recomienda:
+
     * python 2.6 o superior. (no es compatible con Python 3.X)
     * lxml (python-lxml) (Parser de XML)
     * psycopg (python-psycopg) (Driver de base de datos PostgreSQL)
     * pyqt4 (python-pyqt4) (Enlace de Qt4 para GUI)
-    
-
+   
+--------
 
 ###PASO 3: CLONAR EL GITHUB DE ENEBOO-TOOLS:
 
