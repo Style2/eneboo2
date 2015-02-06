@@ -25,6 +25,26 @@ eN 1995, van Rossum lanzó la iniciativa Computer Programming for Everybody (CP4
 
 Python fue diseñado para ser leído con facilidad. Una de sus características es el uso de palabras donde otros lenguajes utilizarían símbolos. Por ejemplo, los operadores lógicos !, || y && en Python se escriben not, or y and, respectivamente.
 
+
+##### REQUISITOS MÍNIMOS (Dependencias)
+
+https://github.com/gestiweb/eneboo-tools/blob/master/README.rst
+
+Como mínimo, se necesita:
+    * python 2.5 
+        * sqlite3
+    * lxml (python-lxml)
+        * libxml2
+        * libxslt
+    
+Para tener el programa funcionando, se recomienda:
+    * python 2.6 o superior. (no es compatible con Python 3.X)
+    * lxml (python-lxml) (Parser de XML)
+    * psycopg (python-psycopg) (Driver de base de datos PostgreSQL)
+    * pyqt4 (python-pyqt4) (Enlace de Qt4 para GUI)
+    
+
+
 ###PASO 3: CLONAR EL GITHUB DE ENEBOO-TOOLS:
 
 https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO
@@ -38,5 +58,17 @@ git clone https://github.com/gestiweb/eneboo-tools
 * para cambiar de directorio usar "cd .." o "cd subdirectorio"
 
 
-###PASO 4:
+###PASO 4: Instalación
+
+
+
+La instalación recomendada es enlazar los comandos en /usr/local/bin 
+
+Hemos creado un Makefile que lo hace automáticamente al lanzar el comando::
+    
+    $ sudo make install
+    
+Si se quiere realizar manualmente, se puede hacer del siguiente modo::
+
+    $ sudo ln -s $HOME/git/eneboo-tools/eneboo-mergetool /usr/local/bin/eneboo-mergetool
 otro dia ;-)
