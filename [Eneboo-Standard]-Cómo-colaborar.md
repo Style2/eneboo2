@@ -1,8 +1,7 @@
-    * CREADO POR: [Comunidad Eneboo](http://www.eneboo.org). 
-    * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-    * ULTIMA ACTUALIZACIÓN: 7 de febrero de 2015
-
-[Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-C%C3%B3mo-colaborar)
+* CREADO POR: [Comunidad Eneboo](http://www.eneboo.org) en https://github.com/eneboo/doc/wiki
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ULTIMA ACTUALIZACIÓN: 7 de febrero de 2015
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-C%C3%B3mo-colaborar)
 
 ----
 Este manual lo han creado miembros de la [Comunidad Eneboo](http://www.eneboo.org). Si deseas completarlo, este capítulo te interesa. ¿Crees que no tienes suficientes conocimientos técnicos? No te preocupes, verás que es muy fácil. ¡Anímate a colaborar!
