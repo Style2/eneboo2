@@ -1,10 +1,10 @@
-----
-* CREADO POR: miguelajsmaps@gmail.com
-* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 7 de febrero de 2015
-----
+    * CREADO POR: miguelajsmaps@gmail.com
+    * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+    * ULTIMA ACTUALIZACIÓN: 7 de febrero de 2015
 
-* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
+[Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
+
+----
 
 ....en construcción...paciencia.
 
