@@ -1,3 +1,9 @@
+* CREADO POR: [Comunidad Eneboo](http://www.eneboo.org) en https://github.com/eneboo/doc/wiki
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ULTIMA ACTUALIZACIÓN: 7 de febrero de 2015
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Introducci%C3%B3n)
+
+----
 # Qué es Eneboo Standard
 
 Eneboo Standard es un software para para la gestión de [pymes](http://es.wikipedia.org/wiki/Peque%C3%B1a_y_mediana_empresa). Se trata de un [ERP](http://es.wikipedia.org/wiki/Planificaci%C3%B3n_de_recursos_empresariales) que integra funciones de gestión, facturación y contabilidad.
