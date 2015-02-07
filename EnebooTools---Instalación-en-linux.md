@@ -27,11 +27,11 @@ https://github.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows
 
 www.ubuntu.com
 
-1. ir a "download" y descargar el archivo ISO de la más reciente....luego descomprimir en "mis documentos"....luego ejecutar "wubi.exe"...
+1. ir a "download" y descargar el archivo ISO de la más reciente (OJO!: NO INSTALAR LA LTS, NO SE INSTALÓ BIEN....luego descomprimir en "mis documentos"....luego ejecutar "wubi.exe"...
 
-1. añadir usuario y contraseña...dejar el resto como sugiere: 18Gb instalación (para 14.04 en 32bits en Windows XP; entorno "Ubuntu"; idioma "spanish")
+1. añadir usuario y contraseña...dejar el resto como sugiere: 18Gb instalación (para 14.04 LTS en 32bits en Windows XP; entorno "Ubuntu"; idioma "spanish")
 * NOTA: desactivar el firewall o permitir accesos...
-* error PERMISSION DENIED ...VER LOG...????
+* NOTA: NO INSTALAR LA LTS: (para 14.04 LTS en 32bits en Windows XP; entorno "Ubuntu"; idioma "spanish") error: PERMISSION DENIED ...VER LOG...????...resulta que no podía instalar desde la ISO y el tio va y se conecta para descargar lo q necesita de vete-a-saber-dónde???...y quién le ha dado permiso?....borro todo y PRUEBO LA OTRA: ver.14.10
 
 #####OPCIÓN B: INSTALAR UBUNTU DESDE CERO FORMATEANDO EL DISCO:
 
