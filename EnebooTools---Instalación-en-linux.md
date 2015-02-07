@@ -1,8 +1,7 @@
-    * CREADO POR: miguelajsmaps@gmail.com
-    * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-    * ULTIMA ACTUALIZACIÓN: 7 de febrero de 2015
-
-[Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
+* CREADO POR: miguelajsmaps@gmail.com
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ULTIMA ACTUALIZACIÓN: 7 de febrero de 2015
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
 
 ----
 
@@ -32,6 +31,7 @@ www.ubuntu.com
 
 1. añadir usuario y contraseña...dejar el resto como sugiere: 18Gb instalación (para 14.04 en 32bits en Windows XP; entorno "Ubuntu"; idioma "spanish")
 * NOTA: desactivar el firewall o permitir accesos...
+* error PERMISSION DENIED ...VER LOG...????
 
 #####OPCIÓN B: INSTALAR UBUNTU DESDE CERO FORMATEANDO EL DISCO:
 
