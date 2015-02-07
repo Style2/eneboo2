@@ -1,3 +1,10 @@
+----
+* CREADO POR: miguelajsmaps@gmail.com
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ULTIMA ACTUALIZACIÓN: 7 de febrero de 2015
+----
+
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
 
 ....en construcción...paciencia.
 
@@ -6,7 +13,37 @@
 ###PASO 1: HACERSE CON UN LINUX
 Por qué? ...pues porque parece ser que necesitamos unas "librerías" para el programa Python...y no hay versión "viable" en Windows...
 
-...Tenemos por ahí un Ubuntu...
+...Tenemos por ahí un Ubuntu:
+
+#####OPCIÓN A: INSTALAR VIRTUALBOX CON UBUNTU 
+
+Para hacerlo hay que seguir estos pasos:
+https://github.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows
+
+...pero la velocidad es muy lenta...
+
+#####OPCIÓN B: INSTALAR UBUNTU COMO PARTICIÓN JUNTO A WINDOWS:
+
+1. Descargar el ejecutable de Ubuntu, visitando desde Windows:
+
+www.ubuntu.com
+
+1. ir a "download" y descargar el archivo ISO de la más reciente....luego descomprimir en "mis documentos"....luego ejecutar "wubi.exe"...
+
+1. añadir usuario y contraseña...dejar el resto como sugiere: 18Gb instalación (para 14.04 en 32bits en Windows XP; entorno "Ubuntu"; idioma "spanish")
+* NOTA: desactivar el firewall o permitir accesos...
+
+#####OPCIÓN B: INSTALAR UBUNTU DESDE CERO FORMATEANDO EL DISCO:
+
+1. Descargar el ejecutable de Ubuntu, visitando desde Windows:
+
+www.ubuntu.com
+
+...ir a "download" y descargar el archivo ISO de la más reciente....copiarlo en un CD o en un USB.
+
+1. Definir en la BIOS como prioridad de arranque, la unidad en la que tenemos el ISO.
+
+####CONSEJOS DE USO DE UBUNTU:
 
 ...parece que para acceder al "símbolo de sistema" hay que darle a "Ctrl" + "Alt" +  "F1" a "F6"...y para volver al entorno gráfico es:  "Ctrl" + "Alt" +  "F7"
 
