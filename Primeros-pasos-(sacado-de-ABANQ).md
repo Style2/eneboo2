@@ -1,3 +1,10 @@
+* CREADO POR: [ABANQ-Infosial](http://www.abanq.org) en https://www.abanq.org/documentacion/
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ULTIMA ACTUALIZACIÓN: 7 de febrero de 2015
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Primeros-pasos-(sacado-de-ABANQ))
+
+----
+
 #Primeros pasos con Abanq.
 En este breve documento veremos el funcionamiento general de la aplicación en cuanto a módulos, áreas y formularios.
 
