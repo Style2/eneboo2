@@ -1,7 +1,6 @@
 Hola,
 
-    Si quieres participar en la edición de este manual o por otras preguntas, envía un mensaje a: 
-
+**Si quieres participar en la edición de este manual o por otras preguntas, envía un mensaje a:** 
 miguelajsmaps@gmail.com
 
 * CLÁUSULA DE EXENCIÓN DE RESPONSABILIDAD: En estas páginas hay errores ortográficos, porque en su momento decidí abrir un nuevo github (mio personal) y no trabajar sobre el "oficial" por un tema de comodidad y agilidad a la hora de apuntar las cosas. Por eso hay una página que especifica la manera de conseguir descargarse las páginas y publicarlas en otro github...
