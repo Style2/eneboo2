@@ -3,7 +3,7 @@ Hola,
 **Si quieres participar en la edición de este manual o por otras preguntas, envía un mensaje a:** 
 miguelajsmaps@gmail.com
 
-* **CLÁUSULAs DE EXENCIÓN DE RESPONSABILIDAD**: 
+* **CLÁUSULAS DE EXENCIÓN DE RESPONSABILIDAD**: 
 * En estas páginas hay errores ortográficos, porque en su momento decidí abrir un nuevo github (mio personal) y no trabajar sobre el "oficial" por un tema de comodidad y agilidad a la hora de apuntar las cosas. Por eso hay una página que especifica la manera de conseguir descargarse las páginas y publicarlas en otro github...
 * ...no es el github oficial y yo lo uso para sustituir mis "notas" cuando estoy instalando algo (una especie de recordatorio de lo que hago para no olvidarme)....al hacerlo, no busco que sea "presentable", sino algo rápido y eficaz...
 * ...con el tiempo no tengo inconveniente en ir corrigiendo errores ortográficos y añadiendo fotos, pero no es la prioridad en mis páginas personales.
