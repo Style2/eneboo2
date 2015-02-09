@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 7 de febrero de 2015
+* ULTIMA ACTUALIZACIÓN: 9 de febrero de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
 
 ----
@@ -10,9 +10,7 @@
 ##PASOS DE INSTALACIÓN:
 
 ###PASO 1: HACERSE CON UN LINUX
-Por qué? ...pues porque parece ser que necesitamos unas "librerías" para el programa Python...y no hay versión "viable" en Windows...
-
-...Tenemos por ahí un Ubuntu:
+* Por qué? ...pues porque parece ser que necesitamos unas "librerías" para el programa Python...y no hay versión "viable" en Windows...
 
 #####OPCIÓN A: INSTALAR VIRTUALBOX CON UBUNTU 
 
@@ -23,7 +21,8 @@ https://github.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows
 
 #####OPCIÓN B: INSTALAR UBUNTU COMO PARTICIÓN JUNTO A WINDOWS:
 
-1. Descargar el ejecutable de Ubuntu, visitando desde Windows:
+######INTENTO 1 - DESASTRE:
+1.  Descargar el ejecutable de Ubuntu, visitando desde Windows:
 
 www.ubuntu.com
 
@@ -33,15 +32,15 @@ www.ubuntu.com
 * NOTA: desactivar el firewall o permitir accesos...
 * NOTA: NO INSTALAR LA LTS: (para 14.04 LTS en 32bits en Windows XP; entorno "Ubuntu"; idioma "spanish") error: PERMISSION DENIED ...VER LOG...????...resulta que no podía instalar desde la ISO y el tio va y se conecta para descargar lo q necesita de vete-a-saber-dónde???...y quién le ha dado permiso?....borro todo y PRUEBO LA OTRA: ver.14.10
 
+######INTENTO 2: PARECE QUE FUNCIONA...
+
+* Después de perder dos días enteros intentando instalar mi "maldecido hasta el aburrimiento" Linux-distro-Ubuntu-14.10 renuncio por su incapacidad de gestionar más de una partición primaria en un acer netbook aspire one de 1Gb (con sistema Windows-xp pregrabado en fábrica)
+
+* Usando algo llamado Netboot y formateando un USB, instalo Linux-distro-Lubuntu-14.04 para 32b, dando prioridad de arranque por BIOS al USB y con la opción de sobre-escribir la instalación windows-XP. También aplico la opción de descargar actualizaciones.
+
 #####OPCIÓN B: INSTALAR UBUNTU DESDE CERO FORMATEANDO EL DISCO:
 
-1. Descargar el ejecutable de Ubuntu, visitando desde Windows:
-
-www.ubuntu.com
-
-...ir a "download" y descargar el archivo ISO de la más reciente....copiarlo en un CD o en un USB.
-
-1. Definir en la BIOS como prioridad de arranque, la unidad en la que tenemos el ISO.
+Esto no lo he probado (o si...espero no haber perdido la partición de fábrica...) 
 
 ####CONSEJOS DE USO DE UBUNTU:
 
