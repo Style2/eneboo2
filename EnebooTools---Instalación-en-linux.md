@@ -40,7 +40,8 @@ www.ubuntu.com
 
 #####OPCIÓN B: INSTALAR UBUNTU DESDE CERO FORMATEANDO EL DISCO:
 
-Esto no lo he probado (o si...espero no haber perdido la partición de fábrica...) 
+* Esto no lo he probado (o si...espero no haber perdido la partición de fábrica...) 
+* Ejecuto desde consola "df -h" ....y si, ya puedo decir adiós Windows-xp: no aparece la partición por ningún lado...
 
 ####CONSEJOS DE USO DE UBUNTU:
 
