@@ -82,7 +82,19 @@ Para tener el programa funcionando, se recomienda:
     * lxml (python-lxml) (Parser de XML)
     * psycopg (python-psycopg) (Driver de base de datos PostgreSQL)
     * pyqt4 (python-pyqt4) (Enlace de Qt4 para GUI)
-   
+
+#####PASOS:
+
+1. Desde el navegador Firefox de Linux voy a www.python.org/downloads y descargo la 2.7.9.....12 megas solo?...descomprime....entro en carpeta...ejecuto setup.py?....nada....y install-sh?....nada
+
+1. Leer instrucciones: https://wiki.python.org/moin/BegginersGuide
+
+1. Verificar la instalación: ir a consola (Ctrl+Alt+F1) y teclear "Python"...sale:
+     Python 2.7.6
+
+* NOTA ...y la 2.7.9 ???
+
+
 --------
 
 ###PASO 3: CLONAR EL GITHUB DE ENEBOO-TOOLS:
