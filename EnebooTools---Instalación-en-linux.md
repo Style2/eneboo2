@@ -91,11 +91,15 @@ Para tener el programa funcionando, se recomienda:
 
 1. Verificar la instalación: ir a consola (Ctrl+Alt+F1) y teclear "Python"...sale:
 
-     Python 2.7.6 (default, Mar 22 2014)
-     >>>
+      $python
+      Python 2.7.6 (default, Mar 22 2014)
+      >>>
 
 * NOTA ...y la 2.7.9 ???
 
+1. Verificar las librerias
+
+      $pydoc modules |more
 
 --------
 
