@@ -90,7 +90,9 @@ Para tener el programa funcionando, se recomienda:
 1. Leer instrucciones: https://wiki.python.org/moin/BegginersGuide
 
 1. Verificar la instalación: ir a consola (Ctrl+Alt+F1) y teclear "Python"...sale:
-     Python 2.7.6
+
+     Python 2.7.6 (default, Mar 22 2014)
+     >>>
 
 * NOTA ...y la 2.7.9 ???
 
