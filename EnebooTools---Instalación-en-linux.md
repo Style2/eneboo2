@@ -101,6 +101,8 @@ Para tener el programa funcionando, se recomienda:
 
       $pydoc modules |more
 
+* lxml.de/installation.html
+
 --------
 
 ###PASO 3: CLONAR EL GITHUB DE ENEBOO-TOOLS:
