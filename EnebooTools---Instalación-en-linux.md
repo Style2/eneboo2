@@ -49,7 +49,7 @@ www.ubuntu.com
 
 ###PASO 2: INSTALAR PYTHON:
 
-#####Y QUE DEMONIOS ES PYTHON?
+#####2.A...Y QUE DEMONIOS ES PYTHON?
 
 
 https://www.python.org/
@@ -63,7 +63,7 @@ eN 1995, van Rossum lanzó la iniciativa Computer Programming for Everybody (CP4
 Python fue diseñado para ser leído con facilidad. Una de sus características es el uso de palabras donde otros lenguajes utilizarían símbolos. Por ejemplo, los operadores lógicos !, || y && en Python se escriben not, or y and, respectivamente.
 
 
-##### REQUISITOS MÍNIMOS (Dependencias)
+##### 2.b REQUISITOS MÍNIMOS (Dependencias)
 
 https://github.com/gestiweb/eneboo-tools/blob/master/README.rst
 
@@ -83,7 +83,7 @@ Para tener el programa funcionando, se recomienda:
     * psycopg (python-psycopg) (Driver de base de datos PostgreSQL)
     * pyqt4 (python-pyqt4) (Enlace de Qt4 para GUI)
 
-#####PASOS:
+#####2.c-PASO A-INSTALAR PYTHON: (Linux ya lo trae de fabrica) 
 
 1. Desde el navegador Firefox de Linux voy a www.python.org/downloads y descargo la 2.7.9.....12 megas solo?...descomprime....entro en carpeta...ejecuto setup.py?....nada....y install-sh?....nada
 
@@ -91,26 +91,50 @@ Para tener el programa funcionando, se recomienda:
 
 1. Verificar la instalación: ir a consola (Ctrl+Alt+F1) y teclear "Python"...sale:
 
-      $python
-      Python 2.7.6 (default, Mar 22 2014)
-      >>>
+      `$python`
+      `Python 2.7.6 (default, Mar 22 2014)`
+      `>>>`
 
 * NOTA ...y la 2.7.9 ???
 
-1. Verificar las librerias
+1. Verificar las librerias?... 
+       `$pydoc modules |more`
 
-      $pydoc modules |more
+#####2.c-PASO B-INSTALAR LIBXML2 y LIBXSLT:
 
-* lxml.de/installation.html
+        http://xmlsoft.org/downloads.html (re-dirige a ftp://xmlsoft.org/libxml2/)
 
---------
+* descargo el "latest_libxml2" y el "latest_libxslt" que los almacena en: /home/linux/Descargas
 
-###PASO 3: CLONAR EL GITHUB DE ENEBOO-TOOLS:
+* ir a la consola-linux (ctrl+alt+F1):
+  `sudo apt-get install libxml2-dev libxslt-dev python-dev`
 
-https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO
+* aqui colocar las 2 capturas de pantalla (scrot en linux-lubuntu....o camara del movil....triste)
 
-* 4.Una vez instalado vas a PROGRAMAS-GITHUB y le das a "GITHUB"....se abre una pantalla en blanco....
-* 5.Vas ARRIBA-DERECHA a la rueda dentada y le das a "OPEN IN GIT SHELL", entonces se abre una ventana parecida al MSDOS de windows con unas letras en colores entre corchetes...
+###PASO 3: CLONAR EL GITHUB DE ENEBOO-TOOLS (eneboo-modules y enboo-features):
+
+https://github.com/gestiweb/eneboo-tools
+
+* En linux es distinto a windows...ayuda:
+
+https://help.github.com/articles/set-up-git/#platform-linux
+
+#####PASO 3.A.-INSTALAR GITHUB:
+
+http://git-scm.com/downloads
+
+Ir a la consola-linux (ctrl+alt+F1) y poner (para linux-Debian/Ubuntu):
+
+`$ sudo apt-get install git`
+
+* aqui poner otra captura-foto
+
+#####PASO 3.B.-DESCARGAR ENEBOO-MODULES:
+
+1. Aceptas el ejecutable y se instala.
+1. Eliges un directorio de trabajo en el ordenador local
+1. Una vez instalado vas a PROGRAMAS-GITHUB y le das a "GITHUB"....se abre una pantalla en blanco....
+1. Vas ARRIBA-DERECHA a la rueda dentada y le das a "OPEN IN GIT SHELL", entonces se abre una ventana parecida al MSDOS de windows con unas letras en colores entre corchetes...
 
 git clone https://github.com/gestiweb/eneboo-tools
 
