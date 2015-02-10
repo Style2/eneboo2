@@ -123,36 +123,38 @@ https://help.github.com/articles/set-up-git/#platform-linux
 
 http://git-scm.com/downloads
 
-Ir a la consola-linux (ctrl+alt+F1) y poner (para linux-Debian/Ubuntu):
+* Ir a la consola-linux (ctrl+alt+F1) y poner (para linux-Debian/Ubuntu):
 
 `$ sudo apt-get install git`
 
 * aqui poner otra captura-foto
+* definir el usuario y cuenta de email:
+
+`ctrl+alt+F1`
+`$ git config --global user.name "Miguel-J"`
+`$ git config --global user.email "miguelajsmaps@gmail.com"`
+`ctrl+alt+F7`
 
 #####PASO 3.B.-DESCARGAR ENEBOO-MODULES:
 
-1. Aceptas el ejecutable y se instala.
-1. Eliges un directorio de trabajo en el ordenador local
-1. Una vez instalado vas a PROGRAMAS-GITHUB y le das a "GITHUB"....se abre una pantalla en blanco....
-1. Vas ARRIBA-DERECHA a la rueda dentada y le das a "OPEN IN GIT SHELL", entonces se abre una ventana parecida al MSDOS de windows con unas letras en colores entre corchetes...
+`$ git clone https://github.com/gestiweb/eneboo-tools`
 
-git clone https://github.com/gestiweb/eneboo-tools
+* ...y al darle a ENTER lo pone como subdirectorio en el directorio desde donde ejecutas el "git clone",nmi caso:
 
-* ...y al darle a ENTER lo pone como subdirectorio en el directorio desde donde ejecutas el "git clone"
+`/home/linux`
+
 * para cambiar de directorio usar "cd .." o "cd subdirectorio"
 
 
 ###PASO 4: Instalación
 
+* meterse en el subdirectorio de eneboo-tools:
 
+`$ cd eneboo-tools`
 
-La instalación recomendada es enlazar los comandos en /usr/local/bin 
+* escribir, en mi caso:
 
-Hemos creado un Makefile que lo hace automáticamente al lanzar el comando::
-    
-    $ sudo make install
-    
-Si se quiere realizar manualmente, se puede hacer del siguiente modo::
+    `$ sudo ln -s $HOME/git/eneboo-tools/eneboo-mergetool /usr/local/bin/eneboo-mergetool`
 
-    $ sudo ln -s $HOME/git/eneboo-tools/eneboo-mergetool /usr/local/bin/eneboo-mergetool
-otro dia ;-)
+###PASO 5: EJEMPLOS-INSTALAR ENEBOO
+
