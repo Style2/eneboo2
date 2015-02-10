@@ -156,5 +156,20 @@ http://git-scm.com/downloads
 
     `$ sudo ln -s $HOME/git/eneboo-tools/eneboo-mergetool /usr/local/bin/eneboo-mergetool`
 
+* ni caso?
+
+* la opción automática no funcionó:
+`$ sudo make install`
+
+* el problema es que no estaba bien instalado "make" en el PATH:
+`$ sudo apt-get remove make`
+`$ sudo apt-get install make`
+
+* ahora si:
+`$ sudo make install`
+`La carpeta de trabajo local es: /home/linux/eneboo-tools`
+`ln -sf `pwd`/eneboo-* /usr/local/bin/`
+`$ `
+
 ###PASO 5: EJEMPLOS-INSTALAR ENEBOO
 
