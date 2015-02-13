@@ -10,6 +10,7 @@
 1. [Instalación básica-standard](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Instalaci%C3%B3n)
 1. [Instalación básica-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Instalacion-del-programa-UNIV.SEVILLA)
 1. [Instalación de módulos-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Instalacion-modulos-UNIV.SEVILLA)
+1. [Instalación de HEIDI-Gestor base de datos MySQL](https://github.com/Miguel-J/eneboo/wiki/Instalacion-HEIDI-gestor-base-de-datos-MySQL)
 
 ---
 ####PARA EL USUARIO:
