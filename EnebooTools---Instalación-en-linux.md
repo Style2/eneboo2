@@ -1,11 +1,9 @@
 * CREADO POR: miguelajsmaps@gmail.com
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 9 de febrero de 2015
+* ULTIMA ACTUALIZACIÓN: 13 de febrero de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
 
 ----
-
-....en construcción...paciencia.
 
 ##PASOS DE INSTALACIÓN:
 
@@ -21,7 +19,7 @@ https://github.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows
 
 #####OPCIÓN B: INSTALAR UBUNTU COMO PARTICIÓN JUNTO A WINDOWS:
 
-######INTENTO 1 - DESASTRE:
+######INTENTO 1 - (NO FUNCIONÓ...):
 1.  Descargar el ejecutable de Ubuntu, visitando desde Windows:
 
 www.ubuntu.com
@@ -56,9 +54,9 @@ https://www.python.org/
 
 http://es.wikipedia.org/wiki/Python
 
-Se trata de un lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional.Es administrado por la Python Software Foundation. Posee una licencia de código abierto.
+Se trata de un lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es administrado por la Python Software Foundation. Posee una licencia de código abierto.
 
-eN 1995, van Rossum lanzó la iniciativa Computer Programming for Everybody (CP4E), con el fin de hacer la programación más accesible a más gente, con un nivel de 'alfabetización' básico en lenguajes de programación, similar a la alfabetización básica en inglés.
+En 1995 van Rossum, el creador, lanzó la iniciativa Computer Programming for Everybody (CP4E), con el fin de hacer la programación más accesible a más gente, con un nivel de 'alfabetización' básico en lenguajes de programación, similar a la alfabetización básica en inglés.
 
 Python fue diseñado para ser leído con facilidad. Una de sus características es el uso de palabras donde otros lenguajes utilizarían símbolos. Por ejemplo, los operadores lógicos !, || y && en Python se escriben not, or y and, respectivamente.
 
@@ -83,7 +81,7 @@ Para tener el programa funcionando, se recomienda:
     * psycopg (python-psycopg) (Driver de base de datos PostgreSQL)
     * pyqt4 (python-pyqt4) (Enlace de Qt4 para GUI)
 
-#####2.c-PASO A-INSTALAR PYTHON: (Linux ya lo trae de fabrica) 
+#####2.c-PASO A-INSTALAR PYTHON: (Linux ya lo trae de fábrica) 
 
 1. Desde el navegador Firefox de Linux voy a www.python.org/downloads y descargo la 2.7.9.....12 megas solo?...descomprime....entro en carpeta...ejecuto setup.py?....nada....y install-sh?....nada
 
@@ -95,7 +93,7 @@ Para tener el programa funcionando, se recomienda:
       `Python 2.7.6 (default, Mar 22 2014)`
       `>>>`
 
-* NOTA ...y la 2.7.9 ???
+* NOTA ...y la 2.7.9 ??? (...hay que instalarla)
 
 1. Verificar las librerias?... 
        `$pydoc modules |more`
@@ -106,16 +104,20 @@ Para tener el programa funcionando, se recomienda:
 
 * descargo el "latest_libxml2" y el "latest_libxslt" que los almacena en: /home/linux/Descargas
 
-* ir a la consola-linux (ctrl+alt+F1):
+* ir a la consola-linux (ctrl+alt+F1) e instalarlas con:
+
   `sudo apt-get install libxml2-dev libxslt-dev python-dev`
 
 * aqui colocar las 2 capturas de pantalla (scrot en linux-lubuntu....o camara del movil....triste)
 
-###PASO 3: CLONAR EL GITHUB DE ENEBOO-TOOLS (eneboo-modules y enboo-features):
+###PASO 3: CLONAR EL GITHUB DE ENEBOO-TOOLS (eneboo-modules y eneboo-features): 
+
+* NOTA: Aquí pongo las instrucciones para Linux, para Windows hay otra página en este github)
+* Github de donde descargar los archivos:
 
 https://github.com/gestiweb/eneboo-tools
 
-* En linux es distinto a windows...ayuda:
+* En linux es distinto a windows...página para ayuda extra:
 
 https://help.github.com/articles/set-up-git/#platform-linux
 
@@ -131,15 +133,18 @@ http://git-scm.com/downloads
 * definir el usuario y cuenta de email:
 
 `ctrl+alt+F1`
+
 `$ git config --global user.name "Miguel-J"`
+
 `$ git config --global user.email "miguelajsmaps@gmail.com"`
+
 `ctrl+alt+F7`
 
 #####PASO 3.B.-DESCARGAR ENEBOO-MODULES:
 
 `$ git clone https://github.com/gestiweb/eneboo-tools`
 
-* ...y al darle a ENTER lo pone como subdirectorio en el directorio desde donde ejecutas el "git clone",nmi caso:
+* ...y al darle a ENTER lo pone como subdirectorio en el directorio desde donde ejecutas el "git clone",en mi caso:
 
 `/home/linux`
 
@@ -152,24 +157,31 @@ http://git-scm.com/downloads
 
 `$ cd eneboo-tools`
 
-* escribir, en mi caso:
+* para instalarlo manualmente, escribir, en mi caso: (esto no funcionó...)
 
     `$ sudo ln -s $HOME/git/eneboo-tools/eneboo-mergetool /usr/local/bin/eneboo-mergetool`
 
-* ni caso?
 
-* la opción automática no funcionó:
+* para la opción de instalación automática, escribir:
+
 `$ sudo make install`
 
-* el problema es que no estaba bien instalado "make" en el PATH:
+* pero este no funcionó porque no estaba bien instalado "make" en el PATH:
+
 `$ sudo apt-get remove make`
+
 `$ sudo apt-get install make`
 
 * ahora si:
+
 `$ sudo make install`
+
 `La carpeta de trabajo local es: /home/linux/eneboo-tools`
+
 `ln -sf `pwd`/eneboo-* /usr/local/bin/`
+
 `$ `
 
 ###PASO 5: EJEMPLOS-INSTALAR ENEBOO
 
+Ver resto de páginas del wiki
