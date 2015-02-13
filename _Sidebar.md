@@ -5,6 +5,7 @@
 
 ####INSTALACION:
 1. [Instalación en windows](https://github.com/Miguel-J/eneboo/wiki/Instalaci%C3%B3n-en-windows)
+1. [Instalación servidor MySQL para Windows&Mac-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Instalacion-Servidor-MySQL-UNIV.SEVILLA)
 1. [Instalación básica-standard](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Instalaci%C3%B3n)
 1. [Instalación básica-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Instalacion-del-programa-UNIV.SEVILLA)
 1. [Instalación de módulos-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Instalacion-modulos-UNIV.SEVILLA)
