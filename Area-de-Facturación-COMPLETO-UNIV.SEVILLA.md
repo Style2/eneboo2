@@ -4,27 +4,30 @@
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Area-de-Facturaci%C3%B3n-COMPLETO-UNIV.SEVILLA)
 
 ----
-#EN CONSTRUCCIÓN
+###EN CONSTRUCCIÓN
 
 
 
 
 
 
-##Sistemas de Información para las Finanzas y la Contabilidad
+#Sistemas de Información para las Finanzas y la Contabilidad
 
+-
 ##                Curso 20  /20
-***        yyy
+             
 
-
-
-
-
+<
+<
+>
+--
 ###Tema 3. Sistemas ERP (Enterprise Resource Planning). Práctica Eneboo-FACTURACIÓN
 
+---
 ###Parte I. El Sistema de Información empresarial y los Sistemas de Planificación de Recursos Empresariales (ERP). 
 
-###Introducción.
+--
+##Introducción.
 
 
 
@@ -33,6 +36,7 @@ En este apartado se analizarán los siguientes aspectos en relación con la apli
 1. Arquitectura de Eneboo.
 1. Explicación breve de los principales botones de la aplicación.
 
+---
 ####Arquitectura de Eneboo:
 
 * La aplicación ERP AbanQ se basa en la tecnología Cliente-Servidor, se trata realmente de un programa cliente de bases de datos que se instala en el ordenador del usuario. Podemos decir, por tanto, que AbanQ permite interpretar los datos pedidos al gestor de bases de datos instalado en el servidor, en nuestro caso PostgreSQL, utilizando el lenguaje SQL, para la posterior presentación al usuario de la información.
@@ -46,7 +50,8 @@ En este apartado se analizarán los siguientes aspectos en relación con la apli
 
 * La potencia de usar estándares como el lenguaje SQL, permite a esta aplicación funcionar con distintos gestores de bases de datos, así se podría conectar tanto a un servidor con PostgreSQL como con MySQL. En futuras versiones será compatible también con servidores Oracle SQL. Para más información sobre la tecnología que subyace en la base de AbanQ leer el documento sobre la Arquitectura Abierta de Aplicaciones Dinámicas (A3D) que se encuentra en http://abanq.org/documentacion/documento.php?ref=tutorial1.
 
-*Explicación breve de los botones utilizados en el programa.*
+---
+####Explicación breve de los botones utilizados en el programa.
 
 * Aceptar los cambios e ir al primer registro (F5).
 * Aceptar los cambios e ir al registro anterior (F6).
@@ -65,7 +70,8 @@ En este apartado se analizarán los siguientes aspectos en relación con la apli
 
  Buscar valor en tabla relacionada
 
-####Acceso y salida del programa
+--
+##Acceso y salida del programa
 
 * Para entrar en el ERP ir a Inicio/programas/AbanQ. Se abrirán dos ventanas desde donde accederemos a la base de datos envoltosa con el botón Conectar. No usen en el nombre de la base de datos acentos, eñes, ni cualquier otro carácter extraño al idioma inglés, pues dará error.
 
@@ -81,6 +87,7 @@ En este apartado se analizarán los siguientes aspectos en relación con la apli
 
 * Las restantes áreas o subsistemas de la empresa no los veremos ni utilizaremos en este manual.
 
+--
 ###Personalización de la aplicación para la empresa Envoltosa
 
 Veremos aquí cómo introducir los datos básicos de la empresa y los referentes a su fiscalidad.
@@ -143,7 +150,8 @@ Tras introducir los datos pulsaremos el botón aceptar [].
 * Para terminar la ejecución del programa es posible pulsar sobre el botón marcado con una X [ ] para cada ventana de los módulos abiertos, situado en la parte derecha de la barra de títulos, y finalmente en el botón Salir () de la ventana principal del programa. Si hiciéramos directamente esto último, sin cerrar cada una de las ventanas de módulos, la próxima vez que se inicie el programa seguirá todo abierto, es decir, como estaba al Salir del programa.
 Para saber el nombre y la función de los botones, basta con mantener inmóvil el puntero del ratón sobre el botón deseado, durante unos segundos, para que aparezca un pequeño texto con su descripción.
 
-#####Menú Fiscalidad
+---
+####Menú Fiscalidad
 Área de Facturación>Principal/Fiscalidad
 
 ######Contenido de Fiscalidad:
@@ -268,7 +276,7 @@ Para insertar la subcuenta de Efectos comerciales en gestión de cobro, volvemos
 
 
 
-
+--
 * Una vez completada la configuración de los Datos fiscales continuamos con la configuración del menú Fiscalidad del Área de Facturación.
 
 ####La tercera opción de Fiscalidad es Impuestos.
@@ -279,7 +287,7 @@ Por defecto, el programa ya tiene configurado tres códigos de IVA, uno para el 
 
 * En esta opción de Impuestos se especifican los distintos tipos de IVA que se van a utilizar en el programa. Para añadir o modificar un tipo de IVA, se nos piden los siguientes datos: Código, se refiere a una serie de caracteres alfanuméricos con el que se identificará a este tipo de I.V.A. en el resto del programa; Descripción; % I.V.A., el porcentaje utilizado en este tipo; y % Recargo, que se refiere al porcentaje de recargo de equivalencia que lleva asociado el tipo de IVA que estemos dando de alta. Aceptaremos todos estos datos por defecto.
 
-*ATENCIÓN*: Si se cambia el porcentaje de un tipo de I.V.A., éste se modificará también en las facturas ya creadas. Para evitar los errores que puede ocasionar esta forma de operar, debemos utilizar la pestaña “Periodos” de forma que podamos registrar las modificaciones en los porcentajes de IVA (por ejemplo, cambio del 18% al 21%) asociados a un mismo tipo de IVA (por ejemplo, IVA General) como resultado de cambios normativos que serán de aplicación durante parte de un ejercicio económico (por ejemplo, subida de IVA en facturas a partir del 01/09/2012).
+**ATENCIÓN: Si se cambia el porcentaje de un tipo de I.V.A., éste se modificará también en las facturas ya creadas. Para evitar los errores que puede ocasionar esta forma de operar, debemos utilizar la pestaña “Periodos” de forma que podamos registrar las modificaciones en los porcentajes de IVA (por ejemplo, cambio del 18% al 21%) asociados a un mismo tipo de IVA (por ejemplo, IVA General) como resultado de cambios normativos que serán de aplicación durante parte de un ejercicio económico (por ejemplo, subida de IVA en facturas a partir del 01/09/2012).**
 En este caso, los porcentajes del impuesto se indican en la pestaña
 
 * Comenzamos, por tanto, a incluir los distintos tipos de IVA comenzando por el IVA General. Para ello, como puede recordarse, accedemos al Área de Facturación> Módulo Principal>menú Fiscalidad> Impuestos.
@@ -373,12 +381,13 @@ Es importante anotar que aunque estas subcuentas aparecen incluidas en la tabla 
 *ATENCIÓN*: En el caso de que sólo se teclee en el campo correspondiente los dígitos de la subcuenta y no se hayan dado de alta en la contabilidad no se generará correctamente ningún asiento contable asociado a ellas.
 
 
-
+--
 ###Área de Facturación.
 
 Tablas generales
 Área Facturación>Principal/Tablas Generales
 
+---
 * Contenido de Tablas Generales:
 1. Cuentas bancarias
 1. Bancos
@@ -396,11 +405,13 @@ Tablas generales
 
 * Ya tenemos creada y seleccionada nuestra nueva empresa, pero antes de poder trabajar con ella es necesario añadir una serie de datos iniciales, sin los que no se podrá trabajar: formas de pago, cuentas bancarias, etc. Para ello se utiliza, entre otros, el menú TABLAS GENERALES y el menú PRINCIPAL del módulo Principal en el Área de Facturación. Comenzaremos dando de alta los datos que se solicitan en TABLAS GENERALES, ya que son necesarios para crear luego las fichas de clientes y demás.
 
+---
 #####Cuentas bancarias.
 
 La primera opción de Tablas Generales es la de Cuentas bancarias, desde donde añadiremos los datos de las cuentas bancarias con las que trabaja normalmente nuestra empresa, tanto desde donde se harán los pagos a nuestros proveedores como donde se recogerán las remesas de los recibos de nuestros clientes. Esta opción ya la hemos estudiado con anterioridad al tratar la configuración de los modelos fiscales.
 
 
+---
 #####Bancos
 
 La segunda opción de Tablas generales es Bancos, donde observaremos que el banco con el que trabaja la empresa, el Zaragozano ya está creado por defecto. En esta opción se podrán dar de alta además las sucursales de dichos bancos donde se recogen las cuentas con las que se trabajará en el programa, tanto las de Envoltosa como las de sus proveedores y clientes. Demos de alta a CajaSol con el número 2106.
@@ -408,13 +419,13 @@ La segunda opción de Tablas generales es Bancos, donde observaremos que el banc
 Consultamos la sucursal incluida anterioremente de nuestra entidad el Banco Zaragozano:
 
 
-
+---
 #####Descuentos
 
 La tercera opción de Tablas generales es Descuentos, se aplicará tanto para registrar los aplicables a clientes como para los que nos aplican los proveedores. Introduciremos los 2 tipos de descuentos: uno para los clientes mayoristas, con el código A (C si ya existiera) del 7% y otro para los clientes minoristas, con el código B (D si ya existiera) del 4%.
 
 
-
+---
 #####Formas de pago
 
 La cuarta opción de Tablas generales es Formas de pago, desde donde introduciremos las 3 formas de pago que viene utilizando la empresa, tanto para el cobro a los clientes como para el pago a sus proveedores.
@@ -428,7 +439,7 @@ La cuarta opción de Tablas generales es Formas de pago, desde donde introducire
 * También aparecen las siguientes opciones: Pago por domiciliación y Ajuste a meses completos. El primero de ellos debe activarse en caso de que se desee que al imprimir la factura aparezca la cuenta bancaria del cliente y el segundo si se desea que los recibos que se generen calculen su vencimiento por meses exactos cuando su periodicidad en días sea un múltiplo de 30, tanto en el primer recibo como en los posteriores. 
 Supongamos el siguiente caso: una factura emitida el 26 de noviembre, se debe pagar en tres plazos; el primer recibo a los 20 días (se contarán a partir del día siguiente de la emisión del recibo) y los dos restantes a 30 y 60 días después de realizar el primer pago.
 
-*Solución:* 
+**Solución:** 
 
 A) Si no se activase la casilla Ajuste a meses completos, el programa haría lo siguiente:
 
@@ -533,7 +544,7 @@ Días aplazado: 20 días, Número de plazos: 3 plazos, Cadencia: 30 días (aquí
 
 * Una vez realizada la práctica la ventana de Formas de pago quedaría de la siguiente forma:
 
-
+---
 #####Tipos de Rappel
 
 La quinta opción de Tablas generales es Tipos de Rappel, desde donde introduciremos los rappels aplicados por la empresa a sus clientes. Los rappels son descuentos que se aplican a los clientes si llegan a un determinado volumen de ventas prefijado por el usuario, definidos con límite de unidades monetarias. Para definirlos es necesario introducir un código identificativo, un límite inferior y otro superior y un porcentaje de descuento. Es posible indicar, en “Intervalos”, un descuento distinto a volúmenes de compra diferentes. 
@@ -553,7 +564,7 @@ Limite inferior: 600,01. Límite superior: 3.000. Descuento: 2%.
 Limite inferior: 3.000,01. Límite superior: 99.999.999.999. Descuento: 4%.
 
 
-
+---
 #####Agentes comerciales
 
 La sexta opción de Tablas generales es Agentes comerciales, desde donde introduciremos los datos del comercial de la empresa.
@@ -622,7 +633,7 @@ La ventana de Ejercicios Fiscales quedaría como sigue:
 
 Otros agentes para practicar dándolos de alta:
 
-Cód. agente: 2
+* Cód. agente: 2
 Apellidos: ORTEGA PÉREZ		Nombre: VIRGINIA
 DNI/CIF: 36996336P
 Dirección: PLAZA ALFARO, 14		Ciudad: VALENCIA
@@ -632,7 +643,7 @@ Departamento: Comercial
 IRPF: 15%
 Proveedor: (crear uno nuevo), Cuenta contable: 4100.102
 
-Cód. agente: 3
+* Cód. agente: 3
 Apellidos: REALES RUIZ		Nombre: ANGEL
 DNI/CIF: 15995115H
 Dirección: CALLE BASILICA, 23 	Ciudad: BARCELONA
@@ -642,7 +653,7 @@ Departamento: Comercial
 IRPF: 15%
 Proveedor: (crear uno nuevo), Cuenta contable: 4100.103
 
-Cód. agente: 4
+* Cód. agente: 4
 Apellidos: LOPEZ PIÑAS		Nombre: JOSE
 DNI/CIF: 35775335P
 Dirección: AVDA URUGUAY, 4		Ciudad: MADRID
@@ -652,11 +663,13 @@ Departamento: Comercial
 IRPF: 15%
 Proveedor: (crear uno nuevo), Cuenta contable: 4100.104
 
+---
 #####Departamentos
 
 La octava opción de Tablas generales es Departamentos, que hace referencia a las distintas áreas a las que pertenecen los trabajadores de la empresa. En nuestro ejemplo, ya está dado de alta en la aplicación el Departamento Comercial, al que pertenecen los agentes comerciales.
 
 
+---
 #####Grupos de clientes
 
 La décima opción de Tablas generales es Grupos de clientes, que permite agrupar los clientes de forma que sean tratados conjuntamente. Esto es útil cuando se trata de obtener informes y estadísticas, o cuando se quiere aplicar unas condiciones comerciales distintas a un grupo de clientes, como puede ser aplicarle una subida o una bajada en el precio base. En nuestro caso distinguiremos entre clientes que son a su vez empresas (MAYORISTAS) y particulares (MINORISTAS). Asimismo se darán de alta dos tarifas, si bien en un primer momento sólo se aplicará una reducción del 5% a los precios bases de los clientes mayoristas.
@@ -676,17 +689,20 @@ Incremento lineal y porcentual: 0 (sin precio Especial)
 Como puede observarse en la siguiente pantalla, dejaremos los campos Incremento Porcentual e Incremento Lineal a cero. Estas tarifas de ventas también se utilizan en el fichero maestro de artículos.
 
 
+---
 #####Divisas
 
 La undécima opción de Tablas generales es Divisas, donde aceptamos los datos relativos al euro, los cuales ya vienen definidos por defecto en el programa.
 
 Las dos últimas opciones son Países y Provincias, donde podemos consultar los datos relativos a nuestro país España, los cuales ya vienen por defecto.
 
+--
 ###Menú principal
 Área Facturación>Principal/Principal/Proveedores
 
 * En este menú se encuentran los ficheros relativos a los proveedores y clientes. 
 
+---
 #####Proveedores.
 
 Daremos de alta en este apartado la información relativa a los proveedores con los que se trabaja, ya que no es posible hacer compras a proveedores que no estén dados de alta. 
@@ -765,6 +781,7 @@ Forma de pago: CONT; Cuenta de pago: Banco Zaragozano.
 Carpeta Cuentas bancarias.
 Banco: Bankinter; Cuenta: 0128 2330 3321021022 (DC 85); Dirección: Los Naranjos, 75; Población: Valencia; Provincia: Valencia; País: ES .
 
+---
 #####Clientes.
 Área Facturación>Principal/Principal/Clientes
 
@@ -842,6 +859,7 @@ Banco: ZARAGOZANO; Cuenta: 0103 0182 1473691473 (DC 77); Dirección: AVDA DE LA 
 Carpeta Descuentos.
 Tipo descuento: B.
 
+---
 ###Artículos
 Área Facturación>Almacén/Almacén/Artículos
 
@@ -984,6 +1002,7 @@ Subcuenta de compras: 6.0
 Subcuenta de IRPF: 4751.0
 Subcuenta de ventas: 7.0 
 
+--
 #Gestión de compras
 
 En este menú se encuentran las opciones relativas a las compras del programa. Estudiaremos las siguientes:
@@ -993,10 +1012,12 @@ En este menú se encuentran las opciones relativas a las compras del programa. E
 1. Facturas rectificativas de proveedores.
 1. Tesorería/Recibos de proveedores.
 
-##Pedidos a proveedores 
+---
+###Pedidos a proveedores 
 Área de Facturación>Facturación/Compras
 
 En esta ventana realizaremos la siguiente práctica:
+
 1. Insertar registros. Tres pedidos nuevos.
 1. Botón generar albarán. Crear un albarán desde un pedido.
 1. Botón generar factura. Crear una factura desde un pedido.
@@ -1009,7 +1030,7 @@ En esta opción registraremos aquellos pedidos que se realicen a los proveedores
 
 Para dar de alta a un nuevo pedido pulsaremos sobre el botón Insertar registro.
 
-En primer lugar podremos cambiar la serie de facturación a la que pertenece dicho pedido (por defecto es la serie A). El resto de datos que conforma la cabecera del pedido se rellenan de forma automática por el programa.
+* En primer lugar podremos cambiar la serie de facturación a la que pertenece dicho pedido (por defecto es la serie A). El resto de datos que conforma la cabecera del pedido se rellenan de forma automática por el programa.
 
 
 En la pestaña Proveedor se incorporarán los datos del proveedor.
@@ -1064,7 +1085,7 @@ Una vez registrado el Albarán, observad cómo de forma automática ha cambiado 
 * Si lo abrimos y pulsamos el botón para ver la trazabilidad de documentos, veremos la relación del pedido con el albarán:
 
 
-*Nota*: Recordamos que la numeración del documento es la conjunción de Ejercicio/Serie/Número (EEEESSNNNNNN). En la imagen coincide el número tanto para el pedido como para el albarán (000001) pero cada uno sigue su propia numeración.
+**Nota**: Recordamos que la numeración del documento es la conjunción de Ejercicio/Serie/Número (EEEESSNNNNNN). En la imagen coincide el número tanto para el pedido como para el albarán (000001) pero cada uno sigue su propia numeración.
 Nos falta corregir la fecha del albarán (a 5 de octubre), ya que al crearlo tendrá como fecha la del ordenador, tal como podemos comprobar si consultamos los albaranes de compras (ir al Menú Compras/Albaranes). Esto motiva que tengamos que modificarla manualmente, acción que acometeremos pulsando el botón Modificar registro una vez seleccionado el último Albarán creado.
 
 * También desde albaranes podemos consultar la trazabilidad entre documentos, el documento editado (el albarán en este caso) aparece en la primera fila y los documentos de donde procede o que deriven de él aparecen en las filas inferiores. El número de fila NO informa del orden de creación, ese orden lo da la posición de más a la izquierda hasta la derecha (desde presupuestos hasta pagos).
@@ -1080,6 +1101,7 @@ La factura tendrá como fecha la del ordenador. Esto motiva que tengamos manualm
 * Observad como el estado del pedido facturado ha cambiado (ahora aparecerá Servido, Sí y Editable No).
 _____________________________________________________________________________________
 
+--
 ##Albaranes de proveedores
 Área de Facturación>Facturación/Compras
 
@@ -1135,7 +1157,8 @@ Botón Generar Factura
 
 * Provoca la generación automática de una factura a partir del albarán seleccionado. Como fecha de la misma aparecerá la que tenga el ordenador. Habrá que prestar atención Especial a la fecha de la factura, que habrá que modificar manualmente. Si la forma de pago generara algún recibo como Pagado, habría primero que editar el recibo en el módulo de Tesorería – Recibos a proveedores, eliminando ese pago en la parte inferior de la ventana de edición, tras lo cual podremos cambiar la fecha de factura.
 
-##Facturas de proveedores
+--
+###Facturas de proveedores
 Área de Facturación>Facturación/Compras
 
 * En esta ventana realizaremos la siguiente práctica:
@@ -1167,6 +1190,7 @@ Botón Asociar.
 * Los albaranes incluidos quedarán marcados como no pendientes de facturas, y no se podrán modificar. La nueva factura, al ser la forma de pago al contado, 
 Aparecerá como pagada, y no se podrá modificar salvo que se eliminen sus recibos en Área de Facturación | Tesorería | Tesorería |Recibos a proveedores.
 
+---
 ###Facturas rectificativas de proveedores
 
 * Podremos encontrarnos con los siguientes casos que obligan a realizar una factura rectificativa:
@@ -1217,6 +1241,7 @@ En el programa tendremos ahora una por la cantidad de artículos que se le compr
 
 Además del efecto económico, el abono repercute en el inventario en almacén pues supondrá la salida de mercancía, al entrar una cantidad negativa en almacén en la práctica está saliendo esa cantidad.
 
+---
 ##Tesorería/recibos de proveedores
 Área de Facturación> Tesorería/Tesorería/Recibos a Proveedores
 
@@ -1253,6 +1278,7 @@ Al aceptar verán que se ha dividido el recibo en dos.
 * Pagamos el primero de ellos con fecha de 18 de noviembre.
 
 
+---
 ###Gestión de ventas
 
 En este apartado vamos a estudiar todo el flujo de información y los documentos relativos a las ventas:
@@ -1264,10 +1290,12 @@ En este apartado vamos a estudiar todo el flujo de información y los documentos
 1. Tesorería/Recibos de clientes
 1. Tesorería/Remesas de clientes
 
+---
 ####Pedidos de clientes
 Área de Facturación> Facturación/Ventas
 
 En esta ventana realizaremos la siguiente práctica:
+
 1. Insertar registro. Creación de dos pedidos de clientes.
 1. Insertar registro con anticipo. Creación de un pedido pidiendo parte del importe total.
 1. Generar albarán a partir de un pedido.
@@ -1327,6 +1355,7 @@ Botón Generar Factura
 * Permite generar una factura a partir del pedido seleccionado. La fecha de la misma será la que tenga el sistema. Si en la misma figura como forma de pago al Contado, será imposible su modificación.
 
 
+---
 ####Albaranes a clientes
 Área de Facturación> Facturación/Ventas
 
@@ -1371,6 +1400,7 @@ Una vez generada la factura el estado del albarán habrá cambiado a Pte.Factura
 * Al generar la factura se crea el asiento contable automáticamente, el cual se modifica a la vez que la factura (miren la Fecha del asiento en la pestaña Contabilidad tras guardar el cambio y volver a abrir la factura).
 
 
+---
 ####Facturas a clientes
 Área de Facturación> Facturación/Ventas
 
@@ -1402,7 +1432,7 @@ Téngase en cuenta que sólo se pueden agrupar distintos albaranes en una factur
 * Una vez realizada la práctica, las ventanas de Pedidos, Albaranes y Facturas a clientes quedarían como se muestra a continuación.
 
 
-
+---
 ####Facturas rectificativas a clientes
 
 Podremos encontrarnos con los siguientes casos que obligan a realizar una factura rectificativa:
@@ -1413,6 +1443,7 @@ Podremos encontrarnos con los siguientes casos que obligan a realizar una factur
 
 * La gestión de las facturas es exactamente igual a la de los proveedores, por lo que nos remitimos a lo allí expuesto.
 
+---
 ####Tesorería/recibos a clientes
 
 A través de esta opción podremos ver cuándo y por qué importe se generarán los diferentes recibos, lo que nos ayudará al control de la tesorería y de los vencimientos. 
@@ -1436,7 +1467,7 @@ A través de esta opción podremos ver cuándo y por qué importe se generarán 
 * En el caso de que el recibo tenga como estado Pagado, y una vez registrado, junto al recibo se creará en nuestra contabilidad el asiento del pago, tal y como se recoge en la siguiente figura.
 
 
-
+---
 ####Devolución de recibos
 
 [24] Devolución el 1 de diciembre del recibo cobrado anteriormente. El cliente no tenía fondos suficientes en su cuenta bancaria.
@@ -1448,6 +1479,7 @@ A través de esta opción podremos ver cuándo y por qué importe se generarán 
 
 * En el caso de que el recibo figurase como Devuelto al seleccionarlo y pulsar sobre el botón Insertar registro de la sección Pagos y Devoluciones, se generaría un Pago.
 
+---
 ####Tesorería/remesas a clientes.
 
 La remesa es la entrega al banco de la empresa del listado de recibos de nuestros clientes. Se utiliza para facilitar los cobros, siendo nuestro banco el que intermedie con el resto de bancos de los clientes para cobrar los importes correspondientes.
@@ -1480,7 +1512,7 @@ La remesa es la entrega al banco de la empresa del listado de recibos de nuestro
 
 * Abran de nuevo los Recibos a Clientes, y devuelvan el recibo en Estado Pagado (fíjense también en la palabra REMESADO que aparece en la ventana abierta). Vuelvan a abrir la devolución (doble clic de ratón) para ver la pestaña Contabilidad.
 
-
+--
 ##ANEXO
 
 Los procesos de compra y venta descritos a lo largo de este manual han considerado que todas las actividades se realizan durante el mismo ejercicio económico (Ejercicio 1 en nuestro caso). 
