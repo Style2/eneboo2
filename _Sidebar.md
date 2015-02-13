@@ -26,6 +26,7 @@
 1. [Area Financiera o Contabilidad COMPLETO-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Area-Financiera-Contabilidad-COMPLETO-UNIV.SEVILLA)
 
 #####Area Inteligencia-Estadística
+1. [Area Inteligencia-estadistica](https://github.com/Miguel-J/eneboo/wiki/Manual-de-Inteligencia)
 
 #####Area Sistema
 1. [Area de sistema-VACIO](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-%C3%81rea-de-sistema)
