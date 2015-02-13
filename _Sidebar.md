@@ -11,13 +11,17 @@
 1. [Introducción General Eneboo](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Introducci%C3%B3n)
 1. [Primeros pasos-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Primeros-pasos-(sacado-de-ABANQ))
 1. [Primeros pasos-ENEBOO](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Primeros-pasos)
+
 #####Area Facturación
 1. [Area de facturación-ENEBOO](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-%C3%81rea-de-facturaci%C3%B3n)
 1. [Pasos en facturación COMPLETO-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Area-de-Facturaci%C3%B3n-COMPLETO-UNIV.SEVILLA)
 1. [Configurar Reports: diseñar impresión de facturas, informes, etc](https://github.com/Miguel-J/eneboo/wiki/eneboo-reports)
+
 #####Area Financiera-Contabilidad
 1. [Area Financiera o Contabilidad COMPLETO-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Area-Financiera-Contabilidad-COMPLETO-UNIV.SEVILLA)
-#####Area Inteligencia-Estadistica
+
+#####Area Inteligencia-Estadística
+
 #####Area Sistema
 1. [Area de sistema-VACIO](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-%C3%81rea-de-sistema)
 1. [Area de sistema-VACIO](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-%C3%81rea-financiera)
