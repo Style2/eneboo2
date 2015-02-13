@@ -3,6 +3,7 @@
 1. [Últimas modificaciones](https://github.com/Miguel-J/eneboo/wiki/_history)
 1. [Cómo colaborar en wiki eneboo](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-C%C3%B3mo-colaborar)
 
+---
 ####INSTALACION:
 1. [Instalación en windows](https://github.com/Miguel-J/eneboo/wiki/Instalaci%C3%B3n-en-windows)
 1. [Instalación servidor MySQL para Windows&Mac-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Instalacion-Servidor-MySQL-UNIV.SEVILLA)
@@ -10,6 +11,7 @@
 1. [Instalación básica-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Instalacion-del-programa-UNIV.SEVILLA)
 1. [Instalación de módulos-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Instalacion-modulos-UNIV.SEVILLA)
 
+---
 ####PARA EL USUARIO:
 1. [Introducción General Eneboo](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Introducci%C3%B3n)
 1. [Primeros pasos-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Primeros-pasos-(sacado-de-ABANQ))
@@ -31,6 +33,7 @@
 1. [Copias de Seguridad por MSDOS](https://github.com/Miguel-J/eneboo/wiki/INSTRUCCIONES-PARA-HACER-COPIAS-DE-SEGURIDAD-POR-MSDOS)
 1. [Cambiar iconos a los botones](https://github.com/Miguel-J/eneboo/wiki/C%C3%B3mo-cambiar-los-iconos-de-los-botones)
 
+---
 ####PARA LA PROGRAMACION:
 1. [GITHUB-Como instalarlo y usarlo-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO)
 1. [Programación 1-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Programaci%C3%B3n-1-(sacado-de-ABANQ))
@@ -40,6 +43,7 @@
 1. [EnebooTools para Windows-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows)
 1. [EnebooTools: Instalación en Linux-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
 
+---
 ####REPOSITORIOS DE ENEBOO:
 1. [ENEBOO OFICIAL: ](https://github.com/eneboo)
 1. [GESTIWEB: ](https://github.com/gestiweb)
@@ -47,6 +51,7 @@
 1. [DEZETAGE: ](https://github.com/dezetage)
 1. [Otros: ](https://github.com/Miguel-J/eneboo/wiki/REPOSITORIOS-DE-ENEBOO)
 
+---
 ####OTROS ENLACES:
 1. [WEB OFICIAL www.eneboo.org](http://www.eneboo.org/site/)
 1. [GRUPO DE CORREO OFICIAL GOOGLE](https://groups.google.com/forum/#!forum/eneboo)
