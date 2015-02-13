@@ -1,5 +1,6 @@
 1. [Pagina inicio de este repositorio](https://github.com/Miguel-J/eneboo)
 1. [Pagina inicio de este wiki](https://github.com/Miguel-J/eneboo/wiki)
+1. [Últimas modificaciones](https://github.com/Miguel-J/eneboo/wiki/_history)
 1. [Cómo colaborar en wiki eneboo](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-C%C3%B3mo-colaborar)
 
 ####INSTALACION:
