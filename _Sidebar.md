@@ -6,6 +6,7 @@
 ####INSTALACION:
 1. [Instalación en windows](https://github.com/Miguel-J/eneboo/wiki/Instalaci%C3%B3n-en-windows)
 1. [Instalación básica-standard](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Instalaci%C3%B3n)
+1. [Instalación de módulos-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Instalacion-modulos-UNIV.SEVILLA)
 
 ####PARA EL USUARIO:
 1. [Introducción General Eneboo](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Introducci%C3%B3n)
