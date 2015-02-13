@@ -1,3 +1,9 @@
+* CREADO POR: [ABANQ-Infosial](http://www.abanq.org) en https://www.abanq.org/documentacion/
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ULTIMA ACTUALIZACIÓN: 13 de febrero de 2015
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Programaci%C3%B3n-1-(sacado-de-ABANQ))
+
+----
 #Tutorial. Programación en Abanq (I). Primer contacto
 Este es el primero de una serie de tutoriales orientados a programadores y usuarios avanzados acerca de programación sobre Abanq. En este tutorial veremos cómo realizar una personalización básica y muy sencilla, pero que nos va a dar una idea de la flexibilidad de la aplicación y la facilidad con que se pueden realizar cambios sobre la estructura de los datos y el aspecto de los formularios. 
 
