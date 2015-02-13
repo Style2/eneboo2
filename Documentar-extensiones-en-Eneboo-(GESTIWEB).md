@@ -1,5 +1,9 @@
-Archivo original: [Gestiweb/eneboo-doc](https://github.com/gestiweb/eneboo-doc/blob/master/features/README.rst)
-Actualizado: 29-enero-2015
+* CREADO POR: [Gestiweb/eneboo-doc](https://github.com/gestiweb/eneboo-doc/blob/master/features/README.rst)
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ULTIMA ACTUALIZACIÓN: 13 de febrero de 2015
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Documentar-extensiones-en-Eneboo-(GESTIWEB))
+
+----
 
 ==================================
 Documentar Extensiones en Eneboo
