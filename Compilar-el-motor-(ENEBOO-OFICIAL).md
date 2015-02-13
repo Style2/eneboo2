@@ -1,5 +1,10 @@
-Archivo original: [ENEBOO/doc](https://github.com/eneboo/doc/wiki/Compilar-el-motor)
-Actualizado: 29-enero-2015
+* CREADO POR: [Comunidad Eneboo](http://www.eneboo.org) en https://github.com/eneboo/doc/wiki
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ULTIMA ACTUALIZACIÓN: 13 de febrero de 2015
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Compilar-el-motor-(ENEBOO-OFICIAL))
+
+----
+
 Compilar el motor
 =================================================
 
