@@ -1,10 +1,10 @@
 * CREADO POR: [Universidad de Sevilla](http://www.us.es): Mariano Aguayo Camacho; Esther Chávez Miranda; Miguel Ángel Domingo Carrillo; Guillermo Molleda Jimena
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 7 de febrero de 2015
+* ULTIMA ACTUALIZACIÓN: 13 de febrero de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Area-Financiera-Contabilidad-COMPLETO-UNIV.SEVILLA)
 
 ----
-#EN CONSTRUCCIÓN
+###EN CONSTRUCCIÓN
 https://github.com/Miguel-J/eneboo/wiki/Area-Financiera-Contabilidad-COMPLETO-UNIV.SEVILLA
 
 
@@ -12,26 +12,35 @@ https://github.com/Miguel-J/eneboo/wiki/Area-Financiera-Contabilidad-COMPLETO-UN
 
 
 
-Sistemas de Información para las Finanzas y la Contabilidad
-Curso 2013/14
+#Sistemas de Información para las Finanzas y la Contabilidad
+
+#Curso 20__/20__
 
 
 
 
 
+--
+##Tema 3. Sistemas ERP (Enterprise Resource Planning).
 
-Tema 3. Sistemas ERP (Enterprise Resource Planning). Práctica AbanQ-CONTABILIDAD
-Parte I. El Sistema de Información empresarial y los Sistemas de Planificación de Recursos Empresariales (ERP). 
+##Práctica Eneboo-CONTABILIDAD
+
+##Parte I. El Sistema de Información empresarial y los Sistemas de Planificación de Recursos Empresariales (ERP). 
 Área Financiera.
 
 Al igual que en el Área de Facturación lo primero que es necesario realizar es realizar la configuración. Recordemos que ya hemos realizado parte de esa configuración con anterioridad de forma simultánea a la configuración de la Facturación. En realidad, ambos procesos deben realizarse de forma simultánea por cada departamento responsable, pero a efectos pedagógicos, nosotros hemos preferido impartirlos secuencialmente. Ello facilitará la comprensión de los conceptos que se van a analizar.
+
 La configuración del Área Financiera se realiza en el Módulo Principal, Financiera, Configuración. Allí encontramos las siguientes opciones:
+
 1. Cuentas Especiales
-2. Conceptos
-3. Códigos de balance
-4. Códigos de balance 08
-5. Correspondencias 90-08
-Cuentas especiales.
+1. Conceptos
+1. Códigos de balance
+1. Códigos de balance 08
+1. Correspondencias 90-08
+
+
+--
+###Cuentas especiales.
 Área Financiera> Configuración/Cuentas especiales
 
 La opción Cuentas Especiales permite asignar una subcuenta determinada a un proceso automático del programa. Así, por ejemplo, al crear una subcuenta de IVA Soportado, es necesario que AbanQ sepa que el saldo de esta subcuenta recoge las cuotas soportadas por este impuesto y cuando se realice una anotación en el diario utilizando dicha cuenta, ese importe se anote también en la gestión fiscal del programa. De esta manera, podrá calcular correctamente la declaración de IVA, el modelo 347 y listar el libro registro de facturas recibidas. Lo mismo ocurre con el resto de tipos de subcuentas que aparece en el listado.
@@ -51,8 +60,8 @@ Descripción: NOMINA DEL MES
 Código: 03
 Descripción: COBRO POR CAJA
 
-
-Códigos de Balance.
+--
+###Códigos de Balance.
 Área Financiera>Configuración/Códigos de Balance
 
 Sirve para especificar a AbanQ la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias según el PGC anterior al del 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de AbanQ y de contabilidad.
@@ -61,7 +70,8 @@ Códigos de Balance 08.
 
 Sirve para especificar a AbanQ la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias con el plan contable de 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de AbanQ y de contabilidad.
 
-Correspondencias 90-08.
+--
+###Correspondencias 90-08.
 Área Financiera>Configuración/Correspondencias 90-08
 
 Sirve para especificar a AbanQ la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias para adaptar una contabilidad llevada según el PGC de 1990 al del 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de AbanQ y de contabilidad.
@@ -69,20 +79,24 @@ Cuadro de cuentas.
 Área Financiera>Principal/Cuadro de cuentas
 
 La opción de Cuadro de cuentas presenta las siguientes opciones:
+
 1. Grupo.
-2. Subgrupo.
-3. Cuenta.
-4. Subcuenta.
+1. Subgrupo.
+1. Cuenta.
+1. Subcuenta.
 
 Al crear el Plan contable de la empresa tras la creación del ejercicio, se dan de alta todos los datos básicos del mismo. Así, se copian en la empresa los registros necesarios tanto en todas estas tablas.
 
 Nótese que cada uno de los desgloses del plan contable se asigna a un determinado ejercicio. Esto quiere decir que tras la creación del ejercicio, siempre será necesario crear el plan contable de la empresa y que los saldos y movimientos registrados en cada subcuenta, se van a mantener independientes del resto de los ejercicios. Por esta razón, cuando se vaya a contabilizar una factura, ya sea de compra o venta, AbanQ comprobará que se contabiliza en el mismo ejercicio en el que se emite, de manera que no haya descuadres posteriores entre la facturación y la contabilidad.
 
 En el apartado Grupos, subgrupos y cuentas no es normal que se tengan que añadir nuevos registros a los existentes. No ocurre lo mismo con las subcuentas, que suelen personalizarse para cada empresa. Así no es lo mismo un plan contable de una empresa de enseñanza, que la de una empresa que se dedica a vender regalos, ya que los tipos de operaciones son distintos y las cuentas suelen recoger descripciones que hagan una referencia clara al hecho contable que van a registrar.
-La creación de una subcuenta se puede realizar de varias formas:
+
+*La creación de una subcuenta se puede realizar de varias formas:
+
 1. Creación automática. Cuando se crea una ficha de un proveedor o un cliente, AbanQ da de alta automáticamente la subcuenta asociada a la misma.
-2. Desde la opción Área Financiera>Principal/Cuadro de cuentas/Subcuentas, opción que veremos a continuación.
-3. Desde la gestión de asientos, de forma que el usuario pueda dar de alta la subcuenta que le interesa a la vez que registra el movimiento en ella.
+1. Desde la opción Área Financiera>Principal/Cuadro de cuentas/Subcuentas, opción que veremos a continuación.
+1. Desde la gestión de asientos, de forma que el usuario pueda dar de alta la subcuenta que le interesa a la vez que registra el movimiento en ella.
+
 Al crear las subcuentas de IVA en la personalización de la aplicación ya vimos cómo se crean subcuentas. No obstante, repetiremos el proceso para dotarlo de mayor claridad, al ser el IVA una subcuenta Especial.
 
 Al insertar una nueva cuenta se nos despliega la siguiente ventana:
@@ -107,7 +121,8 @@ Código: 6210000001
 Descripción: ALQUILER LOCAL COMERCIAL 
 Tipo Especial: 
 
-Introducción de asientos en la contabilidad de forma manual
+--
+###Introducción de asientos en la contabilidad de forma manual
 Área Financiera>Principal/Financiera
 
 Al igual que en la mayoría de los programas de contabilidad y ERP’s, la introducción de asientos en AbanQ se puede realizar de dos formas distintas: manual o automáticamente. 
@@ -438,8 +453,8 @@ ALQUILER LOCAL COMERCIAL
 H.P. IVA SOPORTADO 21%
 168,00
 
-
-Nota: La  Fundación Sur cumple los requisitos para estar exenta de hacerle la retención de IRPF.
+---
+**Nota**: La  Fundación Sur cumple los requisitos para estar exenta de hacerle la retención de IRPF.
 A la hora de crear el boceto de un asiento debemos hacernos algunas preguntas sobre lo que queremos conseguir, así nos fijaremos en varios puntos:
 Subcuenta: ¿Cada subcuenta utilizada será siempre la misma o puede variar? Por ejemplo en un asiento de nóminas, la subcuenta de sueldos y salarios puede ser distinta para cada empleado (640.1, 640.2, ...) o bien usar siempre la subcuenta general 640.0. En nuestro caso utilizaremos siempre una misma subcuenta para el acreedor y dueño del local.
 Importe: ¿Los importes respectivos guardan una relación permanente entre ellos?, ¿son importes siempre repetidos o en caso de pedir alguno se pueden hallar los demás con una fórmula?, En el caso actual son siempre los mismos, ya que todos los meses pagamos la misma cantidad en concepto de alquiler, es el caso más fácil y por ello lo utilizamos en nuestro primer asiento predefinido.
@@ -533,7 +548,8 @@ Definida: Acrdor
 Fijaos en los textos en negrita, Acrdor es una variable creada ad hoc donde guardaremos la subcuenta del acreedor, esta variable podrá usarse en las siguientes partidas como por ejemplo para introducir la contrapartida del IVA. La palabra Último sirve para que el programa copie la información anterior mientras que Cuadrar se utiliza para calcular el importe que deja el asiento cerrado con saldo cero. Continuamos con el alta del predefinido.
 Respecto a los nombres de variables utilizadas, por ejemplo Acrdor, es necesario resaltar tienen un límite de 6 caracteres alfanuméricos, no deben incluir espacios ni símbolos extraños al alfabeto inglés, así como tampoco deben empezar por un carácter numérico.
 
-Alta de un nuevo asiento predefinido
+**Alta de un nuevo asiento predefinido**
+
 El primer paso puede ser comprobar que existan las subcuentas que vamos a utilizar en nuestro asiento: 410.5  Fundación Sur, 621.0 Arrendamientos y 472.21 IVA soportado al 21%. De estas subcuentas tendremos que crear la de  Fundación Sur porque no existe, y si no lo hacemos el programa nos avisará cuando utilicemos el predefinido. Vamos, en el módulo principal del área financiera, al menú P.G.C. - Subcuentas o pulsen las teclas Control y S asociadas a esa opción:
 A continuación pulsamos el botón Insertar nuevo registro () e introducimos los datos sobre el acreedor  Fundación Sur:
 Cuenta: 410
@@ -544,7 +560,7 @@ Descripción:  Fundación Sur
 
 
 
-Nota: Los botones de las ventanas han cambiado 
+**Nota**: Los botones de las ventanas han cambiado 
 En realidad, el alta de asientos correspondientes a cualquier cliente, proveedor o acreedor de la empresa debe hacerse en el área de facturación, para así poder introducir datos como el D.N.I. o el N.I.F. como exige la normativa. En ese caso abriríamos una nueva ficha de proveedor en el área principal de facturación, teniendo el cuidado de modificar la subcuenta en la pestaña contabilidad escribiendo el código 410.5 en el recuadro oportuno.
 Tras aceptar los datos de alta de  Fundación Sur volvemos a la ventana de asientos predefinidos. En ella el botón insertar registro () abrirá una ventana que cumplimentaremos con los siguientes datos:
 Código: Alqloc
@@ -645,7 +661,7 @@ Al pulsar el botón aceptar () o la tecla asociada F10, verán de nuevo la venta
 
 Una vez terminada el alta es el momento de comprobar si funciona.
 
-Uso de un asiento predefinido
+**Uso de un asiento predefinido**
 
 La creación de asientos, tanto manualmente como usando predefinidos, se realiza en la ventana abierta con la opción del menú Financiera – Opciones del diario – Asientos o pulsando la combinación de teclas Control y A asociada a dicha opción.
 Si en la ventana abierta comprueban la existencia de varios asientos, son asientos generados automáticamente desde otros módulos como el de Facturación. Pero hay numerosos hechos contables que deberán ser recogidos directamente, vamos a contabilizar el pago del alquiler del local para el mes de diciembre con el predefinido creado en el apartado anterior.
@@ -793,7 +809,8 @@ Finalmente, la plantilla del asiento quedaría así:
 
 Probad el asiento con la compra el 29 de diciembre de carburante a Repsol YPF (subcuenta 410.6 que habrá que crear, directamente o mediante alta de ficha proveedores en la facturación) por un importe total de 2.420,00 €.
 
-Predefinido para contabilizar las nóminas
+---
+**Predefinido para contabilizar las nóminas**
 
 Vamos a crear un predefinido para la contabilización del pago de las nóminas de los trabajadores, este tipo de asiento es algo más complicado, y podría hacerse automáticamente si se dispusiera de un módulo de Recursos Humanos; la dificultad de estos asientos se debe a las continuas variaciones que las nóminas de los trabajadores sufren durante el ejercicio, donde las desgravaciones aplicables dependen también de situaciones personales variables como tener un hijo, subir de categoría, etc.
 El asiento por la entrega de las nóminas podría ser realizado una vez por cada empleado o bien se podrían recoger todos los pagos en un único asiento con las cantidades conjuntas, vamos a hacerlo de forma agrupada:
@@ -967,22 +984,25 @@ Resumen
 Pasos a seguir para crear un asiento predefinido o una plantilla de asiento:
 1.- Leer el enunciado y escribir en un papel el asiento contable con los datos disponibles:
 Apuntar para cada partida: 
-A-Debe o Haber.
-B-Subcuenta con algunos (PEDIR) o todos (ESTABLECER) los dígitos.
-C-Importe conocido (CALCULAR) o desconocido (posible CALCULAR usando una fórmula o PEDIR al usuario.
-D-Concepto explícito o no se dice nada al respecto (en general usar PEDIR para que el usuario escriba un número de factura u otro identificador del documento relacionado.
-E-Si la subcuenta es de IVA Soportado o IVA Repercutido, habrá que completar el cuadro IVA (si no está activado, mirar que la subcuenta contable exista y tenga asignado un tipo de IVA en la pestaña “Otros datos”.
-F-Contrapartida: Si se activa E, hay obligación de completar la contrapartida, en otro caso se puede usar para dar mayor información en el libro mayor de cada subcuenta.
+ A-Debe o Haber.
+ B-Subcuenta con algunos (PEDIR) o todos (ESTABLECER) los dígitos.
+ C-Importe conocido (CALCULAR) o desconocido (posible CALCULAR usando una fórmula o PEDIR al usuario.
+ D-Concepto explícito o no se dice nada al respecto (en general usar PEDIR para que el usuario escriba un número de factura u otro identificador del documento relacionado.
+ E-Si la subcuenta es de IVA Soportado o IVA Repercutido, habrá que completar el cuadro IVA (si no está activado, mirar que la subcuenta contable exista y tenga asignado un tipo de IVA en la pestaña “Otros datos”.
+ F-Contrapartida: Si se activa E, hay obligación de completar la contrapartida, en otro caso se puede usar para dar mayor información en el libro mayor de cada subcuenta.
 Esta información debe verse para cada partida o línea con subcuenta del asiento.
-2.- Crear el asiento predefinido, escribiendo un código (caracteres del alfabeto inglés, sin eñes ni vocales acentuadas). Luego pulsar el botón para insertar la primera partida.
-3.- Creación de cada partida: Comenzar por la partida de la cual tengamos más posibilidades de conocer el importe cuando creemos un asiento real: Ya sea porque se especifique en el mismo enunciado del predefinido o conozcamos el importe cuando hagamos el asiento en el libro diario (el precio total, el precio sin IVA, el sueldo bruto, etc.)
+1.- Crear el asiento predefinido, escribiendo un código (caracteres del alfabeto inglés, sin eñes ni vocales acentuadas). Luego pulsar el botón para insertar la primera partida.
+1.- Creación de cada partida: Comenzar por la partida de la cual tengamos más posibilidades de conocer el importe cuando creemos un asiento real: Ya sea porque se especifique en el mismo enunciado del predefinido o conozcamos el importe cuando hagamos el asiento en el libro diario (el precio total, el precio sin IVA, el sueldo bruto, etc.)
+
 3.A) Marcar la opción de Debe o de Haber según corresponda. Aunque salga marcada una opción, volver a elegirla para asegurar que queda marcada la correcta.
+
 3.B) Para la subcuenta:
 ¿Se ha usado la subcuenta anteriormente en otra partida (seguramente en la contrapartida)?
 	Ruta 3.B.Sí: En la otra partida debieron escribir una palabra en el campo Definir de la contrapartida. En esta ocasión elijan Tipo: Definida y vuelvan a escribir la misma palabra en el campo Definir (pueden pulsar el botón de la derecha para que el programa recuerde las palabras memorizadas). Fin.
 Ruta 3.B.No: ¿Tiene todos los dígitos de la subcuenta? (si tiene el código de subcuenta facilitado un punto o bien tiene más de 4 dígitos y coincide su número con los dígitos usados. Si no saben cuantos dígitos se usan estime que serán de 7 a 12 normalmente. Si la partida es de IVA, se entiende que se tienen todos los dígitos en función de tipo de IVA usado, por ejemplo si es del 21% para una compra la subcuenta sería la 472.21 de IVA soportado, y si es una venta sería la 477.21 de IVA repercutido).
 	Ruta 3.B.No.Sí: Tipo Establecer, Valor el código de subcuenta facilitado, Definir: Si la subcuenta va a ser usada en otra partida (por ejemplo como contrapartida del IVA), entonces escriba una palabra que describa a la subcuenta (de 6 caracteres como máximo y sin Espacios, ni eñes, ni acentos). Fin.
 	Ruta 3.B.No.No: Tipo Pedir, Valor con los dígitos de la subcuenta que se hayan facilitado, Definir: Exactamente igual a lo explicado en la ruta 3.B.No.Sí anterior. Fin.
+
 3.C) Importe:
 ¿Es la última partida del asiento?
 	Ruta 3.C.Sí: Tipo Cuadrar. Fin.
@@ -991,6 +1011,7 @@ Ruta 3.C.No. ¿Se da un importe en euros?
 Ruta 3.C.No.No: ¿Se puede calcular el importe en función de un importe utilizado en una partida anterior dentro de este mismo asiento predefinido?
 	Ruta 3.C.No.No.Sí: Tipo Calcular, Valor una fórmula que tenga como resultado el importe correcto, para realizar dicha fórmula habrá que usar como variable la palabra escrita en el campo Definir del importe de la partida anterior. Definir: Escriba una palabra que describa el importe (de 6 caracteres como máximo y sin Espacios, ni eñes, ni acentos, ejemplos serían Total, Neto, Bruto, Base, BI, ...), esta palabra o nueva variable se podría usar para calcular otros importes posteriores mediante una fórmula. Fin.
 	Ruta 3.C.No.No.No: Tipo Pedir, Valor no se rellena, Definir: Exactamente como se explica en la respuesta anterior del Sí. Fin.
+
 3.D) Concepto:
 3.D.a) ¿Se dice expresamente en el enunciado qué hay que poner en el concepto?
 	Ruta 3.D.a.No: Utilicen de concepto uno que pida la identificación del documento físico que da lugar al asiento, ejemplos “Nº Factura:”, “Nº de documento:”, y sigan como si le hubieran especificado el concepto. Si no hubiera ningún documento pues inventen algún texto que describa al asiento completo (no a la subcuenta de la partida), también pueden pedir el mes del hecho contable o algo parecido (Nóminas del mes:).
@@ -1001,10 +1022,12 @@ Ruta 3.D.a.Sí: Apliquen el apartado anterior (ruta 3.D.a.No.parte2).
 3.D.b) ¿Se va a usar el mismo concepto en todas las partidas?
 	Ruta 3.D.b.Sí: Si no es la primera partida, elijan Tipo Último. Fin.
 	Ruta 3.D.b.No: Apliquen la pregunta 3.D.a. a cada partida del asiento predefinido. Fin.
+
 3.E) IVA
 En este caso en el apartado 3.B es obligatorio usar Establecer y la subcuenta exacta del IVA como se explica en la ruta 3.B.No. Con ello se habrá activado el cuadro de IVA.
 Campo Factura: No pedir. Se podría pedir, pero ya hemos preguntado esta información en el concepto del asiento (Su factura:).
 Base Imponible: Tipo Calcular, Base imponible: Fórmula a partir de algún importe anterior (usar las variables memorizadas con el campo Definir de ese importe, ejemplo: Total/1.21 ó simplemente Neto).
+
 3.F) Contrapartida
 Si la subcuenta de esta partida era de IVA (472.X o 477.X), la contrapartida debe ser la subcuenta correspondiente al sujeto pasivo (la persona física o jurídica con la que realizamos el intercambio de la compra o la venta).
 ¿Ha sido esta subcuenta ya usada en otra partida anterior?
@@ -1059,6 +1082,7 @@ REMUNERACIONES PTES. PAGO
 13.019,78
 
 4.- Modificar la fecha del asiento que contabiliza el curso recibido por importe de 3.300,00 € pasándolo al mes siguiente.
+
 5.- Listar por pantalla los asientos correspondientes al mes de febrero. En este caso, vamos a crear un listado específico para este informe. Para ello, nos situamos en el Módulo Informes del Área Financiera y allí seleccionamos Listados -- Libro Diario. 
 Una vez allí, añadimos un tipo de listado y rellenamos los datos que deseamos que aparezcan en el listado. En nuestro caso, le denominaremos Listado octubre, incluiremos los datos del IVA en el mismo y  no lo deseamos agrupado por meses. Seleccionamos el ejercicio del que queremos extraer los datos y el rango de fechas que nos interesan: del 1 al 31de octubre y activamos los campos oportunos
 
@@ -1068,7 +1092,7 @@ Una vez allí, añadimos un tipo de listado y rellenamos los datos que deseamos 
 Con ello, obtenemos el siguiente listado:
 
 
-PROCESO DE CIERRE TRIMESTRAL DEL IVA.
+##PROCESO DE CIERRE TRIMESTRAL DEL IVA.
 
 Para comenzar el cierre trimestral del IVA, se deben obtener en primer lugar los libros registros de facturas emitidas y de facturas recibidas provisionales del trimestre. Para ello, acudimos al Módulo Informes del Área Financiera y accedemos a la opción Facturas Recibidas del Menú IVA y creamos un listado del libro:
 
@@ -1109,7 +1133,7 @@ A continuación es necesario contabilizar la liquidación del IVA obtenida, para
 Una vez allí, creamos la regularización del cuarto trimestre. Para ello basta con introducir los datos oportunos y hacer clic en el candado. De esta forma, se generará el asiento correspondiente en la contabilidad.
 
  
-PROCESOS AL FINAL DEL EJERCICIO.
+##PROCESOS AL FINAL DEL EJERCICIO.
 
 El proceso del cierre de la contabilidad al final del ejercicio comienza por cerrar previamente la declaración trimestral del IVA siguiendo el proceso que hemos explicado en el apartado anterior. Es importante comprobar que las facturas recibidas y emitidas que tenemos archivadas por fecha, coincidan con el número de orden que le corresponda según el Libro Registro.
 Junto con la declaración del último trimestre hay que presentar la Declaración Resumen-Anual del IVA, modelo 390. Para ello basta con acudir a la opción Modelos, Modelo 390 del Módulo Modelos del área Financiera y crear una nueva declaración. 
@@ -1131,6 +1155,7 @@ Una vez comprobado que todo está correcto, procedemos a calcular la declaració
 
 
 A continuación se deben contabilizar los ajustes previos al cierre que procedan:
+
 1. Amortización.
 2. Pérdidas de valor.
 3. Variación de existencias
@@ -1172,18 +1197,19 @@ Pulsando dicho botón, es importante que seleccionemos un ejercicio anterior pue
 Una vez creado el ejercicio, volvemos a la ventana anterior donde hacemos clic en Cerrar ejercicio.
 
 
-
-Cambio de ejercicio.
+--
+###Cambio de ejercicio.
 Área Financiera>Principal/Ejercicio
 
 Contenido de Ejercicio:
+
 1. Cambiar actual.
 2. Apertura y cierre.
 3. Ver todos.
 
 El menú Ejercicio contiene las opciones relacionadas con la gestión de los ejercicios económicos de AbanQ. Ya hemos visto con anterioridad cómo se realiza la creación de los ejercicios, por lo que no insistiremos en este aspecto en estos momentos.
 
-Cambiar actual.
+####Cambiar actual.
 Esta opción sirve para cambiar de ejercicio. Al hacer clic en ella se nos abre la ventana que mostramos a continuación y que permite
 
 
