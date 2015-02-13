@@ -1,3 +1,9 @@
+* CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ULTIMA ACTUALIZACIÓN: 13 de febrero de 2015
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/C%C3%B3mo-cambiar-los-iconos-de-los-botones)
+
+----
 ###INICIO:
 ...puedo acceder al archivo donde aparece....por Eneboo-Sistema-Admin-modulos, y luego "flfactppal" y modificar y de nuevo modificar "FLWidgetMasterTable.ui"...
 
