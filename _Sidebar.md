@@ -16,6 +16,7 @@
 1. [Introducción General Eneboo](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Introducci%C3%B3n)
 1. [Primeros pasos-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Primeros-pasos-(sacado-de-ABANQ))
 1. [Primeros pasos-ENEBOO](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Primeros-pasos)
+1. [Manual para Hoteles-ISOLIX](https://github.com/Miguel-J/eneboo/wiki/Manual-para-Hoteles-ISOLIX)
 
 #####Area Facturación
 1. [Area de facturación-ENEBOO](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-%C3%81rea-de-facturaci%C3%B3n)
