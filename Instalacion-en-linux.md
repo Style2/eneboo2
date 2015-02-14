@@ -19,6 +19,8 @@
      * instalo la 
           * "Begin Your Download - mysql-server_5.6.23-1ubuntu14.10_i386.deb-bundle.tar"
           * http://dev.mysql.com/downloads/file.php?id=455351
+          * ...registrar? "no thanks, just start my download" (y esperar a flecha azul)...mirar en carpeta...descomprimir aqui...y crea 6 carpetas??
+          * error....miro la linux-generic...otro dia...
 
 3. Descargar el [paquete de Eneboo Standard](http://www.eneboo.com/pub/contrib/standard-modules/standard.eneboopkg).
 4. [Cargar el paquete de Eneboo Standard](#cargar-el-paquete-de-eneboo-standard).
