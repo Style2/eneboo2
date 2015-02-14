@@ -1,6 +1,6 @@
-* CREADO POR: [Universidad de Sevilla](http://www.us.es): Guillermo Molleda Jimena
+* CREADO POR: [Universidad de Sevilla](http://www.us.es): Guillermo Molleda Jimena y adaptado por: miguelajsmaps@gmail.com
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 13 de febrero de 2015
+* ULTIMA ACTUALIZACIÓN: 14 de febrero de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Instalacion-del-programa-UNIV.SEVILLA)
 
 ----
@@ -13,25 +13,35 @@
 
 ###Índice de contenido
 
-1. Instalación del programa cliente Eneboo:	2
-1. Instalación de Eneboo	2
-1. Ejecución de Eneboo	4
-1. La impresión con Eneboo	5
-1. Caso particular para procesadores de 64 bits:	7
+1. Instalación del programa cliente Eneboo:
+1. Instalación de Eneboo
+1. Ejecución de Eneboo
+1. La impresión con Eneboo
+1. Caso particular para procesadores de 64 bits:
 
 --
 ####Instalación del programa cliente Eneboo:
 
 #####Instalación de Eneboo:
 
-Descarguen el fichero de instalación desde la plataforma de enseñanza virtual de la asignatura o desde la dirección de internet oficial de la empresa creadora del software, para el sistema operativo que utilicen (AbanQ ejecutable para Linux, MS Windows o Mac OS X):
+Descarguen el fichero de instalación desde la plataforma de enseñanza virtual de la asignatura o desde la dirección de internet oficial de la empresa creadora del software, para el sistema operativo que utilicen (Eneboo ejecutable para Linux, MS Windows o Mac OS X):
 
-http://www.abanq.com/productos/productos.php?fam=desc
+http://www.eneboo.org/site/stable
 
-Acepten el contrato de licencia y descarguen el programa.
+Descarguen el programa más adecuado, normalmente: 
 
+* **Build dbAdmin Windows 32bits** (windows XP, ordenadores "viejos")
+* Build Quick Windows 32bits (solo para ordenadores "clientes"-en red)
+* **Build dbAdmin GNU/Linux 32bits**
+* Build Quick GNU/Linux 32bits (solo para ordenadores "clientes"-en red)
+* Build dbAdmin GNU/Linux 64bits (ordnadores "nuevos)
+* Build Quick GNU/Linux 64bits (solo para ordenadores "clientes"-en red)
+* Build dbAdmin OS X i686
+* Build Quick OS X i686 (solo para ordenadores "clientes"-en red)
+* Build dbAdmin OS X PPC
+* Build Quick OS X PPC (solo para ordenadores "clientes"-en red)
 
-Descompriman el fichero descargado y ejecútenlo como administrador del equipo:
+Descompriman el fichero descargado y ejecúten el archivo "eneboo" que está en la carpeta-subdirectorio "bin" (como administrador del equipo):
 
 * En Linux y Windows simplemente un doble clic del ratón comenzará la instalación, sigan las instrucciones que vayan saliendo.
 * En Mac OS X es fácil la instalación, ya que se trata de un paquete autoinstalable.
@@ -44,12 +54,12 @@ Lean los términos del contrato, está sujeto a la licencia GPL (Licencia Públi
 
 Al terminar la instalación podemos dejar que se abra el programa y leer el fichero Léame, antes de continuar os informamos de los siguiente:
 
-En Linux, se ha creado un enlace en el menú Aplicaciones – AbanQ, mientras que en Windows se han creado enlaces  para su ejecución tanto en el escritorio como en el menú Inicio – Todos los programas.
+En Linux, se ha creado un enlace en el menú Aplicaciones – Eneboo, mientras que en Windows se han creado enlaces  para su ejecución tanto en el escritorio como en el menú Inicio – Todos los programas.
 
 ---
-####Ejecución de AbanQ
+####Ejecución de Eneboo
 
-Abran el programa AbanQ que acaban de instalar, pulsen el botón vertical que aparece en el margen derecho para abrir las opciones de conexión tal como ven más abajo, elijan:
+Abran el programa Eneboo que acaban de instalar, pulsen el botón vertical que aparece en el margen derecho para abrir las opciones de conexión tal como ven más abajo, elijan:
 * el Controlador: PostgreSQL o MySQL, según sea el que hayan instalado.
 * Dejen el Servidor: localhost (localhost es equivalente a la dirección IP 127.0.0.1 y siempre señala al propio ordenador)
 * y el puerto **5432 si usan PostgreSQL** o **3306 si fuera MySQL**.
@@ -78,9 +88,9 @@ En cuanto funcionen los acentos con alguno de ellos, salgan de AbanQ con el bot�
 Cambien el menú, con el botón derecho del ratón sobre el menú aplicaciones, editar los menús y en la entrada Aplicaciones – Otras – AbanQ con el botón derecho del ratón cambien el comando a llamar a “/usr/bin/fllite_es” sin las comillas.
 
 ---
-####La impresión con AbanQ
+####La impresión con Eneboo
 
-No es necesario seguir este apartado para la asignatura, son instrucciones para poder imprimir correctamente los informes de AbanQ: listados de artículos, pedidos, facturas, etc.
+No es necesario seguir este apartado para la asignatura, son instrucciones para poder imprimir correctamente los informes de Eneboo: listados de artículos, pedidos, facturas, etc.
 
 En linux, al menos en sistemas basados en Debian (Ubuntu, Guadalinex, Linex), hay que crear un enlace a las impresoras del sistema:
 Abrir la consola con el menú Aplicaciones – Accesorios – Terminal, y escribir las órdenes,
