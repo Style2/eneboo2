@@ -6,31 +6,12 @@
 ----
 
 
-# Instalador automático (Eneboo + PostgreSQL)
-El instalador permite que en pocos minutos Eneboo Standard esté listo para trabajar. El instalador realiza las siguientes tareas de forma automática:
+# INSTALACION DE ENEBOO EN LINUX CON MySQL
 
-* Instala el motor de Eneboo.
-* Instala el gestor de bases de datos PostgreSQL con la configuración por defecto.
-* Carga los módulos y extensiones del proyecto Eneboo Standard.
-    
-Se puede descargar en el apartado [Versiones Estables](http://www.eneboo.org/site/stable) del área de descarga de Eneboo. Buscaremos el _Windows Installer Quick_ que mejor se adapte a nuestras necesidades (Windows o Linux, 32 ó 64 bits).
-
-De momento no hay instalador automático para Mac.
-
-# Instalación manual
-
-## Macintosh
-
-1. Descargar y descomprimir el [motor de Eneboo para Mac OS X] (http://eneboo.com/pub/eneboo/builds/v2.4.0/eneboo-v2.4.0-alpha5-mac32.zip) (sólo para 32 bits).
-2. Descargar e instalar el gestor de bases de datos:
-* **PostgreSQL** (recomendamos la versión 8.4) para Mac del [área de descarga de PostgreSQL](http://www.enterprisedb.com/products-services-training/pgdownload). La instalación solicitará un usuario y una contraseña de administrador de la base de datos que conviene anotar, ya que serán necesarios más adelante.
-* **MySQL**
-3. Descargar el [paquete de Eneboo Standard](http://www.eneboo.com/pub/contrib/standard-modules/standard.eneboopkg).
-4. [Cargar el paquete de Eneboo Standard](#cargar-el-paquete-de-eneboo-standard).
-    
-## Linux
+## Linux-Pasos:
 
 1. Descargar y descomprimir el motor de Eneboo para Linux en el apartado [Versiones Estables](http://www.eneboo.org/site/stable). Buscaremos el _Build dbAdmin Linux_ de 32 o 64 bits.
+* Hacer click en el link y (para Mozilla: darle a la flecha azul de arriba-derecha) luego "mostrar en carpeta" (dibujo de la derecha). Buscar el archivo y con botón derecho: "extraer aqui"
 2. Descargar e instalar el gestor de bases de datos:
 * 2.A **PostgreSQL** (recomendamos la versión 8.4) para Linux del [área de descarga de PostgreSQL](http://www.enterprisedb.com/products-services-training/pgdownload). La instalación solicitará un usuario y una contraseña de administrador de la base de datos que conviene anotar, ya que serán necesarios más adelante.
 * 2.B **MySQL**
