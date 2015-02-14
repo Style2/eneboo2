@@ -1,12 +1,38 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 7 de febrero de 2015
+* ULTIMA ACTUALIZACIÓN: 14 de febrero de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Instalaci%C3%B3n-en-windows)
 
 ----
 
 INSTALACION ENEBOO CON MYSQL:
 -----------------------------
+
+###...Y POR QUÉ MySQL?
+https://groups.google.com/forum/#!searchin/eneboo/mysql/eneboo/jNP7-5Ysz5g/S_NzOAW6F8gJ
+
+* 17-nov-2013: 
+     * Miguel-J: "Tengo prestashop con mysql, y como ya me suena un poco phpmyadmin, preferiría instalar eneboo con mysql en vez de postgreSql" 
+     * NOTA 1: (...más adelante cambiaría phpmyadmin por Heidi, mucho mejor gestor, consejo de JMarco )
+     * NOTA 2: Prestashop: Trabaja como MyISAM   ....??
+* 21-nov-2013:
+     * Miguel-J: "He seguido el consejo e instalando módulo a módulo es más fácil y no da problemas.
+     * ...he pasado del easyPHP y ahora uso el WAMPserver, y parece que va mejor, pero lo único raro es que me dice Eneboo que mi MySQL no acepta INNODB, cuando si miro en configuración lo tiene puesto como "default"..es la versión :
+          * Apache:  2.4.4
+          * MySQL: 5.6.12
+          * PHP: 5.4.16"
+     * **NOTA: SIEMPRE QUE AL CARGAR MÓDULOS PREGUNTE SI QUIERE CONVERTIR LAS TABLAS NO-INNODB, CONTESTAR QUE NO, PORQUE SIEMPRE SE BLOQUEA** (y no se por qué)
+
+* 25-junio-2014: https://groups.google.com/forum/#!searchin/eneboo/mysql/eneboo/Xcmq_S2VRz0/xw-khiaDeyQJ
+     * Miguel-J: "He vuelto a probar el paquete estandar y con windows y mysql no se carga bien...."
+     * JMarco: "Mi consejo es trabajar con MySQL 5.5. (WAMP3),(...) con la versión 5.6 no va muy fino."
+     * AullaSistemas: "Version del servidor: 5.6.17 ... Ya hemos comentado que en mysql 5.6 contabilidad falla porque el tamaño mediumtext es mas pequeño que en la version 5.5, y hay un fichero .ui que excede ese tamaño nuevo. Por favor usa un mysql 5.5.x ."
+     * AullaSistemas: "dentro de my.conf hay que cambiar el valor
+          * `max_allowed_packet = 1M`
+          * por:
+          * `max_allowed_packet = 2M` (pero podria ser por 8 o 16)
+          * ...en cambio, en linux sale: (ubuntu) max_allowed_packet = 16M
+          * Por favor confirmen que el fichero contabilidad/modelos/form/co_modelo390.ui de 1.4Mb +- produce error en la primera situación (windows) y no en la segunda (linux). Si alguien prueba en un mysql 5.6 sería de agradecer..."
 
 ###1.-Descargar e instalar WAMP (incluye APACHE, MYSQL Y PHPMYADMIN..) de:
 www.wampserver.com\en
