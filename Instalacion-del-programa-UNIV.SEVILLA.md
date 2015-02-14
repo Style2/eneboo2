@@ -11,16 +11,18 @@
 
 
 
-Índice de contenido
-Instalación del programa cliente AbanQ:	2
-Instalación de AbanQ	2
-Ejecución de AbanQ	4
-La impresión con AbanQ	5
-Caso particular para procesadores de 64 bits:	7
+###Índice de contenido
 
-Instalación del programa cliente AbanQ:
+1. Instalación del programa cliente AbanQ:	2
+1. Instalación de AbanQ	2
+1. Ejecución de AbanQ	4
+1. La impresión con AbanQ	5
+1. Caso particular para procesadores de 64 bits:	7
 
-Instalación de AbanQ
+--
+####Instalación del programa cliente AbanQ:
+
+#####Instalación de AbanQ
 
 Descarguen el fichero de instalación desde la plataforma de enseñanza virtual de la asignatura o desde la dirección de internet oficial de la empresa creadora del software, para el sistema operativo que utilicen (AbanQ ejecutable para Linux, MS Windows o Mac OS X):
 http://www.abanq.com/productos/productos.php?fam=desc
@@ -42,7 +44,8 @@ Al terminar la instalación podemos dejar que se abra el programa y leer el fich
 
 En Linux, se ha creado un enlace en el menú Aplicaciones – AbanQ, mientras que en Windows se han creado enlaces  para su ejecución tanto en el escritorio como en el menú Inicio – Todos los programas.
 
-Ejecución de AbanQ
+---
+####Ejecución de AbanQ
 
 Abran el programa AbanQ que acaban de instalar, pulsen el botón vertical que aparece en el margen derecho para abrir las opciones de conexión tal como ven más abajo, elijan el Controlador: PostgreSQL o MySQL, según sea el que hayan instalado. Dejen el Servidor: localhost (localhost es equivalente a la dirección IP 127.0.0.1 y siempre señala al propio ordenador) y el puerto 5432 si usan PostgreSQL o 3306 si fuera MySQL. En la parte izquierda pongan el nombre de la base de datos a usar (envoltosa), el usuario (postgres para PostgreSQL o root para MySQL) y la contraseña (alumno):
 
@@ -51,29 +54,31 @@ Pulsen el botón Conectar para iniciar AbanQ.
 
 En GNU/Linux, si comprueban que no se pueden escribir vocales acentuadas, abran una terminal (menú Aplicaciones – Accesorios – Terminal) y prueben los siguientes comandos escribiendo alguna vocal acentuada en el lugar destinado al nombre de la base de datos:
 
-LANG=es_ES.ISO-8859-1 fllite
-LANG=es_ES.ISO-8859-15 fllite
-LANG=es_ES.UTF-8@euro fllite
-XMODIFIERS='' LANG=es_ES@euro fllite 
+`LANG=es_ES.ISO-8859-1 fllite`
+`LANG=es_ES.ISO-8859-15 fllite`
+`LANG=es_ES.UTF-8@euro fllite`
+`XMODIFIERS='' LANG=es_ES@euro fllite `
 
 En cuanto funcionen los acentos con alguno de ellos, salgan de AbanQ con el botón cancelar y prueben a automatizar el comando apropiado: Desde la misma terminal que tengan abierta pueden crear un fichero con las dos líneas propuestas a continuación, y hacerlo ejecutable
 
-sudo gedit /usr/bin/fllite_es
+`sudo gedit /usr/bin/fllite_es`
 
-#!/bin/sh 
-XMODIFIERS='' LANG=es_ES@euro fllite # Aquí el comando elegido
+`#!/bin/sh `
+`XMODIFIERS='' LANG=es_ES@euro fllite # Aquí el comando elegido`
 
-sudo chmod 755 /usr/bin/fllite_es
+`sudo chmod 755 /usr/bin/fllite_es`
 
 Cambien el menú, con el botón derecho del ratón sobre el menú aplicaciones, editar los menús y en la entrada Aplicaciones – Otras – AbanQ con el botón derecho del ratón cambien el comando a llamar a “/usr/bin/fllite_es” sin las comillas.
-La impresión con AbanQ
+
+---
+####La impresión con AbanQ
 
 No es necesario seguir este apartado para la asignatura, son instrucciones para poder imprimir correctamente los informes de AbanQ: listados de artículos, pedidos, facturas, etc.
 
 En linux, al menos en sistemas basados en Debian (Ubuntu, Guadalinex, Linex), hay que crear un enlace a las impresoras del sistema:
 Abrir la consola con el menú Aplicaciones – Accesorios – Terminal, y escribir las órdenes,
-sudo mv /etc/printcap /etc/printcapold
-sudo ln -s /var/run/cups/printcap /etc/printcap
+`sudo mv /etc/printcap /etc/printcapold`
+`sudo ln -s /var/run/cups/printcap /etc/printcap`
 
 En Windows es necesario instalar el programa Ghostscript para imprimir correctamente, a continuación explicamos la forma de instalarlo:
 
@@ -100,4 +105,5 @@ Aparece otra ventana, en el cuadro inferior "variables del sistema" selecciona p
 Aceptar, cerrar la sesión de administrador para volver al de usuario limitado y ya podrán imprimir perfectamente con fllite. Para comprobar que todo es correcto, en Inicio-Ejecutar escriban: gswin32 y debe salir la ventana de comandos de ghostscript de la que pueden salir con la orden "quit" y pulsando ENTER.
 Caso particular para procesadores de 64 bits:
 
-Si usted tiene un procesador y un sistema operativo de 64 bits, descargue el instalador correspondiente a dicha arquitectura desde la web de AbanQ: http://www.abanq.com
+---
+####Si usted tiene un procesador y un sistema operativo de 64 bits, descargue el instalador correspondiente a dicha arquitectura desde la web de AbanQ: http://www.abanq.com
