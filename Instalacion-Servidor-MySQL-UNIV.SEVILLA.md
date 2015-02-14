@@ -1,26 +1,28 @@
 
 
-INSTALACIÓN DE MySQL
+#INSTALACIÓN DE MySQL
 
 
 
 
-Índice de contenido
-Instalación de MySQL:	2
-Instalación en Windows	2
-Instalación de la parte servidor de MySQL	2
-Instalación del programa para administrar MySQL	9
-Instalación en Mac OS X de Apple Macintosh	14
-Instalación del servidor MySQL en Mac OS X	14
-Administrar MySQL en Mac OS X	17
+##Índice de contenido:
 
-Instalación de MySQL:
+1. Instalación de MySQL:	2
+1. Instalación en Windows	2
+1. Instalación de la parte servidor de MySQL	2
+1. Instalación del programa para administrar MySQL	9
+1. Instalación en Mac OS X de Apple Macintosh	14
+1. Instalación del servidor MySQL en Mac OS X	14
+1. Administrar MySQL en Mac OS X	17
 
-Instalación en Windows
+--
+###Instalación de MySQL:
+
+####Instalación en Windows
 
 En concreto se van a instalar dos programas, el servidor de bases de datos en sí y otro programa para administrar el mismo.
 
-Instalación de la parte servidor de MySQL
+#####Instalación de la parte servidor de MySQL
 
 Usaremos la versión de MySQL 4.1.21 para MS Windows, para ello descarguen  el fichero “mysql-4.1.21-win32.zip” que facilitamos en la plataforma de enseñanza virtual, pueden también descargarlo de la web oficial de MySQL donde también encontrarán el código fuente.
 
@@ -141,9 +143,10 @@ Una vez que hayamos conectado con el servidor, en la opción User Administration
 
 Aceptados los cambios podremos usar MySQL desde otros programas utilizando el servidor localhost, el puerto 3306, el usuario root y la contraseña alumno.
 
+--
+###Instalación en Mac OS X de Apple Macintosh
 
-Instalación en Mac OS X de Apple Macintosh
-Instalación del servidor MySQL en Mac OS X
+####Instalación del servidor MySQL en Mac OS X
 Descargar la versión de MySQL 5.0 compatible con el sistema operativo1 (en el ejemplo, trabajaremos con la versión Mac OS X 10.4.9), en la dirección: 
 http://dev.mysql.com/downloads/ , se puede elegir para Mac OS X 10.3 y Mac OS X 10.4
 
@@ -172,8 +175,8 @@ Ya pueden instalar el programa descargado con el nombre “mysql-5.0.45-osx10.4-
 
 
 
-
-Administrar MySQL en Mac OS X
+--
+####Administrar MySQL en Mac OS X
 
 Ahora vamos a instalar las herramientas para administrar las bases de datos, vuelvan a la dirección: http://dev.mysql.com/downloads/ y pulsar la opción “MySQL GUI Tools”
 
