@@ -6,33 +6,35 @@
 ----
 ###EN CONSTRUCCIÓN
 
-#INSTALACIÓN DEL PROGRAMA CLIENTE DEL ERP: AbanQ
+#INSTALACIÓN DEL PROGRAMA CLIENTE DEL ERP: Eneboo
 
 
 
 
 ###Índice de contenido
 
-1. Instalación del programa cliente AbanQ:	2
-1. Instalación de AbanQ	2
-1. Ejecución de AbanQ	4
-1. La impresión con AbanQ	5
+1. Instalación del programa cliente Eneboo:	2
+1. Instalación de Eneboo	2
+1. Ejecución de Eneboo	4
+1. La impresión con Eneboo	5
 1. Caso particular para procesadores de 64 bits:	7
 
 --
-####Instalación del programa cliente AbanQ:
+####Instalación del programa cliente Eneboo:
 
-#####Instalación de AbanQ
+#####Instalación de Eneboo:
 
 Descarguen el fichero de instalación desde la plataforma de enseñanza virtual de la asignatura o desde la dirección de internet oficial de la empresa creadora del software, para el sistema operativo que utilicen (AbanQ ejecutable para Linux, MS Windows o Mac OS X):
+
 http://www.abanq.com/productos/productos.php?fam=desc
 
 Acepten el contrato de licencia y descarguen el programa.
 
 
 Descompriman el fichero descargado y ejecútenlo como administrador del equipo:
-En Linux y Windows simplemente un doble clic del ratón comenzará la instalación, sigan las instrucciones que vayan saliendo.
-En Mac OS X es fácil la instalación, ya que se trata de un paquete autoinstalable.
+
+* En Linux y Windows simplemente un doble clic del ratón comenzará la instalación, sigan las instrucciones que vayan saliendo.
+* En Mac OS X es fácil la instalación, ya que se trata de un paquete autoinstalable.
 
 La instalación comienza preguntando el idioma y pidiendo confirmación para instalarlo en el sistema:
 
@@ -47,26 +49,31 @@ En Linux, se ha creado un enlace en el menú Aplicaciones – AbanQ, mientras qu
 ---
 ####Ejecución de AbanQ
 
-Abran el programa AbanQ que acaban de instalar, pulsen el botón vertical que aparece en el margen derecho para abrir las opciones de conexión tal como ven más abajo, elijan el Controlador: PostgreSQL o MySQL, según sea el que hayan instalado. Dejen el Servidor: localhost (localhost es equivalente a la dirección IP 127.0.0.1 y siempre señala al propio ordenador) y el puerto 5432 si usan PostgreSQL o 3306 si fuera MySQL. En la parte izquierda pongan el nombre de la base de datos a usar (envoltosa), el usuario (postgres para PostgreSQL o root para MySQL) y la contraseña (alumno):
+Abran el programa AbanQ que acaban de instalar, pulsen el botón vertical que aparece en el margen derecho para abrir las opciones de conexión tal como ven más abajo, elijan:
+* el Controlador: PostgreSQL o MySQL, según sea el que hayan instalado.
+* Dejen el Servidor: localhost (localhost es equivalente a la dirección IP 127.0.0.1 y siempre señala al propio ordenador)
+* y el puerto **5432 si usan PostgreSQL** o **3306 si fuera MySQL**.
+* En la parte izquierda pongan:
+     * el nombre de la base de datos a usar (envoltosa),
+     * el usuario (postgres para PostgreSQL o root para MySQL)
+     * y la contraseña (alumno):
 
 
-Pulsen el botón Conectar para iniciar AbanQ.
+Pulsen el botón Conectar para iniciar Eneboo.
 
 En GNU/Linux, si comprueban que no se pueden escribir vocales acentuadas, abran una terminal (menú Aplicaciones – Accesorios – Terminal) y prueben los siguientes comandos escribiendo alguna vocal acentuada en el lugar destinado al nombre de la base de datos:
 
-`LANG=es_ES.ISO-8859-1 fllite`
-`LANG=es_ES.ISO-8859-15 fllite`
-`LANG=es_ES.UTF-8@euro fllite`
-`XMODIFIERS='' LANG=es_ES@euro fllite `
+     * `LANG=es_ES.ISO-8859-1 fllite`
+     * `LANG=es_ES.ISO-8859-15 fllite`
+     * `LANG=es_ES.UTF-8@euro fllite`
+     * `XMODIFIERS='' LANG=es_ES@euro fllite `
 
 En cuanto funcionen los acentos con alguno de ellos, salgan de AbanQ con el botón cancelar y prueben a automatizar el comando apropiado: Desde la misma terminal que tengan abierta pueden crear un fichero con las dos líneas propuestas a continuación, y hacerlo ejecutable
 
-`sudo gedit /usr/bin/fllite_es`
-
-`#!/bin/sh `
-`XMODIFIERS='' LANG=es_ES@euro fllite # Aquí el comando elegido`
-
-`sudo chmod 755 /usr/bin/fllite_es`
+     * `sudo gedit /usr/bin/fllite_es`
+     * `#!/bin/sh `
+     * `XMODIFIERS='' LANG=es_ES@euro fllite # Aquí el comando elegido`
+     * `sudo chmod 755 /usr/bin/fllite_es`
 
 Cambien el menú, con el botón derecho del ratón sobre el menú aplicaciones, editar los menús y en la entrada Aplicaciones – Otras – AbanQ con el botón derecho del ratón cambien el comando a llamar a “/usr/bin/fllite_es” sin las comillas.
 
@@ -77,15 +84,19 @@ No es necesario seguir este apartado para la asignatura, son instrucciones para 
 
 En linux, al menos en sistemas basados en Debian (Ubuntu, Guadalinex, Linex), hay que crear un enlace a las impresoras del sistema:
 Abrir la consola con el menú Aplicaciones – Accesorios – Terminal, y escribir las órdenes,
-`sudo mv /etc/printcap /etc/printcapold`
-`sudo ln -s /var/run/cups/printcap /etc/printcap`
+
+    * `sudo mv /etc/printcap /etc/printcapold`
+    * `sudo ln -s /var/run/cups/printcap /etc/printcap`
 
 En Windows es necesario instalar el programa Ghostscript para imprimir correctamente, a continuación explicamos la forma de instalarlo:
 
 Primero descargar el programa siempre que no sea mayor que la version 9.0:
-Para Windows de 32 bits sirve la versión 8.53 de la dirección:
+* Para Windows de 32 bits sirve la versión 8.53 de la dirección:
+
 http://ftp.us.es/ftp/especiales/sifico/gs853w32.exe
-Y para Windows de 64 bits sirve la version 8.71 de la direccion:
+
+* Y para Windows de 64 bits sirve la version 8.71 de la direccion:
+
 http://ftp.us.es/ftp/especiales/sifico/gs871w64.exe
 
 Si el directorio no existiera, habrá que buscar el programa, en su versión GPL, en http://www.ghostscript.com.
@@ -106,4 +117,4 @@ Aceptar, cerrar la sesión de administrador para volver al de usuario limitado y
 Caso particular para procesadores de 64 bits:
 
 ---
-####Si usted tiene un procesador y un sistema operativo de 64 bits, descargue el instalador correspondiente a dicha arquitectura desde la web de AbanQ: http://www.abanq.com
+####Si usted tiene un procesador y un sistema operativo de 64 bits, descargue el instalador correspondiente a dicha arquitectura desde la web de Eneboo: http://www.enboo.org/site/stable
