@@ -28,7 +28,7 @@ Descarguen el fichero de instalación desde la plataforma de enseñanza virtual 
 
 http://www.eneboo.org/site/stable
 
-Descarguen el programa más adecuado, normalmente: 
+1. **Descarguen el programa más adecuado**, normalmente: 
 
 * **Build dbAdmin Windows 32bits** (windows XP, ordenadores "viejos")
 * Build Quick Windows 32bits (solo para ordenadores "clientes"-en red)
@@ -41,7 +41,19 @@ Descarguen el programa más adecuado, normalmente:
 * Build dbAdmin OS X PPC
 * Build Quick OS X PPC (solo para ordenadores "clientes"-en red)
 
-Descompriman el fichero descargado y ejecúten el archivo "eneboo" que está en la carpeta-subdirectorio "bin" (como administrador del equipo):
+######dbAdmin o Quick: ¿qué versión es la mejor para mí?
+
+Muy sencillo. Si va a modificar el programa (los módulos), cargar o actualizar los módulos existentes o va a desarrollar sobre Eneboo, necesitará la versión dbAdmin.
+
+En cambio, si usted forma parte de una red local y es usuario de unos modulos ya instalados de Eneboo, necesitará la versión Quick.
+
+**dbAdmin**: Incluye las herramientas de administración y modifica la base de datos al vuelo. Puede cargar módulos y actualizaciones.
+
+**Quick**: No puede administrar ni tampoco modifica la base de datos de forma inadvertida, evitando posibles problemas y bloqueos en entornos multiusuario. Además contiene optimizaciones para trabajar a través de redes lentas.
+
+--
+
+2. **Descompriman el fichero descargado** y ejecúten el archivo "eneboo" que está en la carpeta-subdirectorio "bin" (como administrador del equipo):
 
 * En Linux y Windows simplemente un doble clic del ratón comenzará la instalación, sigan las instrucciones que vayan saliendo.
 * En Mac OS X es fácil la instalación, ya que se trata de un paquete autoinstalable.
