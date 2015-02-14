@@ -1,13 +1,12 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * ULTIMA ACTUALIZACIÓN: 14 de febrero de 2015
-* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Instalaci%C3%B3n)
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Instalacion-en-linux)
 
 ----
 
-Archivo original: [ENEBOO/doc](https://github.com/eneboo/doc/wiki/[Eneboo Standard] Instalación)
 
-# Instalador automático
+# Instalador automático (Eneboo + PostgreSQL)
 El instalador permite que en pocos minutos Eneboo Standard esté listo para trabajar. El instalador realiza las siguientes tareas de forma automática:
 
 * Instala el motor de Eneboo.
@@ -23,14 +22,18 @@ De momento no hay instalador automático para Mac.
 ## Macintosh
 
 1. Descargar y descomprimir el [motor de Eneboo para Mac OS X] (http://eneboo.com/pub/eneboo/builds/v2.4.0/eneboo-v2.4.0-alpha5-mac32.zip) (sólo para 32 bits).
-2. Descargar e instalar el gestor de bases de datos PostgreSQL (recomendamos la versión 8.4) para Mac del [área de descarga de PostgreSQL](http://www.enterprisedb.com/products-services-training/pgdownload). La instalación solicitará un usuario y una contraseña de administrador de la base de datos que conviene anotar, ya que serán necesarios más adelante.
+2. Descargar e instalar el gestor de bases de datos:
+* **PostgreSQL** (recomendamos la versión 8.4) para Mac del [área de descarga de PostgreSQL](http://www.enterprisedb.com/products-services-training/pgdownload). La instalación solicitará un usuario y una contraseña de administrador de la base de datos que conviene anotar, ya que serán necesarios más adelante.
+* **MySQL**
 3. Descargar el [paquete de Eneboo Standard](http://www.eneboo.com/pub/contrib/standard-modules/standard.eneboopkg).
 4. [Cargar el paquete de Eneboo Standard](#cargar-el-paquete-de-eneboo-standard).
     
 ## Linux
 
 1. Descargar y descomprimir el motor de Eneboo para Linux en el apartado [Versiones Estables](http://www.eneboo.org/site/stable). Buscaremos el _Build dbAdmin Linux_ de 32 o 64 bits.
-2. Descargar e instalar el gestor de bases de datos PostgreSQL (recomendamos la versión 8.4) para Linux del [área de descarga de PostgreSQL](http://www.enterprisedb.com/products-services-training/pgdownload). La instalación solicitará un usuario y una contraseña de administrador de la base de datos que conviene anotar, ya que serán necesarios más adelante.
+2. Descargar e instalar el gestor de bases de datos:
+* 2.A **PostgreSQL** (recomendamos la versión 8.4) para Linux del [área de descarga de PostgreSQL](http://www.enterprisedb.com/products-services-training/pgdownload). La instalación solicitará un usuario y una contraseña de administrador de la base de datos que conviene anotar, ya que serán necesarios más adelante.
+* 2.B **MySQL**
 3. Descargar el [paquete de Eneboo Standard](http://www.eneboo.com/pub/contrib/standard-modules/standard.eneboopkg).
 4. [Cargar el paquete de Eneboo Standard](#cargar-el-paquete-de-eneboo-standard).
 
