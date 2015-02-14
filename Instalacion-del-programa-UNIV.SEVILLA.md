@@ -1,4 +1,10 @@
+* CREADO POR: [Universidad de Sevilla](http://www.us.es): Guillermo Molleda Jimena
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ULTIMA ACTUALIZACIÓN: 13 de febrero de 2015
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Area-de-Facturaci%C3%B3n-COMPLETO-UNIV.SEVILLA)
 
+----
+###EN CONSTRUCCIÓN
 
 INSTALACIÓN DEL PROGRAMA CLIENTE DEL ERP: AbanQ
 
