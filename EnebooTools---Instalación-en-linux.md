@@ -7,8 +7,6 @@
 
 ##PASOS DE INSTALACIÓN:
 
-![eneboo-tools2](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/eneboo-tools/eneboo-tools2.jpg)
-
 ###PASO 1: HACERSE CON UN LINUX
 * Por qué? ...pues porque parece ser que necesitamos unas "librerías" para el programa Python...y no hay versión "viable" en Windows...
 
@@ -111,6 +109,9 @@ Para tener el programa funcionando, se recomienda:
   `sudo apt-get install libxml2-dev libxslt-dev python-dev`
 
 * aqui colocar las 2 capturas de pantalla (scrot en linux-lubuntu....o camara del movil....triste)
+
+![eneboo-tools2](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/eneboo-tools/eneboo-tools2.jpg)
+
 
 ###PASO 3: CLONAR EL GITHUB DE ENEBOO-TOOLS (eneboo-modules y eneboo-features): 
 
