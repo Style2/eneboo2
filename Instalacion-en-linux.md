@@ -36,8 +36,15 @@
                  * opciones:
                      * instalar XAMPP Developer Files? Y (por si acaso digo Y a todo...)
                      * Y a todo...instala en directorio: "/opt/lampp" (aprox. 10 minutos)
-            * That's all. XAMPP is now installed below the /opt/lampp directory.
+            * Salir de consola: Ctrl+Alt+F1 y verificar en mozilla: "localhost"...luego "español" y "status" en menú izquierda
 
+* aquí meter captura pantalla XAMPP
+
+* arrancar XAMPP: sudo /opt/lampp/lampp start
+* arrancar mySQLserver: sudo /opt/lampp/bin/mysql.server start
+
+* configurar seguridad XAMPP: sudo /opt/lampp/lampp security (xampp=usuario)
+* error al conectar por eneboo....111 cannt connect...????
 
 3. Descargar el [paquete de Eneboo Standard](http://www.eneboo.com/pub/contrib/standard-modules/standard.eneboopkg).
 4. [Cargar el paquete de Eneboo Standard](#cargar-el-paquete-de-eneboo-standard).
