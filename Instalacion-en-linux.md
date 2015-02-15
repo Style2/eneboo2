@@ -45,6 +45,9 @@
 
 * configurar seguridad XAMPP: sudo /opt/lampp/lampp security (xampp=usuario)
 * error al conectar por eneboo....111 cannt connect...????
+* edito my.cnf de /opt/lampp/etc y modifico las líneas:
+     * (aprox.linea 35) max_allow_packet=2M (había 1M)...esto por un problema con una tabla .ui del modulo contable...
+     * añado # a la línea 30: user=mysql.....mierda, no graba....como?????
 
 3. Descargar el [paquete de Eneboo Standard](http://www.eneboo.com/pub/contrib/standard-modules/standard.eneboopkg).
 4. [Cargar el paquete de Eneboo Standard](#cargar-el-paquete-de-eneboo-standard).
