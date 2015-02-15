@@ -7,6 +7,8 @@
 
 ##PASOS DE INSTALACIÓN:
 
+![eneboo-tools2](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/eneboo-tools/eneboo-tools2.jpg)
+
 ###PASO 1: HACERSE CON UN LINUX
 * Por qué? ...pues porque parece ser que necesitamos unas "librerías" para el programa Python...y no hay versión "viable" en Windows...
 
