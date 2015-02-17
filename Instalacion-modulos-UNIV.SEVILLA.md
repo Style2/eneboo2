@@ -1,6 +1,6 @@
 
 
-INSTALACIÓN DE LOS MÓDULOS DEL ERP AbanQ
+####INSTALACIÓN DE LOS MÓDULOS DEL ERP AbanQ
 
 
 
@@ -10,9 +10,9 @@ Instalación de los módulos del ERP AbanQ:	2
 Requisitos para la instalación	2
 Instalación de los módulos	2
 
-Instalación de los módulos del ERP AbanQ:
+##Instalación de los módulos del ERP AbanQ:
 
-Requisitos para la instalación
+###Requisitos para la instalación
 
 Debemos tener instalado el cliente AbanQ y un servidor de bases de datos, éste puede ser PostgreSQL o MySQL.
 
@@ -20,7 +20,7 @@ Existen dos posibles formas de instalar los módulos, la primera a partir de los
 
 En el aula de informática no es necesario realizar este proceso, pues ya está creada la base de datos con los módulos del ERP (Enterprise Resource Planning) instalados.
 
-Instalación de los módulos
+###Instalación de los módulos
 
 Antes de empezar a instalar los módulos debemos bajarlos de internet y descomprimir los ficheros descargados en nuestro disco duro. Aunque en la web de AbanQ hay unos módulos básicos de contabilidad y facturación gratuitos, nosotros utilizaremos los módulos personalizados disponibles en la plataforma de enseñanza virtual de la asignatura. Sigan los siguientes pasos:
 
@@ -62,7 +62,7 @@ El motivo de comenzar por Facturación – Principal es que se trata del centro 
 
 Una vez que abramos el módulo aparecerá el acuerdo de licencia del mismo para que lo aceptemos (ver la ilustración 12) y tras hacerlo nos avisará de la creación si no existiera de una nueva Área de módulos (ilustraciónes 13 y 14).
 
-En general lo importante es que la carga de los módulos debe empezar por el llamado Principal, ya que contiene información y tablas necesarias para el resto de módulos de cada Área.
+####En general lo importante es que la carga de los módulos debe empezar por el llamado Principal, ya que contiene información y tablas necesarias para el resto de módulos de cada Área.
 
 
 
