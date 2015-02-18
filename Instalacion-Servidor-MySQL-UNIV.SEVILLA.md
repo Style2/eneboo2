@@ -35,87 +35,86 @@ Usaremos la versión de MySQL 4.1.21 para MS Windows, para ello descarguen  el f
 Bajen y descompriman el instalador de Internet, con la opción “Extraer todo...” al pulsar con el botón derecho del ratón. Al hacerlo, se creará un fichero llamado Setup.exe el cual debemos abrir para proceder con la instalación.
 Al abrirlo, en la primera ventana pulsen Next para iniciar la instalación: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-2.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-1.PNG)
 
 Pulsen Next sin cambiar el tipo de instalación que viene por defecto: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-3.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-2.PNG)
 
 Pulsen el botón Install para comenzar la instalación real de la aplicación:
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-4.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-3.PNG)
 
 Esperen un momento mientras se van copiando los archivos: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-5.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-4.PNG)
 
 Ahora vamos a configurar algunos aspectos básicos del programa, primero elegimos crear una nueva cuenta de usuario de MySQL. Dejar seleccionado “Create a new free MySQL.com account” y pulsar Next.
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-6.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-5.PNG)
 
 En las siguientes pantallas vamos a introducir los datos de la nueva cuenta, comenzaremos por la dirección de correo electrónico y la contraseña: 
 Email Address: inven@tado.com 
 Password: alumno 
 Password (again): alumno 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-7.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-6.PNG)
 
 Luego los datos nombre y apellido: 
 First Name: inven 
 Last Name: tado 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-8.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-7.PNG)
 
 Y finalizaremos con el código postal, el país y el estado o provincia: 
 Zip / Postal Code: 41018 
 Country: Spain 
 State / Province: Other or N/A 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-9.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-8.PNG)
 
 En la siguiente pantalla aparece un resumen de los datos introducidos para confirmarlos con el botón Next: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-11.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-9.PNG)
 
 Para finalizar debemos dejar activada la casilla para configurar el servidor de MySQL, pulsen el botón Finish: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-12.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-10.PNG)
 
 En este momento debemos tener instalado el gestor de bases de datos MySQL. Tras finalizar el proceso de instalación, una nueva ventana ha sido abierta para iniciar la configuración del servidor. 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-13.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-11.PNG)
 
 Pulsar el botón Next para iniciar la configuración de MySQL:
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-14.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-12.PNG)
 
 Comenzamos la configuración del servidor eligiendo la opción de configuración estándar (Standard Configuration) y pulsando el botón Next: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-15.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-13.PNG)
 
 Con las opciones "Install As Windows Service" (instalar como servicio de Windows) y "Launch the MySQL Server automatically" (arrancar el servidor MySQL de forma automática), pulsaremos el botón Next: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-16.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-14.PNG)
 
 Ahora crearemos una contraseña para administrar el servidor con el usuario root (en español root se traduce como administrador) a la vez que marcamos la opción "[v] Enable root access from remote machines" (permitir el acceso a root desde ordenadores de la red): 
 New root password: alumno 
 Confirm: alumno 
 [v] Enable root access from remote machines
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-17.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-15.PNG)
 
 La siguiente pantalla nos prepara para la configuración real del servidor, pulsen el botón Execute: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-18.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-16.PNG)
 
 Y una vez realizada la configuración podemos pulsar el botón Finish para cerrar la ventana: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-19.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-17.PNG)
 
 En este momento debemos tener el servidor de MySQL instalado y funcionando en nuestro ordenador. 
-Instalación del programa para administrar MySQL
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-20.PNG)
+##Instalación del programa para administrar MySQL
 
 Todo gestor de bases de datos necesita de un programa que permita administrarlo, entre las tareas de administración están la de poder crear, modificar y eliminar  bases de datos y usuarios del servidor. También debe facilitar labores de mantenimiento como la creación y recuperación de copias de seguridad, etc.
 
@@ -125,52 +124,55 @@ Una vez descargado comprobarán por su extensión (.msi) que se trata de un inst
 
 Ejecuten el instalador y verán aparecer la ventana de bienvenida. Pulsen el botón Next para continuar: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-21.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-18.PNG)
 
 Antes de continuar, pueden ver que el programa se acoge a la licencia GPL, dando las mayores libertades a sus usuarios. Acepten la licencia y pulsen el botón Next: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-22.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-19.PNG)
 
 El programa se instalará en la carpeta de "Archivos de programa" de vuestro equipo, sigan con la instalación pulsando el botón Next: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-23.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-20.PNG)
 
 En la ventana para elegir el tipo de instalación, dejen la opción Complete seleccionada y pulsen Next: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-24.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-21.PNG)
 
 Tras repasar las opciones seleccionadas, comenzar el proceso de instalación real pulsando el botón Install: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-25.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-22.PNG)
 
 Esperen mientras se copian los ficheros: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-26.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-23.PNG)
 
 A continuación nos presentan varios servicios que la empresa desarrolladora de MySQL oferta a los usuarios; en el mundo del software libre (GPL) el negocio está en la venta de productos y sobretodo servicios que complementan al programa principal: Formación, mantenimiento, otras aplicaciones, etc.
 
 Pulsen el botón Next de las siguientes ventanas: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-27.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-24.PNG)
 
 
 Finalmente pulsaremos el botón Finish para cerrar la ventana del instalador: 
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-28.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-25.PNG)
 
 De esta forma hemos finalizado la instalación del Administrador de MySQL. 
 
 
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-26.PNG)
+
 Ahora debemos configurar el sistema, para ello deben abrir la aplicación “MySQL Administrator” utilizando el menú Inicio – Todos los programas – MySQL – MySQL Administrator:
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-29.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-27.PNG)
 
 Al principio os pide un servidor que debe ser localhost, un usuario: root y la contraseña la dejan en blanco porque no hemos asignado ninguna todavía.
 
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-28.PNG)
 
 Una vez que hayamos conectado con el servidor, en la opción User Administration, seleccionen el usuario “root” del recuadro User Accounts. A la derecha, en la información del usuario root asignen la contraseña alumno tanto en Password como en Confirm password:
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-30.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-29.PNG)
 
 Aceptados los cambios podremos usar MySQL desde otros programas utilizando el servidor localhost, el puerto 3306, el usuario root y la contraseña alumno.
 
@@ -181,25 +183,26 @@ Aceptados los cambios podremos usar MySQL desde otros programas utilizando el se
 Descargar la versión de MySQL 5.0 compatible con el sistema operativo1 (en el ejemplo, trabajaremos con la versión Mac OS X 10.4.9), en la dirección: 
 http://dev.mysql.com/downloads/ , se puede elegir para Mac OS X 10.3 y Mac OS X 10.4
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-31.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-30.PNG)
 
 Pulsar la opción:
 MySQL_5.0 – Generally Available (GA) release for production use
 
 Buscar, al final de la siguiente página, la opción “Mac OS X (package format)
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-32.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-31.PNG)
 
 En función del equipo elegir entre las opciones mostradas y pulsar en “Pick a mirror”, elija si no le suena 32-bit (ejemplo: Mac OS X 10.4 PowerPC, 32 bits).
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-33.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-32.PNG)
 
 Pulsen el botón “No thanks, just take me to the downloads!” para no tener que  registrarse:
 
-![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-34.PNG)
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-33.PNG)
 
 Seleccionar el HTTP del Mirror más cercano, en nuestro caso Madrid (si fallara, pueden elegir FTP e incluso un mirror diferente, aunque el más cercano posible).
 
+![DibujoMYSQL-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/dibujoMySQL/DibujoMYSQL-34.PNG)
 
 Y guardar el archivo:
 
