@@ -11,12 +11,12 @@ veremos la estructura del lenguaje QSA y usaremos las clases más importantes qu
 de los programadores.
 Para terminar, confeccionaremos un informe sencillo para obtener un resumen bien presentado de los datos
 contenidos en las nuevas tablas.
-Antes de comenzar
+##Antes de comenzar
 Realizaremos todos los ejemplos prácticos sobre el módulo Principal del área Facturación. Por ello es
 necesario acceder a una base de datos con este módulo cargado, tal y como hicimos en el artículo anterior.
 Si queremos disponer de una base de datos nueva para realizar estos ejemplos, basta con especificar el nuevo
 nombre de base de datos al arrancar Abanq, y cargar a continuación el módulo Principal de Facturación.
-Las acciones en Abanq
+##Las acciones en Abanq
 Como vimos en el artículo anterior, el motor de Abanq lee e interpreta los metadatos (información sobre
 tablas, formularios, scripts, etc.) que el Sistema Gestor de Base de Datos (SGDB) le proporciona. Estos
 metadatos se organizan en lo que llamamos módulos. Cada módulo agrupa un conjunto de metadatos que
@@ -28,7 +28,7 @@ Tomaremos como ejemplo el módulo Principal del área de Facturación. Su códig
 fichero de acciones será flfactppal.xml. Lo visualizaremos de la forma ya descrita en el artículo anterior
 (Área de Sistema -> Módulo de Administración -> Módulos -> Editar flfactppal -> Seleccionar
 flfactppal.xml -> Ver registro). Aparecerá una ventana similar a la de la figura 1:
-1. Fichero de acciones flfactppal.xml
+###1. Fichero de acciones flfactppal.xml
 Vemos que el fichero de acciones está compuesto por nodos <action>. Cada uno de estos nodos define una
 acción. Una acción es una unidad funcional concreta, que agrupa una serie de elementos necesarios para su
 correcto funcionamiento. Cada acción puede contener los nombres de una tabla, un formulario maestro, un
@@ -47,7 +47,7 @@ Las etiquetas que conforman cada acción son:
 • <scriptformrecord> Nombre del script asociado al formulario edición.
 Veremos qué significa cada una de estas etiquetas a medida que progresemos en el desarrollo de nuestro
 ejemplo.
-Creando nuestra acción
+##Creando nuestra acción
 Vamos a suponer que nos es necesario llevar un control de los empleados de nuestra empresa. Para ello es
 necesario recoger los datos personales de cada uno de ellos. Cada empleado está asociado a un departamento
 de la empresa, y queremos poder emitir informes con un listado de los empleados de alta agrupados por
@@ -55,7 +55,7 @@ departamento. Para realizar esta ampliación, el primer paso será crear la acci
 departamentos ya existe en el módulo principal). Editaremos el fichero de acciones flfactppal.xml, añadiendo
 un nuevo nodo <action> tal y como aparece en la figura 2 (recuerda que para editar el fichero debes pulsar
 Editar Registro y seguidamente Editar Fichero).
-2. Acción empleados en flfactppal.xml
+###2. Acción empleados en flfactppal.xml
 En la nueva acción indicamos que la tabla de empleados debe definirse en el fichero empleados.mtd, y que
 los formularios maestro y de edición (veremos qué significan estos términos más adelante) son i_master.ui y
 empleados.ui. Por ahora no indicaremos los nombres de los scripts. Una vez guardados los cambios (Aceptar
@@ -66,15 +66,15 @@ barra de herramientas.
 Las ventanas principales de cada módulo son formularios cuyo nombre sigue el esquema id_modulo.ui. En
 nuestro caso, deberemos editar el formulario flfactppal.ui. Una vez abierto el formulario mediante
 QtDesigner, incluiremos una nueva opción Empleados en el menú Tablas Generales (figura 3).
-3. Menú Tablas Generales de flfactppal.ui
+###3. Menú Tablas Generales de flfactppal.ui
 Al crear esta nueva opción y pulsar Intro hemos creado una nueva acción en la ventana principal del módulo.
 Para editar esta acción debemos abrir el editor de acciones (opción de menú Window -> Views -> Action
 Editor). Vemos que se ha creado una acción cuyo nombre por defecto es tablas_generalesEmpleadosAction
 (figura 4).
-4. Nueva acción creada en el Action Editor
+###4. Nueva acción creada en el Action Editor
 Cambiaremos este nombre y el resto de propiedades de la acción en la ventana de propiedades (Property
 Editor) como muestra la figura 5.
-5. Property Editor de QtDesigner
+###5. Property Editor de QtDesigner
 Como podemos ver, hemos añadido un icono y especificado las teclas de acceso rápido a la acción. Para
 incluir un botón en la barra de herramientas arrastraremos el icono desde el Action Editor hasta la posición
 de la barra en la que deseemos ubicar el botón.
@@ -93,14 +93,14 @@ receptor- ejecutará un determinado método o slot.
 En nuestro caso, deseamos que cuando el objeto acción empleados se active (emita la señal activated), el
 objeto ventana principal de la aplicación Abanq (FLWidgetApplication) muestre el formulario por defecto de
 la acción (slot openDefaultForm). La conexión debe quedar por tanto tal y como describe la figura 6.
-6. Ventana de conexiones
+###6. Ventana de conexiones
 Una vez establecida la conexión pulsamos Ok y guardamos los cambios en flfactppal.ui. Ya podemos probar
 nuestra acción. Si accedemos al módulo Principal del área de Facturación y pulsamos el botón o la opción de
 menú Empleados, Abanq nos mostrará una ventana como la de la figura 7.
-7. Formulario de la acción empleados
+###7. Formulario de la acción empleados
 El mensaje 'No hay metadatos' hace referencia a que no hemos definido todavía la tabla empleados. En el
 siguiente punto veremos cómo hacer esto.
-Creando las tablas
+##Creando las tablas
 Las tablas se definen dentro del directorio tables de los módulos, y tienen la extensión mtd.
 El nombre del fichero de la tabla, según nuestra nomenclatura, debe ser empleados.mtd. Insertamos un
 registro en el módulo, igual que hicimos con la creación del fichero de acciones, para la nueva tabla con el
@@ -201,7 +201,7 @@ El campo seccion lo hemos definido como una lista de opciones con varias seccion
 de ejemplo. Es muy recomendable repasar la estructura xml de esta tabla y comprender bien todos los
 campos y etiquetas. Podemos repasar las especificaciones de las tablas.
 Pulsamos Aceptar cambios y cerrar formulario.
-Creando los formularios
+##Creando los formularios
 Abanq usa dos tipos principales de formularios: El formulario maestro y el formulario de edición. Veamos
 cómo es y cómo se crea cada uno de ellos.
 El formulario maestro es el que muestra en una lista un subconjunto de los registros de la tabla, ofreciendo al
@@ -213,7 +213,7 @@ En el caso de la acción de empleados, hemos nombrado a este formulario i_master
 azar, sino el de un formulario predeterminado, ya incluido en Abanq. De hecho, podemos volver a pulsar
 sobre la acción de empleados y veremos que ya nos aparece un formulario Empleados con los campos de la
 tabla (figura 10).
-10. Formulario maestro de empleados
+###10. Formulario maestro de empleados
 En el caso de que quisiéramos crear un formulario maestro personalizado, procederíamos de forma similar a
 como se describe a continuación para el formulario de edición.
 El formulario de edición es el que ofrece al usuario la posibilidad de visualizar, crear o modificar los datos de
@@ -225,7 +225,7 @@ la tabla empleados.mtd, crearemos un nuevo registro en el módulo flfactppal. Al
 .ui, Abanq lanzará QtDesigner en lugar del editor de textos. En el cuadro de diálgo New File seleccionaremos
 el tipo Widget.
 Nuestro formulario de edición deberá ser similar al de la figura 11.
-11. Formulario empleados.ui
+###11. Formulario empleados.ui
 Hemos agrupado los controles FLFieldDB en tres controles groupBox para mayor claridad, aunque esto no
 es necesario.
 Las principales propiedades de cada campo son las siguientes:
@@ -249,14 +249,14 @@ tal y como ya describimos en el artículo anterior.
 Una vez guardado el formulario ya podemos probarlo. Si abrimos la acción empleados aparecerá el
 fomulario maestro (i_master.ui). Si pulsamos ahora sobre el botón Insertar Registro, se abrirá nuestro
 formulario empleados.ui con el aspecto de la figura 12.
-12. Formulario de edición de empleados
+###12. Formulario de edición de empleados
 Podemos apreciar cómo dependiendo del tipo de campo, el control FLFieldDB correspondiente toma el
 aspecto adecuado para mostrar su valor.
 Llegados a este punto ya podriamos comenzar a trabajar con esta ventana. Los botones de aceptar y cancelar,
 así como las validaciones de datos de cada campo están plenamente operativos, de forma que si establecemos
 todos los campos requeridos (marcados como <null>false</null> en empleados.mtd) y pulsamos aceptar
 habremos creado nuestro primer empleado.
-Creando los scripts
+##Creando los scripts
 Vamos a dotar a nuestros formularios de una mayor funcionalidad asociándoles un script. No vamos a hacer
 una descripción demasiado formal del lenguaje QSA usado en Abanq, simplemente diremos que es muy
 similar a JavaScript e incluiremos comentarios en el código de los ejemplos que aclaren su funcionamiento.
@@ -269,7 +269,7 @@ Podemos consultar la documentación de QSA en http://doc.trolltech.com/qsa-1.2/i
 interfaz de objetos de Abanq en el apartado de documentación de esta web.
 Lo primero será añadir las referencia a los scripts en el correspondiente nodo <action> del fichero de
 acciones (figura 13).
-13. Añadiendo las referencias a los scripts en la acción empleados
+###13. Añadiendo las referencias a los scripts en la acción empleados
 Hemos asociado al formulario maestro el script masterempleados.qs, y al formulario de edición el script
 empleados.qs.
 Crearemos primero el script asociado al formulario de edición, empleados.qs. A continuación mostramos el
@@ -490,7 +490,7 @@ rptViewer.exec(); // Muestra el informe
 /////////////////////////////////////////////////////////////////
 Si tratamos de ejecutar la función imprimir la aplicación fallará, dado que la consulta empleados.qry todavía
 no está creada.
-Creando los informes
+##Creando los informes
 Para finalizar, vamos a crear un pequeño informe en el que recogeremos los datos de nuestro empleados
 organizados por departamentos. Para ello crearemos primero una consulta que extraiga dichos datos.
 Crearemos el fichero empleados.qry con el siguiente contenido:
@@ -526,7 +526,7 @@ Header. Nos aparecerá una primera zona en el informe destinada al encabezado. A
 para mostrar el título del informe. Seleccionaremos el icono Label de la barra de herramientas de la izquierda
 y pulsaremos sobre el punto del encabezado en el que deseemos ubicar la etiqueta. Pulsando con el botón
 derecho del ratón sobre la etiqueta creada editaremos sus propiedades.
-14. Encabezado del informe de empleados
+###14. Encabezado del informe de empleados
 Por ahora nos preocuparemos únicamente de la estructura del informe, dejando la apariencia para más tarde.
 Las únicas propiedades que hemos cambiado son: Text = Informe de Empleados de Alta y Width = 250.
 De la misma forma que hemos creado el encabezado de informe crearemos el detalle de nivel 0, que
@@ -546,18 +546,18 @@ Por último cerraremos el informe con un pie de página (Page Footer) en el que 
 generación del informe y el número de página. Cada uno de estos datos se consigue insertando un campo de
 tipo Special, la fecha con Type = 0 y el número de página con Type = 1.
 El informe debe presentar un aspecto similar al de la figura 15.
-15. Plantilla del informe de empleados
+###15. Plantilla del informe de empleados
 Una vez guardado ya podemos probar el informe. El visor de informes debe mostrarnos algo parecido a la
 figura 16.
-16. Informe de empleados
+###16. Informe de empleados
 Bien, nuestro informe funciona, pero todavía no estamos en condiciones de ir enseñándolo por ahí. Ahora
 debemos darle una buena presentación. Como este trabajo es cuestion de gustos, dejaremos que cada uno dé
 al informe la apariencia que prefiera.
 Podemos obtener más información sobre las distintas propiedades de las secciones y campos de los informes
 en el apartado Documentación de http://www.Abanq.org
 Como ejemplo de presentación podemos ver el informe que muestra la figura 17.
-17. Ejemplo de formato de informe
-Conclusión
+###17. Ejemplo de formato de informe
+##Conclusión
 Hemos explotado la flexibilidad de Abanq para crear una funcionalidad que necesitábamos y que no existía
 en los módulos actuales. Con un poco de práctica seremos capaces de realizar este tipo de ampliaciones /
 modificaciones en muy poco tiempo y, como hemos comprobado, con resultados profesionales.
