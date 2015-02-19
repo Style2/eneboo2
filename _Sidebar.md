@@ -8,10 +8,10 @@
 1. [Instalación en windows con MySQL](https://github.com/Miguel-J/eneboo/wiki/Instalaci%C3%B3n-en-windows-con-MySQL)
 1. [Instalación en linux con MySQL](https://github.com/Miguel-J/eneboo/wiki/Instalacion-en-linux)
 1. [Instalación servidor MySQL para Windows&Mac-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Instalacion-Servidor-MySQL-UNIV.SEVILLA)
+--
 1. [Instalación básica-standard con PostgreSQL](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Instalaci%C3%B3n)
-1. [Instalación básica-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Instalacion-del-programa-UNIV.SEVILLA)
+1. [Instalación básica del cliente-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Instalacion-del-programa-UNIV.SEVILLA)
 1. [Instalación de módulos-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Instalacion-modulos-UNIV.SEVILLA)
-1. [Instalación de HEIDI-Gestor base de datos MySQL](https://github.com/Miguel-J/eneboo/wiki/Instalacion-HEIDI-gestor-base-de-datos-MySQL)
 
 ---
 ####PARA EL USUARIO:
@@ -45,6 +45,7 @@
 1. [Programación 3-Estructura de los Módulos-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Programacion-3-Estructura-de-los-Modulos-ABANQ)
 1. [Documentar extensiones-GESTIWEB](https://github.com/Miguel-J/eneboo/wiki/Documentar-extensiones-en-Eneboo-(GESTIWEB))
 1. [Compilar el motor-ENEBOO-OFICIAL](https://github.com/Miguel-J/eneboo/wiki/Compilar-el-motor-(ENEBOO-OFICIAL))
+1. [Instalación de HEIDI-Gestor base de datos MySQL](https://github.com/Miguel-J/eneboo/wiki/Instalacion-HEIDI-gestor-base-de-datos-MySQL)
 1. [EnebooTools-ENEBOO-OFICIAL](https://github.com/Miguel-J/eneboo/wiki/EnebooTools)
 1. [EnebooTools para Windows-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows)
 1. [EnebooTools: Instalación en Linux-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
