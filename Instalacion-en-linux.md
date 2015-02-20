@@ -22,14 +22,14 @@
           * **www.apachefriends.org/download**
           * descargo la versión de 32 bits que contiene: "Includes: Apache 2.4.10, MySQL 5.6.21, PHP 5.5.19 & PEAR + SQLite 2.8.17/3.7.17 + multibyte (mbstring) support, Perl 5.16.3, ProFTPD 1.3.4c, phpMyAdmin 4.2.11, OpenSSL 1.0.1j, GD 2.0.35, Freetype2 2.4.8, libpng 1.5.9, gdbm 1.8.3, zlib 1.2.8, expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, Webalizer 2.23-05, pdf class 0.11.7, ncurses 5.9, pdf class 0.11.7, mod_perl 2.0.8-dev, FreeTDS 0.91, gettext 0.18.1.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.21, mcrypt 2.5.8, mhash 0.9.9.9, cUrl 7.30.0, libxslt 1.1.28, libapreq 2.12, FPDF 1.7, ICU4C Library 4.8.1, APR 1.4.6, APR-utils 1.5.1"
           * darle a la flecha azul...ver en carpeta...ejecutar?
-          * ayuda on-line: www.apachefriends.org/faq_linux.html
+          * ayuda on-line: `www.apachefriends.org/faq_linux.html`
             * a) descargar la versión elegida y 32-bit o 64-bit.
             * b) situarse en el subdirectorio de la descarga del "installer"
             * c) dar permisos al instalador:
                  * Ctr+Alt+F1
-                 * chmod 755 xampp-linux-5.5.19-0-installer.run (en mi caso, cambiar por la versión descargada)
+                 * `$ chmod 755 xampp-linux-5.5.19-0-installer.run` (en mi caso, cambiar por la versión descargada)
             * d) ejecutar el installer
-                 * sudo ./xampp-linux-*-installer.run (uhm, parece que con el * también funciona)
+                 * `$ sudo ./xampp-linux-*-installer.run` (uhm, parece que con el * también funciona)
                  * opciones:
                      * instalar XAMPP Developer Files? "Y" (por si acaso digo "Y" a todo...)
                      * "Y" a todo...instala en directorio: "/opt/lampp" (aprox. 10 minutos)
@@ -37,10 +37,10 @@
 
 * aquí meter captura pantalla XAMPP
 
-* arrancar XAMPP: `sudo /opt/lampp/lampp start`
-* arrancar mySQLserver: sudo /opt/lampp/bin/mysql.server start
+* arrancar XAMPP: `$ sudo /opt/lampp/lampp start`
+* arrancar mySQLserver: `$ sudo /opt/lampp/bin/mysql.server start`
 
-* configurar seguridad XAMPP: sudo /opt/lampp/lampp security (xampp=usuario)
+* configurar seguridad XAMPP: `$ sudo /opt/lampp/lampp security (xampp=usuario)`
 * error al conectar por eneboo....111 cannt connect...????
 * edito my.cnf de /opt/lampp/etc y modifico las líneas:
      * (aprox.linea 35) max_allow_packet=2M (había 1M)...esto por un problema con una tabla .ui del modulo contable...
@@ -53,7 +53,7 @@
      * devuelvo los permisos:
         * `$ sudo chmod a-w my.cnf`
         * `$ sudo chmod u+w my.cnf` 
-     * ejecuto XAMPP: `sudo /opt/lampp/lampp start`
+     * ejecuto XAMPP: `$ sudo /opt/lampp/lampp start`
 
      * Salir de consola: Ctrl+Alt+F7 y verificar en mozilla: "localhost"...luego "español" y "status" en menú izquierda
      * Verificar usuarios en phpMyadmin (menú izquierda-abajo)
