@@ -48,22 +48,23 @@
      * ayuda: `http://es.kioskea.net/faq/312-seguridad-privilegios-de-acceso-gnu-linux`
      * ir a la consola y mirar los permisos en el directorio: `ls -l`
         * `-rw-r--r-- 1 root root fecha my.cnf`
-     * cambio los permisos de escritura: $ sudo chmod a+w my.cnf
-     * ahora vuelvo al editor de windows y hago los cambios...ok
-     * devuelvo los permisos:
+     * cambio los permisos de escritura: `$ sudo chmod a+w my.cnf`
+     * ahora vuelvo (Ctrl+Alt+F7) al editor del explorador de archivos y hago los cambios descritos antes...ok
+     * de vuelta a consola y devuelvo los permisos:
         * `$ sudo chmod a-w my.cnf`
         * `$ sudo chmod u+w my.cnf` 
      * ejecuto XAMPP: `$ sudo /opt/lampp/lampp start`
 
-     * Salir de consola: Ctrl+Alt+F7 y verificar en mozilla: "localhost"...luego "español" y "status" en menú izquierda
+     * Salir de consola: Ctrl+Alt+F7 y verificar que funciona en mozilla poniendo la dirección: "localhost"...luego "español" y "status" en menú izquierda
      * Verificar usuarios en phpMyadmin (menú izquierda-abajo)
 
-     * Arranco el programa (eneboo) desde windows en:
+     * Arrancar el programa (eneboo) desde el explorador de archivos en:
          * /home/linux/Descargas/eneboo--dba/bin
+
+1. Abrir Eneboo. Aparecerá la pantalla _Conectar_.
 
 ![Pantalla de conexión](https://raw.githubusercontent.com/eneboo/doc/master/images/standard/conectar.png)
 
-1. Abrir Eneboo. Aparecerá la pantalla _Conectar_.
 1. Rellenar los campos con los siguientes valores:
     * Base de datos: (nombre empresa)
     * Usuario: root (o el administrador de la base de datos MySQL-ver phpMyAdmin).
