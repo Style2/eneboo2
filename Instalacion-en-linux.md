@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 14 de febrero de 2015
+* ULTIMA ACTUALIZACIÓN: 20 de febrero de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Instalacion-en-linux)
 
 ----
@@ -16,12 +16,8 @@
 2. Descargar e instalar el gestor de bases de datos:
 
      * 2.B **MySQL**
-     * NOTA: ESTO NO FUNCIONÓ: instalo la:
-          * "Begin Your Download - mysql-server_5.6.23-1ubuntu14.10_i386.deb-bundle.tar"
-          * http://dev.mysql.com/downloads/file.php?id=455351
-          * ...registrar? "no thanks, just start my download" (y esperar a flecha azul)...mirar en carpeta...descomprimir aqui...y crea 6 carpetas??
-          * error....miro la linux-generic...otro dia...
-      * INSTALAR XAMP (equivalente a wampserver):
+
+     * INSTALAR XAMP (equivalente a wampserver):
           * **www.apachefriends.org/download**
           * descargo la versión de 32 bits que contiene: "Includes: Apache 2.4.10, MySQL 5.6.21, PHP 5.5.19 & PEAR + SQLite 2.8.17/3.7.17 + multibyte (mbstring) support, Perl 5.16.3, ProFTPD 1.3.4c, phpMyAdmin 4.2.11, OpenSSL 1.0.1j, GD 2.0.35, Freetype2 2.4.8, libpng 1.5.9, gdbm 1.8.3, zlib 1.2.8, expat 2.0.1, Sablotron 1.0.3, libxml 2.0.1, Ming 0.4.5, Webalizer 2.23-05, pdf class 0.11.7, ncurses 5.9, pdf class 0.11.7, mod_perl 2.0.8-dev, FreeTDS 0.91, gettext 0.18.1.1, IMAP C-Client 2007e, OpenLDAP (client) 2.4.21, mcrypt 2.5.8, mhash 0.9.9.9, cUrl 7.30.0, libxslt 1.1.28, libapreq 2.12, FPDF 1.7, ICU4C Library 4.8.1, APR 1.4.6, APR-utils 1.5.1"
           * darle a la flecha azul...ver en carpeta...ejecutar?
@@ -84,5 +80,9 @@
 1. Localizar el archivo standard.eneboopkg y pulsar _Abrir_. Cuando finalice la carga, Eneboo Standard estará listo para empezar a trabajar.
 
 # instalacion con PostgreSQL:
-
+     * 2.B MY SQL .....NOTA: ESTO NO FUNCIONÓ: instalo la:
+          * "Begin Your Download - mysql-server_5.6.23-1ubuntu14.10_i386.deb-bundle.tar"
+          * http://dev.mysql.com/downloads/file.php?id=455351
+          * ...registrar? "no thanks, just start my download" (y esperar a flecha azul)...mirar en carpeta...descomprimir aqui...y crea 6 carpetas??
+          * error....miro la linux-generic...otro dia...
      * 2.A **PostgreSQL** (recomendamos la versión 8.4) para Linux del [área de descarga de PostgreSQL](http://www.enterprisedb.com/products-services-training/pgdownload). La instalación solicitará un usuario y una contraseña de administrador de la base de datos que conviene anotar, ya que serán necesarios más adelante.
