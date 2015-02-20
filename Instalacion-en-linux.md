@@ -13,6 +13,7 @@
 1. Descargar y descomprimir el motor de Eneboo para Linux en el apartado [Versiones Estables](http://www.eneboo.org/site/stable). Buscaremos el _Build dbAdmin Linux_ de 32 o 64 bits.
      * Hacer click en el link y (para Mozilla: darle a la flecha azul de arriba-derecha) luego "mostrar en carpeta" (dibujo de la derecha). Buscar el archivo y con botón derecho: "extraer aqui"
 
+
 2. Descargar e instalar el gestor de bases de datos:
 
      * 2.B **MySQL**
@@ -57,8 +58,6 @@
      * Salir de consola: Ctrl+Alt+F7 y verificar en mozilla: "localhost"...luego "español" y "status" en menú izquierda
      * Verificar usuarios en phpMyadmin (menú izquierda-abajo)
 
-3. Descargar el [paquete de Eneboo Standard](http://www.eneboo.com/pub/contrib/standard-modules/standard.eneboopkg).
-4. [Cargar el paquete de Eneboo Standard](#cargar-el-paquete-de-eneboo-standard).
      * Arranco el programa (eneboo) desde windows en:
          * /home/linux/Descargas/eneboo--dba/bin
 
@@ -79,7 +78,10 @@
 
 # INSTALACIÓN DE MÓDULOS:
 
-1. Se iniciará el programa y se mostrará el entorno Eneboo. En el área de _Módulos_ de la parte izquierda, abrir la opción _Sistema -> Administración -> Cargar Paquete de módulos_.
+1. Descargar el [paquete de Eneboo Standard](http://www.eneboo.com/pub/contrib/standard-modules/standard.eneboopkg).
+1. [Cargar el paquete de Eneboo Standard](#cargar-el-paquete-de-eneboo-standard).
+1. Una vz iniciado el programa Eneboo se mostrará el entorno Eneboo.
+1. En el área de _Módulos_ de la parte izquierda, abrir la opción _Sistema -> Administración -> Cargar Paquete de módulos_.
 1. Localizar el archivo standard.eneboopkg y pulsar _Abrir_. Cuando finalice la carga, Eneboo Standard estará listo para empezar a trabajar.
 
 # instalacion con PostgreSQL:
