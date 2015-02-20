@@ -76,6 +76,9 @@
     * Servidor: localhost
     * Puerto: 3306
 1. Pulsar el botón _Conectar_. Se mostrará un mensaje con el texto _La base de datos standard no existe ¿Quiere crearla?_. Pulsar _Sí_.
+
+# INSTALACIÓN DE MÓDULOS:
+
 1. Se iniciará el programa y se mostrará el entorno Eneboo. En el área de _Módulos_ de la parte izquierda, abrir la opción _Sistema -> Administración -> Cargar Paquete de módulos_.
 1. Localizar el archivo standard.eneboopkg y pulsar _Abrir_. Cuando finalice la carga, Eneboo Standard estará listo para empezar a trabajar.
 
