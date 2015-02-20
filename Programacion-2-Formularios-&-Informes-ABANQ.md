@@ -38,6 +38,8 @@ fichero de acciones será flfactppal.xml. Lo visualizaremos de la forma ya descr
 (Área de Sistema -> Módulo de Administración -> Módulos -> Editar flfactppal -> Seleccionar
 flfactppal.xml -> Ver registro). Aparecerá una ventana similar a la de la figura 1:
 
+![DibujoABANQ-2](https://github.com/Miguel-J/eneboo/blob/master/imagen/ABANQ-2/Dibujo-1.PNG)
+
 ###1. Fichero de acciones flfactppal.xml
 
 Vemos que el fichero de acciones está compuesto por nodos <action>. Cada uno de estos nodos define una
