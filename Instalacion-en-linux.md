@@ -86,7 +86,13 @@
 1. En el área de _Módulos_ de la parte izquierda, abrir la opción _Sistema -> Administración -> Cargar Paquete de módulos_.
 1. Localizar el archivo standard.eneboopkg y pulsar _Abrir_. Cuando finalice la carga, Eneboo Standard estará listo para empezar a trabajar.
 
-# instalacion con PostgreSQL:
+# ARRANCAR ENEBOO DESDE ORDENADOR APAGADO:
+
+1. Ir a consola (Ctrl+Alt+F1) y arrancar XAMPP: `$ sudo /opt/lampp/lampp start`
+1. Volver a ventanas (Ctrl+Alt+F7) y arrancar el programa (eneboo) desde el explorador de archivos en:
+         * /home/linux/Descargas/eneboo--dba/bin
+
+# OTROS: instalacion con PostgreSQL:
 
    * 2.B MY SQL .....NOTA: ESTO NO FUNCIONÓ: instalo la:
           * "Begin Your Download - mysql-server_5.6.23-1ubuntu14.10_i386.deb-bundle.tar"
