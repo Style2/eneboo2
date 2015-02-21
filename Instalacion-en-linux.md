@@ -44,7 +44,8 @@
 * error al conectar por eneboo....111 cannt connect...????
 * edito my.cnf de /opt/lampp/etc y modifico las líneas:
      * (aprox.linea 35) max_allow_packet=2M (había 1M)...esto por un problema con una tabla .ui del modulo contable...
-     * añado # a la línea 30: user=mysql.....peeero no graba....como?????
+     * añado # a la línea 30: user=mysql
+     * añado # a la línea : skipnetworking.....peeero no graba....como?????
      * ayuda: `http://es.kioskea.net/faq/312-seguridad-privilegios-de-acceso-gnu-linux`
      * ir a la consola y mirar los permisos en el directorio: `ls -l`
         * `-rw-r--r-- 1 root root fecha my.cnf`
