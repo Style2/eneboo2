@@ -41,6 +41,12 @@ Y te crea, en la carpeta donde ejecutes, los ficheros de imagenes.
 
 `$ sudo apt-get install python-lxml`
 
+#####Archivos de descarga de imágenes:
+
+1. master.ui: nuevo (hoja-con-estrella-azul), modificar (hoja-con-pincel-amarillo), borrar (cruz-en-circulo-negro), ver (hoja-con-ojo)
+1. ebcomportamiento.ui: circulo-yin-yan
+1. mainwindow.ui: elefante-gris
+1. 
 ###PAGINAS DE DESCARGA DE "ICONSET" EN INTERNET:
 
 http://www.iconarchive.com/
