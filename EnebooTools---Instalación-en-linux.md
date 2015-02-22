@@ -112,6 +112,9 @@ Para tener el programa funcionando, se recomienda:
 
 ![eneboo-tools2](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/eneboo-tools/eneboo-tools2.jpg)
 
+* OJO: Si al usar eneboo-tools sale un mensaje de "ImportError: No module named lxml" es porque la librería de Python "libxml2" en sus versiones recientes no instalan "cosas antiguas" como "lxml", por lo que hay que instalar también:
+
+`$ sudo apt-get install python-lxml`
 
 ###PASO 3: CLONAR EL GITHUB DE ENEBOO-TOOLS (eneboo-modules y eneboo-features): 
 
