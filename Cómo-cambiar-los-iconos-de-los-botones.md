@@ -1,10 +1,10 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 13 de febrero de 2015
+* ULTIMA ACTUALIZACIÓN: 22 de febrero de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/C%C3%B3mo-cambiar-los-iconos-de-los-botones)
 
 ----
-###INICIO:
+###INICIO: CÓMO CAMBIAR UN ICONO DESDE ENEBOO.
 ...puedo acceder al archivo donde aparece....por Eneboo-Sistema-Admin-modulos, y luego "flfactppal" y modificar y de nuevo modificar "FLWidgetMasterTable.ui"...
 
 ....donde deberia cambiar el "iconset" o re-definir la "data format" que sale al final de ese archivo:
@@ -17,16 +17,29 @@ y tmb:
 https://groups.google.com/forum/#!topic/eneboo/Eb2265EINDM
 Un consejo , previamente conviertela a 32x32 para que no se quede colgado eneboo al cargar ese formulario con una imagen gigantesca. 
 
-###COMO "SACAR" LOS ICONOS DE ENEBOO:
+###COMO "SACAR-DESCARGAR" LOS ICONOS OFICIALES DE ENEBOO:
 
-En eneboo-tools tienes una utilidad para extraer iconos: 
+* Sacado de: https://groups.google.com/forum/#!topic/eneboo/lxqbvj7W2fA
 
-$ eneboo-uiimage download ~/path/to/facturacion/principal/master.ui 
+En **eneboo-tools** tienes una utilidad para extraer iconos: 
+
+`$ eneboo-uiimage download ~/path/to/facturacion/principal/master.ui` 
 
 Y te crea, en la carpeta donde ejecutes, los ficheros de imagenes. 
 
-https://groups.google.com/forum/#!topic/eneboo/lxqbvj7W2fA
+* PASO 1: buscar con el "explorador de archivos" el fichero "master.ui", y al seleccionerlo, poner "copiar ruta" y en mi caso da:
 
+`/home/linux/Descargas/eneboo--dba/share/eneboo/forms/master.ui`  
+
+* PASO 2: Ir a consola (Ctrl+Alt+F1) y poner (en mi caso):
+
+`$ eneboo-uiimage download ~/Descargas/eneboo--dba/share/eneboo/forms/master.ui`
+
+* ...y descarga 4 imágenes en el directorio en el que estás....hay que repetir el proceso con el resto de ".ui"...para conseguir el resto de imágenes....??
+* NOTA: El símbolo "~" se consigue en consola-Linux con el F11.
+* OJO: Si sale un mensaje de "ImportError: No module named lxml" es porque la librería de Python "libxml2" en sus versiones recientes no instalan "cosas antiguas" como "lxml", por lo que hay que instalar también:
+
+`$ sudo apt-get install python-lxml`
 
 ###PAGINAS DE DESCARGA DE "ICONSET" EN INTERNET:
 
