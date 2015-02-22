@@ -45,8 +45,13 @@ Y te crea, en la carpeta donde ejecutes, los ficheros de imagenes.
 
 1. master.ui: nuevo (hoja-con-estrella-azul), modificar (hoja-con-pincel-amarillo), borrar (cruz-en-circulo-negro), ver (hoja-con-ojo)
 1. ebcomportamiento.ui: circulo-yin-yan
+1. flfiles.ui: hoja-con-ojo y hoja-con-escuadra
+1. flmodulos.ui: los 4 del master y flecha-azul-abajo y flecha-verde-arriba
 1. mainwindow.ui: elefante-gris
-1. 
+1. FLWidgetMasterTable.ui: carpeta-mas, carpeta-menos, carpeta-lupa, carpeta-lápiz, dos-carpetas
+1. master_copy.ui: mismos que master.ui... más dos-hojas
+1. sys.ui: un monton...dos-cabezas, dos-ventanas, circulo-verde, cuadrado-amarillo, sol, 3-cuadrados, flechas-circulo, pila, diskette, hoja-con-circulo
+
 ###PAGINAS DE DESCARGA DE "ICONSET" EN INTERNET:
 
 http://www.iconarchive.com/
