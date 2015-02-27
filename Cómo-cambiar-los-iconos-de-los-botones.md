@@ -17,6 +17,59 @@ y tmb:
 https://groups.google.com/forum/#!topic/eneboo/Eb2265EINDM
 Un consejo , previamente conviertela a 32x32 para que no se quede colgado eneboo al cargar ese formulario con una imagen gigantesca. 
 
+###REPOSITORIO DE ICONOS:
+
+* https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos
+
+* ICONO  (image10)
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image10.png
+
+* ICONO (image11)
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image11.png
+
+* ICONO (image12200)
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image12200.png
+
+* ICONO (image13840)
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image13840.png
+
+* ICONO 
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image10.png
+
+* ICONO 
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image10.png
+
+* ICONO 
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image10.png
+
+* ICONO 
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image10.png
+
+* ICONO 
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image10.png
+
+* ICONO 
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image10.png
+
+* ICONO 
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image10.png
+
+* ICONO 
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image10.png
+
+* ICONO 
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image10.png
+
+* ICONO 
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image10.png
+
+* ICONO 
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image10.png
+
+* ICONO 
+https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image10.png
+
+
 ###COMO "SACAR-DESCARGAR" LOS ICONOS OFICIALES DE ENEBOO:
 
 * Sacado de: https://groups.google.com/forum/#!topic/eneboo/lxqbvj7W2fA
