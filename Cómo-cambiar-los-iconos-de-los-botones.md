@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 22 de febrero de 2015
+* ULTIMA ACTUALIZACIÓN: 27 de febrero de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/C%C3%B3mo-cambiar-los-iconos-de-los-botones)
 
 ----
@@ -53,6 +53,12 @@ Y te crea, en la carpeta donde ejecutes, los ficheros de imagenes.
 1. sys.ui: salen 11...dos-cabezas, dos-ventanas, circulo-verde, cuadrado-amarillo, sol, 3-cuadrados, flechas-circulo, pila, diskette-flecha-azul, diskette-flecha-verde y hoja-con-circulo
 1. master_print.ui: los 4 del master.ui y salchicha-azul
 
+#####Otros iconos:
+
+1. Ir a eneboo-administracion-modulos-modificar.
+1. Buscar los ".ui" que interesen y "modificarlo" (confirmar en botón "editor QT" que es el icono que buscamos. Darle a boton derecho-seleccionar todo y copiar
+1. Abrir wordpad y pegar y guardar como "***.ui"
+1. Llevar ese .ui con el resto y ejecutar el eneboo-tool...
 
 ###PAGINAS DE DESCARGA DE "ICONSET" EN INTERNET:
 
