@@ -5,17 +5,16 @@
 
 ----
 ###INICIO: CÓMO CAMBIAR UN ICONO DESDE ENEBOO.
-...puedo acceder al archivo donde aparece....por Eneboo-Sistema-Admin-modulos, y luego "flfactppal" y modificar y de nuevo modificar "FLWidgetMasterTable.ui"...
 
-....donde deberia cambiar el "iconset" o re-definir la "data format" que sale al final de ese archivo:
+1. Ir a "Administración" - "Módulos" - modificar
+1. Buscar la tabla que acabe en ".ui" y darle a modificar
+1. Darle al botón de arriba-derecha para editarlo con el "QT-design"
+1. "clickar" el botón a cambiar y ampliar el cuadro descriptivo de la derecha hasta que veas el icono en "propiedades"
+1. darle al botón "..." y seleccionar la carpeta donde tienes guardado el nuevo icono"
+1. darle a cerrar-guardar y a todos los botones de "ok-verde"
+1. salir de eneboo y volver a entrar..
 
-    <property name="iconSet">
-    <iconset>image0</iconset>
-y tmb:
-    <image name="image0">
-    <data format="PNG" length="1555">
-https://groups.google.com/forum/#!topic/eneboo/Eb2265EINDM
-Un consejo , previamente conviertela a 32x32 para que no se quede colgado eneboo al cargar ese formulario con una imagen gigantesca. 
+* NOTA: vale cualquier archivo de imagen PERO....CUIDADO CON EL TAMAÑO: Un consejo , previamente conviertela a 32x32 para que no se quede colgado eneboo al cargar ese formulario con una imagen gigantesca. 
 
 ###REPOSITORIO DE ICONOS:
 
@@ -153,6 +152,21 @@ Y te crea, en la carpeta donde ejecutes, los ficheros de imagenes.
 1. Buscar los ".ui" que interesen y "modificarlo" (confirmar en botón "editor QT" que es el icono que buscamos. Darle a boton derecho-seleccionar todo y copiar
 1. Abrir wordpad y pegar y guardar como "***.ui"
 1. Llevar ese .ui con el resto y ejecutar el eneboo-tool...
+
+#####Varios:
+
+* ...puedo acceder al archivo donde aparece....por Eneboo-Sistema-Admin-modulos, y luego "flfactppal" y modificar y de nuevo modificar "FLWidgetMasterTable.ui"...
+
+* ....donde deberia cambiar el "iconset" o re-definir la "data format" que sale al final de ese archivo:
+    <property name="iconSet">
+    <iconset>image0</iconset>
+
+y tmb:
+    <image name="image0">
+    <data format="PNG" length="1555">
+
+* https://groups.google.com/forum/#!topic/eneboo/Eb2265EINDM
+
 
 ###PAGINAS DE DESCARGA DE "ICONSET" EN INTERNET:
 
