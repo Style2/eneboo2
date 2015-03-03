@@ -1,64 +1,66 @@
-#Tutorial. Programación en Abanq (II). Acciones
+#Tutorial. Programación en Eneboo-Abanq (II). Acciones
 
-En el capítulo anterior de esta serie de artículos sobre programación en Abanq vimos cómo realizar pequeñas
-modificaciones sobre módulos ya existentes. Básicamente eran modificaciones sobre tablas y formularios en
-las que añadíamos campos o modificábamos sus propiedades.
+En el **capítulo anterior** de esta serie de artículos sobre programación en Eneboo-Abanq vimos cómo realizar pequeñas modificaciones sobre módulos ya existentes. Básicamente eran **modificaciones sobre tablas y formularios** en las que añadíamos campos o modificábamos sus propiedades.
 
-En el presente artículo describiremos la forma de realizar lo que Abanq denomina acciones completas. Esto
-quiere decir que aprenderemos a crear nuestras propias tablas y formularios, y a relacionarlos con otros
+En el **presente artículo** describiremos la forma de realizar lo que Eneboo-Abanq denomina acciones completas. Esto quiere decir que aprenderemos a **crear** nuestras propias tablas y formularios, y a relacionarlos con otros
 elementos ya existentes.
 
-Además, dotaremos a nuestros formularios de funcionalidades añadidas mediante la programación de scripts,
-veremos la estructura del lenguaje QSA y usaremos las clases más importantes que Abanq pone a disposición
+Además, dotaremos a nuestros formularios de funcionalidades añadidas mediante la **programación de scripts**,
+veremos la estructura del lenguaje QSA y usaremos las clases más importantes que Eneboo-Abanq pone a disposición
 de los programadores.
 
-Para terminar, confeccionaremos un informe sencillo para obtener un resumen bien presentado de los datos
+Para terminar, confeccionaremos un **informe sencillo** para obtener un resumen bien presentado de los datos
 contenidos en las nuevas tablas.
 
 ##Antes de comenzar
 
-Realizaremos todos los ejemplos prácticos sobre el módulo Principal del área Facturación. Por ello es
+Realizaremos todos los ejemplos prácticos sobre el **módulo Principal del área Facturación**. Por ello es
 necesario acceder a una base de datos con este módulo cargado, tal y como hicimos en el artículo anterior.
+
 Si queremos disponer de una base de datos nueva para realizar estos ejemplos, basta con especificar el nuevo
-nombre de base de datos al arrancar Abanq, y cargar a continuación el módulo Principal de Facturación.
+nombre de base de datos al arrancar Eneboo-Abanq, y cargar a continuación el módulo Principal de Facturación.
 
-##Las acciones en Abanq
+##Las acciones en Eneboo-Abanq
 
-Como vimos en el artículo anterior, el motor de Abanq lee e interpreta los metadatos (información sobre
-tablas, formularios, scripts, etc.) que el Sistema Gestor de Base de Datos (SGDB) le proporciona. Estos
-metadatos se organizan en lo que llamamos módulos. Cada módulo agrupa un conjunto de metadatos que
-implementan una funcionalidad concreta (facturación, almacén, etc.).
+Como vimos en el artículo anterior, el motor de Eneboo-Abanq lee e interpreta los **metadatos** (información sobre
+tablas, formularios, scripts, etc.) que el Sistema Gestor de Base de Datos (SGDB) le proporciona. Estos metadatos se organizan en lo que llamamos módulos. Cada **módulo** agrupa un conjunto de metadatos que implementan una funcionalidad concreta (facturación, almacén, etc.).
 
-Vamos a ver ahora la estructura interna de estos módulos. El fichero de metadatos que define esta estructura
-es el fichero de acciones, y su nombre es id_modulo.xml, donde id_modulo es el identificador que cada
-módulo t¡ene asignado en la tabla Módulos del módulo de Administración.
+Vamos a ver ahora la **estructura interna** de estos módulos. El fichero de metadatos que define esta estructura
+es el **fichero de acciones**, y su nombre es **id_modulo.xml**, donde id_modulo es el identificador que cada
+módulo tiene asignado en la tabla Módulos del módulo de Administración.
 
-Tomaremos como ejemplo el módulo Principal del área de Facturación. Su código es flfactppal, por tanto el
-fichero de acciones será flfactppal.xml. Lo visualizaremos de la forma ya descrita en el artículo anterior
-(Área de Sistema -> Módulo de Administración -> Módulos -> Editar flfactppal -> Seleccionar
-flfactppal.xml -> Ver registro). Aparecerá una ventana similar a la de la figura 1:
+Tomaremos como ejemplo el **módulo Principal** del área de Facturación. Su código es flfactppal, por tanto el **fichero de acciones** será **flfactppal.xml**. Lo visualizaremos de la forma ya descrita en el artículo anterior:
+
+(`Área de Sistema -> Módulo de Administración -> Módulos -> Editar flfactppal -> Seleccionar flfactppal.xml -> Ver registro`).
+
+Aparecerá una ventana similar a la de la figura 1:
 
 ![DibujoABANQ-2](https://github.com/Miguel-J/eneboo/blob/master/imagen/ABANQ-2/Dibujo-1.PNG)
 
 ###1. Fichero de acciones flfactppal.xml
 
-Vemos que el fichero de acciones está compuesto por nodos <action>. Cada uno de estos nodos define una
+Vemos que el fichero de acciones está compuesto por nodos **`<action>`**. Cada uno de estos nodos define una
 acción. Una acción es una unidad funcional concreta, que agrupa una serie de elementos necesarios para su
 correcto funcionamiento. Cada acción puede contener los nombres de una tabla, un formulario maestro, un
 formulario de edición, un script de formulario maestro y un script de formulario edición.
-Por ejemplo, la acción clientes agrupa las funcionalidades de la gestión de clientes: la tabla donde se
-almacenan sus datos, los formularios utilizados para acceder a dichos datos, los scripts que gestionan los
-formularios, etc.
 
-Las etiquetas que conforman cada acción son:
-• <name> Nombre de la acción.
-• <alias> Alias o título de la acción
-• <description> Descripción de la funcionalidad acción
-• <table> Nombre de la tabla asociada a la acción.
-• <form> Nombre del formulario maestro asociado a la accion.
-• <formrecord> Nombre del formulario de edición asociado a la acción.
-• <scriptform> Nombre del script asociado al formulario maestro.
-• <scriptformrecord> Nombre del script asociado al formulario edición.
+Por **ejemplo**, la acción clientes agrupa las funcionalidades de la gestión de clientes:
+
+     1. la tabla donde se almacenan sus datos,
+     1. los formularios utilizados para acceder a dichos datos,
+     1. los scripts que gestionan los formularios, etc.
+
+Las **etiquetas** que conforman cada acción son:
+
+     * <name> Nombre de la acción.
+     * <alias> Alias o título de la acción
+     * <description> Descripción de la funcionalidad acción
+     * <table> Nombre de la tabla asociada a la acción.
+     * <form> Nombre del formulario maestro asociado a la accion.
+     * <formrecord> Nombre del formulario de edición asociado a la acción.
+     * <scriptform> Nombre del script asociado al formulario maestro.
+     * <scriptformrecord> Nombre del script asociado al formulario edición.
+
 Veremos qué significa cada una de estas etiquetas a medida que progresemos en el desarrollo de nuestro
 ejemplo.
 
@@ -67,9 +69,11 @@ ejemplo.
 Vamos a suponer que nos es necesario llevar un control de los empleados de nuestra empresa. Para ello es
 necesario recoger los datos personales de cada uno de ellos. Cada empleado está asociado a un departamento
 de la empresa, y queremos poder emitir informes con un listado de los empleados de alta agrupados por
-departamento. Para realizar esta ampliación, el primer paso será crear la acción empleados (la acción
+departamento.
+
+Para realizar esta ampliación, el primer paso será crear la acción empleados (la acción
 departamentos ya existe en el módulo principal). Editaremos el fichero de acciones flfactppal.xml, añadiendo
-un nuevo nodo <action> tal y como aparece en la figura 2 (recuerda que para editar el fichero debes pulsar
+un nuevo nodo `<action>` tal y como aparece en la figura 2 (recuerda que para editar el fichero debes pulsar
 Editar Registro y seguidamente Editar Fichero).
 
 ###2. Acción empleados en flfactppal.xml
@@ -125,6 +129,7 @@ la acción (slot openDefaultForm). La conexión debe quedar por tanto tal y como
 Una vez establecida la conexión pulsamos Ok y guardamos los cambios en flfactppal.ui. Ya podemos probar
 nuestra acción. Si accedemos al módulo Principal del área de Facturación y pulsamos el botón o la opción de
 menú Empleados, Abanq nos mostrará una ventana como la de la figura 7.
+
 ###7. Formulario de la acción empleados
 El mensaje 'No hay metadatos' hace referencia a que no hemos definido todavía la tabla empleados. En el
 siguiente punto veremos cómo hacer esto.
