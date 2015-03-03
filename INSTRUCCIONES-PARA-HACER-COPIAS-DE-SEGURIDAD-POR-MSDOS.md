@@ -16,8 +16,7 @@
 1. hay que darle a EDITAR y decirle que añada al path (con un ";" al final) 
 ;c:\wamp\bin\mysql\mysql5.5.24\bin (cambiar por el NUMERO DE VERSION CORRECTO)
 
-* en windows /sistema /variable de entorno , esta el path. 
-hay que decirle que añada al path c:\wamm\apps\mysql\bin\mysql_dump.exe
+     * que es el directorio donde esta el archivo: "mysql_dump.exe" (si no es ese directorio, buscarlo por el explorador de archivos...)
 
 1. una vez hecho se reinicia y listo, el equipo que tiene la BD ya puede hacer dumps
 
@@ -30,6 +29,8 @@ hay que decirle que añada al path c:\wamm\apps\mysql\bin\mysql_dump.exe
 
 1. hay que darle a EDITAR y decirle que añada al path (con un ";" al final) 
 ;C:\Program Files\PostgreSQL\9.4\bin(cambiar por el NUMERO DE VERSION CORRECTO)
+
+     * que es el directorio donde esta el archivo: "pg_dump.exe" (si no es ese directorio, buscarlo por el explorador de archivos...)
 
 1. una vez hecho se reinicia y listo, el equipo que tiene la BD ya puede hacer dumps
 
