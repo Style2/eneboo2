@@ -1,3 +1,10 @@
+* CREADO POR: [Universidad de Sevilla](http://www.us.es): Guillermo Molleda Jimena y adaptado por: miguelajsmaps@gmail.com
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ULTIMA ACTUALIZACIÓN: 8 de mayo de 2015
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Instalacion-modulos-UNIV.SEVILLA)
+
+----
+###nota: El presente manual fue desarrollado para AbanQ, antecedente de Eneboo, que comparten la misma estructura de archivos...
 
 
 ####INSTALACIÓN DE LOS MÓDULOS DEL ERP AbanQ
