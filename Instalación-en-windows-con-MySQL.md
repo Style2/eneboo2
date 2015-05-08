@@ -8,7 +8,7 @@
 INSTALACION ENEBOO CON MYSQL:
 -----------------------------
 
-###...Y por qué MySQL?
+###PASO 0-Aclaración...por qué yo elegí MySQL?
 https://groups.google.com/forum/#!searchin/eneboo/mysql/eneboo/jNP7-5Ysz5g/S_NzOAW6F8gJ
 
 * 17-nov-2013: 
@@ -36,7 +36,7 @@ https://groups.google.com/forum/#!searchin/eneboo/mysql/eneboo/jNP7-5Ysz5g/S_NzO
 
 ---
 
-###1.-Descargar e instalar el servidor de base de datos WAMP (incluye APACHE, MYSQL Y PHPMYADMIN..) de:
+###PASO 1.-Descargar e instalar el servidor de base de datos WAMP (incluye APACHE, MYSQL Y PHPMYADMIN..) de:
 www.wampserver.com\en
 
 #####1.a- INSTALACION EN WINDOWS 7 o 8: 
@@ -67,7 +67,7 @@ www.wampserver.com\en
 ***NOTA hay otra opcion: (pero se instaló mal...)1.-Descargar e instalar easyphp en www.easyphp.org: incluye APACHE, EASYPHP Y PHPMYADMIN..Ejecutarlo (doble click en la “e” junto al reloj)....si da problemas con apache le das otra vez a conectar y en paz.2.- Ejecutar “Administracion” (boton derecha mouse en la “e”)...y allí “php myadmin”
 
 ---
-####2.- Ejecutar PHPMYADMIN con botón izquierdo en la W VERDE....
+####PASO 2.- Ejecutar PHPMYADMIN con botón izquierdo en la W VERDE....
 ***Solo AÑADIR los usuarios:
 2.a.-”usuario”, para servidor:”%”, contraseña “usuario”, y “marcar todos”, resto igual...”añadir usuario”.
 
@@ -75,14 +75,14 @@ www.wampserver.com\en
 ****NOTA: PARA UN SOLO ORDENADOR NO HACE FALTA TOCAR NADA MÁS: ni apache, ni MySQL, ni PHP....dejar el wamp como está.*******************
 
 ---
-####3.- Crear una base de datos en myAdmin. “prueba"
+####PASO 3.- Crear una base de datos en myAdmin. “prueba"
 * no es imprescindible este paso porque Eneboo lo crea la primera vez que se conecta....
 * (ESTO PARA PRIMERA INSTALACION, SI ES RE-INSTALAR HAY QUE SALTARSE ESTE PASO & INSTALAR EL DUMP-COPIA DE SEGURIDAD)
 * ...lo hace en: C:\wamp\bin\mysql\mysql5.6.12\data \prueba
 * ….cotejamiento por defecto: “utf8_general_ci”
 
 ---
-####4.-Instalar el programa eneboo:
+####PASO 4.-Instalar el programa eneboo:
 * Bajarlo de:
      * A) en http://eneboo.org/pub/contrib/ (ultimas versiones-releases)
      * B) en www.eneboo.org (el que incluye postgre, sql u otro). Ir a “descargas”......”versiones estables”.....abajo....Hay dos opciones:
@@ -101,7 +101,7 @@ http://eneboo.org/pub/eneboo/builds/v2.4.2/eneboo-2.4.2.2-dba-win32.tar.bz2
 
 
 ---
-####5.-Arrancar el programa eneboo:
+####PASO 5.-Arrancar el programa eneboo:
 * ejecutar el archivo ("C:\eneboo-2.4.0.2-dba-win32\bin\eneboo.exe")
 * **(OJO: primero tiene que funcionar WAMPSERVER como servidor...)** y cambiar la conexión:
      * Nombre: igual que el dado a la BD de phpMyAdmin: 
@@ -113,7 +113,7 @@ http://eneboo.org/pub/eneboo/builds/v2.4.2/eneboo-2.4.2.2-dba-win32.tar.bz2
      * puerto: el que da eneboo....3306
 
 ---
-####6.-Instalar los “módulos” de eneboo...
+####PASO 6.-Instalar los “módulos” de eneboo...
 * http://www.eneboo.org/site/node/16
 * ...descargar el: (hay 3 opciones):
 
@@ -135,7 +135,7 @@ http://eneboo.org/pub/eneboo/builds/v2.4.2/eneboo-2.4.2.2-dba-win32.tar.bz2
 
 ---
 
-####CARGAR MODULOS:
+####PASO 7.-REGENERAR LA BASE DE DATOS DESPUÉS DE CARGAR MODULOS:
 * ...entrar en “eneboo-sistema-administración-cargar Módulo”....e ir a la carpeta donde están guardados o descomprimidos del paso anterior...
 * y después de cada uno:  ...ir a “eneboo-sistema-administración-”+mas”-principal-Regenerar la base de datos”..
 ...hay que “regenerar la base de datos” y salir del programa y volver a entrar después de haber instalado cada módulo......
