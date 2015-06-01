@@ -1,52 +1,60 @@
 * CREADO POR: [Universidad de Sevilla](http://www.us.es): Mariano Aguayo Camacho; Esther Chávez Miranda; Miguel Ángel Domingo Carrillo; Guillermo Molleda Jimena
+* ACTUALIZADO Y ADAPTADO A ENEBOO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 13 de febrero de 2015
+* ULTIMA ACTUALIZACIÓN: 1 de junio de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Area-Financiera-Contabilidad-COMPLETO-UNIV.SEVILLA)
 
 ----
-###EN CONSTRUCCIÓN
+####EN CONSTRUCCIÓN
 https://github.com/Miguel-J/eneboo/wiki/Area-Financiera-Contabilidad-COMPLETO-UNIV.SEVILLA
 
 
 
+##Sistemas de Información para las Finanzas y la Contabilidad
 
-
-
-#Sistemas de Información para las Finanzas y la Contabilidad
-
-#Curso 20__/20__
-
-
-
+####Curso 20__/20__
 
 
 --
-##Tema 3. Sistemas ERP (Enterprise Resource Planning).
+###Tema 3. Sistemas ERP (Enterprise Resource Planning).
 
-##Práctica Eneboo-CONTABILIDAD
+###Práctica Eneboo-CONTABILIDAD
 
-##Parte I. El Sistema de Información empresarial y los Sistemas de Planificación de Recursos Empresariales (ERP). 
-Área Financiera.
+###Parte I. El Sistema de Información empresarial y los Sistemas de Planificación de Recursos Empresariales (ERP). 
+
+* 3.1.- ÁREA FINANCIERA - CONFIGURACIÓN.
+* 3.1.1-  Cuentas Especiales
+* 3.1.2-  Conceptos de partidas
+* 3.1.3-  Códigos de balance
+* 3.1.4-  Códigos de balance 08-Correspondencias 90-08
+* 3.2.- ÁREA FINANCIERA - CUADRO DE CUENTAS.
+* 3.3.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL
+* 3.4.- INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA.
+
+---
+###3.1.- ÁREA FINANCIERA - CONFIGURACIÓN.
 
 Al igual que en el Área de Facturación lo primero que es necesario realizar es realizar la configuración. Recordemos que ya hemos realizado parte de esa configuración con anterioridad de forma simultánea a la configuración de la Facturación. En realidad, ambos procesos deben realizarse de forma simultánea por cada departamento responsable, pero a efectos pedagógicos, nosotros hemos preferido impartirlos secuencialmente. Ello facilitará la comprensión de los conceptos que se van a analizar.
 
 La configuración del Área Financiera se realiza en el Módulo Principal, Financiera, Configuración. Allí encontramos las siguientes opciones:
 
 1. Cuentas Especiales
-1. Conceptos
+1. Conceptos de partidas
 1. Códigos de balance
 1. Códigos de balance 08
 1. Correspondencias 90-08
 
 
 --
-###Cuentas especiales.
+####3.1.1.- Cuentas especiales.
 Área Financiera> Configuración/Cuentas especiales
 
 La opción Cuentas Especiales permite asignar una subcuenta determinada a un proceso automático del programa. Así, por ejemplo, al crear una subcuenta de IVA Soportado, es necesario que AbanQ sepa que el saldo de esta subcuenta recoge las cuotas soportadas por este impuesto y cuando se realice una anotación en el diario utilizando dicha cuenta, ese importe se anote también en la gestión fiscal del programa. De esta manera, podrá calcular correctamente la declaración de IVA, el modelo 347 y listar el libro registro de facturas recibidas. Lo mismo ocurre con el resto de tipos de subcuentas que aparece en el listado.
 
+![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-1.PNG)
 
-Conceptos de partidas.
+--
+####3.1.2.- Conceptos de partidas.
 Área Financiera>Configuración/Conceptos de partidas
 
 Los conceptos de partidas, segunda opción que aparece en este menú hace referencia a lo que comúnmente se denomina “conceptos contables”. Los conceptos contables son pequeñas leyendas que se incorporan a los apuntes contables y que aportan información sobre el mismo o explican si es necesario lo que se está contabilizando. Suelen constar de una parte fija y otra variable. Desde esta opción podemos realizar el alta, baja y modificaciones de los conceptos contables. Como ejemplo, vamos a dar de alta los siguientes conceptos contables genéricos:
@@ -60,22 +68,28 @@ Descripción: NOMINA DEL MES
 Código: 03
 Descripción: COBRO POR CAJA
 
+![Conceptos de partidas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-2.PNG)
+
 --
-###Códigos de Balance.
+####3.1.3.- Códigos de Balance.
 Área Financiera>Configuración/Códigos de Balance
 
 Sirve para especificar a AbanQ la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias según el PGC anterior al del 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de AbanQ y de contabilidad.
-Códigos de Balance 08.
+
+--
+####3.1.4.- Códigos de Balance 08.
 Área Financiera>Configuración/Códigos de Balance 08
 
 Sirve para especificar a AbanQ la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias con el plan contable de 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de AbanQ y de contabilidad.
 
 --
-###Correspondencias 90-08.
+####3.1.4.b- Correspondencias 90-08.
 Área Financiera>Configuración/Correspondencias 90-08
 
 Sirve para especificar a AbanQ la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias para adaptar una contabilidad llevada según el PGC de 1990 al del 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de AbanQ y de contabilidad.
-Cuadro de cuentas.
+
+---
+###3.2.- ÁREA FINANCIERA - CUADRO DE CUENTAS.
 Área Financiera>Principal/Cuadro de cuentas
 
 La opción de Cuadro de cuentas presenta las siguientes opciones:
@@ -87,11 +101,15 @@ La opción de Cuadro de cuentas presenta las siguientes opciones:
 
 Al crear el Plan contable de la empresa tras la creación del ejercicio, se dan de alta todos los datos básicos del mismo. Así, se copian en la empresa los registros necesarios tanto en todas estas tablas.
 
+![Desglose plan contable](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-3.PNG)
+
 Nótese que cada uno de los desgloses del plan contable se asigna a un determinado ejercicio. Esto quiere decir que tras la creación del ejercicio, siempre será necesario crear el plan contable de la empresa y que los saldos y movimientos registrados en cada subcuenta, se van a mantener independientes del resto de los ejercicios. Por esta razón, cuando se vaya a contabilizar una factura, ya sea de compra o venta, AbanQ comprobará que se contabiliza en el mismo ejercicio en el que se emite, de manera que no haya descuadres posteriores entre la facturación y la contabilidad.
+
+![Aviso fecha asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-4.PNG)
 
 En el apartado Grupos, subgrupos y cuentas no es normal que se tengan que añadir nuevos registros a los existentes. No ocurre lo mismo con las subcuentas, que suelen personalizarse para cada empresa. Así no es lo mismo un plan contable de una empresa de enseñanza, que la de una empresa que se dedica a vender regalos, ya que los tipos de operaciones son distintos y las cuentas suelen recoger descripciones que hagan una referencia clara al hecho contable que van a registrar.
 
-*La creación de una subcuenta se puede realizar de varias formas:
+* La creación de una subcuenta se puede realizar de varias formas:
 
 1. Creación automática. Cuando se crea una ficha de un proveedor o un cliente, AbanQ da de alta automáticamente la subcuenta asociada a la misma.
 1. Desde la opción Área Financiera>Principal/Cuadro de cuentas/Subcuentas, opción que veremos a continuación.
@@ -101,108 +119,131 @@ Al crear las subcuentas de IVA en la personalización de la aplicación ya vimos
 
 Al insertar una nueva cuenta se nos despliega la siguiente ventana:
 
+![Nueva cuenta](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-5.PNG)
+
 El proceso es tan simple que basta con rellenar los campos correspondientes. Vamos a crear la subcuenta con código “6290000001” y descripción “GASTOS DIVERSOS”.
+
 Para ello en el campo cuenta introducimos los códigos correspondientes a la cuenta: 629. Nótese que en este campo, se introducen los códigos de la cuenta y no de la subcuenta; por esta razón, solo se especifican los 3 o 4 primeros dígitos del código de la subcuenta y no el código completo. Este dato debe introducirse en el campo siguiente: Código. A continuación introducimos la descripción o denominación de la cuenta y se especifica si es una cuenta de tipo Especial.
 
+![Cuenta especial](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-6.PNG)
 
 En este caso, no se corresponde con ningún tipo Especial, por lo que dejamos este campo en blanco. En las carpetas Otros datos y Modelos no es necesario rellenar ningún dato, por lo que la cuenta queda tal y como sigue:
  
+![Edicion subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-7.PNG)
 
 Crear las siguientes subcuentas:
-Código: 6290000002
-Descripción: MATERIAL DE OFICINA.
-Tipo Especial:
+* Código: 6290000002
+* Descripción: MATERIAL DE OFICINA.
+* Tipo Especial:
 
-Código: 6250000001
-Descripción: SEGURO ALMACÉN AC
-Tipo Especial:
+* Código: 6250000001
+* Descripción: SEGURO ALMACÉN AC
+* Tipo Especial:
 
-Código: 6210000001
-Descripción: ALQUILER LOCAL COMERCIAL 
-Tipo Especial: 
+* Código: 6210000001
+* Descripción: ALQUILER LOCAL COMERCIAL 
+* Tipo Especial: 
 
 --
-###Introducción de asientos en la contabilidad de forma manual
+### 3.2.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL
 Área Financiera>Principal/Financiera
 
 Al igual que en la mayoría de los programas de contabilidad y ERP’s, la introducción de asientos en AbanQ se puede realizar de dos formas distintas: manual o automáticamente. 
+
 La introducción de asientos por el primer método obliga al usuario a especificar todos los datos necesarios para dar de alta el asiento: subcuenta, importe, concepto, etc. Por el contrario, la introducción automática de asientos es una herramienta que permite contabilizar de forma los hechos contables que se definan sin intervención del usuario, variando el grado de automatización en función del tipo de asiento en cuestión.
 Vamos a comenzar dando de alta asientos en el diario de forma manual. Para ello, es necesario que tengamos presentes los siguientes aspectos:
+
 Se pueden introducir asientos en cualquier fecha del ejercicio, con independencia de que se hayan introducido algunos con fechas posteriores.
+
 El concepto contable del apunte se puede introducir bien escribiéndolo entero o bien tecleando uno de los códigos dados de alta y completando, si es necesario, el texto. También es posible dar de alta los conceptos contables desde la introducción de asientos.
+
 En este programa los apuntes se introducen siempre a nivel de subcuentas. Al introducir el código de la subcuenta, aparecerán automáticamente su descripción y saldo si está dada de alta. En caso contrario, se la dará de alta desde esa misma ventana.
+
 Para facilitar la introducción de los códigos de las subcuentas, se puede utilizar la notación abreviada, por la cual el punto completa a ceros por la derecha. Por ejemplo, si tecleamos 4., el programa completará el código como 4000000, si tecleamos 572.11, el código quedará 5720011.
+
 Este programa admite tanto importes negativos como nulos.
+
 Se pueden realizar correcciones (añadir, borrar o modificar) en los apuntes ya introducidos. Para ello, se tecleará el número del asiento y se seleccionará el apunte en cuestión. Para dar de baja un apunte basta con pinchar el icono adecuado. Para dar de baja un asiento completo deberá ejecutar la opción destinada a tal efecto.
+
 Cada vez que se introducen apuntes en las cuentas de IVA es necesario introducir la información fiscal necesaria para que AbanQ pueda facilitar los modelos tributarios correspondientes.
 
 Para introducir los asientos de forma manual es necesario acudir a la opción Área Financiera>Principal/Financiera/Opciones del diario/Asientos. Al entrar en esta opción se nos muestra el diario de la contabilidad, tal y como aparece en la siguiente imagen.
 
+![Listado diario](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-8.PNG)
+
 Los asientos aparecen con la numeración correspondiente y se muestran algunos de los datos del mismo: fecha, importe del primer apunte, etc. Al igual que en ocasiones anteriores, para dar de alta un nuevo asiento, es necesario pulsar el botón Insertar y accedemos a la siguiente ventana:
 
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-9.PNG)
+
 El primer dato a introducir es el número de asiento, el cual viene ya propuesto por AbanQ. A continuación habrá que indicar la fecha en la que se va a contabilizar la operación correspondiente. Dicha fecha tiene que pertenecer necesariamente al período que esté activo en la empresa; en caso contrario, AbanQ no permitirá continuar.
+
 El siguiente dato a introducir es el concepto contable que se va a utilizar en el asiento. Como hemos comentado con anterioridad, los conceptos contables son pequeñas leyendas que se incorporan a los apuntes contables y que aportan información sobre el mismo o explican si es necesario lo que se está contabilizando. Suelen constar de una parte fija y otra variable. Desde esta opción podemos realizar el alta, baja y modificaciones de los conceptos contables. Ya tenemos algunos dados de alta, por lo que seguimos con el desarrollo del caso. El concepto que se introduce en esta primera pantalla sirve para que aparezca en el listado de diarios de la ventana de Asientos, pero no aparecerán en los listados de mayor. Por eso, en caso de que se desee que aparezcan allí, deberán introducirse en cada uno de los apuntes que componen el asiento. No es necesario introducirlos todos, sino que basta con hacerlo en el primer apunte, para que luego éste se proponga automáticamente en el resto.
+
 A continuación debe introducirse el número de documento. El documento es un código que hace referencia a la ubicación del documento físico que respalda el hecho contable: facturas, escrituras, extractos bancarios, etc. Este dato suele omitirse si la empresa no tiene muchos documentación ya que es fácil encontrarla en el archivo de la misma. Junto con este campo, se puede especificar también el Tipo de Documento, campo con valores preestablecidos por la aplicación. Los distintos tipos que existen son: Recibo, factura de cliente o factura de proveedor. Habrá que elegir el que corresponda en cada momento.
+
 En la parte inferior de la ventana, están los botones que sirven para gestionar los distintos apuntes que conformarán el asiento. También aparece el campo Plantilla que sirve para introducir asientos automáticos y que veremos más adelante.
+
 Primer asiento: Asiento simple sin IVA.
+
 Parar empezar a trabajar, vamos a introducir el asiento de apertura del ejercicio económico, el cuál consta de los siguientes datos:
-Número: Campo automático
-Fecha 01-01
-ID Concepto: 
-Concepto: ASIENTO DE APERTURA
-Documento:
-Tipo de documento:
-Partidas:
-CÓDIGO
-DESCRIPCIÓN
-DEBE
-HABER
-216.1
-MOBILIARIO
-3.000,00
 
-217.1
-ORDENADOR
-1.000,00
+* Número: Campo automático
+* Fecha 01-01
+* ID Concepto: 
+* Concepto: ASIENTO DE APERTURA
+* Documento:
+* Tipo de documento:
+* Partidas:
+* CÓDIGO
+* DESCRIPCIÓN
+* DEBE
+* HABER
+* 216.1
+* MOBILIARIO
+* 3.000,00
 
-217.2
-IMPRESORA LASER HP
-750,00
+* 217.1
+* ORDENADOR
+* 1.000,00
 
-3.1
-EXISTENCIAS ABANICOS
-35.000,00
+* 217.2
+* IMPRESORA LASER HP
+* 750,00
 
-3.2
-EXISTENCIAS BOMBAY 
-20.500,00
+* 3.1
+* EXISTENCIAS ABANICOS
+* 35.000,00
 
-3.3
-EXISTENCIAS CARTAS 
-7.500,00
+* 3.2
+* EXISTENCIAS BOMBAY 
+* 20.500,00
 
-43.1
-CLIENTES EUROS
-2.500,00
+* 3.3
+* EXISTENCIAS CARTAS 
+* 7.500,00
 
-43.2
-REGALO
-16.268,00
+* 43.1
+* CLIENTES EUROS
+* 2.500,00
 
-470.0
-H.P.DEUDOR POR IVA A COMPENSAR
-35.398,00
+* 43.2
+* REGALO
+* 16.268,00
 
-57.0
-CAJA EUROS
-12.202,00
+* 470.0
+* H.P.DEUDOR POR IVA A COMPENSAR
+* 35.398,00
 
-572.1
-BANCO ZARAGOZANO
-107.594,00
+* 57.0
+* CAJA EUROS
+* 12.202,00
 
-1.0
-CAPITAL SOCIAL
+* 572.1
+* BANCO ZARAGOZANO
+* 107.594,00
+
+* 1.0
+* CAPITAL SOCIAL
 
 24.000,00
 129.11
@@ -250,11 +291,14 @@ ORG. SEGURIDAD SOCIAL ACREED.
 
 7.979,00
 
+![Insertar partidas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-10.PNG)
 
 
 Como puede observarse, la introducción de este tipo de asientos simples es muy sencilla. Basta con introducir cada uno de los distintos conceptos en su campo correspondiente. 
 Segundo asiento: Asiento con IVA.
+
 No obstante, la introducción de asientos de hechos contables que devenguen IVA resulta un poco más complejo. A continuación, seguiremos contabilizando la adquisición de un ordenador portátil con fecha 21 de octubre mediante el siguiente asiento:
+
 Número:
 Fecha 21-10
 ID Concepto: 04 
@@ -289,7 +333,7 @@ C/C 345.892 B. CENTRAL H. 0049
 
 Comenzaremos contabilizando el alta del ordenador en el inmovilizado de la empresa. Nótese que como Tipo de documento hemos señalado Factura de Proveedor. Como contrapartida hemos seleccionado la cuenta del proveedor del inmovilizado. De esta manera, cuando consultemos el mayor de la compra del inmovilizado, sabremos con quién realizamos la compra. Este campo es opcional, simplemente sirve para aportar mayor información cuando se consulte el mayor de la cuenta en la que se realiza la anotación.
 
-
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-11.PNG)
 
 A continuación, introducimos la partida IVA. Nótese que al introducir el código de cualquier subcuenta de IVA, se abren los campos correspondientes al cuadro de IVA. Esto sirve para que se introduzcan aquellos datos que son necesarios para la gestión fiscal. Con ellos, AbanQ será capaz de:
 1. Calcular el modelo de declaración trimestral de IVA 303.
@@ -298,16 +342,20 @@ A continuación, introducimos la partida IVA. Nótese que al introducir el códi
 
 Por esta razón, es muy importante tener especial cuidado a la hora de introducir estos datos. Es igualmente relevante introducir el CIF del proveedor, ya que no hemos creado una ficha en la tabla de proveedores a Componentes Informáticos SA.
 
-
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-12.PNG)
 
 En la ventana Modelo 303, se debe seleccionar [24-25] IVA Deducible por cuotas soportadas en operaciones interiores con bienes de inversión.
 Como hemos utilizado la subcuenta del proveedor de inmovilizado en la contrapartida, AbanQ nos ofrece en la siguiente partida dicha subcuenta por defecto, de manera que aprovechamos para completar la partida de dicho apunte. En este caso no hemos especificado contrapartida alguna.
 
-
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-13.PNG)
 El asiento completo queda de la siguiente manera:
 
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-14.PNG)
+
 Aunque éste sería el asiento según la estructura tradicional, en la práctica suele resultar más adecuado empezar contabilizando en primer lugar el apunte referente al proveedor, a continuación el gasto y después el apunte de IVA.
+
 Tercer asiento: Asientos con cuentas de varios.
+
 Contabilizar con fecha 16 de octubre unas compras de material de oficina para uso interno por importe de 300,10 € (IVA incl..), realizadas en la COPISTERIA ABC. Suponemos que el pago se ha realizado por caja.
 Número:
 Fecha 16-10
@@ -341,16 +389,20 @@ CAJA EUROS
 
 300,00
 
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-15.PNG)
 
-
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-16.PNG)
 
 En la ventana Modelo 303, se debe seleccionar [22-23] IVA Deducible por cuotas soportadas en operaciones interiores con bienes corrientes.
 
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-17.PNG)
 
-
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-18.PNG)
 
 
 Al ser un asiento contabilizado en la cuenta de varios, activamos el campo: Excluir de 347, ya que este tipo de movimientos no debe aparecer en dicha declaración.
+
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-19.PNG)
 
 
 Cuarto asiento: Asiento con IVA Exento.
@@ -383,53 +435,76 @@ Cuando se debe registrar un asiento con una operación exenta de IVA o con IVA n
 
 Para ello, lo primero que es necesario, es crear un tipo de IVA Exento, de forma similar a como lo hicimos con el tipo 21% anteriormente.
 
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-20.PNG)
 
 
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-21.PNG)
 
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-22.PNG)
 
 
 A continuación modificamos las subcuentas de IVA 472.0 y 477.0 (que ya están creadas) para hacerlas corresponder con este nuevo tipo de IVA que estamos dando de alta:
 
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-23.PNG)
 
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-24.PNG)
 
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-25.PNG)
 
 
 
 Y una vez todo listo, procedemos a dar de alta el asiento del curso recibido. Para ello, introducimos de forma similar a la anterior los apuntes correspondientes al gasto realizado y la deuda con el acreedor:
 
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-26.PNG)
 
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-27.PNG)
 
 
 
 Y a continuación, contabilizamos el apunte en la cuenta de IVA Exento:
 
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-28.PNG)
 
 En la ventana Modelo 303, se debe seleccionar [24-25] IVA Deducible por cuotas en operaciones interiores con bienes de inversión. Al ser una cuota de 0€, no afectará a esta declaración.
 El asiento completo quedaría así:
 
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-29.PNG)
 
-
+![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-30.PNG)
 
 
 El mismo tratamiento debe recibir el IVA no deducible.
-Introducción de asientos en la contabilidad de forma automática.
+
+---
+### 3.4.- INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA.
 Área Financiera>Principal/Financiera
 
 Como hemos comentado con anterioridad, es posible introducir asientos en el diario de forma automática. La introducción de asientos en el diario de la contabilidad podía suponer el 80% del tiempo dedicado al proceso contable en una empresa. Aunque este tiempo haya disminuido, en gran parte, gracias a la integración entre distintas áreas de la empresa mediante el uso de un ERP y la generación automática de asientos desde sus distintos módulos; sigue existiendo la necesidad de introducir manualmente asientos en la contabilidad. Es necesario hacer más ágil, fiable y segura la creación de asientos en la contabilidad y por ello se han creado las plantillas de asientos.
+
 Las plantillas de asientos son asistentes que sirven para dar de alta apuntes contables de forma automatizada en la contabilidad de la empresa. Estos asientos ya predeterminados se conocen por diversos nombres como asientos tipo, predefinidos, automáticos, modelos, máscaras, patrones o plantillas de asientos, en función del programa que se esté utilizando. En AbanQ se denominan “Asientos predefinidos”.
+
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-31.PNG)
+
 El uso de estos asistentes tiene varias ventajas importantes, las cuales enumeramos a continuación:
+
 Permite registrar hechos contables sin tener conocimientos de contabilidad. Si programamos el proceso de introducción de apuntes convenientemente, o sea, separando los documentos que originen los asientos por conceptos: ventas, nóminas, etc. es posible que un usuario sin conocimientos contables se encargue de dar entrada a estos documentos.
+
 Evita errores en la introducción de apuntes. Debido a que reduce la participación del factor humano en su elaboración.
+
 Agiliza la entrada de asientos repetitivos. Se reduce al mínimo el proceso de captura de apuntes y por ello será más rápido.
+
 Incrementa la productividad del Sistema de Información Contable. Las tres ventajas anteriores suponen que el coste operativo de llevar la contabilidad disminuye; disminución que será mayor cuanto más elevado sea el número de apuntes repetitivos y el número de contabilidades gestionadas con el programa.
 
 La predefinición de asientos es una prestación ya incorporada a la mayoría de los programas de gestión contable. Estos asientos programados por el usuario para su utilización durante la introducción de apuntes permite que el operador seleccione el asistente que responda al hecho contable que va a reflejar y luego sólo ha de completar algunos datos, si fuera necesario.
+
 La incorporación de estos asistentes de asientos en AbanQ se hizo en la versión 2.1 del módulo de contabilidad. No viene creado al instalar el software ninguna plantilla de asiento, en este apartado vamos a aprender a dar de alta este tipo de asientos para su posterior uso en la contabilidad de la empresa.
 Comencemos dirigiéndonos al módulo Financiera – Principal del programa. En la ventana del módulo debemos pulsar la opción del menú Financiera – Opciones de diario – Asientos predefinidos:
 
 En la nueva ventana abierta, se puede observar una tabla con tres campos: Código asignado al asiento tipo, Descripción del mismo y un tercer campo llamado Concatenar con que si contiene el código de otra plantilla de asiento, servirá para comenzar ese nuevo predefinido al terminar de dar de alta el asiento en curso.
 Para la creación de un asiento predefinido es necesario tener muy claro el resultado que se espera del mismo, por ello es necesario en primer lugar realizar el asiento contable en un papel con la idea de sacar un esquema o boceto que nos guíe luego para su creación.
+
 Vamos a recrear el apunte contable a que daría lugar el alquiler del local donde se ubica la empresa; el IVA soportado por este alquiler sería del 21% del total. Veamos el asiento tal como se introduciría en la contabilidad, una partida del asiento en cada fila de la tabla:
+
 Número:
 Fecha 16-10
 ID Concepto: 
@@ -456,45 +531,55 @@ H.P. IVA SOPORTADO 21%
 ---
 **Nota**: La  Fundación Sur cumple los requisitos para estar exenta de hacerle la retención de IRPF.
 A la hora de crear el boceto de un asiento debemos hacernos algunas preguntas sobre lo que queremos conseguir, así nos fijaremos en varios puntos:
+
 Subcuenta: ¿Cada subcuenta utilizada será siempre la misma o puede variar? Por ejemplo en un asiento de nóminas, la subcuenta de sueldos y salarios puede ser distinta para cada empleado (640.1, 640.2, ...) o bien usar siempre la subcuenta general 640.0. En nuestro caso utilizaremos siempre una misma subcuenta para el acreedor y dueño del local.
 Importe: ¿Los importes respectivos guardan una relación permanente entre ellos?, ¿son importes siempre repetidos o en caso de pedir alguno se pueden hallar los demás con una fórmula?, En el caso actual son siempre los mismos, ya que todos los meses pagamos la misma cantidad en concepto de alquiler, es el caso más fácil y por ello lo utilizamos en nuestro primer asiento predefinido.
 
 Para definir mejor el asiento predefinido, es necesario conocer los distintos tipos de datos que se pueden utilizar en su creación (al final de este manual tienen un resumen de los pasos a seguir para elegir la mejor opción de cada apartado existente en las partidas del predefinido):
+
 Subcuenta
-Establecer: Se saben todos los dígitos de la subcuenta, 430.1
+* Establecer: Se saben todos los dígitos de la subcuenta, 430.1
 	Definir sirve para guardar la subcuenta en una variable
-Pedir: Faltan algunos dígitos (ej: no sé el cliente exacto: 430)
+* Pedir: Faltan algunos dígitos (ej: no sé el cliente exacto: 430)
 	Definir sirve para guardar la subcuenta en una variable
-Definida: Se utilizará el Valor guardado en la variable introducida en Definir, que deberá haber sido creada antes.
+* Definida: Se utilizará el Valor guardado en la variable introducida en Definir, que deberá haber sido creada antes.
+
 Importe
-Pedir: El importe debe ser introducido al crear el asiento
+* Pedir: El importe debe ser introducido al crear el asiento
 	Definir sirve para guardar el importe en una variable
-Calcular: Para introducir una cantidad fija o bien una fórmula utilizando una variable creada antes.
-Cuadrar: Se calculará sola la cantidad que saldará el asiento
+* Calcular: Para introducir una cantidad fija o bien una fórmula utilizando una variable creada antes.
+* Cuadrar: Se calculará sola la cantidad que saldará el asiento
+
 Concepto
-Establecer: Si el texto será permanente y completo
-Pedir: Se podrá completar su contenido al crear el asiento.
-Último: Se usará el mismo concepto de la partida anterior
-Definido: Se utilizará el Valor guardado en la variable introducida en Definir, que deberá haber sido creada antes.
+* Establecer: Si el texto será permanente y completo
+* Pedir: Se podrá completar su contenido al crear el asiento.
+* Último: Se usará el mismo concepto de la partida anterior
+* Definido: Se utilizará el Valor guardado en la variable introducida en Definir, que deberá haber sido creada antes.
+
 Documento
-Establecer: Si el texto será permanente y completo
-Pedir: Se podrá completar su contenido al crear el asiento.
-Último: Se usará el mismo contenido de la partida anterior
+* Establecer: Si el texto será permanente y completo
+* Pedir: Se podrá completar su contenido al crear el asiento.
+* Último: Se usará el mismo contenido de la partida anterior
+
 Factura
-Pedir: Al crease el asiento, se pedirá el número de factura.
-No pedir: No se pedirá el número al crearse el asiento.
+* Pedir: Al crease el asiento, se pedirá el número de factura.
+* No pedir: No se pedirá el número al crearse el asiento.
+
 Base Imponible
-Pedir: Se pedirá el neto de la factura. No usar.
-Calcular: Fórmula para hallar gasto o ingreso del asiento.
+* Pedir: Se pedirá el neto de la factura. No usar.
+* Calcular: Fórmula para hallar gasto o ingreso del asiento.
+
 Contrapartida
-Establecer: Se saben todos los dígitos de la subcuenta, 430.1
+* Establecer: Se saben todos los dígitos de la subcuenta, 430.1
 	Definir sirve para guardar la subcuenta en una variable
-Pedir: Faltan algunos dígitos (ej: no sé el cliente exacto: 430)
+* Pedir: Faltan algunos dígitos (ej: no sé el cliente exacto: 430)
 	Definir sirve para guardar la subcuenta en una variable
-Definida: Se utilizará el Valor guardado en la variable introducida en Definir, que deberá haber sido creada antes.
+* Definida: Se utilizará el Valor guardado en la variable introducida en Definir, que deberá haber sido creada antes.
 
 Una vez leída la tabla anterior, y en referencia al asiento predefinido que estamos creando, resaltemos dos aspectos importantes:
+
 En todos los asientos predefinidos donde aparezca alguna subcuenta de IVA, la partida del IVA será forzosamente de tipo establecer y el código de subcuenta será el que corresponda al porcentaje de IVA utilizado en la factura. En la partida de IVA es obligatorio rellenar el campo contrapartida con el código de subcuenta del sujeto pasivo del impuesto, es decir, la subcuenta del cliente, proveedor o acreedor al que se refiere el asiento.
+
 Siempre hay que cuadrar una de las partidas de forma automática, para evitar cualquier error en los cálculos o problemas derivados de redondeos con las cifras, de esta forma nos aseguramos que el asiento nunca quede descuadrado. Las fórmulas, aunque sean correctas, pueden dar lugar a decimales que se redondean a dos dígitos, según la moneda utilizada, por ello uno de los valores debe ser directamente el valor que cuadre al asiento.
 Con esta nueva información podemos escribir el boceto del asiento tipo:
 
@@ -551,12 +636,16 @@ Respecto a los nombres de variables utilizadas, por ejemplo Acrdor, es necesario
 **Alta de un nuevo asiento predefinido**
 
 El primer paso puede ser comprobar que existan las subcuentas que vamos a utilizar en nuestro asiento: 410.5  Fundación Sur, 621.0 Arrendamientos y 472.21 IVA soportado al 21%. De estas subcuentas tendremos que crear la de  Fundación Sur porque no existe, y si no lo hacemos el programa nos avisará cuando utilicemos el predefinido. Vamos, en el módulo principal del área financiera, al menú P.G.C. - Subcuentas o pulsen las teclas Control y S asociadas a esa opción:
+
 A continuación pulsamos el botón Insertar nuevo registro () e introducimos los datos sobre el acreedor  Fundación Sur:
-Cuenta: 410
-Código: 410.5
-Descripción:  Fundación Sur
 
+* Cuenta: 410
+* Código: 410.5
+* Descripción:  Fundación Sur
 
+![Insertar acreedor](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-32.PNG)
+
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-31.PNG)
 
 
 
@@ -566,6 +655,7 @@ Tras aceptar los datos de alta de  Fundación Sur volvemos a la ventana de asien
 Código: Alqloc
 Descripción: Alquiler del local
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-32.PNG)
 
 Añadamos la primera partida a la plantilla de asientos, para ello pulsen el botón de insertar registro en el marco Partidas de la plantilla. Y rellenen los diferentes campos con la información aparecida en nuestro boceto de predefinido:
 
