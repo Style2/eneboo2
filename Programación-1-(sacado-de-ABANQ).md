@@ -1,46 +1,50 @@
-* CREADO POR: [ABANQ-Infosial](http://www.abanq.org) en https://www.abanq.org/documentacion/
+* CREADO POR: [ABANQ-Infosial](http://www.abanq.org) en https://web.archive.org/web/20101212082616/http://abanq.org/documentacion/documento.php?ref=tutorial2
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 13 de febrero de 2015
+* ULTIMA ACTUALIZACIÓN: 1 de junio de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Programaci%C3%B3n-1-(sacado-de-ABANQ))
 
 ----
-#Tutorial. Programación en Abanq (I). Primer contacto
-Este es el primero de una serie de tutoriales orientados a programadores y usuarios avanzados acerca de programación sobre Abanq. En este tutorial veremos cómo realizar una personalización básica y muy sencilla, pero que nos va a dar una idea de la flexibilidad de la aplicación y la facilidad con que se pueden realizar cambios sobre la estructura de los datos y el aspecto de los formularios. 
+#Tutorial. Programación en Eneboo (I). Primer contacto
+Este es el primero de una serie de tutoriales orientados a programadores y usuarios avanzados acerca de programación sobre Eneboo. En este tutorial veremos cómo realizar una personalización básica y muy sencilla, pero que nos va a dar una idea de la flexibilidad de la aplicación y la facilidad con que se pueden realizar cambios sobre la estructura de los datos y el aspecto de los formularios. 
 
 ###Requerimientos
 Antes de comenzar a trabajar:
-   * Descargar e instalar la aplicación base de Abanq (recomendamos la versión más reciente) instalada
+   * Descargar e instalar la aplicación base de Eneboo (recomendamos la versión más reciente) instalada
    * Descargar los módulos públicos. Para este tutorial bastarán los módulos del área de Facturación
-   * Arrancar Abanq con una nueva base de datos y cargar los módulos 
+   * Arrancar Eneboo con una nueva base de datos y cargar los módulos 
 Algunos conceptos previos: el área de Sistema
-Abanq no es sólo un software de gestión, incluye además un entorno de desarrollo que permite realizar cambios y personalizaciones desde lo más básico a lo más avanzado.
+Eneboo no es sólo un software de gestión, incluye además un entorno de desarrollo que permite realizar cambios y personalizaciones desde lo más básico a lo más avanzado.
 Desde el área de sistema no sólo podemos cargar los módulos, también podemos modificar los ficheros de tablas, formularios, informes, etc que forman parte de un módulo.
 Para ello abriremos el módulo de Administración dentro del área de sistema. Pulsamos en el menú Principal -> Módulos. Veremos un listado de lo módulos instalados. Si abrimos, por ejemplo, el módulo flfactppal (principal de facturación) accedemos al listado de ficheros. Algunos ejemplos: clientes.mtd es la tabla de clientes; clientes.ui es el formulario de clientes, etc.
 
-Los principales tipos de ficheros que maneja Abanq son:
+Los principales tipos de ficheros que maneja Eneboo son:
 * tablas (extensión mtd)
 * formularios (extensión ui)
 * scripts (extensión qs)
 * plantillas de informes (extensión kut)
 * consultas sql para informes (extensión qry) 
 
-Desde el listado de ficheros de un módulo podemos abrir un fichero para ver su contenido (siempre textual). Si pulsamos el botón Editar fichero, Abanq reconoce automáticamente el tipo de fichero y abre el editor adecuado.
-Algunos ejemplos: para las tablas se abrirá un editor de texto, para los formulario el editor de formularios QDesigner. Todas estas herramientas son incorporadas durante la instalación de Abanq. 
+Desde el listado de ficheros de un módulo podemos abrir un fichero para ver su contenido (siempre textual). Si pulsamos el botón Editar fichero, Eneboo reconoce automáticamente el tipo de fichero y abre el editor adecuado.
+Algunos ejemplos: para las tablas se abrirá un editor de texto, para los formulario el editor de formularios QDesigner. Todas estas herramientas son incorporadas durante la instalación de Eneboo. 
 
 ###Cambios básicos en tablas y formularios
-Vamos a utilizar las herramientas que incorpora Abanq para realizar algunos cambios sencillos en tablas y formularios de los módulos previamente cargados.
+Vamos a utilizar las herramientas que incorpora Eneboo para realizar algunos cambios sencillos en tablas y formularios de los módulos previamente cargados.
 ####1. Cambio de propiedades de un campo.
 
 Cambio de alias. El alias de un campo es el nombre que aparece en los formularios y las tablas maestras. Para los almacenes vamos a modificar el alias del campo ("Código") cambiándolo por "Código de Almacén". En primer lugar abrimos el módulo almacén en el área de facturación. En el menú Almacén -> Almacenes mostramos el listado de almacenes de nuestra base de datos. Podemos ver que el primer campo tiene el alias Código.
+
 Los alias de los datos se especifican en las tablas.
+
 Desde el módulo de sistema::administración, abrimos el módulo flfactalma (almacén), y a continuación la tabla Almacenes (almacenes.mtd). En el campo codalmacen cambiamos la propiedad alias.
 Nuevo alias de un campo
+
 Aceptamos todos los formularios. Podemos verificar el cambio abriendo de nuevo el formulario de almacenes y comprobando el alias nuevo.
 
 ####   2. Cambio de la longitud máxima de un campo.
 
 Para las familias de artículos, el campo Código tiene una longitud máxima de 4 caracteres. Vamos a ampliar esta longitud hasta 6 caracteres. Dentro del módulo Almacén abrimos la tabla Familias (familias.mtd) y en el campo codigo cambiamos la propiedad lenght de 4 a 6:
 Nueva longitud máxima de un campo
+
 Podemos verificar el cambio abriendo el formulario de familias y comprobando que efectivamente el código admite ahora hasta 6 caracteres.
 
 ####3. Cambios en el diseño de los formularios.
@@ -149,7 +153,7 @@ Una vez abierta la aplicación, vamos a abrir las paletas de herramientas (menú
 1. Establecemos la propiedad name del nuevo campo a fdbZonaComercial.
 1. Establecemos la propiedad fieldName del nuevo campo a zonacomercial. Este es el nombre del campo en la tabla.
 1. Repetimos los pasos anteriores para el resto de campos.
-1. De los campos anteriores, utilizamos uno que no está en la tabla de países. Es el que muestra la descripción de la divisa. Abanq permite mostrar este valor que se encuentra en otra tabla -la tabla divisas- siempre que exista una relación entre ambas tablas. Para este campo las propiedades son fieldName con valor descripcion, tableName con valor divisas, foreignField con valor coddivisa y fielRelation con valor coddivisa.
+1. De los campos anteriores, utilizamos uno que no está en la tabla de países. Es el que muestra la descripción de la divisa. Eneboo permite mostrar este valor que se encuentra en otra tabla -la tabla divisas- siempre que exista una relación entre ambas tablas. Para este campo las propiedades son fieldName con valor descripcion, tableName con valor divisas, foreignField con valor coddivisa y fielRelation con valor coddivisa.
 1. Damos formato al formulario mediante controles spacer y layouts, y modificando las propiedades de tamaño de los campos: 
 
 Modificando el formulario de países en QT Designer
