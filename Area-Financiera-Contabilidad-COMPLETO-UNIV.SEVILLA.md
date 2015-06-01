@@ -6,7 +6,6 @@
 
 ----
 ####EN CONSTRUCCIÓN
-https://github.com/Miguel-J/eneboo/wiki/Area-Financiera-Contabilidad-COMPLETO-UNIV.SEVILLA
 
 
 
@@ -29,9 +28,10 @@ https://github.com/Miguel-J/eneboo/wiki/Area-Financiera-Contabilidad-COMPLETO-UN
 * 3.1.4-  Códigos de balance 08-Correspondencias 90-08
 * 3.2.- ÁREA FINANCIERA - CUADRO DE CUENTAS.
 * 3.3.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL
-* 3.4.- INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA.
+* 3.4.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA.
 * 3.5.- RESUMEN:
 * 3.6.- CONSULTAS Y OTROS PROCESOS:
+* 3.7.- CAMBIO DE EJERCICIO.
 
 
 ---
@@ -44,13 +44,12 @@ La configuración del Área Financiera se realiza en el Módulo Principal, Finan
 1. Cuentas Especiales
 1. Conceptos de partidas
 1. Códigos de balance
-1. Códigos de balance 08
-1. Correspondencias 90-08
+1. Códigos de balance PGC 2008 y Correspondencias PGC 1990-2008
 
 
 --
 ####3.1.1.- Cuentas especiales.
-Área Financiera> Configuración/Cuentas especiales
+**Área Financiera> Configuración/Cuentas especiales**
 
 La opción Cuentas Especiales permite asignar una subcuenta determinada a un proceso automático del programa. Así, por ejemplo, al crear una subcuenta de IVA Soportado, es necesario que Eneboo sepa que el saldo de esta subcuenta recoge las cuotas soportadas por este impuesto y cuando se realice una anotación en el diario utilizando dicha cuenta, ese importe se anote también en la gestión fiscal del programa. De esta manera, podrá calcular correctamente la declaración de IVA, el modelo 347 y listar el libro registro de facturas recibidas. Lo mismo ocurre con el resto de tipos de subcuentas que aparece en el listado.
 
@@ -58,7 +57,7 @@ La opción Cuentas Especiales permite asignar una subcuenta determinada a un pro
 
 --
 ####3.1.2.- Conceptos de partidas.
-Área Financiera>Configuración/Conceptos de partidas
+**Área Financiera>Configuración/Conceptos de partidas**
 
 Los conceptos de partidas, segunda opción que aparece en este menú hace referencia a lo que comúnmente se denomina “conceptos contables”. Los conceptos contables son pequeñas leyendas que se incorporan a los apuntes contables y que aportan información sobre el mismo o explican si es necesario lo que se está contabilizando. Suelen constar de una parte fija y otra variable. Desde esta opción podemos realizar el alta, baja y modificaciones de los conceptos contables. Como ejemplo, vamos a dar de alta los siguientes conceptos contables genéricos:
 
@@ -75,25 +74,25 @@ Descripción: COBRO POR CAJA
 
 --
 ####3.1.3.- Códigos de Balance.
-Área Financiera>Configuración/Códigos de Balance
+**Área Financiera>Configuración/Códigos de Balance**
 
 Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias según el PGC anterior al del 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de Eneboo y de contabilidad.
 
 --
-####3.1.4.- Códigos de Balance 08.
-Área Financiera>Configuración/Códigos de Balance 08
+####3.1.4.- Códigos de Balance 2008.
+**Área Financiera>Configuración/Códigos de Balance 08**
 
 Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias con el plan contable de 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de Eneboo y de contabilidad.
 
 --
 ####3.1.4.b- Correspondencias 90-08.
-Área Financiera>Configuración/Correspondencias 90-08
+**Área Financiera>Configuración/Correspondencias 90-08**
 
 Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias para adaptar una contabilidad llevada según el PGC de 1990 al del 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de Eneboo y de contabilidad.
 
 ---
 ###3.2.- ÁREA FINANCIERA - CUADRO DE CUENTAS.
-Área Financiera>Principal/Cuadro de cuentas
+**Área Financiera>Principal/Cuadro de cuentas**
 
 La opción de Cuadro de cuentas presenta las siguientes opciones:
 
@@ -147,9 +146,9 @@ Crear las siguientes subcuentas:
 * Descripción: ALQUILER LOCAL COMERCIAL 
 * Tipo Especial: 
 
---
+---
 ### 3.2.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL
-Área Financiera>Principal/Financiera
+**Área Financiera>Principal/Asientos**
 
 Al igual que en la mayoría de los programas de contabilidad y ERP’s, la introducción de asientos en Eneboo se puede realizar de dos formas distintas: manual o automáticamente. 
 
@@ -480,7 +479,7 @@ El mismo tratamiento debe recibir el IVA no deducible.
 
 ---
 ### 3.4.- INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA.
-Área Financiera>Principal/Financiera
+**Área Financiera>Principal/Asientos predefinidos**
 
 Como hemos comentado con anterioridad, es posible introducir asientos en el diario de forma automática. La introducción de asientos en el diario de la contabilidad podía suponer el 80% del tiempo dedicado al proceso contable en una empresa. Aunque este tiempo haya disminuido, en gran parte, gracias a la integración entre distintas áreas de la empresa mediante el uso de un ERP y la generación automática de asientos desde sus distintos módulos; sigue existiendo la necesidad de introducir manualmente asientos en la contabilidad. Es necesario hacer más ágil, fiable y segura la creación de asientos en la contabilidad y por ello se han creado las plantillas de asientos.
 
@@ -535,8 +534,9 @@ H.P. IVA SOPORTADO 21%
 **Nota**: La  Fundación Sur cumple los requisitos para estar exenta de hacerle la retención de IRPF.
 A la hora de crear el boceto de un asiento debemos hacernos algunas preguntas sobre lo que queremos conseguir, así nos fijaremos en varios puntos:
 
-Subcuenta: ¿Cada subcuenta utilizada será siempre la misma o puede variar? Por ejemplo en un asiento de nóminas, la subcuenta de sueldos y salarios puede ser distinta para cada empleado (640.1, 640.2, ...) o bien usar siempre la subcuenta general 640.0. En nuestro caso utilizaremos siempre una misma subcuenta para el acreedor y dueño del local.
-Importe: ¿Los importes respectivos guardan una relación permanente entre ellos?, ¿son importes siempre repetidos o en caso de pedir alguno se pueden hallar los demás con una fórmula?, En el caso actual son siempre los mismos, ya que todos los meses pagamos la misma cantidad en concepto de alquiler, es el caso más fácil y por ello lo utilizamos en nuestro primer asiento predefinido.
+* Subcuenta: ¿Cada subcuenta utilizada será siempre la misma o puede variar? Por ejemplo en un asiento de nóminas, la subcuenta de sueldos y salarios puede ser distinta para cada empleado (640.1, 640.2, ...) o bien usar siempre la subcuenta general 640.0. En nuestro caso utilizaremos siempre una misma subcuenta para el acreedor y dueño del local.
+
+* Importe: ¿Los importes respectivos guardan una relación permanente entre ellos?, ¿son importes siempre repetidos o en caso de pedir alguno se pueden hallar los demás con una fórmula?, En el caso actual son siempre los mismos, ya que todos los meses pagamos la misma cantidad en concepto de alquiler, es el caso más fácil y por ello lo utilizamos en nuestro primer asiento predefinido.
 
 Para definir mejor el asiento predefinido, es necesario conocer los distintos tipos de datos que se pueden utilizar en su creación (al final de este manual tienen un resumen de los pasos a seguir para elegir la mejor opción de cada apartado existente en las partidas del predefinido):
 
@@ -726,9 +726,11 @@ En la siguiente imagen pueden observar cómo quedaría la primera partida:
 
 Antes de seguir hay que resaltar dos puntos que no han sido comentados, por un lado tenemos un campo llamado Nº de orden, éste guarda el orden de ejecución de las distintas partidas del asiento y por defecto se ordenan de forma consecutiva y creciente. Otro aspecto a resaltar es la asignación de un nombre de variable (Acrdor) a la subcuenta de acreedores utilizada, esto es necesario para poder especificar el sujeto pasivo cuando lleguemos a la partida correspondiente al IVA; aunque en este caso, al ser siempre la misma subcuenta, se podría obviar y escribir de nuevo el código de subcuenta en la contrapartida.
 Para trabajar con la siguiente partida debemos pulsar bien el botón de aceptar y continuar () o la tecla F9 asociada al mismo. Los datos serían:
-Plantilla de asiento
+
+* Plantilla de asiento
 	Nº de Orden: 2
-Datos principales
+
+* Datos principales
 	Debe (elegirlo aunque parezca ya activado)
 	Subcuenta: Tipo Establecer, Valor 621.1
 	Importe: Tipo Calcular, Valor 800,00
@@ -915,17 +917,18 @@ Datos principales
 Recuerden que, en el campo Valor del Importe, podemos pulsar el botón a la derecha de Definir para que el programa recuerde el nombre de variable dada en el formulario de la partida anterior: Total, y luego completar escribiendo /1.21 para calcular el importe neto sin IVA.
 
 La tercera partida es la correspondiente al IVA soportado y en ella se debe prestar atención a la Base Imponible y a la contrapartida, ambos datos son automatizados gracias al uso de variables, hagan pruebas con ellas para comprender mejor sus posibilidades. La información será la siguiente:
-Plantilla de asiento
+
+* Plantilla de asiento
 	Nº de Orden: 3
-Datos principales
+* Datos principales
 	Debe (elegirlo aunque parezca ya activado)
 	Subcuenta: Tipo Establecer, Valor 472.21
 	Importe: Tipo Cuadrar
 	Concepto: Tipo Último
 	Documento: Tipo Último
-IVA
+* IVA
 	Base Imponible: Tipo Calcular, Valor Total/1.21
-Contrapartida
+* Contrapartida
 	Contrapartida: Tipo Definida, Definir Acrdor
 
 Respecto a la fórmula utilizada para la Base Imponible volvemos a resaltar que siempre que una cantidad pueda ser calculada a partir de las demás, se utilizará la fórmula que consiga el resultado correcto (con la excepción del uso de Cuadrar la partida). En este caso se trata de repetir la fórmula para hallar el importe neto del gasto en combustible, ya calculado en la partida anterior.
@@ -1034,9 +1037,10 @@ Cuadrar
 
 
 Mientras que en el primer asiento predefinido que realizamos, el de alquileres, todos los importes estaban preestablecidos; y en la segunda plantilla de asiento, el de compra de carburante, todos los importes podían calcularse a partir del primero. Es curioso este tercer tipo, no es posible calcular ninguno de los importes de las partidas a partir de ninguna de las demás, como mucho la última partida podrá simplemente cuadrar el asiento.
+
 Con la información suministrada vamos a crear el nuevo asiento predefinido, es importante notar que no está permitido usar en el código caracteres Especiales, por ejemplo las tildes o la Ñ:
-Código: nomina
-Descripción: Pago de nóminas del mes
+* Código: nomina
+* Descripción: Pago de nóminas del mes
 
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-48.PNG)
 
@@ -1052,9 +1056,9 @@ Datos principales
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-49.PNG)
 
 La segunda partida contendrá la información sobre la cuota de los trabajadores a la Seguridad Social:
-Plantilla de asiento
+* Plantilla de asiento
 	Nº de Orden: 2
-Datos principales
+* Datos principales
 	Haber
 	Subcuenta: Tipo Establecer, Valor 476.0
 	Importe: Tipo Pedir
@@ -1076,9 +1080,9 @@ Datos principales
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-50.PNG)
 
 La última partida representa el sueldo neto de los trabajadores, que se obtiene por diferencia del resto de partidas y será contabilizado en la subcuenta 465.0 Remuneraciones pendientes de pago a la espera de que los trabajadores pasen por caja a retirar su dinero:
-Plantilla de asiento
+* Plantilla de asiento
 	Nº de Orden: 4
-Datos principales
+* Datos principales
 	Haber
 	Subcuenta: Tipo Establecer, Valor 465.0
 	Importe: Tipo Cuadrar
@@ -1364,9 +1368,9 @@ Una vez creado el ejercicio, volvemos a la ventana anterior donde hacemos clic e
 
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-80.PNG)
 
---
-###Cambio de ejercicio.
-Área Financiera>Principal/Ejercicio
+---
+###3.7.- CAMBIO DE EJERCICIO.
+**Área Financiera>Principal/Ejercicio**
 
 Contenido de Ejercicio:
 
