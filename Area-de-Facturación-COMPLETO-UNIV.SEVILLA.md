@@ -39,16 +39,16 @@ En este apartado se analizarán los siguientes aspectos en relación con la apli
 ---
 ####Arquitectura de Eneboo:
 
-* La aplicación ERP AbanQ se basa en la tecnología Cliente-Servidor, se trata realmente de un programa cliente de bases de datos que se instala en el ordenador del usuario. Podemos decir, por tanto, que AbanQ permite interpretar los datos pedidos al gestor de bases de datos instalado en el servidor, en nuestro caso PostgreSQL, utilizando el lenguaje SQL, para la posterior presentación al usuario de la información.
+* La aplicación ERP Eneboo se basa en la tecnología Cliente-Servidor, se trata realmente de un programa cliente de bases de datos que se instala en el ordenador del usuario. Podemos decir, por tanto, que Eneboo permite interpretar los datos pedidos al gestor de bases de datos instalado en el servidor, en nuestro caso PostgreSQL, utilizando el lenguaje SQL, para la posterior presentación al usuario de la información.
 
-* En el siguiente gráfico se presenta un esquema del funcionamiento de AbanQ:
+* En el siguiente gráfico se presenta un esquema del funcionamiento de Eneboo:
 
 
 * Como se puede observar, la aplicación con el nombre flitte se ejecuta desde el cliente, de igual forma que con un navegador web y las páginas escritas en HTML, los datos son pedidos por la red utilizando el lenguaje SQL. Los módulos (metadatos) también son guardados como un dato más en la base de datos, de esa forma se evita tener que instalarlos en cada ordenador cliente, pues éstos cogen los módulos desde el mismo servidor. Así es muy fácil añadir nuevas funcionalidades al ERP y sean automáticamente utilizadas por todos los clientes.
 
-* Por tanto, al iniciar AbanQ, éste descarga del servidor los módulos con sus instrucciones (los guarda y los renueva si existen nuevas versiones), y mediante la ejecución de estos módulos, el usuario va pidiendo y modificando los datos que necesite. En resumen, el programa AbanQ interpreta las instrucciones y datos llegados desde el servidor y presenta la información en el ordenador del usuario.
+* Por tanto, al iniciar Eneboo, éste descarga del servidor los módulos con sus instrucciones (los guarda y los renueva si existen nuevas versiones), y mediante la ejecución de estos módulos, el usuario va pidiendo y modificando los datos que necesite. En resumen, el programa Eneboo interpreta las instrucciones y datos llegados desde el servidor y presenta la información en el ordenador del usuario.
 
-* La potencia de usar estándares como el lenguaje SQL, permite a esta aplicación funcionar con distintos gestores de bases de datos, así se podría conectar tanto a un servidor con PostgreSQL como con MySQL. En futuras versiones será compatible también con servidores Oracle SQL. Para más información sobre la tecnología que subyace en la base de AbanQ leer el documento sobre la Arquitectura Abierta de Aplicaciones Dinámicas (A3D) que se encuentra en http://abanq.org/documentacion/documento.php?ref=tutorial1.
+* La potencia de usar estándares como el lenguaje SQL, permite a esta aplicación funcionar con distintos gestores de bases de datos, así se podría conectar tanto a un servidor con PostgreSQL como con MySQL. En futuras versiones será compatible también con servidores Oracle SQL. Para más información sobre la tecnología que subyace en la base de Eneboo leer el documento sobre la Arquitectura Abierta de Aplicaciones Dinámicas (A3D) que se encuentra en https://github.com/Miguel-J/eneboo/wiki/Programaci%C3%B3n-1-(sacado-de-ABANQ).
 
 ---
 ####Explicación breve de los botones utilizados en el programa.
@@ -73,7 +73,7 @@ En este apartado se analizarán los siguientes aspectos en relación con la apli
 --
 ##Acceso y salida del programa
 
-* Para entrar en el ERP ir a Inicio/programas/AbanQ. Se abrirán dos ventanas desde donde accederemos a la base de datos envoltosa con el botón Conectar. No usen en el nombre de la base de datos acentos, eñes, ni cualquier otro carácter extraño al idioma inglés, pues dará error.
+* Para entrar en el ERP ir a Inicio/programas/Eneboo. Se abrirán dos ventanas desde donde accederemos a la base de datos envoltosa con el botón Conectar. No usen en el nombre de la base de datos acentos, eñes, ni cualquier otro carácter extraño al idioma inglés, pues dará error.
 
 * Recordamos que esta aplicación puede abrirse varias veces a la vez, y en cada una trabajar con una empresa diferente, simplemente eligiendo distintas bases de datos.
 
@@ -81,7 +81,7 @@ En este apartado se analizarán los siguientes aspectos en relación con la apli
 * Si la base de datos se ha creado con anterioridad (por ejemplo, para cargar los módulos) no aparecerá la ventana siguiente:
 
 
-* Debido a la complejidad del sistema, AbanQ divide los subsistemas de la empresa en áreas y éstas, a su vez, en diversos módulos o funcionalidades. Las dos áreas con las que vamos a trabajar son Área de Facturación, desde la que se gestionan los aspectos relacionados con el aprovisionamiento y la gestión de ventas, y el Área Financiera desde la que se gestiona la contabilidad.
+* Debido a la complejidad del sistema, Eneboo divide los subsistemas de la empresa en áreas y éstas, a su vez, en diversos módulos o funcionalidades. Las dos áreas con las que vamos a trabajar son Área de Facturación, desde la que se gestionan los aspectos relacionados con el aprovisionamiento y la gestión de ventas, y el Área Financiera desde la que se gestiona la contabilidad.
 
 
 
@@ -185,7 +185,7 @@ Antes de comenzar a trabajar con nuestra empresa, es necesario configurar una se
 
 * Normalmente, el sistema de codificación de las cuentas de clientes y/o proveedores, o las de gastos e ingresos, serán los principales aspectos a considerar para determinar el número de Dígitos de subcuenta a utilizar, pero no olvidemos que ello afectará a todas las subcuentas.
 
-* En el caso de que no se desee trabajar con 10 dígitos, que como hemos afirmado anteriormente es lo que AbanQ propone por defecto, debe editarse el campo Dígitos de subcuenta (véase imagen anterior) incluyendo el valor deseado. También puede realizarse desde el módulo Principal del Área Financiera, en el menú Ejercicio, seleccionando Cambiar actual y pulsando el botón Cambiar.
+* En el caso de que no se desee trabajar con 10 dígitos, que como hemos afirmado anteriormente es lo que Eneboo propone por defecto, debe editarse el campo Dígitos de subcuenta (véase imagen anterior) incluyendo el valor deseado. También puede realizarse desde el módulo Principal del Área Financiera, en el menú Ejercicio, seleccionando Cambiar actual y pulsando el botón Cambiar.
 
 * Por otro lado, si editamos la pestaña Series, dentro de la ventana de Editar Ejercicio fiscal, podremos ver y modificar la numeración inicial de las facturas que se generarán en el programa (ver apartado Secuencias de documentos).
 
@@ -232,7 +232,7 @@ una vez localizada la seleccionaremos y cerraremos el formulario.
 
 
 
-* Antes de volver al menú Fiscalidad, debemos continuar con la configuración de los modelos tributarios de EnvoltoSA. Para eso, podemos buscar en la ventana del Área de Facturación el menú Módulos y, dentro de éste, señalar Área Financiera>G:Modelos, o bien, minimizar o cerrar la ventana del Área de Facturación y en la ventana AbanQ, hay que acudir al Área Financiera y al Módulo Modelos. Al entrar en él, AbanQ pide de forma automática que se configuren los modelos tributarios.
+* Antes de volver al menú Fiscalidad, debemos continuar con la configuración de los modelos tributarios de EnvoltoSA. Para eso, podemos buscar en la ventana del Área de Facturación el menú Módulos y, dentro de éste, señalar Área Financiera>G:Modelos, o bien, minimizar o cerrar la ventana del Área de Facturación y en la ventana Eneboo, hay que acudir al Área Financiera y al Módulo Modelos. Al entrar en él, Eneboo pide de forma automática que se configuren los modelos tributarios.
 
 
 
@@ -598,7 +598,7 @@ Es necesario dar de alta el Departamento comercial al que pertenece el agente (s
 
 Al final tenemos el campo Proveedor, el cual sirve para asociar al agente con un número de subcuenta contable y facilitar otras funcionalidades necesarias (cuenta corriente donde pagarle, gestión documental, subcuenta bancaria, etc.)
 
-El caso es que, a efectos de su gestión en AbanQ, un agente se gestiona como un proveedor (de servicios - acreedor), ya que nos presta el servicio de buscar o atender clientes; por ello el programa en lugar de duplicar todo lo relativo a proveedores para los agentes, pues nos hace crear una ficha de proveedor al agente aunque esto suponga la inserción de algunos datos por duplicado (nombre, DNI, domicilio), permitiendo asociar a los agentes todas las funcionalidades creadas para los proveedores (gestión documental, mayor de la subcuenta contable, etc.)
+El caso es que, a efectos de su gestión en Eneboo, un agente se gestiona como un proveedor (de servicios - acreedor), ya que nos presta el servicio de buscar o atender clientes; por ello el programa en lugar de duplicar todo lo relativo a proveedores para los agentes, pues nos hace crear una ficha de proveedor al agente aunque esto suponga la inserción de algunos datos por duplicado (nombre, DNI, domicilio), permitiendo asociar a los agentes todas las funcionalidades creadas para los proveedores (gestión documental, mayor de la subcuenta contable, etc.)
 
 Hay que tener cuidado al dar de alta al agente como proveedor, pues el programa por defecto asocia en las fichas de proveedores una subcuenta contable 4000.X en lugar de la que le corresponde como cualquier prestatario de servicios (4100.X). Por ello, debemos modificar la subcuenta antes de que se cree en la contabilidad. 
 
@@ -785,7 +785,7 @@ Banco: Bankinter; Cuenta: 0128 2330 3321021022 (DC 85); Dirección: Los Naranjos
 #####Clientes.
 Área Facturación>Principal/Principal/Clientes
 
-* Daremos de alta en este apartado la información relativa a los clientes. No es necesario crear una ficha para cada cliente de la empresa, pues es posible crear una factura de venta y en la misma escribir el nombre, CIF y dirección sin incluir nada en el campo Código del cliente. Cuando se cree el asiento contable AbanQ volcará la información en la subcuenta de clientes varios 430.0.
+* Daremos de alta en este apartado la información relativa a los clientes. No es necesario crear una ficha para cada cliente de la empresa, pues es posible crear una factura de venta y en la misma escribir el nombre, CIF y dirección sin incluir nada en el campo Código del cliente. Cuando se cree el asiento contable Eneboo volcará la información en la subcuenta de clientes varios 430.0.
 
 * Pero para clientes habituales o que superen ciertos importes, debemos guardar información sobre sus datos y facturas por motivos fiscales (modelo 347 sobre operaciones con terceras personas). Al añadir un nuevo cliente hemos de asignarle un código y un nombre. La ficha del cliente contiene las siguientes carpetas: General, Comercial, Cuentas Bancarias, Direcciones, Agenda, Descuentos, Documentos y Contabilidad.
 
@@ -1118,7 +1118,7 @@ Vamos a ver cómo registrar varios albaranes a partir de un único pedido:
 
 * [6] Primer albarán. Se comprueba que la mercancía registrada en el primer albarán (de 5 de octubre) no se corresponde con la que llega al almacén. Con fecha 05-10-08 se recibieron 7 abanicos de los 25 solicitados.
 
-* AbanQ generó el albarán por toda la mercancía que figuraba en el pedido. En nuestro ejemplo lo hicimos desde la propia ventana de Pedidos, a través del botón Generar albarán. Una vez grabado el mismo, y ya desde la ventana de Albaranes procedemos a editar dicho albarán, modificando (utilizando el botón Modificar registro) la cantidad (7), tal y como se recoge en la siguiente figura.
+* Eneboo generó el albarán por toda la mercancía que figuraba en el pedido. En nuestro ejemplo lo hicimos desde la propia ventana de Pedidos, a través del botón Generar albarán. Una vez grabado el mismo, y ya desde la ventana de Albaranes procedemos a editar dicho albarán, modificando (utilizando el botón Modificar registro) la cantidad (7), tal y como se recoge en la siguiente figura.
 
 
 * Como puede observarse en la ventana de pedidos de proveedor, el pedido de 1 de octubre aparece como Servido: Parcial (si ya estaba abierta habrá que refrescar la ventana con un clic de ratón).
@@ -1126,7 +1126,7 @@ Vamos a ver cómo registrar varios albaranes a partir de un único pedido:
 
 * [7] Nuevo albarán. El 7 de octubre se recibe mediante albarán la mercancía que faltaba de ese pedido (de 1 de octubre y servido parcialmente).
 
-AbanQ automáticamente crea el albarán por el total de la mercancía pendiente de entregar que figura en el pedido. En nuestro ejemplo lo haremos desde la propia ventana de Pedidos, a través del botón Generar albarán. 
+Eneboo automáticamente crea el albarán por el total de la mercancía pendiente de entregar que figura en el pedido. En nuestro ejemplo lo haremos desde la propia ventana de Pedidos, a través del botón Generar albarán. 
 
 * Una vez grabado el mismo, y ya desde la ventana de Albaranes procedemos a editar dicho albarán, modificando la fecha del mismo a 7 de octubre como fecha de entrada de la mercancía.
 
@@ -1302,7 +1302,7 @@ En esta ventana realizaremos la siguiente práctica:
 
 En esta opción confeccionaremos aquellos pedidos que realicen los clientes. Estos documentos no suponen ninguna salida física de productos del almacén, sino una información acerca de los productos que estamos pendientes de servir, lo que nos permitirá hacer un seguimiento de los mismos. Por ello, puede ocurrir que la empresa no desee llevar este tipo de control, con lo cual podrá pasar directamente a trabajar con los albaranes y/o facturas. 
 
-AbanQ, al contrario que muchos de los programas de facturación, permite actualizar el stock de los artículos cuando se genera un pedido (uso de la opción [V] Controlar stocks desde pedidos de cliente en el Área de Facturación> Principal – Menú Principal/Empresa – Pestaña Valores por defecto en conjunción con tener desactivada la opción [_] Permitir ventas sin stock en el Área de Facturación> Almacén – Menú Almacén/Artículos – Modificar – Pestaña Stocks). La razón es guiarse por el Principio de Prudencia para evitar cualquier posible Ruptura de Stock: Esto significa que es preferible perder ventas potenciales (cliente A pide todo nuestro stock, Cliente B no es atendido porque le decimos que no nos quedan mercancías, Cliente A se echa atrás y perdemos la venta), a dar la mala imagen de decir a un cliente que tenemos mercancías y luego no tenerlas (Cliente A pide todo nuestro stock, Cliente B pide 2 unidades, Cliente A llega y se lleva todo con el correspondiente albarán, finalmente Cliente B viene a por su pedido y vemos que no podemos atenderle). Al ser AbanQ un ERP, permite personalizar los módulos para dar otras posibilidades.
+Eneboo, al contrario que muchos de los programas de facturación, permite actualizar el stock de los artículos cuando se genera un pedido (uso de la opción [V] Controlar stocks desde pedidos de cliente en el Área de Facturación> Principal – Menú Principal/Empresa – Pestaña Valores por defecto en conjunción con tener desactivada la opción [_] Permitir ventas sin stock en el Área de Facturación> Almacén – Menú Almacén/Artículos – Modificar – Pestaña Stocks). La razón es guiarse por el Principio de Prudencia para evitar cualquier posible Ruptura de Stock: Esto significa que es preferible perder ventas potenciales (cliente A pide todo nuestro stock, Cliente B no es atendido porque le decimos que no nos quedan mercancías, Cliente A se echa atrás y perdemos la venta), a dar la mala imagen de decir a un cliente que tenemos mercancías y luego no tenerlas (Cliente A pide todo nuestro stock, Cliente B pide 2 unidades, Cliente A llega y se lleva todo con el correspondiente albarán, finalmente Cliente B viene a por su pedido y vemos que no podemos atenderle). Al ser Eneboo un ERP, permite personalizar los módulos para dar otras posibilidades.
 
 En el caso de que no haya suficiente stock en almacén para atender el pedido el programa, además de avisarlo, no nos dejará grabarlo hasta que no le indiquemos una cantidad que deje el stock como máximo en 0 unidades. La forma de ver la cantidad de stock que de ese artículo tenemos en almacén es bien fácil, en la misma ventana de añadir un artículo al pedido, pulsando en el botón con la lupa para elegir artículo, lo seleccionamos y pulsamos el botón para modificar registro, y dentro del artículo en cuestión abran la pestaña Stocks. La cantidad que figura en el campo Disponible será el límite que podamos pedir del mismo. Dicha cantidad se obtiene restando a la columna Cantidad el valor que aparece en la columna Reservada
 
@@ -1523,4 +1523,3 @@ Los procesos de compra y venta descritos a lo largo de este manual han considera
 * Dado que la práctica, como se ha indicado, se realiza en el año AA, en esta ventana deberemos incluir una fecha comprendida entre el 01/01/AA y el 31/12/AA para que la aplicación nos permita continuar realizando la práctica sin errores.
 
 * En el caso de que el documento (pedido, albarán o factura de proveedores o a clientes) correspondiese al ejercicio AA+1, tendríamos que seleccionar el ejercicio AA+1 en el Módulo Principal del Área de Facturación, editando la empresa ENVOLTOSA en la ventana de Empresa (menú Principal/Empresa).
-
