@@ -30,6 +30,9 @@ https://github.com/Miguel-J/eneboo/wiki/Area-Financiera-Contabilidad-COMPLETO-UN
 * 3.2.- ÁREA FINANCIERA - CUADRO DE CUENTAS.
 * 3.3.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL
 * 3.4.- INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA.
+* 3.5.- RESUMEN:
+* 3.6.- CONSULTAS Y OTROS PROCESOS:
+
 
 ---
 ###3.1.- ÁREA FINANCIERA - CONFIGURACIÓN.
@@ -645,7 +648,7 @@ A continuación pulsamos el botón Insertar nuevo registro () e introducimos los
 
 ![Insertar acreedor](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-32.PNG)
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-31.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-33.PNG)
 
 
 
@@ -655,7 +658,7 @@ Tras aceptar los datos de alta de  Fundación Sur volvemos a la ventana de asien
 Código: Alqloc
 Descripción: Alquiler del local
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-32.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-35.PNG)
 
 Añadamos la primera partida a la plantilla de asientos, para ello pulsen el botón de insertar registro en el marco Partidas de la plantilla. Y rellenen los diferentes campos con la información aparecida en nuestro boceto de predefinido:
 
@@ -718,6 +721,9 @@ Datos principales
 
 En la siguiente imagen pueden observar cómo quedaría la primera partida:
 
+
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-36.PNG)
+
 Antes de seguir hay que resaltar dos puntos que no han sido comentados, por un lado tenemos un campo llamado Nº de orden, éste guarda el orden de ejecución de las distintas partidas del asiento y por defecto se ordenan de forma consecutiva y creciente. Otro aspecto a resaltar es la asignación de un nombre de variable (Acrdor) a la subcuenta de acreedores utilizada, esto es necesario para poder especificar el sujeto pasivo cuando lleguemos a la partida correspondiente al IVA; aunque en este caso, al ser siempre la misma subcuenta, se podría obviar y escribir de nuevo el código de subcuenta en la contrapartida.
 Para trabajar con la siguiente partida debemos pulsar bien el botón de aceptar y continuar () o la tecla F9 asociada al mismo. Los datos serían:
 Plantilla de asiento
@@ -738,6 +744,10 @@ Datos principales
 	Importe: Tipo Cuadrar
 	Concepto: Tipo Último
 	Documento: Tipo Último
+
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-37.PNG)
+
+
 IVA
 	Base Imponible: Tipo Calcular, Valor 800,00
 Contrapartida
@@ -745,23 +755,40 @@ Contrapartida
 
 La ventana quedaría así:
 
+
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-38.PNG)
+
 No es necesario acordarse del nombre exacto del campo Definir, pulsando el botón de su derecha el programa recuerda los nombres utilizados para este tipo de campo (código de subcuenta) en las partidas anteriores.
+
 Debemos resaltar el uso del mismo importe para Base Imponible que para el importe de la subcuenta de gasto en la partida anterior, este punto lo trataremos de nuevo con el próximo predefinido. Es importante ahora que observen la Contrapartida de la partida de IVA, la legislación vigente obliga a informar en la contrapartida del Sujeto Pasivo (persona física o jurídica prestadora o destinataria de la operación gravada por el impuesto), por ello es necesario introducir de nuevo la subcuenta del acreedor, proveedor o del cliente, según sea la operación contabilizada. En esta caso concreto, al ser una subcuenta fija la del acreedor, podríamos haber elegido directamente el tipo de contrapartida Establecer y escrito como valor 410.5 de nuevo.
+
 Al pulsar el botón aceptar () o la tecla asociada F10, verán de nuevo la ventana del asiento predefinido, pulsar de nuevo aceptar para finalizar el alta del asiento predefinido.
+
+
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-39.PNG)
 
 Una vez terminada el alta es el momento de comprobar si funciona.
 
 **Uso de un asiento predefinido**
 
 La creación de asientos, tanto manualmente como usando predefinidos, se realiza en la ventana abierta con la opción del menú Financiera – Opciones del diario – Asientos o pulsando la combinación de teclas Control y A asociada a dicha opción.
+
 Si en la ventana abierta comprueban la existencia de varios asientos, son asientos generados automáticamente desde otros módulos como el de Facturación. Pero hay numerosos hechos contables que deberán ser recogidos directamente, vamos a contabilizar el pago del alquiler del local para el mes de diciembre con el predefinido creado en el apartado anterior.
 
+
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-40.PNG)
+
 Pulsar el botón de insertar registro y en la ventana de Insertar Asientos verán como se calcula el número de asiento de forma automática, la fecha debemos establecerla en el 28 de diciembre y el asiento predefinido a seleccionar con el botón plantilla será Alqloc:
+
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-41.PNG)
+
 Pulsen el botón de ejecución del asiento predefinido  y vean como el asiento completo es generado de forma automática:
+
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-42.PNG)
 
 Hasta aquí hemos visto la forma más sencilla de generar un predefinido. Veamos otras posibilidades en el siguiente punto.
 
-Predefinido para la compra de suministro de combustible
+**Predefinido para la compra de suministro de combustible**
 
 Igual que antes, debemos crear un boceto del asiento, vamos a pensar en el asiento que representa el hecho contable producido por la compra de combustible:
 Número:
@@ -789,10 +816,14 @@ H.P. IVA SOPORTADO 21%
 
 
 Antes de terminar de crear el boceto de este asiento debemos hacernos siempre estas preguntas:
-Subcuenta: ¿Cada subcuenta utilizada será siempre la misma o puede variar? La subcuenta de Acreedor va a variar cada vez que compremos combustible, ya que normalmente acudiremos a distintas estaciones de servicio, por eso le hemos puesto una X a la subcuenta.
-Importe: ¿Los importes respectivos guardan una relación permanente entre ellos? Sí. ¿Son importes siempre repetidos o en caso de pedir alguno se pueden hallar los demás con una fórmula? Pues sí, sabes que el total de la factura es igual a la suma del gasto más el IVA. Hay que pedir el total de la factura y calcular mediante fórmulas el resto de valores. Para comprobar la fórmula una vez realizada, hemos pensado en unos valores fáciles de calcular (total de 1.210,00 €, gasto de 1.000,00 € e IVA de 210,00 €), pero éstos cambiarían para cada asiento creado.
-Por último el concepto también debe variar en cada uso del asiento para introducir el número de factura de la compra. Es muy común introducir el número de factura como parte del concepto de las partidas.
+
+* Subcuenta: ¿Cada subcuenta utilizada será siempre la misma o puede variar? La subcuenta de Acreedor va a variar cada vez que compremos combustible, ya que normalmente acudiremos a distintas estaciones de servicio, por eso le hemos puesto una X a la subcuenta.
+
+* Importe: ¿Los importes respectivos guardan una relación permanente entre ellos? Sí. ¿Son importes siempre repetidos o en caso de pedir alguno se pueden hallar los demás con una fórmula? Pues sí, sabes que el total de la factura es igual a la suma del gasto más el IVA. Hay que pedir el total de la factura y calcular mediante fórmulas el resto de valores. Para comprobar la fórmula una vez realizada, hemos pensado en unos valores fáciles de calcular (total de 1.210,00 €, gasto de 1.000,00 € e IVA de 210,00 €), pero éstos cambiarían para cada asiento creado.
+
+* Por último el concepto también debe variar en cada uso del asiento para introducir el número de factura de la compra. Es muy común introducir el número de factura como parte del concepto de las partidas.
 Con todo ello el boceto del asiento predefinido quedaría así:
+
 Tipo:
 Establecer
 Pedir
@@ -854,6 +885,8 @@ Código: Sumcom
 Descripción: Compra de suministro combustible
 
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-43.PNG)
+
 Y los datos de la primera partida serán:
 Plantilla de asiento
 	Nº de Orden: 1
@@ -865,6 +898,7 @@ Datos principales
 	Documento: Tipo Establecer, Origen Recibo
 
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-44.PNG)
 
 La segunda partida contendrá la siguiente información:
 Plantilla de asiento
@@ -876,8 +910,10 @@ Datos principales
 	Concepto: Tipo Último
 	Documento: Tipo Último
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-45.PNG)
 
 Recuerden que, en el campo Valor del Importe, podemos pulsar el botón a la derecha de Definir para que el programa recuerde el nombre de variable dada en el formulario de la partida anterior: Total, y luego completar escribiendo /1.21 para calcular el importe neto sin IVA.
+
 La tercera partida es la correspondiente al IVA soportado y en ella se debe prestar atención a la Base Imponible y a la contrapartida, ambos datos son automatizados gracias al uso de variables, hagan pruebas con ellas para comprender mejor sus posibilidades. La información será la siguiente:
 Plantilla de asiento
 	Nº de Orden: 3
@@ -894,8 +930,12 @@ Contrapartida
 
 Respecto a la fórmula utilizada para la Base Imponible volvemos a resaltar que siempre que una cantidad pueda ser calculada a partir de las demás, se utilizará la fórmula que consiga el resultado correcto (con la excepción del uso de Cuadrar la partida). En este caso se trata de repetir la fórmula para hallar el importe neto del gasto en combustible, ya calculado en la partida anterior.
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-46.PNG)
+
 Tanto en el campo Base Imponible, como en la Contrapartida, podemos usar el botón a la derecha de Definir para que el programa recuerde el nombre de las variables utilizadas: Total y Acrdor.
 Finalmente, la plantilla del asiento quedaría así:
+
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-47.PNG)
 
 Probad el asiento con la compra el 29 de diciembre de carburante a Repsol YPF (subcuenta 410.6 que habrá que crear, directamente o mediante alta de ficha proveedores en la facturación) por un importe total de 2.420,00 €.
 
@@ -903,7 +943,9 @@ Probad el asiento con la compra el 29 de diciembre de carburante a Repsol YPF (s
 **Predefinido para contabilizar las nóminas**
 
 Vamos a crear un predefinido para la contabilización del pago de las nóminas de los trabajadores, este tipo de asiento es algo más complicado, y podría hacerse automáticamente si se dispusiera de un módulo de Recursos Humanos; la dificultad de estos asientos se debe a las continuas variaciones que las nóminas de los trabajadores sufren durante el ejercicio, donde las desgravaciones aplicables dependen también de situaciones personales variables como tener un hijo, subir de categoría, etc.
+
 El asiento por la entrega de las nóminas podría ser realizado una vez por cada empleado o bien se podrían recoger todos los pagos en un único asiento con las cantidades conjuntas, vamos a hacerlo de forma agrupada:
+
 Número:
 Fecha 
 ID Concepto: 02
@@ -933,10 +975,10 @@ REMUNERACIONES PTES. PAGO
 Líquido
 
 Volvemos a hacernos las preguntas de rigor:
-Subcuenta: ¿Cada subcuenta utilizada será siempre la misma o puede variar? En este caso, al contabilizar de forma agrupada todas las nóminas, los códigos de subcuenta utilizados son siempre los mismos.
-Importe: ¿Los importes respectivos guardan una relación permanente entre ellos? Aunque guardan una relación, no es permanente. La Seguridad Social (SS) y la retención por el impuesto de la renta (IRPF) son porcentajes del importe bruto de la nómina, pero esos porcentajes cambian entre los trabajadores según el sueldo o el contrato (progresividad del impuesto) e incluso en el mismo ejercicio para un trabajador concreto, por razones familiares (nacimiento de hijos) o por contractuales (renovación de contrato), entre otras.
-Más de importes: ¿Son importes siempre repetidos o en caso de pedir alguno se pueden hallar los demás con una fórmula? No, ni son siempre los mismos importes, ni pueden hallarse directamente con una simple fórmula ya que cada nómina es calculada aplicando porcentajes diferentes.
-Concepto: ¿Cual va a ser el concepto de las partidas? El concepto servirá para introducir el mes de pago de las nóminas, podría introducirse el código del documento de nómina o de seguridad social de cada trabajador si se contabilizaran las nóminas individualmente.
+* Subcuenta: ¿Cada subcuenta utilizada será siempre la misma o puede variar? En este caso, al contabilizar de forma agrupada todas las nóminas, los códigos de subcuenta utilizados son siempre los mismos.
+* Importe: ¿Los importes respectivos guardan una relación permanente entre ellos? Aunque guardan una relación, no es permanente. La Seguridad Social (SS) y la retención por el impuesto de la renta (IRPF) son porcentajes del importe bruto de la nómina, pero esos porcentajes cambian entre los trabajadores según el sueldo o el contrato (progresividad del impuesto) e incluso en el mismo ejercicio para un trabajador concreto, por razones familiares (nacimiento de hijos) o por contractuales (renovación de contrato), entre otras.
+* Más de importes: ¿Son importes siempre repetidos o en caso de pedir alguno se pueden hallar los demás con una fórmula? No, ni son siempre los mismos importes, ni pueden hallarse directamente con una simple fórmula ya que cada nómina es calculada aplicando porcentajes diferentes.
+* Concepto: ¿Cual va a ser el concepto de las partidas? El concepto servirá para introducir el mes de pago de las nóminas, podría introducirse el código del documento de nómina o de seguridad social de cada trabajador si se contabilizaran las nóminas individualmente.
 
 Y el boceto de asiento predefinido quedaría así:
 
@@ -996,6 +1038,7 @@ Con la información suministrada vamos a crear el nuevo asiento predefinido, es 
 Código: nomina
 Descripción: Pago de nóminas del mes
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-48.PNG)
 
 Los datos de la primera partida serán los correspondientes a Sueldos y Salarios:
 Plantilla de asiento
@@ -1005,6 +1048,8 @@ Datos principales
 	Subcuenta: Tipo Establecer, Valor 640.0
 	Importe: Tipo Pedir
 	Concepto: Tipo Pedir, Valor Nóminas mes:
+
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-49.PNG)
 
 La segunda partida contendrá la información sobre la cuota de los trabajadores a la Seguridad Social:
 Plantilla de asiento
@@ -1028,6 +1073,7 @@ Datos principales
 	Concepto: Tipo Último
 	Documento: Tipo Último
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-50.PNG)
 
 La última partida representa el sueldo neto de los trabajadores, que se obtiene por diferencia del resto de partidas y será contabilizado en la subcuenta 465.0 Remuneraciones pendientes de pago a la espera de que los trabajadores pasen por caja a retirar su dinero:
 Plantilla de asiento
@@ -1039,10 +1085,14 @@ Datos principales
 	Concepto: Tipo Último
 	Documento: Tipo Último
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-51.PNG)
 
 La plantilla quedaría como se muestra en la imagen:
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-52.PNG)
+
 Comprobar el resultado con las nóminas del mes de diciembre, la fecha del asiento será el 30 de diciembre y el importe total de las nóminas serán 21.568,78 €, las cuotas de la Seguridad Social a cargo de los trabajadores sumarían 6.958,24 € en total y las retenciones por IRPF serían 1.590,85€. El asiento debería quedar así:
+
 Número:
 Fecha 
 ID Concepto: 02
@@ -1070,7 +1120,10 @@ H.P. ACREED. RETENC. PRACTIC.
 REMUNERACIONES PTES. PAGO
 
 13.019,69
-Resumen
+
+---
+### 3.5.- RESUMEN:
+
 Pasos a seguir para crear un asiento predefinido o una plantilla de asiento:
 1.- Leer el enunciado y escribir en un papel el asiento contable con los datos disponibles:
 Apuntar para cada partida: 
@@ -1125,22 +1178,28 @@ Si la subcuenta de esta partida era de IVA (472.X o 477.X), la contrapartida deb
 Ruta 3.F.No: ¿Tiene todos los dígitos de la subcuenta? (si tiene el código de subcuenta facilitado un punto o bien tiene más de 4 dígitos y coincide su número con los dígitos usados por la contabilidad. Si no saben cuántos dígitos se usan estime que serán de 7 a 12 normalmente.)
 	Ruta 3.F.No.Sí: Tipo Establecer, Valor el código de subcuenta facilitado, Definir: Escriba una palabra que describa a la subcuenta (de 6 caracteres como máximo y sin Espacios, ni eñes, ni acentos). Fin.
 	Ruta 3.F.No.No: Tipo Pedir, Valor con los dígitos de la subcuenta que se hayan facilitado, Definir: Exactamente como se explica en la respuesta anterior (ruta 3.F.No.Sí). Fin.
-Consultas y otros procesos
+
+---
+### 3.6.- CONSULTAS Y OTROS PROCESOS:
+
 Ejercicios a realizar:
 1.- Se desean localizar los apuntes contables existentes cuyo importe sea de 900,00 €. 
 Para ello, basta con seleccionar Importe en el campo Buscar e introducir el importe deseado:
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-54.PNG)
 
 2.- Se desea visualizar el mayor del cliente REGALO, SL.
 Para ello es necesario acudir al Menú Cuadro de Cuentas y entrar en la opción subcuentas. Una vez allí se busca la cuenta deseada y se selecciona Libro Mayor. AbanQ mostrará en una ventana independiente el mayor de la subcuenta seleccionada.
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-55.PNG)
 
 Los listados de Mayor también se pueden obtener de la opción Libro Mayor del menú Listados del Módulo Principal del área Financiera creando un listado en la misma.
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-56.PNG)
 
 En el ejemplo, hemos creado un listado de mayor de todas las cuentas para el ejercicio 2012. Cada vez que se ejecute, listará todas las cuentas de mayor con los movimientos regitrados en la contabilidad del 2012.
 
-
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-51.PNG)
 
 3.- Además se quiere modificar el asiento de las nóminas, ya que se contabilizaron erróneamente. El asiento correcto es el que mostramos a continuación:
 Número:
@@ -1176,73 +1235,79 @@ REMUNERACIONES PTES. PAGO
 5.- Listar por pantalla los asientos correspondientes al mes de febrero. En este caso, vamos a crear un listado específico para este informe. Para ello, nos situamos en el Módulo Informes del Área Financiera y allí seleccionamos Listados -- Libro Diario. 
 Una vez allí, añadimos un tipo de listado y rellenamos los datos que deseamos que aparezcan en el listado. En nuestro caso, le denominaremos Listado octubre, incluiremos los datos del IVA en el mismo y  no lo deseamos agrupado por meses. Seleccionamos el ejercicio del que queremos extraer los datos y el rango de fechas que nos interesan: del 1 al 31de octubre y activamos los campos oportunos
 
-
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-52.PNG)
 
 
 Con ello, obtenemos el siguiente listado:
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-53.PNG)
 
 ##PROCESO DE CIERRE TRIMESTRAL DEL IVA.
 
 Para comenzar el cierre trimestral del IVA, se deben obtener en primer lugar los libros registros de facturas emitidas y de facturas recibidas provisionales del trimestre. Para ello, acudimos al Módulo Informes del Área Financiera y accedemos a la opción Facturas Recibidas del Menú IVA y creamos un listado del libro:
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-54.PNG)
 
 Quedando de la siguiente manera:
 
-
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-55.PNG)
 
 Para obtener el listado no hay más que hacer clic en el botón Listar Tabla y se obtiene la siguiente imagen.
 
-
-
-
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-56.PNG)
 
 Se repite a continuación la operación para las facturas emitidas, obteniendo otro listado similar.
 
-
-
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-57.PNG)
 
 A continuación es necesario obtener el modelo 303 de declaración trimestral del IVA. Para ello, acudimos al Módulo Modelos del Área Financiera y desde allí en el menú Modelos seleccionamos el 303 y creamos un nuevo modelo. 
 
-
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-58.PNG)
 
 Una vez seleccionado el trimestre correspondiente y comprobadas las fechas a tener en cuenta para calcular la declaración es necesario hacer clic en el botón “Calcular datos” situado en la esquina superior derecha de la pantalla. Tras ello, AbanQ calcula automáticamente los datos de la declaración los cuales deben cuadrar con los listados de facturas anteriormente obtenidos. En caso de descuadre habrá que parar el proceso de cierre trimestral y buscar el error. Para esta tarea es especialmente útil el desglose de las subcuentas de IVA por tipos impositivos y naturalezas.
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-59.PNG)
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-60.PNG)
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-61.PNG)
 
-
-
-
-
-
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-62.PNG)
 
 Nótese que hay campos en los que el usuario tiene que introducir datos, como por ejemplo el importe a compensar de trimestres anteriores, el campo sin actividad, la fecha de obtención de la declaración o el lugar de firma.
+
 Una vez obtenida, se puede generar un fichero para su presentación telemática.
+
 A continuación es necesario contabilizar la liquidación del IVA obtenida, para ello, desde el Módulo Principal del Área Financiera, entramos en el menú Financiera Opciones del IVA, regularización del IVA.
+
 Una vez allí, creamos la regularización del cuarto trimestre. Para ello basta con introducir los datos oportunos y hacer clic en el candado. De esta forma, se generará el asiento correspondiente en la contabilidad.
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-63.PNG)
  
 ##PROCESOS AL FINAL DEL EJERCICIO.
 
 El proceso del cierre de la contabilidad al final del ejercicio comienza por cerrar previamente la declaración trimestral del IVA siguiendo el proceso que hemos explicado en el apartado anterior. Es importante comprobar que las facturas recibidas y emitidas que tenemos archivadas por fecha, coincidan con el número de orden que le corresponda según el Libro Registro.
 Junto con la declaración del último trimestre hay que presentar la Declaración Resumen-Anual del IVA, modelo 390. Para ello basta con acudir a la opción Modelos, Modelo 390 del Módulo Modelos del área Financiera y crear una nueva declaración. 
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-64.PNG)
 
 Para obtener la declaración es suficiente con pulsar el botón Calcular datos al igual que en las declaraciones anteriores y AbanQ calculará los datos correspondientes a la declaración. Previamente, se deberán rellenar los datos de las diversas ventanas para que se obtenga la declaración completa.
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-65.PNG)
 
 Posteriormente debe obtenerse la declaración de operaciones con terceros superiores a 3.005,06 €. Es necesario tener en cuenta que en este Modelo no deben incluirse aquellos sujetos que hayan figurado en el Modelo 190. Además, deberá comprobarse los volúmenes de operaciones con los mayores de proveedores y clientes o similares, por si existen errores en los apuntes de IVA. La fecha tope para la entrega de este Modelo es el 31 de marzo de cada año. Esta declaración la facilita AbanQ en el Módulo Modelos, menú Modelos, opción Modelo 347.
+
 Al entrar en esta opción, nos aparece parcialmente rellena. Lo único que debemos hacer es comprobar la veracidad de los datos y corregir aquellos que puedan ser erróneos. En nuestro caso, hemos modificado el importe mínimo especificando 3.005,06 y el número de justificante. 
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-66.PNG)
 
 Antes de calcular el modelo, es conveniente leer las instrucciones que aparecen en la ventana Condiciones, ya que son un recordatorio importante que pretende evitar la obtención de datos erróneos al calcular esta declaración.
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-67.PNG)
 
 Una vez comprobado que todo está correcto, procedemos a calcular la declaración, haciendo clic en el botón Calcular datos se calcula el contenido de la declaración.
 
-
-
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-68.PNG)
 
 A continuación se deben contabilizar los ajustes previos al cierre que procedan:
 
@@ -1256,36 +1321,48 @@ A continuación se deben contabilizar los ajustes previos al cierre que procedan
 8. Impuesto de Sociedades
 
 Sólo falta obtener la documentación mercantil relacionada con la contabilidad: los Balances de Comprobación o de Sumas y Saldos trimestrales para incluirlos en el Libro de Inventarios y Cuentas Anuales, así como las cuentas anuales en formato abreviado. También será necesario confeccionar la memoria de Envoltosa y el ejemplar de las cuentas anuales que se debe depositar en el Registro Mercantil. 
+
 Todos estos listados se encuentran en el menú Balances del Módulo Informes del Área Financiera. Dejamos como tarea a los alumnos que los obtengan ellos.
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-69.PNG)
 
-
-
-
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-70.PNG)
 
 Por último, es necesario cerrar el ejercicio. Esta operación y la apertura del siguiente se realizan de forma simultánea. Para ello acudimos a la opción Apertura y Cierre del Menú Ejercicio del Módulo Principal del Área Financiera.
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-71.PNG)
+
 Haciendo clic en Cerrar se accede a la siguiente ventana:
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-72.PNG)
+
 En ella ya aparecen introducidos por defecto los datos necesarios, sólo falta especificar a qué ejercicio se va a trasladar el asiento de apertura. 
+
 Para ello, hacemos clic en el botón , apareciéndonos en pantalla la ventana de creación de ejercicios. 
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-73.PNG)
 
 
 Pulsando en secuencias por serie añadiremos las series A y AG del ejercicio actual:
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-74.PNG)
 
 Al aceptar la ventana, el programa avisará de:
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-75.PNG)
 
 Pulsando dicho botón, es importante que seleccionemos un ejercicio anterior pues no podemos olvidar que lo que tratamos de hacer es enlazar dos ejercicios. Seleccionamos el ejercicio anterior para que el programa realice el enlace y de esta forma daremos por finalizado el proceso:
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-76.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-77.PNG)
 
-
-
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-78.PNG)
 
 Una vez creado el ejercicio, volvemos a la ventana anterior donde hacemos clic en Cerrar ejercicio.
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-79.PNG)
+
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-80.PNG)
 
 --
 ###Cambio de ejercicio.
@@ -1302,5 +1379,6 @@ El menú Ejercicio contiene las opciones relacionadas con la gestión de los eje
 ####Cambiar actual.
 Esta opción sirve para cambiar de ejercicio. Al hacer clic en ella se nos abre la ventana que mostramos a continuación y que permite
 
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-81.PNG)
 
 Esta opción es especialmente útil cuando se está trabajando a caballo entre dos ejercicios, ya que AbanQ no permite introducir los datos de un ejercicio en otro diferente. Para poder hacerlo, previamente es necesario cambiar de ejercicio.
