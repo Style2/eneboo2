@@ -241,4 +241,6 @@ Una vez abierta la aplicación, vamos a abrir las paletas de herramientas (menú
 1. De los campos anteriores, utilizamos uno que no está en la tabla de países. Es el que muestra la descripción de la divisa. Eneboo permite mostrar este valor que se encuentra en otra tabla -la tabla divisas- siempre que exista una relación entre ambas tablas. Para este campo las propiedades son fieldName con valor descripcion, tableName con valor divisas, foreignField con valor coddivisa y fielRelation con valor coddivisa.
 1. Damos formato al formulario mediante controles spacer y layouts, y modificando las propiedades de tamaño de los campos: 
 
+![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-8.PNG)
+
 Modificando el formulario de países en QT Designer
