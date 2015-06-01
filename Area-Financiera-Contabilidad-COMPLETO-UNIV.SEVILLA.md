@@ -52,7 +52,7 @@ La configuración del Área Financiera se realiza en el Módulo Principal, Finan
 ####3.1.1.- Cuentas especiales.
 Área Financiera> Configuración/Cuentas especiales
 
-La opción Cuentas Especiales permite asignar una subcuenta determinada a un proceso automático del programa. Así, por ejemplo, al crear una subcuenta de IVA Soportado, es necesario que AbanQ sepa que el saldo de esta subcuenta recoge las cuotas soportadas por este impuesto y cuando se realice una anotación en el diario utilizando dicha cuenta, ese importe se anote también en la gestión fiscal del programa. De esta manera, podrá calcular correctamente la declaración de IVA, el modelo 347 y listar el libro registro de facturas recibidas. Lo mismo ocurre con el resto de tipos de subcuentas que aparece en el listado.
+La opción Cuentas Especiales permite asignar una subcuenta determinada a un proceso automático del programa. Así, por ejemplo, al crear una subcuenta de IVA Soportado, es necesario que Eneboo sepa que el saldo de esta subcuenta recoge las cuotas soportadas por este impuesto y cuando se realice una anotación en el diario utilizando dicha cuenta, ese importe se anote también en la gestión fiscal del programa. De esta manera, podrá calcular correctamente la declaración de IVA, el modelo 347 y listar el libro registro de facturas recibidas. Lo mismo ocurre con el resto de tipos de subcuentas que aparece en el listado.
 
 ![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-1.PNG)
 
@@ -77,19 +77,19 @@ Descripción: COBRO POR CAJA
 ####3.1.3.- Códigos de Balance.
 Área Financiera>Configuración/Códigos de Balance
 
-Sirve para especificar a AbanQ la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias según el PGC anterior al del 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de AbanQ y de contabilidad.
+Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias según el PGC anterior al del 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de Eneboo y de contabilidad.
 
 --
 ####3.1.4.- Códigos de Balance 08.
 Área Financiera>Configuración/Códigos de Balance 08
 
-Sirve para especificar a AbanQ la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias con el plan contable de 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de AbanQ y de contabilidad.
+Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias con el plan contable de 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de Eneboo y de contabilidad.
 
 --
 ####3.1.4.b- Correspondencias 90-08.
 Área Financiera>Configuración/Correspondencias 90-08
 
-Sirve para especificar a AbanQ la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias para adaptar una contabilidad llevada según el PGC de 1990 al del 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de AbanQ y de contabilidad.
+Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias para adaptar una contabilidad llevada según el PGC de 1990 al del 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de Eneboo y de contabilidad.
 
 ---
 ###3.2.- ÁREA FINANCIERA - CUADRO DE CUENTAS.
@@ -106,7 +106,7 @@ Al crear el Plan contable de la empresa tras la creación del ejercicio, se dan 
 
 ![Desglose plan contable](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-3.PNG)
 
-Nótese que cada uno de los desgloses del plan contable se asigna a un determinado ejercicio. Esto quiere decir que tras la creación del ejercicio, siempre será necesario crear el plan contable de la empresa y que los saldos y movimientos registrados en cada subcuenta, se van a mantener independientes del resto de los ejercicios. Por esta razón, cuando se vaya a contabilizar una factura, ya sea de compra o venta, AbanQ comprobará que se contabiliza en el mismo ejercicio en el que se emite, de manera que no haya descuadres posteriores entre la facturación y la contabilidad.
+Nótese que cada uno de los desgloses del plan contable se asigna a un determinado ejercicio. Esto quiere decir que tras la creación del ejercicio, siempre será necesario crear el plan contable de la empresa y que los saldos y movimientos registrados en cada subcuenta, se van a mantener independientes del resto de los ejercicios. Por esta razón, cuando se vaya a contabilizar una factura, ya sea de compra o venta, Eneboo comprobará que se contabiliza en el mismo ejercicio en el que se emite, de manera que no haya descuadres posteriores entre la facturación y la contabilidad.
 
 ![Aviso fecha asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-4.PNG)
 
@@ -114,7 +114,7 @@ En el apartado Grupos, subgrupos y cuentas no es normal que se tengan que añadi
 
 * La creación de una subcuenta se puede realizar de varias formas:
 
-1. Creación automática. Cuando se crea una ficha de un proveedor o un cliente, AbanQ da de alta automáticamente la subcuenta asociada a la misma.
+1. Creación automática. Cuando se crea una ficha de un proveedor o un cliente, Eneboo da de alta automáticamente la subcuenta asociada a la misma.
 1. Desde la opción Área Financiera>Principal/Cuadro de cuentas/Subcuentas, opción que veremos a continuación.
 1. Desde la gestión de asientos, de forma que el usuario pueda dar de alta la subcuenta que le interesa a la vez que registra el movimiento en ella.
 
@@ -151,7 +151,7 @@ Crear las siguientes subcuentas:
 ### 3.2.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL
 Área Financiera>Principal/Financiera
 
-Al igual que en la mayoría de los programas de contabilidad y ERP’s, la introducción de asientos en AbanQ se puede realizar de dos formas distintas: manual o automáticamente. 
+Al igual que en la mayoría de los programas de contabilidad y ERP’s, la introducción de asientos en Eneboo se puede realizar de dos formas distintas: manual o automáticamente. 
 
 La introducción de asientos por el primer método obliga al usuario a especificar todos los datos necesarios para dar de alta el asiento: subcuenta, importe, concepto, etc. Por el contrario, la introducción automática de asientos es una herramienta que permite contabilizar de forma los hechos contables que se definan sin intervención del usuario, variando el grado de automatización en función del tipo de asiento en cuestión.
 Vamos a comenzar dando de alta asientos en el diario de forma manual. Para ello, es necesario que tengamos presentes los siguientes aspectos:
@@ -168,7 +168,7 @@ Este programa admite tanto importes negativos como nulos.
 
 Se pueden realizar correcciones (añadir, borrar o modificar) en los apuntes ya introducidos. Para ello, se tecleará el número del asiento y se seleccionará el apunte en cuestión. Para dar de baja un apunte basta con pinchar el icono adecuado. Para dar de baja un asiento completo deberá ejecutar la opción destinada a tal efecto.
 
-Cada vez que se introducen apuntes en las cuentas de IVA es necesario introducir la información fiscal necesaria para que AbanQ pueda facilitar los modelos tributarios correspondientes.
+Cada vez que se introducen apuntes en las cuentas de IVA es necesario introducir la información fiscal necesaria para que Eneboo pueda facilitar los modelos tributarios correspondientes.
 
 Para introducir los asientos de forma manual es necesario acudir a la opción Área Financiera>Principal/Financiera/Opciones del diario/Asientos. Al entrar en esta opción se nos muestra el diario de la contabilidad, tal y como aparece en la siguiente imagen.
 
@@ -178,7 +178,7 @@ Los asientos aparecen con la numeración correspondiente y se muestran algunos d
 
 ![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-9.PNG)
 
-El primer dato a introducir es el número de asiento, el cual viene ya propuesto por AbanQ. A continuación habrá que indicar la fecha en la que se va a contabilizar la operación correspondiente. Dicha fecha tiene que pertenecer necesariamente al período que esté activo en la empresa; en caso contrario, AbanQ no permitirá continuar.
+El primer dato a introducir es el número de asiento, el cual viene ya propuesto por Eneboo. A continuación habrá que indicar la fecha en la que se va a contabilizar la operación correspondiente. Dicha fecha tiene que pertenecer necesariamente al período que esté activo en la empresa; en caso contrario, Eneboo no permitirá continuar.
 
 El siguiente dato a introducir es el concepto contable que se va a utilizar en el asiento. Como hemos comentado con anterioridad, los conceptos contables son pequeñas leyendas que se incorporan a los apuntes contables y que aportan información sobre el mismo o explican si es necesario lo que se está contabilizando. Suelen constar de una parte fija y otra variable. Desde esta opción podemos realizar el alta, baja y modificaciones de los conceptos contables. Ya tenemos algunos dados de alta, por lo que seguimos con el desarrollo del caso. El concepto que se introduce en esta primera pantalla sirve para que aparezca en el listado de diarios de la ventana de Asientos, pero no aparecerán en los listados de mayor. Por eso, en caso de que se desee que aparezcan allí, deberán introducirse en cada uno de los apuntes que componen el asiento. No es necesario introducirlos todos, sino que basta con hacerlo en el primer apunte, para que luego éste se proponga automáticamente en el resto.
 
@@ -338,7 +338,7 @@ Comenzaremos contabilizando el alta del ordenador en el inmovilizado de la empre
 
 ![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-11.PNG)
 
-A continuación, introducimos la partida IVA. Nótese que al introducir el código de cualquier subcuenta de IVA, se abren los campos correspondientes al cuadro de IVA. Esto sirve para que se introduzcan aquellos datos que son necesarios para la gestión fiscal. Con ellos, AbanQ será capaz de:
+A continuación, introducimos la partida IVA. Nótese que al introducir el código de cualquier subcuenta de IVA, se abren los campos correspondientes al cuadro de IVA. Esto sirve para que se introduzcan aquellos datos que son necesarios para la gestión fiscal. Con ellos, Eneboo será capaz de:
 1. Calcular el modelo de declaración trimestral de IVA 303.
 2. Confeccionar el modelo de declaración de operaciones con terceros superior a 3.005,06€.
 3. Confeccionar los libros registros de facturas emitidas y recibidas.
@@ -348,7 +348,7 @@ Por esta razón, es muy importante tener especial cuidado a la hora de introduci
 ![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-12.PNG)
 
 En la ventana Modelo 303, se debe seleccionar [24-25] IVA Deducible por cuotas soportadas en operaciones interiores con bienes de inversión.
-Como hemos utilizado la subcuenta del proveedor de inmovilizado en la contrapartida, AbanQ nos ofrece en la siguiente partida dicha subcuenta por defecto, de manera que aprovechamos para completar la partida de dicho apunte. En este caso no hemos especificado contrapartida alguna.
+Como hemos utilizado la subcuenta del proveedor de inmovilizado en la contrapartida, Eneboo nos ofrece en la siguiente partida dicha subcuenta por defecto, de manera que aprovechamos para completar la partida de dicho apunte. En este caso no hemos especificado contrapartida alguna.
 
 ![Insertar asiento](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-13.PNG)
 El asiento completo queda de la siguiente manera:
@@ -434,7 +434,7 @@ ACREEDORES EUROS
 
 3.300,00
 
-Cuando se debe registrar un asiento con una operación exenta de IVA o con IVA no deducible, desde un punto de vista contable no es necesario realizar apunte alguno en la cuenta de IVA, ya que éste no se devenga. Ahora bien, si pretendemos que AbanQ nos facilite de forma correcta las declaraciones fiscales correspondientes, esto no se realizase así, ya que al no utiliza cuanta de IVA no se recoge la información necesaria para confeccionar el Modelo 347 ni los libros registro de IVA. Por esta razón, hay que anotar un movimiento con IVA 0€ en una cuenta de IVA Soportado expresamente creada para ello.
+Cuando se debe registrar un asiento con una operación exenta de IVA o con IVA no deducible, desde un punto de vista contable no es necesario realizar apunte alguno en la cuenta de IVA, ya que éste no se devenga. Ahora bien, si pretendemos que Eneboo nos facilite de forma correcta las declaraciones fiscales correspondientes, esto no se realizase así, ya que al no utiliza cuanta de IVA no se recoge la información necesaria para confeccionar el Modelo 347 ni los libros registro de IVA. Por esta razón, hay que anotar un movimiento con IVA 0€ en una cuenta de IVA Soportado expresamente creada para ello.
 
 Para ello, lo primero que es necesario, es crear un tipo de IVA Exento, de forma similar a como lo hicimos con el tipo 21% anteriormente.
 
@@ -484,7 +484,7 @@ El mismo tratamiento debe recibir el IVA no deducible.
 
 Como hemos comentado con anterioridad, es posible introducir asientos en el diario de forma automática. La introducción de asientos en el diario de la contabilidad podía suponer el 80% del tiempo dedicado al proceso contable en una empresa. Aunque este tiempo haya disminuido, en gran parte, gracias a la integración entre distintas áreas de la empresa mediante el uso de un ERP y la generación automática de asientos desde sus distintos módulos; sigue existiendo la necesidad de introducir manualmente asientos en la contabilidad. Es necesario hacer más ágil, fiable y segura la creación de asientos en la contabilidad y por ello se han creado las plantillas de asientos.
 
-Las plantillas de asientos son asistentes que sirven para dar de alta apuntes contables de forma automatizada en la contabilidad de la empresa. Estos asientos ya predeterminados se conocen por diversos nombres como asientos tipo, predefinidos, automáticos, modelos, máscaras, patrones o plantillas de asientos, en función del programa que se esté utilizando. En AbanQ se denominan “Asientos predefinidos”.
+Las plantillas de asientos son asistentes que sirven para dar de alta apuntes contables de forma automatizada en la contabilidad de la empresa. Estos asientos ya predeterminados se conocen por diversos nombres como asientos tipo, predefinidos, automáticos, modelos, máscaras, patrones o plantillas de asientos, en función del programa que se esté utilizando. En Eneboo se denominan “Asientos predefinidos”.
 
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-31.PNG)
 
@@ -500,7 +500,7 @@ Incrementa la productividad del Sistema de Información Contable. Las tres venta
 
 La predefinición de asientos es una prestación ya incorporada a la mayoría de los programas de gestión contable. Estos asientos programados por el usuario para su utilización durante la introducción de apuntes permite que el operador seleccione el asistente que responda al hecho contable que va a reflejar y luego sólo ha de completar algunos datos, si fuera necesario.
 
-La incorporación de estos asistentes de asientos en AbanQ se hizo en la versión 2.1 del módulo de contabilidad. No viene creado al instalar el software ninguna plantilla de asiento, en este apartado vamos a aprender a dar de alta este tipo de asientos para su posterior uso en la contabilidad de la empresa.
+La incorporación de estos asistentes de asientos en Eneboo se hizo en la versión 2.1 del módulo de contabilidad. No viene creado al instalar el software ninguna plantilla de asiento, en este apartado vamos a aprender a dar de alta este tipo de asientos para su posterior uso en la contabilidad de la empresa.
 Comencemos dirigiéndonos al módulo Financiera – Principal del programa. En la ventana del módulo debemos pulsar la opción del menú Financiera – Opciones de diario – Asientos predefinidos:
 
 En la nueva ventana abierta, se puede observar una tabla con tres campos: Código asignado al asiento tipo, Descripción del mismo y un tercer campo llamado Concatenar con que si contiene el código de otra plantilla de asiento, servirá para comenzar ese nuevo predefinido al terminar de dar de alta el asiento en curso.
@@ -1189,7 +1189,7 @@ Para ello, basta con seleccionar Importe en el campo Buscar e introducir el impo
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-54.PNG)
 
 2.- Se desea visualizar el mayor del cliente REGALO, SL.
-Para ello es necesario acudir al Menú Cuadro de Cuentas y entrar en la opción subcuentas. Una vez allí se busca la cuenta deseada y se selecciona Libro Mayor. AbanQ mostrará en una ventana independiente el mayor de la subcuenta seleccionada.
+Para ello es necesario acudir al Menú Cuadro de Cuentas y entrar en la opción subcuentas. Una vez allí se busca la cuenta deseada y se selecciona Libro Mayor. Eneboo mostrará en una ventana independiente el mayor de la subcuenta seleccionada.
 
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-55.PNG)
 
@@ -1264,7 +1264,7 @@ A continuación es necesario obtener el modelo 303 de declaración trimestral de
 
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-58.PNG)
 
-Una vez seleccionado el trimestre correspondiente y comprobadas las fechas a tener en cuenta para calcular la declaración es necesario hacer clic en el botón “Calcular datos” situado en la esquina superior derecha de la pantalla. Tras ello, AbanQ calcula automáticamente los datos de la declaración los cuales deben cuadrar con los listados de facturas anteriormente obtenidos. En caso de descuadre habrá que parar el proceso de cierre trimestral y buscar el error. Para esta tarea es especialmente útil el desglose de las subcuentas de IVA por tipos impositivos y naturalezas.
+Una vez seleccionado el trimestre correspondiente y comprobadas las fechas a tener en cuenta para calcular la declaración es necesario hacer clic en el botón “Calcular datos” situado en la esquina superior derecha de la pantalla. Tras ello, Eneboo calcula automáticamente los datos de la declaración los cuales deben cuadrar con los listados de facturas anteriormente obtenidos. En caso de descuadre habrá que parar el proceso de cierre trimestral y buscar el error. Para esta tarea es especialmente útil el desglose de las subcuentas de IVA por tipos impositivos y naturalezas.
 
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-59.PNG)
 
@@ -1291,11 +1291,11 @@ Junto con la declaración del último trimestre hay que presentar la Declaració
 
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-64.PNG)
 
-Para obtener la declaración es suficiente con pulsar el botón Calcular datos al igual que en las declaraciones anteriores y AbanQ calculará los datos correspondientes a la declaración. Previamente, se deberán rellenar los datos de las diversas ventanas para que se obtenga la declaración completa.
+Para obtener la declaración es suficiente con pulsar el botón Calcular datos al igual que en las declaraciones anteriores y Eneboo calculará los datos correspondientes a la declaración. Previamente, se deberán rellenar los datos de las diversas ventanas para que se obtenga la declaración completa.
 
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-65.PNG)
 
-Posteriormente debe obtenerse la declaración de operaciones con terceros superiores a 3.005,06 €. Es necesario tener en cuenta que en este Modelo no deben incluirse aquellos sujetos que hayan figurado en el Modelo 190. Además, deberá comprobarse los volúmenes de operaciones con los mayores de proveedores y clientes o similares, por si existen errores en los apuntes de IVA. La fecha tope para la entrega de este Modelo es el 31 de marzo de cada año. Esta declaración la facilita AbanQ en el Módulo Modelos, menú Modelos, opción Modelo 347.
+Posteriormente debe obtenerse la declaración de operaciones con terceros superiores a 3.005,06 €. Es necesario tener en cuenta que en este Modelo no deben incluirse aquellos sujetos que hayan figurado en el Modelo 190. Además, deberá comprobarse los volúmenes de operaciones con los mayores de proveedores y clientes o similares, por si existen errores en los apuntes de IVA. La fecha tope para la entrega de este Modelo es el 31 de marzo de cada año. Esta declaración la facilita Eneboo en el Módulo Modelos, menú Modelos, opción Modelo 347.
 
 Al entrar en esta opción, nos aparece parcialmente rellena. Lo único que debemos hacer es comprobar la veracidad de los datos y corregir aquellos que puedan ser erróneos. En nuestro caso, hemos modificado el importe mínimo especificando 3.005,06 y el número de justificante. 
 
@@ -1374,11 +1374,11 @@ Contenido de Ejercicio:
 2. Apertura y cierre.
 3. Ver todos.
 
-El menú Ejercicio contiene las opciones relacionadas con la gestión de los ejercicios económicos de AbanQ. Ya hemos visto con anterioridad cómo se realiza la creación de los ejercicios, por lo que no insistiremos en este aspecto en estos momentos.
+El menú Ejercicio contiene las opciones relacionadas con la gestión de los ejercicios económicos de Eneboo. Ya hemos visto con anterioridad cómo se realiza la creación de los ejercicios, por lo que no insistiremos en este aspecto en estos momentos.
 
 ####Cambiar actual.
 Esta opción sirve para cambiar de ejercicio. Al hacer clic en ella se nos abre la ventana que mostramos a continuación y que permite
 
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-81.PNG)
 
-Esta opción es especialmente útil cuando se está trabajando a caballo entre dos ejercicios, ya que AbanQ no permite introducir los datos de un ejercicio en otro diferente. Para poder hacerlo, previamente es necesario cambiar de ejercicio.
+Esta opción es especialmente útil cuando se está trabajando a caballo entre dos ejercicios, ya que Eneboo no permite introducir los datos de un ejercicio en otro diferente. Para poder hacerlo, previamente es necesario cambiar de ejercicio.
