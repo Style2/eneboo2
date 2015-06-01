@@ -1,6 +1,6 @@
 * CREADO POR: [Universidad de Sevilla](http://www.us.es): Mariano Aguayo Camacho; Esther Chávez Miranda; Miguel Ángel Domingo Carrillo; Guillermo Molleda Jimena
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 13 de febrero de 2015
+* ULTIMA ACTUALIZACIÓN: 1 de junio de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Area-de-Facturaci%C3%B3n-COMPLETO-UNIV.SEVILLA)
 
 ----
@@ -11,22 +11,19 @@
 
 
 
-#Sistemas de Información para las Finanzas y la Contabilidad
+###Sistemas de Información para las Finanzas y la Contabilidad
 
--
-##                Curso 20  /20
+--
+####               Curso 20___/20___
              
 
-<
-<
->
 --
-###Tema 3. Sistemas ERP (Enterprise Resource Planning). Práctica Eneboo-FACTURACIÓN
+####Tema 3. Sistemas ERP (Enterprise Resource Planning). Práctica Eneboo-FACTURACIÓN
+
+--
+####Parte I. El Sistema de Información empresarial y los Sistemas de Planificación de Recursos Empresariales (ERP). 
 
 ---
-###Parte I. El Sistema de Información empresarial y los Sistemas de Planificación de Recursos Empresariales (ERP). 
-
---
 ##Introducción.
 
 
