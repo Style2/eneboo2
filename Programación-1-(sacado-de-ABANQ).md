@@ -107,54 +107,101 @@ Pestaña Datos del nuevo formulario de países
 
 Debemos añadir los nuevos campos a la tabla de países. Abrimos la tabla e insertamos el código siguiente:
 
-`<field>
-    <name>zonacomercial</name>
-    <null>true</null>
-    <pk>false</pk>
-    <optionslist>Europa,EEUU,Asia,Latinoamérica</optionslist>
-    <default>Europa</default>
-    <type>string</type>
-    <length>20</length>
-</field>
-<field>
-    <name>coddivisa</name>
-    <alias>QT_TRANSLATE_NOOP("MetaData","Divisa oficial")</alias>
-    <null>true</null>
-    <pk>false</pk>
-    <type>string</type>
-    <length>3</length>
-    <relation>
-        <table>divisas</table>
-        <field>coddivisa</field>
-        <card>M1</card>
-    </relation>
-</field>
-<field>
-    <name>capital</name>
-    <alias>QT_TRANSLATE_NOOP("MetaData","Capital")</alias>
-    <null>true</null>
-    <pk>false</pk>
-    <type>string</type>
-    <length>40</length>
-</field>
-<field>
-    <name>habitantes</name>
-    <alias>QT_TRANSLATE_NOOP("MetaData","Habitantes")</alias>
-    <null>true</null>
-    <pk>false</pk>
-    <type>double</type>
-    <partI>10</partI>
-    <partD>0</partD>
-</field>
-<field>
-    <name>rentapercapita</name>
-    <alias>QT_TRANSLATE_NOOP("MetaData","Renta per Cápita")</alias>
-    <null>true</null>
-    <pk>false</pk>
-    <type>double</type>
-    <partI>6</partI>
-    <partD>0</partD>
-</field>`
+> `<field>`
+
+>    `<name>zonacomercial</name>`
+
+>    `<null>true</null>`
+
+>    `<pk>false</pk>`
+
+>`    <optionslist>Europa,EEUU,Asia,Latinoamérica</optionslist>`
+
+>    `<default>Europa</default>`
+
+>    `<type>string</type>`
+
+>    `<length>20</length>`
+
+>`</field>`
+
+>`<field>`
+
+>    `<name>coddivisa</name>`
+
+>    `<alias>QT_TRANSLATE_NOOP("MetaData","Divisa oficial")</alias>`
+
+>    `<null>true</null>`
+
+>    `<pk>false</pk>`
+
+>    `<type>string</type>`
+
+>    `<length>3</length>`
+
+>    `<relation>`
+
+>        `<table>divisas</table>`
+
+>        `<field>coddivisa</field>`
+
+>        `<card>M1</card>`
+
+>    `</relation>`
+
+>`</field>`
+
+>`<field>`
+
+>    `<name>capital</name>`
+
+>    `<alias>QT_TRANSLATE_NOOP("MetaData","Capital")</alias>`
+
+>    `<null>true</null>`
+
+>    `<pk>false</pk>`
+
+>    `<type>string</type>`
+
+>    `<length>40</length>`
+
+>`</field>`
+
+>`<field>`
+
+>    `<name>habitantes</name>`
+
+>    `<alias>QT_TRANSLATE_NOOP("MetaData","Habitantes")</alias>`
+
+>    `<null>true</null>`
+
+>    `<pk>false</pk>`
+
+>    `<type>double</type>`
+
+>    `<partI>10</partI>`
+
+>    `<partD>0</partD>`
+
+>`</field>`
+
+>`<field>`
+
+>    <name>rentapercapita</name>
+
+>`    <alias>QT_TRANSLATE_NOOP("MetaData","Renta per Cápita")</alias>`
+
+>    `<null>true</null>`
+
+>    `<pk>false</pk>`
+
+>    `<type>double</type>`
+
+>    `<partI>6</partI>`
+
+>    `<partD>0</partD>`
+
+>`</field>`
 
 #####Características comunes de los nuevos campos
 Hemos establecido la propiedad null a true en todos los campos. Con ello permitiremos que dichos campos permanezcan vacíos.
