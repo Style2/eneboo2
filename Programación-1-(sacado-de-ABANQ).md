@@ -49,7 +49,7 @@ Aceptamos todos los formularios. Podemos verificar el cambio abriendo de nuevo e
 
 Para las familias de artículos, el campo Código tiene una longitud máxima de 4 caracteres. Vamos a ampliar esta longitud hasta 6 caracteres. Dentro del módulo Almacén abrimos la tabla Familias (familias.mtd) y en el campo codigo cambiamos la propiedad lenght de 4 a 6:
 
-![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-2.PNG)
+![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/ABANQ-2/Dibujo-2.PNG)
 
 Nueva longitud máxima de un campo
 
@@ -64,11 +64,11 @@ Algunos aspectos importantes acerca de QT Designer:
     * Todas las propiedades de los componentes están en la paleta de propiedades (menú window / views / Property Editor) 
 Vamos a utilizar este editor para cambiar el aspecto del formulario de familias:
 
-![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-3.PNG)
+![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/ABANQ-2/Dibujo-3.PNG)
 
 Formulario de familias antes del cambio
 
-![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-4.PNG)
+![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/ABANQ-2/Dibujo-4.PNG)
 
 Formulario de familias después del cambio
 
@@ -89,17 +89,17 @@ Vamos a añadir los siguientes campos:
 
 El formulario actual de países tiene este aspecto:
 
-![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-5.PNG)
+![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/ABANQ-2/Dibujo-5.PNG)
 
 Formulario de países antes de los cambios
 
 Nuestro objetivo es crear un formulario de dos pestañas (General y Datos) con el aspecto siguiente:
 
-![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-6.PNG)
+![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/ABANQ-2/Dibujo-6.PNG)
 
 Pestaña General del nuevo formulario de países
 
-![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-7.PNG)
+![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/ABANQ-2/Dibujo-7.PNG)
 
 Pestaña Datos del nuevo formulario de países
 
@@ -187,7 +187,7 @@ Debemos añadir los nuevos campos a la tabla de países. Abrimos la tabla e inse
 
 >`<field>`
 
->    <name>rentapercapita</name>
+>    `<name>rentapercapita</name>`
 
 >`    <alias>QT_TRANSLATE_NOOP("MetaData","Renta per Cápita")</alias>`
 
@@ -212,21 +212,32 @@ La propiedad alias establece el nombre del campo de cara a la interfaz de usuari
 
 #####Caracterísiticas específicas de los campos:
 zonacomercial. La propiedad optionslist permite establecer la lista de valores que aparecerán en el desplegable del formulario. Los valores se separan por comas. La propiedad default establecida a Europa indica que éste es el valor por defecto para los nuevos registros. En la propiedad type vemos que se trata de un string -cadena de caracteres-, y en la propiedad length que su longitud máxima es de 20 caracteres.
+
 coddivisa. Este campo almacena el código de la divisa del país. Vemos que está relacionado con la tabla divisas (propiedad table) mediante el campo coddivisa (propiedad field) de dicha tabla. El valor M1 de la propiedad card establece que puede haber varios países (M) para cada divisa (1).
+
 capital. Se trata de un campo sencillo de tipo string y 40 caracteres de longitud máxima
+
 habitantes. Este es un campo numérico que debe almacenar números grandes. Hemos optado por el tipo double. Las propiedades partI y partD indican la longitud de la parte izquierda (entera) y derecha (decimal) del número respectivamente.
+
 rentapercapita. Similar a habitantes 
 
 Para terminar, debemos modificar la tabla divisas para incluir la relación establecida con el campo coddivisa de la tabla de países. El código es el siguiente:
-`<relation>
-    <table>paises</table>
-    <field>coddivisa</field>
-    <card>1M</card>
-</relation>`
+
+`<relation>`
+
+    `<table>paises</table>`
+
+    `<field>coddivisa</field>`
+
+    `<card>1M</card>`
+
+`</relation>`
+
 Fijémonos en que ahora la propiedad card toma el valor contrario (1M: una divisa, varios países)
 
 ####2. Modificar el formulario
 Vamos a abrir el formulario de países en QT Designer para modificarlo según las figuras 7 y 8
+
 Una vez abierta la aplicación, vamos a abrir las paletas de herramientas (menú Window / Views / Toolbox) y propiedades (menú Window / Views / Property Editor). De la paleta de herramientas seleccionaremos los componentes a insertar en el formulario. En la paleta de propiedades editaremos las mismas.
 
 ####Pasos:
@@ -241,6 +252,6 @@ Una vez abierta la aplicación, vamos a abrir las paletas de herramientas (menú
 1. De los campos anteriores, utilizamos uno que no está en la tabla de países. Es el que muestra la descripción de la divisa. Eneboo permite mostrar este valor que se encuentra en otra tabla -la tabla divisas- siempre que exista una relación entre ambas tablas. Para este campo las propiedades son fieldName con valor descripcion, tableName con valor divisas, foreignField con valor coddivisa y fielRelation con valor coddivisa.
 1. Damos formato al formulario mediante controles spacer y layouts, y modificando las propiedades de tamaño de los campos: 
 
-![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-8.PNG)
+![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/ABANQ-2/Dibujo-8.PNG)
 
 Modificando el formulario de países en QT Designer
