@@ -12,7 +12,8 @@ Antes de comenzar a trabajar:
    * Descargar e instalar la aplicación base de Eneboo (recomendamos la versión más reciente) instalada
    * Descargar los módulos públicos. Para este tutorial bastarán los módulos del área de Facturación
    * Arrancar Eneboo con una nueva base de datos y cargar los módulos 
-Algunos conceptos previos: el área de Sistema
+
+###Algunos conceptos previos: el área de Sistema
 Eneboo no es sólo un software de gestión, incluye además un entorno de desarrollo que permite realizar cambios y personalizaciones desde lo más básico a lo más avanzado.
 Desde el área de sistema no sólo podemos cargar los módulos, también podemos modificar los ficheros de tablas, formularios, informes, etc que forman parte de un módulo.
 Para ello abriremos el módulo de Administración dentro del área de sistema. Pulsamos en el menú Principal -> Módulos. Veremos un listado de lo módulos instalados. Si abrimos, por ejemplo, el módulo flfactppal (principal de facturación) accedemos al listado de ficheros. Algunos ejemplos: clientes.mtd es la tabla de clientes; clientes.ui es el formulario de clientes, etc.
@@ -29,6 +30,7 @@ Algunos ejemplos: para las tablas se abrirá un editor de texto, para los formul
 
 ###Cambios básicos en tablas y formularios
 Vamos a utilizar las herramientas que incorpora Eneboo para realizar algunos cambios sencillos en tablas y formularios de los módulos previamente cargados.
+
 ####1. Cambio de propiedades de un campo.
 
 Cambio de alias. El alias de un campo es el nombre que aparece en los formularios y las tablas maestras. Para los almacenes vamos a modificar el alias del campo ("Código") cambiándolo por "Código de Almacén". En primer lugar abrimos el módulo almacén en el área de facturación. En el menú Almacén -> Almacenes mostramos el listado de almacenes de nuestra base de datos. Podemos ver que el primer campo tiene el alias Código.
@@ -36,6 +38,9 @@ Cambio de alias. El alias de un campo es el nombre que aparece en los formulario
 Los alias de los datos se especifican en las tablas.
 
 Desde el módulo de sistema::administración, abrimos el módulo flfactalma (almacén), y a continuación la tabla Almacenes (almacenes.mtd). En el campo codalmacen cambiamos la propiedad alias.
+
+![Código fuente](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/ABANQ-2/Dibujo-1.PNG)
+
 Nuevo alias de un campo
 
 Aceptamos todos los formularios. Podemos verificar el cambio abriendo de nuevo el formulario de almacenes y comprobando el alias nuevo.
@@ -43,6 +48,9 @@ Aceptamos todos los formularios. Podemos verificar el cambio abriendo de nuevo e
 ####   2. Cambio de la longitud máxima de un campo.
 
 Para las familias de artículos, el campo Código tiene una longitud máxima de 4 caracteres. Vamos a ampliar esta longitud hasta 6 caracteres. Dentro del módulo Almacén abrimos la tabla Familias (familias.mtd) y en el campo codigo cambiamos la propiedad lenght de 4 a 6:
+
+![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-2.PNG)
+
 Nueva longitud máxima de un campo
 
 Podemos verificar el cambio abriendo el formulario de familias y comprobando que efectivamente el código admite ahora hasta 6 caracteres.
@@ -55,25 +63,51 @@ Algunos aspectos importantes acerca de QT Designer:
     * Los componentes pueden agruparse en layouts, utilizando los botones correspondientes (menú Window / Toolbars / Layout)
     * Todas las propiedades de los componentes están en la paleta de propiedades (menú window / views / Property Editor) 
 Vamos a utilizar este editor para cambiar el aspecto del formulario de familias:
+
+![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-3.PNG)
+
 Formulario de familias antes del cambio
+
+![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-4.PNG)
+
 Formulario de familias después del cambio
+
 Para ello abriremos el fichero familias.ui dentro del módulo de Almacén y procederemos a editarlo según las figuras anteriores. 
-Cambios en el modelo de datos y formularios
+
+####Cambios en el modelo de datos y formularios
+
 Continuando con la personalización de tablas y formularios, vamos a realizar algunas modificaciones importantes en el formulario y tabla de países (módulo Principal de Facturación, menú Tablas Generales -> Países)
-El objetivo del ejercicio es ampliar la información sobre los países que almacenamos en nuestra base de datos. Vamos a añadir los siguientes campos:
+
+El objetivo del ejercicio es ampliar la información sobre los países que almacenamos en nuestra base de datos. 
+
+Vamos a añadir los siguientes campos:
     * Zona comercial. Un valor a elegir entre Europa, EEUU, Asia, Latinoamérica
     * Divisa oficial. Se podrá obtener de la tabla Divisas
     * Capital
     * Habitantes
     * Renta per cápita 
+
 El formulario actual de países tiene este aspecto:
+
+![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-5.PNG)
+
 Formulario de países antes de los cambios
+
 Nuestro objetivo es crear un formulario de dos pestañas (General y Datos) con el aspecto siguiente:
+
+![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-6.PNG)
+
 Pestaña General del nuevo formulario de países
+
+![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-7.PNG)
+
 Pestaña Datos del nuevo formulario de países
+
 ####1. Modificar el modelo de datos
+
 Debemos añadir los nuevos campos a la tabla de países. Abrimos la tabla e insertamos el código siguiente:
-<field>
+
+`<field>
     <name>zonacomercial</name>
     <null>true</null>
     <pk>false</pk>
@@ -120,11 +154,13 @@ Debemos añadir los nuevos campos a la tabla de países. Abrimos la tabla e inse
     <type>double</type>
     <partI>6</partI>
     <partD>0</partD>
-</field>
+</field>`
 
 #####Características comunes de los nuevos campos
 Hemos establecido la propiedad null a true en todos los campos. Con ello permitiremos que dichos campos permanezcan vacíos.
+
 La propiedad pk (clave primaria) forzosamente ha de ser false porque no puede haber más de un campo clave primaria en la tabla, en este caso es el campo codpais.
+
 La propiedad alias establece el nombre del campo de cara a la interfaz de usuario; es el texto que aparece en los formularios y las cabeceras de campo de las tablas. Siempre pondremos QT_TRANSLATE_NOOP("MetaData", "alias del campo"). Esta función es necesaria para realizar las traducciones de textos a distintos idiomas. 
 
 #####Caracterísiticas específicas de los campos:
@@ -133,13 +169,15 @@ coddivisa. Este campo almacena el código de la divisa del país. Vemos que est�
 capital. Se trata de un campo sencillo de tipo string y 40 caracteres de longitud máxima
 habitantes. Este es un campo numérico que debe almacenar números grandes. Hemos optado por el tipo double. Las propiedades partI y partD indican la longitud de la parte izquierda (entera) y derecha (decimal) del número respectivamente.
 rentapercapita. Similar a habitantes 
+
 Para terminar, debemos modificar la tabla divisas para incluir la relación establecida con el campo coddivisa de la tabla de países. El código es el siguiente:
-<relation>
+`<relation>
     <table>paises</table>
     <field>coddivisa</field>
     <card>1M</card>
-</relation>
+</relation>`
 Fijémonos en que ahora la propiedad card toma el valor contrario (1M: una divisa, varios países)
+
 ####2. Modificar el formulario
 Vamos a abrir el formulario de países en QT Designer para modificarlo según las figuras 7 y 8
 Una vez abierta la aplicación, vamos a abrir las paletas de herramientas (menú Window / Views / Toolbox) y propiedades (menú Window / Views / Property Editor). De la paleta de herramientas seleccionaremos los componentes a insertar en el formulario. En la paleta de propiedades editaremos las mismas.
@@ -157,4 +195,3 @@ Una vez abierta la aplicación, vamos a abrir las paletas de herramientas (menú
 1. Damos formato al formulario mediante controles spacer y layouts, y modificando las propiedades de tamaño de los campos: 
 
 Modificando el formulario de países en QT Designer
-Actualizado el 19/02/2007
