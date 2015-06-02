@@ -15,6 +15,8 @@
 * 6. Ventana de conexiones
 * 7. Formulario de la acción empleados
 * 10. Formulario maestro de empleados
+* 11. Formulario empleados.ui
+* 12. Formulario de edición de empleados
 
 En el **capítulo anterior** de esta serie de artículos sobre programación en Eneboo-Abanq vimos cómo realizar pequeñas modificaciones sobre módulos ya existentes. Básicamente eran **modificaciones sobre tablas y formularios** en las que añadíamos campos o modificábamos sus propiedades.
 
@@ -163,189 +165,189 @@ El nombre del fichero de la tabla, según nuestra nomenclatura, debe ser emplead
 registro en el módulo, igual que hicimos con la creación del fichero de acciones, para la nueva tabla con el
 nombre anterior y el contenido siguiente:
 
-<!DOCTYPE TMD> <TMD>
+`<!DOCTYPE TMD> <TMD>`
 
-<name>empleados</name>
+`<name>empleados</name>`
 
-<alias>QT_TRANSLATE_NOOP("MetaData","Empleados")</alias>
+`<alias>QT_TRANSLATE_NOOP("MetaData","Empleados")</alias>`
 
-<field>
+`<field>`
 
-<name>codempleado</name>
+`<name>codempleado</name>`
 
-<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>
+`<alias>QT_TRANSLATE_NOOP("MetaData","Código")</alias>`
 
-<null>false</null>
+`<null>false</null>`
 
-<pk>true</pk>
+`<pk>true</pk>`
 
-<type>string</type>
+`<type>string</type>`
 
-<length>18</length>
+`<length>18</length>`
 
-</field>
+`</field>`
 
-<field>
+`<field>`
 
-<name>coddepartamento</name>
+`<name>coddepartamento</name>`
 
-<alias>QT_TRANSLATE_NOOP("MetaData","Departamento")</alias>
+`<alias>QT_TRANSLATE_NOOP("MetaData","Departamento")</alias>`
 
-<null>false</null>
+`<null>false</null>`
 
-<pk>false</pk>
+`<pk>false</pk>`
 
-<type>string</type>
+`<type>string</type>`
 
-<length>6</length>
+`<length>6</length>`
 
-<relation>
+`<relation>`
 
-<table>departamentos</table>
+`<table>departamentos</table>`
 
-<field>coddepartamento</field>
+`<field>coddepartamento</field>`
 
-<card>M1</card>
+`<card>M1</card>`
 
-</relation>
+`</relation>`
 
-</field>
+`</field>`
 
-<field>
+`<field>`
 
-<name>nombrecompleto</name>
+`<name>nombrecompleto</name>`
 
-<alias>QT_TRANSLATE_NOOP("MetaData","Nombre Completo")</alias>
+`<alias>QT_TRANSLATE_NOOP("MetaData","Nombre Completo")</alias>`
 
-<null>false</null>
+`<null>false</null>`
 
-<pk>false</pk> <!--Código de departamento-->
+`<pk>false</pk> <!--Código de departamento-->`
 
-<type>string</type>
+`<type>string</type>`
 
-<length>150</length>
+`<length>150</length>`
 
-</field>
+`</field>`
 
-<field>
+`<field>`
 
-<name>titulacion</name>
+`<name>titulacion</name>`
 
-<alias>QT_TRANSLATE_NOOP("MetaData","Titulación")</alias>
+`<alias>QT_TRANSLATE_NOOP("MetaData","Titulación")</alias>`
 
-<null>false</null>
+`<null>false</null>`
 
-<pk>false</pk>
+`<pk>false</pk>`
 
-<type>string</type>
+`<type>string</type>`
 
-<length>20</length>
+`<length>20</length>`
 
-<optionslist>Ninguna,Ed. Primaria,Ed. Secundaria,FP,Título Universitario</optionslist>
+`<optionslist>Ninguna,Ed. Primaria,Ed. Secundaria,FP,Título Universitario</optionslist>`
 
-<default>OFICINA</default>
+`<default>OFICINA</default>`
 
-</field>
+`</field>`
 
-<field>
+`<field>`
 
-<name>fechaalta</name>
+`<name>fechaalta</name>`
 
-<alias>QT_TRANSLATE_NOOP("MetaData","Fecha de alta")</alias>
+`<alias>QT_TRANSLATE_NOOP("MetaData","Fecha de alta")</alias>`
 
-<null>false</null>
+`<null>false</null>`
 
-<pk>false</pk>
+`<pk>false</pk>`
 
-<type>date</type>
+`<type>date</type>`
 
-</field>
+`</field>`
 
-<field>
+`<field>`
 
-<name>debaja</name>
+`<name>debaja</name>`
 
-<alias>QT_TRANSLATE_NOOP("MetaData","De baja")</alias>
+`<alias>QT_TRANSLATE_NOOP("MetaData","De baja")</alias>`
 
-<null>false</null>
+`<null>false</null>`
 
-<pk>false</pk>
+`<pk>false</pk>`
 
-<type>bool</type>
+`<type>bool</type>`
 
-<default>false</default>
+`<default>false</default>`
 
-</field>
+`</field>`
 
-<field>
+`<field>`
 
-<name>sueldobruto</name>
+`<name>sueldobruto</name>`
 
-<alias>QT_TRANSLATE_NOOP("MetaData","Bruto")</alias>
+`<alias>QT_TRANSLATE_NOOP("MetaData","Bruto")</alias>`
 
-<null>true</null>
+`<null>true</null>`
 
-<pk>false</pk>
+`<pk>false</pk>`
 
-<type>double</type>
+`<type>double</type>`
 
-<partI>4</partI>
+`<partI>4</partI>`
 
-<partD>2</partD>
+`<partD>2</partD>`
 
-</field>
+`</field>`
 
-<field>
+`<field>`
 
-<name>impuestos</name>
+`<name>impuestos</name>`
 
-<alias>QT_TRANSLATE_NOOP("MetaData","% Impuestos")</alias>
+`<alias>QT_TRANSLATE_NOOP("MetaData","% Impuestos")</alias>`
 
-<null>true</null>
+`<null>true</null>`
 
-<pk>false</pk>
+`<pk>false</pk>`
 
-<type>double</type>
+`<type>double</type>`
 
-<partI>2</partI>
+`<partI>2</partI>`
 
-<partD>2</partD>
+`<partD>2</partD>`
 
-</field>
+`</field>`
 
-<field>
+`<field>`
 
-<name>sueldoneto</name>
+`<name>sueldoneto</name>`
 
-<alias>QT_TRANSLATE_NOOP("MetaData","Neto")</alias>
+`<alias>QT_TRANSLATE_NOOP("MetaData","Neto")</alias>`
 
-<null>true</null>
+`<null>true</null>`
 
-<pk>false</pk>
+`<pk>false</pk>`
 
-<type>double</type>
+`<type>double</type>`
 
-<partI>4</partI>
+`<partI>4</partI>`
 
-<partD>2</partD>
+`<partD>2</partD>`
 
-</field>
+`</field>`
 
-<field>
+`<field>`
 
-<name>causabaja</name>
+`<name>causabaja</name>`
 
-<alias>QT_TRANSLATE_NOOP("MetaData","Causa de la baja")</alias>
+`<alias>QT_TRANSLATE_NOOP("MetaData","Causa de la baja")</alias>`
 
-<null>true</null>
+`<null>true</null>`
 
-<pk>false</pk>
+`<pk>false</pk>`
 
-<type>stringlist</type>
+`<type>stringlist</type>`
 
-</field>
+`</field>`
 
-</TMD>
+`</TMD>`
 
 El campo seccion lo hemos definido como una lista de opciones con varias secciones de la empresa a modo
 de ejemplo. Es muy recomendable repasar la estructura xml de esta tabla y comprender bien todos los
@@ -392,17 +394,17 @@ Hemos agrupado los controles FLFieldDB en tres controles groupBox para mayor cla
 es necesario.
 
 Las principales propiedades de cada campo son las siguientes:
-1: fdbCodEmpleado codempleado
-2: fdbTitulacion titulacion
-3: fdbNombreCompleto nombrecompleto
-4: fdbCodDepartamento coddepartamento
-5: fdbNomDepartamento nombre departamentos coddepartamento coddepartamento
-6: fdbFechaAlta fechaalta
-7: fdbDeBaja debaja
-8: fdbSueldoBruto sueldobruto
-9: fdbImpuestos impuestos
-10: fdbSueldoNeto sueldoneto
-11: fdbCausaBaja causabaja
+1. fdbCodEmpleado codempleado
+2. fdbTitulacion titulacion
+3. fdbNombreCompleto nombrecompleto
+4. fdbCodDepartamento coddepartamento
+5. fdbNomDepartamento nombre departamentos coddepartamento coddepartamento
+6. fdbFechaAlta fechaalta
+7. fdbDeBaja debaja
+8. fdbSueldoBruto sueldobruto
+9. fdbImpuestos impuestos
+10. fdbSueldoNeto sueldoneto
+11. fdbCausaBaja causabaja
 
 Hemos optado por establecer los nombres de los controles como fdb + NombreCampo. Aunque la propiedad
 name puede tomar cualquier valor, en este ejemplo es recomendable mantener los de la tabla anterior, para
@@ -455,239 +457,239 @@ automáticamente por el motor de Eneboo en ciertos momentos de la ejecución del
 
 El sistema de clases y herencias escapa al ámbito de este tutorial y se verá con posterioridad.
 
-/***************************************************************************
+`/***************************************************************************`
 
-/***************************************************************************
+`/***************************************************************************`
 
-/** @file */
+`/** @file */`
 
-/** @class_declaration interna */
+`/** @class_declaration interna */`
 
-////////////////////////////////////////////////////////////////////////////
+`////////////////////////////////////////////////////////////////////////////`
 
-//// DECLARACION ///////////////////////////////////////////////////////////
+`//// DECLARACION ///////////////////////////////////////////////////////////`
 
-////////////////////////////////////////////////////////////////////////////
+`////////////////////////////////////////////////////////////////////////////`
 
-//////////////////////////////////////////////////////////////////
+`//////////////////////////////////////////////////////////////////`
 
-//// INTERNA /////////////////////////////////////////////////////
+`//// INTERNA /////////////////////////////////////////////////////`
 
-class interna {
+`class interna {`
 
-function calculateField(fN:String):String { return this.ctx.interna_calculateField(fN); }
+`function calculateField(fN:String):String { return this.ctx.interna_calculateField(fN); }`
 
-}/
+`}/`
 
-/// INTERNA /////////////////////////////////////////////////////
+`/// INTERNA /////////////////////////////////////////////////////`
 
-//////////////////////////////////////////////////////////////////
+`//////////////////////////////////////////////////////////////////`
 
-/** @class_declaration oficial */
+`/** @class_declaration oficial */`
 
-//////////////////////////////////////////////////////////////////
+`//////////////////////////////////////////////////////////////////`
 
-//// OFICIAL /////////////////////////////////////////////////////
+`//// OFICIAL /////////////////////////////////////////////////////`
 
-class oficial extends interna {
+`class oficial extends interna {`
 
-function oficial( context ) { interna( context ); }
+`function oficial( context ) { interna( context ); }`
 
-function bufferChanged(fN:String) {
+`function bufferChanged(fN:String) {`
 
-return this.ctx.oficial_bufferChanged(fN);
+`return this.ctx.oficial_bufferChanged(fN);`
 
-}
+`}`
 
-}/
+`}/`
 
-/// OFICIAL /////////////////////////////////////////////////////
+`/// OFICIAL /////////////////////////////////////////////////////`
 
-//////////////////////////////////////////////////////////////////
+`//////////////////////////////////////////////////////////////////`
 
-/** @class_declaration head */
+`/** @class_declaration head */`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
-//// DESARROLLO /////////////////////////////////////////////////
+`//// DESARROLLO /////////////////////////////////////////////////`
 
-class head extends oficial {
+`class head extends oficial {`
 
-function head( context ) { oficial ( context ); }
+`function head( context ) { oficial ( context ); }`
 
-}
+`}`
 
-//// DESARROLLO /////////////////////////////////////////////////
+`//// DESARROLLO /////////////////////////////////////////////////`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
-/** @class_declaration ifaceCtx */
+`/** @class_declaration ifaceCtx */`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
-//// INTERFACE
+`//// INTERFACE`
 
-class ifaceCtx extends head {
+`class ifaceCtx extends head {`
 
-function ifaceCtx( context ) { head( context ); }
+`function ifaceCtx( context ) { head( context ); }`
 
-}
+`}`
 
-const iface = new ifaceCtx( this );
+`const iface = new ifaceCtx( this );`
 
-//// INTERFACE
+`//// INTERFACE`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
-/** @class_definition interna */
+`/** @class_definition interna */`
 
-////////////////////////////////////////////////////////////////////////////
+`////////////////////////////////////////////////////////////////////////////`
 
-//// DEFINICION ////////////////////////////////////////////////////////////
+`//// DEFINICION ////////////////////////////////////////////////////////////`
 
-////////////////////////////////////////////////////////////////////////////
+`////////////////////////////////////////////////////////////////////////////`
 
-//////////////////////////////////////////////////////////////////
+`//////////////////////////////////////////////////////////////////`
 
-//// INTERNA /////////////////////////////////////////////////////
+`//// INTERNA /////////////////////////////////////////////////////`
 
-/* Función que se llama al iniciar el formulario
+`/* Función que se llama al iniciar el formulario`
 
-Conecta la señal bufferchanged (cambio en el buffer,cambio en un campo) con el slot o función
+`Conecta la señal bufferchanged (cambio en el buffer,cambio en un campo) con el slot o función`
 
-bufferChanged
+`bufferChanged`
 
-Si se la llama en modo alta inhabilitará el campo 'Causa de la baja'
+`Si se la llama en modo alta inhabilitará el campo 'Causa de la baja'`
 
-*/
+`*/`
 
-function interna_init()
+`function interna_init()`
 
-{
+`{`
 
-var cursor:FLSqlCursor = this.cursor(); // Objeto FLSqlCursor asociado al formulario
+`var cursor:FLSqlCursor = this.cursor(); // Objeto FLSqlCursor asociado al formulario`
 
-connect(this.cursor(), "bufferChanged(QString)", this, "iface.bufferChanged");
+`connect(this.cursor(), "bufferChanged(QString)", this, "iface.bufferChanged");`
 
-if (cursor.modeAccess() == cursor.Insert)
+`if (cursor.modeAccess() == cursor.Insert)`
 
-this.child("fdbCausaBaja").setDisabled(true);
+`this.child("fdbCausaBaja").setDisabled(true);`
 
-}/
+`}/`
 
-* Función que calcula el valor de un campo. En este caso el sueldo neto cuando a partir del bruto y los
+`* Función que calcula el valor de un campo. En este caso el sueldo neto cuando a partir del bruto y los`
 
-impuestos
+`impuestos`
 
-fN: Nombre del campo a calcular
+`fN: Nombre del campo a calcular`
 
-Resultado: Valor del campo
+`Resultado: Valor del campo`
 
-*/
+`*/`
 
-function interna_calculateField(fN)
+`function interna_calculateField(fN)`
 
-{
+`{`
 
-var cursor:FLSqlCursor = this.cursor(); // Objeto FLSqlCursor asociado al formulario
+`var cursor:FLSqlCursor = this.cursor(); // Objeto FLSqlCursor asociado al formulario`
 
-var valor:String = "";
+`var valor:String = "";`
 
-switch(fN) {
+`switch(fN) {`
 
-// El sueldo neto será el sueldo bruto tras descontarle los impuestos
+`// El sueldo neto será el sueldo bruto tras descontarle los impuestos`
 
-case "sueldoneto":
+`case "sueldoneto":`
 
-var sueldoBruto = parseFloat(cursor.valueBuffer("sueldobruto"));
+`var sueldoBruto = parseFloat(cursor.valueBuffer("sueldobruto"));`
 
-var impuestos = parseFloat(cursor.valueBuffer("impuestos"));
+`var impuestos = parseFloat(cursor.valueBuffer("impuestos"));`
 
-valor = sueldoBruto * (100 - impuestos) / 100;
+`valor = sueldoBruto * (100 - impuestos) / 100;`
 
-break;
+`break;`
 
-}
+`}`
 
-}/
+`}/`
 
-* Función que se llama al pulsar el botón aceptar y que decide si los datos del formulario son válidos.
-Si los datos no son válidos, los datos no se guardarán y el formulario de edición no se cerrará.
-Resultado: true si los datos son válidos, false en caso contrario
+`* Función que se llama al pulsar el botón aceptar y que decide si los datos del formulario son válidos.`
+`Si los datos no son válidos, los datos no se guardarán y el formulario de edición no se cerrará.`
+`Resultado: true si los datos son válidos, false en caso contrario`
 
-*/
+`*/`
 
-function validateForm()
+`function validateForm()`
 
-{
+`{`
 
-var cursor = this.cursor();
+`var cursor = this.cursor();`
 
-var util:FLUtil = new FLUtil();
+`var util:FLUtil = new FLUtil();`
 
-// La fecha de alta no puede superar la fecha actual
+`// La fecha de alta no puede superar la fecha actual`
 
-var hoy = new Date();
+`var hoy = new Date();`
 
-var fechaAlta = cursor.valueBuffer("fechaalta");
+`var fechaAlta = cursor.valueBuffer("fechaalta");`
 
-if (util.daysTo(fechaAlta, hoy) < 0) {
+`if (util.daysTo(fechaAlta, hoy) < 0) {`
 
-MessageBox.warning(util.translate("scripts", "La fecha de alta no puede ser superior a la fecha
+`MessageBox.warning(util.translate("scripts", "La fecha de alta no puede ser superior a la fecha`
 
-actual"),
+`actual"),`
 
-MessageBox.Ok, MessageBox.NoButton);
+`MessageBox.Ok, MessageBox.NoButton);`
 
-return false;
+`return false;`
 
-}
+`}`
 
-return true;
+`return true;`
 
-}/
+`}/`
 
-/// INTERNA /////////////////////////////////////////////////////
+`/// INTERNA /////////////////////////////////////////////////////`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
-/** @class_definition oficial */
+`/** @class_definition oficial */`
 
-//////////////////////////////////////////////////////////////////
+`//////////////////////////////////////////////////////////////////`
 
-//// OFICIAL /////////////////////////////////////////////////////
+`//// OFICIAL /////////////////////////////////////////////////////`
 
-function oficial_bufferChanged(fN:String)
+`function oficial_bufferChanged(fN:String)`
 
-{
+`{`
 
-switch (fN) {
+`switch (fN) {`
 
-case "sueldobruto":
+`case "sueldobruto":`
 
-case "impuestos":
+`case "impuestos":`
 
-this.child("fdbSueldoNeto").setValue(this.iface.calculateField("sueldoneto"));
+`this.child("fdbSueldoNeto").setValue(this.iface.calculateField("sueldoneto"));`
 
-break;
+`break;`
 
-}
+`}`
 
-}/
+`}/`
 
-/// OFICIAL /////////////////////////////////////////////////////
+`/// OFICIAL /////////////////////////////////////////////////////`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
-/** @class_definition head */
+`/** @class_definition head */`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
-//// DESARROLLO /////////////////////////////////////////////////
+`//// DESARROLLO /////////////////////////////////////////////////`
 
-//// DESARROLLO /////////////////////////////////////////////////
+`//// DESARROLLO /////////////////////////////////////////////////`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
 Una vez creado el fichero podemos probar el script ejecutando el formulario y comprobar que cada una de
 estas cuatro funciones funciona correctamente.
