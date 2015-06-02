@@ -18,6 +18,11 @@
 * 11. Formulario empleados.ui
 * 12. Formulario de edición de empleados
 
+* 14. Encabezado del informe de empleados
+* 15. Plantilla del informe de empleados
+* 16. Informe de empleados
+* 17. Ejemplo de formato de informe
+
 En el **capítulo anterior** de esta serie de artículos sobre programación en Eneboo-Abanq vimos cómo realizar pequeñas modificaciones sobre módulos ya existentes. Básicamente eran **modificaciones sobre tablas y formularios** en las que añadíamos campos o modificábamos sus propiedades.
 
 En el **presente artículo** describiremos la forma de realizar lo que Eneboo-Abanq denomina acciones completas. Esto quiere decir que aprenderemos a **crear** nuestras propias tablas y formularios, y a relacionarlos con otros
@@ -394,17 +399,18 @@ Hemos agrupado los controles FLFieldDB en tres controles groupBox para mayor cla
 es necesario.
 
 Las principales propiedades de cada campo son las siguientes:
+
 1. fdbCodEmpleado codempleado
-2. fdbTitulacion titulacion
-3. fdbNombreCompleto nombrecompleto
-4. fdbCodDepartamento coddepartamento
-5. fdbNomDepartamento nombre departamentos coddepartamento coddepartamento
-6. fdbFechaAlta fechaalta
-7. fdbDeBaja debaja
-8. fdbSueldoBruto sueldobruto
-9. fdbImpuestos impuestos
-10. fdbSueldoNeto sueldoneto
-11. fdbCausaBaja causabaja
+1. fdbTitulacion titulacion
+1. fdbNombreCompleto nombrecompleto
+1. fdbCodDepartamento coddepartamento
+1. fdbNomDepartamento nombre departamentos coddepartamento coddepartamento
+1. fdbFechaAlta fechaalta
+1. fdbDeBaja debaja
+1. fdbSueldoBruto sueldobruto
+1. fdbImpuestos impuestos
+1. fdbSueldoNeto sueldoneto
+1. fdbCausaBaja causabaja
 
 Hemos optado por establecer los nombres de los controles como fdb + NombreCampo. Aunque la propiedad
 name puede tomar cualquier valor, en este ejemplo es recomendable mantener los de la tabla anterior, para
@@ -700,15 +706,15 @@ esto. El código será:
 
 ...
 
-case "debaja" : // Si se activa el control, el campo Causa de la baja se habilitará
+`case "debaja" : // Si se activa el control, el campo Causa de la baja se habilitará`
 
-form.child("fdbCausaBaja").setDisabled(false);
+`form.child("fdbCausaBaja").setDisabled(false);`
 
-form.child("fdbCausaBaja").setValue("");
+`form.child("fdbCausaBaja").setValue("");`
 
-form.child("fdbCausaBaja").setDisabled(true);
+`form.child("fdbCausaBaja").setDisabled(true);`
 
-break;
+`break;`
 
 ...
 
@@ -716,163 +722,163 @@ Ya tenemos plenamente operativo nuestro primer script. Vamos ahora con el script
 maestro, masterempleados.qs. Este script conectará el botón Imprimir del formulario con la función que
 lanzará el informe de empleados que realizaremos en el siguiente apartado. Su código es el siguiente:
 
-/***************************************************************************
+`/***************************************************************************`
 
-/***************************************************************************
+`/***************************************************************************`
 
-/** @file */
+`/** @file */`
 
-/** @class_declaration interna */
+`/** @class_declaration interna */`
 
-////////////////////////////////////////////////////////////////////////////
+`////////////////////////////////////////////////////////////////////////////`
 
-//// DECLARACION ///////////////////////////////////////////////////////////
+`//// DECLARACION ///////////////////////////////////////////////////////////`
 
-////////////////////////////////////////////////////////////////////////////
+`////////////////////////////////////////////////////////////////////////////`
 
-//////////////////////////////////////////////////////////////////
+`//////////////////////////////////////////////////////////////////`
 
-//// INTERNA /////////////////////////////////////////////////////
+`//// INTERNA /////////////////////////////////////////////////////`
 
-class interna {
+`class interna {`
 
-var ctx:Object;
+`var ctx:Object;`
 
-function interna( context ) { this.ctx = context; }
+`function interna( context ) { this.ctx = context; }`
 
-function init() { this.ctx.interna_init(); }
+`function init() { this.ctx.interna_init(); }`
 
-}/
+`}/`
 
-/// INTERNA /////////////////////////////////////////////////////
+`/// INTERNA /////////////////////////////////////////////////////`
 
-//////////////////////////////////////////////////////////////////
+`//////////////////////////////////////////////////////////////////`
 
-/** @class_declaration oficial */
+`/** @class_declaration oficial */`
 
-//////////////////////////////////////////////////////////////////
+`//////////////////////////////////////////////////////////////////`
 
-//// OFICIAL /////////////////////////////////////////////////////
+`//// OFICIAL /////////////////////////////////////////////////////`
 
-class oficial extends interna {
+`class oficial extends interna {`
 
-var tbnImprimir:Object;
+`var tbnImprimir:Object;`
 
-function imprimir() {
+`function imprimir() {`
 
-return this.ctx.oficial_imprimir();
+`return this.ctx.oficial_imprimir();`
 
-}
+`}`
 
-}/
+`}/`
 
-/// OFICIAL /////////////////////////////////////////////////////
+`/// OFICIAL /////////////////////////////////////////////////////`
 
-//////////////////////////////////////////////////////////////////
+`//////////////////////////////////////////////////////////////////`
 
-/** @class_declaration head */
+`/** @class_declaration head */`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
-//// DESARROLLO /////////////////////////////////////////////////
+`//// DESARROLLO /////////////////////////////////////////////////`
 
-class head extends oficial {
+`class head extends oficial {`
 
-}/
+`}/`
 
-/// DESARROLLO /////////////////////////////////////////////////
+`/// DESARROLLO /////////////////////////////////////////////////`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
-/** @class_declaration ifaceCtx */
+`/** @class_declaration ifaceCtx */`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
-//// INTERFACE
+`//// INTERFACE`
 
-class ifaceCtx extends head {
+`class ifaceCtx extends head {`
 
-}
+`}`
 
-const iface = new ifaceCtx( this );
+`const iface = new ifaceCtx( this );`
 
-//// INTERFACE
+`//// INTERFACE`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
-/** @class_definition interna */
+`/** @class_definition interna */`
 
-////////////////////////////////////////////////////////////////////////////
+`////////////////////////////////////////////////////////////////////////////`
 
-//// DEFINICION ////////////////////////////////////////////////////////////
+`//// DEFINICION ////////////////////////////////////////////////////////////`
 
-////////////////////////////////////////////////////////////////////////////
+`////////////////////////////////////////////////////////////////////////////`
 
-//////////////////////////////////////////////////////////////////
+`//////////////////////////////////////////////////////////////////`
 
-//// INTERNA /////////////////////////////////////////////////////
+`//// INTERNA /////////////////////////////////////////////////////`
 
-function interna_init()
+`function interna_init()`
 
-{
+`{`
 
-connect(this.child("toolButtonPrint"), "clicked()", this, "iface.imprimir");
+`connect(this.child("toolButtonPrint"), "clicked()", this, "iface.imprimir");`
 
-}/
+`}/`
 
-/// INTERNA /////////////////////////////////////////////////////
+`/// INTERNA /////////////////////////////////////////////////////`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
-/** @class_definition oficial */
+`/** @class_definition oficial */`
 
-//////////////////////////////////////////////////////////////////
+`//////////////////////////////////////////////////////////////////`
 
-//// OFICIAL /////////////////////////////////////////////////////
+`//// OFICIAL /////////////////////////////////////////////////////`
 
-function oficial_imprimir()
+`function oficial_imprimir()`
 
-{
+`{`
 
-var util = new FLUtil();
+`var util = new FLUtil();`
 
-var consulta = new FLSqlQuery("empleados"); //Objeto de consulta de empleados
+`var consulta = new FLSqlQuery("empleados"); //Objeto de consulta de empleados`
 
-if (!consulta.exec()) {
+`if (!consulta.exec()) {`
 
-MessageBox.critical(util.translate("scripts", "Falló la consulta"),
+`MessageBox.critical(util.translate("scripts", "Falló la consulta"),`
 
-MessageBox.Ok, MessageBox.NoButton);
+`MessageBox.Ok, MessageBox.NoButton);`
 
-return;
+`return;`
 
-}
+`}`
 
-var rptViewer = new FLReportViewer(); //Objeto visor de informes
+`var rptViewer = new FLReportViewer(); //Objeto visor de informes`
 
-rptViewer.setReportTemplate("empleados"); // Establece la plantilla del informe
+`rptViewer.setReportTemplate("empleados"); // Establece la plantilla del informe`
 
-rptViewer.setReportData(consulta); // Establece los datos del informe
+`rptViewer.setReportData(consulta); // Establece los datos del informe`
 
-rptViewer.renderReport(); // Mezcla plantilla y datos
+`rptViewer.renderReport(); // Mezcla plantilla y datos`
 
-rptViewer.exec(); // Muestra el informe
+`rptViewer.exec(); // Muestra el informe`
 
-}/
+`}/`
 
-/// OFICIAL /////////////////////////////////////////////////////
+`/// OFICIAL /////////////////////////////////////////////////////`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
-/** @class_definition head */
+`/** @class_definition head */`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
-//// DESARROLLO /////////////////////////////////////////////////
+`//// DESARROLLO /////////////////////////////////////////////////`
 
-//// DESARROLLO /////////////////////////////////////////////////
+`//// DESARROLLO /////////////////////////////////////////////////`
 
-/////////////////////////////////////////////////////////////////
+`/////////////////////////////////////////////////////////////////`
 
 Si tratamos de ejecutar la función imprimir la aplicación fallará, dado que la consulta empleados.qry todavía
 no está creada.
@@ -884,47 +890,47 @@ organizados por departamentos. Para ello crearemos primero una consulta que extr
 
 Crearemos el fichero empleados.qry con el siguiente contenido:
 
-<!DOCTYPE QRY>
+`<!DOCTYPE QRY>`
 
-<QRY>
+`<QRY>`
 
-<name>empleados</name>
+`<name>empleados</name>`
 
-<tables>empleados,departamentos</tables>
+`<tables>empleados,departamentos</tables>`
 
-<group>
+`<group>`
 
-<level>0</level>
+`<level>0</level>`
 
-<field>departamentos.coddepartamento</field>
+`<field>departamentos.coddepartamento</field>`
 
-</group>
+`</group>`
 
-<select>
+`<select>`
 
-departamentos.coddepartamento, departamentos.nombre,
+`departamentos.coddepartamento, departamentos.nombre,`
 
-empleados.codempleado, empleados.nombrecompleto,
+`empleados.codempleado, empleados.nombrecompleto,`
 
-empleados.sueldobruto, empleados.fechaalta
+`empleados.sueldobruto, empleados.fechaalta`
 
-</select>
+`</select>`
 
-<from>
+`<from>`
 
-departamentos INNER JOIN empleados
+`departamentos INNER JOIN empleados`
 
-ON departamentos.coddepartamento = empleados.coddepartamento
+`ON departamentos.coddepartamento = empleados.coddepartamento`
 
-</from>
+`</from>`
 
-<where>
+`<where>`
 
-empleados.debaja = false
+`empleados.debaja = false`
 
-</where>
+`</where>`
 
-</QRY>
+`</QRY>`
 
 Una vez creada la consulta, el botón imprimir nos debe mostrar el visor de informes vacío. Esto es así porque
 todavía nos falta por crear el último elemento: La plantilla del informe. En la plantilla especificaremos la
