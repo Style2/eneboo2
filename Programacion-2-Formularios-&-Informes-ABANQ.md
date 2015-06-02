@@ -446,8 +446,10 @@ ciertos objetos internos del motor. Como veremos, esto da una gran potencia a lo
 hacer muchas operaciones que de otra manera sólo podrían conseguirse recompilando el código C++ del
 motor.
 
-Podemos consultar la documentación de QSA en http://doc.trolltech.com/qsa-1.2/index.html, y la de la
-interfaz de objetos de Eneboo en el apartado de documentación de esta web.
+Podemos consultar la documentación de:
+
+* QSA en http://es.wikipedia.org/wiki/QtScript, (OJO!: Con el lanzamiento de QtScript, QSA ha quedado obsoleto y ha llegado al final del soporte en 2008.)
+* y la de lainterfaz de objetos de Eneboo en el apartado de documentación de esta web.
 
 Lo primero será añadir las referencia a los scripts en el correspondiente nodo <action> del fichero de
 acciones (figura 13).
