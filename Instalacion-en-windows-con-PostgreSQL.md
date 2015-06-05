@@ -4,7 +4,7 @@
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Instalacion-en-windows-con-PostgreSQL)
 
 ----
-
+(EN CONSTRUCCIÓN)
 
 # INSTALACION DE ENEBOO EN WINDOWS CON POSTGRESQL
 
@@ -20,17 +20,12 @@
 
      * AUTOMATICO:
           * **http://www.postgresql.org/download/**
-          * descargo la versión de WINDOWS 64 bits que contiene: 
+          * para WINDOWS 64 bits (ordenadores nuevos con Windows 8.1): descargo la versión de WINDOWS 64 bits que contiene: 
+          * para WINDOWS 32 bits (WINDOWS XP): descargo la versión de WINDOWS 32 bits que contiene: 
 
 
-----------------------------
-
-CONTINUARÁ (lo que sigue no vale)
-
-
-     * Arrancar el programa (eneboo) desde el explorador de archivos en:
-         * /home/linux/Descargas/eneboo--dba/bin
-
+     * Arrancar el programa (eneboo) desde el explorador de archivos en la carpeta donde se ha descargado el programa.
+         
 1. Abrir Eneboo. Aparecerá la pantalla _Conectar_.
 
 ![Pantalla de conexión](https://raw.githubusercontent.com/eneboo/doc/master/images/standard/conectar.png)
@@ -50,22 +45,15 @@ CONTINUARÁ (lo que sigue no vale)
 # INSTALACIÓN DE MÓDULOS:
 
 1. Descargar el [paquete de Eneboo Standard](http://www.eneboo.com/pub/contrib/standard-modules/standard.eneboopkg).
+1. Otro lugar de descarga: [Repos del git de KLO-MANOLO](https://github.com/klo-manolo/eneboo-modules/archive/master.zip).
 1. [Cargar el paquete de Eneboo Standard](#cargar-el-paquete-de-eneboo-standard).
-1. Una vz iniciado el programa Eneboo se mostrará el entorno Eneboo.
+1. Una vez iniciado el programa Eneboo se mostrará el entorno Eneboo.
 1. En el área de _Módulos_ de la parte izquierda, abrir la opción _Sistema -> Administración -> Cargar Paquete de módulos_.
 1. Localizar el archivo standard.eneboopkg y pulsar _Abrir_. Cuando finalice la carga, Eneboo Standard estará listo para empezar a trabajar.
 
-# ARRANCAR ENEBOO DESDE ORDENADOR APAGADO:
+# ARRANCAR ENEBOO DESDE ORDENADOR:
 
-1. Ir a consola (Ctrl+Alt+F1) y arrancar XAMPP: `$ sudo /opt/lampp/lampp start`
-1. Volver a ventanas (Ctrl+Alt+F7) y arrancar el programa (eneboo) desde el explorador de archivos en:
-         * /home/linux/Descargas/eneboo--dba/bin
-
-# OTROS: instalacion con PostgreSQL:
-
-   * 2.B MY SQL .....NOTA: ESTO NO FUNCIONÓ: instalo la:
-          * "Begin Your Download - mysql-server_5.6.23-1ubuntu14.10_i386.deb-bundle.tar"
-          * http://dev.mysql.com/downloads/file.php?id=455351
-          * ...registrar? "no thanks, just start my download" (y esperar a flecha azul)...mirar en carpeta...descomprimir aqui...y crea 6 carpetas??
-          * error....miro la linux-generic...otro dia...
-   * 2.A **PostgreSQL** (recomendamos la versión 8.4) para Linux del [área de descarga de PostgreSQL](http://www.enterprisedb.com/products-services-training/pgdownload). La instalación solicitará un usuario y una contraseña de administrador de la base de datos que conviene anotar, ya que serán necesarios más adelante.
+1. Arrancar el servidor de bases de datos: XAMPP
+1. Arrancar el programa (eneboo) desde el explorador de archivos en:
+         
+   * 2.A **PostgreSQL** (recomendamos la versión 8.4) para windows del [área de descarga de PostgreSQL](http://www.enterprisedb.com/products-services-training/pgdownload). La instalación solicitará un usuario y una contraseña de administrador de la base de datos que conviene anotar, ya que serán necesarios más adelante.
