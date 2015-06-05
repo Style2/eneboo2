@@ -8,11 +8,8 @@
 
 # INSTALACION DE ENEBOO EN WINDOWS CON POSTGRESQL
 
-## Pasos:
 
-1. Descargar y descomprimir el motor de Eneboo para Linux en el apartado [Versiones Estables](http://www.eneboo.org/site/stable). Buscaremos el _Build dbAdmin Windows_ de 32 o 64 bits.
-     * Hacer click en el link y (para Mozilla: darle a la flecha azul de arriba-derecha) luego "mostrar en carpeta" (dibujo de la derecha). Buscar el archivo y con botón derecho: "extraer aqui"
-
+###PASO 1.-Descargar e instalar el SERVIDOR DE BASE DE DATOS WAMP (incluye APACHE, POSTGRESQL Y PHPAdminIII..) de:
 
 2. Descargar e instalar el gestor de bases de datos:
 
@@ -22,11 +19,29 @@
           * **http://www.postgresql.org/download/**
           * para WINDOWS 64 bits (ordenadores nuevos con Windows 8.1): descargo la versión de WINDOWS 64 bits que contiene: 
           * para WINDOWS 32 bits (WINDOWS XP): descargo la versión de WINDOWS 32 bits que contiene: 
+   * 2.A **PostgreSQL** (recomendamos la versión 8.4) para windows del [área de descarga de PostgreSQL](http://www.enterprisedb.com/products-services-training/pgdownload). La instalación solicitará un usuario y una contraseña de administrador de la base de datos que conviene anotar, ya que serán necesarios más adelante.
+
+---
+####PASO 2.- Ejecutar PHPMYADMIN con botón izquierdo en la W VERDE....
+* (ESTE PASO NO ES NECESARIO)
+
+---
+####PASO 3.- Crear una base de datos en myAdmin. “prueba"
+* (ESTE PASO NO ES NECESARIO)
+
+---
+####PASO 4.-INSTALAR EL PROGRAMA ENEBOO:
+
+1. Descargar y descomprimir el motor de Eneboo para Linux en el apartado [Versiones Estables](http://www.eneboo.org/site/stable). Buscaremos el _Build dbAdmin Windows_ de 32 o 64 bits.
+     * Hacer click en el link y (para Mozilla: darle a la flecha azul de arriba-derecha) luego "mostrar en carpeta" (dibujo de la derecha). Buscar el archivo y con botón derecho: "extraer aqui"
 
 
-     * Arrancar el programa (eneboo) desde el explorador de archivos en la carpeta donde se ha descargado el programa.
-         
-1. Abrir Eneboo. Aparecerá la pantalla _Conectar_.
+---
+####PASO 5.-ARRANCAR EL PROGRAMA ENEBOO:
+
+     * ejecutar el archivo ("C:\eneboo-2.4.0.2-dba-win32\bin\eneboo.exe")
+     * Arrancar el programa (eneboo) desde el explorador de archivos en la carpeta donde se ha descargado el programa.       
+     * Aparecerá la pantalla _Conectar_.
 
 ![Pantalla de conexión](https://raw.githubusercontent.com/eneboo/doc/master/images/standard/conectar.png)
 
@@ -42,18 +57,45 @@
     * Puerto: 5432
 1. Pulsar el botón _Conectar_. Se mostrará un mensaje con el texto _La base de datos standard no existe ¿Quiere crearla?_. Pulsar _Sí_.
 
-# INSTALACIÓN DE MÓDULOS:
+     * Una vez iniciado el programa Eneboo se mostrará el entorno Eneboo.
+![Pantalla INICIAL](https://raw.githubusercontent.com/eneboo/doc/master/images/standard/conectar.png)
 
+---
+####PASO 6.-DESCARGAR LOS “MÓDULOS” de eneboo...
+
+* Se pueden descargar de varios sitios o "repositorios", hay unos que llevan más "extensiones" añadidas a la "mezcla básica" que otros...:
+
+* http://www.eneboo.org/site/node/16
 1. Descargar el [paquete de Eneboo Standard](http://www.eneboo.com/pub/contrib/standard-modules/standard.eneboopkg).
+1. “Si desea descargar la última versión de nuestros módulos oficiales en ZIP, haga clic en el siguiente enlace: https://github.com/gestiweb/eneboo-modules/zipball/master “ (8 megas)
+1.  “todos los módulos de gestiweb” descargar en zip  (ESTE ES MEJOR, DESCOMPRIME TODOS LOS MODULOS EN UNA CARPETA Y LUEGO SE INSTALAN DESDE EL PROGRAMA ENEBOO):
 1. Otro lugar de descarga: [Repos del git de KLO-MANOLO](https://github.com/klo-manolo/eneboo-modules/archive/master.zip).
-1. [Cargar el paquete de Eneboo Standard](#cargar-el-paquete-de-eneboo-standard).
-1. Una vez iniciado el programa Eneboo se mostrará el entorno Eneboo.
-1. En el área de _Módulos_ de la parte izquierda, abrir la opción _Sistema -> Administración -> Cargar Paquete de módulos_.
-1. Localizar el archivo standard.eneboopkg y pulsar _Abrir_. Cuando finalice la carga, Eneboo Standard estará listo para empezar a trabajar.
 
-# ARRANCAR ENEBOO DESDE ORDENADOR:
+---
+####PASO 7.-INSTALAR LOS MÓDULOS DE ENEBOO:
 
-1. Arrancar el servidor de bases de datos: XAMPP
-1. Arrancar el programa (eneboo) desde el explorador de archivos en:
+* (hay 3 opciones):
+
+* OPCIÓN A) todos de golpe en "PAQUETE":
+
+      * “modulos estandar en paquete eneboo” o: standard.eneboopkg
+      1. En el área de _Módulos_ de la parte izquierda, abrir la opción _Sistema -> Administración -> Cargar Paquete de módulos_.
+      1. Localizar el archivo standard.eneboopkg y pulsar _Abrir_. Cuando finalice la carga, Eneboo Standard estará listo para empezar a trabajar.
+
+* OPCIÓN B) todos de golpe en "CARPETA DE MÓDULOS"
+
+     * “modulos estandar de eneboo” descargar en zip: eneboo_standard.zip (3 megas)o (ESTE ES BUENO, DESCOMPRIME SOLO LOS MODULOS DEL AREA DE CONTABILIDAD Y FACTURACION  EN UNA CARPETA Y LUEGO SE INSTALAN DESDE EL PROGRAMA ENEBOO):
+
+
+* OPCIÓN C) De uno en uno o "MÓDULO A MÓDULO":
+
+     * hay que ir a la carpeta dende están y 
+     * al acabar salir del programa y volver a entrar
+
+---
+####PASO 8.-REGENERAR LA BASE DE DATOS DESPUÉS DE CARGAR MODULOS:
+
+* ...entrar en “eneboo-sistema-administración-cargar Módulo”....e ir a la carpeta donde están guardados o descomprimidos del paso anterior...
+* y después de cada uno:  ...ir a “eneboo-sistema-administración-”+mas”-principal-Regenerar la base de datos”..
+...hay que “regenerar la base de datos” y salir del programa y volver a entrar después de haber instalado cada módulo......
          
-   * 2.A **PostgreSQL** (recomendamos la versión 8.4) para windows del [área de descarga de PostgreSQL](http://www.enterprisedb.com/products-services-training/pgdownload). La instalación solicitará un usuario y una contraseña de administrador de la base de datos que conviene anotar, ya que serán necesarios más adelante.
