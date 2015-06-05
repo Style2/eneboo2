@@ -8,6 +8,7 @@
 1. [Instalación en windows con MySQL-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Instalaci%C3%B3n-en-windows-con-MySQL)
 1. [Instalación en windows con PostgreSQL-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Instalacion-en-windows-con-PostgreSQL)
 1. [Instalación en linux con MySQL-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Instalacion-en-linux)
+1. [Instalación en linux con PostgreSQL-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Instalacion-en-linux-con-PostgreSQL)
 1. [Instalación servidor MySQL para Windows&Mac-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Instalacion-Servidor-MySQL-UNIV.SEVILLA)
 
 
