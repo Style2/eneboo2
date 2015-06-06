@@ -56,18 +56,20 @@ NOTA: No poner ":" en los nombres de las páginas o no se descargan bien...
 1. Primero haces un "pull" para bajar todos los cambios de internet:
      * `c:\Users\yo\Documents\GitHub\eneboo-manual\eneboo>`
      * "git pull https://github.com/Miguel-J/eneboo" (sin el wiki)
-![imágenes de github](https://github.com/Miguel-J/eneboo/tree/master/imagen/eneboo-github-imagen/eneboo-github-imagen-02.jpg)
+![imágenes de github](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-github-imagen/eneboo-github-imagen-02.jpg)
 1. ...luego mueves el subdirectorio en el ordenador local...
-![imágenes de github](https://github.com/Miguel-J/eneboo/tree/master/imagen/eneboo-github-imagen/eneboo-github-imagen-03.jpg)
+![imágenes de github](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-github-imagen/eneboo-github-imagen-03.jpg)
 1. ...luego hay que ir justo encima del subdirectorio (con cd subdirectorio)...
      * `c:\Users\yo\Documents\GitHub\eneboo-manual\eneboo\imagen>`
 1. ...luego hacer un "git add (nombre subdirectorio) desde su raíz...(en este caso sin extensión)...
 1. ...luego haces un "git commit -a" (añadir algo de descripción y cerrar grabando)... 
-![imágenes de github](https://github.com/Miguel-J/eneboo/tree/master/imagen/eneboo-github-imagen/eneboo-github-imagen-04.jpg)
-![imágenes de github](https://github.com/Miguel-J/eneboo/tree/master/imagen/eneboo-github-imagen/eneboo-github-imagen-05.jpg)
-![imágenes de github](https://github.com/Miguel-J/eneboo/tree/master/imagen/eneboo-github-imagen/eneboo-github-imagen-06.jpg)
-![imágenes de github](https://github.com/Miguel-J/eneboo/tree/master/imagen/eneboo-github-imagen/eneboo-github-imagen-07.jpg)
+![imágenes de github](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-github-imagen/eneboo-github-imagen-04.jpg)
+![imágenes de github](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-github-imagen/eneboo-github-imagen-05.jpg)
+![imágenes de github](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-github-imagen/eneboo-github-imagen-06.jpg)
+
+![imágenes de github](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-github-imagen/eneboo-github-imagen-07.jpg)
+
 1. ...luego hacer un "push":
 * _"git push https://github.com/Miguel-J/eneboo master"_
 * NOTA: misteriosamente conserva el orden de subdirectorios del local....
-![imágenes de github](https://github.com/Miguel-J/eneboo/tree/master/imagen/eneboo-github-imagen/eneboo-github-imagen-08.jpg)
+![imágenes de github](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-github-imagen/eneboo-github-imagen-08.jpg)
