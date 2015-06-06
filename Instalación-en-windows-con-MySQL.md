@@ -12,6 +12,8 @@ INSTALACION ENEBOO CON MYSQL:
 ###PASO 1.-Descargar e instalar el servidor de base de datos WAMP (incluye APACHE, MYSQL Y PHPMYADMIN..) de:
 www.wampserver.com\en
 
+![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-01.jpg)
+
 #####1.a- INSTALACION EN WINDOWS 7 o 8: 
 
 * instalo la 2.5 para 64 bits con:
@@ -26,6 +28,11 @@ www.wampserver.com\en
 #####1.b-INSTALACION EN WINDOWS XP:
 
 * En esta es la  2.2e de 32 bits ....la 2.5 NO porque daba error en el mySQL superior al 5.5....
+
+![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-02.jpg)
+![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-03.jpg)
+![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-04.jpg)
+
 * ...(pide instalar el “Visual c++ 2010 x86 ver.32 bits....pues lo instalo...)....después vuelvo y te lleva al sourgeforge
      * apache 2.2.22
      * mysql  5.5.12
