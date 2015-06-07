@@ -99,9 +99,9 @@
 
 * (hay 3 opciones):
 
-* OPCIÓN A) todos de golpe en "PAQUETE":
+* OPCIÓN A) todos de golpe en "PAQUETE": (ESTO DA MUCHOS ERRORES, MEJOR INSTALAR LOS MODULOS UNO A UNO): 
 
-      * “modulos estandar en paquete eneboo” o: standard.eneboopkg
+      * “modulos estandar en paquete eneboo” o: **standard.eneboopkg**
       1. En el área de _Módulos_ de la parte izquierda, abrir la opción _Sistema -> Administración -> Cargar Paquete de módulos_.
       1. Localizar el archivo standard.eneboopkg y pulsar _Abrir_. Cuando finalice la carga, Eneboo Standard estará listo para empezar a trabajar.
 
@@ -113,7 +113,8 @@
 * OPCIÓN C) De uno en uno o "MÓDULO A MÓDULO":
 
      * hay que ir a la carpeta dende están y 
-     * al acabar salir del programa y volver a entrar
+      * “todos los módulos de gestiweb” descargar en zip  (ESTE ES MEJOR, DESCOMPRIME TODOS LOS MODULOS EN UNA CARPETA Y LUEGO SE INSTALAN UNO A UNO DESDE EL PROGRAMA ENEBOO):
+      * “Si desea descargar la última versión de nuestros módulos oficiales en ZIP, haga clic en el siguiente enlace: https://github.com/gestiweb/eneboo-modules/zipball/master “ (8 megas)
 
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-05.jpg)
@@ -133,8 +134,14 @@
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-12.jpg)
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-13.jpg)
+
+* al acabar salir del programa Eneboo y volver a entrar.
+
+* ...ir a “eneboo-sistema-administracion-regenerar la base de datos”...
+
+
 ---
-####PASO 8.-REGENERAR LA BASE DE DATOS DESPUÉS DE CARGAR MODULOS:
+####PASO 8.-REGENERAR LA BASE DE DATOS DESPUÉS DE CARGAR MÓDULOS:
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-13.jpg)
 * ...entrar en “eneboo-sistema-administración-cargar Módulo”....e ir a la carpeta donde están guardados o descomprimidos del paso anterior...
