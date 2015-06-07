@@ -48,58 +48,55 @@ www.wampserver.com\en
 ***NOTA hay otra opcion: (pero se instaló mal...)1.-Descargar e instalar easyphp en www.easyphp.org: incluye APACHE, EASYPHP Y PHPMYADMIN..Ejecutarlo (doble click en la “e” junto al reloj)....si da problemas con apache le das otra vez a conectar y en paz.2.- Ejecutar “Administracion” (boton derecha mouse en la “e”)...y allí “php myadmin”
 
 ---
-####PASO 2.- Ejecutar PHPMYADMIN con botón izquierdo en la W VERDE....
+####PASO 2.- Ejecutar PHPMYADMIN con botón izquierdo en la W VERDE.... 
 
-***Solo AÑADIR los usuarios:
+***Sólo AÑADIR los usuarios:
 2.a.-”usuario”, para servidor:”%”, contraseña “usuario”, y “marcar todos”, resto igual...”añadir usuario”.
 
 
 ****NOTA: PARA UN SOLO ORDENADOR NO HACE FALTA TOCAR NADA MÁS: ni apache, ni MySQL, ni PHP....dejar el wamp como está.*******************
 
 ---
-####PASO 3.- Crear una base de datos en myAdmin. “prueba"
+####PASO 3.- CREAR UNA BASE DE DATOS. (PASO OPCIONAL)
 
-* no es imprescindible este paso porque Eneboo lo crea la primera vez que se conecta....
+* no es imprescindible este paso porque Eneboo lo crea la primera vez que se conecta a la base de datos....
 * (ESTO PARA PRIMERA INSTALACION, SI ES RE-INSTALAR HAY QUE SALTARSE ESTE PASO & INSTALAR EL DUMP-COPIA DE SEGURIDAD)
+* ir a phpMyAdmin
 * ...lo hace en: C:\wamp\bin\mysql\mysql5.6.12\data \prueba
 * ….cotejamiento por defecto: “utf8_general_ci”
 
 
 ---
-####PASO 4.-INSTALAR EL PROGRAMA ENEBOO:
+####PASO 4.-DESCARGAR EL PROGRAMA ENEBOO:
 
 * Bajarlo de:
-     * A) en http://eneboo.org/pub/contrib/ (ultimas versiones-releases)
+     * A) en http://eneboo.org/pub/contrib/ (ultimas versiones-releases...ojo: LAS BETA, NO)
      * B) en www.eneboo.org (el que incluye postgre, sql u otro). Ir a “descargas”......”versiones estables”.....abajo....Hay dos opciones:
           * B.1)...en el PRIMER ORDENADOR DE LA RED o “servidor”.....elegir la **version “DBA”**.
                  * sirve para instalar módulos personalizados y otras tareas de "Administrador" 
           * B.2)...en los SIGUIENTES “ordenadores-clientes”.....elegir la **versión “QUICK”**.
                  * sirve para ordenadores donde NO QUIERES que estropeen/instalen NADA y evita problemas.
 
-* VERSION DBA:
-Build dbAdmin Windows 32bits
-http://www.eneboo.org/pub/eneboo/builds/v2.4.0/eneboo-v2.4.0.2-dba-win32-installer.exe
-
-
 * (nota: la primera vez que lo descargué dio error en instalacion....eso es porque no se bajaron los 11,5 Mb...volverlo a descargar...)
-* (nota2....cuando instalé la dbadmin 2.4.2 dio muchos errores:
-http://eneboo.org/pub/eneboo/builds/v2.4.2/eneboo-2.4.2.2-dba-win32.tar.bz2
-….ojo....esta version mejor no instalarla....)
 
 ---
 ####PASO 5.-ARRANCAR EL PROGRAMA ENEBOO:
 
-* ejecutar el archivo ("C:\eneboo-2.4.0.2-dba-win32\bin\eneboo.exe")
-* **(OJO: primero tiene que funcionar WAMPSERVER como servidor...)** y cambiar la conexión:
+* ejecutar el archivo **eneboo.exe** del subdirectorio **bin**. Por ejemplo:("C:\eneboo-2.4.0.2-dba-win32\bin\eneboo.exe")
+* **(OJO: primero tiene que funcionar WAMPSERVER como servidor...)** 
+* Aparecerá la pantalla _Conectar_.
+
+![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-01.jpg)
+
+
+* y cambiar la conexión:
      * Nombre: igual que el dado a la BD de phpMyAdmin: 
-     * Usuario: usuario (lo da  phpMyAdmin)
+     * Usuario: root (o el que hemos puesto en phpMyAdmin...)
      * Contraseña:
 (Por ejemplo, desde la página de inicio de phpMyAdmin seleccione Privilegios y agregue la contraseña a root@localhost. Deberá escribir la misma contraseña en config.inc.php de phpMyAdmin.)
      * Base de datos: MySQL_NO_INNODB
      * servidor: 127.0.0.1 (antes se llamaba “localhost”).....o aquí pondriamos el TCP_IP del ordenador que tiene la BD... 
      * puerto: el que da eneboo....3306
-
-![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-01.jpg)
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-02.jpg)
 
