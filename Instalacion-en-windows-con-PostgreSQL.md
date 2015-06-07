@@ -22,15 +22,27 @@
    * 2.A **PostgreSQL** (recomendamos la versión 8.4) para windows del [área de descarga de PostgreSQL](http://www.enterprisedb.com/products-services-training/pgdownload). La instalación solicitará un usuario y una contraseña de administrador de la base de datos que conviene anotar, ya que serán necesarios más adelante.
 
 ---
-####PASO 2.- Ejecutar PHPMYADMIN con botón izquierdo en la W VERDE....
+####PASO 2.- EJECUTAR PgAdminIII ....
 * (ESTE PASO NO ES NECESARIO)
 
 ---
-####PASO 3.- Crear una base de datos en myAdmin. “prueba"
+####PASO 3.- CREAR UNA BASE DE DATOS EN PgAdminIII
 * (ESTE PASO NO ES NECESARIO)
+* no es imprescindible este paso porque Eneboo lo crea la primera vez que se conecta a la base de datos....
+* (ESTO PARA PRIMERA INSTALACION, SI ES RE-INSTALAR HAY QUE SALTARSE ESTE PASO & INSTALAR EL DUMP-COPIA DE SEGURIDAD)
+* ...lo hace en: 
+* ….cotejamiento por defecto: 
 
 ---
-####PASO 4.-INSTALAR EL PROGRAMA ENEBOO:
+####PASO 4.-DESCARGAR EL PROGRAMA ENEBOO:
+
+* Bajarlo de:
+     * A) en http://eneboo.org/pub/contrib/ (ultimas versiones-releases...ojo: LAS BETA, NO)
+     * B) en www.eneboo.org (el que incluye PostgreSQL, MySQL u otro). Ir a “descargas”......”versiones estables”.....abajo....Hay dos opciones:
+          * B.1)...en el PRIMER ORDENADOR DE LA RED o “servidor”.....elegir la **version “DBA”**.
+                 * sirve para instalar módulos personalizados y otras tareas de "Administrador" 
+          * B.2)...en los SIGUIENTES “ordenadores-clientes”.....elegir la **versión “QUICK”**.
+                 * sirve para ordenadores donde NO QUIERES que estropeen/instalen NADA y evita problemas.
 
 1. Descargar y descomprimir el motor de Eneboo para Linux en el apartado [Versiones Estables](http://www.eneboo.org/site/stable). Buscaremos el _Build dbAdmin Windows_ de 32 o 64 bits.
      * Hacer click en el link y (para Mozilla: darle a la flecha azul de arriba-derecha) luego "mostrar en carpeta" (dibujo de la derecha). Buscar el archivo y con botón derecho: "extraer aqui"
@@ -39,6 +51,8 @@
 ---
 ####PASO 5.-ARRANCAR EL PROGRAMA ENEBOO:
 
+* ejecutar el archivo **eneboo.exe** del subdirectorio **bin**. Por ejemplo:("C:\eneboo-2.4.0.2-dba-win32\bin\eneboo.exe")
+* **OJO: ANTES EL SERVIDOR PostgreSQL TIENE QUE ESTAR FUNCIONANDO**.
      * ejecutar el archivo ("C:\eneboo-2.4.0.2-dba-win32\bin\eneboo.exe")
      * Arrancar el programa (eneboo) desde el explorador de archivos en la carpeta donde se ha descargado el programa.       
      * Aparecerá la pantalla _Conectar_.
@@ -46,20 +60,30 @@
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-01.jpg)
 1. Rellenar los campos con los siguientes valores:
     * Base de datos: (nombre empresa)
-    * Usuario: postgres (o el administrador de la base de datos PostgreSQL-ver phpMyAdminIII).
+    * Usuario: postgres (o el que hemos puesto como administrador de la base de datos PostgreSQL-ver phpMyAdminIII).
     * Contraseña: (la del administrador de la base de datos PostgreSQL-ver phpMyAdminIII).
-
-![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-01.jpg)        
 1. Pulsar el botón de la flecha hacia la derecha _Más opciones_.
+
+![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-02.jpg)        
+
 1. Rellenar los campos de esta pantalla con los siguientes valores: 
     * Controlador: POSTGRESQL
     * Servidor: localhost
     * Puerto: 5432
 1. Pulsar el botón _Conectar_. Se mostrará un mensaje con el texto _La base de datos standard no existe ¿Quiere crearla?_. Pulsar _Sí_.
 
-![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-01.jpg)
-     * Una vez iniciado el programa Eneboo se mostrará el entorno Eneboo.
-![Pantalla INICIAL](https://raw.githubusercontent.com/eneboo/doc/master/images/standard/conectar.png)
+![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-03.jpg)
+
+1. Una vez iniciado el programa Eneboo se mostrará el entorno Eneboo.
+
+
+![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-02.jpg)
+
+![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-03.jpg)
+
+![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-04.jpg)
+
+![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-05.jpg)
 
 ---
 ####PASO 6.-DESCARGAR LOS “MÓDULOS” de eneboo...
