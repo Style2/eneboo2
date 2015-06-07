@@ -71,8 +71,10 @@ www.wampserver.com\en
 * Bajarlo de:
      * A) en http://eneboo.org/pub/contrib/ (ultimas versiones-releases)
      * B) en www.eneboo.org (el que incluye postgre, sql u otro). Ir a “descargas”......”versiones estables”.....abajo....Hay dos opciones:
-          * B.1)...en el “servidor” la **version “DBA”**...para instalar módulos personalizados.
-          * B.2)...en los “ordenadores-clientes” la **versión “QUICK”**...que evita problemas.
+          * B.1)...en el PRIMER ORDENADOR DE LA RED o “servidor”.....elegir la **version “DBA”**.
+                 * sirve para instalar módulos personalizados y otras tareas de "Administrador" 
+          * B.2)...en los SIGUIENTES “ordenadores-clientes”.....elegir la **versión “QUICK”**.
+                 * sirve para ordenadores donde NO QUIERES que estropeen/instalen NADA y evita problemas.
 
 * VERSION DBA:
 Build dbAdmin Windows 32bits
