@@ -123,20 +123,28 @@ www.wampserver.com\en
 ---
 ####PASO 7.-INSTALAR LOS MÓDULOS DE ENEBOO:
 
-* OPCIÓN A) todos de golpe (ESTO DA MUCHOS ERRORES, MEJOR INSTALAR LOS MODULOS UNO A UNO): “modulos estandar en paquete eneboo”o: standard.eneboopkg
+* (hay 3 opciones):
 
-* “gestiweb-eneboo-modules-aea6681” (ESTO DA MUCHOS ERRORES, MEJOR INSTALAR LOS MODULOS UNO A UNO)
-* ...entrar en “eneboo-sistema-administracion-cargar paquete de modulos”....e ir a la carpeta donde estan guardados...darle al enter en el listado...esperar....mucho...salen errores...
-* ...“flfiles:Módulo : El valor flcontmode no existe en la tabla flmodules “...
-* ...”existen tablas que no usan el sistema INNODB...quiere convertirlas?”...NO
-* ...ir a “eneboo-sistema-administracion-regenerar la base de datos”...
+* OPCIÓN A) todos de golpe en "PAQUETE": (ESTO DA MUCHOS ERRORES, MEJOR INSTALAR LOS MODULOS UNO A UNO): 
+
+      * “modulos estandar en paquete eneboo” o: **standard.eneboopkg**
+      1. En el área de _Módulos_ de la parte izquierda, abrir la opción _Sistema -> Administración -> Cargar Paquete de módulos_.
+      1. Localizar el archivo standard.eneboopkg y pulsar _Abrir_. Cuando finalice la carga, Eneboo Standard estará listo para empezar a trabajar.
+      1. A mi me dio ERROR:
+          * ...entrar en “eneboo-sistema-administracion-cargar paquete de modulos”....e ir a la carpeta donde estan guardados...darle al enter en el listado...esperar....mucho...salen errores...
+          * ...“flfiles:Módulo : El valor flcontmode no existe en la tabla flmodules “...
+
+* OPCIÓN B) todos de golpe en "CARPETA DE MÓDULOS"
+
+     * “modulos estandar de eneboo” descargar en zip: eneboo_standard.zip (3 megas)o (ESTE ES BUENO, DESCOMPRIME SOLO LOS MODULOS DEL AREA DE CONTABILIDAD Y FACTURACION  EN UNA CARPETA Y LUEGO SE INSTALAN DESDE EL PROGRAMA ENEBOO):
 
 
-* OPCIÓN B) “modulos estandar de eneboo” descargar en zip: eneboo_standard.zip (3 megas)o (ESTE ES BUENO, DESCOMPRIME SOLO LOS MODULOS DEL AREA DE CONTABILIDAD Y FACTURACION  EN UNA CARPETA Y LUEGO SE INSTALAN DESDE EL PROGRAMA ENEBOO):
+* OPCIÓN C) De uno en uno o "MÓDULO A MÓDULO":
 
-
-* OPCIÓN C) “todos los módulos de gestiweb” descargar en zip  (ESTE ES MEJOR, DESCOMPRIME TODOS LOS MODULOS EN UNA CARPETA Y LUEGO SE INSTALAN DESDE EL PROGRAMA ENEBOO):
-* “Si desea descargar la última versión de nuestros módulos oficiales en ZIP, haga clic en el siguiente enlace: https://github.com/gestiweb/eneboo-modules/zipball/master “ (8 megas)
+      * ojo!: no cambiar los NO-INNODB:
+          * **...”existen tablas que no usan el sistema INNODB...quiere convertirlas?”...NO**
+      * “todos los módulos de gestiweb” descargar en zip  (ESTE ES MEJOR, DESCOMPRIME TODOS LOS MODULOS EN UNA CARPETA Y LUEGO SE INSTALAN UNO A UNO DESDE EL PROGRAMA ENEBOO):
+      * “Si desea descargar la última versión de nuestros módulos oficiales en ZIP, haga clic en el siguiente enlace: https://github.com/gestiweb/eneboo-modules/zipball/master “ (8 megas)
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-05.jpg)
 
@@ -155,8 +163,13 @@ www.wampserver.com\en
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-12.jpg)
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-13.jpg)
+
+* al acabar salir del programa Eneboo y volver a entrar.
+
+* ...ir a “eneboo-sistema-administracion-regenerar la base de datos”...
+
 ---
-####PASO 8.-REGENERAR LA BASE DE DATOS DESPUÉS DE CARGAR MODULOS:
+####PASO 8.-REGENERAR LA BASE DE DATOS DESPUÉS DE CARGAR MÓDULOS:
 
 * ...entrar en “eneboo-sistema-administración-cargar Módulo”....e ir a la carpeta donde están guardados o descomprimidos del paso anterior...
 * y después de cada uno:  ...ir a “eneboo-sistema-administración-”+mas”-principal-Regenerar la base de datos”..
