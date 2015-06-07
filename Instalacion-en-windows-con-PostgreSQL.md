@@ -58,6 +58,7 @@
      * Aparecerá la pantalla _Conectar_.
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-01.jpg)
+
 1. Rellenar los campos con los siguientes valores:
     * Base de datos: (nombre empresa)
     * Usuario: postgres (o el que hemos puesto como administrador de la base de datos PostgreSQL-ver phpMyAdminIII).
@@ -70,16 +71,12 @@
     * Controlador: POSTGRESQL
     * Servidor: localhost
     * Puerto: 5432
+
 1. Pulsar el botón _Conectar_. Se mostrará un mensaje con el texto _La base de datos standard no existe ¿Quiere crearla?_. Pulsar _Sí_.
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-03.jpg)
 
 1. Una vez iniciado el programa Eneboo se mostrará el entorno Eneboo.
-
-
-![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-02.jpg)
-
-![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-03.jpg)
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-04.jpg)
 
