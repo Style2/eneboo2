@@ -101,10 +101,13 @@ www.wampserver.com\en
      * servidor: 127.0.0.1 (antes se llamaba “localhost”).....o aquí pondriamos el TCP_IP del ordenador que tiene la BD... 
      * puerto: el que da eneboo....3306
 
+* Pulsar el botón **"CONECTAR"** y si esa base de datos no existe, te pregunta si quieres crearla...SI.
+
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-03.jpg)
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-04.jpg)
 
+* ...y aparece el entorno Eneboo (pero no puede hacer nada hasta que se cargen los módulos...):
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-05.jpg)
 
 ---
