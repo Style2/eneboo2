@@ -183,6 +183,8 @@ www.wampserver.com\en
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-13.jpg)
 
+![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-14.jpg)
+
 * al acabar salir del programa Eneboo y volver a entrar.
 
 * ...ir a “eneboo-sistema-administracion-regenerar la base de datos”...
@@ -194,6 +196,10 @@ www.wampserver.com\en
 * y después de cada uno:  ...ir a “eneboo-sistema-administración-”+mas”-principal-Regenerar la base de datos”..
 ...hay que “regenerar la base de datos” y salir del programa y volver a entrar después de haber instalado cada módulo......
 
+![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-20.jpg)
+![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-21.jpg)
+![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-22.jpg)
+![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-23.jpg)
 ---
 ###PASO EXTRA-Aclaración...por qué yo elegí MySQL?
 
