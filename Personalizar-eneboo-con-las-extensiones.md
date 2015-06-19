@@ -1,3 +1,15 @@
+* CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ULTIMA ACTUALIZACIÓN: 19 de junio de 2015
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Personalizar-eneboo-con-las-extensiones)
+
+----
+
+##Personalizar eneboo con las extensiones:
+-----------------------------
+
+https://groups.google.com/forum/#!searchin/eneboo/jmarco/eneboo/gpsrwXpDBPQ/QM2b4S7HH1IJ
+
 Hola. No se si te voy a aclarar algo o te voy a liar más de lo que estás:
 
 Asumo varias cosas:
