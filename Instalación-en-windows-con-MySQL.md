@@ -62,11 +62,11 @@ www.wampserver.com\en
 
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-16.jpg)
 
-***Sólo AÑADIR los usuarios:
+* **Sólo AÑADIR los usuarios:
 2.a.-”usuario”, para servidor:”%”, contraseña “usuario”, y “marcar todos”, resto igual...”añadir usuario”.
 
 
-****NOTA: PARA UN SOLO ORDENADOR NO HACE FALTA TOCAR NADA MÁS: ni apache, ni MySQL, ni PHP....dejar el wamp como está.*******************
+* ***NOTA: PARA UN SOLO ORDENADOR NO HACE FALTA TOCAR NADA MÁS: ni apache, ni MySQL, ni PHP....dejar el wamp como está.*******************
 
 
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-17.jpg)
