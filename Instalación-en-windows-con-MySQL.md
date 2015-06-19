@@ -111,7 +111,8 @@ www.wampserver.com\en
 ####PASO 5.-ARRANCAR EL PROGRAMA ENEBOO:
 
 * ejecutar el archivo **eneboo.exe** del subdirectorio **bin**. Por ejemplo:("C:\eneboo-2.4.0.2-dba-win32\bin\eneboo.exe")
-* **(OJO: primero tiene que funcionar WAMPSERVER como servidor...)** 
+* **(OJO: primero tiene que funcionar WAMPSERVER como servidor...QUE LA "W" AL LADO DEL RELOJ ESTÉ DE COLOR VERDE...SI ESTÁ ROJA O AMARILLA NO FUNCIONARÁ)** 
+
 * Aparecerá la pantalla _Conectar_.
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-01.jpg)
