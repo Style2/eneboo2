@@ -60,6 +60,7 @@
 1. [GESTIWEB: ](https://github.com/gestiweb)
 1. [AULLA: ](https://github.com/Aulla)
 1. [DEZETAGE: ](https://github.com/dezetage)
+1. [KLO - MANOLO: ](https://github.com/klo-manolo)
 1. [Otros: ](https://github.com/Miguel-J/eneboo/wiki/REPOSITORIOS-DE-ENEBOO)
 
 ---
