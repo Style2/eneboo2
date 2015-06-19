@@ -190,9 +190,9 @@ www.wampserver.com\en
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-14.jpg)
 
-* al acabar salir del programa Eneboo y volver a entrar.
+* PARA RENOVAR LA CACHÉ: al acabar salir del programa Eneboo y volver a entrar.
 
-* ...ir a “eneboo-sistema-administracion-regenerar la base de datos”...
+* OPCIONAL:...ir a “eneboo-sistema-administracion-regenerar la base de datos”...(es bueno cuando hay cambios de DATOS, la primera vez que se instala no es imprescindible...)
 
 ---
 ####PASO 8.-REGENERAR LA BASE DE DATOS DESPUÉS DE CARGAR MÓDULOS:
