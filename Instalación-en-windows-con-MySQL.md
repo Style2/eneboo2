@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 6 de junio de 2015
+* ULTIMA ACTUALIZACIÓN: 19 de junio de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Instalaci%C3%B3n-en-windows-con-MySQL)
 
 ----
@@ -62,12 +62,16 @@ www.wampserver.com\en
 
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-16.jpg)
 
-* **Sólo AÑADIR los usuarios:
-2.a.-”usuario”, para servidor:”%”, contraseña “usuario”, y “marcar todos”, resto igual...”añadir usuario”.
+* **AÑADIR el o los usuarios que se quieran**:
+
+     * Poner un nombre, ejemplo: ”usuario” (u otra) 
+     * servidor: ”%”, 
+     * contraseña “usuario”, (u otra)
+     * y “marcar todos”, resto igual...
+     * PULSAR: ”**añadir usuario**”.
 
 
-* ***NOTA: PARA UN SOLO ORDENADOR NO HACE FALTA TOCAR NADA MÁS: ni apache, ni MySQL, ni PHP....dejar el wamp como está.*******************
-
+* **NOTA: PARA UN SOLO ORDENADOR NO HACE FALTA TOCAR NADA MÁS: ni apache, ni MySQL, ni PHP....dejar el wamp como está.**
 
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-17.jpg)
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-18.jpg)
