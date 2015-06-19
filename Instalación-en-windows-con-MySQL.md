@@ -55,8 +55,12 @@ www.wampserver.com\en
 * ...te pide el explorador de internet predeterminado...enter
 * ….te pide el server....”localhost”....y el email para configuar el PHP...dejo “you@yourdomain”
 
+* **NOTA: CÓMO SABEMOS QUE FUNCIONA?: PORQUE ABAJO-A LA DERECHA (AL LADO DEL RELOJ) HAY UNA "W" DE COLOR VERDE** (si está amarilla o roja es que algo va mal...)
+
 ---
 ####PASO 2.- Ejecutar PHPMYADMIN con botón izquierdo en la W VERDE.... 
+
+![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-16.jpg)
 
 ***Sólo AÑADIR los usuarios:
 2.a.-”usuario”, para servidor:”%”, contraseña “usuario”, y “marcar todos”, resto igual...”añadir usuario”.
@@ -65,7 +69,6 @@ www.wampserver.com\en
 ****NOTA: PARA UN SOLO ORDENADOR NO HACE FALTA TOCAR NADA MÁS: ni apache, ni MySQL, ni PHP....dejar el wamp como está.*******************
 
 
-![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-16.jpg)
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-17.jpg)
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-18.jpg)
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-19.jpg)
