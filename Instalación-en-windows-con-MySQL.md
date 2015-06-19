@@ -58,7 +58,11 @@ www.wampserver.com\en
 * **NOTA: CÓMO SABEMOS QUE FUNCIONA?: PORQUE ABAJO-A LA DERECHA (AL LADO DEL RELOJ) HAY UNA "W" DE COLOR VERDE** (si está amarilla o roja es que algo va mal...)
 
 ---
-####PASO 2.- Ejecutar PHPMYADMIN con botón izquierdo en la W VERDE.... 
+####PASO 2.- AÑADIR USUARIOS.  (PASO OPCIONAL)
+
+* Este paso no es imprescindible si sólo se trabaja con un ordenador y NO está conectado a internet, porque el programa ya crea el usuario "root" sin contraseña, pero es recomendable...
+
+* Ejecutar PHPMYADMIN con botón izquierdo en la W VERDE.... 
 
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-16.jpg)
 
