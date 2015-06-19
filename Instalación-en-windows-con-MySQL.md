@@ -9,23 +9,27 @@ INSTALACION ENEBOO CON MYSQL:
 -----------------------------
 
 ---
-###PASO 1.-Descargar e instalar el servidor de base de datos WAMP (incluye APACHE, MYSQL Y PHPMYADMIN..) de:
+###PASO 1.-DESCARGAR e instalar el SERVIDOR DE BASE DE DATOS WAMP (incluye APACHE, MYSQL Y PHPMYADMIN..) de:
 www.wampserver.com\en
 
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-01.jpg)
 
-#####1.a- INSTALACION EN WINDOWS 7 o 8: 
+--
+#####PASO 1- OPCIÓN A- INSTALACIÓN EN WINDOWS 7 o 8: 
 
-* instalo la 2.5 para 64 bits con:
+* Si el ordenador es de **estructura 64 bits**, instalar la versión 2.5 para 64 bits (ver flecha roja en imagen) con:
      * apache 2.4.9
      * mysql  5.6.17
      * php 5.5.12
      * phpMyAdmin 4.1.14
      * sqlbuddy 1.3.3
      * xdebug 2.2.5
+* Si el ordenador es de **estructura 32 bits**, instalar la versión 2.5 para 32 bits (ver flecha roja en imagen)
 
+* **A CONTINUACIÓN SALTARSE LOS PASOS DE LA OPCIÓN B: PARA WINDOWS XP**
 
-#####1.b-INSTALACION EN WINDOWS XP:
+--
+#####PASO 1- OPCIÓN B- INSTALACIÓN EN WINDOWS XP:
 
 * En esta es la  2.2e de 32 bits ....la 2.5 NO porque daba error en el mySQL superior al 5.5....
 
@@ -37,25 +41,19 @@ www.wampserver.com\en
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-07.jpg)
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-08.jpg)
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-09.jpg)
+
+---
+#### A PARTIR DE AQUI ES IGUAL TANTO PARA LA OPCIÓN DE WINDOWS XP COMO PARA LA DE WINDOWS 8 (en 32 O en 64 bits):
+
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-10.jpg)
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-11.jpg)
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-12.jpg)
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-13.jpg)
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-14.jpg)
 
-* ...(pide instalar el “Visual c++ 2010 x86 ver.32 bits....pues lo instalo...)....después vuelvo y te lleva al sourgeforge
-     * apache 2.2.22
-     * mysql  5.5.12
-     * php      5.4.16
-     * phpMyAdmin 4.0.4
-     * sqlbuddy 1.3.3
-     * xdebug 2.2.3
-
+* ...(si pide instalar el “Visual c++ 2010 x86 ver.32 bits....pues se instala...)
 * ...te pide el explorador de internet predeterminado...enter
 * ….te pide el server....”localhost”....y el email para configuar el PHP...dejo “you@yourdomain”
-
-
-***NOTA hay otra opcion: (pero se instaló mal...)1.-Descargar e instalar easyphp en www.easyphp.org: incluye APACHE, EASYPHP Y PHPMYADMIN..Ejecutarlo (doble click en la “e” junto al reloj)....si da problemas con apache le das otra vez a conectar y en paz.2.- Ejecutar “Administracion” (boton derecha mouse en la “e”)...y allí “php myadmin”
 
 ---
 ####PASO 2.- Ejecutar PHPMYADMIN con botón izquierdo en la W VERDE.... 
