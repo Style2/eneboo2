@@ -1,3 +1,9 @@
+INCIDENCIA:
+
+https://groups.google.com/forum/#!topic/eneboo/KTHQjW8ieR4
+
+---
+AULLA-MANUAL:
 
 Receta para extraer una extensión de un paquete  que contiene muchas extensiones.
 
