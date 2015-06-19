@@ -53,6 +53,7 @@
 1. [EnebooTools-ENEBOO-OFICIAL](https://github.com/Miguel-J/eneboo/wiki/EnebooTools)
 1. [EnebooTools para Windows-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows)
 1. [EnebooTools: Instalación en Linux-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
+1. [Personalizar eneboo con las extensiones-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Personalizar-eneboo-con-las-extensiones)
 
 ---
 ####REPOSITORIOS DE ENEBOO:
