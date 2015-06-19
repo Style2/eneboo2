@@ -149,7 +149,7 @@ www.wampserver.com\en
 
 * (hay 3 opciones):
 
-* OPCIÓN A) todos de golpe en "PAQUETE": (ESTO DA MUCHOS ERRORES, MEJOR INSTALAR LOS MODULOS UNO A UNO): 
+* **OPCIÓN A) todos de golpe en "PAQUETE"**: (ESTO DA MUCHOS ERRORES, MEJOR INSTALAR LOS MODULOS UNO A UNO): 
 
       * “modulos estandar en paquete eneboo” o: **standard.eneboopkg**
       1. En el área de _Módulos_ de la parte izquierda, abrir la opción _Sistema -> Administración -> Cargar Paquete de módulos_.
@@ -158,12 +158,12 @@ www.wampserver.com\en
           * ...entrar en “eneboo-sistema-administracion-cargar paquete de modulos”....e ir a la carpeta donde estan guardados...darle al enter en el listado...esperar....mucho...salen errores...
           * ...“flfiles:Módulo : El valor flcontmode no existe en la tabla flmodules “...
 
-* OPCIÓN B) todos de golpe en "CARPETA DE MÓDULOS"
+* **OPCIÓN B) todos de golpe en "CARPETA DE MÓDULOS"**:
 
      * “modulos estandar de eneboo” descargar en zip: eneboo_standard.zip (3 megas)o (ESTE ES BUENO, DESCOMPRIME SOLO LOS MODULOS DEL AREA DE CONTABILIDAD Y FACTURACION  EN UNA CARPETA Y LUEGO SE INSTALAN DESDE EL PROGRAMA ENEBOO):
 
 
-* OPCIÓN C) De uno en uno o "MÓDULO A MÓDULO":
+* **OPCIÓN C) De uno en uno o "MÓDULO A MÓDULO"**:
 
       * ojo!: no cambiar los NO-INNODB:
           * **...”existen tablas que no usan el sistema INNODB...quiere convertirlas?”...NO**
