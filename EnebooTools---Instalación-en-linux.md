@@ -108,7 +108,7 @@ Para tener el programa funcionando, se recomienda:
 
   `sudo apt-get install libxml2-dev libxslt-dev python-dev`
 
-* aqui colocar las 2 capturas de pantalla (scrot en linux-lubuntu....o camara del movil....triste)
+* aqui colocar las 2 capturas de pantalla (tecla "Fn"+ tecla "Impr Pant" y lo graba en /home/Linux)
 
 ![eneboo-tools2](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/eneboo-tools/eneboo-tools2.jpg)
 
