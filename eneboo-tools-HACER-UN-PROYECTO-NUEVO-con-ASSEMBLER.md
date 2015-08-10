@@ -33,10 +33,10 @@ https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux
 
 * PASO 5: CONFIGURACIÓN DE ENEBOO-TOOLS (Esta página)
      * PASO 5-A: CONFIGURACIÓN INICIAL DE ASSEMBLER: 
-     * PASO 5-A-1.-Introducción-para qué sirve:
-     * PASO 5-A-2.-Assembler: Configuración previa:
-* OPCIÓN: AÑADIR REPOSITORIOS PARTICULARES A LA MEZCLA: 
-     * PASO 5-A-3.- ACTUALIZAR CAMBIOS DE RUTAS A LOS REPOSITORIOS:
+        * PASO 5-A-1.-Introducción-para qué sirve:
+        * PASO 5-A-2.-Assembler: Configuración previa:
+        * OPCIÓN: AÑADIR REPOSITORIOS PARTICULARES A LA MEZCLA: 
+        * PASO 5-A-3.- ACTUALIZAR CAMBIOS DE RUTAS A LOS REPOSITORIOS:
      * PASO 5-B : ASSEMBLER "NEW" - (ASISTENTE AUTOMÁTICO PARA CREAR PROYECTOS o EXTENSIONES o SET´s):
      * PASO 5-C : ASSEMBLER "BUILD" - (COMPILAR/CREAR UN PROYECTO) :
 
