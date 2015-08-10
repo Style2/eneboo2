@@ -2,10 +2,9 @@
 * MODIFICADO POR: miguelajsmaps@gmail.com
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * ULTIMA ACTUALIZACIÓN: 10 de agosto de 2015
-* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/eneboo-tools-HACER-UN-PROYECTO-NUEVO-con-ASSEMBLER)
 
 ----
-
 
 
 Proyecto NUEVO DE MEZCLA CON Eneboo-tools 
@@ -15,11 +14,11 @@ Proyecto NUEVO DE MEZCLA CON Eneboo-tools
 INSTALACIÓN PREVIA (Dependencias): 
 ---------------------
 
-Visitar la página:
-
+PASO 1 A 4:  Visitar la página:
 
 https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux
 
+##INDICE:
 
 ###PASO 1: HACERSE CON UN LINUX
 * Por qué? ...pues porque parece ser que necesitamos unas "librerías" para el programa Python...y no hay versión "viable" en Windows...
