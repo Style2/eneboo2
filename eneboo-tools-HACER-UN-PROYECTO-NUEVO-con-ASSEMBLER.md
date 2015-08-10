@@ -7,11 +7,10 @@
 ----
 
 
-Proyecto NUEVO DE MEZCLA CON Eneboo-tools 
-=================================================
+###Proyecto NUEVO DE MEZCLA CON Eneboo-tools 
 
+###INSTALACIÓN PREVIA (Dependencias): 
 
-INSTALACIÓN PREVIA (Dependencias): 
 ---------------------
 
 PASOS 1 a 4:  Visitar la página:
