@@ -47,7 +47,7 @@ www.ubuntu.com
 
 ###PASO 2: INSTALAR PYTHON:
 
-#####2.A...Y QUE DEMONIOS ES PYTHON?
+#####2.a...Y QUE DEMONIOS ES PYTHON?
 
 
 https://www.python.org/
@@ -157,7 +157,7 @@ http://git-scm.com/downloads
 * para cambiar de directorio usar "cd .." o "cd subdirectorio"
 
 
-###PASO 4: Instalación
+###PASO 4: INSTALACIÓN DE ENEBOO-TOOLS
 
 * meterse en el subdirectorio de eneboo-tools:
 
@@ -188,6 +188,6 @@ http://git-scm.com/downloads
 
 `$ `
 
-###PASO 5: EJEMPLOS-INSTALAR ENEBOO
+###PASO 5: USO-EJEMPLOS-APLICACIÓN DE ENEBOO-TOOLS
 
 Ver resto de páginas del wiki
