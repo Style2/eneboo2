@@ -1,7 +1,7 @@
 * CREADO POR: deavid - Gestiweb
 * MODIFICADO POR: miguelajsmaps@gmail.com
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 10 de agosto de 2015
+* ÚLTIMA ACTUALIZACIÓN: 10 de agosto de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/eneboo-tools-HACER-UN-PROYECTO-NUEVO-con-ASSEMBLER)
 
 ----
@@ -14,7 +14,7 @@ Proyecto NUEVO DE MEZCLA CON Eneboo-tools
 INSTALACIÓN PREVIA (Dependencias): 
 ---------------------
 
-PASO 1 A 4:  Visitar la página:
+PASOS 1 a 4:  Visitar la página:
 
 https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux
 
@@ -22,41 +22,26 @@ https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux
 
 ###INDICE:
 
-####PASO 1: HACERSE CON UN LINUX
-* Por qué? ...pues porque parece ser que necesitamos unas "librerías" para el programa Python...y no hay versión "viable" en Windows...
-
-####PASO 2: INSTALAR PYTHON:
-
-######2.c-PASO A-INSTALAR PYTHON: (Linux ya lo trae de fábrica) 
-
-######2.c-PASO B-INSTALAR LIBXML2 y LIBXSLT:
-
-####PASO 3: CLONAR EL GITHUB DE ENEBOO-TOOLS (eneboo-modules y eneboo-features): 
-
-####PASO 4: INSTALACIÓN DE ENEBOO-TOOLS
+* PASO 1: HACERSE CON UN LINUX
+     * Por qué? ...pues porque parece ser que necesitamos unas "librerías" para el programa Python...y no hay versión "viable" en Windows...
+* PASO 2: INSTALAR PYTHON:
+     * 2.c-PASO A-INSTALAR PYTHON: (Linux ya lo trae de fábrica) 
+     * 2.c-PASO B-INSTALAR LIBXML2 y LIBXSLT:
+* PASO 3: CLONAR EL GITHUB DE ENEBOO-TOOLS (eneboo-modules y eneboo-features): 
+* PASO 4: INSTALACIÓN DE ENEBOO-TOOLS
 
 ---
 
-####PASO 5: CONFIGURACIÓN DE ENEBOO-TOOLS (Esta página)
-
-####PASO 5-A: CONFIGURACIÓN INICIAL DE ASSEMBLER: 
-
-* PASO 5-A-1.-Introducción-para qué sirve:
-
-* PASO 5-A-2.-Assembler: Configuración previa:
-
-#####OPCIÓN: AÑADIR REPOSITORIOS PARTICULARES A LA MEZCLA: 
-
-* PASO 5-A-3.- ACTUALIZAR CAMBIOS DE RUTAS A LOS REPOSITORIOS:
-
-#### PASO 5-B : ASSEMBLER "NEW" - (ASISTENTE AUTOMÁTICO PARA CREAR PROYECTOS o EXTENSIONES o SET´s):
-
-#### PASO 5-C : ASSEMBLER "BUILD" - (COMPILAR/CREAR UN PROYECTO) :
-
-
+* PASO 5: CONFIGURACIÓN DE ENEBOO-TOOLS (Esta página)
+     * PASO 5-A: CONFIGURACIÓN INICIAL DE ASSEMBLER: 
+     * PASO 5-A-1.-Introducción-para qué sirve:
+     * PASO 5-A-2.-Assembler: Configuración previa:
+* OPCIÓN: AÑADIR REPOSITORIOS PARTICULARES A LA MEZCLA: 
+     * PASO 5-A-3.- ACTUALIZAR CAMBIOS DE RUTAS A LOS REPOSITORIOS:
+     * PASO 5-B : ASSEMBLER "NEW" - (ASISTENTE AUTOMÁTICO PARA CREAR PROYECTOS o EXTENSIONES o SET´s):
+     * PASO 5-C : ASSEMBLER "BUILD" - (COMPILAR/CREAR UN PROYECTO) :
 
 --------------
-
 
 ###PASO 5-A: CONFIGURACIÓN INICIAL DE ASSEMBLER: 
 
@@ -297,7 +282,7 @@ Aún faltan cosas básicas por desarrollar, como por ejemplo:
 
 --------------
 
-Packager
+#Packager
 
 Esta herramienta permite empaquetar código eneboo en un sólo fichero .eneboopkg. Este tipo de ficheros presentan varias ventajas frente al código tradicional ordenado en carpetas de módulos, a saber:
 
