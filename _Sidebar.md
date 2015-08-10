@@ -61,13 +61,14 @@
 1. [Personalizar eneboo con las extensiones-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Personalizar-eneboo-con-las-extensiones)
 1. [extraer una extensión de un paquete que contiene muchas extensiones.-AULLA](https://github.com/Miguel-J/eneboo/wiki/Receta-para-extraer-una-extensi%C3%B3n-de-un-paquete--que-contiene-muchas-extensiones)
 1. [Documentar extensiones-GESTIWEB](https://github.com/Miguel-J/eneboo/wiki/Documentar-extensiones-en-Eneboo-(GESTIWEB))
+
 ---
 ####REPOSITORIOS DE ENEBOO:
 1. [ENEBOO OFICIAL: ](https://github.com/eneboo)
-1. [GESTIWEB: ](https://github.com/gestiweb)
+1. [KLO - MANOLO: "el más actualizado"](https://github.com/klo-manolo)
+1. [GESTIWEB: "oficial-master"](https://github.com/gestiweb)
 1. [AULLA: ](https://github.com/Aulla)
 1. [DEZETAGE: ](https://github.com/dezetage)
-1. [KLO - MANOLO: ](https://github.com/klo-manolo)
 1. [Otros: ](https://github.com/Miguel-J/eneboo/wiki/REPOSITORIOS-DE-ENEBOO)
 
 ---
@@ -76,3 +77,4 @@
 1. [GRUPO DE CORREO OFICIAL GOOGLE](https://groups.google.com/forum/#!forum/eneboo)
 1. [Página de la Wikipedia de Eneboo](https://es.wikipedia.org/wiki/Eneboo)
 1. [Página de la Wikipedia de AbanQ](https://es.wikipedia.org/wiki/Abanq)
+1. [Página de la Wikipedia de FacturaScripts](https://es.wikipedia.org/wiki/FacturaScripts)
