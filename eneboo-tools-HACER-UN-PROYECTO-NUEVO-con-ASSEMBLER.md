@@ -18,6 +18,8 @@ PASO 1 A 4:  Visitar la página:
 
 https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux
 
+---
+
 ###INDICE:
 
 ####PASO 1: HACERSE CON UN LINUX
@@ -32,6 +34,8 @@ https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux
 ####PASO 3: CLONAR EL GITHUB DE ENEBOO-TOOLS (eneboo-modules y eneboo-features): 
 
 ####PASO 4: INSTALACIÓN DE ENEBOO-TOOLS
+
+---
 
 ####PASO 5: CONFIGURACIÓN DE ENEBOO-TOOLS (Esta página)
 
@@ -62,14 +66,11 @@ eneboo-assembler es una herramienta de "collage" de código fuente. Toma como ba
 
 Es una buena forma para mantener centenares de versiones distintas del mismo programa al día, gestionando correctamente los cambios propios que tiene cada versión.
 
+--------------
 
 ####PASO 5-A-2.-Assembler: Configuración previa:
 
-------------------------
-
-
 Ir a la consola de linux: Ctrl+Alt+F1 (volver a entorno ventana: Ctrl+Alt+F7)
-
 
 El comando "eneboo-assembler" es el que usaremos normalmente para realizar las 
 mezclas desde consola. Es muy sencillo y práctico. 
@@ -87,7 +88,7 @@ Para empezar, necesitaremos como mínimo 2 repositorios para empezar:
     * Módulos Oficiales
     * Extensiones Oficiales
 
-...hay que COPIARLOS (descargados de Github "gestiweb" o "klo-manolo") en una CARPETA-SUBDIRECTORIO, por ejemplo "eneboo-proyecto1"...
+* ...hay que COPIARLOS (descargados de Github "gestiweb" o "klo-manolo") en una CARPETA-SUBDIRECTORIO, por ejemplo "eneboo-proyecto1"...
 
 Todas las acciones de ENEBOO-ASSEMBLER leen los directorios INDICADOS en los ARCHIVOS de las CONFIGURACIONES. Para que esto funcione como debe, es necesario revisar la configuración que nos crea en $HOME/.eneboo-tools/assembler-config.ini
 
@@ -112,10 +113,9 @@ EJEMPLO: Este sería un ejemplo de configuración, en mi caso:
             /home/linux/eneboo-proyecto1/eneboo-features
     buildcache = ~/.eneboo-tools/buildcache
 
+--------------
 
 ####PASO 5-A-3.- ACTUALIZAR CAMBIOS DE RUTAS A LOS REPOSITORIOS:
-
----------------------------------
 
 Siempre que modificamos la ruta de una extensión, o ponemos o quitamos alguna, es necesario ejecutar "dbupdate", que almacenará en caché dónde están los módulos y extensiones. Si no lo hacéis luego os dará errores de que no encuentra las extensiones nuevas:
 
@@ -126,14 +126,13 @@ Las extensiones si os fijáis son carpetas con ficheros de configuración y con 
 Hay un proyecto de ejemplo creado que une cuatro extensiones muy básicas. 
 
 
+--------------
 
 ### PASO 5-B : ASSEMBLER "NEW" - (ASISTENTE AUTOMÁTICO PARA CREAR PROYECTOS o EXTENSIONES o SET´s):
 
------------------------------------------
-
 UTILIDAD: Proceso automático de "listar" los módulos y extensiones ANTES de COMPILARLOS (paso 5-C)
 
-Hasta hace poco para crear las extensiones nuevas que el assembler pueda leer habÃía que crear los ficheros y carpetas a mano. Como son unas cuantas, esto era un tanto costoso.
+Hasta hace poco para crear las extensiones nuevas que el assembler pueda leer había que crear los ficheros y carpetas a mano. Como son unas cuantas, esto era un tanto costoso.
 
 Para facilitar las cosas hemos creado una acción "new" que contiene un asistente que realizará las preguntas necesarias y luego escribirá en disco la extensión.
 
@@ -148,14 +147,14 @@ Si se ejecuta sin argumentos, preguntará los datos mí­nimos para crear la pla
     Seleccione una opción: ext
 
     Código para la nueva funcionalidad: A002
+
 (el valor debe seguir el formato A999 (A puede ser un número)).
 
     Nombre corto de funcionalidad: mifun02
 
     Descripción de la funcionalidad: Funcionalidad 02 
     
-Si se le pasa el nombre de la carpeta y la descripción, omite los pasos 
-iniciales y pasa directamente al menú:
+Si se le pasa el nombre de la carpeta y la descripción, omite los pasos iniciales y pasa directamente al menú:
     
     $ eneboo-assembler new extA003-mifun03 "Funcionalidad 03" 
     
@@ -187,7 +186,7 @@ En el caso de las rutas, también existe autocompletado con el sistema de ficher
 Por defecto las extensiones se crean en la primera carpeta de extensiones que haya en la configuración, se puede cambiar la carpeta de destino en una opción del menú.
 
 
----
+--------------
 
 ### PASO 5-C : ASSEMBLER "BUILD" - (COMPILAR/CREAR UN PROYECTO) :
 
@@ -197,7 +196,7 @@ Para crear un proyecto (lo que llamamos "compilar") se lanza la acción "build" 
     
     $ eneboo-assembler build [FEATURE] [TARGET]
     
-*[FEATURE]* es el nombre corto (quitando la numeraciÃ³n) de la funcionalidad, es decir, para el proyecto *prj0002-standard* habrÃ­a que poner *standard*.
+*[FEATURE]* es el nombre corto (quitando la numeraciÃ³n) de la funcionalidad, es decir, para el proyecto *prj0002-standard* habrí­a que poner *standard*.
 
 *[TARGET]* puede tomar los valores:
 
@@ -206,10 +205,10 @@ Para crear un proyecto (lo que llamamos "compilar") se lanza la acción "build" 
         necesitamos para poder aplicar los parches luego)
     * **final:** 
         todo lo que lleva base, mas los parches que existen 
-        para este proyecto. (esto es lo que se envÃ­a al cliente)
+        para este proyecto. (esto es lo que se enví­a al cliente)
     * **src:** 
         una copia del target final, donde realizar los cambios 
-        a la extensiÃ³n
+        a la extensión
     * **patch:** 
         calcula el parche de las diferencias entre src y final. (incremental)
     * **test-patch:** 
@@ -282,36 +281,35 @@ Si os fijáis, la idea es en el futuro, "apilar" parches, es decir, que cuando m
 
 De momento, no hay soporte para parche incremental, pues casi todos los diff y patch contextuales son incapaces de realizar un patch incremental (la única excepción es el de XML). Así­ que de momento sólo se pueden guardar cambios reemplazando todos los anteriores (con fullpatch).
 
-Para guardar un cambio, despuÃ©s de haberlo probado con test-fullpatch y habiendo comprobado que no hemos perdido nada, se usa la acciÃ³n "save-fullpatch" del siguiente modo::
+Para guardar un cambio, despuÃ©s de haberlo probado con test-fullpatch y habiendo comprobado que no hemos perdido nada, se usa la acción "save-fullpatch" del siguiente modo::
 
     $ eneboo-assembler save-fullpatch prj001-basic
     
-Eso sÃ­, la operaciÃ³n **ES DESTRUCTIVA** y reemplazarÃ¡ lo que habÃ­a antes sin que se pueda recuperar. No recomiento usar esto si no tenemos la carpeta bajo control de versiones (GIT, SVN, etc), porque en un descuido nos podemos quedar sin parche.
+Eso sí­, la operación **ES DESTRUCTIVA** y reemplazará lo que habí­a antes sin que se pueda recuperar. No recomiento usar esto si no tenemos la carpeta bajo control de versiones (GIT, SVN, etc), porque en un descuido nos podemos quedar sin parche.
 
 
 Aún faltan cosas básicas por desarrollar, como por ejemplo:
 
     * Comando "save-patch" para guardar los cambios realizados en un parche incremental
-    * Comando "blend-patches" para unir todos los parches en uno solo. (excepto los N Ãºltimos) 
-    * Comando "export" para generar un tar.gz de los mÃ³dulos (del target final)
+    * Comando "blend-patches" para unir todos los parches en uno solo. (excepto los N últimos) 
+    * Comando "export" para generar un tar.gz de los módulos (del target final)
 
 
-------------------------------------------------------------------    
+--------------
 
 Packager
------------------------------
 
 Esta herramienta permite empaquetar código eneboo en un sólo fichero .eneboopkg. Este tipo de ficheros presentan varias ventajas frente al código tradicional ordenado en carpetas de módulos, a saber:
 
-- Se pueden importar de forma cÃ³moda desde la opción *Sistema > Administración > Cargar Paquete de Módulos* de eneboo.
+- Se pueden importar de forma cómoda desde la opción *Sistema > Administración > Cargar Paquete de Módulos* de eneboo.
 - Ocupan menos, ya que el código está comprimido.
 - Son más fáciles de trasladar y descargar.
 
-Para empaquetar un directorio que contenga código eneboo podemos usar::
+Para empaquetar un directorio que contenga código eneboo podemos usar:
 
     $ eneboo-packager create ruta_directorio_codigo -v
     
-Para conocer todas las opciones de la herramienta::
+Para conocer todas las opciones de la herramienta:
     
     $ eneboo-packager --help
 
