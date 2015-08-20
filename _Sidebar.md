@@ -43,6 +43,10 @@
 1. [Cambiar iconos a los botones-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/C%C3%B3mo-cambiar-los-iconos-de-los-botones)
 
 ---
+
+1. [Conexión de Eneboo con Prestashop (vía Facturascripts)-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Conexi%C3%B3n-de-Eneboo-con-Prestashop-v%C3%ADa-FacturaScripts)
+
+---
 ####PARA LA PROGRAMACION:
 
 #####Herramientas de apoyo:
