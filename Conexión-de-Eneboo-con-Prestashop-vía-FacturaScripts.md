@@ -1,4 +1,9 @@
-###MANUAL DE CONEXIÓN DE ENEBOO CON PRESTASHOP (A TRAVÉS DE FACTURASCRIPTS)
+* CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ULTIMA ACTUALIZACIÓN: 20 de agosto de 2015
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Conexi%C3%B3n-de-Eneboo-con-Prestashop-v%C3%ADa-FacturaScripts)
+
+----###MANUAL DE CONEXIÓN DE ENEBOO CON PRESTASHOP (A TRAVÉS DE FACTURASCRIPTS)
 
 
 0.- PASO 0: PREPARAR LA BASE DE DATOS-PRELIMINARES:
