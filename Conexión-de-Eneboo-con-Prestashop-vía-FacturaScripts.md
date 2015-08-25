@@ -19,38 +19,52 @@ c) impuesto super-reducido= 4%=”SRED”
 d) impuesto exportación-EU= 0%=”EU VAT”
 
 NOTA-1: lineasalbaranescli...tiene marcados todos como tipo “3” cuando el resto es “GEN”...????
+
 UPDATE lineasalbaranescli SET codimpuesto=”GEN”; 
 
 NOTA-2: lineasivafactcli...tiene marcados ALGUNOS como tipo “3” cuando el resto es “GEN”...????
+
 UPDATE lineasivafactcli SET codimpuesto=”GEN”; 
 
 NOTA-1: lineasalbaranesfact...tiene marcados todos como tipo “3” cuando el resto es “GEN”...????
+
 UPDATE lineasalbaranesfact SET codimpuesto=”GEN”; 
 
 
 #####0.B.- PASO PREVIO B: COMPROBAR QUE TODOS LOS PRODUCTOS TIENEN SU FAMILIA 
+
 (articulos.codfamilia)
 
 #####0.C.- PASO PREVIO C: AÑADIR UNA SERIE PARA VENTAS DE PRESTASHOP
+
 Te ahorra problemas de sincronización luego (número de factura, etc).
 
 
 #####0.D.- PASO PREVIO D: COMPROBAR QUE TODOS LOS PRODUCTOS TIENEN PRECIO
 El proceso no permite productos con precio 0...
+
 Ejemplo: 
 
 UPDATE articulos SET pvp=990 WHERE pvp=0;
 
 #####0.E.- PASO PREVIO E: COMPROBAR QUE TODOS LOS PRODUCTOS TIENEN “STOCK” POSITIVO
+
 El proceso no permite productos con stock negativo...
 
 a)TABLE: articulos COLUMN: stockfis
+
 UPDATE articulos SET stockfis=888 where stockfis=0;----------BIEN
+
 UPDATE articulos SET stockfis=888 where stockfis IS NULL;----BIEN
+
 UPDATE articulos SET stockfis=888 where stockfis=0;----------BIEN
+
 b) TABLE:stocks COLUMN:cantidad
+
 UPDATE stocks SET cantidad=990;----------BIEN
+
 c)TABLE:stocks COLUMN:disponible
+
 UPDATE stocks SET disponible=990;----------BIEN
 
 
