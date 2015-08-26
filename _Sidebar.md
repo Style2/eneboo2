@@ -24,7 +24,7 @@
 1. [Primeros pasos-ENEBOO](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Primeros-pasos)
 1. [Manual para Hoteles-ISOLIX](https://github.com/Miguel-J/eneboo/wiki/Manual-para-Hoteles-ISOLIX)
 1. [Diseños de Impresión e informes: Instalar el enlace a Jasper Reports]( https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes:-Instalar-el-enlace-a-Jasper-Reports)
-1. [Diseños de Impresión e informes: Configurar archivos Jasper-Reports para impresión de facturas, informes, etc](https://github.com/Miguel-J/eneboo/wiki/eneboo-reports)
+1. [Diseños de Impresión e informes: Configurar archivos Jasper-Reports para impresión de facturas, informes, etc](https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes:-Configurar-archivos-Jasper-Reports)
 
 #####Area Facturación
 1. [Area de facturación-ENEBOO](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-%C3%81rea-de-facturaci%C3%B3n)
@@ -63,6 +63,7 @@
 1. [EnebooTools: Instalación en Linux-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
 1. [EnebooTools: HACER-UN-PROYECTO-NUEVO-con-ASSEMBLER-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/eneboo-tools-HACER-UN-PROYECTO-NUEVO-con-ASSEMBLER)
 1. [Personalizar eneboo con las extensiones-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Personalizar-eneboo-con-las-extensiones)
+1. [Diseños de Impresión e informes: Añadir las extensiones Jasper-Reports a Eneboo](https://github.com/Miguel-J/eneboo/wiki/eneboo-reports)
 1. [extraer una extensión de un paquete que contiene muchas extensiones.-AULLA](https://github.com/Miguel-J/eneboo/wiki/Receta-para-extraer-una-extensi%C3%B3n-de-un-paquete--que-contiene-muchas-extensiones)
 1. [Documentar extensiones-GESTIWEB](https://github.com/Miguel-J/eneboo/wiki/Documentar-extensiones-en-Eneboo-(GESTIWEB))
 
