@@ -23,28 +23,28 @@ https://github.com/eneboo/reports4eneboo-reports
 
 ####ESTRUCTURA DE UN .jrxml
 
-1. PARTE 1.
+* PARTE 1.
 
 `      <?xml version="1.0" encoding="UTF-8"?>`
 
-1. PARTE 2. NOMBRE-TITULO DEL INFORME JASPER:
+* PARTE 2. NOMBRE-TITULO DEL INFORME JASPER:
 
 `     <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SIN LINEAS" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f56b01a9-9a77-44db-85ed-a8201e567af9">`
 
-1. PARTE 3. LÍMITES DEL INFORME JASPER:
+* PARTE 3. LÍMITES DEL INFORME JASPER:
 
 `	<property name="ireport.zoom" value="1.5"/>`
 	`<property name="ireport.x" value="0"/>`
 	`<property name="ireport.y" value="262"/>`
 
 
-1. PARTE 4. ENLACE CON LAS CLÁUSULAS DELIMITADORAS DE ENEBOO:
+* PARTE 4. ENLACE CON LAS CLÁUSULAS DELIMITADORAS DE ENEBOO:
 
 `     <parameter name="WHERE" class="java.lang.String" isForPrompting="false">`
       `(...)`
      `<parameter name="ORDERBY" class="java.lang.String" isForPrompting="false">`
 
-1. PARTE 5. DEFINIR TABLAS Y COLUMNAS QUE SE USARÁN (y traducirlas al nombre de FIELD-campos que usará Jasper para reconocerlas):
+* PARTE 5. DEFINIR TABLAS Y COLUMNAS QUE SE USARÁN (y traducirlas al nombre de FIELD-campos que usará Jasper para reconocerlas):
 
 NOTA: Cuidado, que TODAS acaban con una COMA....EXCEPTO LA ÚLTIMA....si no: nos dará un ERROR...
 
@@ -64,23 +64,27 @@ NOTA: Cuidado, que TODAS acaban con una COMA....EXCEPTO LA ÚLTIMA....si no: nos
 `ORDER BY $P!{ORDERBY}]]>`
 	`</queryString>`
 
-1. PARTE 6. DEFINIR QUÉ TIPO DE FIELD-CAMPOS SON LOS ELEGIDOS EN EL PASO ANTERIOR:
+* PARTE 6. DEFINIR QUÉ TIPO DE FIELD-CAMPOS SON LOS ELEGIDOS EN EL PASO ANTERIOR:
 
 NOTA: Cuidado, que si no salen todas las anteriores nos dará un ERROR...
 
 `	<field name="idfactura" class="java.lang.Integer"/>`
+
 	`<field name="codigofactura" class="java.lang.String"/>`
+
 	`<field name="codserie" class="java.lang.String"/>`
+
 	`<field name="fechafactura" class="java.sql.Date"/>`
+
 	`<field name="totalfactura" class="java.lang.Double"/>`
 
-1. PARTE 7. DEFINIR LAS VARIABLES
+* PARTE 7. DEFINIR LAS VARIABLES
 
 `	<variable name="sumaysigue" class="java.math.BigDecimal" resetType="Group" resetGroup="IDfactura" calculation="Sum">`
 		`<variableExpression><![CDATA[$F{pvptotallinea}]]></variableExpression>`
 	`</variable>`
 
-1. PARTE 8. LOCALIZAR CADA FIELD-campo EN EL LUGAR CORRESPONDIENTE:
+* PARTE 8. LOCALIZAR CADA FIELD-campo EN EL LUGAR CORRESPONDIENTE:
 
 ZONAS DISPONIBLES:
 
