@@ -41,9 +41,7 @@ https://github.com/eneboo/reports4eneboo-reports
 1. PARTE 4. ENLACE CON LAS CLÁUSULAS DELIMITADORAS DE ENEBOO:
 
 `     <parameter name="WHERE" class="java.lang.String" isForPrompting="false">`
-
       `(...)`
-
      `<parameter name="ORDERBY" class="java.lang.String" isForPrompting="false">`
 
 1. PARTE 5. DEFINIR TABLAS Y COLUMNAS QUE SE USARÁN (y traducirlas al nombre de FIELD-campos que usará Jasper para reconocerlas):
@@ -70,11 +68,11 @@ NOTA: Cuidado, que TODAS acaban con una COMA....EXCEPTO LA ÚLTIMA....si no: nos
 
 NOTA: Cuidado, que si no salen todas las anteriores nos dará un ERROR...
 
-	<field name="idfactura" class="java.lang.Integer"/>
-	<field name="codigofactura" class="java.lang.String"/>
-	<field name="codserie" class="java.lang.String"/>
-	<field name="fechafactura" class="java.sql.Date"/>
-	<field name="totalfactura" class="java.lang.Double"/>
+`	<field name="idfactura" class="java.lang.Integer"/>`
+	`<field name="codigofactura" class="java.lang.String"/>`
+	`<field name="codserie" class="java.lang.String"/>`
+	`<field name="fechafactura" class="java.sql.Date"/>`
+	`<field name="totalfactura" class="java.lang.Double"/>`
 
 1. PARTE 7. DEFINIR LAS VARIABLES
 
