@@ -6,13 +6,17 @@
 ---
 
 
-### PASO PREVIO 1.- INSTALAR LAS EXTENSIONES +ext9002-jasper_plugin Y +ext1058-jplugin_plus EN EL MÓDULO "INFORMES" CON ENEBOO-TOOLS
+##### PASO PREVIO 1.- INSTALAR LAS EXTENSIONES +ext9002-jasper_plugin Y +ext1058-jplugin_plus EN EL MÓDULO "INFORMES" CON ENEBOO-TOOLS
 
 Visitar:
 
 https://github.com/Miguel-J/eneboo/wiki/eneboo-reports
 
-### PASO PREVIO 2.- INSTALAR JAVA Y EL ENLACE A JASPER REPORTS EN EL SERVIDOR DE ENEBOO
+##### PASO PREVIO 2.- INSTALAR JAVA Y EL ENLACE A JASPER REPORTS EN EL SERVIDOR DE ENEBOO
 
 https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes:-Instalar-el-enlace-a-Jasper-Reports
  
+####REPOSITORIOS GITHUB CON ARCHIVOS YA HECHOS LISTOS PARA USAR:
+
+https://github.com/eneboo/reports4eneboo-reports
+
