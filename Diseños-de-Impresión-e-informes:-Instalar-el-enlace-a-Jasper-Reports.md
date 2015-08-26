@@ -7,6 +7,7 @@
 https://groups.google.com/forum/#!topic/eneboo/RKXQm8QKkTg
 
 Despues de estar peleando con los .kut y acabar el café de la maquina descubrí gracias a esta lista el ar2kut, los .ar mejoran algo pero sigue siendo muy limitado, asi que buscando buscando encuentro eneboo-reports, sin esta lista y la colaboración de todos vosotros seguramente habria desinstalado eneboo rapidamente pero por suerte aqui estamos.
+
 ---
 
 ###MANUAL DE Diseños de Impresión e informes: Instalar el enlace a Jasper Reports
@@ -78,9 +79,6 @@ SOLUCIÓN: Postgres tiene que estar configurado por el puerto 5432 para que eneb
 
 ---
 
-## SIGUIENTE PASO: INSTALAR JAVA Y EL ENLACE A JASPER REPORTS EN EL SERVIDOR DE ENEBOO:
+## SIGUIENTE PASO: CONFIGURAR Y DISEÑAR LOS ARCHIVOS .jrxml CON JASPER STUDIO.
 
-MANUAL DE Diseños de Impresión e informes: Instalar el enlace a Jasper Reports
-
-https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes:-Instalar-el-enlace-a-Jasper-Reports
-
+https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes:-Configurar-archivos-Jasper-Reports
