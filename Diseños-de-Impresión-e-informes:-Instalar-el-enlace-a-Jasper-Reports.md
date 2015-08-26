@@ -30,13 +30,38 @@
 
 ####PASO 4.- ENLAZAR CON JAVA Y LAS LIBRERIAS:
 
-Y luego vas a menu eneboo-area fact-comisiones-datos gnrles
+Y luego vas a menu eneboo-area facturacion-informes-datos generales
 
 ..luego pestaña al lado: "jasper plugin" y le das a "..."
 
+y ahora le do a los botones Java JRE y Conección a Librería eneboo reports
+
+y buscas la PRIMERA carpeta "report" que has creado DENTRO del ejecutable de Eneboo
+
+Aceptar
+ 
+En el segundo campo, lo mismo: busca la misma carpeta.
+
+Y activa el boton "compilar todos los reports"
+
+Guardar
+
+####PASO 5.- PROBAR QUE ENLAZA CON JAVA Y LAS LIBRERIAS:
+
+Daarle al botón del "test"
+
+####PASO 6.- CREAR LAS CARPETAS DE LOS INFORMES
+
+Tienen que tener EL MISMO NOMBRE que el nombre que se le da en eneboo a su correspondiente ".kut"
+
+(aqui poner cuadro equivalencias)
+
+####PASO 7.- COLOCAR LOS ARCHIVOS .jrxml EN SU CARPETA-DIRECTORIO
 
 
 ---
+### INSTALAR LAS EXTENSIONES JASPER A LA MEZCLA DE MÓDULOS DE ENEBOO 
+
 https://groups.google.com/forum/#!topic/eneboo/MLislQP1BSw
 
 Hola otra vez, 
