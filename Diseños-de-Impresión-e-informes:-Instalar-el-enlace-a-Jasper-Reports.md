@@ -34,6 +34,10 @@ https://github.com/Miguel-J/eneboo/wiki/eneboo-reports
 
 ####PASO 3.- COPIAR EL EJECUTABLE .JAR Y LA CARPETA DE "LIBRERIAS":
 
+Repositorio con libreria a java actualizadas:
+
+https://github.com/eneboo/eneboo-reports
+
 1.- Pones el ejecutable "enebooreports.jar" DENTRO DE LA PRIMERA CARPETA "reports"...
 
 
