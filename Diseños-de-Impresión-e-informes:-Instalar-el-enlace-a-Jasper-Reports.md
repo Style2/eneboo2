@@ -6,6 +6,11 @@
 ----
 ###MANUAL DE Diseños de Impresión e informes: Instalar el enlace a Jasper Reports
 
+PASO 0.- INSTALAR LAS EXTENSIONES +ext9002-jasper_plugin Y +ext1058-jplugin_plus EN EL MÓDULO "INFORMES" CON ENEBOO-TOOLS
+
+Visitar:
+
+https://github.com/Miguel-J/eneboo/wiki/eneboo-reports
 
 ####PASO 1.- INSTALAR JAVA
 
