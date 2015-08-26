@@ -34,7 +34,9 @@ https://github.com/eneboo/reports4eneboo-reports
 * PARTE 3. LÍMITES DEL INFORME JASPER:
 
 `	<property name="ireport.zoom" value="1.5"/>`
+
 	`<property name="ireport.x" value="0"/>`
+
 	`<property name="ireport.y" value="262"/>`
 
 
@@ -49,19 +51,33 @@ https://github.com/eneboo/reports4eneboo-reports
 NOTA: Cuidado, que TODAS acaban con una COMA....EXCEPTO LA ÚLTIMA....si no: nos dará un ERROR...
 
 `	<queryString>`
+
 		`<![CDATA[SELECT 	facturascli.idfactura as idfactura,`
+
 	`facturascli.codigo as codigofactura,`
+
 	`facturascli.codserie as codserie,`
+
 `(...)`
+
         `empresa.rmercantil AS rmercantil,`
+
     	`facturascli.totaleuros AS totaleuros`
+
 `FROM empresa, facturascli`
+
 `INNER JOIN lineasfacturascli ON facturascli.idfactura = lineasfacturascli.idfactura`
+
 `INNER JOIN formaspago ON facturascli.codpago = formaspago.codpago`
+
 `INNER JOIN clientes ON clientes.codcliente = facturascli.codcliente`
+
 `LEFT OUTER JOIN albaranescli ON albaranescli.idalbaran = lineasfacturascli.idalbaran`
+
 `WHERE $P!{WHERE}`
+
 `ORDER BY $P!{ORDERBY}]]>`
+
 	`</queryString>`
 
 * PARTE 6. DEFINIR QUÉ TIPO DE FIELD-CAMPOS SON LOS ELEGIDOS EN EL PASO ANTERIOR:
@@ -81,7 +97,9 @@ NOTA: Cuidado, que si no salen todas las anteriores nos dará un ERROR...
 * PARTE 7. DEFINIR LAS VARIABLES
 
 `	<variable name="sumaysigue" class="java.math.BigDecimal" resetType="Group" resetGroup="IDfactura" calculation="Sum">`
+
 		`<variableExpression><![CDATA[$F{pvptotallinea}]]></variableExpression>`
+
 	`</variable>`
 
 * PARTE 8. LOCALIZAR CADA FIELD-campo EN EL LUGAR CORRESPONDIENTE:
@@ -89,16 +107,23 @@ NOTA: Cuidado, que si no salen todas las anteriores nos dará un ERROR...
 ZONAS DISPONIBLES:
 
 `		<groupHeader>`
+
 			`<band height="341">`
 
 EJEMPLO:
 
 `                                <textField>`
+
 					`<reportElement x="102" y="272" width="65" height="14" uuid="74a60195-67ff-463d-a72e-13be600801de"/>`
+
 					`<textElement textAlignment="Center" verticalAlignment="Middle">`
+
 						`<font fontName="Arial" size="10" isBold="false"/>`
+
 					`</textElement>`
+
 					`<textFieldExpression><![CDATA[$F{codigofactura}]]></textFieldExpression>`
+
 				`</textField>`
 
 
