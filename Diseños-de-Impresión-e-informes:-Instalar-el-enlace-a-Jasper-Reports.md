@@ -1,3 +1,10 @@
+* CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ULTIMA ACTUALIZACIÓN: 26 de agosto de 2015
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes%3A-Instalar-el-enlace-a-Jasper-Reports)
+
+----
+###MANUAL DE Diseños de Impresión e informes: Instalar el enlace a Jasper Reports
 
 https://groups.google.com/forum/#!topic/eneboo/MLislQP1BSw
 
