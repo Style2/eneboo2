@@ -75,3 +75,12 @@ Tienen que tener EL MISMO NOMBRE que el nombre que se le da en eneboo a su corre
 Parece que no era ni por que soy tan zoquete ni por el postgres 9.3 , el problema esta en que al parecer la libreria no coge el puerto de conexion a la bd correctamente del ejecutable de eneboo y siempre usa el por defecto de  postgres 5432 y yo estaba usando 5433.
 
 SOLUCIÓN: Postgres tiene que estar configurado por el puerto 5432 para que eneboo-reports funcione perfectamente y no el error  de que la bd en cuestión no existe.
+
+---
+
+## SIGUIENTE PASO: INSTALAR JAVA Y EL ENLACE A JASPER REPORTS EN EL SERVIDOR DE ENEBOO:
+
+MANUAL DE Diseños de Impresión e informes: Instalar el enlace a Jasper Reports
+
+https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes:-Instalar-el-enlace-a-Jasper-Reports
+
