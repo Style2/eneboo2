@@ -6,6 +6,36 @@
 ----
 ###MANUAL DE Diseños de Impresión e informes: Instalar el enlace a Jasper Reports
 
+
+####PASO 1.- INSTALAR JAVA
+
+####PASO 2.- CREAR LOS DIRECTORIOS:
+
+1.- dentro del directorio de "eneboo....rc7" hay que crear el directorio "reports"...entre el de "plugins" y "share"...
+
+1.- y dentro de "reports" otro directorio CON EL MISMO NOMBRE QUE EL NOMBRE DE LA BASE DE DATOS....
+
+1.- ...y dentro de este "directorio-bd" otros tres:
+
+* "reports"
+* "subreports"
+* "temp_files"
+
+####PASO 3.- COPIAR EL EJECUTABLE .JAR Y LA CARPETA DE "LIBRERIAS":
+
+1.- Pones el ejecutable DENTRO DE LA PRIMERA CARPETA "reports"...
+
+1.- ...y las librerias en la carpeta-directorio "lib", DENTRO DE LA PRIMERA CARPETA "reports" (al mismo nivel que la carpeta con el nombre de la base de datos, NO dentro de ésta)
+
+####PASO 4.- ENLAZAR CON JAVA Y LAS LIBRERIAS:
+
+Y luego vas a menu eneboo-area fact-comisiones-datos gnrles
+
+..luego pestaña al lado: "jasper plugin" y le das a "..."
+
+
+
+---
 https://groups.google.com/forum/#!topic/eneboo/MLislQP1BSw
 
 Hola otra vez, 
