@@ -25,24 +25,26 @@ https://github.com/eneboo/reports4eneboo-reports
 
 1. PARTE 1.
 
-      <?xml version="1.0" encoding="UTF-8"?>
+`      <?xml version="1.0" encoding="UTF-8"?>`
 
 1. PARTE 2. NOMBRE-TITULO DEL INFORME JASPER:
 
-     <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SIN LINEAS" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f56b01a9-9a77-44db-85ed-a8201e567af9">
+`     <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SIN LINEAS" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f56b01a9-9a77-44db-85ed-a8201e567af9">`
 
 1. PARTE 3. LÍMITES DEL INFORME JASPER:
 
-	<property name="ireport.zoom" value="1.5"/>
-	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="262"/>
+`	<property name="ireport.zoom" value="1.5"/>`
+	`<property name="ireport.x" value="0"/>`
+	`<property name="ireport.y" value="262"/>`
 
 
 1. PARTE 4. ENLACE CON LAS CLÁUSULAS DELIMITADORAS DE ENEBOO:
 
-     <parameter name="WHERE" class="java.lang.String" isForPrompting="false">
-      (...)
-     <parameter name="ORDERBY" class="java.lang.String" isForPrompting="false">
+`     <parameter name="WHERE" class="java.lang.String" isForPrompting="false">`
+
+      `(...)`
+
+     `<parameter name="ORDERBY" class="java.lang.String" isForPrompting="false">`
 
 1. PARTE 5. DEFINIR TABLAS Y COLUMNAS QUE SE USARÁN (y traducirlas al nombre de FIELD-campos que usará Jasper para reconocerlas):
 
@@ -83,12 +85,13 @@ NOTA: Cuidado, que si no salen todas las anteriores nos dará un ERROR...
 1. PARTE 8. LOCALIZAR CADA FIELD-campo EN EL LUGAR CORRESPONDIENTE:
 
 ZONAS DISPONIBLES:
-		<groupHeader>
-			<band height="341">
+
+`		<groupHeader>`
+			`<band height="341">`
 
 EJEMPLO:
 
-                                `<textField>`
+`                                <textField>`
 					`<reportElement x="102" y="272" width="65" height="14" uuid="74a60195-67ff-463d-a72e-13be600801de"/>`
 					`<textElement textAlignment="Center" verticalAlignment="Middle">`
 						`<font fontName="Arial" size="10" isBold="false"/>`
