@@ -4,6 +4,11 @@
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes%3A-Instalar-el-enlace-a-Jasper-Reports)
 
 ----
+https://groups.google.com/forum/#!topic/eneboo/RKXQm8QKkTg
+
+Despues de estar peleando con los .kut y acabar el café de la maquina descubrí gracias a esta lista el ar2kut, los .ar mejoran algo pero sigue siendo muy limitado, asi que buscando buscando encuentro eneboo-reports, sin esta lista y la colaboración de todos vosotros seguramente habria desinstalado eneboo rapidamente pero por suerte aqui estamos.
+---
+
 ###MANUAL DE Diseños de Impresión e informes: Instalar el enlace a Jasper Reports
 
 PASO 0.- INSTALAR LAS EXTENSIONES +ext9002-jasper_plugin Y +ext1058-jplugin_plus EN EL MÓDULO "INFORMES" CON ENEBOO-TOOLS
@@ -63,35 +68,10 @@ Tienen que tener EL MISMO NOMBRE que el nombre que se le da en eneboo a su corre
 
 ####PASO 7.- COLOCAR LOS ARCHIVOS .jrxml EN SU CARPETA-DIRECTORIO
 
-
 ---
-### INSTALAR LAS EXTENSIONES JASPER A LA MEZCLA DE MÓDULOS DE ENEBOO 
 
-https://groups.google.com/forum/#!topic/eneboo/MLislQP1BSw
+## PROBLEMATICAS SOLUCIONADAS:
 
-Hola otra vez, 
-he estado mirando todas las respuestas anteriores, y he descargado las eneboo-features, los eneboo-modules y he instalado las eneboo-tools. He parcheado las extensiones y he subido los módulos siguiendo estas instrucciones: 
+Parece que no era ni por que soy tan zoquete ni por el postgres 9.3 , el problema esta en que al parecer la libreria no coge el puerto de conexion a la bd correctamente del ejecutable de eneboo y siempre usa el por defecto de  postgres 5432 y yo estaba usando 5433.
 
-"Extraer modulo flfactinfo de eneboo (SISTEMA->ADMINISTRACION->MODULOS->Doble clik sobre flfactinfo->Click en flecha verde(exportar ficheros)) 
-
-renombrar "flfactinfo" a "informes"(nombre correcto) 
-
-crear nueva carpeta "original" y dentro de ella otra con nombre "facturacion" e introducir "informes" en ella.(estructura de carpetas correcta) 
-
-descargar ext9002 y ext1058 de github. 
-
-ejecutar eneboo-merge folder-patch ext9002-jasper_plugin original parcheado9002 (parcheamos con la ext9002) 
-ejecutar eneboo-merge folder-patch ext1058-jplugin_plus parcheado9002 final(parcheamos con ext1058 la version ya parcheada con ext9002) 
-entramos en final y creamos un archivo COPYING 
-
-En eneboo, importamos "final" (SISTEMA->ADMINISTRACION->MODULOS->Doble clik sobre flfactinfo->Click en flecha azul(Cargar ficheros)) " 
-
-(Gracias a "Preguntas r" por el magnífico resumen, aunque el ejecutable es eneboo-mergetool, no eneboo-merge) 
-
-Y ahí me he quedado. No me funcionan los informes, y en "facturación>informes>datos generales" no me sale la pestaña del jasperplugin. 
-He intentado hacer "eneboo-assembler build jasper_plugin base" y me dice que: 
-ERROR: Funcionalidad jasper_plugin desconocida 
-
-¿y ahora qué hago? 
-
-Muchísimas gracias a todos!
+SOLUCIÓN: Postgres tiene que estar configurado por el puerto 5432 para que eneboo-reports funcione perfectamente y no el error  de que la bd en cuestión no existe.
