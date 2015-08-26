@@ -23,7 +23,8 @@
 
 ####PASO 3.- COPIAR EL EJECUTABLE .JAR Y LA CARPETA DE "LIBRERIAS":
 
-1.- Pones el ejecutable DENTRO DE LA PRIMERA CARPETA "reports"...
+1.- Pones el ejecutable "enebooreports.jar" DENTRO DE LA PRIMERA CARPETA "reports"...
+
 
 1.- ...y las librerias en la carpeta-directorio "lib", DENTRO DE LA PRIMERA CARPETA "reports" (al mismo nivel que la carpeta con el nombre de la base de datos, NO dentro de ésta)
 
