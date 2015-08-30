@@ -22,6 +22,8 @@ https://github.com/Miguel-J/eneboo/wiki/eneboo-reports
 
 ####PASO 2.- CREAR LOS DIRECTORIOS:
 
+![eneboo-jasper-1-directorios](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper/eneboo-jasper-esquema-archivos01.jpg)
+
 1.- dentro del directorio de "eneboo....rc7" hay que crear el directorio "reports"...entre el de "plugins" y "share"...
 
 1.- y dentro de "reports" otro directorio CON EL MISMO NOMBRE QUE EL NOMBRE DE LA BASE DE DATOS....
@@ -32,15 +34,6 @@ https://github.com/Miguel-J/eneboo/wiki/eneboo-reports
 * "subreports"
 * "temp_files"
 
-![eneboo-jasper-directorios-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper/eneboo-jasper-esquema-archivos01.jpg)
-
-![eneboo-jasper-directorios-2](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper/eneboo-jasper-esquema-archivos02.jpg)
-
-![eneboo-jasper-directorios-3](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper/eneboo-jasper-esquema-archivos03.jpg)
-
-![eneboo-jasper-directorios-4](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper/eneboo-jasper-esquema-archivos04.jpg)
-
-![eneboo-jasper-directorios-5](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper/eneboo-jasper-esquema-archivos05.jpg)
 
 ####PASO 3.- COPIAR EL EJECUTABLE .JAR Y LA CARPETA DE "LIBRERIAS":
 
@@ -57,6 +50,8 @@ https://github.com/eneboo/eneboo-reports
 
 Y luego vas a menu eneboo-area facturacion-informes-datos generales
 
+![eneboo-jasper-2-datos-generales](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper/eneboo-jasper-esquema-archivos02.jpg)
+
 ..luego pestaña al lado: "jasper plugin" y le das a "..."
 
 y ahora le do a los botones Java JRE y Conección a Librería eneboo reports
@@ -71,9 +66,18 @@ Y activa el boton "compilar todos los reports"
 
 Guardar
 
+![eneboo-jasper-3-pestaña-jasper](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper/eneboo-jasper-esquema-archivos03.jpg)
+
 ####PASO 5.- PROBAR QUE ENLAZA CON JAVA Y LAS LIBRERIAS:
 
-Daarle al botón del "test"
+Darle al botón del "test". Tienen que salir estos mensajes:
+
+
+![eneboo-jasper-4-test-java](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper/eneboo-jasper-esquema-archivos04.jpg)
+
+![eneboo-jasper-5-test-jasper](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper/eneboo-jasper-esquema-archivos05.jpg)
+
+
 
 ####PASO 6.- CREAR LAS CARPETAS DE LOS INFORMES
 
