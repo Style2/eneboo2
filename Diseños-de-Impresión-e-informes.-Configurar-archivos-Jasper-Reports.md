@@ -14,7 +14,7 @@ https://github.com/Miguel-J/eneboo/wiki/eneboo-reports
 
 ##### PASO PREVIO 2.- INSTALAR JAVA Y EL ENLACE A JASPER REPORTS EN EL SERVIDOR DE ENEBOO
 
-https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes:-Instalar-el-enlace-a-Jasper-Reports
+https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Instalar-el-enlace-a-Jasper-Reports
  
 ####REPOSITORIOS GITHUB CON ARCHIVOS YA HECHOS LISTOS PARA USAR:
 
