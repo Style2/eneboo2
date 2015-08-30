@@ -32,6 +32,21 @@ https://github.com/Miguel-J/eneboo/wiki/eneboo-reports
 * "subreports"
 * "temp_files"
 
+![eneboo-jasper-directorios-1](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper
+/eneboo-jasper-esquema-archivos01.jpg)
+
+![eneboo-jasper-directorios-2](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper
+/eneboo-jasper-esquema-archivos02.jpg)
+
+![eneboo-jasper-directorios-3](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper
+/eneboo-jasper-esquema-archivos03.jpg)
+
+![eneboo-jasper-directorios-4](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper
+/eneboo-jasper-esquema-archivos04.jpg)
+
+![eneboo-jasper-directorios-5](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper
+/eneboo-jasper-esquema-archivos05.jpg)
+
 ####PASO 3.- COPIAR EL EJECUTABLE .JAR Y LA CARPETA DE "LIBRERIAS":
 
 Repositorio con libreria a java actualizadas:
