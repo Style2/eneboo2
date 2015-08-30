@@ -85,4 +85,4 @@ SOLUCIÓN: Postgres tiene que estar configurado por el puerto 5432 para que eneb
 
 ## SIGUIENTE PASO: CONFIGURAR Y DISEÑAR LOS ARCHIVOS .jrxml CON JASPER STUDIO.
 
-https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes:-Configurar-archivos-Jasper-Reports
+https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Configurar-archivos-Jasper-Reports
