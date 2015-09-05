@@ -84,7 +84,7 @@ Un aspecto importante del segundo paso es la creación de una plantilla con unas
 
 Como paso inicial he creado una nueva rama (jasper) en este repo:
 
-https://github.com/Aulla/eneboo-modules
+https://github.com/eneboo/eneboo-reports
 
 Quien quiera colaborar cambiando el .qs, puede crear un fork e ir haciendo pull requests a este repo anterior.
 Para los que quieran colaborar en la creación de reports, pueden usar este otro repo:
