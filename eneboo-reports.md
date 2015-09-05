@@ -58,3 +58,38 @@ Tienes que exportar el módulo flfactinfo , desde sistema - administración - mo
 Configurar Jasper-Report en el ordenador del servidor. Seguir los pasos de:
 
 https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Instalar-el-enlace-a-Jasper-Reports
+
+***
+
+
+### Re: [eneboo] Re: Operación adiós kuts.
+
+
+
+https://groups.google.com/forum/#!searchin/eneboo/jasper$20aulla/eneboo/hWwVOegjORY/n5xkpjnOK6gJ
+
+Eliminar la dependencia, no los kuts en si, es decir, modificar los módulos para eliminar las llamadas directas a kugar y que todas pasen por flfactinfo.lanzarInforme. De esta manera y con el uso de la ext9002-Jasper_Plugin se podría usar los ficheros jrxml( editandolos con iReports) de manera generalizada y aprovechando la posibilidad de cambiar progresivamente de un sistema a otro y que permite la existencia de los dos sistemas simultaneos (ext1058-jplugin_plus.).
+
+El problema es que es un trabajo bastante arduo , en dos partes, por un lado la modificación de los .qs eliminado las llamadas erroneas y por otro la creación de los informes equivalentes a cada kut. 
+
+Con la modificación de los .qs , tendría que ser un cambio transparente para los kut y que no condiciona el uso de Eneboo Reports aún, simplemente cambia la ruta para llamar a los kuts.(dependencia de flfactinfo).
+
+El segundo paso puede ser más pausado y se puede ir completando por necesidad, cuando algún colaborador crea uno de estos informes , lo puede liberar y poco a poco hacer un mapa de informes completo. 
+
+Un aspecto importante del segundo paso es la creación de una plantilla con unas pautas (llamese estilo) e intentar que sea común para todos los informes. 
+
+---
+
+### REPOSITORIO GITHUB JASPER AULLA
+
+Como paso inicial he creado una nueva rama (jasper) en este repo:
+
+https://github.com/Aulla/eneboo-modules
+
+Quien quiera colaborar cambiando el .qs, puede crear un fork e ir haciendo pull requests a este repo anterior.
+Para los que quieran colaborar en la creación de reports, pueden usar este otro repo:
+
+https://github.com/Aulla/reports4eneboo-reports
+
+Si no sabes como va el tema y quieres colaborar pregunta, no te cortes, y recuerda que así salimos ganando todos.
+Saludos
