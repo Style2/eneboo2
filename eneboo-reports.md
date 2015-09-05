@@ -93,3 +93,21 @@ https://github.com/Aulla/reports4eneboo-reports
 
 Si no sabes como va el tema y quieres colaborar pregunta, no te cortes, y recuerda que así salimos ganando todos.
 Saludos
+
+---
+
+### EJEMPLO DE FUNCIONAMIENTO:
+
+
+https://groups.google.com/forum/#!topic/eneboo/9dHy8Iu7I08
+
+Seguro?
+
+...porque "co_i_masterdiario.qs" llama a "flcontinfo.qs" (flcontinfo.iface.pub_lanzarInforme)
+
+...pero este vuelve a llamar a "flfactinfo" (flfactinfo.iface.pub_mostrarInformeVisor)
+
+..., que es donde está el jasper...
+
+....o eso me parece....
+
