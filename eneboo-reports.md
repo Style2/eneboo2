@@ -57,4 +57,4 @@ Tienes que exportar el módulo flfactinfo , desde sistema - administración - mo
 
 Configurar Jasper-Report en el ordenador del servidor. Sehuir los pasos de:
 
-https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes:-Instalar-el-enlace-a-Jasper-Reports
+https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Instalar-el-enlace-a-Jasper-Reports
