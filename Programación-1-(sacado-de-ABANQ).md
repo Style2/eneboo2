@@ -1,6 +1,6 @@
 * CREADO POR: [ABANQ-Infosial](http://www.abanq.org) en https://web.archive.org/web/20101212082616/http://abanq.org/documentacion/documento.php?ref=tutorial2
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 1 de junio de 2015
+* ULTIMA ACTUALIZACIÓN: 1 de septiembre de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Programaci%C3%B3n-1-(sacado-de-ABANQ))
 
 ----
@@ -14,8 +14,11 @@ Antes de comenzar a trabajar:
    * Arrancar Eneboo con una nueva base de datos y cargar los módulos 
 
 ###Algunos conceptos previos: el área de Sistema
+
 Eneboo no es sólo un software de gestión, incluye además un entorno de desarrollo que permite realizar cambios y personalizaciones desde lo más básico a lo más avanzado.
+
 Desde el área de sistema no sólo podemos cargar los módulos, también podemos modificar los ficheros de tablas, formularios, informes, etc que forman parte de un módulo.
+
 Para ello abriremos el módulo de Administración dentro del área de sistema. Pulsamos en el menú Principal -> Módulos. Veremos un listado de lo módulos instalados. Si abrimos, por ejemplo, el módulo flfactppal (principal de facturación) accedemos al listado de ficheros. Algunos ejemplos: clientes.mtd es la tabla de clientes; clientes.ui es el formulario de clientes, etc.
 
 Los principales tipos de ficheros que maneja Eneboo son:
@@ -58,10 +61,13 @@ Podemos verificar el cambio abriendo el formulario de familias y comprobando que
 ####3. Cambios en el diseño de los formularios.
 
 A la hora de trabajar con formularios vamos a utilizar la herramienta QT Designer. Tal como vimos, cuando editamos un fichero con extensión .ui en el módulo de sistema, el editor que aparece es QT Designer.
+
 Algunos aspectos importantes acerca de QT Designer:
+
     * Los componentes de un formulario pueden cambiarse de posición pulsando sobre ellos con el ratón y arrastrando
     * Los componentes pueden agruparse en layouts, utilizando los botones correspondientes (menú Window / Toolbars / Layout)
     * Todas las propiedades de los componentes están en la paleta de propiedades (menú window / views / Property Editor) 
+
 Vamos a utilizar este editor para cambiar el aspecto del formulario de familias:
 
 ![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/ABANQ-2/Dibujo-3.PNG)
@@ -211,15 +217,15 @@ La propiedad pk (clave primaria) forzosamente ha de ser false porque no puede ha
 La propiedad alias establece el nombre del campo de cara a la interfaz de usuario; es el texto que aparece en los formularios y las cabeceras de campo de las tablas. Siempre pondremos QT_TRANSLATE_NOOP("MetaData", "alias del campo"). Esta función es necesaria para realizar las traducciones de textos a distintos idiomas. 
 
 #####Caracterísiticas específicas de los campos:
-zonacomercial. La propiedad optionslist permite establecer la lista de valores que aparecerán en el desplegable del formulario. Los valores se separan por comas. La propiedad default establecida a Europa indica que éste es el valor por defecto para los nuevos registros. En la propiedad type vemos que se trata de un string -cadena de caracteres-, y en la propiedad length que su longitud máxima es de 20 caracteres.
+**zonacomercial**. La propiedad optionslist permite establecer la lista de valores que aparecerán en el desplegable del formulario. Los valores se separan por comas. La propiedad default establecida a Europa indica que éste es el valor por defecto para los nuevos registros. En la propiedad type vemos que se trata de un string -cadena de caracteres-, y en la propiedad length que su longitud máxima es de 20 caracteres.
 
-coddivisa. Este campo almacena el código de la divisa del país. Vemos que está relacionado con la tabla divisas (propiedad table) mediante el campo coddivisa (propiedad field) de dicha tabla. El valor M1 de la propiedad card establece que puede haber varios países (M) para cada divisa (1).
+**coddivisa**. Este campo almacena el código de la divisa del país. Vemos que está relacionado con la tabla divisas (propiedad table) mediante el campo coddivisa (propiedad field) de dicha tabla. El valor M1 de la propiedad card establece que puede haber varios países (M) para cada divisa (1).
 
-capital. Se trata de un campo sencillo de tipo string y 40 caracteres de longitud máxima
+**capital**. Se trata de un campo sencillo de tipo string y 40 caracteres de longitud máxima
 
-habitantes. Este es un campo numérico que debe almacenar números grandes. Hemos optado por el tipo double. Las propiedades partI y partD indican la longitud de la parte izquierda (entera) y derecha (decimal) del número respectivamente.
+**habitantes**. Este es un campo numérico que debe almacenar números grandes. Hemos optado por el tipo double. Las propiedades partI y partD indican la longitud de la parte izquierda (entera) y derecha (decimal) del número respectivamente.
 
-rentapercapita. Similar a habitantes 
+**rentapercapita**. Similar a habitantes 
 
 Para terminar, debemos modificar la tabla divisas para incluir la relación establecida con el campo coddivisa de la tabla de países. El código es el siguiente:
 
