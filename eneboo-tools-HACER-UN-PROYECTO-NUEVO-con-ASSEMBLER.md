@@ -1,7 +1,7 @@
 * CREADO POR: deavid - Gestiweb
 * MODIFICADO POR: miguelajsmaps@gmail.com
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ÚLTIMA ACTUALIZACIÓN: 10 de agosto de 2015
+* ÚLTIMA ACTUALIZACIÓN: 10 de septiembre de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/eneboo-tools-HACER-UN-PROYECTO-NUEVO-con-ASSEMBLER)
 
 ----
@@ -173,6 +173,8 @@ Por defecto las extensiones se crean en la primera carpeta de extensiones que ha
 --------------
 
 ### PASO 5-C : ASSEMBLER "BUILD" - (COMPILAR/CREAR UN PROYECTO) :
+
+**ERRORES CONOCIDOS: ANTES de hacer este paso hay que ACTUALIZAR: "$ eneboo-assembler dbupdate -v" , porque de lo contrario dará el ERROR: "ERROR: Funcionalidad xxxx desconocida" y "ERROR: Error al generar las instrucciones de compilado"**
 
 UTILIDAD: Sirve para que Eneboo-Tools "COPIE" los módulos y extensiones LISTADOS por Assembler NEW o MANUALMENTE.
 
