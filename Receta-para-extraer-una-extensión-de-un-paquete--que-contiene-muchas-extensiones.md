@@ -1,3 +1,11 @@
+* CREADO POR: Jose Antonio - AULLA
+* MODIFICADO POR: miguelajsmaps@gmail.com
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ÚLTIMA ACTUALIZACIÓN: 10 de septiembre de 2015
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Receta-para-extraer-una-extensi%C3%B3n-de-un-paquete--que-contiene-muchas-extensiones)
+
+----
+
 INCIDENCIA:
 
 https://groups.google.com/forum/#!topic/eneboo/KTHQjW8ieR4
