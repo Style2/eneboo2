@@ -49,15 +49,8 @@
 ---
 ####PARA LA PROGRAMACION:
 
-#####Herramientas de apoyo:
-1. [GITHUB-Como instalarlo y usarlo-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO)
-1. [Programación 1-Estetica de tablas-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Programaci%C3%B3n-1-(sacado-de-ABANQ))
-1. [Programación 2-Formularios-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Programacion-2-Formularios-&-Informes-ABANQ)
-1. [Programación 3-Estructura de los Módulos-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Programacion-3-Estructura-de-los-Modulos-ABANQ)
-1. [Compilar el motor-ENEBOO-OFICIAL](https://github.com/Miguel-J/eneboo/wiki/Compilar-el-motor-(ENEBOO-OFICIAL))
-1. [Instalación de HEIDI-Gestor base de datos MySQL](https://github.com/Miguel-J/eneboo/wiki/Instalacion-HEIDI-gestor-base-de-datos-MySQL)
-
 #####Eneboo-Tools (personalizar Eneboo):
+1. [Cómo sacar LA MEZCLA de mi base de datos](https://github.com/Miguel-J/eneboo/wiki/C%C3%B3mo-sacar-LA-MEZCLA-de-mi-base-de-datos)
 1. [EnebooTools-ENEBOO-OFICIAL](https://github.com/Miguel-J/eneboo/wiki/EnebooTools)
 1. [EnebooTools para Windows-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows)
 1. [EnebooTools: Instalación en Linux-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
@@ -66,6 +59,15 @@
 1. [Diseños de Impresión e informes: Añadir las extensiones Jasper-Reports a Eneboo](https://github.com/Miguel-J/eneboo/wiki/eneboo-reports)
 1. [extraer una extensión de un paquete que contiene muchas extensiones.-AULLA](https://github.com/Miguel-J/eneboo/wiki/Receta-para-extraer-una-extensi%C3%B3n-de-un-paquete--que-contiene-muchas-extensiones)
 1. [Documentar extensiones-GESTIWEB](https://github.com/Miguel-J/eneboo/wiki/Documentar-extensiones-en-Eneboo-(GESTIWEB))
+
+---
+#####Herramientas de apoyo:
+1. [GITHUB-Como instalarlo y usarlo-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO)
+1. [Programación 1-Estetica de tablas-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Programaci%C3%B3n-1-(sacado-de-ABANQ))
+1. [Programación 2-Formularios-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Programacion-2-Formularios-&-Informes-ABANQ)
+1. [Programación 3-Estructura de los Módulos-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Programacion-3-Estructura-de-los-Modulos-ABANQ)
+1. [Compilar el motor-ENEBOO-OFICIAL](https://github.com/Miguel-J/eneboo/wiki/Compilar-el-motor-(ENEBOO-OFICIAL))
+1. [Instalación de HEIDI-Gestor base de datos MySQL](https://github.com/Miguel-J/eneboo/wiki/Instalacion-HEIDI-gestor-base-de-datos-MySQL)
 
 ---
 ####REPOSITORIOS DE ENEBOO:
