@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 20 de febrero de 2015
+* ULTIMA ACTUALIZACIÓN: 12 de septiembre de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Instalacion-en-linux)
 
 ----
@@ -9,12 +9,20 @@
 # INSTALACION DE ENEBOO EN LINUX CON MySQL
 
 ## Linux-Pasos:
+1. [Descargar e Instalar el motor Eneboo.](####1. Descargar y descomprimir el motor de Eneboo para Linux en el apartado [Versiones Estables])
+2. [Instalar un gestor de bases de datos (recomendado PostgreSQL).](#2-instalar-un-gestor-de-bases-de-datos-postgresql)
+3. [Acceder a la aplicación.](#3-acceder-a-la-aplicación)
+4. [Cargar el paquete de Eneboo Standard.](#4-cargar-el-paquete-de-eneboo-standard)
 
-1. Descargar y descomprimir el motor de Eneboo para Linux en el apartado [Versiones Estables](http://www.eneboo.org/site/stable). Buscaremos el _Build dbAdmin Linux_ de 32 o 64 bits.
+---
+
+####1. Descargar y descomprimir el motor de Eneboo para Linux en el apartado [Versiones Estables]
+
+(http://www.eneboo.org/site/stable). Buscaremos el _Build dbAdmin Linux_ de 32 o 64 bits.
      * Hacer click en el link y (para Mozilla: darle a la flecha azul de arriba-derecha) luego "mostrar en carpeta" (dibujo de la derecha). Buscar el archivo y con botón derecho: "extraer aqui"
 
 
-2. Descargar e instalar el gestor de bases de datos:
+####2. Descargar e instalar el gestor de bases de datos:
 
      * 2.B **MySQL**
 
@@ -62,7 +70,7 @@
      * Arrancar el programa (eneboo) desde el explorador de archivos en:
          * /home/linux/Descargas/eneboo--dba/bin
 
-1. Abrir Eneboo. Aparecerá la pantalla _Conectar_.
+####1. Abrir Eneboo. Aparecerá la pantalla _Conectar_.
 
 ![Pantalla de conexión](https://raw.githubusercontent.com/eneboo/doc/master/images/standard/conectar.png)
 
@@ -78,7 +86,7 @@
     * Puerto: 3306
 1. Pulsar el botón _Conectar_. Se mostrará un mensaje con el texto _La base de datos standard no existe ¿Quiere crearla?_. Pulsar _Sí_.
 
-# INSTALACIÓN DE MÓDULOS:
+#### INSTALACIÓN DE MÓDULOS:
 
 1. Descargar el [paquete de Eneboo Standard](http://www.eneboo.com/pub/contrib/standard-modules/standard.eneboopkg).
 1. [Cargar el paquete de Eneboo Standard](#cargar-el-paquete-de-eneboo-standard).
@@ -86,13 +94,13 @@
 1. En el área de _Módulos_ de la parte izquierda, abrir la opción _Sistema -> Administración -> Cargar Paquete de módulos_.
 1. Localizar el archivo standard.eneboopkg y pulsar _Abrir_. Cuando finalice la carga, Eneboo Standard estará listo para empezar a trabajar.
 
-# ARRANCAR ENEBOO DESDE ORDENADOR APAGADO:
+#### ARRANCAR ENEBOO DESDE ORDENADOR APAGADO:
 
 1. Ir a consola (Ctrl+Alt+F1) y arrancar XAMPP: `$ sudo /opt/lampp/lampp start`
 1. Volver a ventanas (Ctrl+Alt+F7) y arrancar el programa (eneboo) desde el explorador de archivos en:
          * /home/linux/Descargas/eneboo--dba/bin
 
-# OTROS: instalacion con PostgreSQL:
+#### OTROS: instalacion con PostgreSQL:
 
    * 2.B MY SQL .....NOTA: ESTO NO FUNCIONÓ: instalo la:
           * "Begin Your Download - mysql-server_5.6.23-1ubuntu14.10_i386.deb-bundle.tar"
