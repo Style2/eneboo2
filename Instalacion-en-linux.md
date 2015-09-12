@@ -8,21 +8,23 @@
 
 # INSTALACION DE ENEBOO EN LINUX CON MySQL
 
-## Linux-Pasos:
-1. [Descargar e Instalar el motor Eneboo.](####1. Descargar y descomprimir el motor de Eneboo para Linux en el apartado [Versiones Estables])
-2. [Instalar un gestor de bases de datos (recomendado PostgreSQL).](#2-instalar-un-gestor-de-bases-de-datos-postgresql)
+## Índice de instalación en Linux-Pasos:
+
+1. [Descargar e Instalar el motor Eneboo.](#1-descargar-e-instalar-el-motor-eneboo)
+2. [Instalar un gestor de bases de datos (recomendado LAMPP con MySQL).](#2-descargar-e-instalar-un-gestor-de-bases-de-datos-lampp)
 3. [Acceder a la aplicación.](#3-acceder-a-la-aplicación)
-4. [Cargar el paquete de Eneboo Standard.](#4-cargar-el-paquete-de-eneboo-standard)
+4. [Cargar el paquete de módulos (por ejemplo: Eneboo Standard).](#4-cargar-el-paquete-de-módulos)
 
----
 
-####1. Descargar y descomprimir el motor de Eneboo para Linux en el apartado [Versiones Estables]
+# 1. Descargar e instalar el motor Eneboo:
+
+1. Descargar y descomprimir el motor de Eneboo para Linux en el apartado [Versiones Estables]
 
 (http://www.eneboo.org/site/stable). Buscaremos el _Build dbAdmin Linux_ de 32 o 64 bits.
      * Hacer click en el link y (para Mozilla: darle a la flecha azul de arriba-derecha) luego "mostrar en carpeta" (dibujo de la derecha). Buscar el archivo y con botón derecho: "extraer aqui"
 
 
-####2. Descargar e instalar el gestor de bases de datos:
+#2. Descargar e instalar un gestor de bases de datos LAMPP:
 
      * 2.B **MySQL**
 
@@ -70,7 +72,9 @@
      * Arrancar el programa (eneboo) desde el explorador de archivos en:
          * /home/linux/Descargas/eneboo--dba/bin
 
-####1. Abrir Eneboo. Aparecerá la pantalla _Conectar_.
+#3. Acceder a la aplicación: 
+
+Abrir Eneboo. Aparecerá la pantalla _Conectar_.
 
 ![Pantalla de conexión](https://raw.githubusercontent.com/eneboo/doc/master/images/standard/conectar.png)
 
@@ -80,13 +84,15 @@
     * Contraseña: (la del administrador de la base de datos MySQL-ver phpMyAdmin).
         
 1. Pulsar el botón de la flecha hacia la derecha _Más opciones_.
+
 1. Rellenar los campos de esta pantalla con los siguientes valores: 
     * Controlador: MySQL_NO_INNODB
     * Servidor: localhost
     * Puerto: 3306
+
 1. Pulsar el botón _Conectar_. Se mostrará un mensaje con el texto _La base de datos standard no existe ¿Quiere crearla?_. Pulsar _Sí_.
 
-#### INSTALACIÓN DE MÓDULOS:
+#4. Cargar el paquete de módulos:
 
 1. Descargar el [paquete de Eneboo Standard](http://www.eneboo.com/pub/contrib/standard-modules/standard.eneboopkg).
 1. [Cargar el paquete de Eneboo Standard](#cargar-el-paquete-de-eneboo-standard).
