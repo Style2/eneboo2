@@ -66,13 +66,17 @@
         * `$ sudo chmod u+w my.cnf` 
      * ejecuto XAMPP: `$ sudo /opt/lampp/lampp start`
 
-     * Salir de consola: Ctrl+Alt+F7 y verificar que funciona en mozilla poniendo la dirección: "localhost"...luego "español" y "status" en menú izquierda
+     * Salir de consola: Ctrl+Alt+F7 
+
+     * y **verificar que funciona** en mozilla/chrome poniendo la dirección: "http://localhost"...luego "español" y "status" en menú izquierda
+
      * Verificar usuarios en phpMyadmin (menú izquierda-abajo)
+
+#3. Acceder a la aplicación: 
 
      * Arrancar el programa (eneboo) desde el explorador de archivos en:
          * /home/linux/Descargas/eneboo--dba/bin
 
-#3. Acceder a la aplicación: 
 
 Abrir Eneboo. Aparecerá la pantalla _Conectar_.
 
