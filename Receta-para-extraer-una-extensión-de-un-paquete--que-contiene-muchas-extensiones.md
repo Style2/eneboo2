@@ -90,22 +90,29 @@ EJEMPLO: **$ eneboo-assembler build mifun02 fullpatch**
 
 $ eneboo-assembler build “nombre_corto_de_la_funcionalidad” test-fullpatch
 
-Esto genera en build/test-fullpatch un modulo que contiene la actualización , lo cargamos en eenboo y a probarla. Si falla volvemos a paso 6 hasta que funcione.
+Esto genera en build/test-fullpatch un modulo que contiene la actualización , lo cargamos en eneboo y a probarla.
+
+Si falla volvemos a paso 6 hasta que funcione.
 
 
 ####PASO 9 - Sacamos la extensión en limpio y la guardamos.
 
-Movemos el contenido a src y sacamos parche sobre módulos estandarizados
 
-$ eneboo-assembler build “nombre_corto_de_la_funcionalidad” src-fullpatch 
-$ eneboo-assembler build “nombre_corto_de_la_funcionalidad” fullpatch
-
+$ eneboo-assembler save-fullpatch “nombre_corto_de_la_funcionalidad”
  
 Ahora nos ha salido la extensión limpia de polvo y paja.
 
-$ eneboo-assembler save-fullpatch “nombre_corto_de_la_funcionalidad”
+EJEMPLO: **$ eneboo-assembler save-fullpatch mifun02**
 
-Esto generará dentro de la carpeta build/../patches/“nombre_corto_de_la_funcionalidad”/ nuestra extensión.
+
+Esto generará dentro de la carpeta extXXXX nuestra extensión:
+
+/patches/“nombre_corto_de_la_funcionalidad”/ de nuestra extensión.
+
+
+Listo , borramos carpeta build. Y probamos que el parche funciona.
+
+Si volviéramos a ejecutar los pasos 2 y 3 , en el 3 se añadiría automaticamente el parche.
 
 
 ####PASO 10 (Opcional) Regeneramos la BD para que eneboo-tool sepa como funciona.
@@ -113,11 +120,4 @@ Esto generará dentro de la carpeta build/../patches/“nombre_corto_de_la_funci
 $ eneboo-assembler dbupdate
 
 
-
-
-
-
-Listo , borramos carpeta build. Y probamos que el parche funciona.
-
-Si volviéramos a ejecutar los pasos 2 y 3 , en el 3 se añadiría automaticamente el parche.
 
