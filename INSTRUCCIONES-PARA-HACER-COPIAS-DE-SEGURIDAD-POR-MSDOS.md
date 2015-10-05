@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 3 de marzo de 2015
+* ULTIMA ACTUALIZACIÓN: 1 de octubre de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/INSTRUCCIONES-PARA-HACER-COPIAS-DE-SEGURIDAD-POR-MSDOS)
 
 ----
@@ -34,10 +34,23 @@
 
 1. una vez hecho se reinicia y listo, el equipo que tiene la BD ya puede hacer dumps
 
----------------------------------------------------------
-##CREAR LA COPIA DE SEGURIDAD O el dump: (DESDE MS-DOS)
+----
+##2. PARA MYSQL: CAMBIAR EL MAX PACKET EN my.cnf
 
-NOTA: Para acceder al MSDOS en Windows 8 ir a "INICIO"- "EJECUTAR" - "CMD" (usando www.classicshell.net)
++ para evitar el error: `ERROR 2006 (HY000): MySQL server has gone away`
+
++ ir a la carpeta: c:\wamp\bin\mysql\mysql5.5.24
+
++ dentro de my.conf (en Windows 10 CAMBIARLOS TODOS los que empiezan por "my") hay que cambiar el valor:
+ 
+     * max_allowed_packet = 1M 
+     * por:
+     * max_allowed_packet = 2M  (mejor poner algo como 500M)
+
+---------------------------------------------------------
+##3. CREAR LA COPIA DE SEGURIDAD O el dump: (DESDE MS-DOS)
+
+NOTA: Para acceder al MSDOS en Windows 8/10 ir a "INICIO"- "EJECUTAR" - "CMD" (usando www.classicshell.net) o "INICIO"- "PROGRAMAS" - "SISTEMA DE WINDOWS" - "SÍMBOLO DEL SISTEMA" (botón derecho mouse: "ejecutar como administrador")
 
 #### **A) PARA MySQL:**
 
