@@ -1,12 +1,14 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 19 de junio de 2015
+* ULTIMA ACTUALIZACIÓN: 12 de octubre de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Instalaci%C3%B3n-en-windows-con-MySQL)
 
 ----
 
 INSTALACION ENEBOO CON MYSQL:
 -----------------------------
+
+**NOTA - ATENCIÓN - PAGINA EN REVISIÓN : RECOMIENDO INSTALAR EL WAMP 2.2 QUE LLEVA MySQL 5.5 EN VERSIÓN 32 bits (incluso si tu ordenador es de 64 bits), TANTO PARA WINDOWS XP, VISTA, 7, 8, 8.1 como 10. ES EL ÚNICO QUE PERMITE TRABAJAR EN INNODB (imprescindible para hacerlo compatible con Facturascripts). El motivo es que todos los motores de Eneboo, a dia de hoy (octubre-2015) se compilan con librerías MySQL 5.5 y no "soporta" las que llevan 5.6... **
 
 ---
 ###PASO 1.-DESCARGAR e instalar el SERVIDOR DE BASE DE DATOS WAMP (incluye APACHE, MYSQL Y PHPMYADMIN..) de:
