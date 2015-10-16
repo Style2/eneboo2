@@ -133,7 +133,7 @@ www.wampserver.com\en
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-02.jpg)
 * Darle a la flecha de la derecha y completar:
-     * Base de datos: MySQL_NO_INNODB
+     * Base de datos: MySQL_NO_INNODB (si usas mysql 5.6...para poder poner MySQL(o INNODB) hay que tener el 5.5)
      * servidor: 127.0.0.1 (antes se llamaba “localhost”).....o aquí pondriamos el TCP_IP del ordenador que tiene la BD... 
      * puerto: el que da eneboo....3306
 
