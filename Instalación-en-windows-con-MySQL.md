@@ -146,7 +146,9 @@ www.wampserver.com\en
 
 * Se pueden descargar de varios sitios o "repositorios", hay unos que llevan más "extensiones" añadidas a la "mezcla básica" que otros...:
 
-* http://www.eneboo.org/site/node/16
+* Ejemplos:
+
+1. Agosto 2015- el mas recomendado: [paquete de Eneboo Standard julio-2015](http://eneboo.org/pub/contrib/2.4.5.1-rc7/).
 1. Descargar el [paquete de Eneboo Standard](http://www.eneboo.com/pub/contrib/standard-modules/standard.eneboopkg).
 1. Otro lugar de descarga: [Repos del git de KLO-MANOLO](https://github.com/klo-manolo/eneboo-modules/archive/master.zip).
 
@@ -156,7 +158,14 @@ www.wampserver.com\en
 
 * (hay 3 opciones):
 
-* **OPCIÓN A) todos de golpe en "PAQUETE"**: (ESTO DA MUCHOS ERRORES, MEJOR INSTALAR LOS MODULOS UNO A UNO): 
+* **OPCIÓN A) todos de golpe en "PAQUETE"**: 
+
+* NOTA: **a fecha de hoy, octubre de 2015, esta es la mejor opción si empiezas de cero**: lo mejor es que uses el paquete: **prj0001-standard-2015_06_25.eneboopkg** de:
+
+http://eneboo.org/pub/contrib/2.4.5.1-rc7/
+
+...porque incluye ya las principales extensiones, que a los módulos oficiales deberás añadir....y no es fácil para un novato...por ejemplo el jasper-report, SEPA, renumeración de asientos, recibos de proveedores, etc...
+
 
       * “modulos estandar en paquete eneboo” o: **standard.eneboopkg**
       1. En el área de _Módulos_ de la parte izquierda, abrir la opción _Sistema -> Administración -> Cargar Paquete de módulos_.
