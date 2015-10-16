@@ -17,7 +17,9 @@ www.wampserver.com\en
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-01.jpg)
 
 --
-#####PASO 1- OPCIÓN A- INSTALACIÓN EN WINDOWS 7 o 8: 
+#####PASO 1- OPCIÓN A- INSTALACIÓN EN WINDOWS 7 o 8 o 8.1 o 10: 
+
+* **NOTA: a no ser que vayas a trabajar con motor MyISAM (o no-INNODB), lo mejor es seguir las instrucciones de abajo para Windows XP con wamp 2.2 para 32 bits, AUNQUE TU ORDENADOR SEA DE 64 BITS**.
 
 * Si el ordenador es de **estructura 64 bits**, instalar la versión 2.5 para 64 bits (ver flecha roja en imagen) con:
      * apache 2.4.9
@@ -33,7 +35,7 @@ www.wampserver.com\en
 --
 #####PASO 1- OPCIÓN B- INSTALACIÓN EN WINDOWS XP:
 
-* En esta es la  2.2e de 32 bits ....la 2.5 NO porque daba error en el mySQL superior al 5.5....
+* En esta es la  2.2e con mysql 5.5.24 de 32 bits ....la 2.5 NO porque daba error en el mySQL superior al 5.5....
 
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-02.jpg)
 ![servidor wampserver](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-MySQL-WAMPSERVER-03.jpg)
@@ -60,9 +62,11 @@ www.wampserver.com\en
 * **NOTA: CÓMO SABEMOS QUE FUNCIONA?: PORQUE ABAJO-A LA DERECHA (AL LADO DEL RELOJ) HAY UNA "W" DE COLOR VERDE** (si está amarilla o roja es que algo va mal...)
 
 ---
-####PASO 2.- AÑADIR USUARIOS.  (PASO OPCIONAL)
+####PASO 2.- AÑADIR USUARIOS.  (PASO NO-OPCIONAL...hay que hacerlo para el servidor % y para localhost)
 
-* Este paso no es imprescindible si sólo se trabaja con un ordenador y NO está conectado a internet, porque el programa ya crea el usuario "root" sin contraseña, pero es recomendable...
+* NOTA 1: Este paso no es imprescindible si sólo se trabaja con un ordenador y NO está conectado a internet, porque el programa ya crea el usuario "root" sin contraseña, pero es recomendable usar otro usuario y AÑADIR UNA CONTRASEÑA A ROOT...para evitar hackers...
+
+* NOTA 2: En Windows 10 hay que modificar el httconf de Apache y el phpmyadmin.con del directorio /alias para añadir "Allow from ::1" (porque Windows 10 no reconoce como localhost el 121.0.0.1 al usar IP6)
 
 * Ejecutar PHPMYADMIN con botón izquierdo en la W VERDE.... 
 
@@ -76,6 +80,7 @@ www.wampserver.com\en
      * y “marcar todos”, resto igual...
      * PULSAR: ”**añadir usuario**”.
 
+* repetirlo para servidor= localhost
 
 * **NOTA: PARA UN SOLO ORDENADOR NO HACE FALTA TOCAR NADA MÁS: ni apache, ni MySQL, ni PHP....dejar el wamp como está.**
 
