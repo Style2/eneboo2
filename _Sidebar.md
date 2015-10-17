@@ -11,6 +11,7 @@
 1. [Instalación en linux con PostgreSQL-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Instalacion-en-linux-con-PostgreSQL)
 1. [Instalación servidor MySQL para Windows&Mac-UNIV.SEVILLA](https://github.com/Miguel-J/eneboo/wiki/Instalacion-Servidor-MySQL-UNIV.SEVILLA)
 
+1. [FACTURASCRIPTS Instalación y configuración del servidor MySQL para Windows-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/FACTURASCRIPTS---Instalaci%C3%B3n-y-configuraci%C3%B3n)
 
 --
 1. [Instalación básica-standard con PostgreSQL](https://github.com/Miguel-J/eneboo/wiki/%5BEneboo-Standard%5D-Instalaci%C3%B3n)
