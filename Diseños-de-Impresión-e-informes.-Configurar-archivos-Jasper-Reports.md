@@ -20,18 +20,19 @@ https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informe
 
 https://github.com/eneboo/reports4eneboo-reports
 
+---
 
 ####ESTRUCTURA DE UN .jrxml
 
-* PARTE 1.
+* **PARTE 1**.
 
 `      <?xml version="1.0" encoding="UTF-8"?>`
 
-* PARTE 2. NOMBRE-TITULO DEL INFORME JASPER:
+* **PARTE 2. NOMBRE-TITULO DEL INFORME JASPER**:
 
 `     <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SIN LINEAS" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f56b01a9-9a77-44db-85ed-a8201e567af9">`
 
-* PARTE 3. LÍMITES DEL INFORME JASPER:
+* **PARTE 3. LÍMITES DEL INFORME JASPER**:
 
 `	<property name="ireport.zoom" value="1.5"/>`
 
@@ -39,14 +40,23 @@ https://github.com/eneboo/reports4eneboo-reports
 
 	`<property name="ireport.y" value="262"/>`
 
+--
 
-* PARTE 4. ENLACE CON LAS CLÁUSULAS DELIMITADORAS DE ENEBOO:
+* **PARTE 4. ENLACE CON LAS CLÁUSULAS DELIMITADORAS DE ENEBOO**:
 
 `     <parameter name="WHERE" class="java.lang.String" isForPrompting="false">`
       `(...)`
      `<parameter name="ORDERBY" class="java.lang.String" isForPrompting="false">`
 
-* PARTE 5. DEFINIR TABLAS Y COLUMNAS QUE SE USARÁN (y traducirlas al nombre de FIELD-campos que usará Jasper para reconocerlas):
+NOTA: Esta es la parte más importante del enlace,
+
+EJEMPLO:
+
+...porque "co_i_masterdiario.qs" llama a "flcontinfo.qs" (flcontinfo.iface.pub_lanzarInforme) pero este vuelve a llamar a "flfactinfo.qs" (flfactinfo.iface.pub_mostrarInformeVisor), que es donde está el enlace al jasper (WHERE y ORDERBY)...
+
+--
+
+* **PARTE 5. DEFINIR TABLAS Y COLUMNAS QUE SE USARÁN (y traducirlas al nombre de FIELD-campos que usará Jasper para reconocerlas)**:
 
 NOTA: Cuidado, que TODAS acaban con una COMA....EXCEPTO LA ÚLTIMA....si no: nos dará un ERROR...
 
