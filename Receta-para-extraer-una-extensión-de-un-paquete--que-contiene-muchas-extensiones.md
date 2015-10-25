@@ -83,12 +83,15 @@ EJEMPLO: **$ eneboo-assembler build mifun02 fullpatch**
 
 ####PASO 7 - Limpiamos la basura 
 
-  Vamos eliminando lo que no sea de la extensión que queremos dentro de build/fullpatch. Aquí habrá de todas las extensiones que tenga el módulo afectado. Eliminamos la basura y modificamos el fullpatch.xml
+  Vamos eliminando lo que no sea de la extensión que queremos dentro de build/fullpatch. Aquí habrá de todas las extensiones que tenga el módulo afectado. Eliminamos la basura y **modificamos el fullpatch.xml**
 
+EJEMPLO: **$ eneboo-assembler build mifun02 fullpatch**
 
 ####PASO 8 - Comprobamos que funciona
 
 $ eneboo-assembler build “nombre_corto_de_la_funcionalidad” test-fullpatch
+
+EJEMPLO: **$ eneboo-assembler build mifun02 test-fullpatch**
 
 Esto genera en build/test-fullpatch un modulo que contiene la actualización , lo cargamos en eneboo y a probarla.
 
@@ -121,3 +124,10 @@ $ eneboo-assembler dbupdate
 
 
 
+####NOTA: sacar un usb de forma segura en Linux:
+
+Ir a consola CTRL+ALT+F1
+
+umount /media/linux(o nombre ordenador)/(nombre de volumen del usb)
+
+Volver a ventanas: CTRL+ALT+F7
