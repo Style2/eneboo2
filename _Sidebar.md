@@ -65,6 +65,12 @@
 ---
 #####Lenguajes de programación:
 1. [Lenguajes de programación: Introducción-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Lenguajes-de-programaci%C3%B3n.-Introducci%C3%B3n)
+1. [Lenguajes de programación: FORMS-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Lenguajes-de-programaci%C3%B3n.-FORMS)
+1. [Lenguajes de programación: QUERIES-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Lenguajes-de-programaci%C3%B3n.-QUERIES)
+1. [Lenguajes de programación: REPORTS-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Lenguajes-de-programaci%C3%B3n.-REPORTS)
+1. [Lenguajes de programación: SCRIPTS-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Lenguajes-de-programaci%C3%B3n.-SCRIPTS)
+1. [Lenguajes de programación: TABLES-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Lenguajes-de-programaci%C3%B3n.-TABLES)
+1. [Lenguajes de programación: TRANSLATIONS-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Lenguajes-de-programaci%C3%B3n.-TRANSLATIONS)
 
 ---
 #####Herramientas de apoyo:
