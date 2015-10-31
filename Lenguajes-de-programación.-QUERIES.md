@@ -15,8 +15,8 @@ Se pueden abrir con "Wordpad".
 
 #####Añadir un comentario:
 
-`/**********`
-`**aquí escribes lo que quieras, para aclarar lo que hace ese código`
-`*****************/`
+`<!DOCTYPE QRY>`
+
+`<!aquí escribes lo que quieras, para aclarar lo que hace ese código>`
 
 
