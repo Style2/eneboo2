@@ -8,4 +8,15 @@
 Lenguajes de programación. QUERIES
 -----------------------------
 
-ESO
+
+#####Extensión de archivos: .qs
+
+Se pueden abrir con "Wordpad".
+
+#####Añadir un comentario:
+
+`/**********`
+`**aquí escribes lo que quieras, para aclarar lo que hace ese código`
+`*****************/`
+
+
