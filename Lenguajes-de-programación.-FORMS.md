@@ -8,4 +8,13 @@
 Lenguajes de programación. FORMS
 -----------------------------
 
-ESO
+#####Extensión de archivos: .ui
+
+Se pueden abrir con "Wordpad" o con el editor **"designer"** (situado en la carpeta \bin dentro de Eneboo)
+
+#####Añadir un comentario:
+
+`      <comment>******************`
+`**aquí escribes lo que quieras, para aclarar lo que hace ese código`
+`*****************</comment>    `
+
