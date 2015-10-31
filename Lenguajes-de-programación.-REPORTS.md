@@ -8,4 +8,12 @@
 Lenguajes de programación. REPORTS
 -----------------------------
 
-ESO
+
+#####Extensión de archivos: .kut
+
+Se pueden abrir con "Wordpad".
+
+#####Está obsoleto y se sustituye por los INFORMES JASPER-REPORTS
+
+https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Configurar-archivos-Jasper-Reports
+
