@@ -9,7 +9,7 @@ Lenguajes de programación. QUERIES
 -----------------------------
 
 
-#####Extensión de archivos: .qs
+#####Extensión de archivos: .qry
 
 Se pueden abrir con "Wordpad".
 
