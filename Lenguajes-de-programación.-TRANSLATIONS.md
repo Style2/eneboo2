@@ -8,4 +8,13 @@
 Lenguajes de programación. TRANSLATIONS
 -----------------------------
 
-ESO
+
+#####Extensión de archivos: .idioma.ts (ejemplo: .ca.ts / .fr.ts / etc)
+
+Se pueden abrir con "Wordpad".
+
+#####Añadir un comentario:
+
+`<!-- aquí escribes lo que quieras, para aclarar lo que hace ese código	-->`
+
+
