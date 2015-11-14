@@ -54,12 +54,12 @@ Si se definen dentro de un bloque su ámbito será local. Si se definen fuera se
 
 Funciones y Llamadas Las funciones deben ser declaradas con la palabra clave function seguida del nombre de la función:
 
-     `function nomFuncion()`
-     `{`
-         `........`
-         `........`
-         `return x; `
-     `}` 
+     function nomFuncion()
+     {````
+         ````........``
+         ````........````
+         ````return x; ````
+     ````}` ```
 
 la palabra **nomFuncion** es el nombre de la función, el **paréntesis** indica los parámetros que se le pasan a la función (en este caso no los hay). Todo el cuerpo de la función se encuentra encasillado por **llaves** ({}). La palabra clave retur*n devuelve el resultado de la ejecución de la función (en este caso x)
 
