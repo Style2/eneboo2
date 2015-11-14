@@ -312,26 +312,30 @@ function afterCommit_facturas(cursorFactura)
 
 #####recordDelBeforenombreTabla()
 
-Momento de ejecución: Se ejecuta antes de producirse un borrado en la tabla sufijo del nombre de la función desde el formulario asociado con el script que la contenga.
-Parámetros: Ninguno.
-Valor de retorno: Ninguno.
-Uso: Se utiliza para incluir acciones inmediatamente anteriores al borrado de de un registro en la tabla especificada.
-Script de ubicación: En el script principal del módulo. 
-recordDelAfternombreTabla()
-Momento de ejecución: Se ejecuta después de producirse un borrado en la tabla sufijo del nombre de la función desde el formulario asociado con el script que la contenga.
-Parámetros: Ninguno.
-Valor de retorno: Ninguno.
-Uso: Se utiliza para incluir acciones inmediatamente posteriores al borrado de de un registro en la tabla especificada.
-Script de ubicación: En el script principal del módulo. 
+* Momento de ejecución: Se ejecuta antes de producirse un borrado en la tabla sufijo del nombre de la función desde el formulario asociado con el script que la contenga.
+* Parámetros: Ninguno.
+* Valor de retorno: Ninguno.
+* Uso: Se utiliza para incluir acciones inmediatamente anteriores al borrado de de un registro en la tabla especificada.
+* Script de ubicación: En el script principal del módulo.
+
+--
+ 
+#####recordDelAfternombreTabla()
+
+* Momento de ejecución: Se ejecuta después de producirse un borrado en la tabla sufijo del nombre de la función desde el formulario asociado con el script que la contenga.
+* Parámetros: Ninguno.
+* Valor de retorno: Ninguno.
+* Uso: Se utiliza para incluir acciones inmediatamente posteriores al borrado de de un registro en la tabla especificada.
+* Script de ubicación: En el script principal del módulo. 
 
 --
 
 #####main()
 
-Momento de ejecución: Cuando el usuario active una acción conectada a un slot execMainScript, se ejecutará la función main contenida en el script definido en la etiqueta de dicha acción.
-Parámetros: Ninguno.
-Valor de retorno: Ninguno.
-Uso: Esta función se utiliza cuando una de las opciones de la ventana principal no se encuentra conectada con la apertura de un formulario, sino que únicamente deseamos que se ejecute el código incluido en la función main. 
+* Momento de ejecución: Cuando el usuario active una acción conectada a un slot execMainScript, se ejecutará la función main contenida en el script definido en la etiqueta de dicha acción.
+* Parámetros: Ninguno.
+* Valor de retorno: Ninguno.
+* Uso: Esta función se utiliza cuando una de las opciones de la ventana principal no se encuentra conectada con la apertura de un formulario, sino que únicamente deseamos que se ejecute el código incluido en la función main. 
 
 ---
 
@@ -343,7 +347,7 @@ Para permitir el acceso a ciertos objetos desde los scripts se ha creado un conj
 
 Por ejemplo, sabemos que podemos acceder a un cursor de una tabla para manipular sus datos desde un script. Si queremos obtener el nombre del cliente cuyo código es el 100 de la tabla clientes:
 
-var cursorCliente = new FLSqlCursor("clientes");
+ var cursorCliente = new FLSqlCursor("clientes");
 var codCliente = 100;
 cursorCliente.select("codcliente = "+ codCliente);
 cursorCliente.first();
