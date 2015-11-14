@@ -439,46 +439,46 @@ Primero veamos como quedaría el script flfactgraf.qs que copiaremos en el direc
 
      function lanzarGrafico( cursor:FLSqlCursor, nombreInforme:String, orderBy:String, groupBy:String )
      {
-         var q:FLSqlQuery = prepararConsultaInforme(cursor, nombreInforme, orderBy);
-         var campos:Array = q.select().split( "," );
-         var util:FLUtil = new FLUtil();
-         var coorX:String = Input.getItem( "Coordenada X", campos, campos[0], false, "Coordenada X" );
-         coorX = coorX.replace( " ", "" );
-         var compX:Array = coorX.split( "." );
-         var tipoX:Number = util.fieldType( compX[1], compX[0] );
-         var esFechaX:Boolean = false;
-         if ( tipoX == 26 )
-             esFechaX = true;
-         var coorY:String = Input.getItem( "Coordenada Y", campos, campos[0], false, "Coordenada Y" );
-         coorY = coorY.replace( " ", "" );
-         var compY:Array = coorY.split( "." );
-         var tipoY:Number = util.fieldType( compY[1], compY[0] );
-         var esFechaY:Boolean = false;
-         if ( tipoY == 26 )
-             esFechaY = true;
-         if ( q.exec() ) {
-             if ( q.size() > 0 ) {
+         var q:FLSqlQuery = prepararConsultaInforme(cursor, nombreInforme, orderBy);
+         var campos:Array = q.select().split( "," );
+         var util:FLUtil = new FLUtil();
+         var coorX:String = Input.getItem( "Coordenada X", campos, campos[0], false, "Coordenada X" );
+         coorX = coorX.replace( " ", "" );
+         var compX:Array = coorX.split( "." );
+         var tipoX:Number = util.fieldType( compX[1], compX[0] );
+         var esFechaX:Boolean = false;
+         if ( tipoX == 26 )
+             esFechaX = true;
+         var coorY:String = Input.getItem( "Coordenada Y", campos, campos[0], false, "Coordenada Y" );
+         coorY = coorY.replace( " ", "" );
+         var compY:Array = coorY.split( "." );
+         var tipoY:Number = util.fieldType( compY[1], compY[0] );
+         var esFechaY:Boolean = false;
+         if ( tipoY == 26 )
+             esFechaY = true;
+         if ( q.exec() ) {
+             if ( q.size() > 0 ) {
                  var stdin:String, datos:String;
-                 var fechaInicioX:String, fechaFinX:String, fechaInicioY:String, fechaFinY:String;
-                 if ( esFechaX || esFechaY ) {
-                     q.first();
-                     if ( esFechaX )
-                         fechaInicioX = util.dateAMDtoDMA( q.value( coorX ) );
-                     else
-                         fechaInicioX = q.value( coorX );
-                     if ( esFechaY )
-                         fechaInicioY = util.dateAMDtoDMA( q.value( coorY ) );
-                     else
-                         fechaInicioY = q.value( coorY );
-                     datos = fechaInicioX + " " + fechaInicioY + "\n";
-                     q.last();
+                 var fechaInicioX:String, fechaFinX:String, fechaInicioY:String, fechaFinY:String;
+                 if ( esFechaX || esFechaY ) {
+                     q.first();
+                     if ( esFechaX )
+                         fechaInicioX = util.dateAMDtoDMA( q.value( coorX ) );
+                     else
+                         fechaInicioX = q.value( coorX );
+                     if ( esFechaY )
+                         fechaInicioY = util.dateAMDtoDMA( q.value( coorY ) );
+                     else
+                         fechaInicioY = q.value( coorY );
+                     datos = fechaInicioX + " " + fechaInicioY + "\n";
+                     q.last();
                      if ( esFechaX )
                          fechaFinX = util.dateAMDtoDMA( q.value( coorX ) );
                      if ( esFechaY )
                          fechaFinY = util.dateAMDtoDMA( q.value( coorY ) );
                      q.first();
                  }
-                 var tempX:String, tempY:String;
+                 var tempX:String, tempY:String;
                  while ( q.next() ) {
                      if ( esFechaX )
                          tempX = util.dateAMDtoDMA( q.value( coorX ) );
