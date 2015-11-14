@@ -183,10 +183,10 @@ Las funciones predefinidas son invocadas automáticamente al producirse determin
 
 #####init()
     
-Momento de ejecución: Apertura del formulario asociado con el script que la contenga.
-Parámetros: Ninguno.
-Valor de retorno: Ninguno
-Uso: Acciones de inicialización del formulario. Ejemplo: En el caso en el que al abrir el formulario deseemos que aparezcan algunos campos deshabilitados y conectar algún botón a una función:
+* Momento de ejecución: Apertura del formulario asociado con el script que la contenga.
+* Parámetros: Ninguno.
+* Valor de retorno: Ninguno
+* Uso: Acciones de inicialización del formulario. Ejemplo: En el caso en el que al abrir el formulario deseemos que aparezcan algunos campos deshabilitados y conectar algún botón a una función:
 
      `function init()`
      `{`
@@ -201,11 +201,11 @@ Hemos deshabilitado el componente fdbCliente y hemos conectado la pulsación de 
 
 #####validateForm()
 
-Momento de ejecución: Pulsación del botón Aceptar o Aceptar y continuar del formulario asociado con el script que la contenga.
-Parámetros: Ninguno
-Valor de retorno: Valor booleano que indica si la validación ha sido correcta o no.
-Uso: Se suele utilizar para hacer comprobaciones sobre los datos introducidos en el formulario.
-Ejemplo: Se comprueba antes de validar el formulario que el contenido de uno de los campos no sea vacío.
+* Momento de ejecución: Pulsación del botón Aceptar o Aceptar y continuar del formulario asociado con el script que la contenga.
+* Parámetros: Ninguno
+* Valor de retorno: Valor booleano que indica si la validación ha sido correcta o no.
+* Uso: Se suele utilizar para hacer comprobaciones sobre los datos introducidos en el formulario.
+* Ejemplo: Se comprueba antes de validar el formulario que el contenido de uno de los campos no sea vacío.
 
      `function validateForm()`
      `{`
@@ -223,21 +223,21 @@ Ejemplo: Se comprueba antes de validar el formulario que el contenido de uno de 
 
 #####acceptedForm()
 
-Momento de ejecución: Una vez validado el formulario asociado con el script que la contenga, es decir, una vez que la función validateForm (si existe) ha devuelto true.
-Parámetros: Ninguno.
-Valor de retorno: Ninguno.
-Uso: Se utiliza para incluir una serie de acciones a realizar antes de hacer cambios en la base de datos una vez validado el formulario. 
+* Momento de ejecución: Una vez validado el formulario asociado con el script que la contenga, es decir, una vez que la función validateForm (si existe) ha devuelto true.
+* Parámetros: Ninguno.
+* Valor de retorno: Ninguno.
+* Uso: Se utiliza para incluir una serie de acciones a realizar antes de hacer cambios en la base de datos una vez validado el formulario. 
 
 --
 
 #####calculatedField()
 
-Momento de ejecución: Grabación del formulario
-Parámetros: Nombre del campo cuyo valor se desea calcular.
-Valor de retorno: Valor calculado del campo que se le pasa a la función como parámetro
-Uso:Calcula el valor de campos definidos en la base de datos como campos calculados (<calculated>true</calculated>).
+* Momento de ejecución: Grabación del formulario
+* Parámetros: Nombre del campo cuyo valor se desea calcular.
+* Valor de retorno: Valor calculado del campo que se le pasa a la función como parámetro
+* Uso:Calcula el valor de campos definidos en la base de datos como campos calculados (<calculated>true</calculated>).
 
-Ejemplo: El campo preciototal es el producto del campo preciounitario por el campo cantidad.
+* Ejemplo: El campo preciototal es el producto del campo preciounitario por el campo cantidad.
 
      `function calculateField(nombreCampo)`
      `{`
@@ -268,13 +268,14 @@ Ejemplo: El campo codcliente se calcula invocando a la función nextCounter del 
 
 #####beforeCommit_nombreTabla()
 
-Momento de ejecución: Se ejecuta antes de producirse un commit en la tabla sufijo del nombre de la función.
-Parámetros: Cursor sobre la tabla especificada que contiene el registro a modificar.
-Valor de retorno: Si las acciones y validaciones realizadas son correctas la función devuelve true. En caso contrario devuelve false. Si la función devuelve false, la función commitBuffer() asociada al cursor devolverá false.
-Uso: Se utiliza para incluir acciones y validaciones previas a la modificación de un registro en la tabla especificada.
-Script de ubicación: En el script principal del módulo. Ejemplo: para módulo principal de facturación en el script flfactppal.qs
-Ejemplo: Antes de dar de alta o modificar registro de la tabla facturas, se comprueba que su importe es mayor que 0.
-function beforeCommit_facturas(cursorFactura)
+* Momento de ejecución: Se ejecuta antes de producirse un commit en la tabla sufijo del nombre de la función.
+* Parámetros: Cursor sobre la tabla especificada que contiene el registro a modificar.
+* Valor de retorno: Si las acciones y validaciones realizadas son correctas la función devuelve true. En caso contrario devuelve false. Si la función devuelve false, la función commitBuffer() asociada al cursor devolverá false.
+* Uso: Se utiliza para incluir acciones y validaciones previas a la modificación de un registro en la tabla especificada.
+* Script de ubicación: En el script principal del módulo. Ejemplo: para módulo principal de facturación en el script flfactppal.qs
+* Ejemplo: Antes de dar de alta o modificar registro de la tabla facturas, se comprueba que su importe es mayor que 0.
+
+     function beforeCommit_facturas(cursorFactura)
 {
     if (cursorFactura.modeAccess == cursorFactura.Del) return true;
     if (parseFloat(cursorFactura.valueBuffer("importe") > 0)) return true;
