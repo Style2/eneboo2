@@ -664,34 +664,46 @@ lo sustituimos por;
     <formrecord>i_facturascli</formrecord>
     <scriptform>g_masterfacturascli</scriptform>
 </action>
+
 y despues;
-<action>
-    <name>i_resfacturascli</name>
-    <alias>QT_TRANSLATE_NOOP("MetaData","Resumen de facturas de clientes")</alias>
-    <description>QT_TRANSLATE_NOOP("MetaData","Cada línea del informe contiene
-    los datos de una factura. Al final del informe se añade la línea de totales")</description>
-    <table>i_facturascli</table>
-    <form>i_master</form>
-    <formrecord>i_facturascli</formrecord>
-    <scriptform>i_masterfacturascli</scriptform>
-</action>
+
+`<action>`
+    `<name>i_resfacturascli</name>`
+    `<alias>QT_TRANSLATE_NOOP("MetaData","Resumen de facturas de clientes")</alias>`
+    `<description>QT_TRANSLATE_NOOP("MetaData","Cada línea del informe contiene`
+    `los datos de una factura. Al final del informe se añade la línea de totales")</description>`
+    `<table>i_facturascli</table>`
+    `<form>i_master</form>`
+    `<formrecord>i_facturascli</formrecord>`
+    `<scriptform>i_masterfacturascli</scriptform>`
+`</action>`
+
 lo sustituimos por;
-<action>
-    <name>g_resfacturascli</name>
-    <alias>QT_TRANSLATE_NOOP("MetaData","Resumen de facturas de clientes")</alias>
-    <description>QT_TRANSLATE_NOOP("MetaData","Cada línea del informe contiene los datos
-    de una factura. Al final del informe se añade la línea de totales")</description>
-    <table>i_facturascli</table>
-    <form>i_master</form>
-    <formrecord>i_facturascli</formrecord>
-    <scriptform>g_masterfacturascli</scriptform>
-</action>
+
+`<action>`
+    `<name>g_resfacturascli</name>`
+    `<alias>QT_TRANSLATE_NOOP("MetaData","Resumen de facturas de clientes")</alias>`
+    `<description>QT_TRANSLATE_NOOP("MetaData","Cada línea del informe contiene los datos`
+    `de una factura. Al final del informe se añade la línea de totales")</description>`
+    `<table>i_facturascli</table>`
+    `<form>i_master</form>`
+    `<formrecord>i_facturascli</formrecord>`
+    `<scriptform>g_masterfacturascli</scriptform>`
+`</action>`
+
 Por último editamos con QtDesigner flfactgraf.ui y cambiamos los nombres de las acciones i_facturascli por g_facturascli, y i_resfacturascli por g_resfacturascli.
+
 Con esto ya hemos acabado, si volvemos a cargar el módulo, creamos como ejemplo un listado resumen de la facturación anual y hacemos clic en el botón con el icono de la impresora obtendremos un resultado parecido a este, si seleccionamos como coordenada X el campo fecha y como coordenada Y el campo total:
+
 Ventana principal del módulo de gráficos
-Conclusión
+
+####Conclusión
+
 A lo largo de esta serie de artículos hemos visto las capacidades reales de Abanq y que lo hacen tan atractivo para las empresas. Su carácter abierto y dinámico permite disponer de una herramienta que se puede adaptar sin límites y ajustándose a las necesidades presentes y futuras que cualquier tipo de empresa.
+
 En cualquier implantación de un ERP ya no es solamente importante que tenga la funcionalidad que necesitamos ahora, también tiene mucho importancia, y cada vez más, que se pueda garantizar la funcionalidad que se necesitará mañana. Y preferiblemente con libertad de proveedor y huyendo de la cautividad.
+
 En este contexto tan dinámico y cambiante que nos toca vivir, existen muy pocas soluciones que ofrezcan o puedan ofrecer lo que Abanq ya ofrece.
+
 Actualizado el 16/02/2007
 
