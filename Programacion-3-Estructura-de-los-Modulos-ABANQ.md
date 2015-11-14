@@ -90,22 +90,31 @@ Imaginemos que en nuestro fichero .xml tenemos la siguiente acción:
     
 Para llamar a una función que se encuentra en el script asociado a la etiqueta <scriptform>:
 form_nombre_accionXML.nomFuncion(); En este caso la llamada sería la siguiente:
+
 formse_persona.crearfuncion();
 
 * Dentro del script asociado al formulario edición
-<action>
-    <name>se_telefono</name>
-    <table>se_telefono</table>
-    <form>master</form>
-    <formrecord>se_telefono</formrecord>
-    <scriptformrecord></scriptformrecord>
-</action>
+
+`<action>`
+    `<name>se_telefono</name>`
+    `<table>se_telefono</table>`
+    `<form>master</form>`
+    `<formrecord>se_telefono</formrecord>`
+    `<scriptformrecord></scriptformrecord>`
+`</action>`
+
 En este caso la función se encuentra en el script correspondiente a la etiqueta <scriptformrecord> que pertenece al formulario edición. La llamada sería:
+
 formrecord_nombre_accionXML.nomFuncion();
+
 En este ejemplo la llamada se realizaría de la siguiente forma:
+
 * formRecordse_telefono.nomFuncion();
-Principales objetos
+
+####Principales objetos
+
 Veremos algunos de los objetos y métodos más habituales en el acceso a datos desde los scripts. Estos objetos (y las clases de las que derivan) pertenecen al interfaz entre el núcleo de Abanq y los scripts.
+
 Método cursor() sobre formularios. Los formularios nos permiten crear cursores. Un cursor sobre un formulario da acceso a todos los objetos que forman parte del mismo. La forma de declarar un cursor sobre un formulario es la siguiente:
 var cursorF = this.cursor();
 Así creamos un cursor sobre el formulario actual con el nombre cursorF.
