@@ -1,55 +1,97 @@
+* CREADO POR: [ABANQ-Infosial](http://www.abanq.org) en https://web.archive.org/web/20101212082726/http://abanq.org/documentacion/documento.php?ref=tutorial4
+* EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
+* ULTIMA ACTUALIZACIÓN: 14 de noviembre de 2015
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Programacion-3-Estructura-de-los-Modulos-ABANQ/_edit)
 
-Programación en Abanq (III). Módulos
+----
+###Programación en Abanq (III). Módulos
+
 Para terminar con la serie de artículos sobre el uso avanzado de Abanq, vamos a profundizar un poco más en el funcionamiento del sistema. Concretamente nos centraremos en el sistema de 'scripting' y los mecanismos que nos ofrece para poder implementar cualquier funcionalidad de manera interpretada mediante el lenguaje QSA.
+
 Este capítulo es algo más teórico que los anteriores, pero aun así terminaremos con un ejemplo práctico que nos mostrará como crear un pequeño módulo para generar gráficos estadísticos a partir de los datos obtenidos de las consultas utilizadas para los informes.
-Arquitectura por capas
+
+####Arquitectura por capas
+
 La arquitectura de Abanq ha sido cuidadosamente diseñada mediante capas perfectamente definidas. Esta estructura permite, en su capa mas externa, trabajar con un lenguaje de script (QSA) que oculta gran parte de los detalles internos y permite al desarrollador abstraerse de los mismos y centrarse solamente en la solución.
+
 Las capas inferiores ofrecen mediante su interfaz (API) su funcionalidad a las capas superiores. La capa de más bajo nivel (el magnífico conjunto de herramientas Qt), es la que finalmente ofrece las características multiplataforma de Abanq ya que es capaz de lidiar con distintos sistemas operativos.
-Arquitectura por capas
+
+####Arquitectura por capas
+
 En el entorno de Abanq se utilizan dos tipos de lenguajes:
-Lenguaje QSA. Es el utilizado en los scripts de los módulos, basado en ECMAScript (y por tanto muy parecido a JavaScript). No necesita ser compilado.
-Lenguaje C++. Es el utilizado para crear el núcleo de Abanq (esto es, las aplicación base). Se utiliza el Qt, una biblioteca multiplataforma para desarrollar interfaces gráficas de usuario. Utiliza el lenguaje C++ pero permite usar también C, Python y Perl, además cuenta con soporte para acceder a bases de datos mediante SQL, XML y API para el manejo de ficheros.
+
+1.- **Lenguaje QSA**. Es el utilizado en los scripts de los módulos, basado en ECMAScript (y por tanto muy parecido a JavaScript). No necesita ser compilado.
+
+1.- **Lenguaje C++**. Es el utilizado para crear el núcleo de Abanq (esto es, las aplicación base). Se utiliza el Qt, una biblioteca multiplataforma para desarrollar interfaces gráficas de usuario. Utiliza el lenguaje C++ pero permite usar también C, Python y Perl, además cuenta con soporte para acceder a bases de datos mediante SQL, XML y API para el manejo de ficheros.
+
 El funcionamiento básico es el siguiente; los objetos definidos en Qt (núcleo de la aplicación) pueden ser accedidos desde QSA (scripts), pero no directamente por razones de seguridad. Este acceso se realiza mediante la creación de unas clases intermedias (Interfaces FL C++) que actúan como interfaz de las clases de Abanq creadas en Qt (Interfaces FL C++), a su vez basadas en C++ (Qt C++).
+
 Desde el código QSA se pueden crear objetos de las clases interfaz para acceder a los correspondientes objetos Qt. Por tanto, sólo se podrá acceder a aquellas clases (y, dentro de éstas, a los métodos) de Qt que hayan sido explícitamente definidos en el interfaz. El interfaz actúa como conexión entre QSA y Qt.
+
 A su vez, QSA dispone de las funciones propias de cualquier lenguaje de programación.
-Uso de QSA en Abanq
-Variables. Las variables se declaran usando la palabra clave var:
+
+####Uso de QSA en Abanq
+
+**Variables**. Las variables se declaran usando la palabra clave var:
+
 var a;
+
 En esta declaración la variable a esta indefinida, para crear una variable definida procederemos de la siguiente manera:
+
 var a = "hola";
-Ámbito de las variables. Cuando declaramos una variable con la palabra clave var su ámbito se reduce al bloque en el que ha sido declarada. Es una variable local. Sin embargo, si ponemos el nombre de la variable con su asignación sin la palabra clave var, se declara automáticamente como global.
-Constantes. Las constantes se definen mediante la palabra clave const
+
+**Ámbito de las variables**. Cuando declaramos una variable con la palabra clave var su ámbito se reduce al bloque en el que ha sido declarada. Es una variable local. Sin embargo, si ponemos el nombre de la variable con su asignación sin la palabra clave var, se declara automáticamente como global.
+
+**Constantes**. Las constantes se definen mediante la palabra clave const
+
 const x = "bueno";
+
 const y = 42;
-Las constantes deben ser asignadas a la vez que se definen, ya que su valor no puede ser modificado más adelante. Si se definen dentro de un bloque su ámbito será local. Si se definen fuera serán de ámbito global.
+
+Las constantes deben ser asignadas a la vez que se definen, ya que su valor no puede ser modificado más adelante. 
+
+Si se definen dentro de un bloque su ámbito será local. Si se definen fuera serán de ámbito global.
+
 Funciones y Llamadas Las funciones deben ser declaradas con la palabra clave function seguida del nombre de la función:
-function nomFuncion()
-{
-    ........
-    ........
-    return x; 
-} 
-la palabra nomFuncion es el nombre de la función, el paréntesis indica los parámetros que se le pasan a la función (en este caso no los hay). Todo el cuerpo de la función se encuentra encasillado por llaves ({}). La palabra clave return devuelve el resultado de la ejecución de la función (en este caso x)
+
+`function nomFuncion()`
+`{`
+    `........`
+    `........`
+    `return x; `
+`}` 
+
+la palabra **nomFuncion** es el nombre de la función, el **paréntesis** indica los parámetros que se le pasan a la función (en este caso no los hay). Todo el cuerpo de la función se encuentra encasillado por **llaves** ({}). La palabra clave retur*n devuelve el resultado de la ejecución de la función (en este caso x)
+
 Para que esta función se ejecute debemos realizar una llamada. El formato de la llamada depende del lugar desde el que se efectúe:
+
 * Dentro del script
+
 var y = nomFuncion();
+
 El resultado de llamar a la función será almacenado por la variable y.
+
 * Dentro del módulo principal nombre_modulo_principal.nombre_funcion();
+
 Supongamos que nuestra función se encuentra en el módulo principal flfactppal, entonces la llamada a la función será:
-    flfactppal.nomFuncion();
+   ` flfactppal.nomFuncion();`
+
 * Dentro del script asociado al formulario maestro
+
 Imaginemos que en nuestro fichero .xml tenemos la siguiente acción:
-<action>
-    <name>se_persona</name>
-    <table>se_persona</table>
-    <form>se_master</form>
-    <formrecord>se_persona</formrecord>
-    <scriptform>se_persona</scriptform>
-</action>
+
+`<action>`
+    `<name>se_persona</name>`
+    `<table>se_persona</table>`
+    `<form>se_master</form>`
+    `<formrecord>se_persona</formrecord>`
+    `<scriptform>se_persona</scriptform>`
+`</action>`
     
 Para llamar a una función que se encuentra en el script asociado a la etiqueta <scriptform>:
 form_nombre_accionXML.nomFuncion(); En este caso la llamada sería la siguiente:
 formse_persona.crearfuncion();
+
 * Dentro del script asociado al formulario edición
 <action>
     <name>se_telefono</name>
