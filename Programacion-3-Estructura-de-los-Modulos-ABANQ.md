@@ -32,7 +32,7 @@ A su vez, QSA dispone de las funciones propias de cualquier lenguaje de programa
 
 ####Uso de QSA en Abanq
 
-**Variables**. Las variables se declaran usando la palabra clave var:
+**Variables**. Las variables se declaran usando la palabra clave **var**:
 
 var a;
 
@@ -40,9 +40,9 @@ En esta declaración la variable a esta indefinida, para crear una variable defi
 
 var a = "hola";
 
-**Ámbito de las variables**. Cuando declaramos una variable con la palabra clave var su ámbito se reduce al bloque en el que ha sido declarada. Es una variable local. Sin embargo, si ponemos el nombre de la variable con su asignación sin la palabra clave var, se declara automáticamente como global.
+**Ámbito de las variables**. Cuando declaramos una variable con la palabra clave **var** su ámbito se reduce al bloque en el que ha sido declarada. Es una variable local. Sin embargo, si ponemos el nombre de la variable con su asignación sin la palabra clave **var**, se declara automáticamente como global.
 
-**Constantes**. Las constantes se definen mediante la palabra clave const
+**Constantes**. Las constantes se definen mediante la palabra clave **const**
 
 const x = "bueno";
 
@@ -52,7 +52,7 @@ Las constantes deben ser asignadas a la vez que se definen, ya que su valor no p
 
 Si se definen dentro de un bloque su ámbito será local. Si se definen fuera serán de ámbito global.
 
-Funciones y Llamadas Las funciones deben ser declaradas con la palabra clave function seguida del nombre de la función:
+**Funciones y Llamadas**. Las funciones deben ser declaradas con la palabra clave **function** seguida del nombre de la función:
 
      function nomFuncion()
      {
@@ -61,22 +61,29 @@ Funciones y Llamadas Las funciones deben ser declaradas con la palabra clave fun
          return x; 
      }
 
-la palabra **nomFuncion** es el nombre de la función, el **paréntesis** indica los parámetros que se le pasan a la función (en este caso no los hay). Todo el cuerpo de la función se encuentra encasillado por **llaves** ({}). La palabra clave retur*n devuelve el resultado de la ejecución de la función (en este caso x)
+la palabra **nomFuncion** es el nombre de la función, el **paréntesis** indica los parámetros que se le pasan a la función (en este caso no los hay). Todo el cuerpo de la función se encuentra encasillado por **llaves** ({}). La palabra clave **return** devuelve el resultado de la ejecución de la función (en este caso x)
 
-Para que esta función se ejecute debemos realizar una llamada. El formato de la llamada depende del lugar desde el que se efectúe:
+Para que esta función se ejecute debemos realizar una **llamada**. El formato de la llamada depende del lugar desde el que se efectúe:
 
-* Dentro del script
+* _Dentro del script_
 
 var y = nomFuncion();
 
 El resultado de llamar a la función será almacenado por la variable y.
 
-* Dentro del módulo principal nombre_modulo_principal.nombre_funcion();
+--
 
-Supongamos que nuestra función se encuentra en el módulo principal flfactppal, entonces la llamada a la función será:
-   ` flfactppal.nomFuncion();`
+* _Dentro del módulo principal_:
 
-* Dentro del script asociado al formulario maestro
+ nombre_modulo_principal.nombre_funcion();
+
+Supongamos que nuestra función se encuentra en el módulo principal **flfactppal, entonces la llamada a la función será:
+
+         flfactppal.nomFuncion();
+
+--
+
+* _Dentro del script asociado al formulario maestro_
 
 Imaginemos que en nuestro fichero .xml tenemos la siguiente acción:
 
