@@ -117,49 +117,75 @@ Veremos algunos de los objetos y métodos más habituales en el acceso a datos d
 
 Método cursor() sobre formularios. Los formularios nos permiten crear cursores. Un cursor sobre un formulario da acceso a todos los objetos que forman parte del mismo. La forma de declarar un cursor sobre un formulario es la siguiente:
 var cursorF = this.cursor();
+
 Así creamos un cursor sobre el formulario actual con el nombre cursorF.
+
 Algunos de los métodos más utilizados sobre estos objetos son valueBuffer(nombreCampo) para leer el contenido de un campo y setValueBuffer(nombreCampo, valor) para establecer el valor de un campo.
+
 Método child() sobre formularios. Todos los componentes del formulario se consideran hijos de este. Podemos almacenar el contenido de cada uno de ellos en variables de la forma siguiente:
+
 var nombre = this.child("fdbNombre");
+
 La variable nombre contiene el elemento fdbNombre del formulario que a su vez se refiere a un campo de la tabla asociada a dicho formulario. La variable nombre será un objeto del mismo tipo que el componente del que procede, frecuentemente un FLFieldDB. En función del tipo de objeto de que se trate, dispondremos de un conjunto de métodos y propiedades para acceder a él.
+
 Existe la posibilidad de habilitar o deshabilitar un componente del formulario mediante el uso de:
+
 * setDisabled() cuando se trata de un objeto tipo botón
 * setTabEnabled() cuando se trata de un objeto tipo tab
 * enabled cuando se trata de un objeto tipo campo. 
+
 Ejemplos:
+
 this.child("nombreboton").setDisabled("true ó false");
 this.child("nombretab").setTabEnabled(numeropagina, true ó false);
 this.child("nombrecampo").enabled = true ó false;
-Cursor sobre Tablas. Se utiliza para poder trabajar directamente con los datos de una tabla sin pasar por un formulario. Son objetos de tipo FLSqlCursor:
+
+**Cursor sobre Tablas**. Se utiliza para poder trabajar directamente con los datos de una tabla sin pasar por un formulario. Son objetos de tipo **FLSqlCursor**:
+
 var cursorTab = new FLSqlCursor("nombreTabla");
+
 Donde nombreTabla es el nombre de la tabla en base de datos.
+
 Métodos más comunes:
+
 * setModeAccess: Define el modo de acceso del cursor sobre la tabla. Existen cuatro modo de acceso:
+
 o 1. Insert. Inserción de datos.
 o 2. Edit. Edición de datos
 o 3. Del. Borrado de datos.
 o 4. Browse. Acceso de sólo lectura. 
+
 El modo de acceso es una propiedad del objeto formulario; se utilizará así:
+
 cursorTab.setModeAccess (cursorTab.Insert);
+
 * setValueBuffer: Para insertar un valor en un campo de la tabla.
+
 cursorTab.setValueBuffer(nombrecampo,valor_a_insertar);
+
 * valueBuffer: Para leer un valor de un campo de la tabla. Para ello hay que posicionar el cursor sobre el registro de la tabla:
+
 var codart = 155; var cursorArt = new FLSqlcursor("articulos"); cursorArt.Select("codarticulo = " + codart); cursorArt.first(); var idarticulo = cursorArt.valueBuffer("id");
+
 En este ejemplo se crea una variable que contiene el valor 155, la cual es utilizada como criterio de búsqueda. La función select() establece este criterio. La función first() posiciona el cursor sobre el registro deseado. Una vez posicionado el cursor se obtiene el valor mediante valueBuffer()
-Funciones predefinidas
+
+####Funciones predefinidas
+
 Las funciones predefinidas son invocadas automáticamente al producirse determinados eventos. Estas funciones pueden ser redefinidas según las necesidades del programador. Salvo que se indique lo contrario, estas funciones se deben ubicar en el script correspondiente al formulario en el que se produce el evento. En este apartado haremos alusión a las más utilizadas:
+
 init()
     
 Momento de ejecución: Apertura del formulario asociado con el script que la contenga.
 Parámetros: Ninguno.
 Valor de retorno: Ninguno
 Uso: Acciones de inicialización del formulario. Ejemplo: En el caso en el que al abrir el formulario deseemos que aparezcan algunos campos deshabilitados y conectar algún botón a una función:
-function init()
-{
-    form.child("fdbCliente").setDisabled(true);
-    var pbnGenerarFactura = this.child("pbnGenerarFactura");
-    connect(pbnGenerarFactura, "clicked()", this,"generarFactura");
-}
+
+`function init()`
+`{`
+    `form.child("fdbCliente").setDisabled(true);`
+    `var pbnGenerarFactura = this.child("pbnGenerarFactura");`
+    `connect(pbnGenerarFactura, "clicked()", this,"generarFactura");`
+`}`
     
 Hemos deshabilitado el componente fdbCliente y hemos conectado la pulsación de un botón llamado pbnGenerarFactura con la ejecución de la función generarFactura() 
 validateForm()
@@ -168,19 +194,21 @@ Parámetros: Ninguno
 Valor de retorno: Valor booleano que indica si la validación ha sido correcta o no.
 Uso: Se suele utilizar para hacer comprobaciones sobre los datos introducidos en el formulario.
 Ejemplo: Se comprueba antes de validar el formulario que el contenido de uno de los campos no sea vacío.
-function validateForm()
-{
-    var cursor = form.cursor();
-    if (cursor.valueBuffer("campo") == ""){
-        var util = new FLUtil();
-        MessageBox.warning(util.translate("scripts", "El campo no tiene datos"),
-                MessageBox.Ok, MessageBox.NoButton, MessageBox.NoButton);
-        return false;
-    } else
-    return true;
-}
+
+`function validateForm()`
+`{`
+    `var cursor = form.cursor();`
+    `if (cursor.valueBuffer("campo") == ""){`
+        `var util = new FLUtil();`
+        `MessageBox.warning(util.translate("scripts", "El campo no tiene datos"),`
+                `MessageBox.Ok, MessageBox.NoButton, MessageBox.NoButton);`
+        `return false;`
+    `} else`
+    `return true;`
+`}`
     
 acceptedForm()
+
 Momento de ejecución: Una vez validado el formulario asociado con el script que la contenga, es decir, una vez que la función validateForm (si existe) ha devuelto true.
 Parámetros: Ninguno.
 Valor de retorno: Ninguno.
@@ -190,15 +218,17 @@ Momento de ejecución: Grabación del formulario
 Parámetros: Nombre del campo cuyo valor se desea calcular.
 Valor de retorno: Valor calculado del campo que se le pasa a la función como parámetro
 Uso:Calcula el valor de campos definidos en la base de datos como campos calculados (<calculated>true</calculated>).
+
 Ejemplo: El campo preciototal es el producto del campo preciounitario por el campo cantidad.
-function calculateField(nombreCampo)
-{
-    var cursor = form.cursor();
-    if (nombreCampo == "preciototal"") {
-        return parseFloat(cursor.valueBuffer("preciounitario")) *
-                parseFloat(cursor.valueBuffer("cantidad"));
-    }
-}
+
+`function calculateField(nombreCampo)`
+`{`
+    `var cursor = form.cursor();`
+    `if (nombreCampo == "preciototal"") {`
+        `return parseFloat(cursor.valueBuffer("preciounitario")) *`
+                `parseFloat(cursor.valueBuffer("cantidad"));`
+    `}`
+`}`
     
 calculateCounter()
 Momento de ejecución: Apertura del formulario asociado con el script que la contenga.
