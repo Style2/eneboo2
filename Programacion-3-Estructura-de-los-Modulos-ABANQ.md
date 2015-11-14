@@ -55,10 +55,15 @@ Si se definen dentro de un bloque su ámbito será local. Si se definen fuera se
 Funciones y Llamadas Las funciones deben ser declaradas con la palabra clave function seguida del nombre de la función:
 
 `function nomFuncion()`
+
 `{`
+
     `........`
+
     `........`
+
     `return x; `
+
 `}` 
 
 la palabra **nomFuncion** es el nombre de la función, el **paréntesis** indica los parámetros que se le pasan a la función (en este caso no los hay). Todo el cuerpo de la función se encuentra encasillado por **llaves** ({}). La palabra clave retur*n devuelve el resultado de la ejecución de la función (en este caso x)
@@ -81,14 +86,21 @@ Supongamos que nuestra función se encuentra en el módulo principal flfactppal,
 Imaginemos que en nuestro fichero .xml tenemos la siguiente acción:
 
 `<action>`
+
     `<name>se_persona</name>`
+
     `<table>se_persona</table>`
+
     `<form>se_master</form>`
+
     `<formrecord>se_persona</formrecord>`
+
     `<scriptform>se_persona</scriptform>`
+
 `</action>`
     
 Para llamar a una función que se encuentra en el script asociado a la etiqueta <scriptform>:
+
 form_nombre_accionXML.nomFuncion(); En este caso la llamada sería la siguiente:
 
 formse_persona.crearfuncion();
@@ -96,11 +108,17 @@ formse_persona.crearfuncion();
 * Dentro del script asociado al formulario edición
 
 `<action>`
+
     `<name>se_telefono</name>`
+
     `<table>se_telefono</table>`
+
     `<form>master</form>`
+
     `<formrecord>se_telefono</formrecord>`
+
     `<scriptformrecord></scriptformrecord>`
+
 `</action>`
 
 En este caso la función se encuentra en el script correspondiente a la etiqueta <scriptformrecord> que pertenece al formulario edición. La llamada sería:
@@ -116,6 +134,7 @@ En este ejemplo la llamada se realizaría de la siguiente forma:
 Veremos algunos de los objetos y métodos más habituales en el acceso a datos desde los scripts. Estos objetos (y las clases de las que derivan) pertenecen al interfaz entre el núcleo de Abanq y los scripts.
 
 Método cursor() sobre formularios. Los formularios nos permiten crear cursores. Un cursor sobre un formulario da acceso a todos los objetos que forman parte del mismo. La forma de declarar un cursor sobre un formulario es la siguiente:
+
 var cursorF = this.cursor();
 
 Así creamos un cursor sobre el formulario actual con el nombre cursorF.
@@ -137,7 +156,9 @@ Existe la posibilidad de habilitar o deshabilitar un componente del formulario m
 Ejemplos:
 
 this.child("nombreboton").setDisabled("true ó false");
+
 this.child("nombretab").setTabEnabled(numeropagina, true ó false);
+
 this.child("nombrecampo").enabled = true ó false;
 
 **Cursor sobre Tablas**. Se utiliza para poder trabajar directamente con los datos de una tabla sin pasar por un formulario. Son objetos de tipo **FLSqlCursor**:
@@ -181,13 +202,19 @@ Valor de retorno: Ninguno
 Uso: Acciones de inicialización del formulario. Ejemplo: En el caso en el que al abrir el formulario deseemos que aparezcan algunos campos deshabilitados y conectar algún botón a una función:
 
 `function init()`
+
 `{`
+
     `form.child("fdbCliente").setDisabled(true);`
+
     `var pbnGenerarFactura = this.child("pbnGenerarFactura");`
+
     `connect(pbnGenerarFactura, "clicked()", this,"generarFactura");`
+
 `}`
     
 Hemos deshabilitado el componente fdbCliente y hemos conectado la pulsación de un botón llamado pbnGenerarFactura con la ejecución de la función generarFactura() 
+
 validateForm()
 Momento de ejecución: Pulsación del botón Aceptar o Aceptar y continuar del formulario asociado con el script que la contenga.
 Parámetros: Ninguno
@@ -196,15 +223,25 @@ Uso: Se suele utilizar para hacer comprobaciones sobre los datos introducidos en
 Ejemplo: Se comprueba antes de validar el formulario que el contenido de uno de los campos no sea vacío.
 
 `function validateForm()`
+
 `{`
+
     `var cursor = form.cursor();`
+
     `if (cursor.valueBuffer("campo") == ""){`
+
         `var util = new FLUtil();`
+
         `MessageBox.warning(util.translate("scripts", "El campo no tiene datos"),`
+
                 `MessageBox.Ok, MessageBox.NoButton, MessageBox.NoButton);`
+
         `return false;`
+
     `} else`
+
     `return true;`
+
 `}`
     
 acceptedForm()
@@ -213,6 +250,7 @@ Momento de ejecución: Una vez validado el formulario asociado con el script que
 Parámetros: Ninguno.
 Valor de retorno: Ninguno.
 Uso: Se utiliza para incluir una serie de acciones a realizar antes de hacer cambios en la base de datos una vez validado el formulario. 
+
 calculatedField()
 Momento de ejecución: Grabación del formulario
 Parámetros: Nombre del campo cuyo valor se desea calcular.
@@ -222,15 +260,23 @@ Uso:Calcula el valor de campos definidos en la base de datos como campos calcula
 Ejemplo: El campo preciototal es el producto del campo preciounitario por el campo cantidad.
 
 `function calculateField(nombreCampo)`
+
 `{`
+
     `var cursor = form.cursor();`
+
     `if (nombreCampo == "preciototal"") {`
+
         `return parseFloat(cursor.valueBuffer("preciounitario")) *`
+
                 `parseFloat(cursor.valueBuffer("cantidad"));`
+
     `}`
+
 `}`
     
 calculateCounter()
+
 Momento de ejecución: Apertura del formulario asociado con el script que la contenga.
 Parámetros: Nombre del campo.
 Valor de retorno: Devuelve el valor del campo contador que se pasa como parámetro a la función
@@ -241,7 +287,11 @@ function calculateCounter()
     var util = new FLUtil();
     return util.nextCounter("codcliente", form.cursor());
 }
+
+---
+
 beforeCommit_nombreTabla()
+
 Momento de ejecución: Se ejecuta antes de producirse un commit en la tabla sufijo del nombre de la función.
 Parámetros: Cursor sobre la tabla especificada que contiene el registro a modificar.
 Valor de retorno: Si las acciones y validaciones realizadas son correctas la función devuelve true. En caso contrario devuelve false. Si la función devuelve false, la función commitBuffer() asociada al cursor devolverá false.
@@ -254,7 +304,11 @@ function beforeCommit_facturas(cursorFactura)
     if (parseFloat(cursorFactura.valueBuffer("importe") > 0)) return true;
     else return false;
 }
+
+---
+
 afterCommit_nombreTabla()
+
 Momento de ejecución: Se ejecuta después de producirse un commit en la tabla en la tabla sufijo del nombre de la función.
 Parámetros: Cursor sobre la tabla especificada que contiene el registro a modificar.
 Valor de retorno: Si las acciones y validaciones realizadas son correctas la función devuelve true. En caso contrario devuelve false. Si la función devuelve false, la función commitBuffer() asociada al cursor devolverá false.
@@ -269,6 +323,9 @@ function afterCommit_facturas(cursorFactura)
     return util.sqlUpdate("clientes", "totalfacturado", total,
         "codcliente = " + cursorFactura.valueBuffer("codcliente"));
 }
+
+---
+
 recordDelBeforenombreTabla()
 Momento de ejecución: Se ejecuta antes de producirse un borrado en la tabla sufijo del nombre de la función desde el formulario asociado con el script que la contenga.
 Parámetros: Ninguno.
@@ -281,6 +338,9 @@ Parámetros: Ninguno.
 Valor de retorno: Ninguno.
 Uso: Se utiliza para incluir acciones inmediatamente posteriores al borrado de de un registro en la tabla especificada.
 Script de ubicación: En el script principal del módulo. 
+
+---
+
 main()
 Momento de ejecución: Cuando el usuario active una acción conectada a un slot execMainScript, se ejecutará la función main contenida en el script definido en la etiqueta de dicha acción.
 Parámetros: Ninguno.
@@ -295,40 +355,72 @@ var codCliente = 100;
 cursorCliente.select("codcliente = "+ codCliente);
 cursorCliente.first();
 nombreCliente = cursorCliente.valueBuffer("nombre");
+
 Hemos usado un objeto de la clase FLSqlCursor. Esta clase es accesible desde el script porque en el interfaz se ha definido la clase FLSqlCursorInterface, y los métodos select y first se encuentran también en el interfaz.
+
 Importante. Muchas de las clases del interfaz se han definido con el formato nombre_clase + Interface. Desde los scripts accederemos a ellas sólo por el nombre_clase. Como hemos visto antes, la clase del interfaz es FLSqlCursorInterface, pero nosotros usamos FLSqlCursor en el script. 
-Un módulo de gráficos
+
+####Un módulo de gráficos
+
 Para practicar un poco más todo lo aprendido vamos a desarrollar un pequeño módulo de gráficos. Esto nos permitirá ver la estructura general de un módulo y la potencia de QSA que permite fácilmente aprovechar la funcionalidad de Abanq e interactuar con el sistema operativo.
+
 Antes de comenzar sería aconsejable tener a mano los artículos sobre Abanq de los números anteriores de Septiembre y Octubre, ya que obviaremos todo lo que ya se ha explicado en ellos. También sería buena idea disponer de la documentación que se puede encontrar en la página del proyecto ( http://Abanq.org/documentacion ).
+
 Nos basaremos en el módulo de informes de facturación.
+
 Descargamos dicho módulo desde http://prdownloads.sourceforge.net/Abanq/fact-informes-1.7.tar.gz, lo guardamos en nuestro disco y comenzamos a trabajar.
+
 Preparando el módulo
+
 Vamos a descomprimir el módulo de informes y haremos una copia del mismo en un nuevo directorio llamado gráficos:
+
 tar xzvf fact-informes-1.7.tar.gz
+
 cp -fR modulos/facturacion/informes/ graficos 
+
 Ahora debemos trabajar sobre ese directorio graficos. Hemos elegido como identificador del módulo el código flfactgraf. Por lo tanto lo primero que hacemos es renombrar los siguientes ficheros
+
 flfactinfo.mod -> flfactgraf.mod
 flfactinfo.xml -> flfactgraf.xml
 flfactinfo.xpm -> flfactgraf.xpm
 forms/flfactinfo.ui -> flfactgraf.ui
+
 El fichero flfactgraf.mod es el que describe el módulo con la información necesaria para que la aplicación base de Abanq pueda cargarlo correctamente, debemos editarlo para que contenga exactamente esto:
-<!DOCTYPE MODULE>
-<MODULE>
-    <name>flfactgraf</name>
-    <alias>Gráficos</alias>
-    <area>F</area>
-    <areaname>Area de Facturación</areaname>
-    <version>1.7</version>
-    <icon>flfactgraf.xpm</icon>
-    <flversion>1.7</flversion>
-    <dependencies>
-        <dependency>flfactinfo</dependency>
-    </dependencies>
-    <description>
-    Gráficos
-    </description>
-</MODULE>
+
+`<!DOCTYPE MODULE>`
+
+`<MODULE>`
+
+    `<name>flfactgraf</name>`
+
+    `<alias>Gráficos</alias>`
+
+    `<area>F</area>`
+
+    `<areaname>Area de Facturación</areaname>`
+
+    `<version>1.7</version>`
+
+    `<icon>flfactgraf.xpm</icon>`
+
+    `<flversion>1.7</flversion>`
+
+    `<dependencies>`
+
+        `<dependency>flfactinfo</dependency>`
+
+    `</dependencies>`
+
+    `<description>`
+
+    `Gráficos`
+
+    `</description>`
+
+`</MODULE>`
+
 El contenido de este fichero es muy claro y se explica por sí sólo, hay que destacar que la propiedad <name> es la más importante porque marca el identificador del módulo, si olvidamos asignar esta propiedad correctamente las cosas no funcionarán correctamente.
+
 Como ya sabemos el fichero flfactgraf.xml es el que describe las acciones, de momento no necesita ninguna modificación.
 El fichero flfactgraf.xpm es el icono que se mostrará asociado al módulo, no es necesario, pero podemos sustituirlo por otro más acorde al módulo que estamos construyendo.
 Y por último el fichero flfactinfo.ui es la ventana principal del módulo y que de momento tampoco vamos a modificar.
