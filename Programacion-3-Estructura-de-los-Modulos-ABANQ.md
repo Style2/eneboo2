@@ -54,17 +54,12 @@ Si se definen dentro de un bloque su ámbito será local. Si se definen fuera se
 
 Funciones y Llamadas Las funciones deben ser declaradas con la palabra clave function seguida del nombre de la función:
 
-`function nomFuncion()`
-
-`{`
-
-    `........`
-
-    `........`
-
-    `return x; `
-
-`}` 
+     `function nomFuncion()`
+     `{`
+         `........`
+         `........`
+         `return x; `
+     `}` 
 
 la palabra **nomFuncion** es el nombre de la función, el **paréntesis** indica los parámetros que se le pasan a la función (en este caso no los hay). Todo el cuerpo de la función se encuentra encasillado por **llaves** ({}). La palabra clave retur*n devuelve el resultado de la ejecución de la función (en este caso x)
 
@@ -85,19 +80,13 @@ Supongamos que nuestra función se encuentra en el módulo principal flfactppal,
 
 Imaginemos que en nuestro fichero .xml tenemos la siguiente acción:
 
-`<action>`
-
-    `<name>se_persona</name>`
-
-    `<table>se_persona</table>`
-
-    `<form>se_master</form>`
-
-    `<formrecord>se_persona</formrecord>`
-
-    `<scriptform>se_persona</scriptform>`
-
-`</action>`
+     `<action>`
+         `<name>se_persona</name>`
+         `<table>se_persona</table>`
+         `<form>se_master</form>`
+         `<formrecord>se_persona</formrecord>`
+         `<scriptform>se_persona</scriptform>`
+     `</action>`
     
 Para llamar a una función que se encuentra en el script asociado a la etiqueta <scriptform>:
 
@@ -107,19 +96,13 @@ formse_persona.crearfuncion();
 
 * Dentro del script asociado al formulario edición
 
-`<action>`
-
-    `<name>se_telefono</name>`
-
-    `<table>se_telefono</table>`
-
-    `<form>master</form>`
-
-    `<formrecord>se_telefono</formrecord>`
-
-    `<scriptformrecord></scriptformrecord>`
-
-`</action>`
+     `<action>`
+         `<name>se_telefono</name>`
+         `<table>se_telefono</table>`
+         `<form>master</form>`
+         `<formrecord>se_telefono</formrecord>`
+         `<scriptformrecord></scriptformrecord>`
+     `</action>`
 
 En este caso la función se encuentra en el script correspondiente a la etiqueta <scriptformrecord> que pertenece al formulario edición. La llamada sería:
 
@@ -205,17 +188,12 @@ Parámetros: Ninguno.
 Valor de retorno: Ninguno
 Uso: Acciones de inicialización del formulario. Ejemplo: En el caso en el que al abrir el formulario deseemos que aparezcan algunos campos deshabilitados y conectar algún botón a una función:
 
-`function init()`
-
-`{`
-
-    `form.child("fdbCliente").setDisabled(true);`
-
-    `var pbnGenerarFactura = this.child("pbnGenerarFactura");`
-
-    `connect(pbnGenerarFactura, "clicked()", this,"generarFactura");`
-
-`}`
+     `function init()`
+     `{`
+         `form.child("fdbCliente").setDisabled(true);`
+         `var pbnGenerarFactura = this.child("pbnGenerarFactura");`
+         `connect(pbnGenerarFactura, "clicked()", this,"generarFactura");`
+     `}`
     
 Hemos deshabilitado el componente fdbCliente y hemos conectado la pulsación de un botón llamado pbnGenerarFactura con la ejecución de la función generarFactura() 
 
@@ -229,27 +207,17 @@ Valor de retorno: Valor booleano que indica si la validación ha sido correcta o
 Uso: Se suele utilizar para hacer comprobaciones sobre los datos introducidos en el formulario.
 Ejemplo: Se comprueba antes de validar el formulario que el contenido de uno de los campos no sea vacío.
 
-`function validateForm()`
-
-`{`
-
-    `var cursor = form.cursor();`
-
-    `if (cursor.valueBuffer("campo") == ""){`
-
-        `var util = new FLUtil();`
-
-        `MessageBox.warning(util.translate("scripts", "El campo no tiene datos"),`
-
-                `MessageBox.Ok, MessageBox.NoButton, MessageBox.NoButton);`
-
-        `return false;`
-
-    `} else`
-
-    `return true;`
-
-`}`
+     `function validateForm()`
+     `{`
+         `var cursor = form.cursor();`
+         `if (cursor.valueBuffer("campo") == ""){`
+             `var util = new FLUtil();`
+             `MessageBox.warning(util.translate("scripts", "El campo no tiene datos"),`
+                     `MessageBox.Ok, MessageBox.NoButton, MessageBox.NoButton);`
+             `return false;`
+         `} else`
+         `return true;`
+     `}`
     
 --
 
@@ -271,21 +239,14 @@ Uso:Calcula el valor de campos definidos en la base de datos como campos calcula
 
 Ejemplo: El campo preciototal es el producto del campo preciounitario por el campo cantidad.
 
-`function calculateField(nombreCampo)`
-
-`{`
-
-    `var cursor = form.cursor();`
-
-    `if (nombreCampo == "preciototal"") {`
-
-        `return parseFloat(cursor.valueBuffer("preciounitario")) *`
-
-                `parseFloat(cursor.valueBuffer("cantidad"));`
-
-    `}`
-
-`}`
+     `function calculateField(nombreCampo)`
+     `{`
+         `var cursor = form.cursor();`
+         `if (nombreCampo == "preciototal"") {`
+             `return parseFloat(cursor.valueBuffer("preciounitario")) *`
+                     `parseFloat(cursor.valueBuffer("cantidad"));`
+         `}`
+     `}`
     
 --
 
@@ -296,11 +257,12 @@ Parámetros: Nombre del campo.
 Valor de retorno: Devuelve el valor del campo contador que se pasa como parámetro a la función
 Uso: esta función se utiliza para calcular los campos que en la base de datos se han definido como de tipo contador (true).
 Ejemplo: El campo codcliente se calcula invocando a la función nextCounter del objeto util.
-function calculateCounter()
-{
-    var util = new FLUtil();
-    return util.nextCounter("codcliente", form.cursor());
-}
+
+     `function calculateCounter()`
+     `{`
+         `var util = new FLUtil();`
+         `return util.nextCounter("codcliente", form.cursor());`
+     `}`
 
 --
 
