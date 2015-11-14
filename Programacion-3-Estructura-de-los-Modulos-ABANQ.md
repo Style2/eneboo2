@@ -55,11 +55,11 @@ Si se definen dentro de un bloque su ámbito será local. Si se definen fuera se
 Funciones y Llamadas Las funciones deben ser declaradas con la palabra clave function seguida del nombre de la función:
 
      function nomFuncion()
-     {````
-         ````........``
-         ````........````
-         ````return x; ````
-     ````}` ```
+     {
+         ........
+         ........
+         return x; 
+     }
 
 la palabra **nomFuncion** es el nombre de la función, el **paréntesis** indica los parámetros que se le pasan a la función (en este caso no los hay). Todo el cuerpo de la función se encuentra encasillado por **llaves** ({}). La palabra clave retur*n devuelve el resultado de la ejecución de la función (en este caso x)
 
@@ -373,35 +373,20 @@ forms/flfactinfo.ui -> flfactgraf.ui
 El fichero flfactgraf.mod es el que describe el módulo con la información necesaria para que la aplicación base de Abanq pueda cargarlo correctamente, debemos editarlo para que contenga exactamente esto:
 
 `<!DOCTYPE MODULE>`
-
 `<MODULE>`
-
     `<name>flfactgraf</name>`
-
     `<alias>Gráficos</alias>`
-
     `<area>F</area>`
-
     `<areaname>Area de Facturación</areaname>`
-
     `<version>1.7</version>`
-
     `<icon>flfactgraf.xpm</icon>`
-
     `<flversion>1.7</flversion>`
-
     `<dependencies>`
-
         `<dependency>flfactinfo</dependency>`
-
     `</dependencies>`
-
     `<description>`
-
     `Gráficos`
-
     `</description>`
-
 `</MODULE>`
 
 El contenido de este fichero es muy claro y se explica por sí sólo, hay que destacar que la propiedad <name> es la más importante porque marca el identificador del módulo, si olvidamos asignar esta propiedad correctamente las cosas no funcionarán correctamente.
@@ -452,83 +437,85 @@ Todo indica que lo único que debemos hacer es crear una nueva función del obje
 
 Primero veamos como quedaría el script flfactgraf.qs que copiaremos en el directorio scripts y que hemos construido siguiendo como ejemplo flfactinfo.qs pero creando la presentación con gnuplot:
 
-function lanzarGrafico( cursor:FLSqlCursor, nombreInforme:String, orderBy:String, groupBy:String )
-{
-    var q:FLSqlQuery = prepararConsultaInforme(cursor, nombreInforme, orderBy);
-    var campos:Array = q.select().split( "," );
-    var util:FLUtil = new FLUtil();
-    var coorX:String = Input.getItem( "Coordenada X", campos, campos[0], false, "Coordenada X" );
-    coorX = coorX.replace( " ", "" );
-    var compX:Array = coorX.split( "." );
-    var tipoX:Number = util.fieldType( compX[1], compX[0] );
-    var esFechaX:Boolean = false;
-    if ( tipoX == 26 )
-        esFechaX = true;
-    var coorY:String = Input.getItem( "Coordenada Y", campos, campos[0], false, "Coordenada Y" );
-    coorY = coorY.replace( " ", "" );
-    var compY:Array = coorY.split( "." );
-    var tipoY:Number = util.fieldType( compY[1], compY[0] );
-    var esFechaY:Boolean = false;
-    if ( tipoY == 26 )
-        esFechaY = true;
-    if ( q.exec() ) {
-        if ( q.size() > 0 ) {
-            var stdin:String, datos:String;
-            var fechaInicioX:String, fechaFinX:String, fechaInicioY:String, fechaFinY:String;
-            if ( esFechaX || esFechaY ) {
-                q.first();
-                if ( esFechaX )
-                    fechaInicioX = util.dateAMDtoDMA( q.value( coorX ) );
-                else
-                    fechaInicioX = q.value( coorX );
-                if ( esFechaY )
-                    fechaInicioY = util.dateAMDtoDMA( q.value( coorY ) );
-                else
-                    fechaInicioY = q.value( coorY );
-                datos = fechaInicioX + " " + fechaInicioY + "\n";
-                q.last();
-                if ( esFechaX )
-                    fechaFinX = util.dateAMDtoDMA( q.value( coorX ) );
-                if ( esFechaY )
-                    fechaFinY = util.dateAMDtoDMA( q.value( coorY ) );
-                q.first();
-            }
-            var tempX:String, tempY:String;
-            while ( q.next() ) {
-                if ( esFechaX )
-                    tempX = util.dateAMDtoDMA( q.value( coorX ) );
-                else
-                    tempX = q.value( coorX );
-                if ( esFechaY )
-                    tempY = util.dateAMDtoDMA( q.value( coorY ) );
-                else
-                    tempY = q.value( coorY );
-                datos += tempX + " " + tempY + "\n";
-            }
-            stdin = "set title \"" + nombreInforme + "\"";
-            if ( esFechaX ) {
-                stdin += "\nset xdata time";
-                stdin += "\nset timefmt \"\%d-\%m-\%Y\"";
-                stdin += "\nset xrange [\"" + fechaInicioX + "\" : \"" + fechaFinX + "\"]";
-                stdin += "\nset format x \"\%d-\%m\"";
-            }
-            if ( esFechaY ) {
-                stdin += "\nset ydata time";
-                stdin += "\nset timefmt \"\%d-\%m-\%Y\"";
-                stdin += "\nset yrange [\"" + fechaInicioY + "\" : \"" + fechaFinY +"\"]";
-                stdin += "\nset format y \"\%d-\%m\"";
-            }
-            stdin += "\nset xlabel \"" + coorX + "\"";
-            stdin += "\nset ylabel \"" + coorY + "\"";
-            stdin += "\nset grid";
-            stdin += "\nplot '-' using 1:2 t '' with line smoot bezier, '-' using 1:2 t '' with impulses\n";
-            stdin += datos;
-            stdin += "\ne\n"
-            stdin += datos;
-            Process.execute( ["gnuplot","-persist"], stdin);
-        }
-    }
-}
+     function lanzarGrafico( cursor:FLSqlCursor, nombreInforme:String, orderBy:String, groupBy:String )
+     {
+         var q:FLSqlQuery = prepararConsultaInforme(cursor, nombreInforme, orderBy);
+         var campos:Array = q.select().split( "," );
+         var util:FLUtil = new FLUtil();
+         var coorX:String = Input.getItem( "Coordenada X", campos, campos[0], false, "Coordenada X" );
+         coorX = coorX.replace( " ", "" );
+         var compX:Array = coorX.split( "." );
+         var tipoX:Number = util.fieldType( compX[1], compX[0] );
+         var esFechaX:Boolean = false;
+         if ( tipoX == 26 )
+             esFechaX = true;
+         var coorY:String = Input.getItem( "Coordenada Y", campos, campos[0], false, "Coordenada Y" );
+         coorY = coorY.replace( " ", "" );
+         var compY:Array = coorY.split( "." );
+         var tipoY:Number = util.fieldType( compY[1], compY[0] );
+         var esFechaY:Boolean = false;
+         if ( tipoY == 26 )
+             esFechaY = true;
+         if ( q.exec() ) {
+             if ( q.size() > 0 ) {
+                 var stdin:String, datos:String;
+                 var fechaInicioX:String, fechaFinX:String, fechaInicioY:String, fechaFinY:String;
+                 if ( esFechaX || esFechaY ) {
+                     q.first();
+                     if ( esFechaX )
+                         fechaInicioX = util.dateAMDtoDMA( q.value( coorX ) );
+                     else
+                         fechaInicioX = q.value( coorX );
+                     if ( esFechaY )
+                         fechaInicioY = util.dateAMDtoDMA( q.value( coorY ) );
+                     else
+                         fechaInicioY = q.value( coorY );
+                     datos = fechaInicioX + " " + fechaInicioY + "\n";
+                     q.last();
+                     if ( esFechaX )
+                         fechaFinX = util.dateAMDtoDMA( q.value( coorX ) );
+                     if ( esFechaY )
+                         fechaFinY = util.dateAMDtoDMA( q.value( coorY ) );
+                     q.first();
+                 }
+                 var tempX:String, tempY:String;
+                 while ( q.next() ) {
+                     if ( esFechaX )
+                         tempX = util.dateAMDtoDMA( q.value( coorX ) );
+                     else
+                         tempX = q.value( coorX );
+                     if ( esFechaY )
+                         tempY = util.dateAMDtoDMA( q.value( coorY ) );
+                     else
+                         tempY = q.value( coorY );
+                     datos += tempX + " " + tempY + "\n";
+                 }
+                 stdin = "set title \"" + nombreInforme + "\"";
+                 if ( esFechaX ) {
+                     stdin += "\nset xdata time";
+                     stdin += "\nset timefmt \"\%d-\%m-\%Y\"";
+                     stdin += "\nset xrange [\"" + fechaInicioX + "\" : \"" + fechaFinX + "\"]";
+                     stdin += "\nset format x \"\%d-\%m\"";
+                 }
+                 if ( esFechaY ) {
+                     stdin += "\nset ydata time";
+                     stdin += "\nset timefmt \"\%d-\%m-\%Y\"";
+                     stdin += "\nset yrange [\"" + fechaInicioY + "\" : \"" + fechaFinY +"\"]";
+                     stdin += "\nset format y \"\%d-\%m\"";
+                 }
+                 stdin += "\nset xlabel \"" + coorX + "\"";
+                 stdin += "\nset ylabel \"" + coorY + "\"";
+                 stdin += "\nset grid";
+                 stdin += "\nplot '-' using 1:2 t '' with line smoot bezier, '-' using 1:2 t '' with impulses\n";
+                 stdin += datos;
+                 stdin += "\ne\n"
+                 stdin += datos;
+                 Process.execute( ["gnuplot","-persist"], stdin);
+             }
+         }
+     }
+
+--
 
 function prepararConsultaInforme( cursor:FLSqlCursor, nombreInforme:String, orderBy:String, groupBy:String ):FLSqlQuery
 {
