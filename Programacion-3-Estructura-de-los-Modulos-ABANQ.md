@@ -714,36 +714,36 @@ Modificar flfactinfo.xml y hacemos las modificaciones correspondientes para util
 
 lo sustituimos por;
 
-<action>
-    <name>g_facturascli</name>
-    <alias>QT_TRANSLATE_NOOP("MetaData","Facturas de clientes")</alias>
-    <description>QT_TRANSLATE_NOOP("MetaData","Informe que contiene una página
-     por cada factura. Se muestran los datos de las líneas de la factura, el total 
-     de la factura y los totales de IVA, recargo de equivalencia e IRPF ")</description>
-    <table>i_facturascli</table>
-    <form>i_master</form>
-    <formrecord>i_facturascli</formrecord>
-    <scriptform>g_masterfacturascli</scriptform>
-</action>
-
-y despues;
-
-`<action>`
-    `<name>i_resfacturascli</name>`
-    `<alias>QT_TRANSLATE_NOOP("MetaData","Resumen de facturas de clientes")</alias>`
-    `<description>QT_TRANSLATE_NOOP("MetaData","Cada línea del informe contiene`
-    `los datos de una factura. Al final del informe se añade la línea de totales")</description>`
+     `<action>`
+    `<name>g_facturascli</name>`
+    `<alias>QT_TRANSLATE_NOOP("MetaData","Facturas de clientes")</alias>`
+    `<description>QT_TRANSLATE_NOOP("MetaData","Informe que contiene una página`
+     `por cada factura. Se muestran los datos de las líneas de la factura, el total `
+     `de la factura y los totales de IVA, recargo de equivalencia e IRPF ")</description>`
     `<table>i_facturascli</table>`
     `<form>i_master</form>`
     `<formrecord>i_facturascli</formrecord>`
-    `<scriptform>i_masterfacturascli</scriptform>`
+    `<scriptform>g_masterfacturascli</scriptform>`
 `</action>`
+
+y despues;
+
+     `<action>`
+         `<name>i_resfacturascli</name>`
+         `<alias>QT_TRANSLATE_NOOP("MetaData","Resumen de facturas de clientes")</alias>`
+         `<description>QT_TRANSLATE_NOOP("MetaData","Cada línea del informe contiene`
+         `los datos de una factura. Al final del informe se añade la línea de totales")</description>`
+         `<table>i_facturascli</table>`
+         `<form>i_master</form>`
+         `<formrecord>i_facturascli</formrecord>`
+         `<scriptform>i_masterfacturascli</scriptform>`
+     `</action>`
 
 lo sustituimos por;
 
      `<action>`
          `<name>g_resfacturascli</name>`
-         `<alias>QT_TRANSLATE_NOOP("MetaData","Resumen de facturas de clientes")</alias>`
+         `<alias>QT_TRANSLATE_NOOP("MetaData","Resumen de facturas de clientes")</alias>`
          `<description>QT_TRANSLATE_NOOP("MetaData","Cada línea del informe contiene los datos`
          `de una factura. Al final del informe se añade la línea de totales")</description>`
          `<table>i_facturascli</table>`
