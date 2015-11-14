@@ -167,7 +167,7 @@ var cursorTab = new FLSqlCursor("nombreTabla");
 
 Donde nombreTabla es el nombre de la tabla en base de datos.
 
-Métodos más comunes:
+####Métodos más comunes:
 
 * setModeAccess: Define el modo de acceso del cursor sobre la tabla. Existen cuatro modo de acceso:
 
@@ -190,11 +190,15 @@ var codart = 155; var cursorArt = new FLSqlcursor("articulos"); cursorArt.Select
 
 En este ejemplo se crea una variable que contiene el valor 155, la cual es utilizada como criterio de búsqueda. La función select() establece este criterio. La función first() posiciona el cursor sobre el registro deseado. Una vez posicionado el cursor se obtiene el valor mediante valueBuffer()
 
+---
+
 ####Funciones predefinidas
 
 Las funciones predefinidas son invocadas automáticamente al producirse determinados eventos. Estas funciones pueden ser redefinidas según las necesidades del programador. Salvo que se indique lo contrario, estas funciones se deben ubicar en el script correspondiente al formulario en el que se produce el evento. En este apartado haremos alusión a las más utilizadas:
 
-init()
+--
+
+#####init()
     
 Momento de ejecución: Apertura del formulario asociado con el script que la contenga.
 Parámetros: Ninguno.
@@ -215,7 +219,10 @@ Uso: Acciones de inicialización del formulario. Ejemplo: En el caso en el que a
     
 Hemos deshabilitado el componente fdbCliente y hemos conectado la pulsación de un botón llamado pbnGenerarFactura con la ejecución de la función generarFactura() 
 
-validateForm()
+--
+
+#####validateForm()
+
 Momento de ejecución: Pulsación del botón Aceptar o Aceptar y continuar del formulario asociado con el script que la contenga.
 Parámetros: Ninguno
 Valor de retorno: Valor booleano que indica si la validación ha sido correcta o no.
@@ -244,14 +251,19 @@ Ejemplo: Se comprueba antes de validar el formulario que el contenido de uno de 
 
 `}`
     
-acceptedForm()
+--
+
+#####acceptedForm()
 
 Momento de ejecución: Una vez validado el formulario asociado con el script que la contenga, es decir, una vez que la función validateForm (si existe) ha devuelto true.
 Parámetros: Ninguno.
 Valor de retorno: Ninguno.
 Uso: Se utiliza para incluir una serie de acciones a realizar antes de hacer cambios en la base de datos una vez validado el formulario. 
 
-calculatedField()
+--
+
+#####calculatedField()
+
 Momento de ejecución: Grabación del formulario
 Parámetros: Nombre del campo cuyo valor se desea calcular.
 Valor de retorno: Valor calculado del campo que se le pasa a la función como parámetro
@@ -275,7 +287,9 @@ Ejemplo: El campo preciototal es el producto del campo preciounitario por el cam
 
 `}`
     
-calculateCounter()
+--
+
+#####calculateCounter()
 
 Momento de ejecución: Apertura del formulario asociado con el script que la contenga.
 Parámetros: Nombre del campo.
@@ -288,9 +302,9 @@ function calculateCounter()
     return util.nextCounter("codcliente", form.cursor());
 }
 
----
+--
 
-beforeCommit_nombreTabla()
+#####beforeCommit_nombreTabla()
 
 Momento de ejecución: Se ejecuta antes de producirse un commit en la tabla sufijo del nombre de la función.
 Parámetros: Cursor sobre la tabla especificada que contiene el registro a modificar.
@@ -305,9 +319,9 @@ function beforeCommit_facturas(cursorFactura)
     else return false;
 }
 
----
+--
 
-afterCommit_nombreTabla()
+#####afterCommit_nombreTabla()
 
 Momento de ejecución: Se ejecuta después de producirse un commit en la tabla en la tabla sufijo del nombre de la función.
 Parámetros: Cursor sobre la tabla especificada que contiene el registro a modificar.
@@ -324,9 +338,10 @@ function afterCommit_facturas(cursorFactura)
         "codcliente = " + cursorFactura.valueBuffer("codcliente"));
 }
 
----
+--
 
-recordDelBeforenombreTabla()
+#####recordDelBeforenombreTabla()
+
 Momento de ejecución: Se ejecuta antes de producirse un borrado en la tabla sufijo del nombre de la función desde el formulario asociado con el script que la contenga.
 Parámetros: Ninguno.
 Valor de retorno: Ninguno.
@@ -339,17 +354,25 @@ Valor de retorno: Ninguno.
 Uso: Se utiliza para incluir acciones inmediatamente posteriores al borrado de de un registro en la tabla especificada.
 Script de ubicación: En el script principal del módulo. 
 
----
+--
 
-main()
+#####main()
+
 Momento de ejecución: Cuando el usuario active una acción conectada a un slot execMainScript, se ejecutará la función main contenida en el script definido en la etiqueta de dicha acción.
 Parámetros: Ninguno.
 Valor de retorno: Ninguno.
 Uso: Esta función se utiliza cuando una de las opciones de la ventana principal no se encuentra conectada con la apertura de un formulario, sino que únicamente deseamos que se ejecute el código incluido en la función main. 
-Interfaz de Scripts
+
+---
+
+####Interfaz de Scripts
+
 El interfaz es el puente entre los scripts en lenguaje QSA y el núcleo de Abanq programado en C++ a través de las librerías Qt. Abanq trabaja con los objetos C++ que, en principio, no son accesibles desde QSA.
+
 Para permitir el acceso a ciertos objetos desde los scripts se ha creado un conjunto de clases intermedias que sí son accesibles desde QSA y que permiten trabajar con clases de C++. Este conjunto de clases es lo que llamamos interfaz.
+
 Por ejemplo, sabemos que podemos acceder a un cursor de una tabla para manipular sus datos desde un script. Si queremos obtener el nombre del cliente cuyo código es el 100 de la tabla clientes:
+
 var cursorCliente = new FLSqlCursor("clientes");
 var codCliente = 100;
 cursorCliente.select("codcliente = "+ codCliente);
@@ -370,7 +393,7 @@ Nos basaremos en el módulo de informes de facturación.
 
 Descargamos dicho módulo desde http://prdownloads.sourceforge.net/Abanq/fact-informes-1.7.tar.gz, lo guardamos en nuestro disco y comenzamos a trabajar.
 
-Preparando el módulo
+#####Preparando el módulo
 
 Vamos a descomprimir el módulo de informes y haremos una copia del mismo en un nuevo directorio llamado gráficos:
 
@@ -422,28 +445,51 @@ El fichero flfactgraf.mod es el que describe el módulo con la información nece
 El contenido de este fichero es muy claro y se explica por sí sólo, hay que destacar que la propiedad <name> es la más importante porque marca el identificador del módulo, si olvidamos asignar esta propiedad correctamente las cosas no funcionarán correctamente.
 
 Como ya sabemos el fichero flfactgraf.xml es el que describe las acciones, de momento no necesita ninguna modificación.
+
 El fichero flfactgraf.xpm es el icono que se mostrará asociado al módulo, no es necesario, pero podemos sustituirlo por otro más acorde al módulo que estamos construyendo.
+
 Y por último el fichero flfactinfo.ui es la ventana principal del módulo y que de momento tampoco vamos a modificar.
+
 Con esto lo único que hemos conseguido es realizar una copia exacta del módulo de informes, si lo cargamos y probamos vemos que hace exactamente lo mismo que el original, ahora debemos pasar a modificarlo para que el funcionamiento sea el que explicamos en el siguiente apartado.
+
 Ventana principal del módulo de gráficos
+
 Funcionamiento del módulo
+
 La solución que vamos a adoptar se basa en la idea de reutilizar la gran mayoría del módulo de informes y centrarnos solamente en crear una nueva capa de presentación para los resultados. Este sencillo enfoque nos permite ahorrar mucho trabajo y nos demuestra la facilidad de integración y reutilización entre los distintos módulos.
+
 En líneas generales el módulo de informes de facturación funciona realizando consultas parametrizadas a la base de datos según cada tipo de documento (presupuestos, pedidos, albaranes, facturas, etc..) y a nivel de resumen o detalle. Estas consultas generan unos resultados o conjuntos de registros los cuales son procesados y presentados como los típicos informes (listados o documentos) listos para imprimir.
+
 En nuestro módulo de gráficos podemos aprovechar todo lo que ya está implementado en el módulo de informes sobre la solicitud de parámetros al usuario y ejecución de consultas, y sólo modificar la última parte de presentación, que serán gráficos resultantes del cruce de los distintos resultados obtenidos.
+
 Para la presentación, en vez de crear nuestra herramienta de generación de gráficos, vamos a utilizar gnuplot, que se encuentra 'de serie' en la mayoría de las distribuciones de Linux, y que podemos instalar fácilmente con las herramientas facilitadas para tal fin, o en su defecto descargándolo desde http://www.gnuplot.info/
+
 Como vemos el grado de reutilización es muy alto, y el ahorro de tiempo es significativo. Esto demuestra, una vez más, que la filosofía de desarrollo del software libre es mucho más eficaz que cualquiera otra conocida, ya que permite unos grados de integración y reutilización inimaginables en otros modelos.
+
 En definitiva, el módulo de informes y de gráficos compartirán la mayoría de los formularios, consultas y tablas. De hecho van a trabajar sobre las mismas tablas de tal forma que los parámetros que definamos para los informes se pueden utilizar para gráficos y viceversa.
-Manos a la obra
+
+#####Manos a la obra
+
 Vamos a quitar todo lo que sobra del módulo de gráficos y que reutilizaremos del de informes:
+
 Eliminamos el directorio tables.
+
 Eliminamos el directorio querys.
+
 Eliminamos el directorio reports.
+
 Eliminamos el directorio translations.
+
 Entramos en el directorioo forms y eliminamos todos los formularios (*.ui) excepto flfactgraf.ui
+
 Entramos en el directorio scripts y eliminamos todos los scripts (*.qs). 
+
 Para continuar y saber que debemos incluir o modificar hacemos un pequeño análisis de los scripts del módulo de informes, y observamos que todos son los asociados a los formularios maestros de cada uno de los tipos de documentos; i_masterfacturascli.qs, i_masterpedidoscli.qs, i_masteralbaranescli.qs, i_masterfacturasprov.qs, etc.. Y todos tiene un contenido muy similar, casi idéntico, que podemos resumir en una conexión del botón de imprimir a una función que recoge los parámetros de la consulta según el registro actual e invocan finalmente a una función global del objeto flfactinfo llamada lanzarInforme definida en flfactinfo.qs.
+
 Todo indica que lo único que debemos hacer es crear una nueva función del objeto flfactgraf en el script flfactgraf.qs y que llamaremos lanzarGrafico, y posteriormente crear los scripts para los formularios maestros que nombraremos como; g_masterfacturascli.qs, g_masterpedidoscli.qs, g_masteralbaranescli.qs, g_masterfacturasprov.qs, etc... Estos formularios tendrán un contenido muy similar a sus homólogos del módulo de informes, la única diferencia significativa radica en que llamarán a la función lanzarGrafico en lugar de lanzarInforme.
+
 Primero veamos como quedaría el script flfactgraf.qs que copiaremos en el directorio scripts y que hemos construido siguiendo como ejemplo flfactinfo.qs pero creando la presentación con gnuplot:
+
 function lanzarGrafico( cursor:FLSqlCursor, nombreInforme:String, orderBy:String, groupBy:String )
 {
     var q:FLSqlQuery = prepararConsultaInforme(cursor, nombreInforme, orderBy);
@@ -521,6 +567,7 @@ function lanzarGrafico( cursor:FLSqlCursor, nombreInforme:String, orderBy:String
         }
     }
 }
+
 function prepararConsultaInforme( cursor:FLSqlCursor, nombreInforme:String, orderBy:String, groupBy:String ):FLSqlQuery
 {
     var q:FLSqlQuery = new FLSqlQuery(nombreInforme);
@@ -570,6 +617,7 @@ function prepararConsultaInforme( cursor:FLSqlCursor, nombreInforme:String, orde
         q.setOrderBy(orderBy);
     return q;
 }
+
 function sqlConsultaInforme( cursor:FLSqlCursor, nombreInforme:String, orderBy:String, groupBy:String ):String
 {
     var q:FLSqlQuery = prepararConsultaInforme(cursor, nombreInforme, orderBy);
@@ -592,6 +640,7 @@ function obtenerSigno(s:String):String
     }
     return "";
 }
+
 function fieldName(s:String):String
 {
     var fN:String = "";
@@ -609,16 +658,24 @@ function fieldName(s:String):String
     }
     return fN;
 }
+
 Si observamos el código, a parte de las funciones auxiliares que son las mismas, se ha dividido la función original lanzarInforme en las funciones lanzarGrafico y preparaConsultaInforme, para diferenciar más claramente lo que es la consulta de la presentación de los resultados de la misma.
+
 En la parte final de lanzarGrafico vemos un pequeño mecanismo que solicita al usuario que campo de la consulta debe tomarse como coordenada X y cual como coordenada Y, llamando finalmente al comando gnuplot con los parámetros y datos adecuados.
+
 Para invocar a gnuplot se ha utilizado el objeto Process de QSA, muy útil y que nos ofrece total flexibilidad para interactuar con distintos comandos y herramientas del sistema operativo.
+
 Finalmente debemos crear y habilitar los scripts para los formularios maestros siguiendo como ejemplo los del módulo de informes, por cuestiones de espacio y como el proceso es muy parecido para cada uno de ellos, solo veremos los pasos para el formulario de facturas de clientes, dejando el tratamiento para el resto como ejercicio para el lector inquieto.
-Los pasos a seguir serían:
+
+#####Los pasos a seguir serían:
+
 Crear el script g_masterfacturascli.qs en el directorio scripts y con el contenido:
+
 function init()
 {
     connect (this.child("toolButtonPrint"), "clicked()", this, "lanzar()");
 }
+
 function lanzar()
 {
     var cursor:FLSqlCursor = this.cursor();
@@ -640,7 +697,9 @@ function lanzar()
     }
     flfactgraf.lanzarGrafico( cursor, nombreInforme, orderBy );
 }
+
 Modificar flfactinfo.xml y hacemos las modificaciones correspondientes para utilizar nuestra nueva versión del script, hay que hacer estas sustituciones:
+
 <action>
     <name>i_facturascli</name>
     <alias>QT_TRANSLATE_NOOP("MetaData","Facturas de clientes")</alias>
@@ -652,7 +711,9 @@ Modificar flfactinfo.xml y hacemos las modificaciones correspondientes para util
     <formrecord>i_facturascli</formrecord>
     <scriptform>i_masterfacturascli</scriptform>
 </action>
+
 lo sustituimos por;
+
 <action>
     <name>g_facturascli</name>
     <alias>QT_TRANSLATE_NOOP("MetaData","Facturas de clientes")</alias>
@@ -680,16 +741,16 @@ y despues;
 
 lo sustituimos por;
 
-`<action>`
-    `<name>g_resfacturascli</name>`
-    `<alias>QT_TRANSLATE_NOOP("MetaData","Resumen de facturas de clientes")</alias>`
-    `<description>QT_TRANSLATE_NOOP("MetaData","Cada línea del informe contiene los datos`
-    `de una factura. Al final del informe se añade la línea de totales")</description>`
-    `<table>i_facturascli</table>`
-    `<form>i_master</form>`
-    `<formrecord>i_facturascli</formrecord>`
-    `<scriptform>g_masterfacturascli</scriptform>`
-`</action>`
+     `<action>`
+         `<name>g_resfacturascli</name>`
+         `<alias>QT_TRANSLATE_NOOP("MetaData","Resumen de facturas de clientes")</alias>`
+         `<description>QT_TRANSLATE_NOOP("MetaData","Cada línea del informe contiene los datos`
+         `de una factura. Al final del informe se añade la línea de totales")</description>`
+         `<table>i_facturascli</table>`
+         `<form>i_master</form>`
+         `<formrecord>i_facturascli</formrecord>`
+         `<scriptform>g_masterfacturascli</scriptform>`
+     `</action>`
 
 Por último editamos con QtDesigner flfactgraf.ui y cambiamos los nombres de las acciones i_facturascli por g_facturascli, y i_resfacturascli por g_resfacturascli.
 
