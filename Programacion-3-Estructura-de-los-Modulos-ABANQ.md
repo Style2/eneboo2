@@ -32,7 +32,11 @@ A su vez, QSA dispone de las funciones propias de cualquier lenguaje de programa
 
 ####Uso de QSA en Abanq
 
-**Variables**. Las variables se declaran usando la palabra clave **var**:
+---
+
+**Variables**. 
+
+Las variables se declaran usando la palabra clave **var**:
 
 var a;
 
@@ -42,7 +46,11 @@ var a = "hola";
 
 **Ámbito de las variables**. Cuando declaramos una variable con la palabra clave **var** su ámbito se reduce al bloque en el que ha sido declarada. Es una variable local. Sin embargo, si ponemos el nombre de la variable con su asignación sin la palabra clave **var**, se declara automáticamente como global.
 
-**Constantes**. Las constantes se definen mediante la palabra clave **const**
+---
+
+**Constantes**. 
+
+Las constantes se definen mediante la palabra clave **const**
 
 const x = "bueno";
 
@@ -52,7 +60,11 @@ Las constantes deben ser asignadas a la vez que se definen, ya que su valor no p
 
 Si se definen dentro de un bloque su ámbito será local. Si se definen fuera serán de ámbito global.
 
-**Funciones y Llamadas**. Las funciones deben ser declaradas con la palabra clave **function** seguida del nombre de la función:
+---
+
+**Funciones y Llamadas**. 
+
+Las funciones deben ser declaradas con la palabra clave **function** seguida del nombre de la función:
 
      function nomFuncion()
      {
@@ -65,7 +77,9 @@ la palabra **nomFuncion** es el nombre de la función, el **paréntesis** indica
 
 Para que esta función se ejecute debemos realizar una **llamada**. El formato de la llamada depende del lugar desde el que se efectúe:
 
-* _Dentro del script_
+--
+
+* _Dentro del script_:
 
 var y = nomFuncion();
 
@@ -83,17 +97,17 @@ Supongamos que nuestra función se encuentra en el módulo principal **flfactppa
 
 --
 
-* _Dentro del script asociado al formulario maestro_
+* _Dentro del script asociado al formulario maestro_:
 
 Imaginemos que en nuestro fichero .xml tenemos la siguiente acción:
 
-     `<action>`
-         `<name>se_persona</name>`
-         `<table>se_persona</table>`
-         `<form>se_master</form>`
-         `<formrecord>se_persona</formrecord>`
-         `<scriptform>se_persona</scriptform>`
-     `</action>`
+          <action>
+              <name>se_persona</name>
+              <table>se_persona</table>
+              <form>se_master</form>
+              <formrecord>se_persona</formrecord>
+              <scriptform>se_persona</scriptform>
+          </action>
     
 Para llamar a una función que se encuentra en el script asociado a la etiqueta <scriptform>:
 
@@ -101,15 +115,17 @@ form_nombre_accionXML.nomFuncion(); En este caso la llamada sería la siguiente:
 
 formse_persona.crearfuncion();
 
-* Dentro del script asociado al formulario edición
+--
 
-     `<action>`
-         `<name>se_telefono</name>`
-         `<table>se_telefono</table>`
-         `<form>master</form>`
-         `<formrecord>se_telefono</formrecord>`
-         `<scriptformrecord></scriptformrecord>`
-     `</action>`
+* _Dentro del script asociado al formulario edición_:
+
+          <action>
+              <name>se_telefono</name>
+              <table>se_telefono</table>
+              <form>master</form>
+              <formrecord>se_telefono</formrecord>
+              <scriptformrecord></scriptformrecord>
+          </action>
 
 En este caso la función se encuentra en el script correspondiente a la etiqueta <scriptformrecord> que pertenece al formulario edición. La llamada sería:
 
@@ -119,19 +135,29 @@ En este ejemplo la llamada se realizaría de la siguiente forma:
 
 * formRecordse_telefono.nomFuncion();
 
+---
+
 ####Principales objetos
 
 Veremos algunos de los objetos y métodos más habituales en el acceso a datos desde los scripts. Estos objetos (y las clases de las que derivan) pertenecen al interfaz entre el núcleo de Abanq y los scripts.
 
-Método cursor() sobre formularios. Los formularios nos permiten crear cursores. Un cursor sobre un formulario da acceso a todos los objetos que forman parte del mismo. La forma de declarar un cursor sobre un formulario es la siguiente:
+--
+
+**Método cursor() sobre formularios.** 
+
+Los formularios nos permiten crear cursores. Un cursor sobre un formulario da acceso a todos los objetos que forman parte del mismo. La forma de declarar un cursor sobre un formulario es la siguiente:
 
 var cursorF = this.cursor();
 
 Así creamos un cursor sobre el formulario actual con el nombre cursorF.
 
-Algunos de los métodos más utilizados sobre estos objetos son valueBuffer(nombreCampo) para leer el contenido de un campo y setValueBuffer(nombreCampo, valor) para establecer el valor de un campo.
+Algunos de los métodos más utilizados sobre estos objetos son **valueBuffer(nombreCampo)** para leer el contenido de un campo y **setValueBuffer(nombreCampo, valor)** para establecer el valor de un campo.
 
-Método child() sobre formularios. Todos los componentes del formulario se consideran hijos de este. Podemos almacenar el contenido de cada uno de ellos en variables de la forma siguiente:
+--
+
+**Método child() sobre formularios.**
+
+Todos los componentes del formulario se consideran hijos de este. Podemos almacenar el contenido de cada uno de ellos en variables de la forma siguiente:
 
 var nombre = this.child("fdbNombre");
 
@@ -139,9 +165,9 @@ La variable nombre contiene el elemento fdbNombre del formulario que a su vez se
 
 Existe la posibilidad de habilitar o deshabilitar un componente del formulario mediante el uso de:
 
-* setDisabled() cuando se trata de un objeto tipo botón
-* setTabEnabled() cuando se trata de un objeto tipo tab
-* enabled cuando se trata de un objeto tipo campo. 
+* **setDisabled()** cuando se trata de un objeto tipo **botón**.
+* **setTabEnabled()** cuando se trata de un objeto tipo **tab**.
+* **enabled** cuando se trata de un objeto tipo **campo**. 
 
 Ejemplos:
 
@@ -151,7 +177,11 @@ this.child("nombretab").setTabEnabled(numeropagina, true ó false);
 
 this.child("nombrecampo").enabled = true ó false;
 
-**Cursor sobre Tablas**. Se utiliza para poder trabajar directamente con los datos de una tabla sin pasar por un formulario. Son objetos de tipo **FLSqlCursor**:
+--
+
+**Cursor sobre Tablas**. 
+
+Se utiliza para poder trabajar directamente con los datos de una tabla sin pasar por un formulario. Son objetos de tipo **FLSqlCursor**:
 
 var cursorTab = new FLSqlCursor("nombreTabla");
 
@@ -161,10 +191,10 @@ Donde nombreTabla es el nombre de la tabla en base de datos.
 
 * setModeAccess: Define el modo de acceso del cursor sobre la tabla. Existen cuatro modo de acceso:
 
-o 1. Insert. Inserción de datos.
-o 2. Edit. Edición de datos
-o 3. Del. Borrado de datos.
-o 4. Browse. Acceso de sólo lectura. 
+1. Insert. Inserción de datos.
+2. Edit. Edición de datos
+3. Del. Borrado de datos.
+4. Browse. Acceso de sólo lectura. 
 
 El modo de acceso es una propiedad del objeto formulario; se utilizará así:
 
@@ -195,12 +225,12 @@ Las funciones predefinidas son invocadas automáticamente al producirse determin
 * Valor de retorno: Ninguno
 * Uso: Acciones de inicialización del formulario. Ejemplo: En el caso en el que al abrir el formulario deseemos que aparezcan algunos campos deshabilitados y conectar algún botón a una función:
 
-     `function init()`
-     `{`
-         `form.child("fdbCliente").setDisabled(true);`
-         `var pbnGenerarFactura = this.child("pbnGenerarFactura");`
-         `connect(pbnGenerarFactura, "clicked()", this,"generarFactura");`
-     `}`
+      function init()
+      { 
+          form.child("fdbCliente").setDisabled(true);
+          var pbnGenerarFactura = this.child("pbnGenerarFactura");
+          connect(pbnGenerarFactura, "clicked()", this,"generarFactura");
+      }
     
 Hemos deshabilitado el componente fdbCliente y hemos conectado la pulsación de un botón llamado pbnGenerarFactura con la ejecución de la función generarFactura() 
 
@@ -283,30 +313,31 @@ Ejemplo: El campo codcliente se calcula invocando a la función nextCounter del 
 * Ejemplo: Antes de dar de alta o modificar registro de la tabla facturas, se comprueba que su importe es mayor que 0.
 
      function beforeCommit_facturas(cursorFactura)
-{
-    if (cursorFactura.modeAccess == cursorFactura.Del) return true;
-    if (parseFloat(cursorFactura.valueBuffer("importe") > 0)) return true;
-    else return false;
-}
+     {
+         if (cursorFactura.modeAccess == cursorFactura.Del) return true;
+         if (parseFloat(cursorFactura.valueBuffer("importe") > 0)) return true;
+         else return false;
+     }
 
 --
 
 #####afterCommit_nombreTabla()
 
-Momento de ejecución: Se ejecuta después de producirse un commit en la tabla en la tabla sufijo del nombre de la función.
-Parámetros: Cursor sobre la tabla especificada que contiene el registro a modificar.
-Valor de retorno: Si las acciones y validaciones realizadas son correctas la función devuelve true. En caso contrario devuelve false. Si la función devuelve false, la función commitBuffer() asociada al cursor devolverá false.
-Uso: Se utiliza para incluir acciones y validaciones inmediatamente posteriores a la modificación de un registro en la tabla especificada.
-Script de ubicación: En el script principal del módulo.
-Ejemplo: Al modificar un registro de la tabla facturas, se recalculará el campo totalfacturado de la tabla clientes correspondiente al cliente de la factura.
-function afterCommit_facturas(cursorFactura)
-{
-    var util = new FLUtil;
-    var total = util.sqlSelect("SUM(importe)", "facturas",
-        "codcliente = " + cursorFactura.valueBuffer("codcliente"));
-    return util.sqlUpdate("clientes", "totalfacturado", total,
-        "codcliente = " + cursorFactura.valueBuffer("codcliente"));
-}
+* Momento de ejecución: Se ejecuta después de producirse un commit en la tabla en la tabla sufijo del nombre de la función.
+* Parámetros: Cursor sobre la tabla especificada que contiene el registro a modificar.
+* Valor de retorno: Si las acciones y validaciones realizadas son correctas la función devuelve true. En caso contrario devuelve false. Si la función devuelve false, la función commitBuffer() asociada al cursor devolverá false.
+* Uso: Se utiliza para incluir acciones y validaciones inmediatamente posteriores a la modificación de un registro en la tabla especificada.
+* Script de ubicación: En el script principal del módulo.
+* Ejemplo: Al modificar un registro de la tabla facturas, se recalculará el campo totalfacturado de la tabla clientes correspondiente al cliente de la factura.
+
+     function afterCommit_facturas(cursorFactura)
+     {
+         var util = new FLUtil;
+         var total = util.sqlSelect("SUM(importe)", "facturas",
+             "codcliente = " + cursorFactura.valueBuffer("codcliente"));
+         return util.sqlUpdate("clientes", "totalfacturado", total,
+             "codcliente = " + cursorFactura.valueBuffer("codcliente"));
+     }
 
 --
 
@@ -347,17 +378,20 @@ Para permitir el acceso a ciertos objetos desde los scripts se ha creado un conj
 
 Por ejemplo, sabemos que podemos acceder a un cursor de una tabla para manipular sus datos desde un script. Si queremos obtener el nombre del cliente cuyo código es el 100 de la tabla clientes:
 
- var cursorCliente = new FLSqlCursor("clientes");
-var codCliente = 100;
-cursorCliente.select("codcliente = "+ codCliente);
-cursorCliente.first();
-nombreCliente = cursorCliente.valueBuffer("nombre");
+     var cursorCliente = new FLSqlCursor("clientes");
+     var codCliente = 100;
+     cursorCliente.select("codcliente = "+ codCliente);
+     cursorCliente.first();
+     nombreCliente = cursorCliente.valueBuffer("nombre");
 
 Hemos usado un objeto de la clase FLSqlCursor. Esta clase es accesible desde el script porque en el interfaz se ha definido la clase FLSqlCursorInterface, y los métodos select y first se encuentran también en el interfaz.
 
 Importante. Muchas de las clases del interfaz se han definido con el formato nombre_clase + Interface. Desde los scripts accederemos a ellas sólo por el nombre_clase. Como hemos visto antes, la clase del interfaz es FLSqlCursorInterface, pero nosotros usamos FLSqlCursor en el script. 
 
-####Un módulo de gráficos
+---
+---
+
+####EJEMPLO: Un módulo de gráficos
 
 Para practicar un poco más todo lo aprendido vamos a desarrollar un pequeño módulo de gráficos. Esto nos permitirá ver la estructura general de un módulo y la potencia de QSA que permite fácilmente aprovechar la funcionalidad de Abanq e interactuar con el sistema operativo.
 
@@ -377,19 +411,19 @@ cp -fR modulos/facturacion/informes/ graficos
 
 Ahora debemos trabajar sobre ese directorio graficos. Hemos elegido como identificador del módulo el código flfactgraf. Por lo tanto lo primero que hacemos es renombrar los siguientes ficheros
 
-flfactinfo.mod -> flfactgraf.mod
-flfactinfo.xml -> flfactgraf.xml
-flfactinfo.xpm -> flfactgraf.xpm
-forms/flfactinfo.ui -> flfactgraf.ui
+* flfactinfo.mod -> flfactgraf.mod
+* flfactinfo.xml -> flfactgraf.xml
+* flfactinfo.xpm -> flfactgraf.xpm
+* forms/flfactinfo.ui -> flfactgraf.ui
 
-El fichero flfactgraf.mod es el que describe el módulo con la información necesaria para que la aplicación base de Abanq pueda cargarlo correctamente, debemos editarlo para que contenga exactamente esto:
+El fichero **flfactgraf.mod** es el que describe el módulo con la información necesaria para que la aplicación base de Abanq pueda cargarlo correctamente, debemos editarlo para que contenga exactamente esto:
 
-`<!DOCTYPE MODULE>`
-`<MODULE>`
-    `<name>flfactgraf</name>`
-    `<alias>Gráficos</alias>`
-    `<area>F</area>`
-    `<areaname>Area de Facturación</areaname>`
+     <!DOCTYPE MODULE>
+     <MODULE>
+         <name>flfactgraf</name>
+         <alias>Gráficos</alias>
+         <area>F</area>
+         <areaname>Area de Facturación</areaname>
     `<version>1.7</version>`
     `<icon>flfactgraf.xpm</icon>`
     `<flversion>1.7</flversion>`
@@ -403,17 +437,19 @@ El fichero flfactgraf.mod es el que describe el módulo con la información nece
 
 El contenido de este fichero es muy claro y se explica por sí sólo, hay que destacar que la propiedad <name> es la más importante porque marca el identificador del módulo, si olvidamos asignar esta propiedad correctamente las cosas no funcionarán correctamente.
 
-Como ya sabemos el fichero flfactgraf.xml es el que describe las acciones, de momento no necesita ninguna modificación.
+Como ya sabemos el fichero **flfactgraf.xml** es el que describe las acciones, de momento no necesita ninguna modificación.
 
-El fichero flfactgraf.xpm es el icono que se mostrará asociado al módulo, no es necesario, pero podemos sustituirlo por otro más acorde al módulo que estamos construyendo.
+El fichero **flfactgraf.xpm** es el icono que se mostrará asociado al módulo, no es necesario, pero podemos sustituirlo por otro más acorde al módulo que estamos construyendo.
 
-Y por último el fichero flfactinfo.ui es la ventana principal del módulo y que de momento tampoco vamos a modificar.
+Y por último el fichero **flfactinfo.ui** es la ventana principal del módulo y que de momento tampoco vamos a modificar.
 
 Con esto lo único que hemos conseguido es realizar una copia exacta del módulo de informes, si lo cargamos y probamos vemos que hace exactamente lo mismo que el original, ahora debemos pasar a modificarlo para que el funcionamiento sea el que explicamos en el siguiente apartado.
 
 Ventana principal del módulo de gráficos
 
-Funcionamiento del módulo
+--
+
+**Funcionamiento del módulo**
 
 La solución que vamos a adoptar se basa en la idea de reutilizar la gran mayoría del módulo de informes y centrarnos solamente en crear una nueva capa de presentación para los resultados. Este sencillo enfoque nos permite ahorrar mucho trabajo y nos demuestra la facilidad de integración y reutilización entre los distintos módulos.
 
@@ -445,7 +481,14 @@ Entramos en el directorio scripts y eliminamos todos los scripts (*.qs).
 
 Para continuar y saber que debemos incluir o modificar hacemos un pequeño análisis de los scripts del módulo de informes, y observamos que todos son los asociados a los formularios maestros de cada uno de los tipos de documentos; i_masterfacturascli.qs, i_masterpedidoscli.qs, i_masteralbaranescli.qs, i_masterfacturasprov.qs, etc.. Y todos tiene un contenido muy similar, casi idéntico, que podemos resumir en una conexión del botón de imprimir a una función que recoge los parámetros de la consulta según el registro actual e invocan finalmente a una función global del objeto flfactinfo llamada lanzarInforme definida en flfactinfo.qs.
 
-Todo indica que lo único que debemos hacer es crear una nueva función del objeto flfactgraf en el script flfactgraf.qs y que llamaremos lanzarGrafico, y posteriormente crear los scripts para los formularios maestros que nombraremos como; g_masterfacturascli.qs, g_masterpedidoscli.qs, g_masteralbaranescli.qs, g_masterfacturasprov.qs, etc... Estos formularios tendrán un contenido muy similar a sus homólogos del módulo de informes, la única diferencia significativa radica en que llamarán a la función lanzarGrafico en lugar de lanzarInforme.
+Todo indica que lo único que debemos hacer es crear una nueva función del objeto flfactgraf en el script flfactgraf.qs y que llamaremos **lanzarGrafico**, y posteriormente crear los scripts para los formularios maestros que nombraremos como: 
+
+* g_masterfacturascli.qs
+* g_masterpedidoscli.qs
+* g_masteralbaranescli.qs
+* g_masterfacturasprov.qs, etc... 
+
+Estos formularios tendrán un contenido muy similar a sus homólogos del módulo de informes, la única diferencia significativa radica en que **llamarán a la función lanzarGrafico en lugar de lanzarInforme**.
 
 Primero veamos como quedaría el script flfactgraf.qs que copiaremos en el directorio scripts y que hemos construido siguiendo como ejemplo flfactinfo.qs pero creando la presentación con gnuplot:
 
@@ -626,11 +669,13 @@ En la parte final de lanzarGrafico vemos un pequeño mecanismo que solicita al u
 
 Para invocar a gnuplot se ha utilizado el objeto Process de QSA, muy útil y que nos ofrece total flexibilidad para interactuar con distintos comandos y herramientas del sistema operativo.
 
-Finalmente debemos crear y habilitar los scripts para los formularios maestros siguiendo como ejemplo los del módulo de informes, por cuestiones de espacio y como el proceso es muy parecido para cada uno de ellos, solo veremos los pasos para el formulario de facturas de clientes, dejando el tratamiento para el resto como ejercicio para el lector inquieto.
+--
+
+Finalmente debemos **crear y habilitar los scripts para los formularios maestros** siguiendo como ejemplo los del módulo de informes, por cuestiones de espacio y como el proceso es muy parecido para cada uno de ellos, solo veremos los pasos para el formulario de facturas de clientes, dejando el tratamiento para el resto como ejercicio para el lector inquieto.
 
 #####Los pasos a seguir serían:
 
-Crear el script g_masterfacturascli.qs en el directorio scripts y con el contenido:
+Crear el script **g_masterfacturascli.qs** en el directorio scripts y con el contenido:
 
 function init()
 {
@@ -659,33 +704,35 @@ function lanzar()
     flfactgraf.lanzarGrafico( cursor, nombreInforme, orderBy );
 }
 
-Modificar flfactinfo.xml y hacemos las modificaciones correspondientes para utilizar nuestra nueva versión del script, hay que hacer estas sustituciones:
+--
 
-<action>
-    <name>i_facturascli</name>
-    <alias>QT_TRANSLATE_NOOP("MetaData","Facturas de clientes")</alias>
-    <description>QT_TRANSLATE_NOOP("MetaData","Informe que contiene una página 
-    por cada factura. Se muestran los datos de las líneas de la factura, el total 
-    de la factura y los totales de IVA, recargo de equivalencia e IRPF ")</description>
-    <table>i_facturascli</table>
-    <form>i_master</form>
-    <formrecord>i_facturascli</formrecord>
-    <scriptform>i_masterfacturascli</scriptform>
-</action>
+**Modificar flfactinfo.xml** y hacemos las modificaciones correspondientes para utilizar nuestra nueva versión del script, hay que hacer estas sustituciones:
+
+      <action>
+         <name>i_facturascli</name>
+         <alias>QT_TRANSLATE_NOOP("MetaData","Facturas de clientes")</alias>
+         <description>QT_TRANSLATE_NOOP("MetaData","Informe que contiene una página 
+         por cada factura. Se muestran los datos de las líneas de la factura, el total 
+         de la factura y los totales de IVA, recargo de equivalencia e IRPF ")</description>
+         <table>i_facturascli</table>
+         <form>i_master</form>
+         <formrecord>i_facturascli</formrecord>
+         <scriptform>i_masterfacturascli</scriptform>
+     </action>
 
 lo sustituimos por;
 
-     `<action>`
-    `<name>g_facturascli</name>`
-    `<alias>QT_TRANSLATE_NOOP("MetaData","Facturas de clientes")</alias>`
-    `<description>QT_TRANSLATE_NOOP("MetaData","Informe que contiene una página`
-     `por cada factura. Se muestran los datos de las líneas de la factura, el total `
-     `de la factura y los totales de IVA, recargo de equivalencia e IRPF ")</description>`
-    `<table>i_facturascli</table>`
-    `<form>i_master</form>`
-    `<formrecord>i_facturascli</formrecord>`
-    `<scriptform>g_masterfacturascli</scriptform>`
-`</action>`
+      <action>
+         <name>g_facturascli</name>
+         <alias>QT_TRANSLATE_NOOP("MetaData","Facturas de clientes")</alias>
+         <description>QT_TRANSLATE_NOOP("MetaData","Informe que contiene una página
+          por cada factura. Se muestran los datos de las líneas de la factura, el total
+          de la factura y los totales de IVA, recargo de equivalencia e IRPF ")</description>
+         <table>i_facturascli</table>
+         <form>i_master</form>
+         <formrecord>i_facturascli</formrecord>
+         <scriptform>g_masterfacturascli</scriptform>
+     </action>
 
 y despues;
 
@@ -713,11 +760,15 @@ lo sustituimos por;
          `<scriptform>g_masterfacturascli</scriptform>`
      `</action>`
 
+--
+
 Por último editamos con QtDesigner flfactgraf.ui y cambiamos los nombres de las acciones i_facturascli por g_facturascli, y i_resfacturascli por g_resfacturascli.
 
 Con esto ya hemos acabado, si volvemos a cargar el módulo, creamos como ejemplo un listado resumen de la facturación anual y hacemos clic en el botón con el icono de la impresora obtendremos un resultado parecido a este, si seleccionamos como coordenada X el campo fecha y como coordenada Y el campo total:
 
 Ventana principal del módulo de gráficos
+
+--
 
 ####Conclusión
 
