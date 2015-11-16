@@ -467,17 +467,17 @@ En definitiva, el módulo de informes y de gráficos compartirán la mayoría de
 
 Vamos a quitar todo lo que sobra del módulo de gráficos y que reutilizaremos del de informes:
 
-Eliminamos el directorio tables.
+1. Eliminamos el directorio tables.
 
-Eliminamos el directorio querys.
+1. Eliminamos el directorio querys.
 
-Eliminamos el directorio reports.
+1. Eliminamos el directorio reports.
 
-Eliminamos el directorio translations.
+1. Eliminamos el directorio translations.
 
-Entramos en el directorioo forms y eliminamos todos los formularios (*.ui) excepto flfactgraf.ui
+1. Entramos en el directorioo forms y eliminamos todos los formularios (*.ui) excepto flfactgraf.ui
 
-Entramos en el directorio scripts y eliminamos todos los scripts (*.qs). 
+1. Entramos en el directorio scripts y eliminamos todos los scripts (*.qs). 
 
 Para continuar y saber que debemos incluir o modificar hacemos un pequeño análisis de los scripts del módulo de informes, y observamos que todos son los asociados a los formularios maestros de cada uno de los tipos de documentos; i_masterfacturascli.qs, i_masterpedidoscli.qs, i_masteralbaranescli.qs, i_masterfacturasprov.qs, etc.. Y todos tiene un contenido muy similar, casi idéntico, que podemos resumir en una conexión del botón de imprimir a una función que recoge los parámetros de la consulta según el registro actual e invocan finalmente a una función global del objeto flfactinfo llamada lanzarInforme definida en flfactinfo.qs.
 
@@ -622,11 +622,16 @@ function prepararConsultaInforme( cursor:FLSqlCursor, nombreInforme:String, orde
     return q;
 }
 
+--
+
 function sqlConsultaInforme( cursor:FLSqlCursor, nombreInforme:String, orderBy:String, groupBy:String ):String
 {
     var q:FLSqlQuery = prepararConsultaInforme(cursor, nombreInforme, orderBy);
     return q.sql();
 }
+
+--
+
 function obtenerSigno(s:String):String
 {
     if (s.toString().charAt(1) == "_") {
@@ -645,23 +650,25 @@ function obtenerSigno(s:String):String
     return "";
 }
 
-function fieldName(s:String):String
-{
-    var fN:String = "";
-    var c:String;
-    for (var i:Number = 2; (s.toString().charAt(i)); i++) {
-        c = s.toString().charAt(i);
-        if (c == "_")
-            if (s.toString().charAt(i + 1) == "_") {
-                fN += "_";
-                i++;
-            } else
-                fN += "."
-        else
-            fN += s.toString().charAt(i);
-    }
-    return fN;
-}
+--
+
+     function fieldName(s:String):String
+     {
+         var fN:String = "";
+         var c:String;
+         for (var i:Number = 2; (s.toString().charAt(i)); i++) {
+             c = s.toString().charAt(i);
+             if (c == "_")
+                 if (s.toString().charAt(i + 1) == "_") {
+                     fN += "_";
+                     i++;
+                 } else
+                     fN += "."
+             else
+                 fN += s.toString().charAt(i);
+         }
+         return fN;
+     }
 
 Si observamos el código, a parte de las funciones auxiliares que son las mismas, se ha dividido la función original lanzarInforme en las funciones lanzarGrafico y preparaConsultaInforme, para diferenciar más claramente lo que es la consulta de la presentación de los resultados de la misma.
 
@@ -738,14 +745,14 @@ y despues;
 
      `<action>`
          `<name>i_resfacturascli</name>`
-         `<alias>QT_TRANSLATE_NOOP("MetaData","Resumen de facturas de clientes")</alias>`
-         `<description>QT_TRANSLATE_NOOP("MetaData","Cada línea del informe contiene`
+         `<alias>QT_TRANSLATE_NOOP("MetaData","Resumen de facturas de clientes")</alias>`
+         `<description>QT_TRANSLATE_NOOP("MetaData","Cada línea del informe contiene`
          `los datos de una factura. Al final del informe se añade la línea de totales")</description>`
          `<table>i_facturascli</table>`
          `<form>i_master</form>`
          `<formrecord>i_facturascli</formrecord>`
          `<scriptform>i_masterfacturascli</scriptform>`
-     `</action>`
+      `</action>`
 
 lo sustituimos por;
 
