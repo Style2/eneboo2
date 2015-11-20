@@ -41,13 +41,17 @@ Cada tipo de archivo tiene "su" lenguaje o forma de escribir las órdenes, y en 
 
 ---
 
-1. FORMS
+1. FORMS (.ui):
 
-1. QUERIES
+2. QUERIES (.qry):
 
-1. REPORTS
+3. REPORTS (.kut):
 
-1. SCRIPTS:
+4. SCRIPTS (.qs):
+
+https://groups.google.com/forum/#!searchin/eneboo/uuid/eneboo/zVtFx0E9HIw/j3bPxFyYPAUJ
+
+...los filtros (de informes) se envían al informe jasper desde los criterios "ORDER BY" del "flfactinfo.qs" de la carpeta SCRIPTS del módulo INFORMES (adaptado para eneboo-reports)....ahora me falta entender cómo se relacionan con los campos de los formularios UI....o de las tablas....
 
 Ejemplo:
 
@@ -58,7 +62,11 @@ Ejemplo:
             return x;
         }
 
-1. TABLES
+5. TABLES (mtd):
 
-1. TRANSLATIONS
+...y las relaciones definidas (M1 a 1M) en los "ACTION" de las variables en los "UI" igual que en los "MTD" (del módulo Informes) DEBEN tener definida la relación INVERSA definida en la tabla correspondiente de esa variable (normalmente por el módulo "PRINCIPAL"...)
+
+...ejemplo: "i_facturascli_codagente" en .mtd y .ui  de "Informes" respecto "codagente" en .mtd de "Principal"
+
+6. TRANSLATIONS (.en /.fr /.ca etc):
 
