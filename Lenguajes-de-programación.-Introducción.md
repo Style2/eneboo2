@@ -37,3 +37,15 @@ Cada tipo de archivo tiene "su" lenguaje o forma de escribir las órdenes, y en 
 * **tables**. Definiciones de las tablas. Cada tabla se define en un archivo de extensión mtd
 
 * **translations**. Listados de traducciones. Cada listado de traducciones para un determinado idioma se define en un archivo de extensión ts
+
+
+---
+
+1. SCRIPTS:
+
+     function nomFuncion()
+     {
+         ........
+         ........
+         return x; 
+     }
