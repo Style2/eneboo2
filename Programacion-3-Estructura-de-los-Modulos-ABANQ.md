@@ -20,9 +20,9 @@ Las capas inferiores ofrecen mediante su interfaz (API) su funcionalidad a las c
 
 En el entorno de Abanq se utilizan dos tipos de lenguajes:
 
-1.- **Lenguaje QSA**. Es el utilizado en los scripts de los módulos, basado en ECMAScript (y por tanto muy parecido a JavaScript). No necesita ser compilado.
+1.- **Lenguaje QSA**. Es el utilizado en los scripts de los módulos, basado en **ECMAScript** (y por tanto muy parecido a JavaScript). No necesita ser compilado.
 
-1.- **Lenguaje C++**. Es el utilizado para crear el núcleo de Abanq (esto es, las aplicación base). Se utiliza el Qt, una biblioteca multiplataforma para desarrollar interfaces gráficas de usuario. Utiliza el lenguaje C++ pero permite usar también C, Python y Perl, además cuenta con soporte para acceder a bases de datos mediante SQL, XML y API para el manejo de ficheros.
+1.- **Lenguaje C++**. Es el utilizado para crear el núcleo de Abanq (esto es, las aplicación base). Se utiliza el Qt, una biblioteca multiplataforma para desarrollar interfaces gráficas de usuario. Utiliza el lenguaje **C++** pero permite usar también C, Python y Perl, además cuenta con soporte para acceder a bases de datos mediante SQL, XML y API para el manejo de ficheros.
 
 El funcionamiento básico es el siguiente; los objetos definidos en Qt (núcleo de la aplicación) pueden ser accedidos desde QSA (scripts), pero no directamente por razones de seguridad. Este acceso se realiza mediante la creación de unas clases intermedias (Interfaces FL C++) que actúan como interfaz de las clases de Abanq creadas en Qt (Interfaces FL C++), a su vez basadas en C++ (Qt C++).
 
