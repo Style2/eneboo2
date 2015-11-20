@@ -41,11 +41,24 @@ Cada tipo de archivo tiene "su" lenguaje o forma de escribir las órdenes, y en 
 
 ---
 
+1. FORMS
+
+1. QUERIES
+
+1. REPORTS
+
 1. SCRIPTS:
 
-     function nomFuncion()
-     {
-         ........
-         ........
-         return x; 
-     }
+Ejemplo:
+
+        function nomFuncion()
+        {
+            ........
+            ........
+            return x;
+        }
+
+1. TABLES
+
+1. TRANSLATIONS
+
