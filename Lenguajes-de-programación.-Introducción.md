@@ -12,9 +12,27 @@ Lenguajes de programación. Introducción
 
 Se utilizan dos tipos de lenguajes:
 
-1.- **Lenguaje QSA**. Es el utilizado en los **scripts** de los módulos, basado en ECMAScript (y por tanto muy parecido a **JavaScript**). No necesita ser compilado.
+1.- **Lenguaje QSA**. Es el utilizado en los **scripts** de los módulos, basado en **ECMAScript** (y por tanto muy parecido a **JavaScript**). No necesita ser compilado.
 
 1.- **Lenguaje C++**. Es el utilizado para crear el núcleo de Eneboo (esto es, las aplicación base). Se utiliza el Qt, una biblioteca multiplataforma para desarrollar interfaces gráficas de usuario. Utiliza el lenguaje **C++** pero permite usar también C, Python y Perl, además cuenta con soporte para acceder a bases de datos mediante SQL, XML y API para el manejo de ficheros.
+
+--
+##### ECMAScript = estandarización de JavaScript con JScript de Microsoft.
+
+https://es.wikipedia.org/wiki/ECMAScript
+
+ECMAScript es una especificación estándar de un lenguaje desarrollado por Brendan Eich, empleado en Netscape; inicialmente se llamaba Mocha, luego LiveScript, y finalmente **JavaScript**.
+
+Debido al gran éxito de Javascript como lenguaje de scripting del lado del cliente para páginas web, Microsoft desarrollo un dialecto compatible del lenguaje, llamado **JScript**, para evitar problemas legales con la marca.
+
+Netscape envió el borrador de JavaScript a Ecma International para su estandarización y para que trabajasen sobre su especificación ECMA-262, que comenzo en noviembre de 1996
+
+El nombre "ECMAScript" fue un compromiso entre las organizaciones involucradas en la **estandarización del lenguaje**, especialmente entre Netscape y Microsoft, que se disputaron el dominio de las primeras sesiones estándar. 
+
+Eich comentó que "ECMAScript fue siempre un nombre de marca indeseado, que sonaba como una enfermedad de la piel.
+
+A pesar de que ambas especificaciones, **tanto JavaScript y JScript, apuntan a ser compatibles con ECMAScript**, también tienen características adicionales, no descritas en la especificaciones de ECMA.
+
 
 --
 
