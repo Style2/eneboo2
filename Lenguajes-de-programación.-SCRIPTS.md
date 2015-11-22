@@ -20,9 +20,9 @@ Se pueden abrir con:
 
 #####Añadir un comentario:
 
-`/**********`
-`**aquí escribes lo que quieras, para aclarar lo que hace ese código`
-`*****************/`
+     `/**********`
+     `**aquí escribes lo que quieras, para aclarar lo que hace ese código`
+     `*****************/`
 
 ---
 
