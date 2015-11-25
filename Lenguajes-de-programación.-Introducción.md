@@ -12,9 +12,10 @@ Lenguajes de programación. Introducción
 
 Se utilizan dos tipos de lenguajes:
 
-1.- **Lenguaje QSA**. Es el utilizado en los **scripts** de los módulos, basado en **ECMAScript** (y por tanto muy parecido a **JavaScript**). No necesita ser compilado.
+1.- **Lenguaje QSA**. Es el utilizado en los **scripts** de los módulos, basado en **ECMAScript** (y por tanto muy parecido a **JavaScript**). No necesita ser compilado. [Manual de introducción a JavaScript: ](https://es.wikibooks.org/wiki/Programación_en_JavaScript)
 
-1.- **Lenguaje C++**. Es el utilizado para crear el núcleo de Eneboo (esto es, las aplicación base). Se utiliza el Qt, una biblioteca multiplataforma para desarrollar interfaces gráficas de usuario. Utiliza el lenguaje **C++** pero permite usar también C, Python y Perl, además cuenta con soporte para acceder a bases de datos mediante SQL, XML y API para el manejo de ficheros.
+1.- **Lenguaje C++**. Es el utilizado para crear el núcleo de Eneboo (esto es, las aplicación base). Se utiliza el Qt, una biblioteca multiplataforma para desarrollar interfaces gráficas de usuario. Utiliza el lenguaje **C++** pero permite usar también C, Python y Perl, además cuenta con soporte para acceder a bases de datos mediante SQL, XML y API para el manejo de ficheros. [Manual de introducción a C++: ](https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_C)
+
 
 --
 ##### ECMAScript = estandarización de JavaScript con JScript de Microsoft.
