@@ -15,13 +15,14 @@
 1. Ejemplos: 
  * "git clone https://github.com/Miguel-J/eneboo" (este almacén-repositorio (pero sin el wiki) con las imágenes)
  * "git clone https://github.com/Miguel-J/eneboo.wiki" (este wiki)
- * "git clone https://github.com/klo-manolo" (el repositorio + actualizado)
+ * "git clone https://github.com/Miguel_J" (ESTO NO ES UN REPOSITORIO, al ser sólo una "carpeta con repositorios" NO los reconoce...)
+ * "git clone https://github.com/Miguel_J/eneboo-features" (al ser un "branch" del de "klo-manolo" (el repositorio + actualizado) se descarga lo que había en el día que se hizo la "copia-branch"...)
 
 * ...y al darle a ENTER lo pone como subdirectorio en el directorio de descargas elegido...
 
 * NOTA: No poner ":" en los nombres de las páginas o no se descargan bien...
 
-##COMO COORDINAR LA COPIA LOCAL Y LA DEL WEB GITHUB
+##CÓMO COORDINAR LA COPIA LOCAL Y LA DEL WEB GITHUB:
 1. Vas ARRIBA-DERECHA a la rueda dentada y le das a "OPEN IN GIT SHELL", entonces se abre una ventana parecida al MSDOS de windows con unas letras en colores entre corchetes...
 1. **Para "TRAER" a la copia local los cambios de la copia-"master" del servidor github ponemos:**
  * NOTA: No se por qué no me deja hacerlo si el contenido en local es distinto, dice no-se-que del ".gitattribute", por lo que lo que hago es borrar el directorio local y hacer un "clone"...
