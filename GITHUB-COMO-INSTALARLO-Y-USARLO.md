@@ -52,6 +52,7 @@
     * _"git push https://github.com/Miguel-J/eneboo.wiki master"_
     * OJO: hay que añadir esa palabra "master" al final de la dirección para indicarle que el que manda es el del servidor...
     * Habrá que poner el USUARIO y PASSWORD de la cuenta propia en el GITHUB
+* **en el caso de ser un repositorio BRANCH de otro** y querer actualizar los cambios (o subir) al repositorio "padre", vas a la página de Github y le das al **BOTÓN VERDE** que hay al lado del repositorio de tu página.....entonces te lleva a la página-github del repositorio "padre" y le das a aceptar el **PULL*...LISTO!
 
 ##COMO CREAR SUBDIRECTORIOS DESDE LA WEB
 
