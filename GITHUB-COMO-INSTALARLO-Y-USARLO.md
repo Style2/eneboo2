@@ -58,14 +58,14 @@
 * **en el caso de ser un repositorio BRANCH de otro** y querer actualizar los cambios (o subir) al repositorio "padre", vas a la página de Github y le das al **BOTÓN VERDE** que hay al lado del repositorio de tu página.....entonces te lleva a la página-github del repositorio "padre" y le das a aceptar el **PULL*...LISTO!
 * cuando el responsable del repositorio **master* acepta los cambios, recibes un e-mail de confirmación, tal que asi:
 
-`On Fri, 11/27/15, klo-manolo <notifications@github.com> wrote:`
- `Subject: Re: [eneboo-features] Ajuste de flfactinfo para que aparezca el "informe de ventas" en el m… (#23)`
- `To: "klo-manolo/eneboo-features" <eneboo-features@noreply.github.com>`
- `Date: Friday, November 27, 2015, 8:20 AM`
- 
- `Merged #23.`
-  `—`
- `Reply to this email directly or view it on GitHub.`
+        `On Fri, 11/27/15, klo-manolo <notifications@github.com> wrote:`
+         `Subject: Re: [eneboo-features] Ajuste de flfactinfo para que aparezca el "informe de ventas" en el m… (#23)`
+         `To: "klo-manolo/eneboo-features" <eneboo-features@noreply.github.com>`
+         `Date: Friday, November 27, 2015, 8:20 AM`
+
+         `Merged #23.`
+          `—`
+         `Reply to this email directly or view it on GitHub.`
 
 ---
 
