@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 6 de junio de 2015
+* ULTIMA ACTUALIZACIÓN: 28 de noviembre de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO)
 
 ----
@@ -56,8 +56,16 @@
 
 ---
 
-* **en el caso de ser un repositorio BRANCH de otro** y querer actualizar los cambios (o subir) al repositorio "padre", vas a la página de Github y le das al **BOTÓN VERDE** que hay al lado del repositorio de tu página.....entonces te lleva a la página-github del repositorio "padre" y le das a aceptar el **PULL*...LISTO!
-* cuando el responsable del repositorio **master* acepta los cambios, recibes un e-mail de confirmación, tal que asi:
+##CÓMO SINCRONIZAR TU GITHUB CON OTRO GITHUB:
+* **en el caso de ser un repositorio BRANCH de otro** y querer actualizar los cambios (o subir) al repositorio "padre":
+
+1. vas a la página web de **TU Github**,
+1. le das al **BOTÓN VERDE** que hay al lado del repositorio de tu página (a media altura-izquierda, con forma de "S"),
+1. ..entonces te lleva a la página-github del repositorio "padre" (una especie de "página-comparativa"), 
+1. le das al **BOTÓN ENVIAR PULL REQUEST (PR)**,
+1. se abre una ventana por si quieres añadir algún comentario extra, la cierras y le das a aceptar el **P R**...LISTO!
+
+* cuando el responsable del repositorio **master** acepta los cambios (hace un **CLOSE PR** (pull request)), recibes un e-mail de confirmación, tal que asi:
 
         `On Fri, 11/27/15, klo-manolo <notifications@github.com> wrote:`
          `Subject: Re: [eneboo-features] Ajuste de flfactinfo para que aparezca el "informe de ventas" en el m… (#23)`
