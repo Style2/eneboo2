@@ -51,6 +51,7 @@
     * _"**git push https://github.com/Miguel-J/eneboo master**"_
     * _"git push https://github.com/Miguel-J/eneboo.wiki master"_
     * _"git push https://github.com/Miguel-J/eneboo-features master"_
+    * _"git push https://github.com/Miguel-J/ext-abanq-eneboo master"_
     * OJO: hay que añadir esa palabra "master" al final de la dirección para indicarle que el que manda es el del servidor...
     * Habrá que poner el USUARIO y PASSWORD de la cuenta propia en el GITHUB
 
