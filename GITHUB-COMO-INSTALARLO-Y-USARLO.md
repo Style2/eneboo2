@@ -45,8 +45,8 @@
         * NOTA: NO olvidarse de la extensión ".md"
     * SI NO QUIERES PONER LOS NOMBRES DE ARCHIVO O HAY VARIOS: "**git add .**"
 * "**git commit -a**" (esto solo vale si no hemos creado ningún archivo)
-        * ejemplo:_"C:\Users\portatil\Documents\GitHub\eneboo-manual\eneboo.wiki [master +6 0 0 1] git commit -a"_ 
-        * NOTA: se abre una ventana de texto para poner una explicación del cambio que "subes"....no se puede dejar en blanco....al acabar cerrarla y decirle que SI a grabar (lo hace en un dir. temporal que luego borra)
+    * ejemplo:_"C:\Users\portatil\Documents\GitHub\eneboo-manual\eneboo.wiki [master +6 0 0 1] git commit -a"_ 
+    * NOTA: se abre una ventana de texto para poner una explicación del cambio que "subes"....no se puede dejar en blanco....al acabar cerrarla y decirle que SI a grabar (lo hace en un dir. temporal que luego borra)
 *  **y ahora hay que decirle que SUBA esos cambios:**
     * _"**git push https://github.com/Miguel-J/eneboo master**"_
     * _"git push https://github.com/Miguel-J/eneboo.wiki master"_
