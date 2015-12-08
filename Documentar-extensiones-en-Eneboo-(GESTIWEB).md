@@ -17,11 +17,11 @@ El lenguaje elegido
 ------------------------
 Se usará el lenguaje de marcas reStructuredText_, ya que sus características permiten varios usos:
 
-#. La documentación se podrá consultar directamente en GitHub, ya que esta plataforma interpreta código reST.
+1. La documentación se podrá consultar directamente en GitHub, ya que esta plataforma interpreta código reST.
 
-#. Usando Sphinx_ y las plantillas adecuadas, se podrá generar una documentación en HTML con un diseño más acorde con la imagen del proyecto Eneboo.
+1. Usando Sphinx_ y las plantillas adecuadas, se podrá generar una documentación en HTML con un diseño más acorde con la imagen del proyecto Eneboo.
 
-#. Usando Sphinx_ también se podrá generar documentación en PDF pasando por LaTeX.
+1. Usando Sphinx_ también se podrá generar documentación en PDF pasando por LaTeX.
 
 Ficheros y carpetas usados
 ------------------------------
