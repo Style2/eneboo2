@@ -1,7 +1,7 @@
 * CREADO POR: [Comunidad Eneboo](http://www.eneboo.org) en https://github.com/eneboo/doc/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * ULTIMA ACTUALIZACIÓN: 13 de diciembre de 2015
-* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/EnebooTools)
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/C%C3%B3mo-a%C3%B1adir-una-extensi%C3%B3n-a-una-mezcla-con-MergeTool)
 
 ----
 ####Podemos aplicar extensiones usando eneboo-mergetool de la siguiente manera:
