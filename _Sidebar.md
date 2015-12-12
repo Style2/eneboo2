@@ -56,6 +56,7 @@
 1. [EnebooTools para Windows-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows)
 1. [EnebooTools: Instalación en Linux-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
 1. [EnebooTools: HACER-UN-PROYECTO-NUEVO-con-ASSEMBLER-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/eneboo-tools-HACER-UN-PROYECTO-NUEVO-con-ASSEMBLER)
+1. [Añadir una extensión a una mezcla con MergeTool](https://github.com/Miguel-J/eneboo/wiki/C%C3%B3mo-a%C3%B1adir-una-extensi%C3%B3n-a-una-mezcla-con-MergeTool)
 1. [Personalizar eneboo con las extensiones-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Personalizar-eneboo-con-las-extensiones)
 1. [Diseños de Impresión e informes: Añadir las extensiones Jasper-Reports a Eneboo](https://github.com/Miguel-J/eneboo/wiki/eneboo-reports)
 1. [extraer una extensión de un paquete que contiene muchas extensiones.-AULLA](https://github.com/Miguel-J/eneboo/wiki/Receta-para-extraer-una-extensi%C3%B3n-de-un-paquete--que-contiene-muchas-extensiones)
