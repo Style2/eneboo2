@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 28 de noviembre de 2015
+* ULTIMA ACTUALIZACIÓN: 12 de diciembre de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO)
 
 ----
@@ -24,6 +24,7 @@
 
 ##CÓMO COORDINAR LA COPIA LOCAL Y LA DEL WEB GITHUB:
 1. Vas ARRIBA-DERECHA a la rueda dentada y le das a "OPEN IN GIT SHELL", entonces se abre una ventana parecida al MSDOS de windows con unas letras en colores entre corchetes...
+
 1. **Para "TRAER" a la copia local los cambios de la copia-"master" del servidor github ponemos:**
  * NOTA: No se por qué no me deja hacerlo si el contenido en local es distinto, dice no-se-que del ".gitattribute", por lo que lo que hago es borrar el directorio local y hacer un "clone"...
  * OJO: El PULL hay que hacerlo DESDE EL DIRECTORIO DONDE QUIERES QUE DESCARGUE los archivos....si no es donde estás poner "cd (subdirectorio)" hasta situarse en el correcto...sin los parentesis.
@@ -32,22 +33,28 @@
  * "git pull https://github.com/gestiweb/eneboo-modules" (módulos básicos gestiweb)
  * "git pull https://github.com/Miguel-J/eneboo-features" (extensiones básicas Miguel-J-asociadas al de KLO)
  * "git pull https://github.com/klo-manolo/eneboo-features" (extensiones básicas KLO-más actualizadas???)
+
 1. **Para "SUBIR" la copia local MODIFICADA a la copia-"master" del servidor github ponemos:**
  * OJO: ANTES de hacer un PUSH es mejor hacer un PULL, porque si detecta que las partes del "master" del servidor que NO ACTUALIZAS son distintas a lo que tienes en el "local", no te dejará subir nada...
  * OJO: El PUSH hay que hacerlo DESDE EL DIRECTORIO DONDE QUIERES QUE COPIE los archivos....si no es donde estás poner "cd (subdirectorio)" hasta situarse en el correcto...sin los parentesis.
 
-* **Primero hay que decirle al programa quien somos...:**
+1. **Primero hay que decirle al programa quien somos...:**
+    * este paso sólo se hace la primera vez que usas el github...
     * "git config user.mail "miguelajsmaps@gmail.com" "(o la cuenta email de cada uno)
     * "git config user.name "Miguel-J" "(o el nombre de usuario de cada uno)
-* **luego hay que decirle que hemos cambiado cosas de los archivos...:**
-    * "git add (nombre del archivo)" (para cada archivo nuevo)
+
+1. **luego hay que decirle que hemos cambiado cosas de los archivos...:**
+    * "**git add (nombre del archivo)**" (para cada archivo nuevo)
         * ejemplo: _"C:\Users\portatil\Documents\GitHub\eneboo-manual\eneboo.wiki [master +6 0 0 1] git add EnebooTools.md"_ 
         * NOTA: NO olvidarse de la extensión ".md"
     * SI NO QUIERES PONER LOS NOMBRES DE ARCHIVO O HAY VARIOS: "**git add .**"
-* "**git commit -a**" (esto solo vale si no hemos creado ningún archivo)
+
+1. ahora empaquetamos esos cambios con "**git commit -a**"
+    * se puede hacer esto sin el "git add" pero sólo si no hemos creado ningún archivo, en ese caso hay que hacer ANTES un "git add ..." o un "git add ."
     * ejemplo:_"C:\Users\portatil\Documents\GitHub\eneboo-manual\eneboo.wiki [master +6 0 0 1] git commit -a"_ 
     * NOTA: se abre una ventana de texto para poner una explicación del cambio que "subes"....no se puede dejar en blanco....al acabar cerrarla y decirle que SI a grabar (lo hace en un dir. temporal que luego borra)
-*  **y ahora hay que decirle que SUBA esos cambios:**
+
+1. **y ahora hay que decirle que SUBA esos cambios:**
     * _"**git push https://github.com/Miguel-J/eneboo master**"_
     * _"git push https://github.com/Miguel-J/eneboo.wiki master"_
     * _"git push https://github.com/Miguel-J/eneboo-features master"_
