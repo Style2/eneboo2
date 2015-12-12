@@ -30,7 +30,7 @@
  * "git pull https://github.com/Miguel-J/eneboo" (sin el wiki)
  * "git pull https://github.com/Miguel-J/eneboo.wiki" (este wiki)
  * "git pull https://github.com/gestiweb/eneboo-modules" (módulos básicos gestiweb)
- * "git pull https://github.com/gestiweb/eneboo-features" (extensiones básicas gestiweb)
+ * "git pull https://github.com/Miguel-J/eneboo-features" (extensiones básicas Miguel-J-asociadas al de KLO)
  * "git pull https://github.com/klo-manolo/eneboo-features" (extensiones básicas KLO-más actualizadas???)
 1. **Para "SUBIR" la copia local MODIFICADA a la copia-"master" del servidor github ponemos:**
  * OJO: ANTES de hacer un PUSH es mejor hacer un PULL, porque si detecta que las partes del "master" del servidor que NO ACTUALIZAS son distintas a lo que tienes en el "local", no te dejará subir nada...
