@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 12 de diciembre de 2015
+* ULTIMA ACTUALIZACIÓN: 24 de diciembre de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO)
 
 ----
@@ -11,7 +11,7 @@
 1. Una vez instalado vas a PROGRAMAS-GITHUB y le das a "GITHUB"....se abre una pantalla en blanco....
 1. Vas ARRIBA-DERECHA a la rueda dentada y le das a "OPEN IN GIT SHELL", entonces se abre una ventana parecida al MSDOS de windows con unas letras en colores entre corchetes...
 1. Escribes: "git clone https://github.com/(y aqui el nombre de la carpeta a copiar)"
- * NOTA: Para COPIAR-Y-PEGAR en la consola GIT-SHELL NO VALE el Ctrl+V, hay que hacerlo con el ratón (botón derecho)
+ * **NOTA: Para COPIAR-Y-PEGAR en la consola** GIT-SHELL NO VALE el Ctrl+V, hay que hacerlo con el ratón (botón derecho)
 1. Ejemplos: 
  * "git clone https://github.com/Miguel-J/eneboo" (este almacén-repositorio (pero sin el wiki) con las imágenes)
  * "git clone https://github.com/Miguel-J/eneboo.wiki" (este wiki)
@@ -20,7 +20,7 @@
 
 * ...y al darle a ENTER lo pone como subdirectorio en el directorio de descargas elegido...
 
-* NOTA: No poner ":" en los nombres de las páginas o no se descargan bien...
+* **NOTA**: No poner ":" en los nombres de las páginas o no se descargan bien...
 
 ##CÓMO COORDINAR LA COPIA LOCAL Y LA DEL WEB GITHUB:
 1. Vas ARRIBA-DERECHA a la rueda dentada y le das a "OPEN IN GIT SHELL", entonces se abre una ventana parecida al MSDOS de windows con unas letras en colores entre corchetes...
