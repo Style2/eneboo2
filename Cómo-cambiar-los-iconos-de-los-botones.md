@@ -36,7 +36,7 @@
 
 ![modificar módulos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos01.jpg)
 
-![extraer mezcla de base de datos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos02.jpg)
+![modificar módulo](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-05-b.jpg)
 
 --
 ####PASO-3. Buscar la tabla que acabe en ".ui" y darle a modificar
