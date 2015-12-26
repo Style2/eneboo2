@@ -43,11 +43,11 @@
 
 ![albaranes con mariquita](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-06.jpg)
 
-![albaranes con mariquita](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-07.jpg)
-
 --
 
 ####PASO-4. Darle al botón de arriba-derecha para editarlo con el "QT-design"
+
+![albaranes con mariquita](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-07.jpg)
 
 --
 
