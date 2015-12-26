@@ -30,30 +30,31 @@
 
 ![albaranes con mariquita](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-05.jpg)
 
-![albaranes con mariquita](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-06.jpg)
-
-![albaranes con mariquita](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-07.jpg)
-
-
 --
 
-####PASO-1. Ir a "Administración" - "Módulos" - modificar
+####PASO-2. Ir al menú "Eneboo" - "Sistema" - "Administración" - "Módulos" - modificar
 
 ![modificar módulos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos01.jpg)
 
 ![extraer mezcla de base de datos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos02.jpg)
 
-![extraer mezcla de base de datos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos03.jpg)
+--
+####PASO-3. Buscar la tabla que acabe en ".ui" y darle a modificar
 
-![extraer mezcla de base de datos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos04.jpg)
+![albaranes con mariquita](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-06.jpg)
+
+![albaranes con mariquita](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-07.jpg)
 
 --
-####PASO-2. Buscar la tabla que acabe en ".ui" y darle a modificar
-####PASO-3. Darle al botón de arriba-derecha para editarlo con el "QT-design"
-####PASO-4. "clickar" el botón a cambiar y ampliar el cuadro descriptivo de la derecha hasta que veas el icono en "propiedades"
-####PASO-5. darle al botón "..." y seleccionar la carpeta donde tienes guardado el nuevo icono"
-####PASO-6. darle a cerrar-guardar y a todos los botones de "ok-verde"
-####PASO-7. salir de eneboo y volver a entrar..
+
+####PASO-4. Darle al botón de arriba-derecha para editarlo con el "QT-design"
+
+--
+
+####PASO-5. "clickar" el botón a cambiar y ampliar el cuadro descriptivo de la derecha hasta que veas el icono en "propiedades"
+####PASO-6. darle al botón "..." y seleccionar la carpeta donde tienes guardado el nuevo icono"
+####PASO-7. darle a cerrar-guardar y a todos los botones de "ok-verde"
+####PASO-8. salir de eneboo y volver a entrar..
 
 * NOTA: vale cualquier archivo de imagen PERO....CUIDADO CON EL TAMAÑO: Un consejo , previamente conviértela a 32x32 para que no se quede colgado eneboo al cargar ese formulario con una imagen gigantesca. 
 
