@@ -6,18 +6,56 @@
 ----
 ###INICIO: CÓMO CAMBIAR UN ICONO DESDE ENEBOO.
 
-1. Ir a "Administración" - "Módulos" - modificar
+####PASO-0. OBJETIVO: Cambiar el icono de "imprimir" en Albaranes.
+
+![icono salchicha azul](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-01.jpg)
+
+--
+####PASO-1. Localizar dónde está ese icono (mediante la "mariquita")
+
+##### Paso 1-a: Para eso hay que modificar: Ir a "Menú" - "Sistema" - "Administración" - "Opciones de comportamiento"...
+
+![opciones comportamiento](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-02.jpg)
+
+![opciones comportamiento](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-03.jpg)
+
+
+##### Paso 1-b: ...cerrar y volver a abrir la pestaña de "Albaranes"...
+
+![albaranes con mariquita](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-04.jpg)
+
+##### Paso 1-c: ...clickar la "**mariquita*"...
+
+##### Paso 1-d: ...fijarse en el nombre del archivo que se abre en **QSA Workbench**...
+
+![albaranes con mariquita](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-05.jpg)
+
+![albaranes con mariquita](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-06.jpg)
+
+![albaranes con mariquita](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-07.jpg)
+
+
+--
+
+####PASO-1. Ir a "Administración" - "Módulos" - modificar
 
 ![modificar módulos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos01.jpg)
 
-1. Buscar la tabla que acabe en ".ui" y darle a modificar
-1. Darle al botón de arriba-derecha para editarlo con el "QT-design"
-1. "clickar" el botón a cambiar y ampliar el cuadro descriptivo de la derecha hasta que veas el icono en "propiedades"
-1. darle al botón "..." y seleccionar la carpeta donde tienes guardado el nuevo icono"
-1. darle a cerrar-guardar y a todos los botones de "ok-verde"
-1. salir de eneboo y volver a entrar..
+![extraer mezcla de base de datos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos02.jpg)
 
-* NOTA: vale cualquier archivo de imagen PERO....CUIDADO CON EL TAMAÑO: Un consejo , previamente conviertela a 32x32 para que no se quede colgado eneboo al cargar ese formulario con una imagen gigantesca. 
+![extraer mezcla de base de datos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos03.jpg)
+
+![extraer mezcla de base de datos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos04.jpg)
+
+--
+####PASO-2. Buscar la tabla que acabe en ".ui" y darle a modificar
+####PASO-3. Darle al botón de arriba-derecha para editarlo con el "QT-design"
+####PASO-4. "clickar" el botón a cambiar y ampliar el cuadro descriptivo de la derecha hasta que veas el icono en "propiedades"
+####PASO-5. darle al botón "..." y seleccionar la carpeta donde tienes guardado el nuevo icono"
+####PASO-6. darle a cerrar-guardar y a todos los botones de "ok-verde"
+####PASO-7. salir de eneboo y volver a entrar..
+
+* NOTA: vale cualquier archivo de imagen PERO....CUIDADO CON EL TAMAÑO: Un consejo , previamente conviértela a 32x32 para que no se quede colgado eneboo al cargar ese formulario con una imagen gigantesca. 
 
 ###REPOSITORIO DE ICONOS:
 
