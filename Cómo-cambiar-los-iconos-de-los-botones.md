@@ -62,97 +62,99 @@
 
 * https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos
 
-* ICONO (image10)
+* ICONO xml  32x32  1,61 kb (image10.png)
 ![icono (image10)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image10.png)
 
-* ICONO (image11)
+* ICONO editar ui 32x32 kb (image11.png)
 ![icono (image11)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image11.png)
 
-* ICONO (image12200)
+* ICONO 32x32 kb (image12200.png)
 ![icono (image12200)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image12200.png)
 
-* ICONO (image13840)
+* ICONO 32x32 kb (image13840.png)
 ![icono (image13840)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image13840.png)
 
-* ICONO (image14282)
+* ICONO 32x32 kb (image14282.png)
 ![icono (image14282)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image14282.png)
 
-* ICONO (image15455)
+* ICONO 32x32 kb (image15455.png)
 ![icono (image15455)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image15455.png)
 
-* ICONO (image16943)
+* ICONO 32x32 kb (image16943.png)
 ![icono (image16943)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image16943.png)
 
-* ICONO (image17655)
+* ICONO 32x32 kb (image17655.png)
 ![icono (image17655)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image17655.png)
 
-* ICONO (image18672)
+* ICONO 32x32 kb (image18672.png)
 ![icono (image18672)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image18672.png)
 
-* ICONO (image19156)
+* ICONO 32x32 kb (image19156.png)
 ![icono (image19156)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image19156.png)
 
-* ICONO (image20541)
+* ICONO salchicha azul de imprimir 32x32, 1,97 kb (image20541,png)
 ![icono (image20541)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image20541.png)
 
-* ICONO (image23544)
+* ICONO 32x32, kb (image23544.png)
 ![icono (image23544)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image23544.png)
 
-* ICONO (image26803)
+* ICONO elefante eneboo blanco 64x64, 4,19 kb (image26803.png)
 ![icono (image26803)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image26803.png)
 
-* ICONO (image26904)
+* ICONO 32x32, kb (image26904.png)
 ![icono (image26904)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image26904.png)
 
-* ICONO (image27841)
+* ICONO 32x32, kb (image27841.png)
 ![icono (image27841)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image27841.png)
 
-* ICONO (image28013)
+* ICONO 32x32, kb (image28013.png)
 ![icono (image28013)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image28013.png)
 
-* ICONO (image29828)
+* ICONO 32x32, kb (image29828.png)
 ![icono (image29828)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image29828.png)
 
-* ICONO (image31441)
+* ICONO 32x32, kb (image31441.png)
 ![icono (image31441)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image31441.png)
 
-* ICONO (image32297)
+* ICONO 32x32, kb (image32297.png)
 ![icono (image32297)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image32297.png)
 
-* ICONO (image38751)
+* ICONO 32x32, kb (image38751.png)
 ![icono (image38751)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image38751.png)
 
-* ICONO (image4)
+* ICONO 32x32, kb (image4.png)
 ![icono (image4)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image4.png)
 
-* ICONO (image40664)
+* ICONO 32x32, kb (image40664.png)
 ![icono (image40664)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image40664.png)
 
-* ICONO (image43591)
+* ICONO 32x32, kb (image43591.png)
 ![icono (image43591)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image43591.png)
 
-* ICONO (image44215)
+* ICONO (32x32, kb image44215.png)
 ![icono (image44215)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image44215.png)
 
-* ICONO (image5)
+* ICONO 32x32, kb (image5.png)
 ![icono (image5)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image5.png)
 
-* ICONO (image51787)
+* ICONO 32x32, kb (image51787.png)
 ![icono (image51787)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image51787.png)
 
-* ICONO (image51805)
+* ICONO 32x32, 1,10 kb (image51805.png)
 ![icono (image51805)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image51805.png)
 
-* ICONO (image53665)
+* ICONO 32x32, 1,81 kb (image53665.png)
 ![icono (image53665)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image53665.png)
 
-* ICONO (image63471)
+* ICONO 32x32, 0,479 kb (image63471.png)
 ![icono (image63471)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image63471.png)
 
-* ICONO (image63614)
+* ICONO 32x32, 2,14 kb (image63614.png)
 ![icono (image63614)](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/image63614.png)
 
-###COMO "SACAR-DESCARGAR" LOS ICONOS OFICIALES DE ENEBOO:
+---
+
+###CÓMO "SACAR-DESCARGAR" LOS ICONOS OFICIALES DE ENEBOO:
 
 * Sacado de: https://groups.google.com/forum/#!topic/eneboo/lxqbvj7W2fA
 
