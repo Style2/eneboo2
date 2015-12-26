@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 13 de octubre de 2015
+* ULTIMA ACTUALIZACIÓN: 26 de diciembre de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/C%C3%B3mo-sacar-LA-MEZCLA-de-mi-base-de-datos/_edit)
 
 ----
@@ -29,11 +29,23 @@ Es imprescindible para PERSONALIZAR EL PROGRAMA: tanto directamente(con un edito
 
 ####PASOS:
 
-1.-Hay que ir a archivo-SISTEMA-ADMINISTRACION-MODULOS y
+#####1.-Hay que ir a archivo-SISTEMA-ADMINISTRACION-MODULOS y
 
-2.-elegir un MÓDULO y darle a "MODIFICAR" y
+![extraer mezcla de base de datos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos01.jpg)
 
-3.-darle a la FLECHA VERDE (de arriba-a la derecha)
+--
+
+#####2.-elegir un MÓDULO y darle a "MODIFICAR" y
+
+![extraer mezcla de base de datos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos02.jpg)
+
+![extraer mezcla de base de datos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos03.jpg)
+
+--
+
+#####3.-darle a la FLECHA VERDE (de arriba-a la derecha)
+
+![extraer mezcla de base de datos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos04.jpg)
 
 Copiando facturacion/principal . . . 
 
@@ -49,7 +61,14 @@ Copiando facturacion/tesoreria . . .
 
 Copiando facturacion/almacen. 
 
-4.-crear las carpetas de las AREAS y recolocar cada módulo en su área (por tema estético)
+![extraer mezcla de base de datos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos05.jpg)
+
+
+![extraer mezcla de base de datos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos06.jpg)
+
+--
+
+#####4.-crear las carpetas de las AREAS y recolocar cada módulo en su área (por tema estético)
 
 
 ---
