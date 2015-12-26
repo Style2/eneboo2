@@ -1,12 +1,15 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 27 de febrero de 2015
+* ULTIMA ACTUALIZACIÓN: 27 de diciembre de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/C%C3%B3mo-cambiar-los-iconos-de-los-botones)
 
 ----
 ###INICIO: CÓMO CAMBIAR UN ICONO DESDE ENEBOO.
 
 1. Ir a "Administración" - "Módulos" - modificar
+
+![modificar módulos](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-extraer-mezcla/eneboo-menu-modulos01.jpg)
+
 1. Buscar la tabla que acabe en ".ui" y darle a modificar
 1. Darle al botón de arriba-derecha para editarlo con el "QT-design"
 1. "clickar" el botón a cambiar y ampliar el cuadro descriptivo de la derecha hasta que veas el icono en "propiedades"
