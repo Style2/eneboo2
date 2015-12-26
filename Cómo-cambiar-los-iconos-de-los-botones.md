@@ -49,16 +49,30 @@
 
 ![albaranes con mariquita](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-07.jpg)
 
+![modificar](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-08.jpg)
+
 --
 
-####PASO-5. "clickar" el botón a cambiar y ampliar el cuadro descriptivo de la derecha hasta que veas el icono en "propiedades"
-####PASO-6. darle al botón "..." y seleccionar la carpeta donde tienes guardado el nuevo icono"
+####PASO-5. "clickear" el botón-icono que quieres cambiar y cerrar las dos ventanas (que no se usarán) para poder ampliar el cuadro descriptivo de la derecha, bajar hasta que veas el icono en "propiedades"
+
+![albaranes con mariquita](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-09.jpg)
+
+--
+
+####PASO-6. seleccionar "iconSet" y darle al botón "..." y seleccionar la carpeta donde tienes guardado el nuevo icono"
+
+![modificar](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-10.jpg)
+
+![modificar](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-11.jpg)
+
+--
+
 ####PASO-7. darle a cerrar-guardar y a todos los botones de "ok-verde"
 ####PASO-8. salir de eneboo y volver a entrar..
 
-* NOTA: vale cualquier archivo de imagen PERO....CUIDADO CON EL TAMAÑO: Un consejo , previamente conviértela a 32x32 para que no se quede colgado eneboo al cargar ese formulario con una imagen gigantesca. 
-
 ###REPOSITORIO DE ICONOS:
+
+* NOTA: vale cualquier archivo de imagen PERO....CUIDADO CON EL TAMAÑO: Un consejo , previamente conviértela a 32x32 para que no se quede colgado Eneboo al cargar ese formulario con una imagen gigantesca. 
 
 * https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos
 
