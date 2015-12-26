@@ -59,16 +59,27 @@
 
 --
 
-####PASO-6. seleccionar "iconSet" y darle al botón "..." y seleccionar la carpeta donde tienes guardado el nuevo icono"
+####PASO-6. seleccionar "iconSet" y darle al botón "..." y seleccionar la imagen desde la carpeta donde tienes guardado el nuevo icono"
 
 ![modificar](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-10.jpg)
 
 ![modificar](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-11.jpg)
 
+![modificar](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-12.jpg)
+
 --
 
-####PASO-7. darle a cerrar-guardar y a todos los botones de "ok-verde"
-####PASO-8. salir de eneboo y volver a entrar..
+####PASO-7. darle a aceptar y cerrar-guardar con todos los botones de "ok-verde"
+
+
+![modificar](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-13.jpg)
+
+####PASO-8. cerrarlo todo, salir del programa Eneboo y volver a entrar...volver a abrir "Albaranes" y tachán!...Resultado:
+
+![modificar](https://github.com/Miguel-J/eneboo/blob/master/imagen/iconos-eneboo-todos/icono-eneboo-14.jpg)
+
+
+---
 
 ###REPOSITORIO DE ICONOS:
 
