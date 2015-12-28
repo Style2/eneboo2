@@ -54,7 +54,9 @@ Abrir la consola de  MS-DOS (botón derecho mouse-ejecutar como administrador) y
 
 https://github.com/Miguel-J/eneboo/wiki/C%C3%B3mo-a%C3%B1adir-una-extensi%C3%B3n-a-una-mezcla-con-MergeTool
 
-ejemplo: c:\github\eneboo-tools\python eneboo-mergetool folder-patch C:\ENEBOO-DESARROLLOS\eneboo-zona de mezclas mergetool\modulos-iniciales C:\ENEBOO-DESARROLLOS\eneboo-zona de mezclas mergetool\parche-a-añadir C:\ENEBOO-DESARROLLOS\eneboo-zona de mezclas mergetool\resultado
+ejemplo: c:\github\eneboo-tools\python eneboo-mergetool folder-patch C:\ENEBOO-DESARROLLOS\eneboo-mezclas-mergetool\modulos-iniciales C:\ENEBOO-DESARROLLOS\eneboo-mezclas-mergetool\parche-a-añadir C:\ENEBOO-DESARROLLOS\eneboo-mezclas-mergetool\resultado
+
+* **NOTA**: no permite nombres de directorios con espacios en blanco
 
 ---
 
