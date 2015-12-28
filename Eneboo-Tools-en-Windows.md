@@ -14,9 +14,21 @@ bajar la "ActivePython-2.7.10.12-win64-x64"
 
 descargarla y ejecutarla: crea el directorio c:\python27 y un acceso directo en el menú...
 
-####paso 2 - cómo ejecutar programas
+####paso 2 - descargar las "eneboo-tools" del Github de Gestiweb o de Miguel-J(fork del anterior):
 
-Abrir la consola de  MS-DOS y escribir "Python" delante del nombre del programa
+https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO
+
+####paso 3 - descargar las "extensiones" y los "módulos" del Github de KLO o de Miguel-J(fork del anterior):
+
+https://github.com/klo-manolo/eneboo-features
+
+https://github.com/klo-manolo/eneboo-modules
+
+https://github.com/Miguel-J
+
+####paso 3 - probando si hace algo al ejecutar programas (se puede saltar este paso...)
+
+Abrir la consola de  MS-DOS (botón derecho mouse-ejecutar como administrador) y escribir "python" delante del nombre del programa
 
 ejemplo: c:\github\eneboo-tools\python eneboo-mergetool
 
@@ -25,7 +37,7 @@ ERROR: "ImportError: No module named lxml"....YA VISTO EN "https://github.com/Mi
          `es porque la librería de Python "libxml2" en sus versiones recientes no instalan "cosas antiguas" como "lxml", por lo que hay que instalar también:`
          `$ sudo apt-get install python-lxml` 
 
-####paso 3 - instalar "Python-lxml" para Windows
+####paso 4 - instalar "Python-lxml" para Windows
 
         https://pypi.python.org/pypi/lxml/3.5.0
 
@@ -36,11 +48,13 @@ Elegir la versión correcta para tu versión de Windows. Yo instalo la de Window
 ...se instala automáticamente en el directorio c:\python27 instalado previamente...
 
 
-####paso 4 - ejecutar programas
+####paso 5 - ejecutar programas
 
-Abrir la consola de  MS-DOS y escribir "Python" delante del nombre del programa
+Abrir la consola de  MS-DOS (botón derecho mouse-ejecutar como administrador) y escribir "python" delante del nombre del programa:
 
-ejemplo: c:\github\eneboo-tools\python eneboo-mergetool
+https://github.com/Miguel-J/eneboo/wiki/C%C3%B3mo-a%C3%B1adir-una-extensi%C3%B3n-a-una-mezcla-con-MergeTool
+
+ejemplo: c:\github\eneboo-tools\python eneboo-mergetool folder-patch C:\ENEBOO-DESARROLLOS\eneboo-zona de mezclas mergetool\modulos-iniciales C:\ENEBOO-DESARROLLOS\eneboo-zona de mezclas mergetool\parche-a-añadir C:\ENEBOO-DESARROLLOS\eneboo-zona de mezclas mergetool\resultado
 
 ---
 
