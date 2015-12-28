@@ -58,6 +58,19 @@ ejemplo: c:\github\eneboo-tools\python eneboo-mergetool folder-patch C:\ENEBOO-D
 
 * **NOTA**: no permite nombres de directorios con espacios en blanco
 
+####paso 6 - me da error de codificación...?¿?¿?¿¿
+
+`UNEXPECTED ERROR UnicodeDecodeError: 'ascii' codec can't decode byte 0xf1 in position 57: ordinal not in range(128)`
+`Traceback (most recent call last):`
+  `File "C:\GITHUB\eneboo-tools\enebootools\mergetool\__init__.py", line 273, in do_folder_patch`
+    `return flpatchdir.patch_folder(self, basedir, finaldir, patchdir)`
+  `File "C:\GITHUB\eneboo-tools\enebootools\mergetool\flpatchdir.py", line 537, in patch_folder`
+    `iface.debug(u"Folder Patch $basedir:%s $finaldir:%s $patchdir:%s" % (basedir,finaldir,patchdir))`
+`UnicodeDecodeError: 'ascii' codec can't decode byte 0xf1 in position 57: ordinal not in range(128)`
+
+
+...**y hasta aquí llego...**
+
 ---
 
 https://groups.google.com/forum/#!topic/eneboo/eVkmQNMUzGQ
