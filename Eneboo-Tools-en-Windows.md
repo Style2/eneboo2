@@ -21,12 +21,26 @@ Abrir la consola de  MS-DOS y escribir "Python" delante del nombre del programa
 ejemplo: c:\github\eneboo-tools\python eneboo-mergetool
 
 ERROR: "ImportError: No module named lxml"....YA VISTO EN "https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux", por lo que hay que instalar:
+
          `es porque la librería de Python "libxml2" en sus versiones recientes no instalan "cosas antiguas" como "lxml", por lo que hay que instalar también:`
          `$ sudo apt-get install python-lxml` 
 
 ####paso 3 - instalar "Python-lxml" para Windows
 
-        http://xmlsoft.org/downloads.html (re-dirige a ftp://xmlsoft.org/libxml2/)
+        https://pypi.python.org/pypi/lxml/3.5.0
+
+Elegir la versión correcta para tu versión de Windows. Yo instalo la de Windows 64b con Python 2.7:
+
+         lxml-3.5.0.win-amd64-py2.7.exe (md5)   MS Windows installer  2.7  2015-11-14 3MB 
+
+...se instala automáticamente en el directorio c:\python27 instalado previamente...
+
+
+####paso 4 - ejecutar programas
+
+Abrir la consola de  MS-DOS y escribir "Python" delante del nombre del programa
+
+ejemplo: c:\github\eneboo-tools\python eneboo-mergetool
 
 ---
 
