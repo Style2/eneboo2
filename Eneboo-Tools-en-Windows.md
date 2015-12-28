@@ -1,9 +1,34 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 13 de febrero de 2015
+* ULTIMA ACTUALIZACIÓN: 28 de diciembre de 2015
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows)
 
 ----
+### a ver dónde acaba esto...
+
+####paso 1 - Instalar Python:
+
+ir a www.python.org  y luego a "download"
+
+bajar la "ActivePython-2.7.10.12-win64-x64"
+
+descargarla y ejecutarla: crea el directorio c:\python27 y un acceso directo en el menú...
+
+####paso 2 - cómo ejecutar programas
+
+Abrir la consola de  MS-DOS y escribir "Python" delante del nombre del programa
+
+ejemplo: c:\github\eneboo-tools\python eneboo-mergetool
+
+ERROR: "ImportError: No module named lxml"....YA VISTO EN "https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux", por lo que hay que instalar:
+         `es porque la librería de Python "libxml2" en sus versiones recientes no instalan "cosas antiguas" como "lxml", por lo que hay que instalar también:`
+         `$ sudo apt-get install python-lxml` 
+
+####paso 3 - instalar "Python-lxml" para Windows
+
+        http://xmlsoft.org/downloads.html (re-dirige a ftp://xmlsoft.org/libxml2/)
+
+---
 
 https://groups.google.com/forum/#!topic/eneboo/eVkmQNMUzGQ
 
