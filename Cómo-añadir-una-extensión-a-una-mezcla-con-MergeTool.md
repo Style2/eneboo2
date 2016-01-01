@@ -35,18 +35,27 @@ donde:
 
 
 
-**Ejemplo** para aplicar la extensión ext0002-norma58:
+####**Ejemplo** para aplicar la extensión ext0002-norma58:
 
-- Por un lado tenemos la carpeta de extensiones por ejemplo en /home/usuario/eneboo-features
-- Por otro lado tenemos el código de nuestros módulos por ejemplo en /home/usuario/eneboo-modules
+##### PASO 1 - PREPARACIÓN DE DATOS PREVIOS:
 
-Por comididad colocaremos una copia de los ficheros necesarios en una misma ruta de trabajo, por ejemplo en /home/usuario/pruebas_mezcla
+- Por un lado tenemos la carpeta de extensiones por ejemplo en:
+         /home/usuario/eneboo-features
+- Por otro lado tenemos el código de los módulos de nuestra mezcla privada, por ejemplo en:
+         /home/usuario/inicial
+
+##### PASO 2 - COLOCACIÓN DE DATOS PREVIOS:
+
+Por comodidad colocaremos los ficheros necesarios en una misma ruta de trabajo, por ejemplo en:
+         /home/usuario/pruebas_mezcla
+
+...quedando así:
 
 - Ruta al parche: /home/usuario/pruebas_mezcla/norma58
-- Ruta al código: /home/usuario/pruebas_mezcla/codigo-original
+- Ruta al código: /home/usuario/pruebas_mezcla/inicial
 
-Para aplicar la extensión nos colocamos en la ruta de trabajo y lanzamos el siguiente comando:
+Para aplicar la extensión nos colocamos en el directorio **pruebas_mezcla** y lanzamos el siguiente comando:
 
-`# eneboo-mergetool folder-patch ./norma58 ./codigo-original ./codigo-mezcla`
+`~/$ eneboo-mergetool folder-patch ./norma58 ./inicial ./salida`
 
-Si todo termina sin errores, en la carpeta "codigo-mezcla" tendremos nuestro nuevo código de módulos con la nueva extensión ya aplicada.
+Si todo termina sin errores, en la carpeta "salida" tendremos nuestro nuevo código de módulos con la nueva extensión ya aplicada.
