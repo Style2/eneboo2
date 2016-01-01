@@ -47,6 +47,11 @@ Elegir la versión correcta para tu versión de Windows. Yo instalo la de Window
 
 * **NOTA**: El directorio del parche a añadir DEBE TENER **EL MISMO NOMBRE** QUE EL ARCHIVO **.XML** principal que marca los cambios a añadir
 
+* **NOTA-1**: no permite nombres de directorios con espacios en blanco
+* **NOTA-2**: no permite nombres de directorios largos
+* **NOTA-3**: no permite que exista (**antes de ejecutar mergetool**) el directorio donde vuelca la suma (en este ejemplo: "salida")
+* **NOTA-4**: el módulo a añadir **debe llamarse por el "alias"**, no el original (en este caso: "informes", no "flfactinfo")
+
 ![mergetools-windows](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-tools/mergetool-windows02.jpg)
 
 ####PASO 6 - ejecutar programas
@@ -57,14 +62,10 @@ https://github.com/Miguel-J/eneboo/wiki/C%C3%B3mo-a%C3%B1adir-una-extensi%C3%B3n
 
 ejemplo: c:\github\eneboo-tools\python eneboo-mergetool folder-patch ./emmergetool/info_ventascli ./emmergetool/iniciales ./emmergetool/salida
 
-* **NOTA-1**: no permite nombres de directorios con espacios en blanco
-* **NOTA-2**: no permite nombres de directorios largos
-* **NOTA-3**: no permite que exista (**antes de ejecutar mergetool**) el directorio donde vuelca la suma (en este ejemplo: "salida")
-* **NOTA-4**: el módulo a añadir **debe llamarse por el "alias"**, no el original (en este caso: "informes", no "flfactinfo")
 
 ![mergetools-windows](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-tools/mergetool-windows03.jpg)
 
-####RESULTADO:
+####PASO 7 - RESULTADO:
 
 Crea el directorio "salida" con el nuevo módulo.
 
