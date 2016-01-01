@@ -52,7 +52,7 @@
 1. ahora empaquetamos esos cambios con "**git commit -a**"
     * se puede hacer esto sin el "git add" pero sólo si no hemos creado ningún archivo, en ese caso hay que hacer ANTES un "git add ..." o un "git add ."
     * ejemplo:_"C:\Users\portatil\Documents\GitHub\eneboo-manual\eneboo.wiki [master +6 0 0 1] git commit -a"_ 
-    * NOTA: se abre una ventana de texto para poner una explicación del cambio que "subes"....no se puede dejar en blanco....al acabar cerrarla y decirle que SI a grabar (lo hace en un dir. temporal que luego borra)
+    * NOTA: se abre una ventana de texto para poner una explicación del cambio que "subes"....no se puede dejar en blanco....al acabar cerrarla y decirle que **SI a grabar** (lo hace en un dir. temporal que luego borra)
 
 1. **y ahora hay que decirle que SUBA esos cambios:**
     * _"**git push https://github.com/Miguel-J/eneboo master**"_
