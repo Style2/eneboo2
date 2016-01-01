@@ -54,8 +54,14 @@ Por comodidad colocaremos los ficheros necesarios en una misma ruta de trabajo, 
 - Ruta al parche: /home/usuario/pruebas_mezcla/norma58
 - Ruta al código: /home/usuario/pruebas_mezcla/inicial
 
-Para aplicar la extensión nos colocamos en el directorio **pruebas_mezcla** y lanzamos el siguiente comando:
+##### PASO 3 - EJECUCIÓN ORDEN "mergetool":
 
-`~/$ eneboo-mergetool folder-patch ./norma58 ./inicial ./salida`
+Para aplicar la extensión nos colocamos en el directorio **pruebas_mezcla**:
+
+`cd pruebas_mezcla`
+
+...y lanzamos el siguiente comando:
+
+`~/pruebas_mezcla$ eneboo-mergetool folder-patch ./norma58 ./inicial ./salida`
 
 Si todo termina sin errores, en la carpeta "salida" tendremos nuestro nuevo código de módulos con la nueva extensión ya aplicada.
