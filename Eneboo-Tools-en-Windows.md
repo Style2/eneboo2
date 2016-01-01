@@ -45,12 +45,15 @@ Elegir la versión correcta para tu versión de Windows. Yo instalo la de Window
 
 ####PASO 5 - colocar cada elemento en el SUB-DIRECTORIO:
 
+Colocar los DOS sub-directorios en uno conjunto (en el ejemplo "emmergetool") Y ÉSTE DENTRO DE LA CARPETA DE ENEBOO-TOOLS (la descargada de Gestiweb)....NOTA: tal vez si se pone el "path" en "variables de entorno" se pueda evitar que estén juntos....
+
 * **NOTA-1**: El directorio del parche a añadir DEBE TENER **EL MISMO NOMBRE** QUE EL ARCHIVO **.XML** principal que marca los cambios a añadir
 
 * **NOTA-2**: no permite nombres de directorios con espacios en blanco
 * **NOTA-3**: no permite nombres de directorios largos
 * **NOTA-4**: no permite que exista (**antes de ejecutar mergetool**) el directorio donde vuelca la suma (en este ejemplo: "salida")
 * **NOTA-5**: el módulo a añadir **debe llamarse por el "alias"**, no el original (en este caso: "informes", no "flfactinfo")
+* **NOTA-6**: los módulos "iniciales" **deben estar dentro de un subdirectorio de su área** (en este caso: "facturación")
 
 ![mergetools-windows](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-tools/mergetool-windows02.jpg)
 
@@ -67,7 +70,7 @@ ejemplo: c:\github\eneboo-tools\python eneboo-mergetool folder-patch ./emmergeto
 
 ####PASO 7 - RESULTADO:
 
-Crea el directorio "salida" con el nuevo módulo.
+Crea el sub-directorio "salida" con el nuevo módulo.
 
 ![mergetools-windows](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-tools/mergetool-windows04.jpg)
 
@@ -88,8 +91,11 @@ ERROR: "ImportError: No module named lxml"....YA VISTO EN "https://github.com/Mi
          `es porque la librería de Python "libxml2" en sus versiones recientes no instalan "cosas antiguas" como "lxml", por lo que hay que instalar también:`
          `$ sudo apt-get install python-lxml` 
 
+* **SOLUCIÓN**: Seguir el **PASO-4** y descargar la librería lxml
 
 #####B) ERROR-2 de codificación
+
+https://groups.google.com/forum/#!topic/eneboo/xE_LOYDPHwA
 
 `UNEXPECTED ERROR UnicodeDecodeError: 'ascii' codec can't decode byte 0xf1 in position 57: ordinal not in range(128)`
 `Traceback (most recent call last):`
@@ -104,10 +110,15 @@ ERROR: "ImportError: No module named lxml"....YA VISTO EN "https://github.com/Mi
 
 `UnicodeDecodeError: 'ascii' codec can't decode byte 0xf1 in position 57: ordinal not in range(128)`
 
-
+* **SOLUCIÓN**: Seguir el **PASO-5** y revisar (simplificando) los nombres de los directorios donde están los módulos iniciales y los del parche-extensión
 
 #####C) ERROR-3 de ubicación-falta de path
 
+`WARN: ** Se ha ignorado acción desconocida 'action' **`
+`WARN: ** Se ha ignorado acción desconocida 'action' **`
+`WARN: ** Se ha ignorado acción desconocida 'action' **`
+
+* **SOLUCIÓN**: Seguir el **PASO-5** y colocar los directorios (y subdirectorios) en la carpeta de "eneboo-tools"
 
 ---
 
@@ -140,7 +151,9 @@ De todos modos, la consola de Windows se quedará un poco "corta" para
 manejar estos programas.... y yo recomendaría la solución de Aulla, 
 una máquina virtual. 
 
-###COMO INSTALAR VIRTUALBOX CON UBUNTU 14.04
+---
+
+####COMO INSTALAR VIRTUALBOX CON UBUNTU 14.04
 Pongo los pasos aquí, pero mi experiencia personal con un:
 * Windows 8.1 de x64
 * AMD A4-1250 1Gb con 4 Gb RAM y 450 Gb disco duro
