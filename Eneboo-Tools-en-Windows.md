@@ -65,8 +65,9 @@ https://github.com/Miguel-J/eneboo/wiki/C%C3%B3mo-a%C3%B1adir-una-extensi%C3%B3n
 
 ejemplo: c:\github\eneboo-tools\python eneboo-mergetool folder-patch ./emmergetool/info_ventascli ./emmergetool/iniciales ./emmergetool/salida
 
-
 ![mergetools-windows](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-tools/mergetool-windows03.jpg)
+
+* **NOTA**: en mi directorio de "eneboo-tools", "veo" que TODOS los archivos han sido DUPLICADOS a extensión "Compiled Python File"....
 
 ####PASO 7 - RESULTADO:
 
