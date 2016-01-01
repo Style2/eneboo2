@@ -45,12 +45,12 @@ Elegir la versión correcta para tu versión de Windows. Yo instalo la de Window
 
 ####PASO 5 - colocar cada elemento en el SUB-DIRECTORIO:
 
-* **NOTA**: El directorio del parche a añadir DEBE TENER **EL MISMO NOMBRE** QUE EL ARCHIVO **.XML** principal que marca los cambios a añadir
+* **NOTA-1**: El directorio del parche a añadir DEBE TENER **EL MISMO NOMBRE** QUE EL ARCHIVO **.XML** principal que marca los cambios a añadir
 
-* **NOTA-1**: no permite nombres de directorios con espacios en blanco
-* **NOTA-2**: no permite nombres de directorios largos
-* **NOTA-3**: no permite que exista (**antes de ejecutar mergetool**) el directorio donde vuelca la suma (en este ejemplo: "salida")
-* **NOTA-4**: el módulo a añadir **debe llamarse por el "alias"**, no el original (en este caso: "informes", no "flfactinfo")
+* **NOTA-2**: no permite nombres de directorios con espacios en blanco
+* **NOTA-3**: no permite nombres de directorios largos
+* **NOTA-4**: no permite que exista (**antes de ejecutar mergetool**) el directorio donde vuelca la suma (en este ejemplo: "salida")
+* **NOTA-5**: el módulo a añadir **debe llamarse por el "alias"**, no el original (en este caso: "informes", no "flfactinfo")
 
 ![mergetools-windows](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-tools/mergetool-windows02.jpg)
 
