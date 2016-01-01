@@ -4,29 +4,79 @@
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows)
 
 ----
-### a ver dónde acaba esto...
+### INSTALACIÓN DE ENEBOO-TOOLS EN WINDOWS. EJEMPLO DE USO CON MERGE-TOOL:
 
-####paso 1 - Instalar Python:
+####PASO 1 - INSTALAR PYTHON:
 
-ir a www.python.org  y luego a "download"
+Ir a **www.python.org**  y luego a "download"
 
 bajar la "ActivePython-2.7.10.12-win64-x64"
 
-descargarla y ejecutarla: crea el directorio c:\python27 y un acceso directo en el menú...
+descargarla y ejecutarla: crea el directorio **c:\python27** y un acceso directo en el menú...
 
-####paso 2 - descargar las "eneboo-tools" del Github de Gestiweb o de Miguel-J(fork del anterior):
+####PASO 2 - Descargar las "eneboo-tools" del Github de Gestiweb o de Miguel-J(fork del anterior):
+
+Seguir estos pasos:
 
 https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO
 
-####paso 3 - descargar las "extensiones" y los "módulos" del Github de KLO o de Miguel-J(fork del anterior):
+Ejemplo:
 
-https://github.com/klo-manolo/eneboo-features
+git clone https://github.com/gestiweb/eneboo-tools
 
-https://github.com/klo-manolo/eneboo-modules
+git clone https://github.com/Miguel-J/eneboo-tools
 
-https://github.com/Miguel-J
+####PASO 3 - Descargar las "extensiones" del Github de KLO o de Miguel-J(fork del anterior):
 
-####paso 3 - probando si hace algo al ejecutar programas (se puede saltar este paso...)
+git clone https://github.com/klo-manolo/eneboo-features
+
+git clone https://github.com/Miguel-J/eneboo-features
+
+####PASO 4 - instalar "Python-lxml" para Windows
+
+        https://pypi.python.org/pypi/lxml/3.5.0
+
+Elegir la versión correcta para tu versión de Windows. Yo instalo la de Windows 64b con Python 2.7:
+
+         lxml-3.5.0.win-amd64-py2.7.exe (md5)   MS Windows installer  2.7  2015-11-14 3MB 
+
+...se instala **automáticamente** en el directorio c:\python27 instalado previamente...
+
+
+####PASO 5 - colocar cada elemento en el SUB-DIRECTORIO:
+
+* **NOTA**: El directorio del parche a añadir DEBE TENER **EL MISMO NOMBRE** QUE EL ARCHIVO **.XML** principal que marca los cambios a añadir
+
+![mergetools-windows](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-tools/mergetool-windows02.jpg)
+
+####PASO 6 - ejecutar programas
+
+Abrir la consola de  MS-DOS (con el botón derecho mouse-"ejecutar como administrador") y escribir "python" delante del nombre del programa:
+
+https://github.com/Miguel-J/eneboo/wiki/C%C3%B3mo-a%C3%B1adir-una-extensi%C3%B3n-a-una-mezcla-con-MergeTool
+
+ejemplo: c:\github\eneboo-tools\python eneboo-mergetool folder-patch ./emmergetool/info_ventascli ./emmergetool/iniciales ./emmergetool/salida
+
+* **NOTA-1**: no permite nombres de directorios con espacios en blanco
+* **NOTA-2**: no permite nombres de directorios largos
+* **NOTA-3**: no permite que exista (**antes de ejecutar mergetool**) el directorio donde vuelca la suma (en este ejemplo: "salida")
+* **NOTA-4**: el módulo a añadir **debe llamarse por el "alias"**, no el original (en este caso: "informes", no "flfactinfo")
+
+![mergetools-windows](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-tools/mergetool-windows03.jpg)
+
+####RESULTADO:
+
+Crea el directorio "salida" con el nuevo módulo.
+
+![mergetools-windows](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-tools/mergetool-windows04.jpg)
+
+--
+
+####NOTAS - ERRORES CONOCIDOS:
+
+#####A) ERROR-1 POR FALTAR LA LIBRERIA 
+
+* probando si hace algo al ejecutar programas (se puede saltar este paso...)
 
 Abrir la consola de  MS-DOS (botón derecho mouse-ejecutar como administrador) y escribir "python" delante del nombre del programa
 
@@ -37,28 +87,8 @@ ERROR: "ImportError: No module named lxml"....YA VISTO EN "https://github.com/Mi
          `es porque la librería de Python "libxml2" en sus versiones recientes no instalan "cosas antiguas" como "lxml", por lo que hay que instalar también:`
          `$ sudo apt-get install python-lxml` 
 
-####paso 4 - instalar "Python-lxml" para Windows
 
-        https://pypi.python.org/pypi/lxml/3.5.0
-
-Elegir la versión correcta para tu versión de Windows. Yo instalo la de Windows 64b con Python 2.7:
-
-         lxml-3.5.0.win-amd64-py2.7.exe (md5)   MS Windows installer  2.7  2015-11-14 3MB 
-
-...se instala automáticamente en el directorio c:\python27 instalado previamente...
-
-
-####paso 5 - ejecutar programas
-
-Abrir la consola de  MS-DOS (botón derecho mouse-ejecutar como administrador) y escribir "python" delante del nombre del programa:
-
-https://github.com/Miguel-J/eneboo/wiki/C%C3%B3mo-a%C3%B1adir-una-extensi%C3%B3n-a-una-mezcla-con-MergeTool
-
-ejemplo: c:\github\eneboo-tools\python eneboo-mergetool folder-patch C:\ENEBOO-DESARROLLOS\eneboo-mezclas-mergetool\modulos-iniciales C:\ENEBOO-DESARROLLOS\eneboo-mezclas-mergetool\parche-a-añadir C:\ENEBOO-DESARROLLOS\eneboo-mezclas-mergetool\resultado
-
-* **NOTA**: no permite nombres de directorios con espacios en blanco
-
-####paso 6 - me da error de codificación...?¿?¿?¿¿
+#####B) ERROR-2 de codificación
 
 `UNEXPECTED ERROR UnicodeDecodeError: 'ascii' codec can't decode byte 0xf1 in position 57: ordinal not in range(128)`
 `Traceback (most recent call last):`
@@ -74,12 +104,15 @@ ejemplo: c:\github\eneboo-tools\python eneboo-mergetool folder-patch C:\ENEBOO-D
 `UnicodeDecodeError: 'ascii' codec can't decode byte 0xf1 in position 57: ordinal not in range(128)`
 
 
-...**y hasta aquí llego...**
+
+#####C) ERROR-3 de ubicación-falta de path
+
 
 ---
 
-https://groups.google.com/forum/#!topic/eneboo/eVkmQNMUzGQ
+### INTENTOS ANTERIORES - ANTIGUOS (descartarlos)
 
+https://groups.google.com/forum/#!topic/eneboo/eVkmQNMUzGQ
 
 1. **mfdezp    27/8/12**
 Me acabo de Instalar el Python en Windows, pero siguiendo la guia de las Eneboo-tools, me dice que lo primero que hay que hacer es tener una serie de librerías (que no sé como tenerlas operativas para python en windows) y luego hacer un 
