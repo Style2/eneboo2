@@ -11,6 +11,7 @@
  
 *  ext0039-info_ventasmes  
 *  ext0068-info_ventascli  
+* ext0075-info_ventasmcli
 *  ext0337-estventascli
 *  ext0652-info_ventasmfam
 
@@ -18,6 +19,7 @@
 
 #### de CONTABILIDAD:
 
+* ext0020-ren_asientos
 *  ext0457-modelo300
 *  ext0458-modelo320
 *  ext0459-modelo347
@@ -29,11 +31,15 @@
 ####  de ALMACEN:
 
 *  ext0338-art_obsoletos
+* ext0135-trazabilidad
 
 --
 ####  de TESORERIA:
 
-
+  ext0359-norma68
+  ext0361-pagos_remesa
+  ext0362-norma34
+  ext0363-norma34A  
 
 --
 
@@ -56,7 +62,7 @@
 * ext0017-tallas_colores
 * ext0018-numeros_serie
 * ext0019-calidad_prov
-* ext0020-ren_asientos
+
 * ext0022-dias_pago_prov
 * ext0023-asociar_presup
   ext0025-comp_recibos  subo archivos README   13 days ago  
@@ -83,7 +89,7 @@
   ext0061-fun_crm  subo archivos README   13 days ago  
   ext0063-info_pagocobro  subo archivos README   13 days ago  
   ext0074-backups  cambio nombres .features   13 days ago  
-  ext0075-info_ventasmcli  subo archivos README   13 days ago  
+
   ext0086-punteo_cont  cambio nombres .features   13 days ago  
   ext0087-fun_chile  cambio nombres .features   13 days ago  
   ext0088-balan_multiem  cambio nombres .features   13 days ago  
@@ -105,7 +111,7 @@
   ext0132-bsconfirming  cambio nombres .features   13 days ago  
   ext0133-comision_pagos  cambio nombres .features   13 days ago  
   ext0134-pagos_multi_rec  cambio nombres .features   13 days ago  
-  ext0135-trazabilidad  cambio nombres .features   13 days ago  
+
   ext0136-pagos_prov  cambio nombres .features   13 days ago  
   ext0137-cheques_cli  cambio nombres .features   13 days ago  
   ext0152-produccion  cambio nombres .features   13 days ago  
@@ -153,10 +159,7 @@
   ext0349-tarifas_fact  cambio nombres .features   13 days ago  
   ext0351-tarifas_tc_bar  cambio nombres .features   13 days ago  
   ext0354-mas_formaspago  cambio nombres .features   13 days ago  
-  ext0359-norma68  cambio nombres .features   13 days ago  
-  ext0361-pagos_remesa  cambio nombres .features   13 days ago  
-  ext0362-norma34  cambio nombres .features   13 days ago  
-  ext0363-norma34A  
+
   ext0365-servcli_rappel  cambio nombres .features   13 days ago  
   ext0366-prev_pagos  cambio nombres .features   13 days ago  
   ext0367-sga_barcode  cambio nombres .features   13 days ago  
