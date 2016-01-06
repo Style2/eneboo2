@@ -75,6 +75,10 @@ Crea el sub-directorio "salida" con el nuevo módulo.
 
 ![mergetools-windows](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-tools/mergetool-windows04.jpg)
 
+####PASO 8 - AÑADIR ARCHIVO "COPYING" AL NUEVO MÓDULO:
+
+Sirve cualquier archivo con licencia (se puede copiar de las carpetas de los módulos oficiales...)
+
 --
 
 ####NOTAS - ERRORES CONOCIDOS:
