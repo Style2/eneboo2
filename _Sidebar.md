@@ -61,7 +61,7 @@
 1. [Diseños de Impresión e informes: Añadir las extensiones Jasper-Reports a Eneboo](https://github.com/Miguel-J/eneboo/wiki/eneboo-reports)
 1. [extraer una extensión de un paquete que contiene muchas extensiones.-AULLA](https://github.com/Miguel-J/eneboo/wiki/Receta-para-extraer-una-extensi%C3%B3n-de-un-paquete--que-contiene-muchas-extensiones)
 1. [Documentar extensiones-GESTIWEB](https://github.com/Miguel-J/eneboo/wiki/Documentar-extensiones-en-Eneboo-(GESTIWEB))
-
+1. [EXTENSIONES-agrupadas-por-tipos-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/EXTENSIONES-agrupadas-por-tipos)
 
 ---
 #####Lenguajes de programación:
