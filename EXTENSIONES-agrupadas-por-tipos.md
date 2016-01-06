@@ -8,15 +8,35 @@
 
 #### de INFORMES de ESTADISTICAS de VENTAS:
 
+ 
+*  ext0039-info_ventasmes  
+*  ext0068-info_ventascli  
+*  ext0337-estventascli
+*  ext0652-info_ventasmfam
+
 --
 
 #### de CONTABILIDAD:
+
+*  ext0457-modelo300
+*  ext0458-modelo320
+*  ext0459-modelo347
+*  ext0460-modelo390
+*  ext0461-modelo349
 
 --
 
 ####  de ALMACEN:
 
+*  ext0338-art_obsoletos
+
 --
+####  de TESORERIA:
+
+
+
+--
+
 * ext0001-cta_venta_artic
 * ext0002-norma58
 * ext0003-pesos_medidas
@@ -46,8 +66,7 @@
   ext0031-articulos_comp  subo archivos README   13 days ago  
   ext0032-liq_agentes  subo archivos README   13 days ago  
   ext0033-anticipos  subo archivos README   13 days ago  
-  ext0034-tpv_tallcol_bar  
-  ext0039-info_ventasmes  ajuste readme ventas 39   3 hours ago  
+  ext0034-tpv_tallcol_bar 
   ext0042-mail_facturac  subo archivos README   13 days ago  
   ext0043-act_precios  subo archivos README   13 days ago  
   ext0045-info_trazab  subo archivos README   13 days ago  
@@ -63,7 +82,6 @@
   ext0059-canarias  subo archivos README   13 days ago  
   ext0061-fun_crm  subo archivos README   13 days ago  
   ext0063-info_pagocobro  subo archivos README   13 days ago  
-  ext0068-info_ventascli  
   ext0074-backups  cambio nombres .features   13 days ago  
   ext0075-info_ventasmcli  subo archivos README   13 days ago  
   ext0086-punteo_cont  cambio nombres .features   13 days ago  
@@ -130,8 +148,6 @@
   ext0319-dtoesp_subctav  cambio nombres .features   13 days ago  
   ext0320-modelo201  cambio nombres .features   13 days ago  
   ext0327-tpv_cta_vta  cambio nombres .features   13 days ago  
-  ext0337-estventascli  ajustes features   2 days ago  
-  ext0338-art_obsoletos  cambio nombres .features   13 days ago  
   ext0344-proyectos_cc  cambio nombres .features   13 days ago  
   ext0346-pagares_prov2  cambio nombres .features   13 days ago  
   ext0349-tarifas_fact  cambio nombres .features   13 days ago  
@@ -171,11 +187,6 @@
   ext0450-envio_mail  cambio nombres .features   13 days ago  
   ext0451-pagares_prov3  cambio nombres .features   13 days ago  
   ext0456-cambio_ejer_alb  cambio nombres .features   13 days ago  
-  ext0457-modelo300  cambio nombres .features   13 days ago  
-  ext0458-modelo320  cambio nombres .features   13 days ago  
-  ext0459-modelo347  cambio nombres .features   13 days ago  
-  ext0460-modelo390  cambio nombres .features   13 days ago  
-  ext0461-modelo349  cambio nombres .features   13 days ago  
   ext0462-portes_dtoesp  cambio nombres .features   13 days ago  
   ext0467-modelo115  cambio nombres .features   13 days ago  
   ext0471-modelo180  cambio nombres .features   13 days ago  
@@ -216,7 +227,7 @@
   ext0641-saas  cambio nombres .features   13 days ago  
   ext0648-tpvtact_ivainc  cambio nombres .features   13 days ago  
   ext0650-punto_entrada  cambio nombres .features   13 days ago  
-  ext0652-info_ventasmfam  subo archivos README   13 days ago  
+
   ext0656-presup_anuales  cambio nombres .features   13 days ago  
   ext0658-maquinas  
   ext0659-tpv_offline  cambio nombres .features   13 days ago  
