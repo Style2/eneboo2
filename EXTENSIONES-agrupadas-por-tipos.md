@@ -82,63 +82,63 @@
 
 * ext0022-dias_pago_prov
 * ext0023-asociar_presup
-*  ext0025-comp_recibos  subo archivos README   13 days ago  
-*  ext0028-remesas_auto  subo archivos README   13 days ago  
+*  ext0025-comp_recibos
+*  ext0028-remesas_auto 
 *  ext0029-pagos_multiples  
-*  ext0030-pedido_prov_cli  subo archivos README   13 days ago  
-*  ext0031-articulos_comp  subo archivos README   13 days ago  
-*  ext0032-liq_agentes  subo archivos README   13 days ago  
-*  ext0033-anticipos  subo archivos README   13 days ago  
+*  ext0030-pedido_prov_cli 
+*  ext0031-articulos_comp 
+*  ext0032-liq_agentes 
+*  ext0033-anticipos 
 *  ext0034-tpv_tallcol_bar 
-*  ext0042-mail_facturac  subo archivos README   13 days ago  
-*  ext0043-act_precios  subo archivos README   13 days ago  
-*  ext0045-info_trazab  subo archivos README   13 days ago  
-*  ext0046-cli_potencial  subo archivos README   13 days ago  
+*  ext0042-mail_facturac 
+*  ext0043-act_precios 
+*  ext0045-info_trazab 
+*  ext0046-cli_potencial 
 *  ext0048-info_cliprov  subo archivos README   13 days ago  
-*  ext0050-info_cta_explot  subo archivos README   13 days ago  
+*  ext0050-info_cta_explot  
 *  ext0051-tpv_iva_incl  subo archivos README   13 days ago  
-*  ext0052-tpv_envases  subo archivos README   13 days ago  
+*  ext0052-tpv_envases  
 *  ext0053-tallcol_barcode  subo archivos README   13 days ago  
-*  ext0054-pagos_multi_pro  subo archivos README   13 days ago  
-*  ext0056-portes_prov  subo archivos README   13 days ago  
+*  ext0054-pagos_multi_pro  
+*  ext0056-portes_prov  
 *  ext0058-tpv_num_serie  subo archivos README   13 days ago  
-*  ext0059-canarias  subo archivos README   13 days ago  
-*  ext0061-fun_crm  subo archivos README   13 days ago  
-*  ext0063-info_pagocobro  subo archivos README   13 days ago  
-*  ext0074-backups  cambio nombres .features   13 days ago  
+*  ext0059-canarias 
+*  ext0061-fun_crm  
+*  ext0063-info_pagocobro  
+*  ext0074-backups 
 
 *  ext0086-punteo_cont  cambio nombres .features   13 days ago  
-*  ext0087-fun_chile  cambio nombres .features   13 days ago  
+*  ext0087-fun_chile  
 *  ext0088-balan_multiem  cambio nombres .features   13 days ago  
-*  ext0093-tpv_traza  cambio nombres .features   13 days ago  
+*  ext0093-tpv_traza 
 *  ext0096-traza_envases  cambio nombres .features   13 days ago  
-*  ext0097-tpv_traza_envas  cambio nombres .features   13 days ago  
-*  ext0099-remesas_prov  cambio nombres .features   13 days ago  
+*  ext0097-tpv_traza_envas 
+*  ext0099-remesas_prov  
 *  ext0100-caixaconfirming  cambio nombres .features   13 days ago  
-*  ext0103-vencim_personal  cambio nombres .features   13 days ago  
+*  ext0103-vencim_personal 
 *  ext0108-pagares_prov  cambio nombres .features   13 days ago  
 *  ext0118-num_serv  cambio nombres .features   13 days ago  
-*  ext0122-num_acomp  cambio nombres .features   13 days ago  
+*  ext0122-num_acomp  
 *  ext0123-vencim_perso_cp  cambio nombres .features   13 days ago  
-*  ext0124-num_serv_acomp  cambio nombres .features   13 days ago  
-*  ext0125-cambio_empresas  cambio nombres .features   13 days ago  
+*  ext0124-num_serv_acomp  
+*  ext0125-cambio_empresas  
 *  ext0127-tpv_ns_acomp  cambio nombres .features   13 days ago  
 *  ext0128-irpf_parcial  cambio nombres .features   13 days ago  
 *  ext0131-fact_periodica  
 *  ext0132-bsconfirming  cambio nombres .features   13 days ago  
-*  ext0133-comision_pagos  cambio nombres .features   13 days ago  
+*  ext0133-comision_pagos 
 *  ext0134-pagos_multi_rec  cambio nombres .features   13 days ago  
 
 *  ext0136-pagos_prov  cambio nombres .features   13 days ago  
 *  ext0137-cheques_cli  cambio nombres .features   13 days ago  
 *  ext0152-produccion  cambio nombres .features   13 days ago  
-*  ext0153-redon_asientos  cambio nombres .features   13 days ago  
+*  ext0153-redon_asientos  
 *  ext0154-batch_servired  cambio nombres .features   13 days ago  
 *  ext0157-traspaso_subcta  cambio nombres .features   13 days ago  
-*  ext0158-presup_oferta  cambio nombres .features   13 days ago  
+*  ext0158-presup_oferta  
 *  ext0167-informes_odt  cambio nombres .features   13 days ago  
 *  ext0171-prod_barcode  cambio nombres .features   13 days ago  
-*  ext0180-prod_sofa  cambio nombres .features   13 days ago  
+*  ext0180-prod_sofa  
 *  ext0187-tcbarco_estoreq  cambio nombres .features   13 days ago  
 *  ext0194-import_bds  cambio nombres .features   13 days ago  
 *  ext0196-validar_cif  cambio nombres .features   13 days ago  
