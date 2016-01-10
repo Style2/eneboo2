@@ -79,6 +79,8 @@ Crea el sub-directorio "salida" con el nuevo módulo.
 
 Sirve cualquier archivo con licencia (se puede copiar de las carpetas de los módulos oficiales...)
 
+NOTA: Este paso no es necesario si el módulo inicial ya tenía este archivo...
+
 --
 
 ####NOTAS - ERRORES CONOCIDOS:
