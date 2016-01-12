@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 24 de diciembre de 2015
+* ULTIMA ACTUALIZACIÓN: 12 de enero de 2016
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO)
 
 ----
@@ -65,7 +65,7 @@
 ---
 
 ##CÓMO SINCRONIZAR TU GITHUB CON OTRO GITHUB:
-* **en el caso de ser un repositorio BRANCH de otro** y querer actualizar los cambios (o subir) al repositorio "padre":
+* CASO 1- **en el caso de ser un repositorio BRANCH de otro** y querer actualizar los cambios (o SUBIR) HACIA repositorio "padre":
 
 1. vas a la página web de **TU Github**,
 1. le das al **BOTÓN VERDE** que hay al lado del repositorio de tu página (a media altura-izquierda, con forma de "S"),
@@ -83,6 +83,18 @@
          `Merged #23.`
           `—`
          `Reply to this email directly or view it on GitHub.`
+
+--
+
+* CASO 2- **en el caso de ser un repositorio BRANCH de otro** y querer actualizar los cambios (o BAJAR) DESDE repositorio "padre":
+
+1. a DIA DE HOY NO HE AVERIGUADO CÓMO SE HACE "ON-LINE"...es más práctico desde el "Git Shell" de tu ordenador local:
+1. primero hacemos un "pull" del máster-padre:
+    * "git pull https://github.com/klo-manolo/eneboo-features" 
+1. y luego haces un "push" hacia tu "branch" en github:
+    * "git push https://github.com/Miguel-J/eneboo-features master"
+1. recordar que en el caso de que haya cambios en tu github on-line tienes que bajarlos primero:
+    * "git pull https://github.com/Miguel-J/eneboo-features"
 
 ---
 
