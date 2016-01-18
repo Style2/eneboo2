@@ -15,8 +15,8 @@
 1. Ejemplos: 
  * "git clone https://github.com/Miguel-J/eneboo" (este almacén-repositorio (pero sin el wiki) con las imágenes)
  * "git clone https://github.com/Miguel-J/eneboo.wiki" (este wiki)
- * "git clone https://github.com/Miguel_J" (ESTO NO ES UN REPOSITORIO, al ser sólo una "carpeta con repositorios" NO los reconoce...)
- * "git clone https://github.com/Miguel_J/eneboo-features" (al ser un "branch" del de "klo-manolo" (el repositorio + actualizado) se descarga lo que había en el día que se hizo la "copia-branch"...)
+ * "git clone https://github.com/Miguel-J" (ESTO NO ES UN REPOSITORIO, al ser sólo una "carpeta con repositorios" NO los reconoce...)
+ * "git clone https://github.com/Miguel-J/eneboo-features" (al ser un "branch" del de "klo-manolo" (el repositorio + actualizado) se descarga lo que había en el día que se hizo la "copia-branch"...)
 
 * ...y al darle a ENTER lo pone como subdirectorio en el directorio de descargas elegido...
 
