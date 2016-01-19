@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 12 de enero de 2016
+* ULTIMA ACTUALIZACIÓN: 18 de enero de 2016
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO)
 
 ----
@@ -42,6 +42,23 @@
     * este paso sólo se hace la primera vez que usas el github...
     * "git config user.mail "miguelajsmaps@gmail.com" "(o la cuenta email de cada uno)
     * "git config user.name "Miguel-J" "(o el nombre de usuario de cada uno)
+
+1. **OPCIONAL: ver si hay llave SSH generada:**
+    *  La ssh key se utiliza para establecer una conexión segura entre Github y tu ordenador.
+ Partimos de la base que no tenemos ninguna llave generada. Si queréis comprobarlo escribid lo siguiente en el terminal:
+
+`Código:`
+`cd ~/.ssh`
+`ls`
+
+* Si tenemos alguna llave generada tendría que aparecer alguno de estos dos archivos.
+
+Código:   id_rsa.pub
+
+Código:    id_dsa.pub
+
+* en caso q no esté lo generamos:
+`ssh-keygen -t rsa -C "your_email@example.com"`
 
 1. **luego hay que decirle que hemos cambiado cosas de los archivos...:**
     * "**git add (nombre del archivo)**" (para cada archivo nuevo)
