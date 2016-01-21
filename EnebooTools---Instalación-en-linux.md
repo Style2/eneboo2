@@ -8,7 +8,8 @@
 ##PASOS DE INSTALACIÓN:
 
 ###PASO 1: HACERSE CON UN LINUX
-* Por qué? ...pues porque parece ser que necesitamos unas "librerías" para el programa Python...y no hay versión "viable" en Windows...
+* Por qué? ...pues porque parece ser que necesitamos unas "librerías" para el programa Python...y no hay versión "viable" en Windows...Desde 2016 ya tenemos una solución a esto, visita:
+https://github.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows
 
 #####OPCIÓN A: INSTALAR VIRTUALBOX CON UBUNTU 
 
