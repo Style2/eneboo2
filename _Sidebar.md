@@ -76,6 +76,7 @@
 ---
 #####Herramientas de apoyo:
 1. [GITHUB-Como instalarlo y usarlo-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO)
+1. [GITHUB-Como sincronizar dos Repos-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-SINCRONIZAR-DOS-REPOSITORIOS)
 1. [Programación 1-Estetica de tablas-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Programaci%C3%B3n-1-(sacado-de-ABANQ))
 1. [Programación 2-Formularios-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Programacion-2-Formularios-&-Informes-ABANQ)
 1. [Programación 3-Estructura de los Módulos-ABANQ](https://github.com/Miguel-J/eneboo/wiki/Programacion-3-Estructura-de-los-Modulos-ABANQ)
