@@ -5,3 +5,14 @@
 
 ----
 ##COMO SINCRONIZAR DOS REPOSITORIOS EN GITHUB
+
+
+
+![imágenes de github](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-github-imagen/eneboo-github-diferencias-gestiweb-miguel-j-01.jpg)
+
+![imágenes de github](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-github-imagen/eneboo-github-diferencias-gestiweb-miguel-j-02.jpg)
+
+![imágenes de github](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-github-imagen/eneboo-github-diferencias-gestiweb-miguel-j-03.jpg)
+
+![imágenes de github](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-github-imagen/eneboo-github-diferencias-gestiweb-miguel-j-04.jpg)
+
