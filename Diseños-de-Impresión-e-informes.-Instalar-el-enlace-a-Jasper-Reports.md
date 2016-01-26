@@ -1,12 +1,12 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 26 de agosto de 2015
+* ULTIMA ACTUALIZACIÓN: 26 de enero de 2016
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes%3A-Instalar-el-enlace-a-Jasper-Reports)
 
 ----
 https://groups.google.com/forum/#!topic/eneboo/RKXQm8QKkTg
 
-Despues de estar peleando con los .kut y acabar el café de la maquina descubrí gracias a esta lista el ar2kut, los .ar mejoran algo pero sigue siendo muy limitado, asi que buscando buscando encuentro eneboo-reports, sin esta lista y la colaboración de todos vosotros seguramente habria desinstalado eneboo rapidamente pero por suerte aqui estamos.
+"Despues de estar peleando con los .kut y acabar el café de la máquina descubrí gracias a esta lista el ar2kut, los .ar mejoran algo pero sigue siendo muy limitado, asi que buscando buscando encuentro eneboo-reports, sin esta lista y la colaboración de todos vosotros seguramente habria desinstalado eneboo rapidamente pero por suerte aqui estamos."
 
 ---
 
@@ -54,8 +54,6 @@ Y luego vas a menu eneboo-area facturacion-informes-datos generales
 
 ..luego pestaña al lado: "jasper plugin" y le das a "..."
 
-y ahora le do a los botones Java JRE y Conección a Librería eneboo reports
-
 y buscas la PRIMERA carpeta "report" que has creado DENTRO del ejecutable de Eneboo
 
 Aceptar
@@ -70,7 +68,7 @@ Guardar
 
 ####PASO 5.- PROBAR QUE ENLAZA CON JAVA Y LAS LIBRERIAS:
 
-Darle al botón del "test". Tienen que salir estos mensajes:
+Le das a los botones de test: "Java JRE" y "Conexión a Librería Eneboo Reports"......Tienen que salir estos mensajes:
 
 
 ![eneboo-jasper-4-test-java](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper/eneboo-jasper-esquema-archivos04.jpg)
@@ -87,11 +85,15 @@ Tienen que tener EL MISMO NOMBRE que el nombre que se le da en eneboo a su corre
 
 ####PASO 7.- COLOCAR LOS ARCHIVOS .jrxml EN SU CARPETA-DIRECTORIO
 
+En el directorio "reports":
+
+![eneboo-jasper-1-directorios](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper/eneboo-jasper-esquema-archivos01.jpg)
+
 ---
 
-## PROBLEMATICAS SOLUCIONADAS:
+### PROBLEMÁTICAS SOLUCIONADAS:
 
-Parece que no era ni por que soy tan zoquete ni por el postgres 9.3 , el problema esta en que al parecer la libreria no coge el puerto de conexion a la bd correctamente del ejecutable de eneboo y siempre usa el por defecto de  postgres 5432 y yo estaba usando 5433.
+"Parece que no era ni por que soy tan zoquete ni por el postgres 9.3 , el problema esta en que al parecer la libreria no coge el puerto de conexion a la bd correctamente del ejecutable de eneboo y siempre usa el por defecto de  postgres 5432 y yo estaba usando 5433."
 
 SOLUCIÓN: Postgres tiene que estar configurado por el puerto 5432 para que eneboo-reports funcione perfectamente y no el error  de que la bd en cuestión no existe.
 
