@@ -15,14 +15,12 @@
 * (Ciclo Completo. Manual inicial cedido por la Universidad de Sevilla)
 
 1. [ÁREA FINANCIERA CONFIGURACIÓN:](#1-area-financiera---configuracion)
-
- 3.1.- 
- 3.1.1-  Cuentas Especiales
- 3.1.2-  Conceptos de partidas
- 3.1.3-  Códigos de balance
- 3.1.4-  Códigos de balance 08-Correspondencias 90-08
- 3.2.- ÁREA FINANCIERA - CUADRO DE CUENTAS.
- 3.3.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL
+* 1.1-  Cuentas Especiales
+* 1.2-  Conceptos de partidas
+* 1.3-  Códigos de balance
+* 1.4-  Códigos de balance 08-Correspondencias 90-08
+2. [ÁREA FINANCIERA - CUADRO DE CUENTAS:](#1-area-financiera---cuadro-de-cuentas)
+* 3.3.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL
  3.4.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA.
  3.5.- RESUMEN:
  3.6.- CONSULTAS Y OTROS PROCESOS:
@@ -52,7 +50,10 @@ La opción Cuentas Especiales permite asignar una subcuenta determinada a un pro
 
 ![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-1.PNG)
 
+[volver al índice](#indice)
+
 --
+
 ####3.1.2.- Conceptos de partidas.
 **Área Financiera> Principal/Conceptos de partidas**
 
@@ -68,6 +69,8 @@ Código: 03
 Descripción: COBRO POR CAJA
 
 ![Conceptos de partidas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-2.PNG)
+
+[volver al índice](#indice)
 
 --
 ####3.1.3.- Códigos de Balance.
@@ -86,11 +89,16 @@ Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y có
 
 Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias con el plan contable de 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de Eneboo y de contabilidad.
 
+[volver al índice](#indice)
+
 --
+
 ####3.1.4.b- Correspondencias 90-08.
 **Área Financiera>Configuración/Correspondencias 90-08**
 
 Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias para adaptar una contabilidad llevada según el PGC de 1990 al del 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de Eneboo y de contabilidad.
+
+[volver al índice](#indice)
 
 ---
 ###3.2.- ÁREA FINANCIERA - CUADRO DE CUENTAS.
@@ -147,6 +155,8 @@ Crear las siguientes subcuentas:
 * Código: 6210000001
 * Descripción: ALQUILER LOCAL COMERCIAL 
 * Tipo Especial: 
+
+[volver al índice](#indice)
 
 ---
 ### 3.2.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL
@@ -478,6 +488,8 @@ El asiento completo quedaría así:
 
 
 El mismo tratamiento debe recibir el IVA no deducible.
+
+[volver al índice](#indice)
 
 ---
 ### 3.4.- INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA.
@@ -1127,6 +1139,8 @@ REMUNERACIONES PTES. PAGO
 
 13.019,69
 
+[volver al índice](#indice)
+
 ---
 ### 3.5.- RESUMEN:
 
@@ -1184,6 +1198,8 @@ Si la subcuenta de esta partida era de IVA (472.X o 477.X), la contrapartida deb
 Ruta 3.F.No: ¿Tiene todos los dígitos de la subcuenta? (si tiene el código de subcuenta facilitado un punto o bien tiene más de 4 dígitos y coincide su número con los dígitos usados por la contabilidad. Si no saben cuántos dígitos se usan estime que serán de 7 a 12 normalmente.)
 	Ruta 3.F.No.Sí: Tipo Establecer, Valor el código de subcuenta facilitado, Definir: Escriba una palabra que describa a la subcuenta (de 6 caracteres como máximo y sin Espacios, ni eñes, ni acentos). Fin.
 	Ruta 3.F.No.No: Tipo Pedir, Valor con los dígitos de la subcuenta que se hayan facilitado, Definir: Exactamente como se explica en la respuesta anterior (ruta 3.F.No.Sí). Fin.
+
+[volver al índice](#indice)
 
 ---
 ### 3.6.- CONSULTAS Y OTROS PROCESOS:
@@ -1290,6 +1306,10 @@ Una vez allí, creamos la regularización del cuarto trimestre. Para ello basta 
 
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-63.PNG)
  
+[volver al índice](#indice)
+
+--
+
 ##PROCESOS AL FINAL DEL EJERCICIO.
 
 El proceso del cierre de la contabilidad al final del ejercicio comienza por cerrar previamente la declaración trimestral del IVA siguiendo el proceso que hemos explicado en el apartado anterior. Es importante comprobar que las facturas recibidas y emitidas que tenemos archivadas por fecha, coincidan con el número de orden que le corresponda según el Libro Registro.
@@ -1370,6 +1390,10 @@ Una vez creado el ejercicio, volvemos a la ventana anterior donde hacemos clic e
 
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-80.PNG)
 
+[volver al índice](#indice)
+
+[volver al índice](#indice)
+
 ---
 ###3.7.- CAMBIO DE EJERCICIO.
 **Área Financiera>Principal/Ejercicio**
@@ -1388,3 +1412,8 @@ Esta opción sirve para cambiar de ejercicio. Al hacer clic en ella se nos abre 
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-81.PNG)
 
 Esta opción es especialmente útil cuando se está trabajando a caballo entre dos ejercicios, ya que Eneboo no permite introducir los datos de un ejercicio en otro diferente. Para poder hacerlo, previamente es necesario cambiar de ejercicio.
+
+[volver al índice](#indice)
+
+--
+
