@@ -19,12 +19,12 @@
 * 1.2-  Conceptos de partidas
 * 1.3-  Códigos de balance
 * 1.4-  Códigos de balance 08-Correspondencias 90-08
-2. [ÁREA FINANCIERA - CUADRO DE CUENTAS:](#1-area-financiera---cuadro-de-cuentas)
-* 3.3.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL
- 3.4.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA.
- 3.5.- RESUMEN:
- 3.6.- CONSULTAS Y OTROS PROCESOS:
- 3.7.- CAMBIO DE EJERCICIO.
+2. [ÁREA FINANCIERA - CUADRO DE CUENTAS:](#2-area-financiera---cuadro-de-cuentas)
+3. [ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL:](#3-introduccion-de-asientos-en-la-contabilidad-de-forma-manual)
+4. [ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA:](#4-introduccion-de-asientos-en-la-contabilidad-de-forma-automatica)
+5. [RESUMEN:](#5-resumen)
+6. [CONSULTAS Y OTROS PROCESOS:](#6-consultas-y-otros-procesos)
+7. [CAMBIO DE EJERCICIO:](#7-cambio-de-ejercicio)
 
 [volver al índice](#indice)
 
@@ -36,10 +36,10 @@ Al igual que en el Área de Facturación lo primero que es necesario realizar es
 
 La configuración del Área Financiera se realiza en el "Área Financiera", Módulo "Principal". Allí encontramos las siguientes opciones:
 
-1. Cuentas Especiales
-1. Conceptos de partidas
-1. Códigos de balance
-1. Códigos de balance 08
+1. [Cuentas Especiales:](#1-cuentas-especiales)
+2. [Conceptos de partidas:](#2-conceptos-de-partidas)
+3. [Códigos de balance:](#3-codigos-de-balance)
+4. [Códigos de balance 08:](#4-codigos-de-balance-08)
 
 
 --
