@@ -30,7 +30,7 @@
  * OJO: El PULL hay que hacerlo DESDE EL DIRECTORIO DONDE QUIERES QUE DESCARGUE los archivos....si no es donde estás poner "cd (subdirectorio)" hasta situarse en el correcto...sin los parentesis.
  * "git pull https://github.com/Miguel-J/eneboo" (sin el wiki)
  * "git pull https://github.com/Miguel-J/eneboo.wiki" (este wiki)
- * "git pull https://github.com/gestiweb/eneboo-modules" (módulos básicos gestiweb)
+ * "git pull https://github.com/eneboo/eneboo-modules" (módulos básicos más actuales)
  * "git pull https://github.com/Miguel-J/eneboo-features" (extensiones básicas Miguel-J-asociadas al de KLO)
  * "git pull https://github.com/klo-manolo/eneboo-features" (extensiones básicas KLO-más actualizadas???)
 
