@@ -24,7 +24,8 @@
 4. [ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA:](#4-introduccion-de-asientos-en-la-contabilidad-de-forma-automatica)
 5. [RESUMEN:](#5-resumen)
 6. [CONSULTAS Y OTROS PROCESOS:](#6-consultas-y-otros-procesos)
-     * 6.2 Proceso de cierre trimestral del IVA.
+     * 6.1 Proceso de cierre trimestral del IVA.
+     * 6.2 Procesos al final del ejercicio.
 7. [CAMBIO DE EJERCICIO:](#7-cambio-de-ejercicio)
 
 [volver al índice](#indice)
@@ -1405,7 +1406,7 @@ Una vez creado el ejercicio, volvemos a la ventana anterior donde hacemos clic e
 [volver al índice](#indice)
 
 ---
-###3.7.- CAMBIO DE EJERCICIO.
+###7. CAMBIO DE EJERCICIO.
 **Área Financiera>Principal/Ejercicio**
 
 Contenido de Ejercicio:
