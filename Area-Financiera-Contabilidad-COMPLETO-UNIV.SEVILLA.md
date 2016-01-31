@@ -1,41 +1,34 @@
 * CREADO POR: [Universidad de Sevilla](http://www.us.es): Mariano Aguayo Camacho; Esther Chávez Miranda; Miguel Ángel Domingo Carrillo; Guillermo Molleda Jimena
 * ACTUALIZADO Y ADAPTADO A ENEBOO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 1 de junio de 2015
+* ULTIMA ACTUALIZACIÓN: 31 de enero de 2016
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Area-Financiera-Contabilidad-COMPLETO-UNIV.SEVILLA)
 
 ----
 ####EN CONSTRUCCIÓN
 
 
+###ÁREA FINANCIERA - CONTABILIDAD 
 
-##Sistemas de Información para las Finanzas y la Contabilidad
+#### Indice:
 
-####Curso 20__/20__
+* (Ciclo Completo. Manual inicial cedido por la Universidad de Sevilla)
 
+1. [ÁREA FINANCIERA CONFIGURACIÓN:](#1-area-financiera-configuracion)
 
---
-###Tema 3. Sistemas ERP (Enterprise Resource Planning).
+ 3.1.- 
+ 3.1.1-  Cuentas Especiales
+ 3.1.2-  Conceptos de partidas
+ 3.1.3-  Códigos de balance
+ 3.1.4-  Códigos de balance 08-Correspondencias 90-08
+ 3.2.- ÁREA FINANCIERA - CUADRO DE CUENTAS.
+ 3.3.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL
+ 3.4.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA.
+ 3.5.- RESUMEN:
+ 3.6.- CONSULTAS Y OTROS PROCESOS:
+ 3.7.- CAMBIO DE EJERCICIO.
 
-###Práctica Eneboo-CONTABILIDAD
-
-###Parte I. El Sistema de Información empresarial y los Sistemas de Planificación de Recursos Empresariales (ERP). 
-
-* 3.1.- ÁREA FINANCIERA - CONFIGURACIÓN.
-* 3.1.1-  Cuentas Especiales
-* 3.1.2-  Conceptos de partidas
-* 3.1.3-  Códigos de balance
-* 3.1.4-  Códigos de balance 08-Correspondencias 90-08
-* 3.2.- ÁREA FINANCIERA - CUADRO DE CUENTAS.
-* 3.3.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL
-* 3.4.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA.
-* 3.5.- RESUMEN:
-* 3.6.- CONSULTAS Y OTROS PROCESOS:
-* 3.7.- CAMBIO DE EJERCICIO.
-
-
----
-###3.1.- ÁREA FINANCIERA - CONFIGURACIÓN.
+# 1. Area Financiera Configuracion:
 
 Al igual que en el Área de Facturación lo primero que es necesario realizar es la configuración. Recordemos que ya hemos realizado parte de esa configuración con anterioridad de forma simultánea a la configuración de la Facturación. En realidad, ambos procesos deben realizarse de forma simultánea por cada departamento responsable, pero a efectos pedagógicos, nosotros hemos preferido impartirlos secuencialmente. Ello facilitará la comprensión de los conceptos que se van a analizar.
 
@@ -79,6 +72,11 @@ Descripción: COBRO POR CAJA
 Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias según el PGC anterior al del 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de Eneboo y de contabilidad.
 
 --
+
+[volver al índice](#indice)
+
+--
+
 ####3.1.4.- Códigos de Balance 2008.
 **Área Financiera> Principal/Códigos de Balance 08**
 
