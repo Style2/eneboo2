@@ -15,16 +15,16 @@
 * (Ciclo Completo. Manual inicial cedido por la Universidad de Sevilla)
 
 1. [ÁREA FINANCIERA CONFIGURACIÓN:](#1-area-financiera---configuracion)
-* 1.1-  Cuentas Especiales
-* 1.2-  Conceptos de partidas
-* 1.3-  Códigos de balance
-* 1.4-  Códigos de balance 08-Correspondencias 90-08
+     * `1.1-  Cuentas Especiales`
+     * `1.2-  Conceptos de partidas`
+     * `1.3-  Códigos de balance`
+     * `1.4-  Códigos de balance 08-Correspondencias 90-08`
 2. [ÁREA FINANCIERA - CUADRO DE CUENTAS:](#2-area-financiera---cuadro-de-cuentas)
 3. [ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL:](#3-introduccion-de-asientos-en-la-contabilidad-de-forma-manual)
 4. [ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA:](#4-introduccion-de-asientos-en-la-contabilidad-de-forma-automatica)
 5. [RESUMEN:](#5-resumen)
 6. [CONSULTAS Y OTROS PROCESOS:](#6-consultas-y-otros-procesos)
-* 6.2 PROCESO DE CIERRE TRIMESTRAL DEL IVA.
+     * 6.2 Proceso de cierre trimestral del IVA.
 7. [CAMBIO DE EJERCICIO:](#7-cambio-de-ejercicio)
 
 [volver al índice](#indice)
