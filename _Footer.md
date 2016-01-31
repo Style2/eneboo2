@@ -1,1 +1,0 @@
-y esto que es? ..."_Footer"...?¿?¿? add a custom footer?
