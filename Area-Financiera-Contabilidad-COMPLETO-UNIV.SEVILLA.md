@@ -24,6 +24,7 @@
 4. [ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA:](#4-introduccion-de-asientos-en-la-contabilidad-de-forma-automatica)
 5. [RESUMEN:](#5-resumen)
 6. [CONSULTAS Y OTROS PROCESOS:](#6-consultas-y-otros-procesos)
+* 6.2 PROCESO DE CIERRE TRIMESTRAL DEL IVA.
 7. [CAMBIO DE EJERCICIO:](#7-cambio-de-ejercicio)
 
 [volver al índice](#indice)
@@ -41,8 +42,8 @@ La configuración del Área Financiera se realiza en el "Área Financiera", Mód
 1. [Configuración - Cuentas Especiales:](#1-configuracion---cuentas-especiales)
 2. [Configuración - Conceptos de partidas:](#2-configuracion---conceptos-de-partidas)
 3. [Configuración - Códigos de balance:](#3-configuracion---codigos-de-balance)
-4. [Configuración - Códigos de balance PGC-2008:](#4-configuracion---codigos-de-balance-pgc---2008)
-
+4. [Configuración - Códigos de balance PGC-2008:](#4-configuracion---codigos-de-balance-pgc-2008)
+4.b- Correspondencias PGC 1990-2008.
 
 --
 ####1. Configuracion - Cuentas especiales.
@@ -91,16 +92,18 @@ Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y có
 
 --
 
-####4.- Configuracion - Codigos de Balance PGC-2008.
+####4. Configuracion - Codigos de Balance PGC-2008.
 **Área Financiera> Principal/Códigos de Balance 08**
 
 Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias con el plan contable de 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de Eneboo y de contabilidad.
+
+[volver al sub-índice](#subindice)
 
 [volver al índice](#indice)
 
 --
 
-####3.1.4.b- Correspondencias 90-08.
+####1.4.b- Correspondencias 90-08.
 **Área Financiera>Configuración/Correspondencias 90-08**
 
 Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias para adaptar una contabilidad llevada según el PGC de 1990 al del 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de Eneboo y de contabilidad.
@@ -108,7 +111,7 @@ Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y có
 [volver al índice](#indice)
 
 ---
-###3.2.- ÁREA FINANCIERA - CUADRO DE CUENTAS.
+###2. AREA FINANCIERA - CUADRO DE CUENTAS.
 **Área Financiera>Principal/Cuadro de cuentas**
 
 La opción de Cuadro de cuentas presenta las siguientes opciones:
@@ -166,7 +169,7 @@ Crear las siguientes subcuentas:
 [volver al índice](#indice)
 
 ---
-### 3.2.- ÁREA FINANCIERA - INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL
+### 2. AREA FINANCIERA - INTRODUCCION DE ASIENTOS EN LA CONTABILIDAD DE FORMA MANUAL.
 **Área Financiera>Principal/Asientos**
 
 Al igual que en la mayoría de los programas de contabilidad y ERP’s, la introducción de asientos en Eneboo se puede realizar de dos formas distintas: manual o automáticamente. 
@@ -499,7 +502,7 @@ El mismo tratamiento debe recibir el IVA no deducible.
 [volver al índice](#indice)
 
 ---
-### 3.4.- INTRODUCCIÓN DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMÁTICA.
+### 4. INTRODUCCION DE ASIENTOS EN LA CONTABILIDAD DE FORMA AUTOMATICA.
 **Área Financiera>Principal/Asientos predefinidos**
 
 Como hemos comentado con anterioridad, es posible introducir asientos en el diario de forma automática. La introducción de asientos en el diario de la contabilidad podía suponer el 80% del tiempo dedicado al proceso contable en una empresa. Aunque este tiempo haya disminuido, en gran parte, gracias a la integración entre distintas áreas de la empresa mediante el uso de un ERP y la generación automática de asientos desde sus distintos módulos; sigue existiendo la necesidad de introducir manualmente asientos en la contabilidad. Es necesario hacer más ágil, fiable y segura la creación de asientos en la contabilidad y por ello se han creado las plantillas de asientos.
@@ -1149,7 +1152,7 @@ REMUNERACIONES PTES. PAGO
 [volver al índice](#indice)
 
 ---
-### 3.5.- RESUMEN:
+### 5. RESUMEN:
 
 Pasos a seguir para crear un asiento predefinido o una plantilla de asiento:
 1.- Leer el enunciado y escribir en un papel el asiento contable con los datos disponibles:
@@ -1209,7 +1212,7 @@ Ruta 3.F.No: ¿Tiene todos los dígitos de la subcuenta? (si tiene el código de
 [volver al índice](#indice)
 
 ---
-### 3.6.- CONSULTAS Y OTROS PROCESOS:
+### 6. CONSULTAS Y OTROS PROCESOS:
 
 Ejercicios a realizar:
 1.- Se desean localizar los apuntes contables existentes cuyo importe sea de 900,00 €. 
