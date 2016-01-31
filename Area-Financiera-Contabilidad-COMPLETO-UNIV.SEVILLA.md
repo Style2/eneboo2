@@ -36,25 +36,29 @@ Al igual que en el Área de Facturación lo primero que es necesario realizar es
 
 La configuración del Área Financiera se realiza en el "Área Financiera", Módulo "Principal". Allí encontramos las siguientes opciones:
 
-1. [Cuentas Especiales:](#1-cuentas-especiales)
-2. [Conceptos de partidas:](#2-conceptos-de-partidas)
-3. [Códigos de balance:](#3-codigos-de-balance)
-4. [Códigos de balance 08:](#4-codigos-de-balance-08)
+#### Subindice:
+
+1. [Configuración - Cuentas Especiales:](#1-configuracion---cuentas-especiales)
+2. [Configuración - Conceptos de partidas:](#2-configuracion---conceptos-de-partidas)
+3. [Configuración - Códigos de balance:](#3-configuracion---codigos-de-balance)
+4. [Configuración - Códigos de balance PGC-2008:](#4-configuracion---codigos-de-balance-pgc---2008)
 
 
 --
-####3.1.1.- Cuentas especiales.
+####1. Configuracion - Cuentas especiales.
 **Área Financiera> Principal/Cuentas especiales**
 
 La opción Cuentas Especiales permite asignar una subcuenta determinada a un proceso automático del programa. Así, por ejemplo, al crear una subcuenta de IVA Soportado, es necesario que Eneboo sepa que el saldo de esta subcuenta recoge las cuotas soportadas por este impuesto y cuando se realice una anotación en el diario utilizando dicha cuenta, ese importe se anote también en la gestión fiscal del programa. De esta manera, podrá calcular correctamente la declaración de IVA, el modelo 347 y listar el libro registro de facturas recibidas. Lo mismo ocurre con el resto de tipos de subcuentas que aparece en el listado.
 
 ![Listado subcuentas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-1.PNG)
 
+[volver al sub-índice](#subindice)
+
 [volver al índice](#indice)
 
 --
 
-####3.1.2.- Conceptos de partidas.
+####2. Configuracion - Conceptos de partidas.
 **Área Financiera> Principal/Conceptos de partidas**
 
 Los conceptos de partidas, segunda opción que aparece en este menú hace referencia a lo que comúnmente se denomina “conceptos contables”. Los conceptos contables son pequeñas leyendas que se incorporan a los apuntes contables y que aportan información sobre el mismo o explican si es necesario lo que se está contabilizando. Suelen constar de una parte fija y otra variable. Desde esta opción podemos realizar el alta, baja y modificaciones de los conceptos contables. Como ejemplo, vamos a dar de alta los siguientes conceptos contables genéricos:
@@ -70,21 +74,24 @@ Descripción: COBRO POR CAJA
 
 ![Conceptos de partidas](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-2.PNG)
 
+[volver al sub-índice](#subindice)
+
 [volver al índice](#indice)
 
 --
-####3.1.3.- Códigos de Balance.
+####3. Configuracion - Codigos de Balance.
 **Área Financiera> Principal/Códigos de Balance**
 
 Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias según el PGC anterior al del 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de Eneboo y de contabilidad.
 
---
+
+[volver al sub-índice](#subindice)
 
 [volver al índice](#indice)
 
 --
 
-####3.1.4.- Códigos de Balance 2008.
+####4.- Configuracion - Codigos de Balance PGC-2008.
 **Área Financiera> Principal/Códigos de Balance 08**
 
 Sirve para especificar a Eneboo la forma en que deben agruparse los saldos y cómo deben ordenarse para conformar el Balance de Situación y la Cuenta de Pérdidas y Ganancias con el plan contable de 2008. Esta opción no debe modificarse para no alterar la estructura de ambos estados contables salvo que se tengan profundos conocimientos de Eneboo y de contabilidad.
