@@ -14,7 +14,7 @@
 
 * (Ciclo Completo. Manual inicial cedido por la Universidad de Sevilla)
 
-1. [ÁREA FINANCIERA CONFIGURACIÓN:](#1-area-financiera-configuracion)
+1. [ÁREA FINANCIERA CONFIGURACIÓN:](#1-area-financiera---configuracion)
 
  3.1.- 
  3.1.1-  Cuentas Especiales
@@ -28,7 +28,11 @@
  3.6.- CONSULTAS Y OTROS PROCESOS:
  3.7.- CAMBIO DE EJERCICIO.
 
-# 1. Area Financiera Configuracion:
+[volver al índice](#indice)
+
+--
+
+# 1. AREA FINANCIERA - CONFIGURACION:
 
 Al igual que en el Área de Facturación lo primero que es necesario realizar es la configuración. Recordemos que ya hemos realizado parte de esa configuración con anterioridad de forma simultánea a la configuración de la Facturación. En realidad, ambos procesos deben realizarse de forma simultánea por cada departamento responsable, pero a efectos pedagógicos, nosotros hemos preferido impartirlos secuencialmente. Ello facilitará la comprensión de los conceptos que se van a analizar.
 
