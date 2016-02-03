@@ -44,3 +44,39 @@ C:\github\eneboo-features-oficial [master]> git branch ef/master
 `Switched to branch 'ef/master'`
 `C:\github\eneboo-features-oficial [ef/master]>`
 
+7. TRAER CAMBIOS DEL OTRO REPO:
+
+C:\github\eneboo-features-oficial [ef/master]> git pull https://github.com/Miguel-J/eneboo-features
+
+remote: Counting objects: 270, done.
+Receiving objects: 100% (270/270), 170.52 KiB | 0 bytes/s, done.sed 129
+
+`Resolving deltas: 100% (152/152), completed with 62 local objects.`
+`From https://github.com/Miguel-J/eneboo-features`
+ `* branch            HEAD       -> FETCH_HEAD`
+`Auto-merging ext0450-envio_mail/patches/envio_mail/masterpresupuestoscli.qs`
+`CONFLICT (content): Merge conflict in ext0450-envio_mail/patches/envio_mail/masterpresupuestoscli.qs`
+`Auto-merging ext0450-envio_mail/patches/envio_mail/masterpedidoscli.qs`
+`CONFLICT (content): Merge conflict in ext0450-envio_mail/patches/envio_mail/masterpedidoscli.qs`
+`Auto-merging ext0450-envio_mail/patches/envio_mail/masterfacturascli.qs`
+`CONFLICT (content): Merge conflict in ext0450-envio_mail/patches/envio_mail/masterfacturascli.qs`
+`Auto-merging ext0450-envio_mail/patches/envio_mail/masteralbaranescli.qs`
+`CONFLICT (content): Merge conflict in ext0450-envio_mail/patches/envio_mail/masteralbaranescli.qs`
+`Automatic merge failed; fix conflicts and then commit the result.`
+`C:\github\eneboo-features-oficial [ef/master +32 ~36 -0 !4 | +0 ~0 -0 !4]>`
+
+8. ELIMINAR PROBLEMAS:
+
+????
+
+error: you need to resolve your current index first
+
+http://schacon.github.io/git/user-manual.html#resolving-a-merge
+
+`"All you need to do is edit the files to resolve the conflicts, and then`
+`$ git add file.txt`
+ `$ git commit`
+`"`
+
+9. UNIR LAS DOS RAMAS:
+
