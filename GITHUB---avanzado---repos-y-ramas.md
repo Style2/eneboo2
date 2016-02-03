@@ -18,4 +18,29 @@ Si lo lanzas sin argumentos, obtienes una lista de las ramas presentes en tu pro
 2. ASOCIAR OTROS REPOS:
 
 Para añadir un nuevo repositorio Git remoto, asignándole un nombre con el que referenciarlo fácilmente, ejecuta git remote add [nombre] 
- 
+
+C:\github\eneboo-features-oficial [master]> git remote add ef git://github.com/Miguel-J/eneboo-features.git
+
+3. LISTAR REPOS ASOCIADOS:
+
+`C:\github\eneboo-features-oficial [master]> git remote -v`
+`ef      git://github.com/Miguel-J/eneboo-features.git (fetch)`
+`ef      git://github.com/Miguel-J/eneboo-features.git (push)`
+`origin  https://github.com/Miguel-J/eneboo-features-oficial (fetch)`
+`origin  https://github.com/Miguel-J/eneboo-features-oficial (push)` 
+
+4. IMPORTAR EL CÓDIGO DE OTRO REPO EN SUB-"RAMAS"
+
+C:\github\eneboo-features-oficial [master]> git fetch ef
+
+5. CREAR UNA RAMA:
+
+C:\github\eneboo-features-oficial [master]> git branch ef/master
+
+6. CAMBIAR DE RAMA:
+
+`C:\github\eneboo-features-oficial [master]> git checkout ef/master`
+`warning: refname 'ef/master' is ambiguous.`
+`Switched to branch 'ef/master'`
+`C:\github\eneboo-features-oficial [ef/master]>`
+
