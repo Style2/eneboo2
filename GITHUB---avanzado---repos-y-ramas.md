@@ -68,7 +68,7 @@ C:\github\eneboo-features-oficial [ef/master]> git pull https://github.com/Migue
 
 ????
 
-error: you need to resolve your current index first
+     "error: you need to resolve your current index first"
 
 http://schacon.github.io/git/user-manual.html#resolving-a-merge
 
@@ -76,6 +76,21 @@ http://schacon.github.io/git/user-manual.html#resolving-a-merge
      `$ git add file.txt`
      `$ git commit`
      `"`
+--
+
+copio los 4 archivos en el "repo-puente de klo"...
+
+...subo al "repo-puente de klo"...
+
+...ramifico ese "repo-puente-modificado" en el "repo-copia-de-eneboo-local"...
+
+...subo cambios al "repo-copia-de-eneboo-online"...
+
+...borro "repo-puente-modificado" y vuelvo a hacer fork del "repo-klo"...
+
+...hago "pull-request" desde "repo-copia-de-eneboo-online" con los commits de klo HACIA repo-eneboo-features de Eneboo...
+
+
 
 9. UNIR LAS DOS RAMAS:
 
