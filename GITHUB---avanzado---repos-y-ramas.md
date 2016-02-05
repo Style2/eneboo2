@@ -78,19 +78,25 @@ http://schacon.github.io/git/user-manual.html#resolving-a-merge
      `"`
 --
 
-copio los 4 archivos en el "repo-puente de klo"...
+copio los 4 archivos en el "repo-puente de klo" (local)...
 
-...subo al "repo-puente de klo"...
+...subo al "repo-puente de klo" (online)...
+
+
+#### 9. UNIR LAS DOS RAMAS:
 
 ...ramifico ese "repo-puente-modificado" en el "repo-copia-de-eneboo-local"...
 
+     ?????...quieres decir que el "fetch" era necesario?
+     C:\github\eneboo-features-oficial [master]> git pull https://github.com/Miguel-J/eneboo-features
+
 ...subo cambios al "repo-copia-de-eneboo-online"...
 
-...borro "repo-puente-modificado" y vuelvo a hacer fork del "repo-klo"...
+     C:\github\eneboo-features-oficial [master]> git push https://github.com/Miguel-J/eneboo-features-oficial master
 
 ...hago "pull-request" desde "repo-copia-de-eneboo-online" con los commits de klo HACIA repo-eneboo-features de Eneboo...
 
+...a esperar el "merge"...o no.
 
-
-9. UNIR LAS DOS RAMAS:
+...borro "repo-puente-modificado" y vuelvo a hacer fork del "repo-klo"...
 
