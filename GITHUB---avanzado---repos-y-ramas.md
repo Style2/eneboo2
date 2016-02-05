@@ -100,3 +100,8 @@ copio los 4 archivos en el "repo-puente de klo" (local)...
 
 ...borro "repo-puente-modificado" y vuelvo a hacer fork del "repo-klo"...
 
+---
+#### 10. VARIOS:
+
+https://elbauldelprogramador.com/mini-tutorial-y-chuleta-de-comandos-git/
+
