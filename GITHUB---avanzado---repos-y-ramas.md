@@ -11,7 +11,7 @@ fuente: https://git-scm.com/book/es/v1
 
 #### 1. LISTAR LAS RAMAS:
 
-$ git branch
+     $ git branch
 
 Si lo lanzas sin argumentos, obtienes una lista de las ramas presentes en tu proyecto:
 
@@ -19,7 +19,7 @@ Si lo lanzas sin argumentos, obtienes una lista de las ramas presentes en tu pro
 
 Para añadir un nuevo repositorio Git remoto, asignándole un nombre con el que referenciarlo fácilmente, ejecuta git remote add [nombre] 
 
-C:\github\eneboo-features-oficial [master]> git remote add ef git://github.com/Miguel-J/eneboo-features.git
+     C:\github\eneboo-features-oficial [master]> git remote add ef git://github.com/Miguel-J/eneboo-features.git
 
 #### 3. LISTAR REPOS ASOCIADOS:
 
@@ -31,11 +31,11 @@ C:\github\eneboo-features-oficial [master]> git remote add ef git://github.com/M
 
 #### 4. IMPORTAR EL CÓDIGO DE OTRO REPO EN SUB-"RAMAS"
 
-C:\github\eneboo-features-oficial [master]> git fetch ef
+     C:\github\eneboo-features-oficial [master]> git fetch ef
 
 #### 5. CREAR UNA RAMA:
 
-C:\github\eneboo-features-oficial [master]> git branch ef/master
+     C:\github\eneboo-features-oficial [master]> git branch ef/master
 
 #### 6. CAMBIAR DE RAMA:
 
