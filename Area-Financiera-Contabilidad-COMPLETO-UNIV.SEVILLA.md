@@ -1299,13 +1299,13 @@ A continuación es necesario obtener el modelo 303 de declaración trimestral de
 
 Una vez seleccionado el trimestre correspondiente y comprobadas las fechas a tener en cuenta para calcular la declaración es necesario hacer clic en el botón “Calcular datos” situado en la esquina superior derecha de la pantalla. Tras ello, Eneboo calcula automáticamente los datos de la declaración los cuales deben cuadrar con los listados de facturas anteriormente obtenidos. En caso de descuadre habrá que parar el proceso de cierre trimestral y buscar el error. Para esta tarea es especialmente útil el desglose de las subcuentas de IVA por tipos impositivos y naturalezas.
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-59.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-59.PNG)
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-60.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-60.PNG)
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-61.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-61.PNG)
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-62.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-62.PNG)
 
 Nótese que hay campos en los que el usuario tiene que introducir datos, como por ejemplo el importe a compensar de trimestres anteriores, el campo sin actividad, la fecha de obtención de la declaración o el lugar de firma.
 
@@ -1315,7 +1315,7 @@ A continuación es necesario contabilizar la liquidación del IVA obtenida, para
 
 Una vez allí, creamos la regularización del cuarto trimestre. Para ello basta con introducir los datos oportunos y hacer clic en el candado. De esta forma, se generará el asiento correspondiente en la contabilidad.
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-63.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-63.PNG)
  
 [volver al índice](#indice)
 
@@ -1326,25 +1326,25 @@ Una vez allí, creamos la regularización del cuarto trimestre. Para ello basta 
 El proceso del cierre de la contabilidad al final del ejercicio comienza por cerrar previamente la declaración trimestral del IVA siguiendo el proceso que hemos explicado en el apartado anterior. Es importante comprobar que las facturas recibidas y emitidas que tenemos archivadas por fecha, coincidan con el número de orden que le corresponda según el Libro Registro.
 Junto con la declaración del último trimestre hay que presentar la Declaración Resumen-Anual del IVA, modelo 390. Para ello basta con acudir a la opción Modelos, Modelo 390 del Módulo Modelos del área Financiera y crear una nueva declaración. 
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-64.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-64.PNG)
 
 Para obtener la declaración es suficiente con pulsar el botón Calcular datos al igual que en las declaraciones anteriores y Eneboo calculará los datos correspondientes a la declaración. Previamente, se deberán rellenar los datos de las diversas ventanas para que se obtenga la declaración completa.
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-65.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-65.PNG)
 
 Posteriormente debe obtenerse la declaración de operaciones con terceros superiores a 3.005,06 €. Es necesario tener en cuenta que en este Modelo no deben incluirse aquellos sujetos que hayan figurado en el Modelo 190. Además, deberá comprobarse los volúmenes de operaciones con los mayores de proveedores y clientes o similares, por si existen errores en los apuntes de IVA. La fecha tope para la entrega de este Modelo es el 31 de marzo de cada año. Esta declaración la facilita Eneboo en el Módulo Modelos, menú Modelos, opción Modelo 347.
 
 Al entrar en esta opción, nos aparece parcialmente rellena. Lo único que debemos hacer es comprobar la veracidad de los datos y corregir aquellos que puedan ser erróneos. En nuestro caso, hemos modificado el importe mínimo especificando 3.005,06 y el número de justificante. 
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-66.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-66.PNG)
 
 Antes de calcular el modelo, es conveniente leer las instrucciones que aparecen en la ventana Condiciones, ya que son un recordatorio importante que pretende evitar la obtención de datos erróneos al calcular esta declaración.
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-67.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-67.PNG)
 
 Una vez comprobado que todo está correcto, procedemos a calcular la declaración, haciendo clic en el botón Calcular datos se calcula el contenido de la declaración.
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-68.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-68.PNG)
 
 A continuación se deben contabilizar los ajustes previos al cierre que procedan:
 
@@ -1361,45 +1361,45 @@ Sólo falta obtener la documentación mercantil relacionada con la contabilidad:
 
 Todos estos listados se encuentran en el menú Balances del Módulo Informes del Área Financiera. Dejamos como tarea a los alumnos que los obtengan ellos.
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-69.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-69.PNG)
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-70.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-70.PNG)
 
 Por último, es necesario cerrar el ejercicio. Esta operación y la apertura del siguiente se realizan de forma simultánea. Para ello acudimos a la opción Apertura y Cierre del Menú Ejercicio del Módulo Principal del Área Financiera.
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-71.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-71.PNG)
 
 Haciendo clic en Cerrar se accede a la siguiente ventana:
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-72.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-72.PNG)
 
 En ella ya aparecen introducidos por defecto los datos necesarios, sólo falta especificar a qué ejercicio se va a trasladar el asiento de apertura. 
 
 Para ello, hacemos clic en el botón , apareciéndonos en pantalla la ventana de creación de ejercicios. 
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-73.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-73.PNG)
 
 
 Pulsando en secuencias por serie añadiremos las series A y AG del ejercicio actual:
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-74.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-74.PNG)
 
 Al aceptar la ventana, el programa avisará de:
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-75.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-75.PNG)
 
 Pulsando dicho botón, es importante que seleccionemos un ejercicio anterior pues no podemos olvidar que lo que tratamos de hacer es enlazar dos ejercicios. Seleccionamos el ejercicio anterior para que el programa realice el enlace y de esta forma daremos por finalizado el proceso:
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-76.PNG)
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-77.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-80.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-81.PNG)
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-78.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-82.PNG)
 
 Una vez creado el ejercicio, volvemos a la ventana anterior donde hacemos clic en Cerrar ejercicio.
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-79.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-83.PNG)
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-80.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-84.PNG)
 
 [volver al índice](#indice)
 
@@ -1420,7 +1420,7 @@ El menú Ejercicio contiene las opciones relacionadas con la gestión de los eje
 ####Cambiar actual.
 Esta opción sirve para cambiar de ejercicio. Al hacer clic en ella se nos abre la ventana que mostramos a continuación y que permite
 
-![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-81.PNG)
+![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-85.PNG)
 
 Esta opción es especialmente útil cuando se está trabajando a caballo entre dos ejercicios, ya que Eneboo no permite introducir los datos de un ejercicio en otro diferente. Para poder hacerlo, previamente es necesario cambiar de ejercicio.
 
