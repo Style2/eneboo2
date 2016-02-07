@@ -44,7 +44,7 @@ La configuración del Área Financiera se realiza en el "Área Financiera", Mód
 2. [Configuración - Conceptos de partidas:](#2-configuracion---conceptos-de-partidas)
 3. [Configuración - Códigos de balance:](#3-configuracion---codigos-de-balance)
 4. [Configuración - Códigos de balance PGC-2008:](#4-configuracion---codigos-de-balance-pgc-2008)
-4.b- Correspondencias PGC 1990-2008.
+     4.b- Correspondencias PGC 1990-2008.
 
 --
 ####1. Configuracion - Cuentas especiales.
