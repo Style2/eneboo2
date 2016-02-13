@@ -7,7 +7,11 @@
 ----
 
 
-###Proyecto NUEVO DE MEZCLA CON Eneboo-tools 
+###Proyecto NUEVO DE MEZCLA CON Eneboo-tools en LINUX
+
+NOTA: Para hacerlo en Windows seguir:
+
+https://github.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows
 
 ###INSTALACIÓN PREVIA (Dependencias): 
 
