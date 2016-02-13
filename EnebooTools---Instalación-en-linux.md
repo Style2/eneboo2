@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 21 de enero de 2016
+* ULTIMA ACTUALIZACIÓN: 13 de febrero de 2016
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
 
 ----
@@ -191,4 +191,12 @@ http://git-scm.com/downloads
 
 ###PASO 5: USO-EJEMPLOS-APLICACIÓN DE ENEBOO-TOOLS
 
-Ver resto de páginas del wiki
+Ver resto de páginas del wiki:
+
+1. Eneboo-Assembler:
+
+https://github.com/Miguel-J/eneboo/wiki/eneboo-tools-HACER-UN-PROYECTO-NUEVO-con-ASSEMBLER
+
+2. Eneboo-MergeTool:
+
+https://github.com/Miguel-J/eneboo/wiki/C%C3%B3mo-a%C3%B1adir-una-extensi%C3%B3n-a-una-mezcla-con-MergeTool
