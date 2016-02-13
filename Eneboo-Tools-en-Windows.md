@@ -121,9 +121,9 @@ https://groups.google.com/forum/#!topic/eneboo/xE_LOYDPHwA
 
 #####C) ERROR-3 de ubicación-falta de path
 
-`WARN: ** Se ha ignorado acción desconocida 'action' **`
-`WARN: ** Se ha ignorado acción desconocida 'action' **`
-`WARN: ** Se ha ignorado acción desconocida 'action' **`
+     `WARN: ** Se ha ignorado acción desconocida 'action' **`
+     `WARN: ** Se ha ignorado acción desconocida 'action' **`
+     `WARN: ** Se ha ignorado acción desconocida 'action' **`
 
 * **SOLUCIÓN**: Seguir el **PASO-5** y colocar los directorios (y subdirectorios) en la carpeta de "eneboo-tools"
 
