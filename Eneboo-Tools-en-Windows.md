@@ -93,9 +93,16 @@ Abrir la consola de  MS-DOS (botón derecho mouse-ejecutar como administrador) y
 
 ejemplo: c:\github\eneboo-tools\python eneboo-mergetool
 
-ERROR: "ImportError: No module named lxml"....YA VISTO EN "https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux", por lo que hay que instalar:
+* **ERROR**: 
 
-         `es porque la librería de Python "libxml2" en sus versiones recientes no instalan "cosas antiguas" como "lxml", por lo que hay que instalar también:`
+     "ImportError: No module named lxml"
+
+....YA VISTO EN: "https://github.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux"
+
+...`es porque la librería de Python "libxml2" en sus versiones recientes no instalan "cosas antiguas" como "lxml", por lo que hay que instalar también:`
+
+...por lo que hay que instalar:
+
          `$ sudo apt-get install python-lxml` 
 
 * **SOLUCIÓN**: Seguir el **PASO-4** y descargar la librería lxml
