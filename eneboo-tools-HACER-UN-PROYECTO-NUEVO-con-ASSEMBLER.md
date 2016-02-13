@@ -78,11 +78,13 @@ Para empezar, necesitaremos como mínimo 2 repositorios para empezar:
 
 * ...hay que COPIARLOS (descargados de Github "gestiweb" o "klo-manolo") en una CARPETA-SUBDIRECTORIO, por ejemplo "eneboo-proyecto1"...
 
-Todas las acciones de ENEBOO-ASSEMBLER leen los directorios INDICADOS en los ARCHIVOS de las CONFIGURACIONES. Para que esto funcione como debe, es necesario revisar la configuración que nos crea en $HOME/.eneboo-tools/assembler-config.ini
+Todas las acciones de ENEBOO-ASSEMBLER leen los directorios INDICADOS en los ARCHIVOS de las CONFIGURACIONES. Para que esto funcione como debe, es necesario revisar la configuración que nos crea en:
 
-En ese fichero, que es muy sencillo de editar a mano (ATENCIÓN: ES UN FICHERO OCULTO, MOSTRARLO CON Ctrl+H o por Menú-Ver-Mostrar lo oculto) (está en un subdirectorio creado por eneboo-tools...fijarse en el "." antes del nombre o buscar por menu-Herramientas...), debemos incluir las RUTAS de la CARPETA-SUBDIRECTORIO (en este caso: "eneboo-proyecto1")...donde hemos puesto los módulos ("eneboo-modules") y las funcionalidades o "extensiones("eneboo-features"), en mi caso:
+      $HOME/.eneboo-tools/assembler-config.ini
 
-"/home/linux/.eneboo-tools/assembler-config.ini"
+En ese fichero, que es muy sencillo de editar a mano (ATENCIÓN: **ES UN FICHERO OCULTO**, MOSTRARLO CON Ctrl+H o por Menú-Ver-Mostrar lo oculto) (está en un subdirectorio creado por eneboo-tools...fijarse en el "." antes del nombre o buscar por menu-Herramientas...), debemos incluir las RUTAS de la CARPETA-SUBDIRECTORIO (en este caso: "eneboo-proyecto1")...donde hemos puesto los módulos ("eneboo-modules") y las funcionalidades o "extensiones("eneboo-features"), en mi caso:
+
+     "/home/linux/.eneboo-tools/assembler-config.ini"
 
 ####OPCIÓN: AÑADIR REPOSITORIOS PARTICULARES A LA MEZCLA: 
 
