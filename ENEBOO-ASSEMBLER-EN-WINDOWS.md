@@ -10,13 +10,13 @@
 
 ###INSTALACIÓN PREVIA (Dependencias): 
 
-PASO 1:  INSTALAR PYTHON. Visitar la página:
+####PASO 1:  INSTALAR PYTHON. Visitar la página:
 
 https://github.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows
 
 ---
 
-PASO 2:  DESCARGAR eneboo-modules y eneboo-features. Visitar la página:
+####PASO 2:  DESCARGAR eneboo-modules y eneboo-features. Visitar la página:
 
 https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO
 
@@ -34,7 +34,7 @@ Recomiendo:
 
 ---
 
-PASO 3: PREPARAR ASSEMBLER:
+####PASO 3: PREPARAR ASSEMBLER (primer intento):
 
 Eneboo-assembler es una herramienta de "collage" de código fuente. Toma como base unos módulos y les aplica una serie de parches en un orden determinado para conseguir un proyecto modificado de cierta forma, que cumpla ciertas especificaciones.
 
@@ -42,8 +42,9 @@ Este comando tiene unas configuraciones y una base de datos de caché. Para que 
 
     C:\eneboo-tools> python eneboo-assembler dbupdate
 
-Respuesta:
+* **ERROR CONOCIDO** Si aparece esta respuesta:
 
+     C:\eneboo-tools> python eneboo-assembler dbupdate
        Traceback (most recent call last):
          File "eneboo-assembler", line 3, in <module>
            from enebootools.assembler import config, AssemblerInterface
@@ -53,10 +54,38 @@ Respuesta:
            import readline, fnmatch
        ImportError: No module named readline
 
-C:\eneboo-tools>
+....es que FALTA INSTALAR el paquete-librería "pyreadline 2.1". 
+
+####PASO 4: INSTALAR EL paquete-librería "pyreadline 2.1". 
+
+Descargarlo de:
+
+     https://pypi.python.org/pypi/pyreadline
+
+....yo "bajo" la versión "pyreadline-2.1.win-amd64.exe (md5) 64-bit" y se instala automáticamente en mi directorio "c\python27"...
 
 ---
 
+####PASO 3: PREPARAR ASSEMBLER (segundo intento):
+
+    C:\eneboo-tools> python eneboo-assembler dbupdate
+
+* Respuesta:
+
+     INFO: agregando la seccion 'module'
+     INFO: Escribiendo valor ['~/git/eneboo-modules'] para parametro 'modulefolders' (seccion 'module')
+     INFO: Escribiendo valor ['~/git/eneboo-features'] para parametro 'featurefolders' (seccion 'module')
+     INFO: Escribiendo valor '~/.eneboo-tools/buildcache' para parametro 'buildcache' (seccion 'module')
+     INFO: agregando la seccion 'mergetool'
+     INFO: Escribiendo valor 'warn' para parametro 'patch_qs_rewrite' (seccion 'mergetool')
+     INFO: Escribiendo valor 'legacy' para parametro 'patch_qs_style_name' (seccion 'mergetool')
+     INFO: Escribiendo valor 0 para parametro 'verbosity_delta' (seccion 'mergetool')
+     INFO: Escribiendo valor 'legacy1' para parametro 'patch_xml_style_name' (seccion 'mergetool')
+     INFO: Escribiendo valor False para parametro 'diff_xml_search_move' (seccion 'mergetool')
+     CacheSqlite:: Se ha recreado la tabla knownobjects.
+
+
+---
 * PASO 5: CONFIGURACIÓN DE ENEBOO-TOOLS (Esta página)
      * PASO 5-A: CONFIGURACIÓN INICIAL DE ASSEMBLER: 
         * PASO 5-A-1.-Introducción-para qué sirve:
