@@ -44,15 +44,16 @@ Este comando tiene unas configuraciones y una base de datos de caché. Para que 
 
 * **ERROR CONOCIDO** Si aparece esta respuesta:
 
-     C:\eneboo-tools> python eneboo-assembler dbupdate
-       Traceback (most recent call last):
-         File "eneboo-assembler", line 3, in <module>
-           from enebootools.assembler import config, AssemblerInterface
-         File "C:\eneboo-tools\enebootools\assembler\__init__.py", line 4, in <module>
-           from enebootools.assembler import database as asmdb
-         File "C:\eneboo-tools\enebootools\assembler\database.py", line 6, in <module>
-           import readline, fnmatch
-       ImportError: No module named readline
+         C:\eneboo-tools> python eneboo-assembler dbupdate
+
+         Traceback (most recent call last):
+           File "eneboo-assembler", line 3, in <module>
+             from enebootools.assembler import config, AssemblerInterface
+           File "C:\eneboo-tools\enebootools\assembler\__init__.py", line 4, in <module>
+             from enebootools.assembler import database as asmdb
+           File "C:\eneboo-tools\enebootools\assembler\database.py", line 6, in <module>
+             import readline, fnmatch
+         ImportError: No module named readline
 
 ....es que FALTA INSTALAR el paquete-librería "pyreadline 2.1". 
 
@@ -72,17 +73,17 @@ Descargarlo de:
 
 * Respuesta:
 
-     INFO: agregando la seccion 'module'
-     INFO: Escribiendo valor ['~/git/eneboo-modules'] para parametro 'modulefolders' (seccion 'module')
-     INFO: Escribiendo valor ['~/git/eneboo-features'] para parametro 'featurefolders' (seccion 'module')
-     INFO: Escribiendo valor '~/.eneboo-tools/buildcache' para parametro 'buildcache' (seccion 'module')
-     INFO: agregando la seccion 'mergetool'
-     INFO: Escribiendo valor 'warn' para parametro 'patch_qs_rewrite' (seccion 'mergetool')
-     INFO: Escribiendo valor 'legacy' para parametro 'patch_qs_style_name' (seccion 'mergetool')
-     INFO: Escribiendo valor 0 para parametro 'verbosity_delta' (seccion 'mergetool')
-     INFO: Escribiendo valor 'legacy1' para parametro 'patch_xml_style_name' (seccion 'mergetool')
-     INFO: Escribiendo valor False para parametro 'diff_xml_search_move' (seccion 'mergetool')
-     CacheSqlite:: Se ha recreado la tabla knownobjects.
+        INFO: agregando la seccion 'module'
+        INFO: Escribiendo valor ['~/git/eneboo-modules'] para parametro 'modulefolders' (seccion 'module')
+        INFO: Escribiendo valor ['~/git/eneboo-features'] para parametro 'featurefolders' (seccion 'module')
+        INFO: Escribiendo valor '~/.eneboo-tools/buildcache' para parametro 'buildcache' (seccion 'module')
+        INFO: agregando la seccion 'mergetool'
+        INFO: Escribiendo valor 'warn' para parametro 'patch_qs_rewrite' (seccion 'mergetool')
+        INFO: Escribiendo valor 'legacy' para parametro 'patch_qs_style_name' (seccion 'mergetool')
+        INFO: Escribiendo valor 0 para parametro 'verbosity_delta' (seccion 'mergetool')
+        INFO: Escribiendo valor 'legacy1' para parametro 'patch_xml_style_name' (seccion 'mergetool')
+        INFO: Escribiendo valor False para parametro 'diff_xml_search_move' (seccion 'mergetool')
+        CacheSqlite:: Se ha recreado la tabla knownobjects.
 
 
 ---
