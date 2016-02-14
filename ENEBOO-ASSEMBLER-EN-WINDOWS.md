@@ -71,7 +71,7 @@ Descargarlo de:
 
     C:\eneboo-tools> python eneboo-assembler dbupdate
 
-* Respuesta:
+Respuesta:
 
         INFO: agregando la seccion 'module'
         INFO: Escribiendo valor ['~/git/eneboo-modules'] para parametro 'modulefolders' (seccion 'module')
