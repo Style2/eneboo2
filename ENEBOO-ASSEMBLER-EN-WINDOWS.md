@@ -117,6 +117,19 @@ Luego en la consola MSDOS ejecutar:
 
 #PROBLEMA: LOCALIZA LOS MÓDULOS PERO NO LOS APLICA BIEN
 
+     ...por ejemplo, si ejecuto "python eneboo-assembler  build co_subarticulo base", sale:
+
+     WARN: Modulo con nombre facturacion/almacen no encontrado
+     WARN: Modulo con nombre facturacion/facturacion no encontrado
+     WARN: Modulo con nombre facturacion/principal no encontrado
+     WARN: Modulo con nombre facturacion/facturacion no encontrado
+     WARN: Modulo con nombre facturacion/informes no encontrado
+     ....y asi por unos 465 líneas totales...
+
+     Copiando módulos . . .
+
+     C:\eneboo-tools>
+
 ####PASO 5-B : ASSEMBLER "NEW" - (ASISTENTE AUTOMÁTICO PARA CREAR PROYECTOS o EXTENSIONES o SET´s):
     
 
