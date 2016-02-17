@@ -92,9 +92,35 @@ Respuesta:
         * PASO 5-A-1.-Introducción-para qué sirve:
         * PASO 5-A-2.-Assembler: Configuración previa:
         * OPCIÓN: AÑADIR REPOSITORIOS PARTICULARES A LA MEZCLA: 
-        * PASO 5-A-3.- ACTUALIZAR CAMBIOS DE RUTAS A LOS REPOSITORIOS:
-     * PASO 5-B : ASSEMBLER "NEW" - (ASISTENTE AUTOMÁTICO PARA CREAR PROYECTOS o EXTENSIONES o SET´s):
-     * PASO 5-C : ASSEMBLER "BUILD" - (COMPILAR/CREAR UN PROYECTO) :
+
+####PASO 5-A-3.- ACTUALIZAR CAMBIOS DE RUTAS A LOS REPOSITORIOS:
+
+Para definir la ruta hacia los repositorios de extensiones (eneboo-features) y de módulos (eneboo-modules) hay que ir a:
+
+En la carpeta home del usuario. 
+
+ En Windows, c:/Users/tuusuario/. 
+
+"/.eneboo-tools/assembler-config.ini"
+
+Editarlo y modificar las rutas
+
+Luego en la consola MSDOS ejecutar:
+
+      Python eneboo-assembler dbupdate -v
+
+     C:\eneboo-tools>python eneboo-assembler dbupdate -v
+
+     Actualizando base de datos de módulos y funcionalidades . . .
+     : Se encontraron 25 modulos en la carpeta 'C:\\Users\\(mi-usuario)\\gittas\\eneboo-modules\\'
+     : Se encontraron 93 funcionalidades en la carpeta 'C:\\Users\\(mi-usuario)\\gittas\\eneboo-features\\'
+
+#PROBLEMA: LOCALIZA LOS MÓDULOS PERO NO LOS APLICA BIEN
+
+####PASO 5-B : ASSEMBLER "NEW" - (ASISTENTE AUTOMÁTICO PARA CREAR PROYECTOS o EXTENSIONES o SET´s):
+    
+
+ * PASO 5-C : ASSEMBLER "BUILD" - (COMPILAR/CREAR UN PROYECTO) :
 
 --------------
 
