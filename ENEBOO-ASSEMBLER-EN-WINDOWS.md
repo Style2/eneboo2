@@ -133,6 +133,15 @@ Luego en la consola MSDOS ejecutar:
 ####PASO 5-B : ASSEMBLER "NEW" - (ASISTENTE AUTOMÁTICO PARA CREAR PROYECTOS o EXTENSIONES o SET´s):
     
 
+Para ver el archivo de:
+     assembler-database.sqlite
+
+hay que descargarse **SQLite Studio** de http://rafinguer.blogspot.com.es/2009/09/primeros-pasos-en-sqlite.html
+
+http://sqlitestudio.pl/
+
+...y lo abres/ver "datos"(arriba derecha)/botón derecho mouse en campo "Edit value in editor" luego grabar y "commit" (botón ok-verde arriba)
+
  * PASO 5-C : ASSEMBLER "BUILD" - (COMPILAR/CREAR UN PROYECTO) :
 
 --------------
