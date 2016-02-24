@@ -22,6 +22,14 @@ https://github.com/eneboo/reports4eneboo-reports
 
 ---
 
+####INSTALAR JASPER STUDIO (editor de los Jasper-Report)
+
+Descargarlo de:
+
+http://community.jaspersoft.com/project/jaspersoft-studio
+
+---
+
 ####ESTRUCTURA DE UN .jrxml
 
 * **PARTE 1**.
