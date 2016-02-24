@@ -42,6 +42,8 @@ http://community.jaspersoft.com/wiki/designing-report-jaspersoft-studio
 
 http://community.jaspersoft.com/wiki/introduction-jaspersoft-studio
 
+http://community.jaspersoft.com/wiki/report-structure-jaspersoft-studio
+
 * varios tutoriales:
 
 http://community.jaspersoft.com/wiki/jaspersoft-studio-tutorials-archive
