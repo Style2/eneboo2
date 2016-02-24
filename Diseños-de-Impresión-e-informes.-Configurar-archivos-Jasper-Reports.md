@@ -24,9 +24,27 @@ https://github.com/eneboo/reports4eneboo-reports
 
 ####INSTALAR JASPER STUDIO (editor de los Jasper-Report)
 
-Descargarlo de:
+1. Descargarlo de:
 
 http://community.jaspersoft.com/project/jaspersoft-studio
+
+2. Yo descargo la:
+
+"TIBCOJaspersoftStudio-6.2.0.final-windows-x86_64.zip"
+
+3. En la siguiente ventana poner ABAJO-A-LA-DERECHA: "No, thanks" y te lleva a "sourceforge"...
+
+Tarda 20 minutos...¿?¿?
+
+4. Manual de creación/configuración de archivos .jrxml (en inglés)
+
+http://community.jaspersoft.com/wiki/designing-report-jaspersoft-studio
+
+http://community.jaspersoft.com/wiki/introduction-jaspersoft-studio
+
+* varios tutoriales:
+
+http://community.jaspersoft.com/wiki/jaspersoft-studio-tutorials-archive
 
 ---
 
