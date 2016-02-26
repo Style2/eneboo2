@@ -147,13 +147,13 @@ www.wampserver.com\en
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-04.jpg)
 
-* ...y aparece el entorno Eneboo (pero no puede hacer nada hasta que se cargen los módulos...):
+* ...y aparece el entorno Eneboo (pero no puede hacer nada hasta que se carguen los módulos...):
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-05.jpg)
 
 ---
 ####PASO 6.-DESCARGAR LOS “MÓDULOS” de eneboo...
 
-* Se pueden descargar de varios sitios o "repositorios", hay unos que llevan más "extensiones" añadidas a la "mezcla básica" que otros...:
+* Se pueden descargar de varios sitios o "repositorios", hay unos que llevan más "extensiones" añadidas a la "mezcla básica" que otros...recomiendo las extensiones del github de KLO y los módulos del github "oficial" de ENEBOO...
 
 * Ejemplos:
 
@@ -179,7 +179,7 @@ http://eneboo.org/pub/contrib/2.4.5.1-rc7/
       * “modulos estandar en paquete eneboo” o: **standard.eneboopkg**
       1. En el área de _Módulos_ de la parte izquierda, abrir la opción _Sistema -> Administración -> Cargar Paquete de módulos_.
       1. Localizar el archivo standard.eneboopkg y pulsar _Abrir_. Cuando finalice la carga, Eneboo Standard estará listo para empezar a trabajar.
-      1. A mi me dio ERROR:
+      1. A mi me dio ERROR (con MySQL 5.6, NO da error con MySQL 5.5):
           * ...entrar en “eneboo-sistema-administracion-cargar paquete de modulos”....e ir a la carpeta donde estan guardados...darle al enter en el listado...esperar....mucho...salen errores...
           * ...“flfiles:Módulo : El valor flcontmode no existe en la tabla flmodules “...
 
@@ -190,10 +190,10 @@ http://eneboo.org/pub/contrib/2.4.5.1-rc7/
 
 * **OPCIÓN C) De uno en uno o "MÓDULO A MÓDULO"**:
 
-      * ojo!: no cambiar los NO-INNODB:
+      * ojo!: en el caso de usar MySQL 5.6, no cambiar los archivos NO-INNODB:
           * **...”existen tablas que no usan el sistema INNODB...quiere convertirlas?”...NO**
       * “todos los módulos de gestiweb” descargar en zip  (ESTE ES MEJOR, DESCOMPRIME TODOS LOS MODULOS EN UNA CARPETA Y LUEGO SE INSTALAN UNO A UNO DESDE EL PROGRAMA ENEBOO):
-      * “Si desea descargar la última versión de nuestros módulos oficiales en ZIP, haga clic en el siguiente enlace: https://github.com/gestiweb/eneboo-modules/zipball/master “ (8 megas)
+      * “Si desea descargar la última versión de nuestros módulos oficiales en ZIP, haga clic en el siguiente enlace: https://github.com/gestiweb/eneboo-modules/zipball/master “ (8 megas) (es mejor usar los módulos del "oficial", están más actualizados: https://github.com/eneboo/eneboo-modules )
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-05.jpg)
 
@@ -236,7 +236,7 @@ http://eneboo.org/pub/contrib/2.4.5.1-rc7/
 * RESUMEN: Por
 1. simplicidad de uso del servidor
 1. compatibilidad con los servidores externos del mercado
-1. compatibilidad con otros programas (prestashop, etc)
+1. compatibilidad con otros programas (FacturaScripts, Prestashop, etc)
 
 
 https://groups.google.com/forum/#!searchin/eneboo/mysql/eneboo/jNP7-5Ysz5g/S_NzOAW6F8gJ
