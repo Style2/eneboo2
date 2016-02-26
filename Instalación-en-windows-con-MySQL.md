@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 26 de diciembre de 2015
+* ULTIMA ACTUALIZACIÓN: 26 de febrero de 2016
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Instalaci%C3%B3n-en-windows-con-MySQL)
 
 ----
@@ -26,7 +26,7 @@ www.wampserver.com\en
 
 * Si el ordenador es de **estructura 64 bits**, instalar la versión 2.5 para 64 bits (ver flecha roja en imagen) con:
      * apache 2.4.9
-     * mysql  5.6.17
+     * mysql  5.6.17 (ES MEJOR LA DE 5.5.24)
      * php 5.5.12
      * phpMyAdmin 4.1.14
      * sqlbuddy 1.3.3
@@ -100,7 +100,7 @@ www.wampserver.com\en
 * no es imprescindible este paso porque Eneboo lo crea la primera vez que se conecta a la base de datos....
 * (ESTO PARA PRIMERA INSTALACION, SI ES RE-INSTALAR HAY QUE SALTARSE ESTE PASO & INSTALAR EL DUMP-COPIA DE SEGURIDAD)
 * ir a phpMyAdmin
-* ...lo hace en: C:\wamp\bin\mysql\mysql5.6.12\data \prueba
+* ...lo hace en: C:\wamp\bin\mysql\mysql5.5.24\data \prueba 
 * ….cotejamiento por defecto: “utf8_general_ci”
 
 
@@ -108,7 +108,8 @@ www.wampserver.com\en
 ####PASO 4.-DESCARGAR EL PROGRAMA ENEBOO:
 
 * Bajarlo de:
-     * A) en http://eneboo.org/pub/contrib/ (ultimas versiones-releases...ojo: LAS BETA, NO)
+     * A) en http://eneboo.org/pub/contrib/ 
+              (últimas versiones-releases...no uses el 2.4.0.2, está obsoleto, usa el 2.4.5.1 rc8 o el rc7:)
      * B) en www.eneboo.org (el que incluye postgre, sql u otro). Ir a “descargas”......”versiones estables”.....abajo....Hay dos opciones:
           * B.1)...en el PRIMER ORDENADOR DE LA RED o “servidor”.....elegir la **version “DBA”**.
                  * sirve para instalar módulos personalizados y otras tareas de "Administrador" 
@@ -120,7 +121,7 @@ www.wampserver.com\en
 ---
 ####PASO 5.-ARRANCAR EL PROGRAMA ENEBOO:
 
-* ejecutar el archivo **eneboo.exe** del subdirectorio **bin**. Por ejemplo:("C:\eneboo-2.4.0.2-dba-win32\bin\eneboo.exe")
+* ejecutar el archivo **eneboo.exe** del subdirectorio **bin**. Por ejemplo:("C:\eneboo-2.4.5.1-rc8-dba-win64\bin\eneboo.exe")
 * **(OJO: primero tiene que funcionar WAMPSERVER como servidor...QUE LA "W" AL LADO DEL RELOJ ESTÉ DE COLOR VERDE...SI ESTÁ ROJA O AMARILLA NO FUNCIONARÁ)** 
 
 * Aparecerá la pantalla _Conectar_.
@@ -136,7 +137,7 @@ www.wampserver.com\en
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-02.jpg)
 * Darle a la flecha de la derecha y completar:
-     * Base de datos: MySQL_NO_INNODB (si usas mysql 5.6...para poder poner MySQL(o INNODB) hay que tener el 5.5)
+     * Base de datos: ...para poder poner MySQL(o INNODB) hay que tener el 5.5 (puedes usar MySQL_NO_INNODB si usas mysql 5.6 pero NO lo recomiendo porque da muchos errores con los módulos y en contabilidad...)
      * servidor: 127.0.0.1 (antes se llamaba “localhost”).....o aquí pondriamos el TCP_IP del ordenador que tiene la BD... 
      * puerto: el que da eneboo....3306
 
