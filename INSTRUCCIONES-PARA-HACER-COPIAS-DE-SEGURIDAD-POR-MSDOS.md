@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 1 de octubre de 2015
+* ULTIMA ACTUALIZACIÓN: 29 de febrero de 2016
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/INSTRUCCIONES-PARA-HACER-COPIAS-DE-SEGURIDAD-POR-MSDOS)
 
 ----
@@ -19,6 +19,8 @@
      * que es el directorio donde esta el archivo: "mysql_dump.exe" (si no es ese directorio, buscarlo por el explorador de archivos...)
 
 1. una vez hecho se reinicia y listo, el equipo que tiene la BD ya puede hacer dumps
+
+--
 
 #### **B) PARA PostgreSQL:**
 
@@ -55,23 +57,23 @@ NOTA: Para acceder al MSDOS en Windows 8/10 ir a "INICIO"- "EJECUTAR" - "CMD" (u
 #### **A) PARA MySQL:**
 
 El comando es:
-`mysqldump -hipdelservidor -uusuario -p nombre_bd > path_destino/nombre.sql`
+     mysqldump -hipdelservidor -uusuario -p nombre_bd > path_destino/nombre.sql
 
 EJEMPLO:
 
-C:\Documents and Settings\facturacion>mysqldump -h192.168.1.2 -uroot -p empresa > C:\dump_empresa_140423.sql
-Enter password: ******
+     C:\Documents and Settings\facturacion>mysqldump -h192.168.1.2 -uroot -p empresa > C:\dump_empresa_140423.sql
+     Enter password: ******
 
 
 #### **B) PARA PostgreSQL:**
 
 El comando es:
-`pgdump -hipdelservidor -uusuario -p nombre_bd > path_destino/nombre.sql`
+     pgdump -hipdelservidor -uusuario -p nombre_bd > path_destino/nombre.sql
 
 EJEMPLO:
 
-C:\Documents and Settings\facturacion>pgdump -h192.168.1.2 -uroot -p empresa > C:\dump_empresa_140423.sql
-Enter password: ******
+     C:\Documents and Settings\facturacion>pgdump -h192.168.1.2 -uroot -p empresa > C:\dump_empresa_140423.sql
+     Enter password: ******
 
 ---------------------------------------------------------
 ##RECUPERAR COPIA DE SEGURIDAD GUARDADA:
@@ -83,19 +85,19 @@ Enter password: ******
 mysql -h192.168.1.2 -root -p nombre_BD < path_destino/nombre.sql
 
 ****ejemplo:
-C:\Documents and Settings\facturacion>mysql -h192.168.1.2 -uroot -p empresa
-< c:\dumps\dump_empresa_140423.sql
-Enter password: ******
+
+     C:\Documents and Settings\facturacion>mysql -h192.168.1.2 -uroot -p empresa < c:\dumps\dump_empresa_140423.sql
+     Enter password: ******
 
 ****fin ejemplo
 
 
 WINDOWS 8: (ejecutar como administrador)
 
-C:\Windows\system32>mysql -uroot -p empresa < c:\dump_empresa_140718.sql
-Enter password:
+     C:\Windows\system32>mysql -uroot -p empresa < c:\dump_empresa_140718.sql
+     Enter password:
 
-C:\Windows\system32>mysqldump -uroot -p empresa > c:\dump_empresa_140721.sql
+     C:\Windows\system32>mysqldump -uroot -p empresa > c:\dump_empresa_140721.sql
 
 
 ###NOTA: PARA VERIFICAR QUE las copias se hacen bien:
