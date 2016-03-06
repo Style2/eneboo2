@@ -22,6 +22,10 @@ https://github.com/eneboo/reports4eneboo-reports
 
 ---
 
+PASO SIGUIENTE: https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Crear-un-jrxml-de-Jasper-Reports-a-partir-de-un-kut
+
+---
+
 ####INSTALAR JASPER STUDIO (editor de los Jasper-Report)
 
 1. Descargarlo de:
