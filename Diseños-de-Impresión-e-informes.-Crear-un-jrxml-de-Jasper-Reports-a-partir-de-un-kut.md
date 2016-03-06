@@ -7,6 +7,13 @@
 
 ### Diseños de Impresión e informes. Crear un jrxml de Jasper Reports a partir de un kut
 
+* hacer varias páginas:
+
+1. instalación Jasper Report.
+2. entorno del programa Jasper.
+3. kut to jrxml.
+4. adaptar .qs a jasper.
+
 #### PASO PREVIO 1: Instalar el editor Jaspersoft Studio
 
 https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Configurar-archivos-Jasper-Reports
