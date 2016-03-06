@@ -1,7 +1,7 @@
 * CREADO POR: Oscar ABC Vigo en https://github.com/eneboo/doc/wiki/Crear-plantillas-Jasper-para-Eneboo-Reports
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * ULTIMA ACTUALIZACIÓN: 3 de marzo de 2016
-* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes%3A-Configurar-archivos-Jasper-Reports)
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Crear-un-jrxml-de-Jasper-Reports-a-partir-de-un-kut)
 
 ---
 
