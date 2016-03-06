@@ -6,7 +6,7 @@
 ----
 ### EXTENSIONES agrupadas por tipos
 
-original en: https://github.com/Miguel-J/ext-abanq-eneboo/blob/master/README2.md
+NOTA: Los enlaces y fotos no van aquí, mirarlos en la web original en: https://github.com/Miguel-J/ext-abanq-eneboo/blob/master/README2.md
  
 #### Indice:
 
