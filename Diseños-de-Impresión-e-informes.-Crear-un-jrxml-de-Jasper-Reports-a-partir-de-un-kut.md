@@ -7,14 +7,24 @@
 
 ### Diseños de Impresión e informes. Crear un jrxml de Jasper Reports a partir de un kut
 
-#### PASO PREVIO: Instalar el editor Jaspersoft Studio
+#### PASO PREVIO 1: Instalar el editor Jaspersoft Studio
 
+https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Configurar-archivos-Jasper-Reports
 
 Puedes encontrar plantillas listas para usar en: https://github.com/eneboo/reports4eneboo-reports
 
 Para crear una nueva plantilla o modificar alguna que quieras adaptar a tus necesidades, puedes usar un editor de reportes jasper como [Jaspersoft Studio](http://community.jaspersoft.com/project/jaspersoft-studio) (editor gráfico de código abierto).
 
 ---
+
+#### PASO PREVIO 2:
+
+El informe tiene que tener el código .qs programado para enlazar con el "enlace jasper"...
+
+
+---
+
+#### PASO 
 
 - En una de las primeras lineas tienes un propiedad "name" donde pones el nombre que quieres aparezca en la lista de eneboo-reports (no toma el nombre del fichero, sino este nombre)
 
