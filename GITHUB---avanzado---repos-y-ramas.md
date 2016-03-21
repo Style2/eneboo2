@@ -171,3 +171,6 @@ https://elbauldelprogramador.com/mini-tutorial-y-chuleta-de-comandos-git/
 
 https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/
 
+Para desbloquear un conflicto si ya has borrado el archivo:
+
+git reset
