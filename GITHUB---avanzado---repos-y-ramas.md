@@ -164,3 +164,10 @@ https://elbauldelprogramador.com/mini-tutorial-y-chuleta-de-comandos-git/
 1. Envio el Pull-Request (PARCIAL) desde la web (eneboo-oficial-remoto) HACIA REPO-PADRE.
 
 1. Volver a hacerlo para cada commit....bufff
+
+---
+
+###SOLUCIONAR CONFLICTOS
+
+https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/
+
