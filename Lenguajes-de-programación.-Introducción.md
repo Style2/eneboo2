@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 25 de octubre de 2015
+* ULTIMA ACTUALIZACIÓN: 2 de abril de 2016
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Lenguajes-de-programaci%C3%B3n.-Introducci%C3%B3n)
 
 ----
@@ -57,6 +57,12 @@ Cada tipo de archivo tiene "su" lenguaje o forma de escribir las órdenes, y en 
 
 * **translations**. Listados de traducciones. Cada listado de traducciones para un determinado idioma se define en un archivo de extensión ts
 
+--
+1. Archivos iniciales:
+
+.xpm es un archivo de imagen que refleja la imagen del módulo en el menú desplegable. Para convertir imágenes .jpg o .png a .xpm visitar:
+
+        http://es.office-converter.com/Convert-to-XPM
 
 ---
 
