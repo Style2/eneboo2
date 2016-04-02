@@ -64,6 +64,8 @@ Cada tipo de archivo tiene "su" lenguaje o forma de escribir las órdenes, y en 
 
         http://es.office-converter.com/Convert-to-XPM
 
+* NOTA: Mejor pasarlo a .GIF primero y quitarle el fondo para dejarlo transparente...
+
 ---
 
 1. FORMS (.ui):
