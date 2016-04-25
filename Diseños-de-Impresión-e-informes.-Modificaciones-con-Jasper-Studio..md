@@ -8,9 +8,9 @@
 ### Diseños de Impresión e informes. Modificaciones con Jasper Studio.
 
 
-![eneboo-jasper-titulo01](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-jasper-titulo01.jpg
+![eneboo-jasper-titulo01](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper/eneboo-jasper-titulo01.jpg)
 
-![eneboo-jasper-titulo02](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-jasper-titulo02.jpg
+![eneboo-jasper-titulo02](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper/eneboo-jasper-titulo02.jpg)
 
-![eneboo-jasper-titulo03](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-MySQL-WAMPSERVER/eneboo-jasper-titulo03.jpg
+![eneboo-jasper-titulo03](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-jasper/eneboo-jasper-titulo03.jpg)
 
