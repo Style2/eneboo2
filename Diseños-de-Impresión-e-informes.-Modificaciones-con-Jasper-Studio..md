@@ -1,7 +1,7 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * ULTIMA ACTUALIZACIÓN: 26 de abril de 2016
-* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Crear-un-jrxml-de-Jasper-Reports-a-partir-de-un-kut)
+* [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Modificaciones-con-Jasper-Studio.)
 
 ---
 
