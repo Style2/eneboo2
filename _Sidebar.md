@@ -28,7 +28,7 @@
 #####Informes:
 1. [Diseños de Impresión e informes. Instalar el enlace a Jasper Reports]( https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Instalar-el-enlace-a-Jasper-Reports)
 1. [Diseños de Impresión e informes. Configurar archivos Jasper-Reports para impresión de facturas, informes, etc](https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Configurar-archivos-Jasper-Reports)
-1. [Diseños de Impresión e informes. Modificaciones con Jasper Studio.](https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Modificaciones-con-Jasper-Studio.)
+1. [Diseños de Impresión e informes. Modificaciones con Jasper Studio](https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Modificaciones-con-Jasper-Studio)
 1. [Diseños de Impresión e informes. Crear plantilla .jrxml de Jasper a partir de un .kut](https://github.com/Miguel-J/eneboo/wiki/Dise%C3%B1os-de-Impresi%C3%B3n-e-informes.-Crear-un-jrxml-de-Jasper-Reports-a-partir-de-un-kut)
 
 #####Area Facturación
