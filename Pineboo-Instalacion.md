@@ -27,9 +27,32 @@
 
 sudo apt-get postgresql
 
+1. ARRANCAMOS EL SERVIDOR:
+
+sudo service postgresql start
+
 1. instalamos pgAdmin3:
 
 sudo apt-get install pgadmin3
+
+y una vez instalado vamos a consola Ctrl+Alt+F7 y damos a "inicio" "ejecutar" "pgadmin3"...y se abre el programa
+
+luego le damos al dibujo del enchufe y creamos una conexión nueva con estos datos:
+
+<type>postgresql</type>
+
+<host>127.0.0.1</host>
+
+<port>5432</port>
+
+<username>postgres</username>
+
+<password>postgres</password>
+
+
+<database-name>eneboobase</database-name>
+
+
 
 1. Llevamos con usb los repositorios de "pineboo" y "flscriptparser" al directorio raíz..
 
