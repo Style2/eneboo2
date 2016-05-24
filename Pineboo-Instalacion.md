@@ -32,3 +32,10 @@ sudo apt-get postgresql
 1. Llevamos con usb los repositorios de "pineboo" y "flscriptparser" al directorio raíz..
 
 1. ??
+
+# ARRANCAR ENEBOO DESDE ORDENADOR APAGADO:
+
+1. Ir a consola (Ctrl+Alt+F1) y arrancar XAMPP (PARA MYSQL): `$ sudo /opt/lampp/lampp start`
+1. Volver a ventanas (Ctrl+Alt+F7) y arrancar el programa (eneboo) desde el explorador de archivos en:
+         * /home/linux/Descargas/eneboo--dba/bin
+
