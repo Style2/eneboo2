@@ -4,11 +4,9 @@
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/C%C3%B3mo-a%C3%B1adir-una-extensi%C3%B3n-a-una-mezcla-con-MergeTool)
 
 ----
-* Se pueden aplicar extensiones con Linux y con Windows (siguiendo esta guía: https://github.com/Miguel-J/eneboo/wiki/Eneboo-Tools-en-Windows )
 
-* "Merge-tool" es una herramienta rápida y fácil, pero tiene el problema de no permitir las actualizaciones, para evitarlo es mejor usar "Assembler" con un proyecto que incluya TODAS las extensiones que se van añadiendo...https://github.com/Miguel-J/eneboo/wiki/eneboo-tools-HACER-UN-PROYECTO-NUEVO-con-ASSEMBLER
+# EN CONSTRUCCION
 
---
 
 **NOTA SOBRE LINUX**:
 * Cómo llego a la **consola"?
@@ -28,6 +26,10 @@
 1. Para Linux-UBUNTU "activamos" el servidor de postgreSQL que lleva:
 
 sudo apt-get postgresql
+
+1. instalamos pgAdmin3:
+
+sudo apt-get install pgadmin3
 
 1. Llevamos con usb los repositorios de "pineboo" y "flscriptparser" al directorio raíz..
 
