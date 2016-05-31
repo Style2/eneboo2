@@ -25,7 +25,7 @@
 
 ### PASO 1 - INSTALAMOS Y ARRANCAMOS EL SERVIDOR:
 
-1. (PARA postgreSQL): 
+#####1. (PARA postgreSQL): 
 
 Para Linux-UBUNTU "activamos/instalamos" el servidor de postgreSQL que lleva:
 
@@ -35,12 +35,14 @@ Y luego Ir a consola (Ctrl+Alt+F1) y "arrancar":
 
      sudo service postgresql start
 
-1. (PARA MYSQL): Ir a consola (Ctrl+Alt+F1) y arrancar XAMPP: `$ sudo /opt/lampp/lampp start`
+#####1. (PARA MYSQL): Ir a consola (Ctrl+Alt+F1) y arrancar XAMPP: 
+
+     $ sudo /opt/lampp/lampp start
 
 
 ### PASO 2 - CREAMOS USUARIO Y BASE DE DATOS:
 
-1. PARA POSTGRESQL: instalamos pgAdmin3:
+#####1. PARA POSTGRESQL: instalamos pgAdmin3:
 
 sudo apt-get install pgadmin3
 
