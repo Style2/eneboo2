@@ -62,6 +62,8 @@ Dentro del cliente de PostgreSQL debes ejecutar la siguiente sentencia SQL y pre
 
 No olvides cambiar la palabra <password> por la contraseña que deseas asignar al usuario postgres.
 
+Para salir del cliente debes escribir el comando \q seguido de la tecla Enter.
+
 --
 
 sudo su postgres
@@ -92,7 +94,11 @@ luego le damos al dibujo del enchufe y creamos una conexión nueva con estos dat
 
 1. Llevamos con usb los repositorios de "pineboo" y "flscriptparser" al directorio raíz..
 
-1. ??
+1. Pineboo lanza el comando flscriptparser2, que debe existir en el PATH. Si habéis seguido las instrucciones de instalación, ya lo tenéis. Si no, pues podéis enlazarlo:
+
+     sudo ln -s /path/to/flscriptparser/flscriptparser2 /usr/local/bin/flscriptparser2
+
+
 
 
 ### PASO 4 - ARRANCAR ENEBOO DESDE ORDENADOR APAGADO:
