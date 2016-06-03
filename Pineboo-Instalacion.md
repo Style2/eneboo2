@@ -42,6 +42,31 @@ Y luego Ir a consola (Ctrl+Alt+F1) y "arrancar":
 
 ### PASO 2 - CREAMOS USUARIO Y BASE DE DATOS:
 
+Configurar contraseña para el usuario postgres
+
+PostgreSQL crea un usuario llamado postgres a nivel del sistema. Es el homónimo del usuario root en MySQL, es decir, con el usuario postgres vas a poder administrar y configurar el servidor de PostgreSQL.
+
+El método de autenticación por defecto para este usuario es peer. Este método utiliza el nombre del usuario de tu sesión activa para la gestión de accesos al motor de base de datos. Por lo cual necesitamos iniciar sesión con este usuario.
+
+Para iniciar sesión con un usuario diferente debemos ejecutar el siguiente comando:
+sudo su postgres
+
+Una vez hecho el paso anterior iniciaremos sesión en el cliente de PostgreSQL, nuevamente en la terminal ejecuta el siguiente comando:
+psql
+
+Dentro del cliente de PostgreSQL debes ejecutar la siguiente sentencia SQL y presiona la tecla Enter:
+ALTER USER Postgres WITH PASSWORD '<password>';
+
+No olvides cambiar la palabra <password> por la contraseña que deseas asignar al usuario postgres.
+
+
+sudo su postgres
+
+Para poder desarrollar este nanotutorial necesitamos tener disponible una sesión cliente en un servidor PostgreSQL. Para esto debemos iniciar el cliente con el siguiente comando:
+
+      psql -U postgres -h localhost -W
+
+
 #####1. PARA POSTGRESQL: instalamos pgAdmin3:
 
 sudo apt-get install pgadmin3
