@@ -98,8 +98,10 @@ luego le damos al dibujo del enchufe y creamos una conexión nueva con estos dat
 
      sudo ln -s /path/to/flscriptparser/flscriptparser2 /usr/local/bin/flscriptparser2
 
+en mi caso queda así:
 
-
+     Linux@linux-AOA150:~$ sudo ln -s /home/linux/flscriptparser/flscriptparser2 /usr/local/bin/flscriptparser2
+     [sudo] password for Linux:
 
 ### PASO 4 - ARRANCAR ENEBOO DESDE ORDENADOR APAGADO:
 
