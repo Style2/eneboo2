@@ -103,8 +103,37 @@ en mi caso queda así:
      Linux@linux-AOA150:~$ sudo ln -s /home/linux/flscriptparser/flscriptparser2 /usr/local/bin/flscriptparser2
      [sudo] password for Linux:
 
-### PASO 4 - ARRANCAR ENEBOO DESDE ORDENADOR APAGADO:
+### PASO 4 - ARRANCAR ENEBOO DESDE ORDENADOR:
 
 1. Volver a ventanas (Ctrl+Alt+F7) y arrancar el programa (eneboo) desde el explorador de archivos en:
          * /home/linux/Descargas/eneboo--dba/bin
 
+### PASO 5 - DESCARGAR DEL GITHUB "ENEBOO-MODULES" Y PONERLO EN LA CARPPETA DE PINEBOO
+
+### PASO 6 - CARGAR MÓDULOS EN LA EMPRESA "eneboobase": 
+
+con Sistema-Cargar directorio de módulos de un src cualquiera...
+
+### PASO 7 - ARRANCAR PINEBOO:
+
+...me bloqueo al llamar al programa: 
+
+"
+Con esto, pineboo debería iniciarse así:
+     ./pineboo -l proyecto1
+"
+
+
+...PREGUNTA:
+1.- desde qué directorio he de lanzar ese comando? ....Lo de "./" es porque llama a un subdirectorio?
+
+
+2.- con qué usuario debería llamarlo? el mio-administrador ("linux") o el de la base de datos "eneboobase"="postgres" ?
+
+
+...ahora sólo recibo estos errores:
+"bash: ./pineboo: Permiso denegado" si lo lanzo desde dentro del directorio pineboo con mi usuario....
+"bash: ./pineboo: Es un directorio" si lo lanzo desde fuera  del directorio pineboo....
+
+
+?¿??
