@@ -6,7 +6,53 @@
 ----
 
 
-# INSTALACION DE ENEBOO EN WINDOWS CON POSTGRESQL
+# INSTALACION DE ENEBOO EN LINUX CON POSTGRESQL
+
+
+**NOTA SOBRE LINUX**:
+* Cómo llego a la **consola"?
+     * Entrar a la consola desde la vista-escritorio: Ctrl+Alt+F1
+     * Salir de la consola hacia la vista-escritorio: Ctrl+Alt+F7
+
+* Qué teclas sirven para **copiar-y-pegar** el texto en la consola en Linux o Unix ?:
+     * Ctrl+Shift+c = copiar
+     * Ctrl+Shift+V.= pegar
+
+* Cómo extraer de forma segura un USB?
+     * vas a la consola con Ctrl+Alt+F1 y escribes **umount /media/linux(o nombre ordenador)/(nombre de volumen del usb)**
+
+----
+
+### PASO 1 - INSTALAMOS Y ARRANCAMOS EL SERVIDOR:
+
+#####1. (PARA postgreSQL): 
+
+Para Linux-UBUNTU "activamos/instalamos" el servidor de postgreSQL que lleva:
+
+     sudo apt-get postgresql
+
+Y luego Ir a consola (Ctrl+Alt+F1) y "arrancar":
+
+     sudo service postgresql start
+
+
+### PASO 2 - CREAMOS USUARIO Y BASE DE DATOS:
+
+#####1. PARA POSTGRESQL: instalamos pgAdmin3:
+
+sudo apt-get install pgadmin3
+
+y una vez instalado vamos a consola Ctrl+Alt+F7 y damos a "inicio" "ejecutar" "pgadmin3"...y se abre el programa
+
+luego le damos al dibujo del enchufe y creamos una conexión nueva con estos datos:
+
+     <type>postgresql</type>
+     <host>127.0.0.1</host>
+     <port>5432</port>
+     <username>postgres</username>
+     <password>postgres</password>
+     <database-name>eneboobase</database-name>
+
 
 ## Pasos:
 
