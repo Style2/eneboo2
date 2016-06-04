@@ -142,7 +142,32 @@ Al incluir una “bang line”, tus scripts serán mucho más fáciles de distri
 
 --
 
-### PASO 8 - ARRANCAR PINEBOO:
+### PASO 8 - ERRORES CONOCIDOS: CONVERTIR A UNIX
+
+1. Si pues si, lo descargué desde mi Windows...
+
+lo he arreglado con dos2unix:
+
+http://systemadmin.es/2011/02/bin-bash-bad-interpreter
+
+Debemos fijarnos que nos indica “/bin/bash^M“, nos indica que tenemos los intros de DOS (Windows) posiblemente por haber sido editado con dicho sistema operativo. Para corregirlo simplemente deberemos usar la utilidad dos2unix:
+
+     $ dos2unix parser.sh 
+     dos2unix: converting file parser.sh to UNIX format ...
+
+EJEMPLO:
+ 
+     sudo apt-get install dos2unix
+     dos2unix pineboo
+
+A continuación si lo ejecutamos ya lo hará correctamente:
+
+...pero ahora me pide python3-lxml...
+
+### PASO 9 - INSTALAR PYTHON 3 :
+
+
+### PASO 10 - ARRANCAR PINEBOO:
 
 A la hora de enecutar pineboo, puedes hacerlo de varias maneras:
 
@@ -151,6 +176,10 @@ A la hora de enecutar pineboo, puedes hacerlo de varias maneras:
 ./pineboo -l nombre_proyecto. Busca un fichero .xml dentro de projects
 
 ./pineboo -c user:passwd@host:port/database. Especificando datos de conexión por linea de comandos
+
+--
+
+
 
 --
 
