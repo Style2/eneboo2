@@ -189,6 +189,8 @@ A continuación si lo ejecutamos ya lo hará correctamente:
 
 ### PASO 13 - INSTALAR PYTHON3-FUTURE :
 
+https://github.com/deavid/pineboo/blob/master/README.python3.rst
+
 [Pineboo-Deavid] Adicionalmente, hacemos uso de un paquete llamado "future", que es el que me ha ayudado a hacer la transformación con una herramienta llamada futurize.
 
 Future se usa ahora en el código para que Python2.7 pueda ejecutar nuestro código de python3 y que ambos hagan lo mismo. (Emulando python3)
@@ -197,9 +199,17 @@ Esto hace que algunos ficheros requieran de esta librería con Python3, pero cre
 
 Esta dependencia, al menos en ubuntu 14.04 necesita de "pip" para instalarse. No está disponible para apt-get.
 
-     $ sudo apt-get install pip3 $ sudo pip3 install future
+     $ sudo apt-get install pip3 $ sudo pip3 install future (ESTO NO VA)
 
 ??? SE HA VUELTO LOCO....se pasa 2 a 5 minutos haciendo "Nota, seleccionando <<mbrola-la1>> en lugar de <<mbrola-voice-la>>"...y al final dice que "E: No se ha podido localizar el paquete pip3 / install / future"
+
+     $ sudo apt-get install python3-pip
+
+...Y LUEGO:
+
+     $ sudo pip3 install future
+
+...AHORA SI.
 
 ### PASO 14 - ARRANCAR PINEBOO:
 
