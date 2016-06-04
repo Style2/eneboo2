@@ -114,8 +114,7 @@ en mi caso queda así:
 
 con Sistema-Cargar directorio de módulos de un src cualquiera...
 
-### PASO 7 - ARRANCAR PINEBOO:
-
+### PASO 7 - DAR PERMISOS DE EJECUCIÓN A PINEBOO:
 
 El fichero ./pineboo es un script, y como tal mira si tiene permiso de ejecución. (Permite ejecutar el script como un programa). 
 
@@ -139,11 +138,17 @@ Al incluir una “bang line”, tus scripts serán mucho más fáciles de distri
 
 --
 
+### PASO 8 - ARRANCAR PINEBOO:
+
 A la hora de enecutar pineboo, puedes hacerlo de varias maneras:
 
 ./pineboo a secas. Pide datos de conexión en un form
+
 ./pineboo -l nombre_proyecto. Busca un fichero .xml dentro de projects
+
 ./pineboo -c user:passwd@host:port/database. Especificando datos de conexión por linea de comandos
+
+--
 
 ...me bloqueo al llamar al programa: 
 
@@ -161,6 +166,7 @@ Con esto, pineboo debería iniciarse así:
 
 
 ...ahora sólo recibo estos errores:
+
 "bash: ./pineboo: Permiso denegado" si lo lanzo desde dentro del directorio pineboo con mi usuario....
 "bash: ./pineboo: Es un directorio" si lo lanzo desde fuera  del directorio pineboo....
 
