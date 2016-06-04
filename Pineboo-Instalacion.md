@@ -166,8 +166,22 @@ A continuación si lo ejecutamos ya lo hará correctamente:
 
 ### PASO 9 - INSTALAR PYTHON 3 :
 
+     sudo apt-get install python3-lxml
 
-### PASO 10 - ARRANCAR PINEBOO:
+...pero ahora me pide psycopg2...
+
+### PASO 10 - INSTALAR PYTHON3-PSYCOPG2 :
+
+     sudo apt-get install python3-psycopg2
+
+...pero ahora me pide pyqt4...
+
+### PASO 11 - INSTALAR PYTHON3-PYQT4 :
+
+     sudo apt-get install python3-pyqt4
+
+
+### PASO 12 - ARRANCAR PINEBOO:
 
 A la hora de enecutar pineboo, puedes hacerlo de varias maneras:
 
