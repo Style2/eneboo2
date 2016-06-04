@@ -124,6 +124,10 @@ Para otorgar permisos de ejecución a nuestro script, debemos escribir:
 
      chmod a+x pineboo
 
+Use el comando ls para ver los permisos que posee el script:
+
+     $ ls -l nombre-del-script
+
 --
 
 NOTA: Para poder ejecutar un script por sí solo deben cumplirse 2 condiciones:
