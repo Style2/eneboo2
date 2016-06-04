@@ -116,6 +116,35 @@ con Sistema-Cargar directorio de módulos de un src cualquiera...
 
 ### PASO 7 - ARRANCAR PINEBOO:
 
+
+El fichero ./pineboo es un script, y como tal mira si tiene permiso de ejecución. (Permite ejecutar el script como un programa). 
+
+http://blog.desdelinux.net/cual-es-la-diferencia-entre-ejecutar-un-script-bash-usando-sh-y/
+
+Para otorgar permisos de ejecución a nuestro script, debemos escribir:
+
+     chmod a+x pineboo
+
+--
+
+NOTA: Para poder ejecutar un script por sí solo deben cumplirse 2 condiciones:
+
+1. el script debe incluir un “bang line”. Se trata de la primera línea de un script, que debe comenzar con los caracteres #! y que debe especificar la ruta en la que se encuentra el intérprete. Es importante notar que esta condición se cumple para cualquier tipo de script (python, perl, etc.), no sólo los de bash. Así, por ejemplo, nuestro script debería contener como primera línea lo siguiente:
+
+     #!/bin/bash
+
+1. el archivo debe tener permisos de ejecución:
+
+Al incluir una “bang line”, tus scripts serán mucho más fáciles de distribuir, ya que los usuarios no deberán recordar la ruta en la que se encuentran los intérpretes necesarios para poder ejecutarlos. 
+
+--
+
+A la hora de enecutar pineboo, puedes hacerlo de varias maneras:
+
+./pineboo a secas. Pide datos de conexión en un form
+./pineboo -l nombre_proyecto. Busca un fichero .xml dentro de projects
+./pineboo -c user:passwd@host:port/database. Especificando datos de conexión por linea de comandos
+
 ...me bloqueo al llamar al programa: 
 
 "
