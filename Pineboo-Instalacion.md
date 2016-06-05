@@ -211,7 +211,19 @@ Esta dependencia, al menos en ubuntu 14.04 necesita de "pip" para instalarse. No
 
 ...AHORA SI.
 
-### PASO 14 - ARRANCAR PINEBOO:
+### PASO 14 - :
+
+En el caso de que siga el mensaje de:
+
+     "pineboo.py: cannot connect to X server".....???? 
+
+http://stackoverflow.com/questions/646930/cannot-connect-to-x-server-0-0-with-a-qt-application
+
+ponemos:
+
+     export DISPLAY=0:0.0
+
+### PASO 15 - ARRANCAR PINEBOO:
 
 A la hora de enecutar pineboo, puedes hacerlo de varias maneras:
 
@@ -220,6 +232,10 @@ A la hora de enecutar pineboo, puedes hacerlo de varias maneras:
 ./pineboo -l nombre_proyecto. Busca un fichero .xml dentro de projects
 
 ./pineboo -c user:passwd@host:port/database. Especificando datos de conexión por linea de comandos
+
+
+...y TE VAS AL ENTORNO GRÁFICO Ctrl+Alt+F7 y aparece el cuadro de conexión:
+
 
 --
 
