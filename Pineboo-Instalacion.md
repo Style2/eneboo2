@@ -108,7 +108,7 @@ NOTA: Este paso no es imprescindible, pero sirve para controlar que la conexión
 Volver a ventanas (Ctrl+Alt+F7) y arrancar el programa (eneboo) desde el explorador de archivos en:
          * /home/linux/Descargas/eneboo--dba/bin
 
-### PASO 5 - DESCARGAR DEL GITHUB "ENEBOO-MODULES" Y PONERLO EN LA CARPPETA DE PINEBOO
+### PASO 5 - DESCARGAR DEL GITHUB "ENEBOO-MODULES" Y PONERLO EN LA CARPETA DE PINEBOO
 
 NOTA: Este paso no es imprescindible, de hecho no sé si sirve de algo...pero por si acaso...
 
@@ -269,5 +269,7 @@ RESPUESTA: Con tu usuario habitual de sistema ("linux"). ...he mirado el archivo
 ![Pineboo en linux](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-pineboo/eneboo-pineboo-06.jpg)
 
 ![Pineboo en linux](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-pineboo/eneboo-pineboo-07.jpg)
+
+...y si TE VAS AL ENTORNO CONSOLA Ctrl+Alt+F1 y aparece la relación de mensajes:
 
 ![Pineboo en linux](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-pineboo/eneboo-pineboo-08.jpg)
