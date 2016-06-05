@@ -6,7 +6,7 @@
 ----
 
 
-** INTRODUCCIÓN - NOTA SOBRE LINUX**:
+**INTRODUCCIÓN - NOTA SOBRE LINUX**:
 * Cómo llego a la **consola"?
      * Entrar a la consola desde la vista-escritorio: Ctrl+Alt+F1
      * Salir de la consola hacia la vista-escritorio: Ctrl+Alt+F7
@@ -90,7 +90,7 @@ luego le damos al dibujo del enchufe y creamos una conexión nueva con estos dat
 
 ### PASO 3 - DESCARGAMOS PINEBOO Y FLSCRIPTPARSER:
 
-1. Llevamos con usb los repositorios de "pineboo" y "flscriptparser" al directorio raíz..
+1. Llevamos con usb los repositorios de "pineboo" y "flscriptparser" al directorio raíz...mejor descargarlos desde Linux, porque si los bajas desde Windows los graba de forma "DISTINTA" y luego hay que "ADAPTARLO" con el "dos2unix"...
 
 1. Pineboo lanza el comando flscriptparser2, que debe existir en el PATH. Si habéis seguido las instrucciones de instalación, ya lo tenéis. Si no, pues podéis enlazarlo:
 
@@ -103,12 +103,18 @@ en mi caso queda así:
 
 ### PASO 4 - ARRANCAR ENEBOO DESDE ORDENADOR:
 
-1. Volver a ventanas (Ctrl+Alt+F7) y arrancar el programa (eneboo) desde el explorador de archivos en:
+NOTA: Este paso no es imprescindible, pero sirve para controlar que la conexión "habitual" funciona...
+
+Volver a ventanas (Ctrl+Alt+F7) y arrancar el programa (eneboo) desde el explorador de archivos en:
          * /home/linux/Descargas/eneboo--dba/bin
 
 ### PASO 5 - DESCARGAR DEL GITHUB "ENEBOO-MODULES" Y PONERLO EN LA CARPPETA DE PINEBOO
 
+NOTA: Este paso no es imprescindible, de hecho no sé si sirve de algo...pero por si acaso...
+
 ### PASO 6 - CARGAR MÓDULOS EN LA EMPRESA "eneboobase": 
+
+NOTA: Este paso no es imprescindible, pero sirve para controlar que la conexión "habitual" funciona...
 
 con Sistema-Cargar directorio de módulos de un src cualquiera...
 
@@ -199,7 +205,7 @@ Esta dependencia, al menos en ubuntu 14.04 necesita de "pip" para instalarse. No
 
      $ sudo apt-get install pip3 $ sudo pip3 install future (ESTO NO VA)
 
-??? SE HA VUELTO LOCO....se pasa 2 a 5 minutos haciendo "Nota, seleccionando <<mbrola-la1>> en lugar de <<mbrola-voice-la>>"...y al final dice que "E: No se ha podido localizar el paquete pip3 / install / future"
+??? SE HA VUELTO LOCO....se pasa 2 a 5 minutos haciendo "Nota, seleccionando `<<mbrola-la1>>` en lugar de `<<mbrola-voice-la>>` "...y al final dice que "E: No se ha podido localizar el paquete pip3 / install / future"
 
      $ sudo apt-get install python3-pip
 
@@ -223,14 +229,28 @@ ponemos:
 
 ### PASO 15 - ARRANCAR PINEBOO:
 
-A la hora de enecutar pineboo, puedes hacerlo de varias maneras:
+1. A la hora de enecutar pineboo, puedes hacerlo de varias maneras:
 
-./pineboo a secas. Pide datos de conexión en un form
+     ./pineboo a secas. Pide datos de conexión en un form
 
-./pineboo -l nombre_proyecto. Busca un fichero .xml dentro de projects
+     ./pineboo -l nombre_proyecto. Busca un fichero .xml dentro de projects
 
-./pineboo -c user:passwd@host:port/database. Especificando datos de conexión por linea de comandos
+     ./pineboo -c user:passwd@host:port/database. Especificando datos de conexión por linea de comandos
 
+1. desde qué directorio he de lanzar ese comando? ....Lo de "./" es porque llama a un subdirectorio?
+
+RESPUESTA:  "./" significa en este mismo directorio. Si no le pones el "./", busca en el path del sistema y si no lo encuentra da error.
+
+
+1. con qué usuario debería llamarlo? el mio-administrador ("linux") o el de la base de datos "eneboobase"="postgres" ?
+
+RESPUESTA: Con tu usuario habitual de sistema ("linux"). ...he mirado el archivo \etc\"passwd" y salen (entre muchos):
+
+     root:x:0:0:root:/root:/bin/bash
+     linux:x:1000:1000:linux,,,:/home/linux:/bin/bash
+     ...osease que "linux" NO es "root"
+
+---
 
 ...y TE VAS AL ENTORNO GRÁFICO Ctrl+Alt+F7 y aparece el cuadro de conexión:
 
@@ -246,21 +266,3 @@ A la hora de enecutar pineboo, puedes hacerlo de varias maneras:
 
 ![Pineboo en linux](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-pineboo/eneboo-pineboo-05.jpg)
 
-
-
-
---
-
-### COSAS PARA RE-COLOCAR:
-
-...PREGUNTA:
-1.- desde qué directorio he de lanzar ese comando? ....Lo de "./" es porque llama a un subdirectorio?
-
-
-2.- con qué usuario debería llamarlo? el mio-administrador ("linux") o el de la base de datos "eneboobase"="postgres" ?
-
-
-...ahora sólo recibo estos errores:
-
-"bash: ./pineboo: Permiso denegado" si lo lanzo desde dentro del directorio pineboo con mi usuario....
-"bash: ./pineboo: Es un directorio" si lo lanzo desde fuera  del directorio pineboo....
