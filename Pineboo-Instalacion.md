@@ -266,3 +266,8 @@ RESPUESTA: Con tu usuario habitual de sistema ("linux"). ...he mirado el archivo
 
 ![Pineboo en linux](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-pineboo/eneboo-pineboo-05.jpg)
 
+![Pineboo en linux](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-pineboo/eneboo-pineboo-06.jpg)
+
+![Pineboo en linux](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-pineboo/eneboo-pineboo-07.jpg)
+
+![Pineboo en linux](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-pineboo/eneboo-pineboo-08.jpg)
