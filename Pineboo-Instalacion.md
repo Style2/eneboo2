@@ -1,14 +1,12 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 31 de mayo de 2016
+* ULTIMA ACTUALIZACIÓN: 5 de junio de 2016
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Pineboo-Instalacion)
 
 ----
 
-# EN CONSTRUCCION
 
-
-**NOTA SOBRE LINUX**:
+** INTRODUCCIÓN - NOTA SOBRE LINUX**:
 * Cómo llego a la **consola"?
      * Entrar a la consola desde la vista-escritorio: Ctrl+Alt+F1
      * Salir de la consola hacia la vista-escritorio: Ctrl+Alt+F7
@@ -211,7 +209,7 @@ Esta dependencia, al menos en ubuntu 14.04 necesita de "pip" para instalarse. No
 
 ...AHORA SI.
 
-### PASO 14 - :
+### PASO 14 - ERROR DE CONEXIÓN:
 
 En el caso de que siga el mensaje de:
 
@@ -237,19 +235,23 @@ A la hora de enecutar pineboo, puedes hacerlo de varias maneras:
 ...y TE VAS AL ENTORNO GRÁFICO Ctrl+Alt+F7 y aparece el cuadro de conexión:
 
 
+
+![Pineboo en linux](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-pineboo/eneboo-pineboo-01.jpg)
+
+![Pineboo en linux](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-pineboo/eneboo-pineboo-02.jpg)
+
+![Pineboo en linux](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-pineboo/eneboo-pineboo-03.jpg)
+
+![Pineboo en linux](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-pineboo/eneboo-pineboo-04.jpg)
+
+![Pineboo en linux](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-pineboo/eneboo-pineboo-05.jpg)
+
+
+
+
 --
 
-
-
---
-
-...me bloqueo al llamar al programa: 
-
-"
-Con esto, pineboo debería iniciarse así:
-     ./pineboo -l proyecto1
-"
-
+### COSAS PARA RE-COLOCAR:
 
 ...PREGUNTA:
 1.- desde qué directorio he de lanzar ese comando? ....Lo de "./" es porque llama a un subdirectorio?
@@ -262,6 +264,3 @@ Con esto, pineboo debería iniciarse así:
 
 "bash: ./pineboo: Permiso denegado" si lo lanzo desde dentro del directorio pineboo con mi usuario....
 "bash: ./pineboo: Es un directorio" si lo lanzo desde fuera  del directorio pineboo....
-
-
-?¿??
