@@ -89,6 +89,7 @@
 1. [Compilar el motor-ENEBOO-OFICIAL](https://github.com/Miguel-J/eneboo/wiki/Compilar-el-motor-(ENEBOO-OFICIAL))
 1. [Instalación de HEIDI-Gestor base de datos MySQL](https://github.com/Miguel-J/eneboo/wiki/Instalacion-HEIDI-gestor-base-de-datos-MySQL)
 1. [Pineboo - Instalación-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Pineboo-Instalacion)
+1. [Pineboo en windows - Instalación-MIGUELJ](https://github.com/Miguel-J/eneboo/wiki/Pineboo-en-windows-Instalaci%C3%B3n)
 
 ---
 ####REPOSITORIOS DE ENEBOO:
