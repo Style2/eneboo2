@@ -54,6 +54,7 @@ Colocar los DOS sub-directorios en uno conjunto (en el ejemplo "emmergetool") Y 
 * **NOTA-4**: no permite que exista (**antes de ejecutar mergetool**) el directorio donde vuelca la suma (en este ejemplo: "salida")
 * **NOTA-5**: el módulo a añadir **debe llamarse por el "alias"**, no el original (en este caso: "informes", no "flfactinfo")
 * **NOTA-6**: los módulos "iniciales" **deben estar dentro de un subdirectorio de su área** (en este caso: "facturación")
+* **NOTA-7**: los módulos "iniciales" **salen de "TU MEZCLA PERSONALIZADA"....que se consiguen siguiendo este tutorial**: https://github.com/Miguel-J/eneboo/wiki/C%C3%B3mo-sacar-LA-MEZCLA-de-mi-base-de-datos
 
 ![mergetools-windows](https://github.com/Miguel-J/eneboo/blob/master/imagen/eneboo-tools/mergetool-windows02.jpg)
 
