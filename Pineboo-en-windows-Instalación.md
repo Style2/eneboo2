@@ -63,12 +63,39 @@ A continuación si lo ejecutamos ya lo hará correctamente:
 
 ...pero ahora me pide python3-lxml...
 
+####PASO 3 - INSTALAR PYTHON:
+
+Ir a **www.python.org**  y luego a "download"
+
+bajar la "Python 3.4.4 2015-12-21" (porque la librería "lxml" no veo que tenga la versión para Python 3.5 y Windows no para de avisarme sobre instalarlo....cocoricó!!!...)
+
+https://www.python.org/downloads/windows/
+
+Python 3.4.4 - 2015-12-21 // Download Windows x86-64 MSI installer
+
+descargarla y ejecutarla: crea el directorio **c:\python27** y un acceso directo en el menú...
+
 ### PASO 9 - INSTALAR PYTHON 3 :
 
      sudo apt-get install python3-lxml (ESTO NO FUNCIONA EN WINDOWS...)
 
 https://www.webucator.com/blog/2015/03/how-to-install-lxml-for-python-3-on-64-bit-windows/
 
+* PASO  - instalar "Python-lxml" para Windows
+
+        https://pypi.python.org/pypi/lxml/3.5.0
+
+Elegir la versión correcta para tu versión de Windows. Yo instalo la de Windows 64b con Python 3.4:
+
+         lxml-3.5.0.win-amd64-py3.4.exe (md5)   MS Windows installer  3.4  2016-06-08 3MB
+ 
+
+...se instala **automáticamente** en el directorio c:\python34 instalado previamente...
+
+
+
+
+---
 
 ...pero ahora me pide psycopg2...
 
