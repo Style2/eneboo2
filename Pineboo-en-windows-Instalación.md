@@ -29,6 +29,21 @@ Una vez de nuevo en Windows tendremos que ejecutar un Powershell y una vez dentr
 
 --
 
+B) ABRIMOS POWERSHELL
+
+* Qué es eso?: ( https://es.wikipedia.org/wiki/Windows_PowerShell )
+
+ "Windows PowerShell es una interfaz de consola (CLI) con posibilidad de escritura y unión de comandos por medio de instrucciones (scripts en inglés)."
+
+* Cómo se ejecuta? ( http://www.tenforums.com/tutorials/25581-windows-powershell-open-windows-10-a.html )
+
+1. Press the Win+R keys to open Run.
+
+2. Type powershell, and click/tap on OK in the search results at the top. (see screenshot below)
+
+
+
+--
 https://ubuntulife.wordpress.com/2016/05/09/ejecutar-la-shell-de-bash-en-windows-mediante-cmder/
 
 --
