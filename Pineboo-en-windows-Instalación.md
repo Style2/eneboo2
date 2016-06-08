@@ -5,6 +5,13 @@
 
 ----
 
+### PASO 0 - DESCARGAMOS PINEBOO Y FLSCRIPTPARSER:
+
+1. Llevamos con usb los repositorios de "pineboo" y "flscriptparser" al directorio raíz...mejor descargarlos desde Linux, porque si los bajas desde Windows los graba de forma "DISTINTA" y luego hay que "ADAPTARLO" con el "dos2unix"...
+
+1. Pineboo lanza el comando flscriptparser2, que debe existir en el PATH. Si habéis seguido las instrucciones de 
+
+--
 
 ### PASO 1 - INSTALAMOS PYTHON 3.5
 
