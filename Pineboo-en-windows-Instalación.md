@@ -67,6 +67,9 @@ A continuación si lo ejecutamos ya lo hará correctamente:
 
      sudo apt-get install python3-lxml (ESTO NO FUNCIONA EN WINDOWS...)
 
+https://www.webucator.com/blog/2015/03/how-to-install-lxml-for-python-3-on-64-bit-windows/
+
+
 ...pero ahora me pide psycopg2...
 
 ### PASO 10 - INSTALAR PYTHON3-PSYCOPG2 :
