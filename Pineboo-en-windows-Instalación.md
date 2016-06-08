@@ -65,7 +65,7 @@ A continuación si lo ejecutamos ya lo hará correctamente:
 
 ### PASO 9 - INSTALAR PYTHON 3 :
 
-     sudo apt-get install python3-lxml
+     sudo apt-get install python3-lxml (ESTO NO FUNCIONA EN WINDOWS...)
 
 ...pero ahora me pide psycopg2...
 
