@@ -1,42 +1,73 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 5 de junio de 2016
+* ULTIMA ACTUALIZACIÓN: 9 de junio de 2016
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Pineboo-en-windows-Instalaci%C3%B3n)
 
 ----
 
-### PASO 0 - DESCARGAMOS PINEBOO Y FLSCRIPTPARSER:
+## EN CONSTRUCCIÓN
 
-1. Llevamos con usb los repositorios de "pineboo" y "flscriptparser" al directorio raíz...mejor descargarlos desde Linux, porque si los bajas desde Windows los graba de forma "DISTINTA" y luego hay que "ADAPTARLO" con el "dos2unix"...
+### PASO 1 - DESCARGAMOS PINEBOO Y FLSCRIPTPARSER:
 
-1. Pineboo lanza el comando flscriptparser2, que debe existir en el PATH. Si habéis seguido las instrucciones de 
+1. Desde GITHUB, usando este manual:
+
+https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO
+
+1. Descargarlos de:
+
+https://github.com/deavid/pineboo
+
+https://github.com/deavid/flscriptparser
+
+1. Llevamos los repositorios de "pineboo" y "flscriptparser" al directorio raíz...
+
+1. Pineboo lanza el comando flscriptparser2, que debe existir en el PATH. (O NO...)
 
 --
 
-### PASO 1 - INSTALAMOS PYTHON 3.5
+### PASO 2 - INSTALAMOS PYTHON 3.x
 
 https://www.python.org/downloads/
 
-### PASO 2 - INSTALAMOS BASH
+
+Ir a **www.python.org**  y luego a "download"
+
+bajar la "Python 3.4.4 2015-12-21" (porque la librería "lxml" no veo que tenga la versión para Python 3.5 y Windows no para de avisarme sobre instalarlo....cocoricó!!!...me decido y me dice que no encuentra Python 3.4...toca instalarlo (ya borraré el 3.5...)...)
+
+https://www.python.org/downloads/windows/
+
+Python 3.4.4 - 2015-12-21 // Download Windows x86-64 MSI installer
+
+descargarla y ejecutarla: crea el directorio **c:\python27** y un acceso directo en el menú...
+
+* en Linux se hacía así:
+
+     sudo apt-get install python3-lxml (PERO ESTO NO FUNCIONA EN WINDOWS...)
+
+https://www.webucator.com/blog/2015/03/how-to-install-lxml-for-python-3-on-64-bit-windows/
+
+---
+
+### PASO 3 - INSTALAMOS BASH (ESTO ES ZONA GRIS)
 
 
 A) ESTE ES DEL 2006...
 
-http://atejada.blogspot.com.es/2006/10/emulador-de-bash-en-windows.html
+http://atejada.blogspot.com.es/2006/10/emulador-de-bash-en-windows.html (NO LO HE PROBADO)
+
+--
 
 B) A VER ESTOS:
 
---
-
 http://www.xataka.com/aplicaciones/asi-es-usar-la-consola-bash-de-ubuntu-en-windows-10
 
-(Abril 2016:) Hace una semana os hablábamos de cómo Microsoft había anunciado una de las grandes novedades de Windows 10: la posibilidad de hacer uso de una consola Linux de forma nativa en este sistema operativo gracias a la colaboración de Canonical, la empresa responsable del desarrollo de Ubuntu. 
+(Abril 2016:) "Hace una semana os hablábamos de cómo Microsoft había anunciado una de las grandes novedades de Windows 10: la posibilidad de hacer uso de una consola Linux de forma nativa en este sistema operativo gracias a la colaboración de Canonical, la empresa responsable del desarrollo de Ubuntu."
 
-Una vez de nuevo en Windows tendremos que ejecutar un Powershell y una vez dentro escribir 'bash' (sin comillas) y pulsar Enter. Al hacerlo se nos indicará que tenemos que aceptar los términos de licencia de la imagen Ubuntu proporcionada por Canonical, y si lo hacemos el sistema procederá a descargar e instalar esa imagen. Cuando termine el proceso podemos cerrar esa ventana y ya tendremos acceso a esa nueva y singular aplicación llamada "Bash on Ubuntu on Windows". 
+"Una vez de nuevo en Windows tendremos que ejecutar un Powershell y una vez dentro escribir 'bash' (sin comillas) y pulsar Enter. Al hacerlo se nos indicará que tenemos que aceptar los términos de licencia de la imagen Ubuntu proporcionada por Canonical, y si lo hacemos el sistema procederá a descargar e instalar esa imagen. Cuando termine el proceso podemos cerrar esa ventana y ya tendremos acceso a esa nueva y singular aplicación llamada "Bash on Ubuntu on Windows". "
 
 --
 
-B) ABRIMOS POWERSHELL
+C) ABRIMOS POWERSHELL
 
 * Qué es eso?: ( https://es.wikipedia.org/wiki/Windows_PowerShell )
 
@@ -55,31 +86,9 @@ https://ubuntulife.wordpress.com/2016/05/09/ejecutar-la-shell-de-bash-en-windows
 
 --
 
-Y ARRANCAMOS EL SERVIDOR:
 
-#####1. (PARA postgreSQL): 
-
-A continuación si lo ejecutamos ya lo hará correctamente:
 
 ...pero ahora me pide python3-lxml...
-
-####PASO 3 - INSTALAR PYTHON:
-
-Ir a **www.python.org**  y luego a "download"
-
-bajar la "Python 3.4.4 2015-12-21" (porque la librería "lxml" no veo que tenga la versión para Python 3.5 y Windows no para de avisarme sobre instalarlo....cocoricó!!!...)
-
-https://www.python.org/downloads/windows/
-
-Python 3.4.4 - 2015-12-21 // Download Windows x86-64 MSI installer
-
-descargarla y ejecutarla: crea el directorio **c:\python27** y un acceso directo en el menú...
-
-### PASO 9 - INSTALAR PYTHON 3 :
-
-     sudo apt-get install python3-lxml (ESTO NO FUNCIONA EN WINDOWS...)
-
-https://www.webucator.com/blog/2015/03/how-to-install-lxml-for-python-3-on-64-bit-windows/
 
 * PASO  - instalar "Python-lxml" para Windows
 
@@ -93,7 +102,11 @@ Elegir la versión correcta para tu versión de Windows. Yo instalo la de Window
 ...se instala **automáticamente** en el directorio c:\python34 instalado previamente...
 
 
+---
 
+HASTA AQUI.
+
+(A PARTIR DE AQUI ES ZONA ROJA: COPIO LOS PASOS DE LINUX)
 
 ---
 
@@ -166,4 +179,10 @@ ponemos:
 
 RESPUESTA:  "./" significa en este mismo directorio. Si no le pones el "./", busca en el path del sistema y si no lo encuentra da error.
 
+---
 
+Y ARRANCAMOS EL SERVIDOR:
+
+#####1. (PARA postgreSQL): 
+
+A continuación si lo ejecutamos ya lo hará correctamente: (TODAVÍA NO...)
