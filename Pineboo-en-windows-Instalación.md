@@ -32,7 +32,7 @@ https://www.python.org/downloads/
 
 Ir a **www.python.org**  y luego a "download"
 
-bajar la "Python 3.4.4 2015-12-21" (porque la librería "lxml" no veo que tenga la versión para Python 3.5 y Windows no para de avisarme sobre instalarlo....cocoricó!!!...me decido y me dice que no encuentra Python 3.4...toca instalarlo (ya borraré el 3.5...)...)
+bajar la "Python 3.4.4 2015-12-21" (porque la librería "lxml" no veo que tenga la versión para Python 3.5 y Windows no para de avisarme sobre instalarlo....cocoricó!!!...me decido y me dice que no encuentra Python 3.4...toca instalarlo (ya borraré el 3.5...desinstalado!...y ahora toca mirar el PATH para diferenciar el 2.7 del 3.4 en la misma máquina... C:\Python34\Doc\python344.chm: "3.4. Python Launcher for Windows")...)
 
 https://www.python.org/downloads/windows/
 
