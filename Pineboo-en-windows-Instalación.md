@@ -136,13 +136,17 @@ descargo, ejecuto, se instala sólo en c\Python34 y listo
 
 ---
 
-### PASO 11 - Instalar PYTHON3-PYQT4 :
+### PASO 6 - Instalar PYTHON3-PYQT4 :
 
 https://www.riverbankcomputing.com/software/pyqt/download
 
 donde bajo el "PyQt4-4.11.4-gpl-Py3.4-Qt4.8.7-x64.exe Windows 64-bit installer "
 
 lo ejecuto y reinicio el ordenador...
+
+---
+
+YA FUNCIONA, FALTA FUTURIZE & INSTALAR EL SERVIDOR POSTGRESQL...y una base de datos de prueba...
 
 
 
