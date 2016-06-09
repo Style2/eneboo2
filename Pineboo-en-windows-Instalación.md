@@ -32,7 +32,7 @@ https://www.python.org/downloads/
 
 Ir a **www.python.org**  y luego a "download"
 
-bajar la "Python 3.4.4 2015-12-21" (porque la librería "lxml" no veo que tenga la versión para Python 3.5 y Windows no para de avisarme sobre instalarlo....cocoricó!!!...me decido y me dice que no encuentra Python 3.4...toca instalarlo (ya borraré el 3.5...desinstalado!...y ahora toca mirar el PATH para diferenciar el 2.7 del 3.4 en la misma máquina... C:\Python34\Doc\python344.chm: "3.4. Python Launcher for Windows")...)
+* bajar la "Python 3.4.4 2015-12-21" (porque la librería "lxml" no veo que tenga la versión para Python 3.5 y Windows no para de avisarme sobre instalarlo....cocoricó!!!...me decido y me dice que no encuentra Python 3.4...toca instalarlo ...)
 
 https://www.python.org/downloads/windows/
 
@@ -40,9 +40,11 @@ Python 3.4.4 - 2015-12-21 // Download Windows x86-64 MSI installer
 
 descargarla y ejecutarla: crea el directorio **c:\python34** y un acceso directo en el menú...
 
-* en Linux se hacía así:
+* (ya borraré el 3.5...desinstalado!...y ahora toca mirar el PATH para diferenciar el 2.7 del 3.4 en la misma máquina... C:\Python34\Doc\python344.chm: "3.4. Python Launcher for Windows")
 
-     sudo apt-get install python3-lxml (PERO ESTO NO FUNCIONA EN WINDOWS...)
+* en Linux se hacía así: (PERO ESTO NO FUNCIONA EN WINDOWS...)
+
+     sudo apt-get install python3-lxml 
 
 https://www.webucator.com/blog/2015/03/how-to-install-lxml-for-python-3-on-64-bit-windows/
 
