@@ -120,17 +120,32 @@ Elegir la versión correcta para tu versión de Windows. Yo instalo la de Window
 
 ### PASO 5 - INSTALAR PYTHON3-PSYCOPG2 :
 
+http://initd.org/psycopg/docs/install.html
+
+"Jason Erickson maintains a packaged Windows port of Psycopg with installation executable. Download. Double click. Done."
+
+te lleva a: http://www.stickpeople.com/projects/python/win-psycopg/
+
+donde bajo el "psycopg2-2.6.1.win-amd64-py3.4-pg9.4.4-release.exe"
+
+descargo, ejecuto, se instala sólo en c\Python34 y listo
+
+...pero ahora me pide pyqt4...
 
 ---
+
+### PASO 11 - INSTALAR PYTHON3-PYQT4 :
+
+     sudo apt-get install python3-pyqt4
+
+
 
 HASTA AQUI.
 
 (A PARTIR DE AQUI ES ZONA ROJA: COPIO LOS PASOS DE LINUX)
 
 ---
-     sudo apt-get install python3-psycopg2
 
-...pero ahora me pide pyqt4...
 
 ### PASO 11 - INSTALAR PYTHON3-PYQT4 :
 
