@@ -79,6 +79,7 @@ C) ABRIMOS POWERSHELL
 
 2. Type powershell, and click/tap on OK in the search results at the top. (see screenshot below)
 
+* Vamos al directorio "pineboo" con "cd.." y ejecutamos "/. pineboo" sin comillas...
 
 
 --
