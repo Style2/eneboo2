@@ -50,7 +50,7 @@ https://www.webucator.com/blog/2015/03/how-to-install-lxml-for-python-3-on-64-bi
 
 ---
 
-### PASO 3 - INSTALAMOS BASH (ESTO ES ZONA GRIS...parece que también funciona con MS-DOS...saltar al "paso 4"...)
+### PASO 3 - Instalamos BASH (ESTO ES ZONA GRIS...parece que también funciona con MS-DOS...saltar al "paso 4"...)
 
 
 A) ESTE ES DEL 2006...
@@ -118,7 +118,9 @@ Elegir la versión correcta para tu versión de Windows. Yo instalo la de Window
 
 ---
 
-### PASO 5 - INSTALAR PYTHON3-PSYCOPG2 :
+### PASO 5 - Instalar PYTHON3-PSYCOPG2 :
+
+"Psycopg is a PostgreSQL adapter for the Python programming language."
 
 http://initd.org/psycopg/docs/install.html
 
@@ -134,9 +136,13 @@ descargo, ejecuto, se instala sólo en c\Python34 y listo
 
 ---
 
-### PASO 11 - INSTALAR PYTHON3-PYQT4 :
+### PASO 11 - Instalar PYTHON3-PYQT4 :
 
-     sudo apt-get install python3-pyqt4
+https://www.riverbankcomputing.com/software/pyqt/download
+
+donde bajo el "PyQt4-4.11.4-gpl-Py3.4-Qt4.8.7-x64.exe Windows 64-bit installer "
+
+lo ejecuto y reinicio el ordenador...
 
 
 
@@ -145,12 +151,6 @@ HASTA AQUI.
 (A PARTIR DE AQUI ES ZONA ROJA: COPIO LOS PASOS DE LINUX)
 
 ---
-
-
-### PASO 11 - INSTALAR PYTHON3-PYQT4 :
-
-     sudo apt-get install python3-pyqt4
-
 
 ### PASO 12 - INSTALAR PYTHON3-PLY :
 
