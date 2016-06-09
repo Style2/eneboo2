@@ -38,7 +38,7 @@ https://www.python.org/downloads/windows/
 
 Python 3.4.4 - 2015-12-21 // Download Windows x86-64 MSI installer
 
-descargarla y ejecutarla: crea el directorio **c:\python27** y un acceso directo en el menú...
+descargarla y ejecutarla: crea el directorio **c:\python34** y un acceso directo en el menú...
 
 * en Linux se hacía así:
 
