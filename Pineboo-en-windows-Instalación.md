@@ -50,7 +50,7 @@ https://www.webucator.com/blog/2015/03/how-to-install-lxml-for-python-3-on-64-bi
 
 ---
 
-### PASO 3 - INSTALAMOS BASH (ESTO ES ZONA GRIS)
+### PASO 3 - INSTALAMOS BASH (ESTO ES ZONA GRIS...parece que también funciona con MS-DOS...saltar al "paso 4"...)
 
 
 A) ESTE ES DEL 2006...
@@ -87,13 +87,13 @@ C) ABRIMOS POWERSHELL
 --
 https://ubuntulife.wordpress.com/2016/05/09/ejecutar-la-shell-de-bash-en-windows-mediante-cmder/
 
---
 
 
+---
 
 ...pero ahora me pide python3-lxml...
 
-* PASO  - instalar "Python-lxml" para Windows
+### PASO 4 - instalar "Python-lxml" para Windows
 
         https://pypi.python.org/pypi/lxml/3.5.0
 
@@ -104,6 +104,22 @@ Elegir la versión correcta para tu versión de Windows. Yo instalo la de Window
 
 ...se instala **automáticamente** en el directorio c:\python34 instalado previamente...
 
+--
+
+* Voy a MS_DOS (ejecutar como administrador)
+
+* Cambio con "cd" hasta llegar a "C\Ptyhon34" y ejecutar:
+
+     c:\Python34>python c:\eneboo-desarrollo\pineboo\pineboo.py
+
+* y responde:
+
+...pero ahora me pide psycopg2...
+
+---
+
+### PASO 5 - INSTALAR PYTHON3-PSYCOPG2 :
+
 
 ---
 
@@ -112,11 +128,6 @@ HASTA AQUI.
 (A PARTIR DE AQUI ES ZONA ROJA: COPIO LOS PASOS DE LINUX)
 
 ---
-
-...pero ahora me pide psycopg2...
-
-### PASO 10 - INSTALAR PYTHON3-PSYCOPG2 :
-
      sudo apt-get install python3-psycopg2
 
 ...pero ahora me pide pyqt4...
