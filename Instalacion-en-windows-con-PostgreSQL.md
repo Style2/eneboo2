@@ -96,8 +96,9 @@
 
 * Los más recomendados, porque están más actualizados:
 
-1. [Repos oficiales en Eneboo](https://github.com/eneboo/eneboo-modules/archive/master.zip).
-1. [Repos del git de KLO-MANOLO](https://github.com/klo-manolo/eneboo-modules/archive/master.zip).
+1. Clonar el github: https://github.com/eneboo/eneboo-modules  con este manual: https://github.com/Miguel-J/eneboo/wiki/GITHUB-COMO-INSTALARLO-Y-USARLO
+1. [Bajar en un zip los Repos oficiales del github de Eneboo](https://github.com/eneboo/eneboo-modules/archive/master.zip).
+1. [Bajar en un zip los Repos del github de KLO-MANOLO](https://github.com/klo-manolo/eneboo-modules/archive/master.zip).
 
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-01.jpg)
