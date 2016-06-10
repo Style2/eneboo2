@@ -1,25 +1,31 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 6 de junio de 2015
+* ULTIMA ACTUALIZACIÓN: 10 de junio de 2016
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Instalacion-en-windows-con-PostgreSQL)
 
 ----
-(EN CONSTRUCCIÓN)
 
-# INSTALACION DE ENEBOO EN WINDOWS CON POSTGRESQL
+###(EN CONSTRUCCIÓN)
+
+# INSTALACION DE ENEBOO EN WINDOWS CON PostgreSQL
 
 
-###PASO 1.-Descargar e instalar el SERVIDOR DE BASE DE DATOS WAMP (incluye APACHE, POSTGRESQL Y PHPAdminIII..) de:
+###PASO 1.-Descargar e instalar el SERVIDOR DE BASE DE DATOS (incluye POSTGRESQL Y PgAdminIII..) de:
 
-2. Descargar e instalar el gestor de bases de datos:
+* Descargar e instalar el gestor de bases de datos:
 
-     * 2.A **PostgreSQL**
+     * **PostgreSQL**
 
-     * AUTOMATICO:
+     * INSTALADOR AUTOMÁTICO:
           * **http://www.postgresql.org/download/**
+          * Selecciono el "Download the installer from EnterpriseDB for all supported versions. " que te lleva a:
+          * donde elijo "Installer version Version 9.5.3  [Readme file for customers interested in using PL/Perl, PL/Python or PL/Tcl]", según el sistema operativo:
           * para WINDOWS 64 bits (ordenadores nuevos con Windows 8.1): descargo la versión de WINDOWS 64 bits que contiene: 
           * para WINDOWS 32 bits (WINDOWS XP): descargo la versión de WINDOWS 32 bits que contiene: 
-   * 2.A **PostgreSQL** (recomendamos la versión 8.4) para windows del [área de descarga de PostgreSQL](http://www.enterprisedb.com/products-services-training/pgdownload). La instalación solicitará un usuario y una contraseña de administrador de la base de datos que conviene anotar, ya que serán necesarios más adelante.
+
+   * **PostgreSQL** (recomendamos la versión 8.4) para windows del [área de descarga de PostgreSQL](http://www.enterprisedb.com/products-services-training/pgdownload). 
+
+    * La instalación solicitará un usuario y una contraseña de administrador de la base de datos que conviene anotar, ya que serán necesarios más adelante. (por ejemplo: "postgres" y "postgres" sin comillas)
 
 ---
 ####PASO 2.- EJECUTAR PgAdminIII ....
@@ -37,15 +43,16 @@
 ####PASO 4.-DESCARGAR EL PROGRAMA ENEBOO:
 
 * Bajarlo de:
-     * A) en http://eneboo.org/pub/contrib/ (ultimas versiones-releases...ojo: LAS BETA, NO)
-     * B) en www.eneboo.org (el que incluye PostgreSQL, MySQL u otro). Ir a “descargas”......”versiones estables”.....abajo....Hay dos opciones:
-          * B.1)...en el PRIMER ORDENADOR DE LA RED o “servidor”.....elegir la **version “DBA”**.
-                 * sirve para instalar módulos personalizados y otras tareas de "Administrador" 
-          * B.2)...en los SIGUIENTES “ordenadores-clientes”.....elegir la **versión “QUICK”**.
-                 * sirve para ordenadores donde NO QUIERES que estropeen/instalen NADA y evita problemas.
+     * en http://eneboo.org/pub/contrib/ (ultimas versiones-releases, por ejemplo: "2.4.5.1-rc8")
+     * Hay dos opciones:
 
-1. Descargar y descomprimir el motor de Eneboo para Linux en el apartado [Versiones Estables](http://www.eneboo.org/site/stable). Buscaremos el _Build dbAdmin Windows_ de 32 o 64 bits.
-     * Hacer click en el link y (para Mozilla: darle a la flecha azul de arriba-derecha) luego "mostrar en carpeta" (dibujo de la derecha). Buscar el archivo y con botón derecho: "extraer aqui"
+          * DBA)...en el PRIMER ORDENADOR DE LA RED o “servidor”.....elegir la **version “DBA”**.
+                 * sirve para instalar módulos personalizados y otras tareas de "Administrador" 
+                 * (http://www.eneboo.org/site/stable). Buscaremos el _Build dbAdmin Windows_ de 32 o 64 bits.
+                 * Hacer click en el link y (para Mozilla: darle a la flecha azul de arriba-derecha) luego "mostrar en carpeta" (dibujo de la derecha). Buscar el archivo y con botón derecho: "extraer aqui"
+
+          * QUICK)...en los SIGUIENTES “ordenadores-clientes”.....elegir la **versión “QUICK”**.
+                 * sirve para ordenadores donde NO QUIERES que estropeen/instalen NADA, no aparece el "Área de sistema" y evitas problemas...
 
 
 ---
@@ -62,7 +69,7 @@
 1. Rellenar los campos con los siguientes valores:
     * Base de datos: (nombre empresa)
     * Usuario: postgres (o el que hemos puesto como administrador de la base de datos PostgreSQL-ver phpMyAdminIII).
-    * Contraseña: (la del administrador de la base de datos PostgreSQL-ver phpMyAdminIII).
+    * Contraseña: (la del administrador de la base de datos PostgreSQL-ver pgAdminIII).
 1. Pulsar el botón de la flecha hacia la derecha _Más opciones_.
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-02.jpg)        
