@@ -28,19 +28,7 @@
     * La instalación solicitará un usuario y una contraseña de administrador de la base de datos que conviene anotar, ya que serán necesarios más adelante. (por ejemplo: "postgres" y "postgres" sin comillas)
 
 ---
-####PASO 2.- EJECUTAR PgAdminIII ....
-* (ESTE PASO NO ES NECESARIO)
-
----
-####PASO 3.- CREAR UNA BASE DE DATOS EN PgAdminIII
-* (ESTE PASO NO ES NECESARIO)
-* no es imprescindible este paso porque Eneboo lo crea la primera vez que se conecta a la base de datos....
-* (ESTO PARA PRIMERA INSTALACION, SI ES RE-INSTALAR HAY QUE SALTARSE ESTE PASO & INSTALAR EL DUMP-COPIA DE SEGURIDAD)
-* ...lo hace en: 
-* ….cotejamiento por defecto: 
-
----
-####PASO 4.-DESCARGAR EL PROGRAMA ENEBOO:
+####PASO 2.-DESCARGAR EL PROGRAMA ENEBOO:
 
 * Bajarlo de:
      * en http://eneboo.org/pub/contrib/ (ultimas versiones-releases, por ejemplo: "2.4.5.1-rc8")
@@ -58,10 +46,24 @@
 
 
 ---
+####PASO 3.- EJECUTAR PgAdminIII ....
+
+* (ESTE PASO ES NECESARIO PARA QUE FUNCIONE EL SERVIDOR)
+* Ir a "servers" y con el botón de la derecha darle a la versión instalada y a la opción "Connect"...
+
+---
+####PASO 4.- CREAR UNA BASE DE DATOS EN PgAdminIII
+* (ESTE PASO NO ES NECESARIO, porque la crea el mismo programa Eneboo al conectar)
+* no es imprescindible este paso porque Eneboo lo crea la primera vez que se conecta a la base de datos....
+* (ESTO PARA PRIMERA INSTALACION, SI ES RE-INSTALAR HAY QUE SALTARSE ESTE PASO & INSTALAR EL DUMP-COPIA DE SEGURIDAD)
+* ...lo hace en: 
+* ….cotejamiento por defecto: 
+
+---
 ####PASO 5.-ARRANCAR EL PROGRAMA ENEBOO:
 
 * ejecutar el archivo **eneboo.exe** del subdirectorio **bin**. Por ejemplo:("C:\eneboo-2.4.0.2-dba-win32\bin\eneboo.exe")
-* **OJO: ANTES EL SERVIDOR PostgreSQL TIENE QUE ESTAR FUNCIONANDO**.
+* **OJO: ANTES EL SERVIDOR PostgreSQL TIENE QUE ESTAR FUNCIONANDO** (ver el Paso 3).
      * ejecutar el archivo ("C:\eneboo-2.4.0.2-dba-win32\bin\eneboo.exe")
      * Arrancar el programa (eneboo) desde el explorador de archivos en la carpeta donde se ha descargado el programa.       
      * Aparecerá la pantalla _Conectar_.
