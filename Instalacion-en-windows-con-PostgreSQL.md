@@ -47,11 +47,13 @@
      * Hay dos opciones:
 
           * DBA)...en el PRIMER ORDENADOR DE LA RED o “servidor”.....elegir la **version “DBA”**.
+
                  * sirve para instalar módulos personalizados y otras tareas de "Administrador" 
                  * (http://www.eneboo.org/site/stable). Buscaremos el _Build dbAdmin Windows_ de 32 o 64 bits.
                  * Hacer click en el link y (para Mozilla: darle a la flecha azul de arriba-derecha) luego "mostrar en carpeta" (dibujo de la derecha). Buscar el archivo y con botón derecho: "extraer aqui"
 
           * QUICK)...en los SIGUIENTES “ordenadores-clientes”.....elegir la **versión “QUICK”**.
+
                  * sirve para ordenadores donde NO QUIERES que estropeen/instalen NADA, no aparece el "Área de sistema" y evitas problemas...
 
 
