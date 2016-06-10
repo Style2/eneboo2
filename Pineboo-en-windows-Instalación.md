@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 9 de junio de 2016
+* ULTIMA ACTUALIZACIÓN: 10 de junio de 2016
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Pineboo-en-windows-Instalaci%C3%B3n)
 
 ----
@@ -42,11 +42,17 @@ descargarla y ejecutarla: crea el directorio **c:\python34** y un acceso directo
 
 * (ya borraré el 3.5...desinstalado!...y ahora toca mirar el PATH para diferenciar el 2.7 del 3.4 en la misma máquina... C:\Python34\Doc\python344.chm: "3.4. Python Launcher for Windows")
 
-* en Linux se hacía así: (PERO ESTO NO FUNCIONA EN WINDOWS...)
+--
 
-     sudo apt-get install python3-lxml 
+* **EJECUTAR PINEBOO**:
 
-https://www.webucator.com/blog/2015/03/how-to-install-lxml-for-python-3-on-64-bit-windows/
+* Voy a MS_DOS (Inicio-Programas-Sistema de Windows-Símbolo de sistema y botón derecho "ejecutar como administrador")
+
+* Cambio con "cd" hasta llegar a "C\Python34" y ejecutar:
+
+     c:\Python34>python c:\eneboo-desarrollo\pineboo\pineboo.py
+
+
 
 ---
 
@@ -101,18 +107,11 @@ Elegir la versión correcta para tu versión de Windows. Yo instalo la de Window
 
          lxml-3.5.0.win-amd64-py3.4.exe (md5)   MS Windows installer  3.4  2016-06-08 3MB
  
-
 ...se instala **automáticamente** en el directorio c:\python34 instalado previamente...
 
 --
 
-* Voy a MS_DOS (ejecutar como administrador)
-
-* Cambio con "cd" hasta llegar a "C\Ptyhon34" y ejecutar:
-
-     c:\Python34>python c:\eneboo-desarrollo\pineboo\pineboo.py
-
-* y responde:
+* probamos pineboo y responde:
 
 ...pero ahora me pide psycopg2...
 
@@ -132,6 +131,10 @@ donde bajo el "psycopg2-2.6.1.win-amd64-py3.4-pg9.4.4-release.exe"
 
 descargo, ejecuto, se instala sólo en c\Python34 y listo
 
+--
+
+* probamos pineboo y responde:
+
 ...pero ahora me pide pyqt4...
 
 ---
@@ -144,10 +147,25 @@ donde bajo el "PyQt4-4.11.4-gpl-Py3.4-Qt4.8.7-x64.exe Windows 64-bit installer "
 
 lo ejecuto y reinicio el ordenador...
 
+--
+
+* probamos pineboo y responde: ABRE EL FORMULARIO DE CONEXIÓN !!
+
 ---
 
 YA FUNCIONA, FALTA FUTURIZE & INSTALAR EL SERVIDOR POSTGRESQL...y una base de datos de prueba...
 
+### PASO 7 - INSTALAR SERVIDOR PostgreSQL :
+
+### PASO 8 - DAR DE ALTA NUEVO USUARIO Y BASE DE DATOS EN SERVIDOR PostgreSQL :
+
+### PASO 9 - (OPCIONAL) ARRANCAR ENEBOO Y CARGAR PAQUETE/DIRECTORIO DE MÓDULOS para PostgreSQL :
+
+### PASO 10 - EDITAR EL ARCHIVO \pineboo\projects\eneboo-base.xml
+
+### PASO 11 - AÑADIR DATOS CONEXIÓN AL FORMULARIO DE ENTRADA
+
+Los mismos de EDITAR EL ARCHIVO \pineboo\projects\eneboo-base.xml
 
 
 HASTA AQUI.
