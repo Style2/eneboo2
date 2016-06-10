@@ -94,36 +94,44 @@
 ---
 ####PASO 6.-DESCARGAR LOS “MÓDULOS” de eneboo...
 
+* Los más recomendados, porque están más actualizados:
+
+1. [Repos oficiales en Eneboo](https://github.com/eneboo/eneboo-modules/archive/master.zip).
+1. [Repos del git de KLO-MANOLO](https://github.com/klo-manolo/eneboo-modules/archive/master.zip).
+
+
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-01.jpg)
-* Se pueden descargar de varios sitios o "repositorios", hay unos que llevan más "extensiones" añadidas a la "mezcla básica" que otros...:
+
+* OTROS: Se pueden descargar de varios sitios o "repositorios", hay unos que llevan más "extensiones" añadidas a la "mezcla básica" que otros...:
 
 * http://www.eneboo.org/site/node/16
-1. Descargar el [paquete de Eneboo Standard](http://www.eneboo.com/pub/contrib/standard-modules/standard.eneboopkg).
-1. “Si desea descargar la última versión de nuestros módulos oficiales en ZIP, haga clic en el siguiente enlace: https://github.com/gestiweb/eneboo-modules/zipball/master “ (8 megas)
-1.  “todos los módulos de gestiweb” descargar en zip  (ESTE ES MEJOR, DESCOMPRIME TODOS LOS MODULOS EN UNA CARPETA Y LUEGO SE INSTALAN DESDE EL PROGRAMA ENEBOO):
-1. Otro lugar de descarga: [Repos del git de KLO-MANOLO](https://github.com/klo-manolo/eneboo-modules/archive/master.zip).
+
+1. Descargar el [paquete de Eneboo Standard](http://www.eneboo.com/pub/contrib/standard-modules/standard.eneboopkg). (ESTE MEJOR NO, PORQUE ESTÁ DES-ACTUALIZADO).
+1. “Si desea descargar la última versión de nuestros módulos oficiales en ZIP, haga clic en el siguiente enlace: https://github.com/gestiweb/eneboo-modules/zipball/master “ (8 megas) (ESTE MEJOR NO, PORQUE ESTÁ DES-ACTUALIZADO)
+1.  “todos los módulos de gestiweb” descargar en zip  (ESTE MEJOR NO, PORQUE ESTÁ DES-ACTUALIZADO, DESCOMPRIME TODOS LOS MODULOS EN UNA CARPETA Y LUEGO SE INSTALAN DESDE EL PROGRAMA ENEBOO):
 
 ---
 ####PASO 7.-INSTALAR LOS MÓDULOS DE ENEBOO:
 
 * (hay 3 opciones):
 
-* OPCIÓN A) todos de golpe en "PAQUETE": (ESTO DA MUCHOS ERRORES, MEJOR INSTALAR LOS MODULOS UNO A UNO): 
+* OPCIÓN A) todos de golpe en "CARPETA DE MÓDULOS" (LA OPCIÓN MÁS RÁPIDA)
+
+     * Ir a: Menú - Sistema - Cargar directorio de módulos y elegir lo descargado del GITHUB ENEBOO o KLO-MANOLO.
+
+     * “modulos estandar de eneboo” descargar en zip: eneboo_standard.zip (3 megas)o (ESTE NO ES BUENO, DESCOMPRIME SOLO LOS MODULOS DEL AREA DE CONTABILIDAD Y FACTURACION  EN UNA CARPETA Y LUEGO SE INSTALAN DESDE EL PROGRAMA ENEBOO):
+
+
+* OPCIÓN B) De uno en uno o "MÓDULO A MÓDULO":
+
+     * hay que ir a la carpeta dende están y 
+      * “todos los módulos de gestiweb” descargar en zip  (ESTE ESTÁ DES-ASCTUALIZADO, MEJOR NO USAR, DESCOMPRIME TODOS LOS MODULOS EN UNA CARPETA Y LUEGO SE INSTALAN UNO A UNO DESDE EL PROGRAMA ENEBOO):
+
+* OPCIÓN C) todos de golpe en "PAQUETE": (ESTO DA MUCHOS ERRORES, MEJOR INSTALAR LOS MODULOS UNO A UNO o por CARPETAS-DIRECTORIO): 
 
       * “modulos estandar en paquete eneboo” o: **standard.eneboopkg**
       1. En el área de _Módulos_ de la parte izquierda, abrir la opción _Sistema -> Administración -> Cargar Paquete de módulos_.
       1. Localizar el archivo standard.eneboopkg y pulsar _Abrir_. Cuando finalice la carga, Eneboo Standard estará listo para empezar a trabajar.
-
-* OPCIÓN B) todos de golpe en "CARPETA DE MÓDULOS"
-
-     * “modulos estandar de eneboo” descargar en zip: eneboo_standard.zip (3 megas)o (ESTE ES BUENO, DESCOMPRIME SOLO LOS MODULOS DEL AREA DE CONTABILIDAD Y FACTURACION  EN UNA CARPETA Y LUEGO SE INSTALAN DESDE EL PROGRAMA ENEBOO):
-
-
-* OPCIÓN C) De uno en uno o "MÓDULO A MÓDULO":
-
-     * hay que ir a la carpeta dende están y 
-      * “todos los módulos de gestiweb” descargar en zip  (ESTE ES MEJOR, DESCOMPRIME TODOS LOS MODULOS EN UNA CARPETA Y LUEGO SE INSTALAN UNO A UNO DESDE EL PROGRAMA ENEBOO):
-      * “Si desea descargar la última versión de nuestros módulos oficiales en ZIP, haga clic en el siguiente enlace: https://github.com/gestiweb/eneboo-modules/zipball/master “ (8 megas)
 
 
 ![Pantalla de conexión](https://github.com/Miguel-J/eneboo/blob/master/imagen/ENEBOO-manual-instalacion-imagenes/ENEBOO-manual-instalacion-imagenes-05.jpg)
