@@ -40,7 +40,7 @@ Python 3.4.4 - 2015-12-21 // Download Windows x86-64 MSI installer
 
 descargarla y ejecutarla: crea el directorio **c:\python34** y un acceso directo en el menú...
 
-* (ya borraré el 3.5...desinstalado!...y ahora toca mirar el PATH para diferenciar el 2.7 del 3.4 en la misma máquina... C:\Python34\Doc\python344.chm: "3.4. Python Launcher for Windows")
+* (ya borraré el 3.5...desinstalado!...y ahora toca mirar el PATH para diferenciar el 2.7 del 3.4 en la misma máquina... C:\Python34\Doc\python344.chm: "3.4. Python Launcher for Windows") **PENDIENTE**
 
 --
 
@@ -167,10 +167,13 @@ YA FUNCIONA, FALTA FUTURIZE & INSTALAR EL SERVIDOR POSTGRESQL...y una base de da
 
 Los mismos de EDITAR EL ARCHIVO \pineboo\projects\eneboo-base.xml
 
+---
 
-HASTA AQUI.
+**HASTA AQUI.**
 
-(A PARTIR DE AQUI ES ZONA ROJA: COPIO LOS PASOS DE LINUX)
+---
+
+(**A PARTIR DE AQUI ES ZONA ROJA: COPIO LOS PASOS DE LINUX**)
 
 ---
 
