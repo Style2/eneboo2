@@ -202,6 +202,9 @@ Lo descargo y ejecuto "setup" desde el directorio de"ply-3.8":
 
 C:\ENEBOO-DESARROLLOS\pineboo\ply-3.8\setup.py install
 
+--
+
+...el problema es que se instala en \python27 y no en \python34 ...?¿?¿
 
 ...No lo pide pero me lo dicen en eneboo-groups....
 
