@@ -5,6 +5,9 @@
 
 ----
 
+YA FUNCIONA, FALTA FUTURIZE Y PLY .....PERO DA MUCHOS ERRORES...SERÁ POR ESO?
+
+---
 
 ### PASO 1 - DESCARGAMOS PINEBOO Y FLSCRIPTPARSER:
 
@@ -176,7 +179,7 @@ https://github.com/Miguel-J/eneboo/wiki/Instalacion-en-windows-con-PostgreSQL
 
 ---
 
-YA FUNCIONA, FALTA FUTURIZE .....PERO DA MUCHOS ERRORES...SERÁ POR ESO?
+YA FUNCIONA, FALTA FUTURIZE Y PLY .....PERO DA MUCHOS ERRORES...SERÁ POR ESO?
 
 
 ### PASO 11 - AÑADIR DATOS CONEXIÓN AL FORMULARIO DE ENTRADA
@@ -186,7 +189,7 @@ Los mismos de EDITAR EL ARCHIVO \pineboo\projects\eneboo-base.xml
 ---
 
 
-### PASO 12 - INSTALAR PYTHON3-PLY : (esto no lo he hecho)
+### PASO 12 - INSTALAR PYTHON3-PLY : (esto no lo he hecho bien?)
 
 * Concepto:
 
@@ -220,6 +223,8 @@ C:\ENEBOO-DESARROLLOS\pineboo\ply-3.8\setup.py install (NO FUNCIONA: LO INSTALA 
 
 ### PASO 13 - INSTALAR PYTHON3-FUTURE : (esto no lo he hecho)
 
+* Concepto:
+
 https://github.com/deavid/pineboo/blob/master/README.python3.rst
 
 * "[Pineboo-Deavid] Adicionalmente, hacemos uso de un paquete llamado "future", que es el que me ha ayudado a hacer la transformación con una herramienta llamada futurize."
@@ -228,6 +233,7 @@ https://github.com/deavid/pineboo/blob/master/README.python3.rst
 
 * "Esto hace que algunos ficheros requieran de esta librería con Python3, pero creo que es una dependencia que se puede eliminar en el futuro (cuando casi nadie use python2). De todos modos para Python3 creo que no hace casi nada." ...PARECE QUE LOS MÓDULOS NO SE CARGAN BIEN...SERÁ POR ESTO?...LO INSTALO:
 
+--
 
 * ...????...qué paquete es? este?:
 
@@ -237,7 +243,9 @@ o este?:
 
 https://pypi.python.org/pypi/futures
 
-....ni idea...
+....ni idea...Pineboo recomienda ir a: http://python-future.org/
+
+"What’s new in version 0.15.2 (2015-09-11)"
 
 
 ---
