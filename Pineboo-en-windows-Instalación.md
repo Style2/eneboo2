@@ -153,15 +153,30 @@ lo ejecuto y reinicio el ordenador...
 
 ---
 
-YA FUNCIONA, FALTA FUTURIZE & INSTALAR EL SERVIDOR POSTGRESQL...y una base de datos de prueba...
-
 ### PASO 7 - INSTALAR SERVIDOR PostgreSQL :
+
+https://github.com/Miguel-J/eneboo/wiki/Instalacion-en-windows-con-PostgreSQL
+
+---
 
 ### PASO 8 - DAR DE ALTA NUEVO USUARIO Y BASE DE DATOS EN SERVIDOR PostgreSQL :
 
+https://github.com/Miguel-J/eneboo/wiki/Instalacion-en-windows-con-PostgreSQL
+
+---
+
 ### PASO 9 - (OPCIONAL) ARRANCAR ENEBOO Y CARGAR PAQUETE/DIRECTORIO DE MÓDULOS para PostgreSQL :
 
+https://github.com/Miguel-J/eneboo/wiki/Instalacion-en-windows-con-PostgreSQL
+
+---
+
 ### PASO 10 - EDITAR EL ARCHIVO \pineboo\projects\eneboo-base.xml
+
+---
+
+YA FUNCIONA, FALTA FUTURIZE & INSTALAR EL SERVIDOR POSTGRESQL...y una base de datos de prueba...
+
 
 ### PASO 11 - AÑADIR DATOS CONEXIÓN AL FORMULARIO DE ENTRADA
 
