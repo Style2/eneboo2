@@ -157,6 +157,8 @@ lo ejecuto y reinicio el ordenador...
 
 https://github.com/Miguel-J/eneboo/wiki/Instalacion-en-windows-con-PostgreSQL
 
+* NOTA: CUIDADO, resulta que Pineboo se conecta al 127.0.0.1 y PostgreSQL se configura para "oír" sólo "localhost"...por lo que hay que arreglarlo editando el archivo "postgresql.conf" y/o los datos de conexión del servidor en PgAdminIII...
+
 ---
 
 ### PASO 8 - DAR DE ALTA NUEVO USUARIO Y BASE DE DATOS EN SERVIDOR PostgreSQL :
