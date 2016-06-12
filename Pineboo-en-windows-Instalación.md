@@ -188,27 +188,35 @@ Los mismos de EDITAR EL ARCHIVO \pineboo\projects\eneboo-base.xml
 
 ### PASO 12 - INSTALAR PYTHON3-PLY : (esto no lo he hecho)
 
+* Concepto:
+
 http://www.dabeaz.com/ply/
 
 "Welcome to the PLY homepage. PLY is an implementation of lex and yacc parsing tools for Python. If you don't have the slightest idea what that means, you're probably in the wrong place. Otherwise, keep reading."
 
+* Problemas conocidos:
+
 http://www.gossamer-threads.com/lists/python/python/906263
 
- "Python setup.py install"......"Change "python" to the full path of your pythonw.exe executable."
+ "Python setup.py install"......"Change "python" to the full path of your pythonw.exe executable." (CHORRADAS)
 
 --
 
 Lo descargo y ejecuto "setup" desde el directorio de"ply-3.8":
 
-C:\ENEBOO-DESARROLLOS\pineboo\ply-3.8\setup.py install
+C:\ENEBOO-DESARROLLOS\pineboo\ply-3.8\setup.py install (NO FUNCIONA: LO INSTALA EN PYTHON27...)
 
 --
 
 ...el problema es que se instala en \python27 y no en \python34 ...?¿?¿
 
-...No lo pide pero me lo dicen en eneboo-groups....
+"PLY consists of two separate modules; lex.py and yacc.py, both of which are found in a Python package called ply. The lex.py module is used to break input text into a collection of tokens specified by a collection of regular expression rules. yacc.py is used to recognize language syntax that has been specified in the form of a context free grammar. "
 
-     sudo apt-get install python3-ply
+--
+
+...entonces, qué tal si copio los dos (lex.py and yacc.py) en \python34?
+
+--
 
 ### PASO 13 - INSTALAR PYTHON3-FUTURE : (esto no lo he hecho)
 
