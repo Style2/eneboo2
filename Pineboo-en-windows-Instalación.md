@@ -50,7 +50,7 @@ descargarla y ejecutarla: crea el directorio **c:\python34** y un acceso directo
 
 * Cambio con "cd" hasta llegar a "C\Python34" y ejecutar:
 
-     c:\Python34>python c:\eneboo-desarrollo\pineboo\pineboo.py
+     c:\Python34>python c:\eneboo-desarrollos\pineboo\pineboo.py
 
 
 
