@@ -247,6 +247,11 @@ https://pypi.python.org/pypi/futures
 
 "What’s new in version 0.15.2 (2015-09-11)"
 
+--
+
+* código origen: Github:
+
+https://github.com/PythonCharmers/python-future
 
 ---
 
