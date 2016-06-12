@@ -5,7 +5,10 @@
 
 ----
 
-YA FUNCIONA, FALTA FUTURIZE Y PLY .....PERO DA MUCHOS ERRORES...SERÁ POR ESO?
+### RESUMEN:
+
+YA FUNCIONA desde Python34, FALTA FUTURE Y PLY .....PERO DA MUCHOS ERRORES...SERÁ POR ESO?...uhm...resulta que esos dos se "auto-instalan" en Python27 y no consigo hacerlo en Python34....peeero, una vez instalados ya me deja arrancar Pineboo desde Python27...pero me pide las otras librerías...?¿?
+ 
 
 ---
 
