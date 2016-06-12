@@ -7,7 +7,7 @@
 
 ### RESUMEN:
 
-YA FUNCIONA desde Python34, FALTA FUTURE Y PLY .....PERO DA MUCHOS ERRORES...SERÁ POR ESO?...uhm...resulta que esos dos se "auto-instalan" en Python27 y no consigo hacerlo en Python34....peeero, una vez instalados ya me deja arrancar Pineboo desde Python27...pero me pide las otras librerías...?¿?
+YA FUNCIONA desde Python34, FALTA FUTURE Y PLY .....PERO DA MUCHOS ERRORES...SERÁ POR ESO?...uhm...resulta que esos dos se "auto-instalan" en Python27 y no consigo hacerlo en Python34....peeero, una vez instalados ya me deja arrancar Pineboo desde Python27...pero me pide las otras librerías...?¿?...las instalo y dejo las dos opciones en el manual porque algún día sacarán ply y future para python34...
  
 
 ---
@@ -155,7 +155,9 @@ descargo, ejecuto, se instala sólo en c\Python27 y listo
 
 https://www.riverbankcomputing.com/software/pyqt/download
 
-donde bajo el "PyQt4-4.11.4-gpl-Py3.4-Qt4.8.7-x64.exe Windows 64-bit installer "
+* PARA **PYTHON 3.4**: donde bajo el "PyQt4-4.11.4-gpl-Py3.4-Qt4.8.7-x64.exe Windows 64-bit installer "
+
+* PARA **PYTHON 2.7**: donde bajo el "PyQt4-4.11.4-gpl-Py2.7-Qt4.8.7-x64.exe"
 
 lo ejecuto y reinicio el ordenador...
 
