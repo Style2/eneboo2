@@ -132,9 +132,16 @@ http://initd.org/psycopg/docs/install.html
 
 te lleva a: http://www.stickpeople.com/projects/python/win-psycopg/
 
-donde bajo el "psycopg2-2.6.1.win-amd64-py3.4-pg9.4.4-release.exe"
+--
+
+* PARA **PYTHON 3.4**: donde bajo el "psycopg2-2.6.1.win-amd64-py3.4-pg9.4.4-release.exe"
 
 descargo, ejecuto, se instala sólo en c\Python34 y listo
+
+* PARA **PYTHON 2.7**: donde bajo el "psycopg2-2.6.1.win-amd64-py2.7-pg9.4.4-release.exe"
+
+descargo, ejecuto, se instala sólo en c\Python27 y listo
+
 
 --
 
