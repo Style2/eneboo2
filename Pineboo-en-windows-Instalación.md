@@ -196,6 +196,12 @@ http://www.gossamer-threads.com/lists/python/python/906263
 
  "Python setup.py install"......"Change "python" to the full path of your pythonw.exe executable."
 
+--
+
+Lo descargo y ejecuto "setup" desde el directorio de"ply-3.8":
+
+C:\ENEBOO-DESARROLLOS\pineboo\ply-3.8\setup.py install
+
 
 ...No lo pide pero me lo dicen en eneboo-groups....
 
