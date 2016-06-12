@@ -1,11 +1,10 @@
 * CREADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 10 de junio de 2016
+* ULTIMA ACTUALIZACIÓN: 12 de junio de 2016
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/Pineboo-en-windows-Instalaci%C3%B3n)
 
 ----
 
-## EN CONSTRUCCIÓN
 
 ### PASO 1 - DESCARGAMOS PINEBOO Y FLSCRIPTPARSER:
 
@@ -157,7 +156,7 @@ lo ejecuto y reinicio el ordenador...
 
 https://github.com/Miguel-J/eneboo/wiki/Instalacion-en-windows-con-PostgreSQL
 
-* NOTA: CUIDADO, resulta que Pineboo se conecta al 127.0.0.1 y PostgreSQL se configura para "oír" sólo "localhost"...por lo que hay que arreglarlo editando el archivo "postgresql.conf" (C:\Program Files\PostgreSQL\9.5\data) y/o los datos de conexión del servidor en PgAdminIII...
+* NOTA: CUIDADO, resulta que Pineboo se conecta al 127.0.0.1 y PostgreSQL se configura para "oír" sólo "localhost"...por lo que hay que arreglarlo editando el archivo "postgresql.conf" (C:\Program Files\PostgreSQL\9.5\data) y/o los datos de conexión del servidor en PgAdminIII...???...pues pone "*"...???....pruebo a reiniciar todo sin cambiar nada, a ver....ok, ya funciona...
 
 ---
 
@@ -177,7 +176,7 @@ https://github.com/Miguel-J/eneboo/wiki/Instalacion-en-windows-con-PostgreSQL
 
 ---
 
-YA FUNCIONA, FALTA FUTURIZE & INSTALAR EL SERVIDOR POSTGRESQL...y una base de datos de prueba...
+YA FUNCIONA, FALTA FUTURIZE .....PERO DA MUCHOS ERRORES...SERÁ POR ESO?
 
 
 ### PASO 11 - AÑADIR DATOS CONEXIÓN AL FORMULARIO DE ENTRADA
@@ -186,21 +185,14 @@ Los mismos de EDITAR EL ARCHIVO \pineboo\projects\eneboo-base.xml
 
 ---
 
-**HASTA AQUI.**
 
----
-
-(**A PARTIR DE AQUI ES ZONA ROJA: COPIO LOS PASOS DE LINUX**)
-
----
-
-### PASO 12 - INSTALAR PYTHON3-PLY :
+### PASO 12 - INSTALAR PYTHON3-PLY : (esto no lo he hecho)
 
 ...No lo pide pero me lo dicen en eneboo-groups....
 
      sudo apt-get install python3-ply
 
-### PASO 13 - INSTALAR PYTHON3-FUTURE :
+### PASO 13 - INSTALAR PYTHON3-FUTURE : (esto no lo he hecho)
 
 https://github.com/deavid/pineboo/blob/master/README.python3.rst
 
@@ -224,19 +216,20 @@ Esta dependencia, al menos en ubuntu 14.04 necesita de "pip" para instalarse. No
 
 ...AHORA SI.
 
-### PASO 14 - ERROR DE CONEXIÓN:
-
-En el caso de que siga el mensaje de:
-
-     "pineboo.py: cannot connect to X server".....???? 
-
-http://stackoverflow.com/questions/646930/cannot-connect-to-x-server-0-0-with-a-qt-application
-
-ponemos:
-
-     export DISPLAY=0:0.0
+---
 
 ### PASO 15 - ARRANCAR PINEBOO:
+
+* Voy a MS_DOS (Inicio-Programas-Sistema de Windows-Símbolo de sistema y botón derecho "ejecutar como administrador")
+
+* Cambio con "cd" hasta llegar a "C\Python34" y ejecutar:
+
+     c:\Python34>python c:\eneboo-desarrollos\pineboo\pineboo.py
+
+
+--
+
+* ESTO ERA EN LINUX:
 
 1. A la hora de enecutar pineboo, puedes hacerlo de varias maneras:
 
@@ -252,8 +245,3 @@ RESPUESTA:  "./" significa en este mismo directorio. Si no le pones el "./", bus
 
 ---
 
-Y ARRANCAMOS EL SERVIDOR:
-
-#####1. (PARA postgreSQL): 
-
-A continuación si lo ejecutamos ya lo hará correctamente: (TODAVÍA NO...)
