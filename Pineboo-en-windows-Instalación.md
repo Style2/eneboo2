@@ -239,17 +239,19 @@ https://github.com/deavid/pineboo/blob/master/README.python3.rst
 
 https://pypi.python.org/pypi/future/0.15.2
 
-o este?:
-
-https://pypi.python.org/pypi/futures
-
 ....ni idea...Pineboo recomienda ir a: http://python-future.org/
 
 "What’s new in version 0.15.2 (2015-09-11)"
 
+...ok, pues lo descargo, lo descomprimo y voy a ese directorio para instalarlo:
+
+     python setup.py install
+
+...el problema es que me lo vuelve a instalar en c:\python27 y no en c:\python34 ....
+
 --
 
-* código origen: Github:
+* código origen Future: Github:
 
 https://github.com/PythonCharmers/python-future
 
