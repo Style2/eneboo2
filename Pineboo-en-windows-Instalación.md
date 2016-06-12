@@ -188,6 +188,10 @@ Los mismos de EDITAR EL ARCHIVO \pineboo\projects\eneboo-base.xml
 
 ### PASO 12 - INSTALAR PYTHON3-PLY : (esto no lo he hecho)
 
+http://www.dabeaz.com/ply/
+
+"Welcome to the PLY homepage. PLY is an implementation of lex and yacc parsing tools for Python. If you don't have the slightest idea what that means, you're probably in the wrong place. Otherwise, keep reading."
+
 ...No lo pide pero me lo dicen en eneboo-groups....
 
      sudo apt-get install python3-ply
