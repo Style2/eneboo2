@@ -192,6 +192,11 @@ http://www.dabeaz.com/ply/
 
 "Welcome to the PLY homepage. PLY is an implementation of lex and yacc parsing tools for Python. If you don't have the slightest idea what that means, you're probably in the wrong place. Otherwise, keep reading."
 
+http://www.gossamer-threads.com/lists/python/python/906263
+
+ "Python setup.py install"......"Change "python" to the full path of your pythonw.exe executable."
+
+
 ...No lo pide pero me lo dicen en eneboo-groups....
 
      sudo apt-get install python3-ply
