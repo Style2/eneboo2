@@ -51,13 +51,24 @@
 * (ESTE PASO ES NECESARIO PARA QUE FUNCIONE EL SERVIDOR)
 * Ir a "servers" y con el botón de la derecha darle a la versión instalada y a la opción "Connect"...
 
+* En el caso de dar algún mensaje de "error de conexión", ir al "Sistema de Windows" (con permisos de administrador) y re-iniciar el servicio MANUALMENTE:
+
+https://www.postgresql.org/message-id/BANLkTi%3DOQc_FiiMhhiKyKb1P4%3DM7s9bGEg@mail.gmail.com
+
+"Si el problema persiste, puede que haya quedado algún otro problema serio, deberías iniciarlo manualmente por consola y ver que sucede, pOr ej, ir a Inicio, ejecutar, cmd y tipear:"
+
+     runas /user:postgres cmd (ESTO NO ES IMPRESCINDIBLE)
+     cd C:\Program Files\PostgreSQL\9.5\data
+     pg_ctl.exe restart -D ..\data
+
+
 ---
 ####PASO 4.- CREAR UNA BASE DE DATOS EN PgAdminIII
-* (ESTE PASO NO ES NECESARIO, porque la crea el mismo programa Eneboo al conectar)
-* no es imprescindible este paso porque Eneboo lo crea la primera vez que se conecta a la base de datos....
+
+* (ESTE PASO ES NECESARIO LA PRIMERA VEZ, porque NO la crea el mismo programa Eneboo al conectar- Aunque en MySQL con WAMP SÍ LO HACÍA...)
+* Ir a PgAdminIII, luego a "servers", luego a "bases de datos" y con el botón de la derecha darle "NUEVA BASE DE DATOS"...y luego a "conectar"
 * (ESTO PARA PRIMERA INSTALACION, SI ES RE-INSTALAR HAY QUE SALTARSE ESTE PASO & INSTALAR EL DUMP-COPIA DE SEGURIDAD)
-* ...lo hace en: 
-* ….cotejamiento por defecto: 
+* ….cotejamiento por defecto: (lo hace todo automático...)
 
 ---
 ####PASO 5.-ARRANCAR EL PROGRAMA ENEBOO:
