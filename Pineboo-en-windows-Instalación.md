@@ -202,8 +202,16 @@ https://github.com/deavid/pineboo/blob/master/README.python3.rst
 
 * "Esto hace que algunos ficheros requieran de esta librería con Python3, pero creo que es una dependencia que se puede eliminar en el futuro (cuando casi nadie use python2). De todos modos para Python3 creo que no hace casi nada." ...PARECE QUE LOS MÓDULOS NO SE CARGAN BIEN...SERÁ POR ESTO?...LO INSTALO:
 
+
+* ...????...qué paquete es? este?:
+
+https://pypi.python.org/pypi/future/0.15.2
+
+o este?:
+
 https://pypi.python.org/pypi/futures
 
+....ni idea...
 
 
 ---
