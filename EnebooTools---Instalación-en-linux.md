@@ -1,6 +1,6 @@
 * CREADO POR: miguelajsmaps@gmail.com
 * EDITADO POR: miguelajsmaps@gmail.com en https://github.com/Miguel-J/eneboo/wiki
-* ULTIMA ACTUALIZACIÓN: 13 de febrero de 2016
+* ULTIMA ACTUALIZACIÓN: 13 de junio de 2016
 * [Para imprimir esta pagina en PDF PULSAR AQUI](https://gitprint.com/Miguel-J/eneboo/wiki/EnebooTools---Instalaci%C3%B3n-en-linux)
 
 ----
@@ -47,9 +47,9 @@ Crear un UNETBOOT:
 
 * PAGINA OFICIAL DESCARGAS: http://unetbootin.github.io/
 
-* y ahora le das a instalar desde la imagen iso descargada de www.ubuntu.com y te la instala en el USB...
+* OPCIÓN A: INSTALACIÓN DESDE USB: ...y ahora le das a instalar desde la imagen iso descargada de www.ubuntu.com y te la instala en el USB (opción de abajo "USB drive")... y modificas el arranque de la BIOS con F2 para que arranque desde ese USB...
 
-* y modificas el arranque de la BIOS con F2 para que arranque desde ese USB...
+* OPCIÓN B: INSTALACIÓN DESDE DISCO DURO: ...y ahora llevas al disco duro tanto el ejecutable UNETBOOT como la imagen ISO y allí le das a instalar desde la imagen iso descargada de www.ubuntu.com hacia la unidad "C:\" (opción de abajo "DISCO DURO").....luego reinicias y te sale un diálogo de doble arranque...eliges Ubuntu...
 
 #####OPCIÓN B: INSTALAR UBUNTU DESDE CERO FORMATEANDO EL DISCO:
 
