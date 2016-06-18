@@ -35,7 +35,16 @@ www.ubuntu.com
 
 * Después de perder dos días enteros intentando instalar mi "maldecido hasta el aburrimiento" Linux-distro-Ubuntu-14.10 renuncio por su incapacidad de gestionar más de una partición primaria en un acer netbook aspire one de 1Gb (con sistema Windows-xp pregrabado en fábrica)
 
+http://somebooks.es/?p=7894
+
 * Usando algo llamado Netboot y formateando un USB, instalo Linux-distro-Lubuntu-14.04 para 32b, dando prioridad de arranque por BIOS al USB y con la opción de sobre-escribir la instalación windows-XP. También aplico la opción de descargar actualizaciones.
+
+Crear un UNETBOOT: 
+
+* MANUAL: http://www.ubuntu-guia.com/2010/02/instalar-ubuntu-desde-un-pendrive-o.html
+
+* PAGINA OFICIAL DESCARGAS: http://unetbootin.github.io/
+
 
 #####OPCIÓN B: INSTALAR UBUNTU DESDE CERO FORMATEANDO EL DISCO:
 
