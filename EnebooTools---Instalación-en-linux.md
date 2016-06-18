@@ -31,6 +31,8 @@ www.ubuntu.com
 * NOTA: desactivar el firewall o permitir accesos...
 * NOTA: NO INSTALAR LA LTS: (para 14.04 LTS en 32bits en Windows XP; entorno "Ubuntu"; idioma "spanish") error: PERMISSION DENIED ...VER LOG...????...resulta que no podía instalar desde la ISO y el tio va y se conecta para descargar lo q necesita de vete-a-saber-dónde???...y quién le ha dado permiso?....borro todo y PRUEBO LA OTRA: ver.14.10
 
+--
+
 ######INTENTO 2: PARECE QUE FUNCIONA...
 
 * Después de perder dos días enteros intentando instalar mi "maldecido hasta el aburrimiento" Linux-distro-Ubuntu-14.10 renuncio por su incapacidad de gestionar más de una partición primaria en un acer netbook aspire one de 1Gb (con sistema Windows-xp pregrabado en fábrica)
@@ -45,6 +47,9 @@ Crear un UNETBOOT:
 
 * PAGINA OFICIAL DESCARGAS: http://unetbootin.github.io/
 
+* y ahora le das a instalar desde la imagen iso descargada de www.ubuntu.com y te la instala en el USB...
+
+* y modificas el arranque de la BIOS con F2 para que arranque desde ese USB...
 
 #####OPCIÓN B: INSTALAR UBUNTU DESDE CERO FORMATEANDO EL DISCO:
 
