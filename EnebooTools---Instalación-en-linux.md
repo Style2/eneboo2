@@ -41,15 +41,21 @@ http://somebooks.es/?p=7894
 
 * Usando algo llamado Netboot y formateando un USB, instalo Linux-distro-Lubuntu-14.04 para 32b, dando prioridad de arranque por BIOS al USB y con la opción de sobre-escribir la instalación windows-XP. También aplico la opción de descargar actualizaciones.
 
-Crear un UNETBOOT: 
+Crear un USB DE ARRANQUE: 
 
-* MANUAL: http://www.ubuntu-guia.com/2010/02/instalar-ubuntu-desde-un-pendrive-o.html
+* https://www.profesionalreview.com/2016/06/08/como-instalar-ubuntu-16-04-lts-en-tu-pc-paso-a-paso/
 
-* PAGINA OFICIAL DESCARGAS: http://unetbootin.github.io/
+* http://www.pendrivelinux.com/yumi-multiboot-usb-creator/
+
+....porque el UNETBOOTIN no funcionaba (el USB no lo reconocía el ordenador) aunque creo que al final funcionó por haber puesto ESC después de F2 y elegir directamente el USB (porque la BIOS sola no lo leía....)
+
+* MANUAL: http://www.ubuntu-guia.com/2010/02/instalar-ubuntu-desde-un-pendrive-o.html  (ESTO NO VA)
+
+* PAGINA OFICIAL DESCARGAS: http://unetbootin.github.io/ (ESTO NO VA)
 
 * OPCIÓN A: INSTALACIÓN DESDE USB: ...y ahora le das a instalar desde la imagen iso descargada de www.ubuntu.com y te la instala en el USB (opción de abajo "USB drive")... y modificas el arranque de la BIOS con F2 para que arranque desde ese USB...
 
-* OPCIÓN B: INSTALACIÓN DESDE DISCO DURO: ...y ahora llevas al disco duro tanto el ejecutable UNETBOOT como la imagen ISO y allí le das a instalar desde la imagen iso descargada de www.ubuntu.com hacia la unidad "C:\" (opción de abajo "DISCO DURO").....luego reinicias y te sale un diálogo de doble arranque...eliges Ubuntu...
+* OPCIÓN B: INSTALACIÓN DESDE DISCO DURO: ...y ahora llevas al disco duro tanto el ejecutable YUMI como la imagen ISO y allí le das a instalar desde la imagen iso descargada de www.ubuntu.com hacia la unidad "C:\" (opción de abajo "DISCO DURO").....luego reinicias y te sale un diálogo de doble arranque...eliges Ubuntu...
 
 #####OPCIÓN B: INSTALAR UBUNTU DESDE CERO FORMATEANDO EL DISCO:
 
