@@ -1156,58 +1156,82 @@ REMUNERACIONES PTES. PAGO
 ### 5. RESUMEN:
 
 Pasos a seguir para crear un asiento predefinido o una plantilla de asiento:
+
 1.- Leer el enunciado y escribir en un papel el asiento contable con los datos disponibles:
 Apuntar para cada partida: 
- A-Debe o Haber.
- B-Subcuenta con algunos (PEDIR) o todos (ESTABLECER) los dígitos.
- C-Importe conocido (CALCULAR) o desconocido (posible CALCULAR usando una fórmula o PEDIR al usuario.
- D-Concepto explícito o no se dice nada al respecto (en general usar PEDIR para que el usuario escriba un número de factura u otro identificador del documento relacionado.
- E-Si la subcuenta es de IVA Soportado o IVA Repercutido, habrá que completar el cuadro IVA (si no está activado, mirar que la subcuenta contable exista y tenga asignado un tipo de IVA en la pestaña “Otros datos”.
- F-Contrapartida: Si se activa E, hay obligación de completar la contrapartida, en otro caso se puede usar para dar mayor información en el libro mayor de cada subcuenta.
+
+     * A-Debe o Haber.
+     * B-Subcuenta con algunos (PEDIR) o todos (ESTABLECER) los dígitos.
+     * C-Importe conocido (CALCULAR) o desconocido (posible CALCULAR usando una fórmula o PEDIR al usuario.
+     * D-Concepto explícito o no se dice nada al respecto (en general usar PEDIR para que el usuario escriba un número de factura u otro identificador del documento relacionado.
+     * E-Si la subcuenta es de IVA Soportado o IVA Repercutido, habrá que completar el cuadro IVA (si no está activado, mirar que la subcuenta contable exista y tenga asignado un tipo de IVA en la pestaña “Otros datos”.
+     * F-Contrapartida: Si se activa E, hay obligación de completar la contrapartida, en otro caso se puede usar para dar mayor información en el libro mayor de cada subcuenta.
+
 Esta información debe verse para cada partida o línea con subcuenta del asiento.
+
 1.- Crear el asiento predefinido, escribiendo un código (caracteres del alfabeto inglés, sin eñes ni vocales acentuadas). Luego pulsar el botón para insertar la primera partida.
+
 1.- Creación de cada partida: Comenzar por la partida de la cual tengamos más posibilidades de conocer el importe cuando creemos un asiento real: Ya sea porque se especifique en el mismo enunciado del predefinido o conozcamos el importe cuando hagamos el asiento en el libro diario (el precio total, el precio sin IVA, el sueldo bruto, etc.)
 
 3.A) Marcar la opción de Debe o de Haber según corresponda. Aunque salga marcada una opción, volver a elegirla para asegurar que queda marcada la correcta.
 
 3.B) Para la subcuenta:
 ¿Se ha usado la subcuenta anteriormente en otra partida (seguramente en la contrapartida)?
+
 	Ruta 3.B.Sí: En la otra partida debieron escribir una palabra en el campo Definir de la contrapartida. En esta ocasión elijan Tipo: Definida y vuelvan a escribir la misma palabra en el campo Definir (pueden pulsar el botón de la derecha para que el programa recuerde las palabras memorizadas). Fin.
 Ruta 3.B.No: ¿Tiene todos los dígitos de la subcuenta? (si tiene el código de subcuenta facilitado un punto o bien tiene más de 4 dígitos y coincide su número con los dígitos usados. Si no saben cuantos dígitos se usan estime que serán de 7 a 12 normalmente. Si la partida es de IVA, se entiende que se tienen todos los dígitos en función de tipo de IVA usado, por ejemplo si es del 21% para una compra la subcuenta sería la 472.21 de IVA soportado, y si es una venta sería la 477.21 de IVA repercutido).
+
 	Ruta 3.B.No.Sí: Tipo Establecer, Valor el código de subcuenta facilitado, Definir: Si la subcuenta va a ser usada en otra partida (por ejemplo como contrapartida del IVA), entonces escriba una palabra que describa a la subcuenta (de 6 caracteres como máximo y sin Espacios, ni eñes, ni acentos). Fin.
+
 	Ruta 3.B.No.No: Tipo Pedir, Valor con los dígitos de la subcuenta que se hayan facilitado, Definir: Exactamente igual a lo explicado en la ruta 3.B.No.Sí anterior. Fin.
 
 3.C) Importe:
+
 ¿Es la última partida del asiento?
+
 	Ruta 3.C.Sí: Tipo Cuadrar. Fin.
 Ruta 3.C.No. ¿Se da un importe en euros?
+
 	Ruta 3.C.No.Sí: Tipo Calcular, Valor el importe numérico, Definir: Escriba una palabra que describa el importe (de 6 caracteres como máximo y sin Espacios, ni eñes, ni acentos, ejemplos serían Total, Neto, Bruto, Base, BI, ...). Fin.
 Ruta 3.C.No.No: ¿Se puede calcular el importe en función de un importe utilizado en una partida anterior dentro de este mismo asiento predefinido?
+
 	Ruta 3.C.No.No.Sí: Tipo Calcular, Valor una fórmula que tenga como resultado el importe correcto, para realizar dicha fórmula habrá que usar como variable la palabra escrita en el campo Definir del importe de la partida anterior. Definir: Escriba una palabra que describa el importe (de 6 caracteres como máximo y sin Espacios, ni eñes, ni acentos, ejemplos serían Total, Neto, Bruto, Base, BI, ...), esta palabra o nueva variable se podría usar para calcular otros importes posteriores mediante una fórmula. Fin.
+
 	Ruta 3.C.No.No.No: Tipo Pedir, Valor no se rellena, Definir: Exactamente como se explica en la respuesta anterior del Sí. Fin.
 
 3.D) Concepto:
+
 3.D.a) ¿Se dice expresamente en el enunciado qué hay que poner en el concepto?
+
 	Ruta 3.D.a.No: Utilicen de concepto uno que pida la identificación del documento físico que da lugar al asiento, ejemplos “Nº Factura:”, “Nº de documento:”, y sigan como si le hubieran especificado el concepto. Si no hubiera ningún documento pues inventen algún texto que describa al asiento completo (no a la subcuenta de la partida), también pueden pedir el mes del hecho contable o algo parecido (Nóminas del mes:).
 Ruta 3.D.a.No.parte2) ¿El concepto necesita algún dato en el momento de crear un asiento real? Ejemplo un número de factura o documento, o el nombre del mes, etc.
+
 	Ruta 3.D.a.No.parte2.Sí: Tipo Pedir, Valor un texto que pida el dato que falte. Continua en 3.D.b.
+
 	Ruta 3.D.a.No.parte2.No: Tipo Establecer, Valor el texto. Continua en 3.D.b.
 Ruta 3.D.a.Sí: Apliquen el apartado anterior (ruta 3.D.a.No.parte2).
 3.D.b) ¿Se va a usar el mismo concepto en todas las partidas?
+
 	Ruta 3.D.b.Sí: Si no es la primera partida, elijan Tipo Último. Fin.
+
 	Ruta 3.D.b.No: Apliquen la pregunta 3.D.a. a cada partida del asiento predefinido. Fin.
 
 3.E) IVA
 En este caso en el apartado 3.B es obligatorio usar Establecer y la subcuenta exacta del IVA como se explica en la ruta 3.B.No. Con ello se habrá activado el cuadro de IVA.
+
 Campo Factura: No pedir. Se podría pedir, pero ya hemos preguntado esta información en el concepto del asiento (Su factura:).
+
 Base Imponible: Tipo Calcular, Base imponible: Fórmula a partir de algún importe anterior (usar las variables memorizadas con el campo Definir de ese importe, ejemplo: Total/1.21 ó simplemente Neto).
 
 3.F) Contrapartida
 Si la subcuenta de esta partida era de IVA (472.X o 477.X), la contrapartida debe ser la subcuenta correspondiente al sujeto pasivo (la persona física o jurídica con la que realizamos el intercambio de la compra o la venta).
 ¿Ha sido esta subcuenta ya usada en otra partida anterior?
+
 	Ruta 3.F.Sí: Tipo Definida, Definir: Copiar la palabra usada en el campo Definir de la subcuenta del sujeto pasivo (pulsando el botón más a la derecha aparecen las palabras memorizadas). Fin.
 Ruta 3.F.No: ¿Tiene todos los dígitos de la subcuenta? (si tiene el código de subcuenta facilitado un punto o bien tiene más de 4 dígitos y coincide su número con los dígitos usados por la contabilidad. Si no saben cuántos dígitos se usan estime que serán de 7 a 12 normalmente.)
+
 	Ruta 3.F.No.Sí: Tipo Establecer, Valor el código de subcuenta facilitado, Definir: Escriba una palabra que describa a la subcuenta (de 6 caracteres como máximo y sin Espacios, ni eñes, ni acentos). Fin.
+
 	Ruta 3.F.No.No: Tipo Pedir, Valor con los dígitos de la subcuenta que se hayan facilitado, Definir: Exactamente como se explica en la respuesta anterior (ruta 3.F.No.Sí). Fin.
 
 [volver al índice](#indice)
@@ -1216,6 +1240,7 @@ Ruta 3.F.No: ¿Tiene todos los dígitos de la subcuenta? (si tiene el código de
 ### 6. CONSULTAS Y OTROS PROCESOS:
 
 Ejercicios a realizar:
+
 1.- Se desean localizar los apuntes contables existentes cuyo importe sea de 900,00 €. 
 Para ello, basta con seleccionar Importe en el campo Buscar e introducir el importe deseado:
 
@@ -1266,6 +1291,7 @@ REMUNERACIONES PTES. PAGO
 4.- Modificar la fecha del asiento que contabiliza el curso recibido por importe de 3.300,00 € pasándolo al mes siguiente.
 
 5.- Listar por pantalla los asientos correspondientes al mes de febrero. En este caso, vamos a crear un listado específico para este informe. Para ello, nos situamos en el Módulo Informes del Área Financiera y allí seleccionamos Listados -- Libro Diario. 
+
 Una vez allí, añadimos un tipo de listado y rellenamos los datos que deseamos que aparezcan en el listado. En nuestro caso, le denominaremos Listado octubre, incluiremos los datos del IVA en el mismo y  no lo deseamos agrupado por meses. Seleccionamos el ejercicio del que queremos extraer los datos y el rango de fechas que nos interesan: del 1 al 31de octubre y activamos los campos oportunos
 
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/Dibujo-52.PNG)
@@ -1324,6 +1350,7 @@ Una vez allí, creamos la regularización del cuarto trimestre. Para ello basta 
 ##PROCESOS AL FINAL DEL EJERCICIO.
 
 El proceso del cierre de la contabilidad al final del ejercicio comienza por cerrar previamente la declaración trimestral del IVA siguiendo el proceso que hemos explicado en el apartado anterior. Es importante comprobar que las facturas recibidas y emitidas que tenemos archivadas por fecha, coincidan con el número de orden que le corresponda según el Libro Registro.
+
 Junto con la declaración del último trimestre hay que presentar la Declaración Resumen-Anual del IVA, modelo 390. Para ello basta con acudir a la opción Modelos, Modelo 390 del Módulo Modelos del área Financiera y crear una nueva declaración. 
 
 ![Asientos predefinidos](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-CONTABILIDAD/eneboo-sevilla-conta-64.png)
