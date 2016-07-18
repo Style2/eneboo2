@@ -27,6 +27,8 @@
 ##Introducción.
 
 
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-01.PNG)
+
 
 En este apartado se analizarán los siguientes aspectos en relación con la aplicación Eneboo:
 
@@ -40,8 +42,8 @@ En este apartado se analizarán los siguientes aspectos en relación con la apli
 
 * En el siguiente gráfico se presenta un esquema del funcionamiento de Eneboo:
 
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-02.PNG)
 
-![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-01.PNG)
 
 * Como se puede observar, la aplicación con el nombre flitte se ejecuta desde el cliente, de igual forma que con un navegador web y las páginas escritas en HTML, los datos son pedidos por la red utilizando el lenguaje SQL. Los módulos (metadatos) también son guardados como un dato más en la base de datos, de esa forma se evita tener que instalarlos en cada ordenador cliente, pues éstos cogen los módulos desde el mismo servidor. Así es muy fácil añadir nuevas funcionalidades al ERP y sean automáticamente utilizadas por todos los clientes.
 
@@ -49,7 +51,6 @@ En este apartado se analizarán los siguientes aspectos en relación con la apli
 
 * La potencia de usar estándares como el lenguaje SQL, permite a esta aplicación funcionar con distintos gestores de bases de datos, así se podría conectar tanto a un servidor con PostgreSQL como con MySQL. En futuras versiones será compatible también con servidores Oracle SQL. Para más información sobre la tecnología que subyace en la base de Eneboo leer el documento sobre la Arquitectura Abierta de Aplicaciones Dinámicas (A3D) que se encuentra en https://github.com/Miguel-J/eneboo/wiki/Programaci%C3%B3n-1-(sacado-de-ABANQ).
 
-![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-02.PNG)
 
 ---
 ####Explicación breve de los botones utilizados en el programa.
@@ -79,13 +80,19 @@ En este apartado se analizarán los siguientes aspectos en relación con la apli
 * Recordamos que esta aplicación puede abrirse varias veces a la vez, y en cada una trabajar con una empresa diferente, simplemente eligiendo distintas bases de datos.
 
 
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-03.PNG)
+
+
 * Si la base de datos se ha creado con anterioridad (por ejemplo, para cargar los módulos) no aparecerá la ventana siguiente:
 
-![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-03.PNG)
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-04.PNG)
 
 * Debido a la complejidad del sistema, Eneboo divide los subsistemas de la empresa en áreas y éstas, a su vez, en diversos módulos o funcionalidades. Las dos áreas con las que vamos a trabajar son Área de Facturación, desde la que se gestionan los aspectos relacionados con el aprovisionamiento y la gestión de ventas, y el Área Financiera desde la que se gestiona la contabilidad.
 
-![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-04.PNG)
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-05.PNG)
+
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-06.PNG)
+
 
 * Las restantes áreas o subsistemas de la empresa no los veremos ni utilizaremos en este manual.
 
@@ -113,15 +120,22 @@ La operativa normal de funcionamiento de este tipo de aplicaciones consiste en i
 * Web: http://www.envoltosa.com
 
 
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-07.PNG)
+
+
 
 * Posteriormente, desde la opción Principal/Empresa, podemos modificar las características generales (pestaña General) y los valores por defecto (pestaña Valores por defecto) de la configuración básica de la empresa Envoltosa.
 
 * Desde la segunda pestaña: Valores por defecto, activaremos la casilla de Contabilidad integrada y dejaremos desactivada la de Aplicar recargo de equivalencia. Recordemos que en este ERP, a diferencia de los programas independientes de un mismo proveedor, la contabilidad no está enlazada sino integrada. Además, activaremos la casilla Controlar stocks desde pedidos de clientes. 
 
 
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-08.PNG)
 
 * En esta misma pestaña de Valores por defecto vamos a introducir también el almacén de la empresa, al que denominaremos Almacén Calpe, con código AC, que al no estar creado pasaremos a darlo de alta con sus datos correspondientes: Una dirección postal y los datos de contacto. 
 Para ello pulsaremos sobre el botón con una lupa a la derecha de la etiqueta “Almacén”. Esto mostrará la ventana “Almacenes” en la que podremos crear el nuevo almacén. 
+
+
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-09.PNG)
 
 
 * Para insertarlo pulsamos el botón  que nos permite acceder a la ventana e incluir información detallada sobre nuestro almacén.
@@ -136,7 +150,14 @@ Para ello pulsaremos sobre el botón con una lupa a la derecha de la etiqueta �
 * Inventario valorado: Coste medio
 
 
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-10.PNG)
+
+
 * El Código Almacén permitirá identificar a éste en el resto del programa. Como puede observarse, el campo País aparece en forma de botón lo que nos está indicando que existe una tabla maestra asociada a este campo. Cuando ocurre esto debemos pulsar el botón e incluir y/o seleccionar la información en la tabla maestra correspondiente. En caso contrario, la información será incompleta y no se podrá utilizar de la misma forma. Por ejemplo, puede observarse que si se edita el campo país incluyendo la leyenda “ES” a su derecha no aparecerá la bandera de España y, sin embargo, si pulsamos el botón País y seleccionamos el país con código ES, sí que aparecerá.
+
+
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-11.PNG)
+
 
 
 * A la hora de valorar nuestro inventario podremos optar por una de las tres opciones siguientes:
@@ -144,8 +165,14 @@ Coste medio, Porcentaje del PVP o Coste del proveedor.
 El programa indicará siempre este almacén en los documentos que se vayan añadiendo, de forma que no se tenga que teclear el código del almacén salvo que se vaya a utilizar otro.
 Tras introducir los datos pulsaremos el botón aceptar [].
 
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-12.PNG)
+
+
 
 * Y pulsando en la ventana Almacenes en el botón  como aparece activado el registro correspondiente al Almacén Calpe, se incluirá el registro en el campo Almacén de la ventana Empresa.
+
+
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-13.PNG)
 
 
 
@@ -166,7 +193,13 @@ Antes de comenzar a trabajar con nuestra empresa, es necesario configurar una se
 * La primera opción del menú es la de Ejercicios fiscales. Por defecto, aparece creado el ejercicio correspondiente al ejercicio actual. 
 
 
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-14.PNG)
+
+
 * Pulsando el botón Modificar () en la ventana Ejercicios fiscales podemos ver sus datos.
+
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-15.PNG)
+
 
 
 * El campo Dígitos de subcuenta afecta a todas las subcuentas, que pasarán a codificarse por el valor indicado en este campo. El número de dígitos es un campo de cumplimentación obligatoria e indica la longitud de los códigos de las subcuentas en la empresa en cuestión. El valor deberá estar comprendido entre 5 y 15. Esta decisión es importante, ya que repercutirá en la manera en que se podrá obtener información relevante para el proceso de toma de decisiones. La decisión deberá basarse en las necesidades informativas y estadísticas que requiera la empresa en cuestión. Debe tenerse en cuenta que el programa asigna los cuatro primeros dígitos de cada subcuenta siguiendo el cuadro de cuentas establecido en el PGC.
