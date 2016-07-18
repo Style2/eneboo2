@@ -41,11 +41,15 @@ En este apartado se analizarán los siguientes aspectos en relación con la apli
 * En el siguiente gráfico se presenta un esquema del funcionamiento de Eneboo:
 
 
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-01.PNG)
+
 * Como se puede observar, la aplicación con el nombre flitte se ejecuta desde el cliente, de igual forma que con un navegador web y las páginas escritas en HTML, los datos son pedidos por la red utilizando el lenguaje SQL. Los módulos (metadatos) también son guardados como un dato más en la base de datos, de esa forma se evita tener que instalarlos en cada ordenador cliente, pues éstos cogen los módulos desde el mismo servidor. Así es muy fácil añadir nuevas funcionalidades al ERP y sean automáticamente utilizadas por todos los clientes.
 
 * Por tanto, al iniciar Eneboo, éste descarga del servidor los módulos con sus instrucciones (los guarda y los renueva si existen nuevas versiones), y mediante la ejecución de estos módulos, el usuario va pidiendo y modificando los datos que necesite. En resumen, el programa Eneboo interpreta las instrucciones y datos llegados desde el servidor y presenta la información en el ordenador del usuario.
 
 * La potencia de usar estándares como el lenguaje SQL, permite a esta aplicación funcionar con distintos gestores de bases de datos, así se podría conectar tanto a un servidor con PostgreSQL como con MySQL. En futuras versiones será compatible también con servidores Oracle SQL. Para más información sobre la tecnología que subyace en la base de Eneboo leer el documento sobre la Arquitectura Abierta de Aplicaciones Dinámicas (A3D) que se encuentra en https://github.com/Miguel-J/eneboo/wiki/Programaci%C3%B3n-1-(sacado-de-ABANQ).
+
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-02.PNG)
 
 ---
 ####Explicación breve de los botones utilizados en el programa.
@@ -77,10 +81,11 @@ En este apartado se analizarán los siguientes aspectos en relación con la apli
 
 * Si la base de datos se ha creado con anterioridad (por ejemplo, para cargar los módulos) no aparecerá la ventana siguiente:
 
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-03.PNG)
 
 * Debido a la complejidad del sistema, Eneboo divide los subsistemas de la empresa en áreas y éstas, a su vez, en diversos módulos o funcionalidades. Las dos áreas con las que vamos a trabajar son Área de Facturación, desde la que se gestionan los aspectos relacionados con el aprovisionamiento y la gestión de ventas, y el Área Financiera desde la que se gestiona la contabilidad.
 
-
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-04.PNG)
 
 * Las restantes áreas o subsistemas de la empresa no los veremos ni utilizaremos en este manual.
 
@@ -1520,3 +1525,9 @@ Los procesos de compra y venta descritos a lo largo de este manual han considera
 * Dado que la práctica, como se ha indicado, se realiza en el año AA, en esta ventana deberemos incluir una fecha comprendida entre el 01/01/AA y el 31/12/AA para que la aplicación nos permita continuar realizando la práctica sin errores.
 
 * En el caso de que el documento (pedido, albarán o factura de proveedores o a clientes) correspondiese al ejercicio AA+1, tendríamos que seleccionar el ejercicio AA+1 en el Módulo Principal del Área de Facturación, editando la empresa ENVOLTOSA en la ventana de Empresa (menú Principal/Empresa).
+
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-05.PNG)
+
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-06.PNG)
+
+![univ-sevilla-facturacion](https://raw.githubusercontent.com/Miguel-J/eneboo/master/imagen/univ-sevilla-facturacion/univ-sevilla-facturacion-07.PNG)
